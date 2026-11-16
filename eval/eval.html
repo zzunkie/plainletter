@@ -1,0 +1,70 @@
+<!doctype html><meta charset="utf-8"><title>Plainletter eval</title><pre id="o">running</pre>
+<script src="./page.js"></script>
+<script type="module">
+// Runs the app's own pipeline over the test notices and scores each stage.
+import { readLetter, explain } from '../src/pipeline.js';
+const flat = (s) => String(s ?? '').normalize('NFKC').replace(/\s+/g, '');
+const digits = (s) => String(s ?? '').replace(/\D/g, '');
+const notices = await (await fetch('./notices.json')).json();
+const only = new URLSearchParams(location.search).get('only');
+const rows = [];
+for (const [i, n] of notices.entries()) {
+  if (only && !only.split(',').includes(n.id)) continue;
+  const { dataUrl } = await renderPhoto(n, i);
+  const t0 = performance.now();
+  const letter = await readLetter(dataUrl.split(',')[1], 'device');
+  const readSec = (performance.now() - t0) / 1000;
+  const sent = flat(letter.outgoing + '\n' + letter.alternates.join('\n'));
+  // What the on-device model alone would have masked, before the code rules.
+  let modelOnly = letter.transcript;
+  for (const it of [...letter.items].filter((x) => x.kind !== 'AGENCY_CONTACT').sort((a, b) => b.value.length - a.value.length)) if (it.value?.length > 1) modelOnly = modelOnly.split(it.value.normalize('NFKC')).join('[]');
+  const t1 = performance.now(); let ex = {};
+  try { ex = await explain(letter, 'English'); } catch (e) { ex = { error: String(e.message).slice(0, 200) }; }
+  const explainSec = (performance.now() - t1) / 1000;
+  // The larger model's double-check, which replaces the first answer on screen.
+  const t2 = performance.now(); let fin = {};
+  try { fin = await explain(letter, 'English', { check: true }); } catch (e) { fin = { error: String(e.message).slice(0, 200) }; }
+  // The consequence is right when the English text matches every pattern listed for the notice.
+  const says = (text) => n.consequence.every((re) => new RegExp(re, 'i').test(String(text ?? '')));
+  rows.push({
+    id: n.id, readSec, explainSec, checkSec: (performance.now() - t2) / 1000,
+    consequenceFirst: says(ex.if_ignored), consequenceFinal: says(fin.if_ignored),
+    finalDeadlineRight: fin.deadline_iso === n.deadline_iso,
+    finalAmountRight: digits(fin.amount) === digits(n.amount_due ?? n.critical[0]),
+    final: { title: fin.title, deadline_iso: fin.deadline_iso, amount: fin.amount, if_ignored: fin.if_ignored, corrected: fin.corrected, error: fin.error },
+    figuresRead: n.critical.map((v) => flat(letter.transcript).includes(flat(v))),
+    figuresKept: n.critical.map((v) => !flat(letter.transcript).includes(flat(v)) || flat(letter.outgoing).includes(flat(v))),
+    idsMissedByModel: n.pii.filter((v) => flat(modelOnly).includes(flat(v))),
+    idsSent: n.pii.filter((v) => sent.includes(flat(v))),
+    agencyKept: n.agency_contacts.map((v) => flat(letter.outgoing).includes(flat(v))),
+    deadlineRight: ex.deadline_iso === n.deadline_iso,
+    amountRight: digits(ex.amount) === digits(n.amount_due ?? n.critical[0]),
+    explained: { title: ex.title, deadline_iso: ex.deadline_iso, amount: ex.amount, if_ignored: ex.if_ignored, corrected: ex.corrected, error: ex.error },
+    transcript: letter.transcript, second: letter.second, items: letter.items, outgoing: letter.outgoing, alternates: letter.alternates,
+  });
+  document.getElementById('o').textContent = `${rows.length} done`;
+}
+const sum = (f) => rows.reduce((a, r) => a + f(r), 0);
+window.__eval = {
+  summary: {
+    notices: rows.length,
+    figuresReadByNano: `${sum((r) => r.figuresRead.filter(Boolean).length)} of ${sum((r) => r.figuresRead.length)}`,
+    figuresKeptVisible: `${sum((r) => r.figuresKept.filter(Boolean).length)} of ${sum((r) => r.figuresKept.length)}`,
+    identifiersMaskedByNanoAlone: `${sum((r) => notices.find((n) => n.id === r.id).pii.length - r.idsMissedByModel.length)} of ${sum((r) => notices.find((n) => n.id === r.id).pii.length)}`,
+    identifiersSentAfterRules: `${sum((r) => r.idsSent.length)} of ${sum((r) => notices.find((n) => n.id === r.id).pii.length)}`,
+    agencyNumbersKeptVisible: `${sum((r) => r.agencyKept.filter(Boolean).length)} of ${sum((r) => r.agencyKept.length)}`,
+    deadlineInExplanation: `${sum((r) => +r.deadlineRight)} of ${rows.length}`,
+    amountInExplanation: `${sum((r) => +r.amountRight)} of ${rows.length}`,
+    consequenceInFirstAnswer: `${sum((r) => +r.consequenceFirst)} of ${rows.length}`,
+    consequenceAfterDoubleCheck: `${sum((r) => +r.consequenceFinal)} of ${rows.length}`,
+    misreadWordsCorrected: `${sum((r) => (r.final.corrected || []).length)} on ${sum((r) => +((r.final.corrected || []).length > 0))} notices`,
+    deadlineAfterDoubleCheck: `${sum((r) => +r.finalDeadlineRight)} of ${rows.length}`,
+    amountAfterDoubleCheck: `${sum((r) => +r.finalAmountRight)} of ${rows.length}`,
+    readSeconds: `${Math.min(...rows.map((r) => r.readSec)).toFixed(0)} to ${Math.max(...rows.map((r) => r.readSec)).toFixed(0)}`,
+    explainSeconds: `${Math.min(...rows.map((r) => r.explainSec)).toFixed(0)} to ${Math.max(...rows.map((r) => r.explainSec)).toFixed(0)}`,
+    doubleCheckSeconds: `${Math.min(...rows.map((r) => r.checkSec)).toFixed(0)} to ${Math.max(...rows.map((r) => r.checkSec)).toFixed(0)}`,
+  },
+  rows,
+};
+document.getElementById('o').textContent = JSON.stringify(window.__eval.summary, null, 1);
+</script>
