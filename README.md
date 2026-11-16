@@ -31,18 +31,19 @@ All inference goes through `firebase/ai`. See [`src/pipeline.js`](src/pipeline.j
 
 ## Results on the test set
 
-The evaluation set in `eval/out/*.jpg` contains 10 synthetic notices in Korean, German, Japanese, and English with fictional names and numbers, each rendered as a 1280×960 JPEG with tilt, blur, shadow, and compression noise.
+The evaluation set in `eval/out/*.jpg` contains 10 synthetic notices in Korean, German, Japanese, and English with fictional names and numbers, each rendered as a 1280×960 JPEG with tilt, blur, shadow, and compression noise. The table combines three runs across the set (30 readings total).
 
 | Check | Result |
 |---|---|
-| Amounts and deadlines transcribed correctly by Gemini Nano | 20 of 20 |
-| Personal identifiers masked by Gemini Nano's own detection | 46 of 46 |
-| Personal identifiers in the text sent to the cloud, after the `src/redact.js` rules | 0 of 46 |
-| Amounts and deadlines still readable in the sent text | 20 of 20 |
-| Agency helpline numbers still readable in the sent text | 3 of 4 (one was labeled a personal phone, masked, and restored in the answer on the device) |
-| Deadline in the explanation matches the letter | 10 of 10 in the first answer, 10 of 10 after the double-check |
-| Amount due in the explanation matches the letter | 10 of 10 in the first answer, 10 of 10 after the double-check |
-| Misread words listed and corrected by the double-check | 9, on 4 of the 10 notices |
+| Amounts and deadlines transcribed correctly by Gemini Nano | 60 of 60 |
+| Personal identifiers masked by Gemini Nano alone | 134 of 138 |
+| Personal identifiers in the text sent to the cloud, after the `src/redact.js` rules | 0 of 138 |
+| Amounts and deadlines still readable in the sent text | 60 of 60 |
+| Agency helpline numbers left unmasked in the text sent to the cloud | 9 of 12 (in every run, Gemini Nano labeled the same one as a personal phone number, so it was masked before the cloud call and restored in the answer on the device) |
+| Deadline in the explanation matches the letter | 30 of 30 in the first answer, 30 of 30 after the double-check |
+| Amount due in the explanation matches the letter | 30 of 30 in the first answer, 30 of 30 after the double-check |
+| Consequence of ignoring the letter stated correctly | 29 of 30 in the first answer, 30 of 30 after the double-check |
+| Misread words listed and corrected by the double-check | 28, in 10 of the 30 readings |
 
 `eval/eval.html` runs the app's own pipeline (`readLetter` and `explain` from `src/pipeline.js`, including the double-check) over the notices in `eval/notices.json`. To reproduce, start `npm run dev`, start Chrome with `--remote-debugging-port=9333`, and run:
 
@@ -50,7 +51,7 @@ The evaluation set in `eval/out/*.jpg` contains 10 synthetic notices in Korean, 
 node eval/run.mjs
 ```
 
-The per-notice transcriptions, detected identifiers, sent text, and explanations are saved to `eval/out/results.json`.
+The per-notice transcriptions, detected identifiers, sent text, and explanations are saved to `eval/out/results.json`. The three runs behind the table are in `eval/out/runs/`.
 
 ## Run it locally
 

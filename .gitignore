@@ -3,4 +3,3 @@ dist/
 .env*
 firebase-config.json
 .firebase/
-eval/out/runs/
