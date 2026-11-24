@@ -10,19 +10,19 @@
   "amountInExplanation": "10 of 10",
   "consequenceInFirstAnswer": "9 of 10",
   "consequenceAfterDoubleCheck": "10 of 10",
-  "misreadWordsCorrected": "9 on 3 notices",
+  "misreadWordsCorrected": "8 on 3 notices",
   "deadlineAfterDoubleCheck": "10 of 10",
   "amountAfterDoubleCheck": "10 of 10",
   "readSeconds": "9 to 12",
-  "explainSeconds": "2 to 2",
-  "doubleCheckSeconds": "6 to 9"
+  "explainSeconds": "2 to 3",
+  "doubleCheckSeconds": "5 to 8"
  },
  "rows": [
   {
    "id": "ko1",
-   "readSec": 12.070899999976158,
-   "explainSec": 2.154800000011921,
-   "checkSec": 6.930399999976158,
+   "readSec": 11.541,
+   "explainSec": 3.021800000011921,
+   "checkSec": 7.527899999976158,
    "consequenceFirst": false,
    "consequenceFinal": true,
    "finalDeadlineRight": true,
@@ -31,12 +31,10 @@
     "title": "Overdue health insurance payment notice",
     "deadline_iso": "2026-11-25",
     "amount": "287,450원",
-    "if_ignored": "Late fees will be added, and your permission to extend your period of stay may be restricted.",
+    "if_ignored": "If you do not pay by the deadline, late fees will be added and your extension of stay permit may be restricted.",
     "corrected": [
-     "read as \"특약\" and \"특중\", understood as \"독촉\" (overdue/reminder)",
-     "read as \"남부납\", understood as \"납부할\" (to pay)",
-     "read as \"남부기한\", understood as \"납부기한\" (payment deadline)",
-     "read as \"체납 기간\", understood as \"체류 기간\" (period of stay)"
+     "read as \"남부담 금액\", understood as \"납부할 금액\" (amount to pay)",
+     "read as \"체납 기간 연장 허가\", understood as \"체류 기간 연장 허가\" (extension of stay permit)"
     ]
    },
    "figuresRead": [
@@ -56,22 +54,20 @@
    "deadlineRight": true,
    "amountRight": true,
    "explained": {
-    "title": "National Health Insurance premium notice",
+    "title": "National Health Insurance overdue payment notice",
     "deadline_iso": "2026-11-25",
     "amount": "287,450원",
-    "if_ignored": "Late fees will be added and extension of the overdue period approval may be restricted.",
+    "if_ignored": "Late fees will be added, and the extension of the delinquency period permit may be restricted.",
     "corrected": [
-     "read as \"남부납 금액\", understood as \"납부할 금액\" (amount to be paid)",
-     "read as \"남부기한\", understood as \"납부기한\" (payment deadline)",
-     "read as \"특약 고지서\", understood as \"특례 고지서\" (special exception notice)"
+     "read as \"남부담 금액\", understood as \"납부할 금액\" (Amount to be paid)"
     ]
    },
-   "transcript": "국민건강보험공단 보험료 납부 특약 고지서\n성명: 마리아 갈랑레스 (Maria Gonzalez)\n외국인등록번호: 920314-6234567\n주소: 서울특별시 구로구 디지털로 123, 402호\n남부납 금액: 287,450원 (2026년 9월~10월분)\n남부기한: 2026년 11월 25일\n가상계좌: 신한은행 562-01-998877\n기한 내 미납 시 연체금이 가산되며,\n체납 기간 연장 허가가 제한될 수 있습니다.\n문의: 1577-1000 (외국어 상담 033-811-2000)",
-   "second": "국민건강보험공단 보험료 납부 특중 고지서\n성명: 마리아 갈렉스 (Maria Gonzalez)\n외국인등록번호: 920314-6234567\n주소: 서울특별시 구로구 디지털로 123, 402호\n납부할 금액: 287,450원 (2026년 9월~10월분)\n납부기한: 2026년 11월 25일\n가상계좌: 신한은행 562-01-998877\n기한 내 미납 시 연체금이 가산되며,\n체납기간 연장 허가가 제한될 수 있습니다.\n문의: 1577-1000 (외국어 상담 033-811-2000)",
+   "transcript": "국민건강보험공단 보험료 납부 독촉 고지서\n성명: 마리아 갈로렌스 (Maria Gonzalez)\n외국인등록번호: 920314-6234567\n주소: 서울특별시 구로구 디지털로 123, 402호\n남부담 금액: 287,450원 (2026년 9월~10월분)\n납부기한: 2026년 11월 25일\n가상계좌: 562-01-998877 (예금주: 국민건강보험공단)\n기한 내 미납 시 연체금이 가산되며,\n체납 기간 연장 허가가 제한될 수 있습니다.\n문의: 1577-1000 (외국어 상담 033-811-2000",
+   "second": "국민건강보험공단 보험료 납부 독촉 고지서\n성명: 마리아 갈로렌스 (Maria Gonzalez)\n외국인등록번호: 920314-6234567\n주소: 서울특별시 구로구 디지털로 123, 402호\n납부할 금액: 287,450원 (2026년 9월~10월분)\n납부기한: 2026년 11월 25일\n가상계좌: 562-01-998877 (예금주: 국민건강보험공단)\n기한 내 미납 시 연체금이 가산되며,\n체납 기간 연장 허가가 제한될 수 있습니다.\n문의: 1577-1000 (외국어 상담 033-811-2000)",
    "items": [
     {
      "kind": "NAME",
-     "value": "마리아 갈랑레스 (Maria Gonzalez)"
+     "value": "마리아 갈로렌스 (Maria Gonzalez)"
     },
     {
      "kind": "ID_NUMBER",
@@ -83,7 +79,7 @@
     },
     {
      "kind": "ACCOUNT",
-     "value": "신한은행 562-01-998877"
+     "value": "562-01-998877"
     },
     {
      "kind": "AGENCY_CONTACT",
@@ -95,7 +91,7 @@
     },
     {
      "kind": "NAME",
-     "value": "마리아 갈렉스 (Maria Gonzalez)"
+     "value": "마리아 갈로렌스 (Maria Gonzalez)"
     },
     {
      "kind": "ID_NUMBER",
@@ -107,7 +103,7 @@
     },
     {
      "kind": "ACCOUNT",
-     "value": "신한은행 562-01-998877"
+     "value": "562-01-998877"
     },
     {
      "kind": "AGENCY_CONTACT",
@@ -118,29 +114,27 @@
      "value": "033-811-2000"
     }
    ],
-   "outgoing": "국민건강보험공단 보험료 납부 특약 고지서\n성명: [NAME_1]\n외국인등록번호: [ID_NUMBER_1]\n주소: [ADDRESS_1]\n남부납 금액: 287,450원 (2026년 9월~10월분)\n남부기한: 2026년 11월 25일\n가상계좌: [ACCOUNT_1]\n기한 내 미납 시 연체금이 가산되며,\n체납 기간 연장 허가가 제한될 수 있습니다.\n문의: 1577-1000 (외국어 상담 033-811-2000)",
+   "outgoing": "국민건강보험공단 보험료 납부 독촉 고지서\n성명: [NAME_1]\n외국인등록번호: [ID_NUMBER_1]\n주소: [ADDRESS_1]\n남부담 금액: 287,450원 (2026년 9월~10월분)\n납부기한: 2026년 11월 25일\n가상계좌: [ACCOUNT_1] (예금주: 국민건강보험공단)\n기한 내 미납 시 연체금이 가산되며,\n체납 기간 연장 허가가 제한될 수 있습니다.\n문의: 1577-1000 (외국어 상담 033-811-2000",
    "alternates": [
-    "국민건강보험공단 보험료 납부 특중 고지서",
-    "납부할 금액: 287,450원 (2026년 9월~10월분)",
-    "납부기한: 2026년 11월 25일"
+    "납부할 금액: 287,450원 (2026년 9월~10월분)"
    ]
   },
   {
    "id": "ko2",
-   "readSec": 11.960600000023842,
-   "explainSec": 2.213399999976158,
-   "checkSec": 7.460700000047684,
+   "readSec": 10.860100000023841,
+   "explainSec": 2.066399999976158,
+   "checkSec": 5.928600000023842,
    "consequenceFirst": true,
    "consequenceFinal": true,
    "finalDeadlineRight": true,
    "finalAmountRight": true,
    "final": {
-    "title": "Notice of expiring residence permit",
+    "title": "Notice of upcoming visa expiration",
     "deadline_iso": "2026-12-18",
     "amount": "60,000원",
-    "if_ignored": "If you miss the deadline, you may be fined or ordered to leave the country.",
+    "if_ignored": "If you miss the deadline, you may be charged a fine or ordered to leave the country.",
     "corrected": [
-     "read as \"벌금규이 / 벌금금이\", understood as \"범칙금이\" (a fine)"
+     "read as \"범죄금 / 벌금금\", understood as \"범칙금\" (fine / penalty)"
     ]
    },
    "figuresRead": [
@@ -160,13 +154,13 @@
     "title": "Notice of approaching visa expiration date",
     "deadline_iso": "2026-12-18",
     "amount": "60,000원",
-    "if_ignored": "If you exceed the deadline, a fine may be imposed or you may be ordered to leave the country.",
+    "if_ignored": "A fine may be imposed or you may be subject to deportation.",
     "corrected": [
-     "read as \"벌금규이\", understood as \"벌금\" (fine)"
+     "read as \"범죄금이 부과되거나\", understood as \"벌금금이 부과되거나\" (a fine may be imposed)"
     ]
    },
-   "transcript": "서울출입국·외국인청 체류기간 만료 예정 안내\n성명: NGUYEN VAN HUNG (옹우엔 반 흥)\n외국인등록번호: 880721-5183204\n체류자격: E-9 (비전문취업)\n주소: 경기도 안산시 단원구 원곡로 45, 201호\n체류기간 만료일: 2026년 12월 18일\n만료일 전까지 체류기간 연장허가를 신청하시기 바랍니다.\n신청 수수료: 60,000원\n기한을 넘기면 벌금규이 부과되거나 출국 조치될 수 있습니다.\n방문 예약: 하이코리아 (www.hikorea.go.kr), 문의 1345",
-   "second": "서울출입국·외국인청 체류기간 만료 예정 안내\n성명: NGUYEN VAN HUNG (용우연 반 홍)\n외국인등록번호: 880721-5183204\n체류자격: E-9 (비전문 취업)\n주소: 경기도 안산시 단원구 원곡로 45, 201호\n체류기간 만료일: 2026년 12월 18일\n만료일 전까지 체류기간 연장허가를 신청하시기 바랍니다.\n신청 수수료: 60,000원\n기한을 넘기면 벌금금이 부과되거나 출국 조치될 수 있습니다.\n방문 예약: 하이코리아 (www.hikorea.go.kr), 문의 1345",
+   "transcript": "서울출입국·외국인청 체류기간 만료 예정 안내\n성명: NGUYEN VAN HUNG (황우연 반 홍)\n외국인등록번호: 880721-5183204\n체류자격: E-9 (비전문취업)\n주소: 경기도 안산시 단원구 원곡로 45, 201호\n체류기간 만료일: 2026년 12월 18일\n만료일 전까지 체류기간 연장허가를 신청하시기 바랍니다.\n신청 수수료: 60,000원\n기한을 넘기면 범죄금이 부과되거나 출국 조치될 수 있습니다.\n방문 예약: 하이코리아 (www.hikorea.go.kr), 문의 1345",
+   "second": "서울출입국·외국인청 체류기간 만료 예정 안내\n성명: NGUYEN VAN HUNG (유우연 반 홍)\n외국인등록번호: 880721-5183204\n체류자격: E-9 (비전문취업)\n주소: 경기도 안산시 단원구 원곡로 45, 201호\n체류기간 만료일: 2026년 12월 18일\n만료일 전까지 체류기간 연장허가를 신청하시기 바랍니다.\n신청 수수료: 60,000원\n기한을 넘기면 벌금금이 부과되거나 출국 조치될 수 있습니다.\n방문 예약: 하이코리아 (www.hikorea.go.kr), 문의 1345",
    "items": [
     {
      "kind": "NAME",
@@ -205,38 +199,43 @@
      "value": "경기도 안산시 단원구 원곡로 45, 201호"
     },
     {
+     "kind": "REFERENCE_NUMBER",
+     "value": "E-9 (비전문취업)"
+    },
+    {
      "kind": "ADDRESS",
-     "value": "하이코리아 (www.hikorea.go.kr)"
+     "value": "www.hikorea.go.kr"
     },
     {
      "kind": "AGENCY_CONTACT",
-     "value": "문의 1345"
+     "value": "1345"
     }
    ],
-   "outgoing": "서울출입국·외국인청 체류기간 만료 예정 안내\n성명: [NAME_1]\n외국인등록번호: [ID_NUMBER_1]\n체류자격: [REFERENCE_NUMBER_1]\n주소: [ADDRESS_2]\n체류기간 만료일: 2026년 12월 18일\n만료일 전까지 체류기간 연장허가를 신청하시기 바랍니다.\n신청 수수료: 60,000원\n기한을 넘기면 벌금규이 부과되거나 출국 조치될 수 있습니다.\n방문 예약: [ADDRESS_1], 문의 1345",
+   "outgoing": "서울출입국·외국인청 체류기간 만료 예정 안내\n성명: [NAME_1]\n외국인등록번호: [ID_NUMBER_1]\n체류자격: [REFERENCE_NUMBER_1]\n주소: [ADDRESS_1]\n체류기간 만료일: 2026년 12월 18일\n만료일 전까지 체류기간 연장허가를 신청하시기 바랍니다.\n신청 수수료: 60,000원\n기한을 넘기면 범죄금이 부과되거나 출국 조치될 수 있습니다.\n방문 예약: 하이코리아 ([ADDRESS_2]), 문의 1345",
    "alternates": [
     "기한을 넘기면 벌금금이 부과되거나 출국 조치될 수 있습니다."
    ]
   },
   {
    "id": "ko3",
-   "readSec": 10.557599999964237,
-   "explainSec": 2.048800000011921,
-   "checkSec": 8.11719999998808,
+   "readSec": 11.653,
+   "explainSec": 1.668100000023842,
+   "checkSec": 6.475,
    "consequenceFirst": true,
    "consequenceFinal": true,
    "finalDeadlineRight": true,
    "finalAmountRight": true,
    "final": {
-    "title": "Overdue resident tax demand notice",
+    "title": "Overdue resident tax notice",
     "deadline_iso": "2026-11-30",
     "amount": "12,870원",
     "if_ignored": "If you do not pay by the deadline, your property may be seized.",
     "corrected": [
-     "read as \"특장창\" / \"특장장\", understood as \"독촉장\" (demand notice)",
+     "read as \"마야구청\", understood as \"마포구청\" (Mapo-gu Office)",
+     "read as \"특장장\", understood as \"독촉장\" (demand notice)",
      "read as \"남세자\", understood as \"납세자\" (taxpayer)",
      "read as \"특장 납부기한\", understood as \"독촉 납부기한\" (overdue payment deadline)",
-     "read as \"기한일까지 받으면\", understood as \"기한까지 내지 않으면\" (if you do not pay by the deadline)"
+     "read as \"기한까지 없으면\", understood as \"기한까지 납부하지 않으면\" (if not paid by the deadline)"
     ]
    },
    "figuresRead": [
@@ -253,17 +252,33 @@
    "deadlineRight": true,
    "amountRight": true,
    "explained": {
-    "title": "Overdue Mapo-gu resident tax payment",
+    "title": "Resident tax overdue notice",
     "deadline_iso": "2026-11-30",
     "amount": "12,870원",
     "if_ignored": "Your property may be seized if you do not pay by the deadline.",
     "corrected": [
-     "read as \"특장창\", understood as \"독촉장\" (reminder/demand notice)"
+     "read as \"마야구청\", understood as \"마포구청\" (Mapo district office)"
     ]
    },
-   "transcript": "마포구청 2026년 8월 주민세(개인분) 특장창\n남세자: 다나카 유이 (TANAKA YUI)\n주소: 서울특별시 마포구 월드컵북로 88, 1203호\n전자납부번호: 11440-1-26-08-9034512\n당초 납부기한: 2026년 8월 31일\n세액: 12,500원 가산금: 370원\n특장 납부기한: 2026년 11월 30일\n납부할 총액: 12,870원\n기한일까지 받으면 재산이 압류될 수 있습니다.\n가상계좌: 우리은행 1005-903-778215",
-   "second": "마포구청 2026년 8월 주민세(개인분) 특장장\n남세자: 다니카 유이 (TANAKA YUI)\n주소: 서울특별시 마포구 월드컵북로 88, 1203호\n전자납부번호: 11440-1-26-08-9034512\n당초 납부기한: 2026년 8월 31일\n세액: 12,500원 가산금: 370원\n독촉 납부기한: 2026년 11월 30일\n납부할 총액: 12,870원\n기한까지 내지 않으면 재산이 압류될 수 있습니다.\n가상계좌: 우리은행 1005-903-778215",
+   "transcript": "마야구청 2026년 8월 주민세(개인분) 특장장\n남세자: 다나카 유이 (TANAKA YUI)\n주소: 서울특별시 마야구 월드컵북로 88, 1203호\n전자납부번호: 11440-1-26-08-9034512\n당초 납부기한: 2026년 8월 31일\n세액: 12,500원 가산금: 370원\n특장 납부기한: 2026년 11월 30일\n납부할 총액: 12,870원\n기한까지 없으면 재산이 압류될 수 있습니다.\n가상계좌: 1005-903-778215 (예금주: 마야구청)",
+   "second": "마포구청 2026년 8월 주민세(개인분) 특장장\n남세자: 다나카 유이 (TANAKA YUI)\n주소: 서울특별시 마포구 월드컵북로 88, 1203호\n전자납부번호: 11440-1-26-08-9034512\n당초 납부기한: 2026년 8월 31일\n세액: 12,500원 가산금: 370원\n특장 납부기한: 2026년 11월 30일\n납부할 총액: 12,870원\n기한까지 없으면 재산이 압류될 수 있습니다.\n가상계좌: 1005-903-778215 (예금주: 마포구청)",
    "items": [
+    {
+     "kind": "NAME",
+     "value": "다나카 유이 (TANAKA YUI)"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "서울특별시 마야구 월드컵북로 88, 1203호"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "11440-1-26-08-9034512"
+    },
+    {
+     "kind": "ACCOUNT",
+     "value": "1005-903-778215 (예금주: 마야구청)"
+    },
     {
      "kind": "NAME",
      "value": "다나카 유이 (TANAKA YUI)"
@@ -278,47 +293,25 @@
     },
     {
      "kind": "ACCOUNT",
-     "value": "우리은행 1005-903-778215"
-    },
-    {
-     "kind": "NAME",
-     "value": "다니카 유이 (TANAKA YUI)"
-    },
-    {
-     "kind": "ADDRESS",
-     "value": "서울특별시 마포구 월드컵북로 88, 1203호"
-    },
-    {
-     "kind": "ACCOUNT",
-     "value": "우리은행 1005-903-778215"
-    },
-    {
-     "kind": "AGENCY_CONTACT",
-     "value": "Tel"
-    },
-    {
-     "kind": "AGENCY_CONTACT",
-     "value": "문의"
+     "value": "1005-903-778215 (예금주: 마포구청)"
     }
    ],
-   "outgoing": "마포구청 2026년 8월 주민세(개인분) 특장창\n남세자: [NAME_1]\n주소: [ADDRESS_1]\n전자납부번호: [REFERENCE_NUMBER_1]\n당초 납부기한: 2026년 8월 31일\n세액: 12,500원 가산금: 370원\n특장 납부기한: 2026년 11월 30일\n납부할 총액: 12,870원\n기한일까지 받으면 재산이 압류될 수 있습니다.\n가상계좌: [ACCOUNT_1]",
+   "outgoing": "마야구청 2026년 8월 주민세(개인분) 특장장\n남세자: [NAME_1]\n주소: [ADDRESS_1]\n전자납부번호: [REFERENCE_NUMBER_1]\n당초 납부기한: 2026년 8월 31일\n세액: 12,500원 가산금: 370원\n특장 납부기한: 2026년 11월 30일\n납부할 총액: 12,870원\n기한까지 없으면 재산이 압류될 수 있습니다.\n가상계좌: [ACCOUNT_1]",
    "alternates": [
-    "마포구청 2026년 8월 주민세(개인분) 특장장",
-    "독촉 납부기한: 2026년 11월 30일",
-    "기한까지 내지 않으면 재산이 압류될 수 있습니다."
+    "마포구청 2026년 8월 주민세(개인분) 특장장"
    ]
   },
   {
    "id": "de1",
-   "readSec": 9.807800000011921,
-   "explainSec": 2.1800999999642374,
-   "checkSec": 8.775,
+   "readSec": 9.289100000023842,
+   "explainSec": 1.8561999999880792,
+   "checkSec": 5.727800000011921,
    "consequenceFirst": true,
    "consequenceFinal": true,
    "finalDeadlineRight": true,
    "finalAmountRight": true,
    "final": {
-    "title": "Income tax assessment notice",
+    "title": "2025 income tax assessment",
     "deadline_iso": "2026-12-14",
     "amount": "1.284,37 EUR",
     "if_ignored": "If you pay late, a late-payment surcharge of 1% per started month will be charged.",
@@ -338,16 +331,14 @@
    "deadlineRight": true,
    "amountRight": true,
    "explained": {
-    "title": "Income tax assessment notice",
+    "title": "Income tax notice of assessment",
     "deadline_iso": "2026-12-14",
     "amount": "1.284,37 EUR",
-    "if_ignored": "A late payment surcharge of 1% per started month will be charged for late payments.",
-    "corrected": [
-     "read as \"angenommen\", understood as \"angefangenem\" (started)"
-    ]
+    "if_ignored": "A late payment surcharge of 1 percent for each started month will be charged if paid late.",
+    "corrected": []
    },
    "transcript": "Finanzamt Neukölln Einkommensteuerbescheid\nHerrn Minjun Kim, Sonnenallee 214, 12059 Berlin\nSteuernummer: 16/432/09871\nBescheid über Einkommensteuer 2025\nNachzahlung: 1.284,37 EUR\nZahlbar bis: 14.12.2026\nIBAN: DE44 1005 0000 0190 0876 54\nBei verspäteter Zahlung wird ein Säumniszuschlag\nvon 1 % je angefangenem Monat erhoben.\nEinspruch ist innerhalb eines Monats möglich.",
-   "second": "Finanzamt Neukölln Einkommensteuerbescheid\nHerrn Minjun Kim, Sonnenallee 214, 12059 Berlin\nSteuernummer: 16/432/09871\nBescheid über Einkommensteuer 2025\nNachzahlung: 1.284,37 EUR\nZahlbar bis: 14.12.2026\nIBAN: DE44 1005 0000 0190 0876 54\nBei verspäteter Zahlung wird ein Säumniszuschlag\nvon 1 % je angenommen Monat erhoben.\nEinspruch ist innerhalb eines Monats möglich.",
+   "second": "Finanzamt Neukölln Einkommensteuerbescheid\nHerrn Minjun Kim, Sonnenallee 214, 12059 Berlin\nSteuernummer: 16/432/09871\nBescheid über Einkommensteuer 2025\nNachzahlung: 1.284,37 EUR\nZahlbar bis: 14.12.2026\nIBAN: DE44 1005 0000 0190 0876 54\nBei verspäteter Zahlung wird ein Säumniszuschlag\nvon 1 % je angefangenem Monat erhoben.\nEinspruch ist innerhalb eines Monats möglich.",
    "items": [
     {
      "kind": "NAME",
@@ -374,7 +365,7 @@
      "value": "Sonnenallee 214, 12059 Berlin"
     },
     {
-     "kind": "ID_NUMBER",
+     "kind": "REFERENCE_NUMBER",
      "value": "16/432/09871"
     },
     {
@@ -383,21 +374,19 @@
     }
    ],
    "outgoing": "Finanzamt Neukölln Einkommensteuerbescheid\n[NAME_1], [ADDRESS_1]\nSteuernummer: [ID_NUMBER_1]\nBescheid über Einkommensteuer 2025\nNachzahlung: 1.284,37 EUR\nZahlbar bis: 14.12.2026\nIBAN: [ACCOUNT_1]\nBei verspäteter Zahlung wird ein Säumniszuschlag\nvon 1 % je angefangenem Monat erhoben.\nEinspruch ist innerhalb eines Monats möglich.",
-   "alternates": [
-    "von 1 % je angenommen Monat erhoben."
-   ]
+   "alternates": []
   },
   {
    "id": "de2",
-   "readSec": 9.984600000023843,
-   "explainSec": 2.124699999988079,
-   "checkSec": 6.561699999988079,
+   "readSec": 9.562600000023842,
+   "explainSec": 1.7946000000238418,
+   "checkSec": 4.902799999952316,
    "consequenceFirst": true,
    "consequenceFinal": true,
    "finalDeadlineRight": true,
    "finalAmountRight": true,
    "final": {
-    "title": "Broadcasting fee payment reminder",
+    "title": "Overdue broadcasting fee payment reminder",
     "deadline_iso": "2026-12-05",
     "amount": "55,08 EUR",
     "if_ignored": "A late fee of 8,00 EUR will be charged and an official assessment notice (Festsetzungsbescheid) will be issued.",
@@ -417,10 +406,10 @@
    "deadlineRight": true,
    "amountRight": true,
    "explained": {
-    "title": "ARD ZDF Deutschlandradio Beitragsservice payment reminder",
+    "title": "Payment reminder for broadcasting fee",
     "deadline_iso": "2026-12-05",
     "amount": "55,08 EUR",
-    "if_ignored": "A late fee of 8,00 EUR will be charged and an official assessment notice (Festsetzungsbescheid) will be issued against you.",
+    "if_ignored": "If you do not pay, a late fee of 8,00 EUR will be charged and an assessment notice will be issued.",
     "corrected": []
    },
    "transcript": "Beitragsservice Zahlungs erinnerung\nFrau Seoyeon Park, Lindenstraße 8, 50674 Köln\nBeitragsnummer: 482 915 337\nRundfunkbeitrag 08.2026 bis 10.2026\nOffener Betrag: 55,08 EUR\nBitte zahlen Sie bis zum 05.12.2026.\nIBAN: DE07 3705 0198 1934 5521 06\nVerwendungszweck: 482915337\nAndernfalls wird ein Säumniszuschlag von 8,00 EUR fällig\nund ein Festsetzungsbescheid erlassen.",
@@ -443,10 +432,6 @@
      "value": "DE07 3705 0198 1934 5521 06"
     },
     {
-     "kind": "REFERENCE_NUMBER",
-     "value": "482915337"
-    },
-    {
      "kind": "NAME",
      "value": "Frau Seoyeon Park"
     },
@@ -463,18 +448,18 @@
      "value": "DE07 3705 0198 1934 5521 06"
     },
     {
-     "kind": "REFERENCE_NUMBER",
+     "kind": "ADDRESS",
      "value": "482915337"
     }
    ],
-   "outgoing": "Beitragsservice Zahlungs erinnerung\n[NAME_1], [ADDRESS_1]\nBeitragsnummer: [REFERENCE_NUMBER_1]\nRundfunkbeitrag 08.2026 bis 10.2026\nOffener Betrag: 55,08 EUR\nBitte zahlen Sie bis zum 05.12.2026.\nIBAN: [ACCOUNT_1]\nVerwendungszweck: [REFERENCE_NUMBER_2]\nAndernfalls wird ein Säumniszuschlag von 8,00 EUR fällig\nund ein Festsetzungsbescheid erlassen.",
+   "outgoing": "Beitragsservice Zahlungs erinnerung\n[NAME_1], [ADDRESS_1]\nBeitragsnummer: [REFERENCE_NUMBER_1]\nRundfunkbeitrag 08.2026 bis 10.2026\nOffener Betrag: 55,08 EUR\nBitte zahlen Sie bis zum 05.12.2026.\nIBAN: [ACCOUNT_1]\nVerwendungszweck: [ADDRESS_2]\nAndernfalls wird ein Säumniszuschlag von 8,00 EUR fällig\nund ein Festsetzungsbescheid erlassen.",
    "alternates": []
   },
   {
    "id": "ja1",
-   "readSec": 9.376,
-   "explainSec": 1.9835,
-   "checkSec": 5.5885,
+   "readSec": 9.13369999998808,
+   "explainSec": 1.8473000000119209,
+   "checkSec": 5.162300000011921,
    "consequenceFirst": true,
    "consequenceFinal": true,
    "finalDeadlineRight": true,
@@ -483,7 +468,7 @@
     "title": "National Health Insurance payment notice",
     "deadline_iso": "2026-11-30",
     "amount": "18,400円",
-    "if_ignored": "If you miss the deadline, late fees will be added and your property may be seized.",
+    "if_ignored": "If you do not pay by the deadline, late fees will be added and your property may be seized.",
     "corrected": []
    },
    "figuresRead": [
@@ -502,14 +487,14 @@
    "deadlineRight": true,
    "amountRight": true,
    "explained": {
-    "title": "Yokohama National Health Insurance payment notice",
+    "title": "Yokohama City National Health Insurance Payment Notice",
     "deadline_iso": "2026-11-30",
     "amount": "18,400円",
-    "if_ignored": "If you miss the deadline, a late fee may be added and your property may be seized.",
+    "if_ignored": "If you miss the deadline, a late fee will be added, and your assets may be seized.",
     "corrected": []
    },
-   "transcript": "横浜市 国民健康保険料 納付通知書\n氏名:キム ジヨン (KIM JIHOON) 様\n住所:神奈川県横浜市中区山下町123-4 コーポ山下 305号\n記号番号:横中 04-718265\n令和8年度 第6期分\n納付金額:18,400円\n納期限:令和8年11月30日\n納期限を過ぎると延滞金が加算され、\n財産の差押えを行う場合があります。\nお問い合わせ:045-671-2422",
-   "second": "横浜市 国民健康保険 納付通知書\n氏名:キム ジヨン (KIM JIHOON) 様\n住所:神奈川県横浜市中区山下町123-4 コーボ山下 305号\n記号番号:横中 04-718265\n令和8年度 第6期分\n納付金額:18,400円\n納期限:令和8年11月30日\n納期限を過ぎると延滞金が加算され、\n財産の差押えを行う場合があります。\nお問い合わせ:045-671-2422",
+   "transcript": "横浜市 国民健康保険料 納付通知書\n氏名:キム ジヨン (KIM JIHOON) 様\n住所:神奈川県横浜市中区山下町 123-4 コーポ山下 305号\n記号番号:横中 04-718265\n令和8年度 第6期分\n納付金額:18,400円\n納期限:令和8年11月30日\n納期限を過ぎると延滞金が加算され、\n財産の差押えを行う場合があります。\nお問い合わせ:045-671-2422",
+   "second": "横浜市国民健康保険 料 納付通知書\n氏名:キム ジヨン(KIM JIHOON)様\n住所:神奈川県横浜市中区山下町123−4 コーポ山下305号\n記号番号:横中 04-718265\n令和8年度 第6期分\n納付金額:18,400円\n納期限:令和8年11月30日\n納期限を過ぎると延滞金が加算され、\n財産の差押えを行う場合があります。\nお問い合わせ:045-671-2422",
    "items": [
     {
      "kind": "NAME",
@@ -517,7 +502,7 @@
     },
     {
      "kind": "ADDRESS",
-     "value": "神奈川県横浜市中区山下町123-4 コーポ山下 305号"
+     "value": "神奈川県横浜市中区山下町 123-4 コーポ山下 305号"
     },
     {
      "kind": "REFERENCE_NUMBER",
@@ -529,11 +514,11 @@
     },
     {
      "kind": "NAME",
-     "value": "キム ジヨン (KIM JIHOON)"
+     "value": "キム ジヨン(KIM JIHOON)"
     },
     {
      "kind": "ADDRESS",
-     "value": "神奈川県横浜市中区山下町123-4 コーボ山下 305号"
+     "value": "神奈川県横浜市中区山下町123−4 コーポ山下305号"
     },
     {
      "kind": "REFERENCE_NUMBER",
@@ -545,24 +530,22 @@
     }
    ],
    "outgoing": "横浜市 国民健康保険料 納付通知書\n氏名:[NAME_1] 様\n住所:[ADDRESS_1]\n記号番号:[REFERENCE_NUMBER_1]\n令和8年度 第6期分\n納付金額:18,400円\n納期限:令和8年11月30日\n納期限を過ぎると延滞金が加算され、\n財産の差押えを行う場合があります。\nお問い合わせ:045-671-2422",
-   "alternates": [
-    "横浜市 国民健康保険 納付通知書"
-   ]
+   "alternates": []
   },
   {
    "id": "ja2",
-   "readSec": 9.161899999976159,
-   "explainSec": 1.9704000000357629,
-   "checkSec": 8.515599999964238,
+   "readSec": 9.027100000023841,
+   "explainSec": 1.899199999988079,
+   "checkSec": 5.893,
    "consequenceFirst": true,
    "consequenceFinal": true,
    "finalDeadlineRight": true,
    "finalAmountRight": true,
    "final": {
-    "title": "Overdue tax payment reminder",
+    "title": "Overdue municipal and income tax reminder",
     "deadline_iso": "2026-12-10",
     "amount": "47,500円",
-    "if_ignored": "If you do not pay the full amount by the deadline, your salary, bank deposits, or other assets will be seized.",
+    "if_ignored": "If you do not pay in full by the deadline, your salary, bank deposits, or other assets will be seized.",
     "corrected": []
    },
    "figuresRead": [
@@ -579,34 +562,18 @@
    "deadlineRight": true,
    "amountRight": true,
    "explained": {
-    "title": "Osaka City tax reminder",
+    "title": "Osaka City Resident and Income Tax Demand Letter",
     "deadline_iso": "2026-12-10",
     "amount": "47,500円",
-    "if_ignored": "If you do not pay by the deadline, your salary, savings, or other assets may be seized.",
+    "if_ignored": "Osaka City will seize your salary, savings, or other assets.",
     "corrected": []
    },
-   "transcript": "大阪市 市役所 税務課 督促状\n納税義務者:イスア(LEE SUA)様\n住所:大阪府大阪市浪速区日本橋 3-5-12 メゾン日本橋 702\n通知書番号:27-1045-880231\n税額:46,300円 延滞金:1,200円\n合計:47,500円\n指定期限:令和8年12月10日\n指定期限までに完納されない場合は、\n給与・預貯金等の差押えを行います。\n口座振替:三井住友銀行 普通 7741025",
-   "second": "大阪市 市民税・所得税 督促状\n納税義務者:イ ス ア (LEE SUA) 様\n住所:大阪府大阪市淀区日本橋 3-5-12 メゾン日本橋 702\n通知書番号:27-1045-880231\n税額:46,300円 延滞金:1,200円\n合計:47,500円\n指定期限:令和8年12月10日\n指定期限までに完納れない場合は、\n給与等預金等の差押えを行います。\n口座振替:三井住友銀行 普通 7741025",
+   "transcript": "大阪市 市民税/所得税 督促状\n納税義務者:イスア(LEE SUA)様\n住所:大阪府大阪市淀区日本橋 3-5-12 メゾン日本橋 702\n通知書番号:27-1045-880231\n税額:46,300円 延滞金:1,200円\n合計:47,500円\n指定期限:令和8年12月10日\n指定期限までに完納されない場合は、\n給与や預貯金等の差押えを行います。\n口座振替:登録口座 普通 7741025",
+   "second": "大阪市 市民税・所得税 督促状\n納税義務者:イ ス ア (LEE SUA) 様\n住所:大阪府大阪市浪速区日本橋 3-5-12 メゾン日本橋 702\n通知書番号:27-1045-880231\n税額:46,300円 延滞金:1,200円\n合計:47,500円\n指定期限:令和8年12月10日\n指定期限までに完納されない場合、\n給与・預貯金等の差押えを行います。\n口座振替:登録口座 普通 7741025",
    "items": [
     {
      "kind": "NAME",
-     "value": "イスア(LEE SUA)様"
-    },
-    {
-     "kind": "ADDRESS",
-     "value": "大阪府大阪市浪速区日本橋 3-5-12 メゾン日本橋 702"
-    },
-    {
-     "kind": "REFERENCE_NUMBER",
-     "value": "27-1045-880231"
-    },
-    {
-     "kind": "ACCOUNT",
-     "value": "三井住友銀行 普通 7741025"
-    },
-    {
-     "kind": "NAME",
-     "value": "イ ス ア (LEE SUA)"
+     "value": "イスア(LEE SUA)"
     },
     {
      "kind": "ADDRESS",
@@ -618,27 +585,47 @@
     },
     {
      "kind": "ACCOUNT",
-     "value": "三井住友銀行 普通 7741025"
+     "value": "7741025"
+    },
+    {
+     "kind": "NAME",
+     "value": "イ ス ア (LEE SUA)"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "大阪府大阪市浪速区日本橋 3-5-12 メゾン日本橋 702"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "27-1045-880231"
+    },
+    {
+     "kind": "ACCOUNT",
+     "value": "7741025"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "Tel 06-6630-9111"
     }
    ],
-   "outgoing": "大阪市 市役所 税務課 督促状\n納税義務者:[NAME_1]\n住所:[ADDRESS_1]\n通知書番号:[REFERENCE_NUMBER_1]\n税額:46,300円 延滞金:1,200円\n合計:47,500円\n指定期限:令和8年12月10日\n指定期限までに完納されない場合は、\n給与・預貯金等の差押えを行います。\n口座振替:[ACCOUNT_1]",
+   "outgoing": "大阪市 市民税/所得税 督促状\n納税義務者:[NAME_1]様\n住所:[ADDRESS_1]\n通知書番号:[REFERENCE_NUMBER_1]\n税額:46,300円 延滞金:1,200円\n合計:47,500円\n指定期限:令和8年12月10日\n指定期限までに完納されない場合は、\n給与や預貯金等の差押えを行います。\n口座振替:登録口座 普通 [ACCOUNT_1]",
    "alternates": [
     "大阪市 市民税・所得税 督促状",
-    "指定期限までに完納れない場合は、",
-    "給与等預金等の差押えを行います。"
+    "指定期限までに完納されない場合、",
+    "給与・預貯金等の差押えを行います。"
    ]
   },
   {
    "id": "ja3",
-   "readSec": 9.474,
-   "explainSec": 1.7513999999761583,
-   "checkSec": 6.774900000035763,
+   "readSec": 9.405599999964236,
+   "explainSec": 1.8019000000357628,
+   "checkSec": 4.968699999988079,
    "consequenceFirst": true,
    "consequenceFinal": true,
    "finalDeadlineRight": true,
    "finalAmountRight": true,
    "final": {
-    "title": "Unpaid National Pension insurance bill",
+    "title": "Overdue National Pension insurance payment notice",
     "deadline_iso": "2026-12-25",
     "amount": "52,530円",
     "if_ignored": "If you do not pay by the deadline, a reminder notice will be sent and late fees may be charged.",
@@ -663,15 +650,15 @@
     "title": "National Pension Insurance Payment Notice",
     "deadline_iso": "2026-12-25",
     "amount": "52,530円",
-    "if_ignored": "If you do not pay by the deadline, a demand letter will be sent and a late fee may be charged.",
+    "if_ignored": "A demand letter may be sent and a late fee may be charged.",
     "corrected": []
    },
-   "transcript": "日本年金機構 国民年金保険 納付のご案内\n被保者名:チェ ミンソ (CHOI MINSEO) 様\n基礎年金番号:4821-675309\n住所:東京都新宿区大久保2-18-7 ハイツ大久保 201\n未納期間:令和8年7月~令和8年9月\n未納額:52,530円\n納付期限:令和8年12月25日\n期限までに納付がない場合、督促状を送付し、\n延滞金が課されることがあります。\n電話:0570-05-1165",
-   "second": "日本年金機構 国民年金保険 納付のご案内\n被保険者:チェ ミン (CHOI MINSEO) 様\n基礎年金番号:4821-675309\n住所:東京都新宿区大久保 2-18-7 ハイツ大久保 201\n未納期間:令和8年7月~令和8年9月\n未納額:52,530円\n納付期限:令和8年12月25日\n期限までに納付がない場合、督促状を送付し、\n延滞金が課されることがあります。\n電話:0570-05-1165",
+   "transcript": "日本年金機構 国民年金保険 納付のご案内\n被保険者:チェ ミン (CHOI MINSEO) 様\n基礎年金番号:4821-675309\n住所:東京都新宿区久保2-18-7 ハイツ久保 201\n未納期間:令和8年7月~令和8年9月\n未納額:52,530円\n納付期限:令和8年12月25日\n期限までに納付がない場合、督促状を送付し、\n延滞金が課されることがあります。\n電話:0570-05-1165",
+   "second": "日本年金機構 国民年金保険 納付のご案内\n被保険者:チェ ミン (CHOI MINSEO) 様\n基礎年金番号:4821-675309\n住所:東京都新宿区久保久保 2-18-7 ハイツ久保 201\n未納期間:令和8年7月~令和8年9月\n未納額:52,530円\n納付期限:令和8年12月25日\n期限までに納付がない場合、督促状を送付し、\n延滞金が課されることがあります。\n電話:0570-05-1165",
    "items": [
     {
      "kind": "NAME",
-     "value": "チェ ミンソ (CHOI MINSEO)"
+     "value": "チェ ミン (CHOI MINSEO)"
     },
     {
      "kind": "REFERENCE_NUMBER",
@@ -679,7 +666,7 @@
     },
     {
      "kind": "ADDRESS",
-     "value": "東京都新宿区大久保2-18-7 ハイツ大久保 201"
+     "value": "東京都新宿区久保2-18-7 ハイツ久保 201"
     },
     {
      "kind": "REFERENCE_NUMBER",
@@ -698,35 +685,43 @@
      "value": "チェ ミン (CHOI MINSEO)"
     },
     {
-     "kind": "ID_NUMBER",
+     "kind": "REFERENCE_NUMBER",
      "value": "4821-675309"
     },
     {
      "kind": "ADDRESS",
-     "value": "東京都新宿区大久保 2-18-7 ハイツ大久保 201"
+     "value": "東京都新宿区久保久保 2-18-7 ハイツ久保 201"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "令和8年7月~令和8年9月"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "令和8年12月25日"
     },
     {
      "kind": "PHONE",
      "value": "0570-05-1165"
     }
    ],
-   "outgoing": "日本年金機構 国民年金保険 納付のご案内\n被保者名:[NAME_1] 様\n基礎年金番号:[REFERENCE_NUMBER_1]\n住所:[ADDRESS_1]\n未納期間:令和8年7月~令和8年9月\n未納額:52,530円\n納付期限:令和8年12月25日\n期限までに納付がない場合、督促状を送付し、\n延滞金が課されることがあります。\n電話:[PHONE_1]",
+   "outgoing": "日本年金機構 国民年金保険 納付のご案内\n被保険者:[NAME_1] 様\n基礎年金番号:[REFERENCE_NUMBER_1]\n住所:[ADDRESS_1]\n未納期間:令和8年7月~令和8年9月\n未納額:52,530円\n納付期限:令和8年12月25日\n期限までに納付がない場合、督促状を送付し、\n延滞金が課されることがあります。\n電話:[PHONE_1]",
    "alternates": []
   },
   {
    "id": "en1",
-   "readSec": 9.266900000035763,
-   "explainSec": 2.106800000011921,
-   "checkSec": 6.013099999964237,
+   "readSec": 10.621199999988079,
+   "explainSec": 1.7764000000357627,
+   "checkSec": 5.27,
    "consequenceFirst": true,
    "consequenceFinal": true,
    "finalDeadlineRight": true,
    "finalAmountRight": true,
    "final": {
-    "title": "Council Tax reminder notice",
+    "title": "Overdue Council Tax reminder notice",
     "deadline_iso": "2026-11-27",
     "amount": "£164.00",
-    "if_ignored": "You will lose the right to pay by instalments and the full £1,148.00 will become due.",
+    "if_ignored": "If you do not pay, you will lose the right to pay by instalments and the full £1,148.00 will become due.",
     "corrected": []
    },
    "figuresRead": [
@@ -743,7 +738,7 @@
    "deadlineRight": true,
    "amountRight": true,
    "explained": {
-    "title": "Leeds City Council Council Tax Reminder Notice",
+    "title": "Council tax reminder notice",
     "deadline_iso": "2026-11-27",
     "amount": "£164.00",
     "if_ignored": "If you do not pay, you will lose the right to pay by instalments and the full £1,148.00 becomes due.",
@@ -797,8 +792,12 @@
      "value": "81940273"
     },
     {
-     "kind": "ACCOUNT",
-     "value": "40-27-15"
+     "kind": "PHONE",
+     "value": ""
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": ""
     }
    ],
    "outgoing": "Leeds City Council Council Tax Reminder Notice\n[NAME_1], [ADDRESS_1]\nAccount reference: [REFERENCE_NUMBER_1]\nYou have missed an instalment for 2026/27.\nAmount overdue: £164.00\nPay within 7 days, by 27 November 2026.\nIf you do not pay, you will lose the right to pay\nby instalments and the full £1,148.00 becomes due.\nNational Insurance number: [ID_NUMBER_1]\nSort code [ACCOUNT_1], account [ACCOUNT_2]",
@@ -806,9 +805,9 @@
   },
   {
    "id": "en2",
-   "readSec": 9.598600000023842,
-   "explainSec": 1.9160999999642372,
-   "checkSec": 5.525600000023842,
+   "readSec": 8.803099999964237,
+   "explainSec": 3.3792000000476836,
+   "checkSec": 5.5438999999761585,
    "consequenceFirst": true,
    "consequenceFinal": true,
    "finalDeadlineRight": true,
@@ -817,7 +816,7 @@
     "title": "Request for Evidence for Form I-765",
     "deadline_iso": "2027-01-06",
     "amount": "",
-    "if_ignored": "Your case may be denied.",
+    "if_ignored": "If they do not receive your response, your case may be denied.",
     "corrected": []
    },
    "figuresRead": [
@@ -834,18 +833,18 @@
    "deadlineRight": true,
    "amountRight": true,
    "explained": {
-    "title": "USCIS Request for Evidence",
+    "title": "Request for Evidence for Form I-765",
     "deadline_iso": "2027-01-06",
     "amount": "",
     "if_ignored": "Your case may be denied.",
     "corrected": []
    },
-   "transcript": "U.S. Citizenship and Immigration Services Request for Evidence\nApplicant: HAEYUN YOON\nA-Number: A218-407-563\nReceipt Number: IOE0927341586\nMailing address: 2210 Cedar St Apt 4B, Berkeley, CA 94709\nDate of birth: 03/14/1994\nWe need more information to process your Form I-765.\nYour response must be received by January 6, 2027.\nIf we do not receive it, your case may be denied.\nBiometrics fee already paid: $85.00",
+   "transcript": "U.S. Citizenship and Immigration Services Request for Evidence\nApplicant: HAEUN YOON\nA-Number: A218-407-563\nReceipt Number: IOE0927341586\nMailing address: 2210 Cedar St Apt 4B, Berkeley, CA 94709\nDate of birth: 03/14/1994\nWe need more information to process your Form I-765.\nYour response must be received by January 6, 2027.\nIf we do not receive it, your case may be denied.\nBiometrics fee already paid: $85.00",
    "second": "U.S. Citizenship and Immigration Services Request for Evidence\nApplicant: HAEUN YOON\nA-Number: A218-407-563\nReceipt Number: IOE0927341586\nMailing address: 2210 Cedar St Apt 4B, Berkeley, CA 94709\nDate of birth: 03/14/1994\nWe need more information to process your Form I-765.\nYour response must be received by January 6, 2027.\nIf we do not receive it, your case may be denied.\nBiometrics fee already paid: $85.00",
    "items": [
     {
      "kind": "NAME",
-     "value": "HAEYUN YOON"
+     "value": "HAEUN YOON"
     },
     {
      "kind": "ID_NUMBER",
