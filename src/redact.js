@@ -12,6 +12,9 @@ const DATE_PATTERNS = [
   /\b\d{1,2}\.\d{1,2}\.\d{4}\b/g,
   /\b\d{4}-\d{2}-\d{2}\b/g,
   /\b\d{1,2}\/\d{1,2}\/\d{4}\b/g,
+  // Year first with slashes or dots (2026/06/30, 2021.04.30.) and two-digit years (12.03.26, 11/30/21).
+  /\b\d{4}[\/.]\d{1,2}[\/.]\d{1,2}\b/g,
+  /(?<![\d.\/])\d{1,2}([\/.])\d{1,2}\1\d{2}(?![\d.\/])/g,
   new RegExp(`\\b\\d{1,2}(?:\\.|er)? (?:de )?(?:${MONTHS}) (?:de )?\\d{4}\\b`, 'gi'),
   new RegExp(`\\b(?:${MONTHS}) \\d{1,2}, \\d{4}\\b`, 'g'),
 ];
@@ -60,7 +63,9 @@ export function redact(rawText, items, vault = []) {
     const m = it.kind === 'NAME' && /^(.+?)\s*\(([^()]+)\)\s*$/.exec(normalize(it.value || ''));
     return m ? [{ kind: 'NAME', value: m[1] }, { kind: 'NAME', value: m[2] }] : [it];
     // Forms of address are not part of the name.
-  }).map((it) => (it.kind === 'NAME' ? { kind: 'NAME', value: normalize(it.value || '').replace(/\s*(様|殿|さん|님|귀하)$/, '').replace(LABEL, '') } : it));
+  }).map((it) => (it.kind === 'NAME' ? { kind: 'NAME', value: normalize(it.value || '').replace(/\s*(様|殿|さん|님|귀하)$/, '').replace(LABEL, '') } : it))
+    // An address is listed without the field label in front of it.
+    .map((it) => (it.kind === 'ADDRESS' ? { kind: 'ADDRESS', value: normalize(it.value || '').replace(/^(?:주소|住所|Adresse|Anschrift|Address|Dirección|Domicilio)[ :]+/i, '') } : it));
   // The model copies a name or an address from one reading; the other reading, or another strip
   // of the same page, may spell it a little differently. Those near-copies are masked as well.
   const near = listed.filter((it) => ['NAME', 'ADDRESS'].includes(it.kind)).flatMap((it) => {
@@ -83,6 +88,8 @@ export function redact(rawText, items, vault = []) {
   const accepted = [...listed, ...near]
     // A number is listed without the note printed after it, such as "(account holder: the agency)".
     .map((it) => ({ kind: it.kind, value: normalize(it.value || '').replace(['NAME', 'ADDRESS', 'HIDDEN'].includes(it.kind) ? /$^/ : /\s*\([^()]*\)\s*$/, '') }))
+    // A value made only of digits is a number, whatever the model called it.
+    .map((it) => (['NAME', 'ADDRESS'].includes(it.kind) && /^[\d\s\-\/.]+$/.test(it.value) ? { kind: 'NUMBER', value: it.value } : it))
     .filter((it) => it.kind !== 'AGENCY_CONTACT' && it.value.length > 1 && text.includes(it.value))
     .filter((it) => it.kind === 'BIRTH_DATE' || it.kind === 'HIDDEN' || !isDateOrAmount(it.value))
     .sort((a, b) => b.value.length - a.value.length);
@@ -100,7 +107,19 @@ export function redact(rawText, items, vault = []) {
   for (let i = accepted.length - 1; i >= 0; i -= 1) if (accepted[i].kind === 'PHONE' && keep.includes(accepted[i].value)) accepted.splice(i, 1);
 
   let out = text;
-  for (const it of accepted) out = out.split(it.value).join(tokenFor(it.kind, it.value));
+  // A listed value is masked wherever it stands, except inside a date or an amount: the model
+  // sometimes lists a bare year or two digits of one, and masking those would break the deadline.
+  for (const it of accepted) {
+    if (it.kind === 'BIRTH_DATE' || it.kind === 'HIDDEN') { out = out.split(it.value).join(tokenFor(it.kind, it.value)); continue; }
+    const spans = []; [...DATE_PATTERNS, ...AMOUNT_PATTERNS].forEach((p) => { for (const m of out.matchAll(p)) spans.push([m.index, m.index + m[0].length]); });
+    let next = '', at = 0, used = false;
+    for (let i = out.indexOf(it.value); i !== -1; i = out.indexOf(it.value, i + it.value.length)) {
+      const end = i + it.value.length;
+      if (spans.some(([x, y]) => i < y && end > x && !(i <= x && end >= y))) continue;
+      next += out.slice(at, i) + tokenFor(it.kind, it.value); at = end; used = true;
+    }
+    if (used) out = next + out.slice(at);
+  }
 
   // A name is often printed twice: native script and Latin letters in parentheses.
   // Both spellings go under one placeholder so the cloud model sees one person.
@@ -203,7 +222,7 @@ export function typedNames(text, vault) {
 // spellings of the same name, or a native spelling next to its Latin one. Those are joined, and
 // placeholders are renumbered in the order they appear, so the cloud model sees one person as
 // [NAME_1] throughout. texts: masked texts that share the vault. Returns the rewritten texts.
-export function tidyTokens(texts, vault) {
+export function tidyTokens(texts, vault, items = []) {
   const distance = (x, y) => { let row = [...Array(y.length + 1).keys()]; for (let i = 1; i <= x.length; i += 1) { const next = [i]; for (let j = 1; j <= y.length; j += 1) next[j] = Math.min(row[j] + 1, next[j - 1] + 1, row[j - 1] + (x[i - 1] === y[j - 1] ? 0 : 1)); row = next; } return row[y.length]; };
   const parent = new Map(); const find = (t) => (parent.get(t) && parent.get(t) !== t ? find(parent.get(t)) : t); const join = (x, y) => parent.set(find(y), find(x));
   const names = vault.filter((v) => v.token.startsWith('[NAME_'));
@@ -211,11 +230,19 @@ export function tidyTokens(texts, vault) {
     const p = [...x.value.replace(/\s/g, '').toLowerCase()], q = [...y.value.replace(/\s/g, '').toLowerCase()];
     if (x.token !== y.token && Math.min(p.length, q.length) >= 5 && distance(p, q) / Math.max(p.length, q.length) <= 0.34) join(x.token, y.token);
   }));
+  // The on-device model lists a name as "native spelling (Latin spelling)": both are one person.
+  for (const it of items) {
+    const m = it.kind === 'NAME' && /^(.+?)\s*\(([^()]+)\)\s*$/.exec(normalize(it.value || ''));
+    if (!m) continue;
+    const a = names.find((v) => v.value.includes(m[1].replace(LABEL, ''))), b = names.find((v) => v.value === m[2] || v.value.toLowerCase() === m[2].toLowerCase());
+    if (a && b && a.token !== b.token) join(b.token, a.token);
+  }
   const all = texts.join('\n');
-  for (const m of all.matchAll(/(\[NAME_\d+\])\s*\((\[NAME_\d+\])\)/g)) join(m[1], m[2]);
+  // Two name placeholders side by side on a line, with or without parentheses, are one person's two spellings.
+  for (const m of all.matchAll(/(\[NAME_\d+\])[ \t]*[(\/,]?[ \t]*(\[NAME_\d+\])/g)) join(m[1], m[2]);
   const order = [...new Set([...(all.match(/\[[A-Z_]+_\d+\]/g) || []), ...vault.map((v) => v.token)].map(find))];
   const count = {}; const renamed = new Map(order.map((t) => { const kind = t.slice(1, t.lastIndexOf('_')); count[kind] = (count[kind] || 0) + 1; return [t, `[${kind}_${count[kind]}]`]; }));
   const rename = (t) => renamed.get(find(t)) || t;
   vault.forEach((v) => { v.token = rename(v.token); });
-  return texts.map((text) => text.replace(/\[[A-Z_]+_\d+\]/g, rename).replace(/(\[NAME_\d+\])(?:\s*\(\1\)|\s+\1)+/g, '$1'));
+  return texts.map((text) => text.replace(/\[[A-Z_]+_\d+\]/g, rename).replace(/(\[NAME_\d+\])(?:[ \t]*\(\1\)|[ \t]*[\/,]?[ \t]*\1)+/g, '$1'));
 }

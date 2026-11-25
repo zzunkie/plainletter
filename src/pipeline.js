@@ -128,7 +128,7 @@ export async function readLetter(pages, where, onStep = () => {}) {
   console.info('readLetter seconds', t.slice(1).map((x, i) => ((x - t[i]) / 1000).toFixed(1)).join(' / '));
   const alternates = differingLines(a.outgoing, b.outgoing);
   aliasUnused(vault, `${a.outgoing}\n${alternates.join('\n')}`);
-  const tidy = tidyTokens([a.outgoing, ...alternates], vault);
+  const tidy = tidyTokens([a.outgoing, ...alternates], vault, items);
   // One placeholder can hold several spellings of a value. The one both readings agree on comes
   // first, because that is the spelling put back into answers and replies; for a name, the Latin
   // spelling printed beside it is read more reliably than a native-script one.
@@ -174,6 +174,27 @@ LETTER (first reading):
 ${letter.outgoing}
 ${letter.alternates.length ? `\nLINES READ DIFFERENTLY ON THE SECOND PASS:\n${letter.alternates.join('\n')}` : ''}`;
 
+// The on-device model often copies a bare number ("777,00") and a numeric date. The amount gets
+// the currency printed next to it in the letter, and a numeric deadline is written out for the reader.
+const LOCALES = { English: 'en-US', Korean: 'ko-KR', Japanese: 'ja-JP', German: 'de-DE', French: 'fr-FR', Spanish: 'es-ES', Vietnamese: 'vi-VN', Chinese: 'zh-CN', Portuguese: 'pt-BR', Russian: 'ru-RU', Arabic: 'ar', Hindi: 'hi-IN', Indonesian: 'id-ID', Thai: 'th-TH', Turkish: 'tr-TR', Polish: 'pl-PL', Ukrainian: 'uk-UA', Tagalog: 'fil-PH', Nepali: 'ne-NP' };
+const CURRENCY = '€|EUR|원|円|USD|GBP|CHF|CAD|AUD|MXN|zł|kr|[$£¥₩]';
+function tidyFigures(json, letter, language) {
+  const out = { ...json };
+  const bare = String(out.amount || '').trim();
+  if (/^\d[\d.,' ]*$/.test(bare)) {
+    // The model may swap the decimal mark (777.00 for 777,00), so either mark matches.
+    const n = bare.replace(/[.,]/g, '[.,]').replace(/ /g, '\\s?');
+    const m = new RegExp(`(?:${CURRENCY})\\s?${n}(?![\\d.,])|(?<![\\d.,])${n}\\s?(?:${CURRENCY})`).exec(`${out.amount_printed_as || ''}\n${letter.outgoing}`);
+    if (m) out.amount = m[0];
+  }
+  const iso = /^(\d{4})-(\d{2})-(\d{2})$/.exec(out.deadline_iso || '');
+  if (iso && !/\p{L}/u.test(out.deadline || '')) {
+    const locale = Object.entries(LOCALES).find(([name]) => language.startsWith(name))?.[1] || 'en-US';
+    out.deadline = new Intl.DateTimeFormat(locale, { dateStyle: 'long', timeZone: 'UTC' }).format(new Date(Date.UTC(+iso[1], +iso[2] - 1, +iso[3])));
+  }
+  return out;
+}
+
 // Online this runs in the cloud. Offline the same call falls back to the on-device model.
 // With check: true the larger cloud model reads the same masked text again, slower and more carefully.
 // onDeviceOnly: the on-device model explains even when a connection is available (used to compare the two).
@@ -187,7 +208,7 @@ export async function explain(letter, language, { check = false, onDeviceOnly = 
   const raw = result.response.text();
   const json = JSON.parse(raw.slice(raw.indexOf('{'), raw.lastIndexOf('}') + 1));
   const back = (v) => (typeof v === 'string' ? restore(v, letter.vault) : Array.isArray(v) ? v.map(back) : v);
-  return { source: result.response.inferenceSource || 'in_cloud', checked: check, ...Object.fromEntries(Object.entries(json).map(([k, v]) => [k, back(v)])) };
+  return { source: result.response.inferenceSource || 'in_cloud', checked: check, ...Object.fromEntries(Object.entries(tidyFigures(json, letter, language)).map(([k, v]) => [k, back(v)])) };
 }
 
 // A reply to the office, written in the cloud from the masked letter. The model addresses and
@@ -202,20 +223,22 @@ const REPLY_SCHEMA = {
   required: ['letter', 'translation', 'send_to'],
 };
 export const REPLY_KINDS = { installments: 'ask to pay in installments', objection: 'object to this decision or notice', extension: 'ask for more time to pay or to respond' };
-export async function draftReply(letter, language, explanation, kind) {
+// reason: what the person typed about their own situation; it is masked like a follow-up question.
+export async function draftReply(letter, language, explanation, kind, reason = '') {
+  const said = reason.trim() ? maskWithVault(reason, letter.vault) : '';
   const model = getGenerativeModel(ai, {
     mode: InferenceMode.ONLY_IN_CLOUD,
     inCloudParams: { model: CHECK_MODEL, generationConfig: { responseMimeType: 'application/json', responseSchema: REPLY_SCHEMA, thinkingConfig: { thinkingLevel: 'low' } } },
   }, { timeout: 45000 });
-  const prompt = `Below is an official letter. Personal details were replaced with tokens such as [NAME_1] before the text left the person's device. Write a short, polite, formal reply from the person to the office that sent it, to ${REPLY_KINDS[kind]}. Write it in the language of the official letter and follow that country's conventions for such a letter. Refer to the amounts, dates and legal basis the letter itself gives. Keep every token exactly as written and use them for the sender block, the reference line and the signature; never guess what is behind one. The text was copied from a photo by a small on-device model and can contain misread characters; write the words the letter means, not the misreadings. Put each part of the reply on its own line, with blank lines between paragraphs. State no personal circumstances the letter does not mention: where the person has to add a reason, leave one line in square brackets saying what to fill in, in ${language}. Today's date is ${new Date().toISOString().slice(0, 10)}. The translation is in ${language}.
+  const prompt = `Below is an official letter. Personal details were replaced with tokens such as [NAME_1] before the text left the person's device. Write a short, polite, formal reply from the person to the office that sent it, to ${REPLY_KINDS[kind]}. Write it in the language of the official letter and follow that country's conventions for such a letter. Refer to the amounts, dates and legal basis the letter itself gives. Keep every token exactly as written and use them for the sender block, the reference line and the signature; never guess what is behind one. The text was copied from a photo by a small on-device model and can contain misread characters; write the words the letter means, not the misreadings. Put each part of the reply on its own line, with blank lines between paragraphs. ${said ? `The person describes their situation below, in their own words and language; put it into the reply in the letter's language, in the register such a letter uses, and state no other personal circumstances.` : `State no personal circumstances the letter does not mention: where the person has to add a reason, leave one line in square brackets saying what to fill in, in ${language}.`} Today's date is ${new Date().toLocaleDateString('en-CA')}. The translation is in ${language}.
 
-WHAT THE LETTER IS: ${maskWithVault(`${explanation.what_it_is} ${explanation.objection || ''}`, letter.vault)}
+WHAT THE LETTER IS: ${maskWithVault(`${explanation.what_it_is} ${explanation.objection || ''}`, letter.vault)}${said ? `\n\nTHE PERSON'S SITUATION: ${said}` : ''}
 
 LETTER:
 ${letter.outgoing}`;
   const raw = (await model.generateContent(prompt)).response.text();
   const json = JSON.parse(raw.slice(raw.indexOf('{'), raw.lastIndexOf('}') + 1));
-  return { sent: prompt, letter: restore(json.letter, letter.vault), translation: restore(json.translation, letter.vault), sendTo: restore(json.send_to || '', letter.vault) };
+  return { sent: prompt, said, letter: restore(json.letter, letter.vault), translation: restore(json.translation, letter.vault), sendTo: restore(json.send_to || '', letter.vault) };
 }
 
 // Follow-up questions go to the cloud as a chat. The question is masked with the same vault.
@@ -240,7 +263,9 @@ export function startFollowUp(letter, language, explanation) {
     const seen = new Set();
     // Government and agency sites are listed first.
     const official = (t) => (/(\.go\.[a-z]{2}|\.gov(\.[a-z]{2})?|\.or\.kr|\.gouv\.fr|\.bund\.de|\.admin\.ch|\.gv\.at|europa\.eu)$/.test(t || '') ? 0 : 1);
-    const sources = (grounding?.groundingChunks || []).map((c) => c.web).filter((w) => w?.uri && !seen.has(w.title) && seen.add(w.title)).map((w) => ({ title: w.title || w.uri, uri: w.uri })).sort((a, b) => official(a.title) - official(b.title)).slice(0, 4);
+    const sources = (grounding?.groundingChunks || []).map((c) => c.web).filter((w) => w?.uri && !seen.has(w.title) && seen.add(w.title)).map((w) => ({ title: w.title || w.uri, uri: w.uri })).sort((a, b) => official(a.title) - official(b.title)).slice(0, 4)
+      // When an official site is among the sources, personal blogs are left out of the list.
+      .filter((w, i, all) => official(all[0].title) !== 0 || !/tistory|blog|medium\.com|brunch|wordpress|velog/i.test(w.title + w.uri));
     return { sent, typed, answer: restore(masked, vault), sources, searchWidget: grounding?.searchEntryPoint?.renderedContent || '' };
   };
   return async (question, onText = () => {}) => {

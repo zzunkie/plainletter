@@ -252,6 +252,7 @@ function answer(letter, ex, record) {
     <div id="qa"></div>
     <h2 style="margin-top:28px">Write back to the office</h2>
     <p class="hint" style="margin:0 0 10px">In the cloud, Gemini writes the reply in the letter's language from the masked text. Your name, address, and reference numbers are added on this device.</p>
+    <input id="reason" class="reason" placeholder="Your situation, in your own language (optional), e.g., I already paid on November 3" autocomplete="off">
     <div class="row" id="reply-kinds"><button class="ghost" data-reply="installments">Ask to pay in installments</button><button class="ghost" data-reply="objection">Object</button><button class="ghost" data-reply="extension">Ask for more time</button></div>
     <div id="reply"></div>`}
   </article>`;
@@ -268,9 +269,9 @@ function answer(letter, ex, record) {
   app.querySelectorAll('[data-reply]').forEach((b) => { b.onclick = async () => {
     const box = $('#reply'); box.innerHTML = '<p class="hint">Writing the reply…</p>';
     try {
-      const r = await draftReply(letter, state.language, ex, b.dataset.reply);
-      box.innerHTML = `<div class="reply"><pre class="letter">${back(r.letter)}</pre><div class="row"><button class="ghost" id="copy">Copy</button><a id="save" download="reply.txt"><button class="ghost">Download</button></a></div>${r.sendTo ? `<p class="hint">Send it to: ${back(r.sendTo)}</p>` : ''}<details><summary>What it says in ${esc(state.language)}</summary><p class="said">${back(r.translation).replace(/\n/g, '<br>')}</p></details></div>`;
-      $('#copy').onclick = () => navigator.clipboard.writeText(r.letter);
+      const r = await draftReply(letter, state.language, ex, b.dataset.reply, $('#reason').value);
+      box.innerHTML = `<div class="reply">${r.said ? `<p class="sent">Sent to the cloud as: ${esc(r.said)}</p>` : ''}<pre class="letter">${back(r.letter)}</pre><div class="row"><button class="ghost" id="copy">Copy</button><button class="ghost" id="print">Print or save as PDF</button><a id="save" download="reply.txt"><button class="ghost">Download</button></a></div>${r.sendTo ? `<p class="hint">Send it to: ${back(r.sendTo)}</p>` : ''}<details><summary>What it says in ${esc(state.language)}</summary><p class="said">${back(r.translation).replace(/\n/g, '<br>')}</p></details></div>`;
+      $('#copy').onclick = () => navigator.clipboard.writeText(r.letter); $('#print').onclick = () => window.print();
       $('#save').href = URL.createObjectURL(new Blob([r.letter], { type: 'text/plain' }));
     } catch (e) { console.error(e); box.innerHTML = '<p class="err">Couldn\'t write the reply. Check your connection and try again.</p>'; }
   }; });

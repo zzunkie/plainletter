@@ -69,3 +69,5 @@ ul.fixed { padding-left:20px; margin:0 0 6px; font-size:15px; }
 .band.left span { right:auto; left:0; }
 .reply { margin-top:12px; } .reply pre.letter { white-space:pre-wrap; word-break:break-word; font:14px/1.65 ui-monospace,SFMono-Regular,Menlo,"Noto Sans KR","Noto Sans JP",monospace; background:var(--soft); border:1px solid var(--line); border-radius:8px; padding:14px 16px; margin:0 0 10px; }
 .reply details { margin-top:10px; } .reply summary { cursor:pointer; font-size:14px; color:var(--send); } .reply .said { font-size:14px; color:var(--muted); margin-top:8px; }
+.reason { display:block; width:100%; font:inherit; padding:10px 12px; border:1px solid var(--line); border-radius:8px; margin:0 0 10px; } .reply .sent { font-size:13px; color:var(--send); margin:0 0 8px; }
+@media print { body * { visibility:hidden; } .reply pre.letter, .reply pre.letter * { visibility:visible; } .reply pre.letter { position:absolute; left:0; top:0; width:100%; border:0; background:#fff; font-size:12pt; padding:0; } .photo { position:static; max-height:none; } }

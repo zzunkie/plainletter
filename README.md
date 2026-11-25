@@ -51,11 +51,22 @@ To evaluate without overfitting, we wrote the letters in four groups and changed
 
 The last row shows why the explanation runs in the cloud. Gemini Nano reads and masks these pages well, yet from the same masked text it got the amount right on 11 of 18 letters and the consequence on 7, compared with 18 and 17 from the cloud models. Across all 84 letters, the cloud double-check also listed and corrected 204 misread words. When the device is offline, the app still returns the on-device explanation and says that it came from the on-device model.
 
-We also tested 11 official sample notices published by public agencies, including several low-resolution web images: IRS notices CP14 (in English and Spanish) and CP503, two UK council tax bills, a New York City water bill, a North Rhine-Westphalia income tax assessment, a Cologne property charges notice, two French traffic fine notices from ANTAI, and a Tokyo ward's resident tax notice (`eval/real/sources.json` lists each source). On these pages, Gemini Nano transcribed 15 of 19 amounts and deadlines, and across three runs, 0 to 3 of 47 identifiers remained in the text sent to the cloud. On the first run, the cloud explanation gave the right amount to pay on 6 of 11 notices; four of the five misses were bills paid in installments or at a reduced early rate, where the app reported the yearly total or the standard fine. After we updated the prompt to report the next installment, a rerun matched the amount on 10 of 11, the required action on 10 of 11, the consequence on 11 of 11, and the deadline on 6 of the 8 notices that print one.
+We also tested 59 sample notices published by public agencies to explain their bills. These cover tax, fine, court, and utility notices from agencies in the US, Canada, the UK, New Zealand, Germany, Austria, Switzerland, France, Spain, Colombia, Japan, and South Korea, many of them low-resolution web images (`eval/real/sources.json` lists each source). We ran them in three batches and changed prompts and rules only between batches.
+
+| Check | 14 confirmation samples, run once after the last change | Next 34 samples (first run → after the date fix) | First 11 samples (after the installment fix; first run → after for amount due) |
+|---|---|---|---|
+| Personal identifiers remaining in text sent to the cloud | 0 of 28 | 2 of 95 → 0 of 95 | 0 to 3 of 47 across three runs |
+| Amounts and deadlines transcribed correctly by Gemini Nano | 24 of 28 | 48 of 54 → 49 of 54 | 15 of 19 |
+| Amount due matches the notice | 12 of 14 | 31 of 34 → 31 of 34 | 6 of 11 → 10 of 11 |
+| Deadline matches the notice, where one is printed | 12 of 14 | 17 of 25 → 21 of 25 | 6 of 8 |
+| Required action stated correctly | 14 of 14 | 31 of 34 → 30 of 34 | 10 of 11 |
+| Consequence of ignoring the notice stated correctly | 14 of 14 | 33 of 34 → 33 of 34 | 11 of 11 |
+
+On the first 11 samples, four of the five wrong amounts were on bills paid in installments or at a reduced early rate, where the app reported the yearly total or the standard fine; we updated the prompt to report the next installment or the reduced amount currently due. On the next 34, the first run matched 17 of 25 deadlines. In four of the misses the masking step had hidden the date: `src/redact.js` did not recognize dates written as 2026/06/30 or 12.03.26, and Gemini Nano had listed a bare year as an account number. We added those formats and stopped masking inside recognized dates and amounts, and a rerun matched 21 of 25. We then collected 14 more samples and ran them once. Most of the remaining misses were on guide pages that print the sample bill at a reduced size inside an explanation, making the small digits hard for Gemini Nano to read.
 
 `eval/eval.html` runs the app's production pipeline, including the double-check, over the rendered page images. `eval/docs/` stores every letter and answer key, and `eval/out/runs/` logs the per-letter transcripts, outgoing masked text, and explanations for each run.
 
-On an Apple M5 Max test machine, the on-device pass took a median of 32 seconds per letter on our set and 44 seconds on the agency samples, the initial cloud explanation took 2 to 3 seconds, and the double-check took a median of 9 seconds.
+On an Apple M5 Max test machine, the on-device pass took a median of 32 seconds per letter on our set and about 50 seconds on the agency samples, the initial cloud explanation took 2 to 6 seconds, and the double-check took a median of 9 to 10 seconds across the two sets.
 
 To reproduce, start `npm run dev`, start Chrome with `--remote-debugging-port=9333`, and run:
 

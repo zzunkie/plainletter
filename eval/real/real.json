@@ -1,542 +1,1993 @@
 [
-  {
-    "id": "rde01",
-    "lang": "German",
-    "country": "Germany",
-    "type": "income tax assessment (Einkommensteuerbescheid, specimen)",
-    "pages": [
-      "de01-nrw-einkommensteuerbescheid-1.png",
-      "de01-nrw-einkommensteuerbescheid-2.png"
-    ],
-    "usable": true,
-    "pii": [
-      "Max Mustermann",
-      "Frieda Mustermann",
-      "Erfolgsstraße 123",
-      "5123/4567/8910",
-      "01 234 567 890",
-      "10 987 654 321",
-      "DE12 3456",
-      "7891 0123 4567 89"
-    ],
-    "critical": [
-      "9.340,40 €"
-    ],
-    "amount_due": "9.340,40 €",
-    "deadline_iso": "",
-    "agency_contacts": [
-      "0123 4567 89 - 10"
-    ],
-    "action": [
-      "pay|transfer"
-    ],
-    "consequence": [],
-    "note": "The payment date is printed only as the placeholder 'TT.MM.2015', so deadline_iso is empty and critical holds only the amount. The taxpayers' refund IBAN is split over two lines ('DE12 3456' / '7891 0123 4567 89'). The letter is addressed to the tax adviser Fischer GmbH, Alter Münzweg 99 (not counted as recipient PII). Pages 3-9 were not rendered; any late-payment consequence (Säumniszuschläge) would be there."
-  },
-  {
-    "id": "rde02",
-    "lang": "German",
-    "country": "Germany",
-    "type": "municipal property levies notice (Grundbesitzabgaben, Musterbescheid)",
-    "pages": [
-      "de02-koeln-grundbesitzabgaben-1.png"
-    ],
-    "usable": true,
-    "pii": [
-      "Petra Mustermann",
-      "Musterstr. 1",
-      "145.509.350.016",
-      "218/310-3-11111-1"
-    ],
-    "critical": [
-      "604,12 EUR",
-      "15.02.2025"
-    ],
-    "amount_due": "604,12 EUR",
-    "deadline_iso": "2025-02-15",
-    "agency_contacts": [
-      "(0221) 221- 36600"
-    ],
-    "action": [
-      "pay|direct debit|instal|transfer"
-    ],
-    "consequence": [],
-    "note": "Total 2.416,43 EUR is payable in four instalments (604,12 EUR on 15.02.2025, 15.05.2025, 15.08.2025; 604,07 EUR on 15.11.2025); the first instalment is used as the amount to pay next. Fax number is partly hidden by an annotation and not included."
-  },
-  {
-    "id": "rde03",
-    "lang": "German",
-    "country": "Germany",
-    "type": "pension information statement (Renteninformation)",
-    "pages": [
-      "de03-drv-renteninformation-1.png",
-      "de03-drv-renteninformation-2.png"
-    ],
-    "usable": false,
-    "why": "An annotated pension forecast that asks the reader to pay or do nothing by any date.",
-    "pii": [],
-    "critical": [],
-    "amount_due": "",
-    "deadline_iso": "",
-    "agency_contacts": [],
-    "action": [],
-    "consequence": []
-  },
-  {
-    "id": "ren01",
-    "lang": "English",
-    "country": "United States",
-    "type": "federal tax balance due notice (IRS CP14)",
-    "pages": [
-      "en01-irs-cp14-1.png",
-      "en01-irs-cp14-2.png"
-    ],
-    "usable": true,
-    "pii": [
-      "JOHN AND MARY SMITH",
-      "123 N HARRIS ST",
-      "John and Mary Smith",
-      "123 N Harris Street"
-    ],
-    "critical": [
-      "$1,075.21",
-      "February 20, 2018"
-    ],
-    "amount_due": "$1,075.21",
-    "deadline_iso": "2018-02-20",
-    "agency_contacts": [],
-    "action": [
-      "pay|payment plan"
-    ],
-    "consequence": [
-      "penalt|interest"
-    ],
-    "note": "The IRS phone number is printed masked (1-800-xxx-xxxx), so agency_contacts is empty; SSN and caller ID are masked too."
-  },
-  {
-    "id": "ren02",
-    "lang": "English",
-    "country": "United States",
-    "type": "federal tax second reminder (IRS CP503)",
-    "pages": [
-      "en02-irs-cp503-1.png",
-      "en02-irs-cp503-2.png"
-    ],
-    "usable": true,
-    "pii": [
-      "JAMES & KAREN Q. HINDS",
-      "22 BOULDER STREET",
-      "James Q. Hinds",
-      "22 Boulder Street"
-    ],
-    "critical": [
-      "$9,533.53",
-      "January 29, 2018"
-    ],
-    "amount_due": "$9,533.53",
-    "deadline_iso": "2018-01-29",
-    "agency_contacts": [],
-    "action": [
-      "pay|payment plan"
-    ],
-    "consequence": [
-      "penalt|interest"
-    ],
-    "note": "Phone number printed masked (1-800-xxx-xxxx). Only pages 1-2 of 5 were rendered; later pages may add lien/levy consequences."
-  },
-  {
-    "id": "ren03",
-    "lang": "English",
-    "country": "United Kingdom",
-    "type": "council tax bill (annotated fictitious example)",
-    "pages": [
-      "en03-bathnes-council-tax-bill-1.png"
-    ],
-    "usable": true,
-    "pii": [
-      "MR A SAMPLE",
-      "1 ANY STREET",
-      "1234567"
-    ],
-    "critical": [
-      "14.01",
-      "01-APR-2021"
-    ],
-    "amount_due": "14.01",
-    "deadline_iso": "2021-04-01",
-    "agency_contacts": [],
-    "action": [
-      "pay|direct debit|instal"
-    ],
-    "consequence": [],
-    "note": "Total amount due £162.01 (balance 158.01 after a 2020/21 credit) is collected by monthly Direct Debit: 14.01 on 01-APR-2021, then 16.00 on the 1st of each month to 01-JAN-2022; the first instalment is used as the amount to pay next. Instalment amounts are printed without a £ sign. Phone numbers are on the reverse, not rendered."
-  },
-  {
-    "id": "ren04",
-    "lang": "English",
-    "country": "United Kingdom",
-    "type": "council tax bill (annotated example)",
-    "pages": [
-      "en04-towerhamlets-council-tax-bill.png"
-    ],
-    "usable": true,
-    "pii": [
-      "Mr J R Hartley",
-      "12 Fly Fishing Road",
-      "E3 2NN",
-      "1012345678"
-    ],
-    "critical": [
-      "£135.51",
-      "10/04/2024"
-    ],
-    "amount_due": "£135.51",
-    "deadline_iso": "2024-04-10",
-    "agency_contacts": [],
-    "action": [
-      "pay|direct debit|instal|collect"
-    ],
-    "consequence": [],
-    "note": "Bill total £1675.51 collected by Direct Debit in 12 instalments (£135.51 on 10/04/2024, then £140.00 on the 10th of each month to 10/03/2025); the first instalment is used as the amount to pay next. No phone number is printed."
-  },
-  {
-    "id": "ren05",
-    "lang": "English",
-    "country": "United States",
-    "type": "water and wastewater bill (NYC DEP sample)",
-    "pages": [
-      "en05-nyc-dep-water-bill.png"
-    ],
-    "usable": true,
-    "pii": [
-      "JOHN SMITH",
-      "100 MAIN STREET"
-    ],
-    "critical": [
-      "$113.68",
-      "9/7/2021"
-    ],
-    "amount_due": "$113.68",
-    "deadline_iso": "2021-09-07",
-    "agency_contacts": [
-      "(718) 595-7000"
-    ],
-    "action": [
-      "pay"
-    ],
-    "consequence": [
-      "interest"
-    ],
-    "note": "Account number (0000000000000) and BBL (1-00000-0000) are all-zero placeholders and are not counted as PII."
-  },
-  {
-    "id": "res01",
-    "lang": "Spanish",
-    "country": "United States",
-    "type": "federal tax balance due notice (IRS CP14, Spanish)",
-    "pages": [
-      "es01-irs-cp14-spanish-1.png",
-      "es01-irs-cp14-spanish-2.png"
-    ],
-    "usable": true,
-    "pii": [
-      "s018999546711s",
-      "JAMES & KAREN Q. HINDS",
-      "22 BOULDER STREET",
-      "James & Karen Q. Hinds",
-      "22 Boulder Street"
-    ],
-    "critical": [
-      "$537.40",
-      "23 de marzo de 2009"
-    ],
-    "amount_due": "$537.40",
-    "deadline_iso": "2009-03-23",
-    "agency_contacts": [],
-    "action": [
-      "pay|payment plan|instal"
-    ],
-    "consequence": [
-      "interest|penalt"
-    ],
-    "note": "Phone numbers printed masked (1-XXX-XXX-XXXX). The caller ID '1234' is printed but left out of pii as a generic placeholder."
-  },
-  {
-    "id": "res02",
-    "lang": "Spanish",
-    "country": "Spain",
-    "type": "traffic fine notification (Barcelona, blank template)",
-    "pages": [
-      "es02-barcelona-multa-radar-1.png",
-      "es02-barcelona-multa-radar-2.png"
-    ],
-    "usable": false,
-    "why": "A blank template with no recipient, amount, file number or dates filled in.",
-    "pii": [],
-    "critical": [],
-    "amount_due": "",
-    "deadline_iso": "",
-    "agency_contacts": [],
-    "action": [],
-    "consequence": []
-  },
-  {
-    "id": "res03",
-    "lang": "Spanish",
-    "country": "Spain",
-    "type": "property tax (IBI) assessment cover letter (Barcelona, blank template)",
-    "pages": [
-      "es03-barcelona-ibi-liquidacion-1.png",
-      "es03-barcelona-ibi-liquidacion-2.png"
-    ],
-    "usable": false,
-    "why": "The rendered pages are a blank cover letter and legal notes with no recipient, amount or due date (the payment document would be on unrendered pages 3-5).",
-    "pii": [],
-    "critical": [],
-    "amount_due": "",
-    "deadline_iso": "",
-    "agency_contacts": [],
-    "action": [],
-    "consequence": []
-  },
-  {
-    "id": "rfr01",
-    "lang": "French",
-    "country": "France",
-    "type": "speeding fine notice (ANTAI avis de contravention, specimen)",
-    "pages": [
-      "fr01-antai-avis-contravention.png"
-    ],
-    "usable": true,
-    "pii": [
-      "3562670000",
-      "DURANT PAUL",
-      "BATIMENT 1",
-      "1 RUE DES ACCACIAS",
-      "AA-123-AA"
-    ],
-    "critical": [
-      "45 €"
-    ],
-    "amount_due": "45 €",
-    "deadline_iso": "",
-    "agency_contacts": [
-      "0811 10 20 30"
-    ],
-    "action": [
-      "pay|contest|dispute"
-    ],
-    "consequence": [
-      "increas|rais|surcharg|major|180"
-    ],
-    "note": "Reduced fine 45 € if paid within 15 days from 07/02/2017 (30 days for electronic payment), standard 68 €, raised to 180 € if neither paid nor contested within 45 days. No explicit pay-by date is printed, so deadline_iso is empty (15 days from 07/02/2017 would be about 2017-02-22). The 45 € reduced amount is used as the amount to pay next."
-  },
-  {
-    "id": "rfr02",
-    "lang": "French",
-    "country": "France",
-    "type": "increased fixed fine notice (amende forfaitaire majorée, specimen)",
-    "pages": [
-      "fr02-antai-amende-forfaitaire-majoree.png"
-    ],
-    "usable": true,
-    "pii": [
-      "DURANT PAUL",
-      "BATIMENT 1",
-      "1 RUE DES ACCACIAS",
-      "011171668680",
-      "011171000000",
-      "AA-123-AA"
-    ],
-    "critical": [
-      "144,00 €"
-    ],
-    "amount_due": "144,00 €",
-    "deadline_iso": "",
-    "agency_contacts": [
-      "08 11 10 20 30"
-    ],
-    "action": [
-      "pay|contest|dispute"
-    ],
-    "consequence": [
-      "prosecut|enforc|legal|proceed|collect|cost|fee"
-    ],
-    "note": "180,00 € is due; 144,00 € (20% reduction) if paid within 30 days from 10.02.2017 (45 days for card payment). No explicit pay-by date is printed, so deadline_iso is empty. The court registration number (greffe) is partly covered by the SPECIMEN stamp and left out."
-  },
-  {
-    "id": "rfr03",
-    "lang": "French",
-    "country": "France",
-    "type": "income tax notice reading guide for non-residents (DGFiP)",
-    "pages": [
-      "fr03-dgfip-avis-impot-non-resident-1.png"
-    ],
-    "usable": false,
-    "why": "A reading guide showing only an extract of the tax calculation, with no recipient and no payment date.",
-    "pii": [],
-    "critical": [],
-    "amount_due": "",
-    "deadline_iso": "",
-    "agency_contacts": [],
-    "action": [],
-    "consequence": []
-  },
-  {
-    "id": "rja01",
-    "lang": "Japanese",
-    "country": "Japan",
-    "type": "resident tax payment notice (Edogawa ward, annotated example)",
-    "pages": [
-      "ja01-edogawa-juminzei-notice-1.png"
-    ],
-    "usable": true,
-    "pii": [
-      "課税　太郎",
-      "江戸川区中央１丁目４番１号"
-    ],
-    "critical": [
-      "22,300",
-      "令和８年６月３０日"
-    ],
-    "amount_due": "22,300",
-    "deadline_iso": "2026-06-30",
-    "agency_contacts": [],
-    "action": [
-      "pay|instal"
-    ],
-    "consequence": [],
-    "note": "Annual tax 79,800 yen; 77,300 yen by ordinary collection in four instalments (22,300 by 令和８年６月３０日, 19,000 by 令和８年８月３１日, 18,000, 18,000), or 77,300 in one payment by 令和８年６月３０日; the first instalment is used. Text is small at this resolution: full-width digits and the ideographic space in the name are inferred from the letter spacing. Notice/inquiry numbers (11-0000000000-00-00, 22-0000000000-00-00) are zero placeholders and not counted. No phone number is printed."
-  },
-  {
-    "id": "rja02",
-    "lang": "Japanese",
-    "country": "Japan",
-    "type": "pension statement postcard reading guide (ねんきん定期便)",
-    "pages": [
-      "ja02-nenkin-teikibin-1.png",
-      "ja02-nenkin-teikibin-2.png"
-    ],
-    "usable": false,
-    "why": "A blank pension statement layout with an explanation of each field; no values and nothing to pay or do.",
-    "pii": [],
-    "critical": [],
-    "amount_due": "",
-    "deadline_iso": "",
-    "agency_contacts": [],
-    "action": [],
-    "consequence": []
-  },
-  {
-    "id": "rja03",
-    "lang": "Japanese",
-    "country": "Japan",
-    "type": "national health insurance premium notice reading guide (Bunkyo ward)",
-    "pages": [
-      "ja03-bunkyo-kokuho-notice-1.png"
-    ],
-    "usable": false,
-    "why": "Only the recipient's name and address are filled in; all premium amounts and due dates are blank.",
-    "pii": [],
-    "critical": [],
-    "amount_due": "",
-    "deadline_iso": "",
-    "agency_contacts": [],
-    "action": [],
-    "consequence": []
-  },
-  {
-    "id": "rja04",
-    "lang": "Japanese",
-    "country": "Japan",
-    "type": "residence card reading guide",
-    "pages": [
-      "ja04-isa-zairyu-card-guide-1.png",
-      "ja04-isa-zairyu-card-guide-2.png"
-    ],
-    "usable": false,
-    "why": "A guide to reading a residence card, not a notice.",
-    "pii": [],
-    "critical": [],
-    "amount_due": "",
-    "deadline_iso": "",
-    "agency_contacts": [],
-    "action": [],
-    "consequence": []
-  },
-  {
-    "id": "rko01",
-    "lang": "Korean",
-    "country": "South Korea",
-    "type": "housing property tax notice (statutory blank form)",
-    "pages": [
-      "ko01-law-property-tax-notice-1.png",
-      "ko01-law-property-tax-notice-2.png"
-    ],
-    "usable": false,
-    "why": "A blank statutory form with no recipient, amount or due date.",
-    "pii": [],
-    "critical": [],
-    "amount_due": "",
-    "deadline_iso": "",
-    "agency_contacts": [],
-    "action": [],
-    "consequence": []
-  },
-  {
-    "id": "rko02",
-    "lang": "Korean",
-    "country": "South Korea",
-    "type": "traffic violation and fine pre-notice (statutory blank form)",
-    "pages": [
-      "ko02-law-traffic-fine-prenotice-1.png",
-      "ko02-law-traffic-fine-prenotice-2.png"
-    ],
-    "usable": false,
-    "why": "A blank statutory form with no recipient, amount or due date.",
-    "pii": [],
-    "critical": [],
-    "amount_due": "",
-    "deadline_iso": "",
-    "agency_contacts": [],
-    "action": [],
-    "consequence": []
-  },
-  {
-    "id": "rko03",
-    "lang": "Korean",
-    "country": "South Korea",
-    "type": "traffic penalty fine notice (statutory blank form)",
-    "pages": [
-      "ko03-law-traffic-penalty-notice-1.png",
-      "ko03-law-traffic-penalty-notice-2.png"
-    ],
-    "usable": false,
-    "why": "A blank statutory form with no offender, amount or due date.",
-    "pii": [],
-    "critical": [],
-    "amount_due": "",
-    "deadline_iso": "",
-    "agency_contacts": [],
-    "action": [],
-    "consequence": []
-  },
-  {
-    "id": "rko04",
-    "lang": "Korean",
-    "country": "South Korea",
-    "type": "water bill (Seoul, blank layout)",
-    "pages": [
-      "ko04-seoul-water-bill.jpg"
-    ],
-    "usable": false,
-    "why": "A blank bill layout with no customer, amount or due date.",
-    "pii": [],
-    "critical": [],
-    "amount_due": "",
-    "deadline_iso": "",
-    "agency_contacts": [],
-    "action": [],
-    "consequence": []
-  }
+ {
+  "id": "rde01",
+  "lang": "German",
+  "country": "Germany",
+  "type": "income tax assessment (Einkommensteuerbescheid, specimen)",
+  "pages": [
+   "de01-nrw-einkommensteuerbescheid-1.png",
+   "de01-nrw-einkommensteuerbescheid-2.png"
+  ],
+  "usable": true,
+  "pii": [
+   "Max Mustermann",
+   "Frieda Mustermann",
+   "Erfolgsstraße 123",
+   "5123/4567/8910",
+   "01 234 567 890",
+   "10 987 654 321",
+   "DE12 3456",
+   "7891 0123 4567 89"
+  ],
+  "critical": [
+   "9.340,40 €"
+  ],
+  "amount_due": "9.340,40 €",
+  "deadline_iso": "",
+  "agency_contacts": [
+   "0123 4567 89 - 10"
+  ],
+  "action": [
+   "pay|transfer"
+  ],
+  "consequence": [],
+  "note": "The payment date is printed only as the placeholder 'TT.MM.2015', so deadline_iso is empty and critical holds only the amount. The taxpayers' refund IBAN is split over two lines ('DE12 3456' / '7891 0123 4567 89'). The letter is addressed to the tax adviser Fischer GmbH, Alter Münzweg 99 (not counted as recipient PII). Pages 3-9 were not rendered; any late-payment consequence (Säumniszuschläge) would be there."
+ },
+ {
+  "id": "rde02",
+  "lang": "German",
+  "country": "Germany",
+  "type": "municipal property levies notice (Grundbesitzabgaben, Musterbescheid)",
+  "pages": [
+   "de02-koeln-grundbesitzabgaben-1.png"
+  ],
+  "usable": true,
+  "pii": [
+   "Petra Mustermann",
+   "Musterstr. 1",
+   "145.509.350.016",
+   "218/310-3-11111-1"
+  ],
+  "critical": [
+   "604,12 EUR",
+   "15.02.2025"
+  ],
+  "amount_due": "604,12 EUR",
+  "deadline_iso": "2025-02-15",
+  "agency_contacts": [
+   "(0221) 221- 36600"
+  ],
+  "action": [
+   "pay|direct debit|instal|transfer"
+  ],
+  "consequence": [],
+  "note": "Total 2.416,43 EUR is payable in four instalments (604,12 EUR on 15.02.2025, 15.05.2025, 15.08.2025; 604,07 EUR on 15.11.2025); the first instalment is used as the amount to pay next. Fax number is partly hidden by an annotation and not included."
+ },
+ {
+  "id": "rde03",
+  "lang": "German",
+  "country": "Germany",
+  "type": "pension information statement (Renteninformation)",
+  "pages": [
+   "de03-drv-renteninformation-1.png",
+   "de03-drv-renteninformation-2.png"
+  ],
+  "usable": false,
+  "why": "An annotated pension forecast that asks the reader to pay or do nothing by any date.",
+  "pii": [],
+  "critical": [],
+  "amount_due": "",
+  "deadline_iso": "",
+  "agency_contacts": [],
+  "action": [],
+  "consequence": []
+ },
+ {
+  "id": "ren01",
+  "lang": "English",
+  "country": "United States",
+  "type": "federal tax balance due notice (IRS CP14)",
+  "pages": [
+   "en01-irs-cp14-1.png",
+   "en01-irs-cp14-2.png"
+  ],
+  "usable": true,
+  "pii": [
+   "JOHN AND MARY SMITH",
+   "123 N HARRIS ST",
+   "John and Mary Smith",
+   "123 N Harris Street"
+  ],
+  "critical": [
+   "$1,075.21",
+   "February 20, 2018"
+  ],
+  "amount_due": "$1,075.21",
+  "deadline_iso": "2018-02-20",
+  "agency_contacts": [],
+  "action": [
+   "pay|payment plan"
+  ],
+  "consequence": [
+   "penalt|interest"
+  ],
+  "note": "The IRS phone number is printed masked (1-800-xxx-xxxx), so agency_contacts is empty; SSN and caller ID are masked too."
+ },
+ {
+  "id": "ren02",
+  "lang": "English",
+  "country": "United States",
+  "type": "federal tax second reminder (IRS CP503)",
+  "pages": [
+   "en02-irs-cp503-1.png",
+   "en02-irs-cp503-2.png"
+  ],
+  "usable": true,
+  "pii": [
+   "JAMES & KAREN Q. HINDS",
+   "22 BOULDER STREET",
+   "James Q. Hinds",
+   "22 Boulder Street"
+  ],
+  "critical": [
+   "$9,533.53",
+   "January 29, 2018"
+  ],
+  "amount_due": "$9,533.53",
+  "deadline_iso": "2018-01-29",
+  "agency_contacts": [],
+  "action": [
+   "pay|payment plan"
+  ],
+  "consequence": [
+   "penalt|interest"
+  ],
+  "note": "Phone number printed masked (1-800-xxx-xxxx). Only pages 1-2 of 5 were rendered; later pages may add lien/levy consequences."
+ },
+ {
+  "id": "ren03",
+  "lang": "English",
+  "country": "United Kingdom",
+  "type": "council tax bill (annotated fictitious example)",
+  "pages": [
+   "en03-bathnes-council-tax-bill-1.png"
+  ],
+  "usable": true,
+  "pii": [
+   "MR A SAMPLE",
+   "1 ANY STREET",
+   "1234567"
+  ],
+  "critical": [
+   "14.01",
+   "01-APR-2021"
+  ],
+  "amount_due": "14.01",
+  "deadline_iso": "2021-04-01",
+  "agency_contacts": [],
+  "action": [
+   "pay|direct debit|instal"
+  ],
+  "consequence": [],
+  "note": "Total amount due £162.01 (balance 158.01 after a 2020/21 credit) is collected by monthly Direct Debit: 14.01 on 01-APR-2021, then 16.00 on the 1st of each month to 01-JAN-2022; the first instalment is used as the amount to pay next. Instalment amounts are printed without a £ sign. Phone numbers are on the reverse, not rendered."
+ },
+ {
+  "id": "ren04",
+  "lang": "English",
+  "country": "United Kingdom",
+  "type": "council tax bill (annotated example)",
+  "pages": [
+   "en04-towerhamlets-council-tax-bill.png"
+  ],
+  "usable": true,
+  "pii": [
+   "Mr J R Hartley",
+   "12 Fly Fishing Road",
+   "E3 2NN",
+   "1012345678"
+  ],
+  "critical": [
+   "£135.51",
+   "10/04/2024"
+  ],
+  "amount_due": "£135.51",
+  "deadline_iso": "2024-04-10",
+  "agency_contacts": [],
+  "action": [
+   "pay|direct debit|instal|collect"
+  ],
+  "consequence": [],
+  "note": "Bill total £1675.51 collected by Direct Debit in 12 instalments (£135.51 on 10/04/2024, then £140.00 on the 10th of each month to 10/03/2025); the first instalment is used as the amount to pay next. No phone number is printed."
+ },
+ {
+  "id": "ren05",
+  "lang": "English",
+  "country": "United States",
+  "type": "water and wastewater bill (NYC DEP sample)",
+  "pages": [
+   "en05-nyc-dep-water-bill.png"
+  ],
+  "usable": true,
+  "pii": [
+   "JOHN SMITH",
+   "100 MAIN STREET"
+  ],
+  "critical": [
+   "$113.68",
+   "9/7/2021"
+  ],
+  "amount_due": "$113.68",
+  "deadline_iso": "2021-09-07",
+  "agency_contacts": [
+   "(718) 595-7000"
+  ],
+  "action": [
+   "pay"
+  ],
+  "consequence": [
+   "interest"
+  ],
+  "note": "Account number (0000000000000) and BBL (1-00000-0000) are all-zero placeholders and are not counted as PII."
+ },
+ {
+  "id": "res01",
+  "lang": "Spanish",
+  "country": "United States",
+  "type": "federal tax balance due notice (IRS CP14, Spanish)",
+  "pages": [
+   "es01-irs-cp14-spanish-1.png",
+   "es01-irs-cp14-spanish-2.png"
+  ],
+  "usable": true,
+  "pii": [
+   "s018999546711s",
+   "JAMES & KAREN Q. HINDS",
+   "22 BOULDER STREET",
+   "James & Karen Q. Hinds",
+   "22 Boulder Street"
+  ],
+  "critical": [
+   "$537.40",
+   "23 de marzo de 2009"
+  ],
+  "amount_due": "$537.40",
+  "deadline_iso": "2009-03-23",
+  "agency_contacts": [],
+  "action": [
+   "pay|payment plan|instal"
+  ],
+  "consequence": [
+   "interest|penalt"
+  ],
+  "note": "Phone numbers printed masked (1-XXX-XXX-XXXX). The caller ID '1234' is printed but left out of pii as a generic placeholder."
+ },
+ {
+  "id": "res02",
+  "lang": "Spanish",
+  "country": "Spain",
+  "type": "traffic fine notification (Barcelona, blank template)",
+  "pages": [
+   "es02-barcelona-multa-radar-1.png",
+   "es02-barcelona-multa-radar-2.png"
+  ],
+  "usable": false,
+  "why": "A blank template with no recipient, amount, file number or dates filled in.",
+  "pii": [],
+  "critical": [],
+  "amount_due": "",
+  "deadline_iso": "",
+  "agency_contacts": [],
+  "action": [],
+  "consequence": []
+ },
+ {
+  "id": "res03",
+  "lang": "Spanish",
+  "country": "Spain",
+  "type": "property tax (IBI) assessment cover letter (Barcelona, blank template)",
+  "pages": [
+   "es03-barcelona-ibi-liquidacion-1.png",
+   "es03-barcelona-ibi-liquidacion-2.png"
+  ],
+  "usable": false,
+  "why": "The rendered pages are a blank cover letter and legal notes with no recipient, amount or due date (the payment document would be on unrendered pages 3-5).",
+  "pii": [],
+  "critical": [],
+  "amount_due": "",
+  "deadline_iso": "",
+  "agency_contacts": [],
+  "action": [],
+  "consequence": []
+ },
+ {
+  "id": "rfr01",
+  "lang": "French",
+  "country": "France",
+  "type": "speeding fine notice (ANTAI avis de contravention, specimen)",
+  "pages": [
+   "fr01-antai-avis-contravention.png"
+  ],
+  "usable": true,
+  "pii": [
+   "3562670000",
+   "DURANT PAUL",
+   "BATIMENT 1",
+   "1 RUE DES ACCACIAS",
+   "AA-123-AA"
+  ],
+  "critical": [
+   "45 €"
+  ],
+  "amount_due": "45 €",
+  "deadline_iso": "",
+  "agency_contacts": [
+   "0811 10 20 30"
+  ],
+  "action": [
+   "pay|contest|dispute"
+  ],
+  "consequence": [
+   "increas|rais|surcharg|major|180"
+  ],
+  "note": "Reduced fine 45 € if paid within 15 days from 07/02/2017 (30 days for electronic payment), standard 68 €, raised to 180 € if neither paid nor contested within 45 days. No explicit pay-by date is printed, so deadline_iso is empty (15 days from 07/02/2017 would be about 2017-02-22). The 45 € reduced amount is used as the amount to pay next."
+ },
+ {
+  "id": "rfr02",
+  "lang": "French",
+  "country": "France",
+  "type": "increased fixed fine notice (amende forfaitaire majorée, specimen)",
+  "pages": [
+   "fr02-antai-amende-forfaitaire-majoree.png"
+  ],
+  "usable": true,
+  "pii": [
+   "DURANT PAUL",
+   "BATIMENT 1",
+   "1 RUE DES ACCACIAS",
+   "011171668680",
+   "011171000000",
+   "AA-123-AA"
+  ],
+  "critical": [
+   "144,00 €"
+  ],
+  "amount_due": "144,00 €",
+  "deadline_iso": "",
+  "agency_contacts": [
+   "08 11 10 20 30"
+  ],
+  "action": [
+   "pay|contest|dispute"
+  ],
+  "consequence": [
+   "prosecut|enforc|legal|proceed|collect|cost|fee"
+  ],
+  "note": "180,00 € is due; 144,00 € (20% reduction) if paid within 30 days from 10.02.2017 (45 days for card payment). No explicit pay-by date is printed, so deadline_iso is empty. The court registration number (greffe) is partly covered by the SPECIMEN stamp and left out."
+ },
+ {
+  "id": "rfr03",
+  "lang": "French",
+  "country": "France",
+  "type": "income tax notice reading guide for non-residents (DGFiP)",
+  "pages": [
+   "fr03-dgfip-avis-impot-non-resident-1.png"
+  ],
+  "usable": false,
+  "why": "A reading guide showing only an extract of the tax calculation, with no recipient and no payment date.",
+  "pii": [],
+  "critical": [],
+  "amount_due": "",
+  "deadline_iso": "",
+  "agency_contacts": [],
+  "action": [],
+  "consequence": []
+ },
+ {
+  "id": "rja01",
+  "lang": "Japanese",
+  "country": "Japan",
+  "type": "resident tax payment notice (Edogawa ward, annotated example)",
+  "pages": [
+   "ja01-edogawa-juminzei-notice-1.png"
+  ],
+  "usable": true,
+  "pii": [
+   "課税　太郎",
+   "江戸川区中央１丁目４番１号"
+  ],
+  "critical": [
+   "22,300",
+   "令和８年６月３０日"
+  ],
+  "amount_due": "22,300",
+  "deadline_iso": "2026-06-30",
+  "agency_contacts": [],
+  "action": [
+   "pay|instal"
+  ],
+  "consequence": [],
+  "note": "Annual tax 79,800 yen; 77,300 yen by ordinary collection in four instalments (22,300 by 令和８年６月３０日, 19,000 by 令和８年８月３１日, 18,000, 18,000), or 77,300 in one payment by 令和８年６月３０日; the first instalment is used. Text is small at this resolution: full-width digits and the ideographic space in the name are inferred from the letter spacing. Notice/inquiry numbers (11-0000000000-00-00, 22-0000000000-00-00) are zero placeholders and not counted. No phone number is printed."
+ },
+ {
+  "id": "rja02",
+  "lang": "Japanese",
+  "country": "Japan",
+  "type": "pension statement postcard reading guide (ねんきん定期便)",
+  "pages": [
+   "ja02-nenkin-teikibin-1.png",
+   "ja02-nenkin-teikibin-2.png"
+  ],
+  "usable": false,
+  "why": "A blank pension statement layout with an explanation of each field; no values and nothing to pay or do.",
+  "pii": [],
+  "critical": [],
+  "amount_due": "",
+  "deadline_iso": "",
+  "agency_contacts": [],
+  "action": [],
+  "consequence": []
+ },
+ {
+  "id": "rja03",
+  "lang": "Japanese",
+  "country": "Japan",
+  "type": "national health insurance premium notice reading guide (Bunkyo ward)",
+  "pages": [
+   "ja03-bunkyo-kokuho-notice-1.png"
+  ],
+  "usable": false,
+  "why": "Only the recipient's name and address are filled in; all premium amounts and due dates are blank.",
+  "pii": [],
+  "critical": [],
+  "amount_due": "",
+  "deadline_iso": "",
+  "agency_contacts": [],
+  "action": [],
+  "consequence": []
+ },
+ {
+  "id": "rja04",
+  "lang": "Japanese",
+  "country": "Japan",
+  "type": "residence card reading guide",
+  "pages": [
+   "ja04-isa-zairyu-card-guide-1.png",
+   "ja04-isa-zairyu-card-guide-2.png"
+  ],
+  "usable": false,
+  "why": "A guide to reading a residence card, not a notice.",
+  "pii": [],
+  "critical": [],
+  "amount_due": "",
+  "deadline_iso": "",
+  "agency_contacts": [],
+  "action": [],
+  "consequence": []
+ },
+ {
+  "id": "rko01",
+  "lang": "Korean",
+  "country": "South Korea",
+  "type": "housing property tax notice (statutory blank form)",
+  "pages": [
+   "ko01-law-property-tax-notice-1.png",
+   "ko01-law-property-tax-notice-2.png"
+  ],
+  "usable": false,
+  "why": "A blank statutory form with no recipient, amount or due date.",
+  "pii": [],
+  "critical": [],
+  "amount_due": "",
+  "deadline_iso": "",
+  "agency_contacts": [],
+  "action": [],
+  "consequence": []
+ },
+ {
+  "id": "rko02",
+  "lang": "Korean",
+  "country": "South Korea",
+  "type": "traffic violation and fine pre-notice (statutory blank form)",
+  "pages": [
+   "ko02-law-traffic-fine-prenotice-1.png",
+   "ko02-law-traffic-fine-prenotice-2.png"
+  ],
+  "usable": false,
+  "why": "A blank statutory form with no recipient, amount or due date.",
+  "pii": [],
+  "critical": [],
+  "amount_due": "",
+  "deadline_iso": "",
+  "agency_contacts": [],
+  "action": [],
+  "consequence": []
+ },
+ {
+  "id": "rko03",
+  "lang": "Korean",
+  "country": "South Korea",
+  "type": "traffic penalty fine notice (statutory blank form)",
+  "pages": [
+   "ko03-law-traffic-penalty-notice-1.png",
+   "ko03-law-traffic-penalty-notice-2.png"
+  ],
+  "usable": false,
+  "why": "A blank statutory form with no offender, amount or due date.",
+  "pii": [],
+  "critical": [],
+  "amount_due": "",
+  "deadline_iso": "",
+  "agency_contacts": [],
+  "action": [],
+  "consequence": []
+ },
+ {
+  "id": "rko04",
+  "lang": "Korean",
+  "country": "South Korea",
+  "type": "water bill (Seoul, blank layout)",
+  "pages": [
+   "ko04-seoul-water-bill.jpg"
+  ],
+  "usable": false,
+  "why": "A blank bill layout with no customer, amount or due date.",
+  "pii": [],
+  "critical": [],
+  "amount_due": "",
+  "deadline_iso": "",
+  "agency_contacts": [],
+  "action": [],
+  "consequence": []
+ },
+ {
+  "id": "rde04",
+  "lang": "German",
+  "country": "Germany",
+  "type": "municipal property tax notice (Grundbesitzabgabenbescheid, Musterbescheid)",
+  "pages": [
+   "de04-kaiserslautern-grundbesitzabgaben-1.jpg"
+  ],
+  "usable": true,
+  "pii": [
+   "Musterstr. 1"
+  ],
+  "critical": [
+   "250,00 €",
+   "15.05.25"
+  ],
+  "amount_due": "250,00 €",
+  "deadline_iso": "2025-05-15",
+  "agency_contacts": [
+   "+49 631 365-2555"
+  ],
+  "action": [
+   "pay|transfer|direct debit|instal"
+  ],
+  "consequence": [],
+  "note": "Annual Grundsteuer B 500,00 € is payable in three instalments in the current year (250,00 € on 15.05.25, 125,00 € on 15.08.25 and 15.11.25) and four of 125,00 € in later years; the first instalment is used as the amount to pay next. No recipient block is filled in; Kassenzeichen (xxxxxx-0100-x) and Aktenzeichen (71900000000000000) are placeholders and not counted. Page 2 (remaining explanations) was not rendered."
+ },
+ {
+  "id": "rde05",
+  "lang": "German",
+  "country": "Germany",
+  "type": "waste disposal fee notice (Forderungsbescheid Abfallentsorgungsgebühren, Muster)",
+  "pages": [
+   "de05-mannheim-abfallgebuehren-1.jpg"
+  ],
+  "usable": true,
+  "pii": [
+   "Musterstr. 1",
+   "20999999999",
+   "123456789012"
+  ],
+  "critical": [
+   "174,60"
+  ],
+  "amount_due": "174,60",
+  "deadline_iso": "",
+  "agency_contacts": [
+   "115"
+  ],
+  "action": [
+   "pay"
+  ],
+  "consequence": [],
+  "note": "Annual fees 774,60 less 600,00 already paid in advance leaves 174,60 still to pay ('Noch zu leistende Zahlungen'); amounts are printed without a € sign. No due date is printed on this page (it is settled through the utility's combined bill on the 'Vorseiten'), so deadline_iso is empty. The addressee block holds only placeholders (Anrede / Vorname, Nachname)."
+ },
+ {
+  "id": "rde06",
+  "lang": "German",
+  "country": "Germany",
+  "type": "combined municipal tax and fee notice (Kombinierter Abgabenbescheid, Muster)",
+  "pages": [
+   "de06-alfeld-abgabenbescheid-1.jpg",
+   "de06-alfeld-abgabenbescheid-2.jpg"
+  ],
+  "usable": true,
+  "pii": [
+   "30/200/05444"
+  ],
+  "critical": [
+   "16,39 €",
+   "14.02.22"
+  ],
+  "amount_due": "16,39 €",
+  "deadline_iso": "2022-02-14",
+  "agency_contacts": [
+   "05181/703-171"
+  ],
+  "action": [
+   "pay|transfer|direct debit|instal"
+  ],
+  "consequence": [],
+  "note": "Total 1.091,42 € for 2022 falls due on five dates: 16,39 € on 14.02.22 (water settlement for the previous year), 268,73 € on 15.02.22, 15.05.22 and 15.08.22, and 268,84 € on 15.11.22; the first due amount is used as the amount to pay next (a model answering 268,73 € / 15.02.22 has read the next regular instalment). The table 'Fälligkeitstermine in künftigen Jahren' (90,38 €) is not payable in the current year. Recipient address and Kassenzeichen are replaced by explanatory text; the footer 'SteuerNr.: 30/200/05444' is the only identifier. Phone is printed as '05181/703-171 bzw. 703-124'. Pages 3-4 were not rendered."
+ },
+ {
+  "id": "res04",
+  "lang": "Spanish",
+  "country": "Spain",
+  "type": "enforcement order for an unpaid debt (providencia de apremio, example)",
+  "pages": [
+   "es04-aeat-providencia-apremio-11.jpg"
+  ],
+  "usable": true,
+  "pii": [
+   "VIAJES INTERPLANETARIOS S.A.",
+   "A999999999",
+   "CALLE ESPACIO EXTERIOR",
+   "C9910000034591234983",
+   "28370831242",
+   "223612045/16-4",
+   "12351238123"
+  ],
+  "critical": [
+   "12.946,96"
+  ],
+  "amount_due": "12.946,96",
+  "deadline_iso": "",
+  "agency_contacts": [
+   "967558200"
+  ],
+  "action": [
+   "pay"
+  ],
+  "consequence": [
+   "seiz|embarg|attach|garnish|enforce"
+  ],
+  "note": "Importe Total 12.946,96 (principal 10.789,13 plus 20% surcharge 2157,83). If the principal and a reduced 10% surcharge (1.078,91 euros) are paid within the stated period, the surcharge is halved; that reduced total (11.868,04) is not printed, so the printed total is used. The deadline depends on the day of notification (notified on days 1-15: the 20th of the same month; notified from the 16th: the 5th of the next month), so deadline_iso is empty. The debtor is a fictitious company. This is PDF page 11 of a 42-page technical guide."
+ },
+ {
+  "id": "ren06",
+  "lang": "English",
+  "country": "United States",
+  "type": "annual secured property tax bill (Los Angeles County, annotated sample)",
+  "pages": [
+   "en06-lacounty-secured-property-tax-bill.jpg"
+  ],
+  "usable": true,
+  "pii": [
+   "JANE DOE",
+   "1234 MAIN ST.",
+   "1234 567 890"
+  ],
+  "critical": [
+   "$1,398.32",
+   "NOVEMBER 1, 2023"
+  ],
+  "amount_due": "$1,398.32",
+  "deadline_iso": "2023-11-01",
+  "agency_contacts": [
+   "1(213) 974-2111",
+   "1(888) 807-2111"
+  ],
+  "action": [
+   "pay|instal"
+  ],
+  "consequence": [
+   "penalt"
+  ],
+  "note": "Two instalments: 1st $1,398.32 'DUE NOVEMBER 1, 2023' (10% penalty after December 10, 2023), 2nd $1,398.30 'DUE FEBRUARY 1, 2024' (10% penalty and $10 cost after April 10, 2024), or $2,796.62 for both. The first instalment and its printed due date are used; a model that gives December 10, 2023 has read the delinquency date instead. Note the year mismatch printed on the sample itself ('IF PAYING BOTH BY DECEMBER 10, 2024'). The source PNG is 1063 x 1749 and was enlarged to 1800 on the long side."
+ },
+ {
+  "id": "ren07",
+  "lang": "English",
+  "country": "United States",
+  "type": "federal tax audit letter asking for supporting documents (IRS CP75)",
+  "pages": [
+   "en07-irs-cp75-1.jpg",
+   "en07-irs-cp75-2.jpg"
+  ],
+  "usable": true,
+  "pii": [],
+  "critical": [],
+  "amount_due": "",
+  "deadline_iso": "",
+  "agency_contacts": [
+   "800-829-1040"
+  ],
+  "action": [
+   "send|submit|mail|fax|provide|respond",
+   "document|proof|record|information|form"
+  ],
+  "consequence": [
+   "disallow|deny|denied|owe|additional tax|reject"
+  ],
+  "note": "Nothing is to be paid. The reader must send supporting documents and the response form 'within 30 days from the date of this notice' (notice date January 28, 2019, i.e. about 2019-02-27); no pay-by or respond-by date is printed, so deadline_iso and critical are empty. The second phone number is masked (866-xxx-xxxx). Addressee and SSN are placeholders. Page 3 was not rendered."
+ },
+ {
+  "id": "ren08",
+  "lang": "English",
+  "country": "United States",
+  "type": "jury summons (City of Dallas Municipal Court, example)",
+  "pages": [
+   "en08-dallas-jury-summons-1.jpg"
+  ],
+  "usable": true,
+  "pii": [
+   "123 Street Avenue",
+   "123456789"
+  ],
+  "critical": [],
+  "amount_due": "",
+  "deadline_iso": "",
+  "agency_contacts": [
+   "214-670-0109"
+  ],
+  "action": [
+   "appear|report|attend|show up|jury"
+  ],
+  "consequence": [
+   "hearing|imprison|jail|fine|show cause"
+  ],
+  "note": "Nothing is to be paid; the reader must appear for jury duty or return the disqualification/exemption form by the appearance date. The dates on the example are dummy and contradict each other ('Report Date: 11/11/1111', 'January 98, 2012, @ 9:00 am'), so deadline_iso and critical are empty. A second number, (214) 979-1111, belongs to the transit agency DART, not the court."
+ },
+ {
+  "id": "ren09",
+  "lang": "English",
+  "country": "Canada",
+  "type": "property tax bill (City of Calgary, sample)",
+  "pages": [
+   "en09-calgary-property-tax-bill-1.jpg"
+  ],
+  "usable": true,
+  "pii": [
+   "123 SAMPLE STREET NW",
+   "123 17950 0"
+  ],
+  "critical": [
+   "$4,708.12",
+   "2026/06/30"
+  ],
+  "amount_due": "$4,708.12",
+  "deadline_iso": "2026-06-30",
+  "agency_contacts": [
+   "403-268-CITY (2489)"
+  ],
+  "action": [
+   "pay"
+  ],
+  "consequence": [
+   "penalt"
+  ],
+  "note": "Total tax amount due $4,708.12 by 2026/06/30 (also printed as 'June 30, 2026'); a 7% late payment penalty applies on July 01, 2026. No owner name is printed. The phone is printed as '311 or 403-268-CITY (2489)' and once without the space, '403-268-CITY(2489)'. Page 2 (terms of payment) was not rendered."
+ },
+ {
+  "id": "ren10",
+  "lang": "English",
+  "country": "United States",
+  "type": "state income tax notice of assessment (Ohio, sample)",
+  "pages": [
+   "en10-ohio-notice-of-assessment-1.jpg",
+   "en10-ohio-notice-of-assessment-2.jpg"
+  ],
+  "usable": true,
+  "pii": [
+   "123 E MAIN ST",
+   "B0000000123456"
+  ],
+  "critical": [
+   "$2,204.52"
+  ],
+  "amount_due": "$2,204.52",
+  "deadline_iso": "",
+  "agency_contacts": [
+   "888-297-2911"
+  ],
+  "action": [
+   "pay|petition|reassess|dispute|appeal"
+  ],
+  "consequence": [
+   "attorney general|collect|lien|interest|fee"
+  ],
+  "note": "Amount owed $2,204.52 must be paid in full 'within 60 days after service of the notice of assessment', or a petition for reassessment filed within the same 60 days; no pay-by date is printed, so deadline_iso is empty (the letter is dated April 25, 2026 on page 2, so about 2026-06-24 if served that day). The addressee name 'TAX PAYER' is a placeholder and not counted; Letter ID (L0000000000) and Primary ID (XXX-XX-1234) are masked. The TDD/TTY number 1-800-750-0750 is also printed."
+ },
+ {
+  "id": "ren11",
+  "lang": "English",
+  "country": "United States",
+  "type": "motor vehicle registration renewal notice (Tennessee, sample postcard)",
+  "pages": [
+   "en11-tennessee-registration-renewal-1.jpg",
+   "en11-tennessee-registration-renewal-2.jpg"
+  ],
+  "usable": true,
+  "pii": [
+   "John Smith",
+   "500 Deaderick Steet",
+   "123456",
+   "12345678"
+  ],
+  "critical": [
+   "29.00",
+   "11/30/21"
+  ],
+  "amount_due": "29.00",
+  "deadline_iso": "2021-11-30",
+  "agency_contacts": [],
+  "action": [
+   "renew"
+  ],
+  "consequence": [],
+  "note": "A renewal request: the registration expires 11/30/21 and the renewal fee is 29.00 (printed without a $ sign; $2.00 more to order the decal by mail, optional $1.00 organ donor fee). 'Steet' is the spelling printed on the sample. The only phone number (1-800-287-9013) is a used-oil disposal line, not the sender's contact, so agency_contacts is empty. No consequence of not renewing is stated."
+ },
+ {
+  "id": "ren12",
+  "lang": "English",
+  "country": "United Kingdom",
+  "type": "business rates bill (Haringey, sample with explanations)",
+  "pages": [
+   "en12-haringey-business-rates-bill-1.jpg"
+  ],
+  "usable": true,
+  "pii": [],
+  "critical": [
+   "384.24",
+   "01-APR-2022"
+  ],
+  "amount_due": "384.24",
+  "deadline_iso": "2022-04-01",
+  "agency_contacts": [],
+  "action": [
+   "pay|instal|direct debit"
+  ],
+  "consequence": [
+   "reminder|instal|legal|court|proceeding|cost"
+  ],
+  "note": "'Amount you must pay' 3687.25 is payable monthly: first instalment 384.24 due on 01-APR-2022, then 9 instalments of 387.00 from 01-MAY-2022 to 01-JAN-2023; the first instalment is used as the amount to pay next. Amounts are printed without a £ sign. The specimen's own figures do not add up (7734.50 less 3867.25 is 3867.25, not 3687.25; the instalments total 3867.24). Name, address and account number are replaced by explanations, and no phone number is printed."
+ },
+ {
+  "id": "ren13",
+  "lang": "English",
+  "country": "United States",
+  "type": "property tax bill, quarterly statement (NYC Department of Finance, sample)",
+  "pages": [
+   "en13-nyc-dof-property-tax-bill.jpg"
+  ],
+  "usable": true,
+  "pii": [
+   "SMITH, JOHN D & JANE",
+   "123 MAIN ST",
+   "5-00040-0038"
+  ],
+  "critical": [
+   "$ 900.00",
+   "April 3, 2017"
+  ],
+  "amount_due": "$ 900.00",
+  "deadline_iso": "2017-04-03",
+  "agency_contacts": [
+   "311"
+  ],
+  "action": [
+   "pay"
+  ],
+  "consequence": [
+   "interest"
+  ],
+  "note": "Amount due $ 900.00 (printed with a space after the $ sign, and as $900.00 in the statement details). Three dates are printed: 'Please pay by April 3, 2017', 'To avoid interest pay on or before April 17th', and a table due date of 04/01/2017; the pay-by date is used. Borough/block/lot (STATEN ISLAND (5), 00023, 0097) is not counted as PII. The source JPG is 1900 x 2586 and was reduced to 1800 on the long side."
+ },
+ {
+  "id": "rde07",
+  "lang": "German",
+  "country": "Germany",
+  "type": "waste disposal fee notice (Gebührenbescheid Abfallentsorgung, München, Muster)",
+  "pages": [
+   "de07-awm-muenchen-abfallgebuehren-1.jpg",
+   "de07-awm-muenchen-abfallgebuehren-2.jpg"
+  ],
+  "usable": true,
+  "pii": [
+   "Max Mustermann",
+   "Musterstr. 13",
+   "30999999",
+   "40999999",
+   "409999990001"
+  ],
+  "critical": [
+   "51,48",
+   "15.02.2022"
+  ],
+  "amount_due": "51,48",
+  "deadline_iso": "2022-02-15",
+  "agency_contacts": [
+   "089 233-96200"
+  ],
+  "action": [
+   "pay|direct debit|debit|collect|instal"
+  ],
+  "consequence": [],
+  "note": "Annual fee 205,92 is spread over four quarters of 51,48 (printed '51,48 EUR' on page 1 and '51,48' on page 2), due 15.02.2022, 15.05.2022, 15.08.2022 and 15.11.2022; the first quarter is used as the amount to pay next. A SEPA mandate is on file, so the amounts are debited automatically on those dates. The notice is shown inside an explanatory sheet; IBAN is masked (DE12 XXXX ...)."
+ },
+ {
+  "id": "rde08",
+  "lang": "German",
+  "country": "Germany",
+  "type": "water and wastewater annual statement (OOWV, Musterrechnung)",
+  "pages": [
+   "de08-oowv-wasser-abrechnung-1.jpg"
+  ],
+  "usable": true,
+  "pii": [
+   "Jana Flüssig",
+   "Albert Fließend",
+   "Wasserfall Str. 1",
+   "1000123456",
+   "108300004",
+   "62000123456"
+  ],
+  "critical": [
+   "73,96",
+   "12.03.26"
+  ],
+  "amount_due": "73,96",
+  "deadline_iso": "2026-03-12",
+  "agency_contacts": [
+   "0800 1801201"
+  ],
+  "action": [
+   "debit|pay|collect|account|funds|balance"
+  ],
+  "consequence": [],
+  "note": "Final amount 73,96 for 2025 (833,96 less advance payments) 'wird abgebucht am 12.03.26', i.e. collected by direct debit, so the reader only has to keep the account funded. New monthly advance payments of 85,00 are debited on ten dates from 21.03.2026 to 21.12.2026. The statement is dated 10. Februar 2026. Pages 2-10 (detail of the water bill and wastewater notice) were not rendered."
+ },
+ {
+  "id": "rde09",
+  "lang": "German",
+  "country": "Austria",
+  "type": "water bill with instalment plan (Stadtwerke Klagenfurt, explained specimen)",
+  "pages": [
+   "de09-stw-klagenfurt-wasserrechnung-1.jpg"
+  ],
+  "usable": true,
+  "pii": [
+   "Max Mustermann",
+   "Mustermann Max",
+   "Musterstraße 1",
+   "609098",
+   "70999999",
+   "20/16020/2019",
+   "100092388001"
+  ],
+  "critical": [
+   "6,64"
+  ],
+  "amount_due": "6,64",
+  "deadline_iso": "",
+  "agency_contacts": [
+   "+43 463 521-880"
+  ],
+  "action": [
+   "pay|instal|transfer"
+  ],
+  "consequence": [],
+  "note": "The annual bill ends in a credit ('Guthaben inkl. USt. 10,36'), which is set off against the first part-payment: the plan shows 6,64 for Januar 2020 with the due date printed only as '01.2020', then 17,00 on the 7th of each month from 07.02.2020 to 07.12.2020. The reduced January amount is used as the amount to pay next and deadline_iso is empty because its day is not printed; a model answering 17,00 / 2020-02-07 has read the first regular instalment. The recipient's postal address on the specimen (St. Veiter Straße 31) is the utility's own and is not counted as PII. Pages 2-6 were not rendered."
+ },
+ {
+  "id": "rfr04a",
+  "lang": "French",
+  "country": "Switzerland",
+  "type": "tax instalment schedule (calcul des acomptes, Canton de Vaud, specimen)",
+  "pages": [
+   "fr04-vaud-documents-fiscaux-8.jpg"
+  ],
+  "usable": true,
+  "pii": [],
+  "critical": [
+   "883.15",
+   "01.01.2024"
+  ],
+  "amount_due": "883.15",
+  "deadline_iso": "2024-01-01",
+  "agency_contacts": [
+   "021'316'00'00"
+  ],
+  "action": [
+   "pay|instal|acompte"
+  ],
+  "consequence": [],
+  "note": "Twelve monthly instalments for 2024: 883.15 (647.35 cantonal/communal + 235.80 federal) on the 1st of each month from 01.01.2024, the last 883.90 on 01.12.2024, total 10'598.55. The first instalment and its due date (échéance) are used; the footnote allows payment within 30 days of each échéance ('Délai de paiement : 30 jours dès l'échéance'). A separate line gives the provisional federal bill of Fr. 2'830.00 with 'Echéance : 01.03.2025' and 'Délai de paiement : 31.03.2025'. The taxpayer number 000.000.00 is a placeholder and no name or address is printed."
+ },
+ {
+  "id": "rfr04b",
+  "lang": "French",
+  "country": "Switzerland",
+  "type": "request for supporting documents (demande de pièces, Canton de Vaud, specimen)",
+  "pages": [
+   "fr04-vaud-documents-fiscaux-36.jpg"
+  ],
+  "usable": true,
+  "pii": [],
+  "critical": [],
+  "amount_due": "",
+  "deadline_iso": "",
+  "agency_contacts": [
+   "022'557'51'57"
+  ],
+  "action": [
+   "send|submit|provide|upload|file|deposit",
+   "document|proof|justif|certificate|attestation|evidence|receipt"
+  ],
+  "consequence": [],
+  "note": "Nothing is to be paid. The tax office asks for three kinds of supporting documents (childcare costs, pillar 3a contributions, debt interest) 'dans les 20 jours' from the letter dated 18 mars 2024 (about 2024-04-07); no date is printed, so deadline_iso and critical are empty. An extension can be requested online. No consequence is stated. Taxpayer number (000.000.00) and control code (X00000) are placeholders."
+ },
+ {
+  "id": "rfr04c",
+  "lang": "French",
+  "country": "Switzerland",
+  "type": "payment reminder for federal direct tax (rappel, Canton de Vaud, specimen)",
+  "pages": [
+   "fr04-vaud-documents-fiscaux-54.jpg"
+  ],
+  "usable": true,
+  "pii": [],
+  "critical": [
+   "Fr. 992.35"
+  ],
+  "amount_due": "Fr. 992.35",
+  "deadline_iso": "",
+  "agency_contacts": [
+   "021'316'23'48"
+  ],
+  "action": [
+   "pay"
+  ],
+  "consequence": [
+   "poursuite|debt collection|enforce|prosecut|proceeding|legal|recovery|interest"
+  ],
+  "note": "Fr. 992.35 is to be paid 'dans les dix jours dès réception de ce document' (letter dated 8 mars 2023); the deadline runs from receipt and no date is printed, so deadline_iso is empty. Otherwise debt enforcement proceedings (procédure de poursuite) are opened without further notice, and default interest is due. Taxpayer number and control code are placeholders. This is page 1 of the 2-page reminder."
+ },
+ {
+  "id": "rfr05",
+  "lang": "French",
+  "country": "France",
+  "type": "post-parking fee payment notice (forfait de post-stationnement, specimen)",
+  "pages": [
+   "fr05-paris-fps-avis-paiement-1.jpg",
+   "fr05-paris-fps-avis-paiement-3.jpg"
+  ],
+  "usable": true,
+  "pii": [
+   "DUPONT JEAN",
+   "0 RUE DE LA PAIX",
+   "AB-123-CD"
+  ],
+  "critical": [
+   "05/03/2018"
+  ],
+  "amount_due": "",
+  "deadline_iso": "2018-03-05",
+  "agency_contacts": [
+   "0820 538 123"
+  ],
+  "action": [
+   "pay|contest|appeal|dispute|RAPO"
+  ],
+  "consequence": [
+   "major|increas|surcharg|20|enforce|titre"
+  ],
+  "note": "The amount is left blank on the specimen ('Le montant du FPS dû est égal à : euros'), so amount_due is empty. Page 3 prints 'Date limite de paiement de votre FPS : 05/03/2018'; after that an enforceable order is issued with a 20% surcharge (minimum 50 euros). An appeal (RAPO) must be sent within one month, before 10/02/2018 (page 4, not rendered). The notice number is all zeros with a trailing 001 and is not counted as PII. The PDF text layer carries a second set of placeholder dates (01/01/2000) that do not show in the rendered pages. Page 2 is a general information letter and was skipped."
+ },
+ {
+  "id": "rfr06",
+  "lang": "French",
+  "country": "Canada",
+  "type": "municipal tax bill (compte de taxes municipales, annotated example)",
+  "pages": [
+   "fr06-notredamedesprairies-compte-taxes-1.jpg"
+  ],
+  "usable": true,
+  "pii": [],
+  "critical": [
+   "445.00",
+   "2017-03-15"
+  ],
+  "amount_due": "445.00",
+  "deadline_iso": "2017-03-15",
+  "agency_contacts": [
+   "(450) 759-7741"
+  ],
+  "action": [
+   "pay|instal|versement"
+  ],
+  "consequence": [
+   "interest|penalt|intérêt|pénalité"
+  ],
+  "note": "Total 1,780.00 payable in four instalments of 445.00 due 2017-03-15, 2017-05-15, 2017-08-15 and 2017-10-16; the first is used as the amount to pay next. Unpaid balances carry a 0.50 %/month penalty and 13.00 %/year interest. The upper half is the property assessment notice, with a separate deadline of 2017-05-17 to request a review (fee 75.00). The bill text is very small at this page size (the whole A3-style explanatory sheet is one page). Owner name and address are placeholders."
+ },
+ {
+  "id": "rfr07",
+  "lang": "French",
+  "country": "France",
+  "type": "water and sanitation bill (Bar-le-Duc Sud Meuse, explained specimen)",
+  "pages": [
+   "fr07-meusegrandsud-facture-eau-1.jpg"
+  ],
+  "usable": true,
+  "pii": [],
+  "critical": [
+   "99,52 €",
+   "20/01/2022"
+  ],
+  "amount_due": "99,52 €",
+  "deadline_iso": "2022-01-20",
+  "agency_contacts": [
+   "03.29.79.56.10",
+   "03.29.79.23.01"
+  ],
+  "action": [
+   "pay"
+  ],
+  "consequence": [],
+  "note": "'Montant total à payer avant le 20/01/2022 99,52 €' (invoice dated 09/12/2021). Two contacts are printed: the water service (03.29.79.56.10) and the public treasury office that collects payment (SGC de Bar-le-Duc, 03.29.79.23.01). Recipient and contract number are placeholders. The bill is shown reduced inside an explanatory sheet, so small print on the payment slip is hard to read."
+ },
+ {
+  "id": "res05",
+  "lang": "Spanish",
+  "country": "United States",
+  "type": "municipal utility bill (City of Austin Utilities, Spanish explained sample)",
+  "pages": [
+   "es05-austin-factura-servicios-publicos-1.jpg"
+  ],
+  "usable": true,
+  "pii": [
+   "CLIENTE, JOHN D.",
+   "123 RESIDENTIAL BLVD",
+   "12345 00000",
+   "000123456789"
+  ],
+  "critical": [
+   "$311.83",
+   "12/01/2025"
+  ],
+  "amount_due": "$311.83",
+  "deadline_iso": "2025-12-01",
+  "agency_contacts": [
+   "512-494-9400",
+   "1-888-340-6465"
+  ],
+  "action": [
+   "pay|autopay|automatic|auto"
+  ],
+  "consequence": [
+   "late|recargo|retraso|fee|charge|cargo|mora"
+  ],
+  "note": "Monto Total Adeudado $311.83, Fecha límite de pago 12/01/2025 (US order, also printed as 'December 1, 2025'); after the due date a $17.12 late charge makes it $322.50 ('Total adeudado después 12/09/2025'). The sample contradicts itself: it also says 'No envíe un pago. Su cuenta está programa para pago automático el 09/26/2025', so 'no payment needed, autopay' is an acceptable reading of the action. Dates in the bill body are in English month names. TDD 512-477-3663 and outage line 512-322-9100 are also printed. Pages 2-4 were not rendered."
+ },
+ {
+  "id": "res06",
+  "lang": "Spanish",
+  "country": "United States",
+  "type": "federal tax notice of intent to levy (IRS CP504, Spanish)",
+  "pages": [
+   "es06-irs-cp504-spanish-1.jpg",
+   "es06-irs-cp504-spanish-2.jpg"
+  ],
+  "usable": true,
+  "pii": [
+   "JAMES & KAREN Q. HINDS",
+   "22 BOULDER STREET",
+   "James & Karen Q. Hinds",
+   "22 Boulder Street",
+   "01899954671",
+   "999-99-9999"
+  ],
+  "critical": [
+   "$3,999.86",
+   "12 de marzo de 2009"
+  ],
+  "amount_due": "$3,999.86",
+  "deadline_iso": "2009-03-12",
+  "agency_contacts": [
+   "1-800-829-0922"
+  ],
+  "action": [
+   "pay|call|payment plan"
+  ],
+  "consequence": [
+   "embarg|levy|seiz|refund|property|garnish"
+  ],
+  "note": "'Cantidad que debe inmediatamente: $3,999.86', to be paid at once and no later than 12 de marzo de 2009 (notice dated 2 de marzo de 2009); otherwise the IRS may levy the state tax refund and then other property. Same fictitious taxpayers as the existing res01 but a different notice. The caller ID '1234' is a generic placeholder and not counted."
+ },
+ {
+  "id": "res07",
+  "lang": "Spanish",
+  "country": "United States",
+  "type": "federal tax proposed changes notice (IRS CP2000, Spanish)",
+  "pages": [
+   "es07-irs-cp2000-spanish-1.jpg",
+   "es07-irs-cp2000-spanish-2.jpg"
+  ],
+  "usable": true,
+  "pii": [
+   "s018999546711s",
+   "JAMES & KAREN Q. HINDS",
+   "22 BOULDER STREET",
+   "999-99-9999",
+   "99999-9999"
+  ],
+  "critical": [
+   "$2,289.00",
+   "16 de julio de 2008"
+  ],
+  "amount_due": "$2,289.00",
+  "deadline_iso": "2008-07-16",
+  "agency_contacts": [
+   "1-800-829-8310"
+  ],
+  "action": [
+   "respon|reply|form|pay|agree|disagree|return|send"
+  ],
+  "consequence": [
+   "deficien|interest|penalt|multa|bill|factura"
+  ],
+  "note": "A proposal, not yet a bill: the reader must return the response form by 16 de julio de 2008, either agreeing and paying $2,289.00 or disagreeing with a signed statement and supporting documents. Without a reply the IRS sends a notice of deficiency and a final bill, with more interest and possible penalties. Fax 1-215-516-2335 and forms line 1-800-829-3676 are also printed. Pages 3-9 were not rendered."
+ },
+ {
+  "id": "res08",
+  "lang": "Spanish",
+  "country": "Spain",
+  "type": "traffic fine notification (Madrid, blank model)",
+  "pages": [
+   "es08-madrid-denuncia-circulacion-1.jpg",
+   "es08-madrid-denuncia-circulacion-2.jpg"
+  ],
+  "usable": false,
+  "why": "A blank model: recipient, vehicle, fine amount, reduced amount and dates are all empty. The text does state the rules (50% reduction if paid within 20 calendar days counted from the day after receipt; objections within the same 20 days).",
+  "pii": [],
+  "critical": [],
+  "amount_due": "",
+  "deadline_iso": "",
+  "agency_contacts": [],
+  "action": [],
+  "consequence": []
+ },
+ {
+  "id": "rja05",
+  "lang": "Japanese",
+  "country": "Japan",
+  "type": "fixed asset tax notice (Kyoto city, specimen with due dates only)",
+  "pages": [
+   "ja05-kyoto-koteishisanzei-mihon-1.jpg"
+  ],
+  "usable": true,
+  "pii": [],
+  "critical": [
+   "令和8年 4月30日"
+  ],
+  "amount_due": "",
+  "deadline_iso": "2026-04-30",
+  "agency_contacts": [
+   "075-746-6431",
+   "075-746-6432"
+  ],
+  "action": [
+   "pay|instal"
+  ],
+  "consequence": [],
+  "note": "All amounts are blank (only 円), so amount_due is empty; the four due dates are printed: 第1期分 令和8年 4月30日, 第2期分 令和8年 7月31日, 第3期分 令和8年 12月28日, 第4期分 令和9年 3月 1日. The first is used. Addressee, taxpayer code and reference numbers are □ / 0 placeholders. Phone numbers are printed with spaces around the hyphens (土地担当 075 - 746 - 6431, 家屋担当 075 - 746 - 6432). Pages 2-21 (other specimens) were not rendered."
+ },
+ {
+  "id": "rja06",
+  "lang": "Japanese",
+  "country": "Japan",
+  "type": "automobile tax notice and payment slip (Mie prefecture, specimen)",
+  "pages": [
+   "ja06-mie-jidoshazei-nozeitsuchisho.jpg"
+  ],
+  "usable": true,
+  "pii": [
+   "三重 太郎",
+   "三重県津市桜橋３丁目４４６－３４",
+   "三重300お1234",
+   "123-456789",
+   "03117102023000000201"
+  ],
+  "critical": [
+   "39500",
+   "令和 8年 6月 1日"
+  ],
+  "amount_due": "39500",
+  "deadline_iso": "2026-06-01",
+  "agency_contacts": [
+   "059-382-8660"
+  ],
+  "action": [
+   "pay"
+  ],
+  "consequence": [],
+  "note": "Tax ¥39500 (printed digit by digit in boxes, without a comma), 納期限 令和8年6月1日; issued 令和8年5月2日. The tax payment certificate on the right is valid until 令和9年5月31日 (not a deadline to act). Address digits are full-width on the form. The source JPG is 3425 x 1081 and was reduced to 1800 on the long side, so the small red print is hard to read; the back side (appeal rights) was not used."
+ },
+ {
+  "id": "rja07",
+  "lang": "Japanese",
+  "country": "Japan",
+  "type": "fixed asset tax notice, direct-debit version (Chichibu city, annotated example)",
+  "pages": [
+   "ja07-chichibu-koteishisanzei-mikata-1.jpg"
+  ],
+  "usable": true,
+  "pii": [
+   "秩父 太郎",
+   "秩父市熊木町８番１５号",
+   "0000035312",
+   "10000191588"
+  ],
+  "critical": [
+   "41,700",
+   "令和 5年 5月31日"
+  ],
+  "amount_due": "41,700",
+  "deadline_iso": "2023-05-31",
+  "agency_contacts": [],
+  "action": [
+   "pay|debit|instal|account"
+  ],
+  "consequence": [],
+  "note": "Annual tax 161,700 in four instalments: 第1期 41,700 (納期限 令和5年5月31日), then 40,000 each on 令和5年7月31日, 令和5年12月25日 and 令和6年2月29日; the first is used. This is the direct-debit version (口座振替用: 'この税額を指定預貯金口座より自動振替いたします'). Notice number 0000035312 and inquiry/taxpayer number 10000191588 are sample values. No phone number is printed. Pages 2-3 were not rendered."
+ },
+ {
+  "id": "rja08",
+  "lang": "Japanese",
+  "country": "Japan",
+  "type": "national health insurance premium notice (Hamada city, annotated example)",
+  "pages": [
+   "ja08-hamada-kokuho-ketteitsuchisho-1.jpg"
+  ],
+  "usable": true,
+  "pii": [
+   "浜田 太郎",
+   "浜田 花子",
+   "島根県浜田市殿町１番地",
+   "昭和19年10月 1日",
+   "02-00123456",
+   "12345601"
+  ],
+  "critical": [
+   "5,700"
+  ],
+  "amount_due": "5,700",
+  "deadline_iso": "",
+  "agency_contacts": [],
+  "action": [
+   "pay|instal"
+  ],
+  "consequence": [],
+  "note": "Annual premium 50,700 円 by ordinary collection in ten instalments: 1期 5,700, then 5,000 each. The 納期限 column is covered by an explanatory box ('各期の支払い期限が記載されています'), so no due date can be read and deadline_iso is empty. The first instalment is used as the amount to pay next. No phone number is printed. Pages 2-3 were not rendered."
+ },
+ {
+  "id": "rja09",
+  "lang": "Japanese",
+  "country": "Japan",
+  "type": "overdue tax demand with payment slip (Yokohama, specimen)",
+  "pages": [
+   "ja09-yokohama-saikokusho.jpg"
+  ],
+  "usable": true,
+  "pii": [
+   "横浜 太郎",
+   "横浜市中区港町１丁目１番地",
+   "00080242",
+   "00000160"
+  ],
+  "critical": [
+   "28300",
+   "平成２８年１１月 ７日"
+  ],
+  "amount_due": "28300",
+  "deadline_iso": "2016-11-07",
+  "agency_contacts": [],
+  "action": [
+   "pay"
+  ],
+  "consequence": [],
+  "note": "An overdue tax demand with a payment slip: 28300 yen, payable in the window 平成28年10月31日から平成28年11月7日まで; the end of the window is used. The slip cannot be used after the window, and the late charge (延滞金) is calculated as of the first day of the window. The source image is only 900 x 566 with a SAMPLE watermark and was enlarged to 1800, so small print is blurred; the office phone number is partly blacked out (045-411-…). 照合コード 00080242 and 整理番号 00000160 are read from the slip."
+ },
+ {
+  "id": "rja10",
+  "lang": "Japanese",
+  "country": "Japan",
+  "type": "water usage and charge notice (Fukuoka city, annotated sample)",
+  "pages": [
+   "ja10-fukuoka-suido-oshirase.jpg"
+  ],
+  "usable": true,
+  "pii": [
+   "福水 フク",
+   "1-0-000001-0-10"
+  ],
+  "critical": [
+   "4,877",
+   "令和 6年 2月 8日"
+  ],
+  "amount_due": "4,877",
+  "deadline_iso": "2024-02-08",
+  "agency_contacts": [],
+  "action": [
+   "debit|pay|account|transfer|withdraw"
+  ],
+  "consequence": [],
+  "note": "今回ご請求金額 4,877円, 振替日・納期限 令和6年2月8日, paid by direct debit (口座振替: 発行日時点でのお支払い方法です). The right-hand part is a receipt for the previous period (4,202 円, 振替日 12月8日). The inquiry phone field is blank. The source image is 800 x 485 and was enlarged to 1800."
+ },
+ {
+  "id": "rko05",
+  "lang": "Korean",
+  "country": "South Korea",
+  "type": "electricity bill (KEPCO, sample)",
+  "pages": [
+   "ko05-kepco-electricity-bill.jpg"
+  ],
+  "usable": true,
+  "pii": [
+   "홍길동"
+  ],
+  "critical": [
+   "26,270원",
+   "2021년 02월 15일"
+  ],
+  "amount_due": "26,270원",
+  "deadline_iso": "2021-02-15",
+  "agency_contacts": [],
+  "action": [
+   "pay"
+  ],
+  "consequence": [],
+  "note": "청구금액 26,270원, 납기일 2021년 02월 15일 (also printed as 20210215 on the giro slip). No arrears (미납요금 없음). Customer number (01 **** 1711), meter number and the dedicated deposit accounts are partly masked and not counted as PII. No customer-service number is printed on the bill. The source image is 754 x 956 and was enlarged to 1800."
+ },
+ {
+  "id": "rko06",
+  "lang": "Korean",
+  "country": "South Korea",
+  "type": "water and sewerage charge notice by KakaoTalk, auto-pay (Daegu, example)",
+  "pages": [
+   "ko06-daegu-water-alimtalk-autopay.jpg"
+  ],
+  "usable": true,
+  "pii": [
+   "남구 명덕로54길 6-3 (이천동)",
+   "1900000000",
+   "271700000000000"
+  ],
+  "critical": [
+   "99,800원",
+   "2022년 05월 31일"
+  ],
+  "amount_due": "99,800원",
+  "deadline_iso": "2022-05-31",
+  "agency_contacts": [
+   "(053)120"
+  ],
+  "action": [
+   "pay|debit|account|auto|withdraw"
+  ],
+  "consequence": [
+   "discount|할인|100,390|more|higher"
+  ],
+  "note": "당월 청구금액 99,800원 after an auto-pay discount (사용금액 112,350원, 할인(감면)금액 -12,550원); 납부기한 2022년 05월 31일까지, 출금예정일 2022년 05월 31일. If the deadline passes, the pre-discount amount 100,390원 is debited around the 6th of the next month, so the discount is lost. The header says '2022년 7월' while all dates are March to May (as printed). The recipient name is the generic '수용가님'; the street address may be an office address but is listed as PII."
+ },
+ {
+  "id": "rko07",
+  "lang": "Korean",
+  "country": "South Korea",
+  "type": "water and sewerage charge notice by KakaoTalk (Daegu, example)",
+  "pages": [
+   "ko07-daegu-water-alimtalk.jpg"
+  ],
+  "usable": true,
+  "pii": [
+   "남구 명덕로54길 6-3 (이천동)",
+   "1900000000",
+   "2726000000000000000",
+   "272600000000000"
+  ],
+  "critical": [
+   "204,420원",
+   "2022년 05월 31일"
+  ],
+  "amount_due": "204,420원",
+  "deadline_iso": "2022-05-31",
+  "agency_contacts": [
+   "(053)120",
+   "080-788-8080"
+  ],
+  "action": [
+   "pay|transfer"
+  ],
+  "consequence": [],
+  "note": "당월 청구금액 204,420원, 체납 금액 0원, 납부기한 2022년 05월 31일까지 (next business day if a holiday). Payment by virtual account (zero-filled sample numbers) or ARS 080-788-8080. The header says '2022년 7월' while all dates are March to May (as printed). No consequence of late payment is stated."
+ },
+ {
+  "id": "rko08",
+  "lang": "Korean",
+  "country": "South Korea",
+  "type": "water and sewerage bill (Gwangyang, annotated sample)",
+  "pages": [
+   "ko08-gwangyang-water-bill.jpg"
+  ],
+  "usable": true,
+  "pii": [
+   "1-23-456-7899-0000",
+   "123456-78-987654"
+  ],
+  "critical": [
+   "165,520",
+   "2021.04.30."
+  ],
+  "amount_due": "165,520",
+  "deadline_iso": "2021-04-30",
+  "agency_contacts": [],
+  "action": [
+   "pay"
+  ],
+  "consequence": [
+   "late|연체|interest|surcharge|penalt|가산|added|arrears"
+  ],
+  "note": "납기 마감 2021.04.30. 까지, 165,520 원. After the deadline the bill can still be paid until the end of the following month, with a daily late charge added to the next bill. The scan is slightly blurred and the sample's own figures do not add up (물이용부담금 13,940 vs 19,940; 총고지금액 164,520 vs 165,520); the amount in the 납기 마감 box is used. Name and address are blank and no phone number is printed. The source PNG is 1062 x 684 and was enlarged to 1800."
+ },
+ {
+  "id": "ren14",
+  "lang": "English",
+  "country": "Canada",
+  "type": "water billing invoice (City of Owen Sound, sample)",
+  "pages": [
+   "en14-owensound-water-bill-1.jpg"
+  ],
+  "usable": true,
+  "pii": [
+   "Sam Testerson",
+   "2222 Anywhere St.",
+   "001.000000.00"
+  ],
+  "critical": [
+   "$364.71",
+   "January 28, 2019"
+  ],
+  "amount_due": "$364.71",
+  "deadline_iso": "2019-01-28",
+  "agency_contacts": [
+   "519-376-4440 ext 1243"
+  ],
+  "action": [
+   "pay"
+  ],
+  "consequence": [],
+  "note": "'Total Payment now due $364.71', 'Due Date: January 28, 2019' (printed three times). Statement date January 8, 2019. Earlier payments and penalties are listed (late fees added $3.42) but the bill does not say what happens after the due date, so no consequence is recorded. The phone also appears as '376-4440 EXT 1243'. Meter 11111111 is a placeholder and not counted. Pages 2-3 (explanations of the lettered markers, payment methods) were not rendered.",
+  "set": "confirm"
+ },
+ {
+  "id": "ren15",
+  "lang": "English",
+  "country": "Canada",
+  "type": "water charges bill, pre-authorized payment (Township of Wilmot, annotated sample)",
+  "pages": [
+   "en15-wilmot-water-bill-1.jpg"
+  ],
+  "usable": true,
+  "pii": [
+   "JOHN SMITH",
+   "123 ABC ST"
+  ],
+  "critical": [
+   "159.14",
+   "OCT 9,2015"
+  ],
+  "amount_due": "159.14",
+  "deadline_iso": "2015-10-09",
+  "agency_contacts": [
+   "519-634-8444",
+   "(800) 469-5576"
+  ],
+  "action": [
+   "pre-?authori|automatic|debit|withdraw|do not pay|no (action|payment)|pay"
+  ],
+  "consequence": [
+   "finance charge|10|late|interest|penalt"
+  ],
+  "note": "Amount Due 159.14 (no $ sign), Due Date 'OCT  9,2015' (two spaces after OCT on the form); billing date SEP 3,2015. The bill is stamped 'PREAUTHORIZED PAYMENT PLAN IN EFFECT - DO NOT PAY', so the amount is collected automatically on the due date. A finance charge of 10.00% is added to balances not paid on or before the due date. Account 0000000001 and meter 123456 are placeholders and not counted. The phone is also printed as '(519) 634-8444'.",
+  "set": "confirm"
+ },
+ {
+  "id": "ren16",
+  "lang": "English",
+  "country": "New Zealand",
+  "type": "regional council rates assessment and invoice (Hawke's Bay Regional Council, annotated sample)",
+  "pages": [
+   "en16-hbrc-rates-invoice-1.jpg"
+  ],
+  "usable": true,
+  "pii": [],
+  "critical": [
+   "684.50",
+   "20 September 2025"
+  ],
+  "amount_due": "684.50",
+  "deadline_iso": "2025-09-20",
+  "agency_contacts": [
+   "06 835 9200",
+   "0800 108 838"
+  ],
+  "action": [
+   "pay|direct debit"
+  ],
+  "consequence": [],
+  "note": "'TOTAL AMOUNT DUE BY 20 September 2025: 684.50' (no $ sign): current rate charges 757.85 less payments received 73.35CR. Invoice date 29 July 2025. The green box mentions a direct debit of $24.45 from the first payment after 20 October 2025, which applies only to direct-debit payers. The recipient block and valuation roll number are placeholders. The 10% penalty mentioned in the margin explanation concerns arrears from the previous year and is not on the invoice itself.",
+  "set": "confirm"
+ },
+ {
+  "id": "ren17",
+  "lang": "English",
+  "country": "United States",
+  "type": "water bill (Las Vegas Valley Water District, sample)",
+  "pages": [
+   "en17-lvvwd-water-bill.jpg"
+  ],
+  "usable": true,
+  "pii": [
+   "123 SAMPLE STREET",
+   "0123456789 - 1",
+   "123456789-1"
+  ],
+  "critical": [
+   "$225.21",
+   "12/30/2024"
+  ],
+  "amount_due": "$225.21",
+  "deadline_iso": "2024-12-30",
+  "agency_contacts": [
+   "(800) 252-2011",
+   "(702) 870-4194"
+  ],
+  "action": [
+   "pay"
+  ],
+  "consequence": [
+   "late|4 ?%|charge|deposit"
+  ],
+  "note": "'Amount Due on 12/30/2024 $225.21'; 'Your payment is due 12/30/2024.' Billing date 11/25/2024. Paying late brings a 4% late charge and may lead to an assessment or a higher security deposit. The customer name is the placeholder 'LAST,FIRST'. The account number is printed as '0123456789 - 1' at the top and '123456789-1' on the stub. The source PNG is 665 x 888 and was enlarged to 1800 on the long side. Page 2 of the bill is not part of the image.",
+  "set": "confirm"
+ },
+ {
+  "id": "rde10",
+  "lang": "German",
+  "country": "Germany",
+  "type": "annual water bill (Hertener Stadtwerke, Musterrechnung)",
+  "pages": [
+   "de10-herten-wasser-jahresabrechnung-1.jpg",
+   "de10-herten-wasser-jahresabrechnung-2.jpg"
+  ],
+  "usable": true,
+  "pii": [
+   "Mustermann",
+   "Musterstr. 1",
+   "10000000001"
+  ],
+  "critical": [
+   "2,20 €",
+   "31.01.2025"
+  ],
+  "amount_due": "2,20 €",
+  "deadline_iso": "2025-01-31",
+  "agency_contacts": [
+   "02366/307-123"
+  ],
+  "action": [
+   "debit|pay|collect|account|funds|balance"
+  ],
+  "consequence": [],
+  "note": "'Rechnungsbetrag fällig am 31.01.2025: 2,20 €' (290,20 € less advance payments of 288,00 €); it is collected by direct debit on 31.01.2025 from the masked account, so the reader only has to keep the account funded. New advance payments of 26,00 € are debited on eleven dates from 28.02.2025 to 30.12.2025. Invoice date 31.01.2025. Page 2 shows meter readings and prices only.",
+  "set": "confirm"
+ },
+ {
+  "id": "rde11",
+  "lang": "German",
+  "country": "Germany",
+  "type": "rainwater drainage fee notice (Münchner Stadtentwässerung, Muster)",
+  "pages": [
+   "de11-mse-muenchen-niederschlagswassergebuehr-1.jpg",
+   "de11-mse-muenchen-niederschlagswassergebuehr-2.jpg"
+  ],
+  "usable": true,
+  "pii": [
+   "Max Mustermann",
+   "Musterstraße 10",
+   "1.000.000.000"
+  ],
+  "critical": [
+   "221,25",
+   "15.02.2023"
+  ],
+  "amount_due": "221,25",
+  "deadline_iso": "2023-02-15",
+  "agency_contacts": [
+   "(089) 233-96 071"
+  ],
+  "action": [
+   "pay|transfer|instal"
+  ],
+  "consequence": [
+   "late|surcharge|säumnis|1 ?%|penalt|fee|interest"
+  ],
+  "note": "Annual fee 885,00 EUR for 2023 falls due in four instalments of 221,25 on 15.02.2023, 15.05.2023, 15.08.2023 and 15.11.2023; the first is used as the amount to pay next. From 2024 the same amounts fall due on the same days every year. No separate payment request is sent; the amounts are to be transferred quoting the MSE-Konto. Late payment costs 1 % per month started plus reminder fees. The notice is dated 03.01.2023. The second rendered page is PDF page 2 (it carries the footer 'Seite 3 von 3'); PDF page 3 (appeal rights) was not rendered.",
+  "set": "confirm"
+ },
+ {
+  "id": "rde12",
+  "lang": "German",
+  "country": "Germany",
+  "type": "annual electricity, gas and water bill (Stadtwerke Bamberg, annotated sample)",
+  "pages": [
+   "de12-stw-bamberg-jahresrechnung-2.jpg"
+  ],
+  "usable": true,
+  "pii": [],
+  "critical": [
+   "1.829,38 EUR",
+   "28.01.2023"
+  ],
+  "amount_due": "1.829,38 EUR",
+  "deadline_iso": "2023-01-28",
+  "agency_contacts": [
+   "0951 77-4930"
+  ],
+  "action": [
+   "debit|pay|collect|account|funds|balance"
+  ],
+  "consequence": [],
+  "note": "'Restforderung (fällig am: 28.01.2023) 1.829,38 EUR' (total 14.458,38 EUR less payments of 12.629,00 EUR); it is collected by direct debit on 28.01.2023. New advance payments total 2.524,00 EUR per date on eleven dates from 01.02.2023 to 01.12.2023. Invoice date 12.01.2023. Recipient and customer number are placeholders. The bill is shown reduced on an explanatory page, so its text is small; red numbered markers hide a few characters in the period line but none of the amounts or dates used. Only PDF page 2 was rendered (page 1 is the cover letter, the others explanations).",
+  "set": "confirm"
+ },
+ {
+  "id": "rde13",
+  "lang": "German",
+  "country": "Germany",
+  "type": "annual water bill (Stadtwerke Dinslaken, annotated sample)",
+  "pages": [
+   "de13-stw-dinslaken-wasser-jahresabrechnung-1.jpg"
+  ],
+  "usable": true,
+  "pii": [
+   "Stefan Mustermann",
+   "Gerhard-Malina-Str. 1",
+   "1960456789"
+  ],
+  "critical": [
+   "57,90 €",
+   "10.02.2025"
+  ],
+  "amount_due": "57,90 €",
+  "deadline_iso": "2025-02-10",
+  "agency_contacts": [
+   "0800.11 605 60"
+  ],
+  "action": [
+   "pay|transfer"
+  ],
+  "consequence": [],
+  "note": "'Forderung 57,90 €' (267,90 € less payments of 210,00 €); 'Bitte überweisen Sie die Forderung bis zum 10.02.2025'. New advance payments of 26,00 € fall due on the 15th of each month starting 15.04.2025. Invoice date 17.01.2025. The recipient's street is the utility's own Kundencenter address but is listed as PII because it stands in the address block. The bill is shown reduced on an explanatory page, so its text is small. Page 2 (meter details) was not rendered.",
+  "set": "confirm"
+ },
+ {
+  "id": "rfr08",
+  "lang": "French",
+  "country": "France",
+  "type": "estimated wastewater bill (Tulle agglo, annotated sample)",
+  "pages": [
+   "fr08-tulleagglo-facture-assainissement-1.jpg"
+  ],
+  "usable": true,
+  "pii": [],
+  "critical": [
+   "120,73 €",
+   "5 juillet 2021"
+  ],
+  "amount_due": "120,73 €",
+  "deadline_iso": "2021-07-05",
+  "agency_contacts": [
+   "05 55 20 54 08"
+  ],
+  "action": [
+   "pay"
+  ],
+  "consequence": [],
+  "note": "'Montant à payer : 120,73 € TTC avant le 5 juillet 2021' (109,73 € collecte et traitement des eaux usées plus 11,00 € organismes publics); the stub repeats 'Montant à régler : 120,73 €'. Facture estimative du 14 Juin 2021. 'avant le' literally means before that day; 5 July is used as the deadline. Recipient, address and contract number (9999999) are placeholders. Page 2 (back of the bill) was not rendered.",
+  "set": "confirm"
+ },
+ {
+  "id": "rfr09",
+  "lang": "French",
+  "country": "France",
+  "type": "electricity bill (EDF Guyane, annotated duplicate specimen)",
+  "pages": [
+   "fr09-edf-guyane-facture-electricite-1.jpg"
+  ],
+  "usable": true,
+  "pii": [
+   "ARTHUR DUPOND",
+   "RUE AUGUSTE PLENET"
+  ],
+  "critical": [
+   "84,71 €",
+   "12/10/2018"
+  ],
+  "amount_due": "84,71 €",
+  "deadline_iso": "2018-10-12",
+  "agency_contacts": [
+   "05 94 30 95 95",
+   "0 800 230 230"
+  ],
+  "action": [
+   "pay"
+  ],
+  "consequence": [],
+  "note": "'total TTC 84,71 €'; 'Merci de votre règlement avant le 12/10/2018' (literally before that day; 12 October is used). Facture du 27/09/2018 for 11/08/2018 to 27/09/2018, based on estimated readings. The next reading (23/01/2019) and next bill (26/11/2018) dates are not deadlines. The breakdown number 0 594 31 31 31 is the fault line. The customer references under 'Vos références' are mostly zeros and too small to read reliably, so they are not listed as PII. The page is landscape: the bill fills the left half and the numbered explanations the right, so the bill text is small.",
+  "set": "confirm"
+ },
+ {
+  "id": "res09",
+  "lang": "Spanish",
+  "country": "Colombia",
+  "type": "water, sewer and waste bill (Acueducto de Bogotá, demonstration bill)",
+  "pages": [
+   "es09-eaab-bogota-factura-1.jpg",
+   "es09-eaab-bogota-factura-2.jpg"
+  ],
+  "usable": true,
+  "pii": [
+   "María Teresa Rendón G.",
+   "Cl 2 50 65",
+   "CL 39 SUR 2N 19",
+   "10240144",
+   "11709997719"
+  ],
+  "critical": [
+   "$152.640",
+   "26/JUL/2024"
+  ],
+  "amount_due": "$152.640",
+  "deadline_iso": "2024-07-26",
+  "agency_contacts": [
+   "116"
+  ],
+  "action": [
+   "pay"
+  ],
+  "consequence": [
+   "suspen|cut|disconnect|shut|corte"
+  ],
+  "note": "Page 1 (cara 1): 'Pago oportuno 26/JUL/2024', 'Suspensión 31/JUL/2024', billing period 25/ABR/2024 - 22/JUN/2024. Page 2 (cara 2): 'Total a pagar $152.640' (acueducto $53.129 + alcantarillado $47.692 + otros cobros $-1 + aseo $51.820; Colombian pesos, the dot is a thousands separator). Service is suspended from 31/JUL/2024 if unpaid. The demonstration prints issue dates in September 2024, later than the payment date (as printed). Page 1 has numbered blue markers that hide parts of the header (not the dates); page 2 has 'Cara 2' / 'Cara 3' labels over the meter data and the lower tables. The property address is read as 'Cl 2 50 65'. The two pages come from two image files (see sources.json).",
+  "set": "confirm"
+ },
+ {
+  "id": "res10",
+  "lang": "Spanish",
+  "country": "United States",
+  "type": "electricity, water and sewer bill (Fayetteville PWC, Spanish 'how to read your bill' insert)",
+  "pages": [
+   "es10-fayetteville-pwc-factura-1.jpg"
+  ],
+  "usable": true,
+  "pii": [
+   "100 ALL AMERICA ST.",
+   "1234567"
+  ],
+  "critical": [
+   "$264.76",
+   "11/12/09"
+  ],
+  "amount_due": "$264.76",
+  "deadline_iso": "2009-11-12",
+  "agency_contacts": [
+   "(910) 483-1382"
+  ],
+  "action": [
+   "pay|draft|debit"
+  ],
+  "consequence": [
+   "late|fee|10|cargo|tard"
+  ],
+  "note": "'Current Charges Due 11/12/09 $264.76', 'Total Amount Due $264.76'; date mailed 10/15/09, previous payment of $200.00 on 10/14/09. Payment must be received by 5:30 P.M. on the due date to avoid a 10% or $10 minimum late payment fee. The stub is marked 'Note: BANK DRAFT'. The explanations around the bill and the stub note are in Spanish, while the bill form itself is in English. The customer name is the placeholder 'PWC CUSTOMER'; the service address and account number are sample values. Numbered blue markers touch a few detail lines but none of the amounts or dates used.",
+  "set": "confirm"
+ },
+ {
+  "id": "rja11",
+  "lang": "Japanese",
+  "country": "Japan",
+  "type": "water and sewerage charge notice, direct-debit version (Sapporo, sample)",
+  "pages": [
+   "ja11-sapporo-suido-oshirase-kouza.jpg"
+  ],
+  "usable": true,
+  "pii": [
+   "水道 太郎",
+   "1732407"
+  ],
+  "critical": [
+   "4,224",
+   "令和 5年10月30日"
+  ],
+  "amount_due": "4,224",
+  "deadline_iso": "2023-10-30",
+  "agency_contacts": [],
+  "action": [
+   "pay|debit|account|auto|withdraw|funds|balance"
+  ],
+  "consequence": [],
+  "note": "今回ご請求金額 4,224円 (水道料金 2,904円 + 下水道使用料 1,320円); '今回料金の振替予定日は令和　５年１０月３０日です' (the date is printed in full-width digits with a wide space after 令和). Issued 令和5年(2023年)10月2日. The right-hand part is a 口座振替済通知書 for the previous period (also 4,224円, debited 令和5年8月28日), which is a receipt and not a deadline. The address printed is the Waterworks Bureau's own; the phone is 'XXX-XXX-XXXX'. The name is printed with wide spacing (水道　太郎). The source PNG is 700 x 421 and was enlarged to 1800.",
+  "set": "confirm"
+ },
+ {
+  "id": "rja12",
+  "lang": "Japanese",
+  "country": "Japan",
+  "type": "water and sewerage usage notice, direct-debit version (Chiba prefectural waterworks, sample)",
+  "pages": [
+   "ja12-chiba-suido-oshirase.jpg"
+  ],
+  "usable": false,
+  "pii": [
+   "スイドウ タロウ",
+   "幕張1"
+  ],
+  "critical": [
+   "14,656円",
+   "7月16日"
+  ],
+  "amount_due": "14,656円",
+  "deadline_iso": "2018-07-16",
+  "agency_contacts": [
+   "0570-001245",
+   "043-310-0321"
+  ],
+  "action": [
+   "pay|debit|account|auto|withdraw|funds|balance"
+  ],
+  "consequence": [],
+  "note": "請求予定金額 14,656円 (水道料金 9,020円 + 下水道使用料 5,636円); '今回分振替予定日 7月16日'. The debit date is printed without a year; the meter reading date is 平成30年6月3日, so 2018-07-16 is used. The right-hand part is a receipt for the previous debit (振替済金額 7,556円 on 平成30年5月16日). The address is the sample '幕張1－▲－×' and the customer number is '00-0-000000' (not counted). The name is printed with wide spacing; the receipt part prints it as 'スイドウ タロウ０２'. '123-456-7890' is a placeholder for the meter-reading contractor; the customer centre is 0570-001245 (又は043-310-0321). Small numbered red markers sit beside the fields. Left out of the confirm run: the transfer date is printed without a year.",
+  "set": "confirm"
+ },
+ {
+  "id": "rko09",
+  "lang": "Korean",
+  "country": "South Korea",
+  "type": "automobile tax bill, first half of 2023 (Seoul Seocho-gu, redesigned bill illustration)",
+  "pages": [
+   "ko09-seoul-seocho-car-tax-notice.jpg"
+  ],
+  "usable": true,
+  "pii": [],
+  "critical": [
+   "214,420원",
+   "2023.6.30.까지"
+  ],
+  "amount_due": "214,420원",
+  "deadline_iso": "2023-06-30",
+  "agency_contacts": [],
+  "action": [
+   "pay"
+  ],
+  "consequence": [
+   "220,840|late|after|higher|more|surcharge|가산|penalt|added|3 ?%"
+  ],
+  "note": "납기 내 금액 214,420원, 납부기한 2023.6.30.까지. After the deadline the amount becomes 220,840원, payable until 2023.7.31. Taxation period 2023.1.1. ~ 2023.6.30., issued 2023년 6월 10일. Name, address, vehicle and the tail of the 전자납부번호 (11650-1-10-23-…) are covered by white boxes, so there is no PII; only '(주)이' of the taxpayer name shows. Only the upper taxpayer-copy strip is shown and no phone number is printed. The source PNG is 760 x 370 and was enlarged to 1800, so the small print is soft.",
+  "set": "confirm"
+ }
 ]
