@@ -1,4 +1,4 @@
-import { deviceStatus, downloadDeviceModel, warmUp, readLetter, readSlice, explain, startFollowUp } from './pipeline.js';
+import { deviceStatus, downloadDeviceModel, warmUp, readLetter, readSlice, explain, startFollowUp, draftReply } from './pipeline.js';
 import { redact } from './redact.js';
 import { filesToPages } from './pages.js';
 import { saveLetter, removeLetter, listLetters } from './box.js';
@@ -249,7 +249,11 @@ function answer(letter, ex, record) {
     <div id="top">${top(ex, ex.source === 'on_device' || ex.checked ? '' : 'A larger model is double-checking the reading…')}</div>
     ${ex.source === 'on_device' ? `<p class="hint" style="margin-top:24px">You can ask follow-up questions once you're back online.</p>` : `<h2 style="margin-top:28px">Ask about this letter</h2>
     <form class="ask" id="ask"><input id="q" placeholder="Can I pay in installments?" autocomplete="off"><button>Ask</button></form>
-    <div id="qa"></div>`}
+    <div id="qa"></div>
+    <h2 style="margin-top:28px">Write back to the office</h2>
+    <p class="hint" style="margin:0 0 10px">In the cloud, Gemini writes the reply in the letter's language from the masked text. Your name, address, and reference numbers are added on this device.</p>
+    <div class="row" id="reply-kinds"><button class="ghost" data-reply="installments">Ask to pay in installments</button><button class="ghost" data-reply="objection">Object</button><button class="ghost" data-reply="extension">Ask for more time</button></div>
+    <div id="reply"></div>`}
   </article>`;
   const wire = () => { $('#home').onclick = () => home(); };
   wire(); keep(ex);
@@ -261,6 +265,15 @@ function answer(letter, ex, record) {
       .then((checked) => { $('#top').innerHTML = top(checked); wire(); point(checked); keep(checked); })
       .catch(() => { $('#top').innerHTML = top(ex); wire(); point(ex); });
   }
+  app.querySelectorAll('[data-reply]').forEach((b) => { b.onclick = async () => {
+    const box = $('#reply'); box.innerHTML = '<p class="hint">Writing the reply…</p>';
+    try {
+      const r = await draftReply(letter, state.language, ex, b.dataset.reply);
+      box.innerHTML = `<div class="reply"><pre class="letter">${back(r.letter)}</pre><div class="row"><button class="ghost" id="copy">Copy</button><a id="save" download="reply.txt"><button class="ghost">Download</button></a></div>${r.sendTo ? `<p class="hint">Send it to: ${back(r.sendTo)}</p>` : ''}<details><summary>What it says in ${esc(state.language)}</summary><p class="said">${back(r.translation).replace(/\n/g, '<br>')}</p></details></div>`;
+      $('#copy').onclick = () => navigator.clipboard.writeText(r.letter);
+      $('#save').href = URL.createObjectURL(new Blob([r.letter], { type: 'text/plain' }));
+    } catch (e) { console.error(e); box.innerHTML = '<p class="err">Couldn\'t write the reply. Check your connection and try again.</p>'; }
+  }; });
   const ask = startFollowUp(letter, state.language, ex);
   $('#ask').onsubmit = async (e) => {
     e.preventDefault(); const q = $('#q').value.trim(); if (!q) return; $('#q').value = '';

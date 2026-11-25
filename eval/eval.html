@@ -42,7 +42,15 @@ for (const [i, n] of notices.entries()) {
   const says = (text) => n.consequence.every((re) => new RegExp(re, 'i').test(String(text ?? '')));
   const does = (x) => n.action.every((re) => new RegExp(re, 'i').test(`${(x.steps || []).join(' ')} ${x.objection || ''}`));
   const amountOk = (x) => digits(x.amount) === digits(n.amount_due);
+  // ?nano=1 also asks the on-device model alone for the explanation, to compare it with the cloud's.
+  let alone = null;
+  if (new URLSearchParams(location.search).get('nano')) {
+    const t3 = performance.now(); let dev = {};
+    try { dev = await explain(letter, 'English', { onDeviceOnly: true }); } catch (e) { dev = { error: String(e.message).slice(0, 200) }; }
+    alone = { deadline: !!n.deadline_iso && dev.deadline_iso === n.deadline_iso, amount: amountOk(dev), action: does(dev), consequence: says(dev.if_ignored), sec: (performance.now() - t3) / 1000, amountText: dev.amount, deadline_iso: dev.deadline_iso, error: dev.error };
+  }
   rows.push({
+    alone,
     id: n.id, split: n.split, pages: n.pages.length, readSec,
     actionFirst: does(ex), actionFinal: does(fin), explainSec, checkSec: (performance.now() - t2) / 1000,
     consequenceFirst: says(ex.if_ignored), consequenceFinal: says(fin.if_ignored),
@@ -77,11 +85,12 @@ const summarize = (rows) => {
     amount: `${sum((r) => +r.amountRight)} first, ${sum((r) => +r.finalAmountRight)} after double-check, of ${rows.length}`,
     action: `${sum((r) => +r.actionFirst)} first, ${sum((r) => +r.actionFinal)} after double-check, of ${rows.length}`,
     consequence: `${sum((r) => +r.consequenceFirst)} first, ${sum((r) => +r.consequenceFinal)} after double-check, of ${rows.length}`,
+    ...(rows.some((r) => r.alone) ? { onDeviceModelAlone: `deadline ${sum((r) => +(r.alone?.deadline || false))} of ${sum((r) => +r.deadlinePrinted)}, amount ${sum((r) => +(r.alone?.amount || false))}, action ${sum((r) => +(r.alone?.action || false))}, consequence ${sum((r) => +(r.alone?.consequence || false))}, of ${rows.length}` } : {}),
     misreadWordsCorrected: `${sum((r) => (r.final.corrected || []).length)} on ${sum((r) => +((r.final.corrected || []).length > 0))} letters`,
     readSeconds: span(rows.map((r) => r.readSec)), explainSeconds: span(rows.map((r) => r.explainSec)), doubleCheckSeconds: span(rows.map((r) => r.checkSec)),
   };
 };
 const part = (name) => rows.filter((r) => r.split === name);
-window.__eval = { failedToRead: failed, summary: { ...(part('dev').length ? { dev: summarize(part('dev')) } : {}), ...(part('held-out').length ? { heldOut: summarize(part('held-out')) } : {}), ...(part('fresh').length ? { fresh: summarize(part('fresh')) } : {}), ...(part('real').length ? { real: summarize(part('real')) } : {}) }, rows };
+window.__eval = { failedToRead: failed, summary: { ...(part('dev').length ? { dev: summarize(part('dev')) } : {}), ...(part('held-out').length ? { heldOut: summarize(part('held-out')) } : {}), ...(part('fresh').length ? { fresh: summarize(part('fresh')) } : {}), ...(part('real').length ? { real: summarize(part('real')) } : {}), ...(part('final').length ? { final: summarize(part('final')) } : {}) }, rows };
 document.getElementById('o').textContent = JSON.stringify(window.__eval.summary, null, 1);
 </script>

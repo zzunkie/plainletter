@@ -3,7 +3,7 @@
 // In the cloud (Gemini): explain the masked text. The photo and the identifiers never go there.
 import { getGenerativeModel, InferenceMode } from 'firebase/ai';
 import { ai } from './firebase.js';
-import { redact, restore, maskWithVault, normalize, aliasUnused, typedNames } from './redact.js';
+import { redact, restore, maskWithVault, normalize, aliasUnused, typedNames, tidyTokens } from './redact.js';
 import { strips, stripCount } from './pages.js';
 
 // The larger model double-checks the fast explanation and answers follow-up questions.
@@ -102,10 +102,12 @@ export async function readLetter(pages, where, onStep = () => {}) {
   const readPages = async (step, fewer) => {
     const texts = [], regions = [];
     for (const [i, page] of pages.entries()) {
-      onStep(step, of(i));
       const parts = where === 'device' ? await strips(page, Math.max(1, stripCount(page) - fewer)) : [{ base64: page.base64, y0: 0, y1: 1 }];
       const read = [];
-      for (const part of parts) read.push(await within(readImage(part.base64), 90).catch(() => within(readImage(part.base64), 90)));
+      for (const [k, part] of parts.entries()) {
+        onStep(step, `${of(i)}${parts.length > 1 ? `, part ${k + 1} of ${parts.length}` : ''}`);
+        read.push(await within(readImage(part.base64), 90).catch(() => within(readImage(part.base64), 90)));
+      }
       const joined = joinStrips(read);
       texts.push(joined.text);
       parts.forEach((part, k) => regions.push({ page: i, y0: part.y0, y1: part.y1, lines: joined.perStrip[k] }));
@@ -126,6 +128,13 @@ export async function readLetter(pages, where, onStep = () => {}) {
   console.info('readLetter seconds', t.slice(1).map((x, i) => ((x - t[i]) / 1000).toFixed(1)).join(' / '));
   const alternates = differingLines(a.outgoing, b.outgoing);
   aliasUnused(vault, `${a.outgoing}\n${alternates.join('\n')}`);
+  const tidy = tidyTokens([a.outgoing, ...alternates], vault);
+  // One placeholder can hold several spellings of a value. The one both readings agree on comes
+  // first, because that is the spelling put back into answers and replies; for a name, the Latin
+  // spelling printed beside it is read more reliably than a native-script one.
+  const agreed = (v) => +normalize(first.texts.join('\n')).includes(v.value) + +normalize(second.texts.join('\n')).includes(v.value) + (v.token.startsWith('[NAME_') && /^[\p{Script=Latin} .,'\-]+$/u.test(v.value) ? 10 : 0);
+  vault.sort((x, y) => agreed(y) - agreed(x));
+  a.outgoing = tidy[0]; alternates.splice(0, alternates.length, ...tidy.slice(1));
   // regions: where on each page a line was read. They hold unmasked text and stay on the device.
   return { transcript: normalize(first.texts.join('\n')), second: normalize(second.texts.join('\n')), items, outgoing: a.outgoing, alternates, vault, regions: first.regions };
 }
@@ -138,9 +147,9 @@ const EXPLAIN_SCHEMA = {
     sender: { type: 'string', description: 'Who sent the letter, translated, with the original name in parentheses' },
     what_it_is: { type: 'string', description: 'One or two plain sentences: what this letter is and why the person received it' },
     steps: { type: 'array', items: { type: 'string' }, description: 'What the person has to do, in order. Each step names the exact amount, date, account token or phone number it involves. Include only what the letter itself asks for; do not add a payment method the letter does not state' },
-    amount: { type: 'string', description: 'Amount to pay exactly as printed, or empty string. When the letter sets out instalments, or a lower amount for paying early, give the next amount the person has to pay; the yearly total or the later, higher amount belongs in other_figures' },
+    amount: { type: 'string', description: 'Amount to pay exactly as printed, or empty string. When the letter sets out installments, or a lower amount for paying early, give the next amount the person has to pay; the yearly total or the later, higher amount belongs in other_figures' },
     amount_printed_as: { type: 'string', description: 'The line of the letter containing the amount, in the original language with misread characters corrected, or empty string' },
-    deadline: { type: 'string', description: 'Deadline written out the way the reader writes dates, for example "December 14, 2026" for English, or empty string. With instalments, the date of the next one' },
+    deadline: { type: 'string', description: 'Deadline written out the way the reader writes dates, for example "December 14, 2026" for English, or empty string. With installments, the date of the next one' },
     deadline_printed_as: { type: 'string', description: 'The line of the letter containing the deadline, in the original language with misread characters corrected, or empty string' },
     deadline_iso: { type: 'string', description: 'Deadline as YYYY-MM-DD, or empty string' },
     if_ignored: { type: 'string', description: 'What happens if the person does nothing, as stated in the letter' },
@@ -167,9 +176,10 @@ ${letter.alternates.length ? `\nLINES READ DIFFERENTLY ON THE SECOND PASS:\n${le
 
 // Online this runs in the cloud. Offline the same call falls back to the on-device model.
 // With check: true the larger cloud model reads the same masked text again, slower and more carefully.
-export async function explain(letter, language, { check = false } = {}) {
+// onDeviceOnly: the on-device model explains even when a connection is available (used to compare the two).
+export async function explain(letter, language, { check = false, onDeviceOnly = false } = {}) {
   const model = getGenerativeModel(ai, {
-    mode: check ? InferenceMode.ONLY_IN_CLOUD : InferenceMode.PREFER_IN_CLOUD,
+    mode: onDeviceOnly ? InferenceMode.ONLY_ON_DEVICE : check ? InferenceMode.ONLY_IN_CLOUD : InferenceMode.PREFER_IN_CLOUD,
     inCloudParams: { model: check ? CHECK_MODEL : CLOUD_MODEL, generationConfig: { responseMimeType: 'application/json', responseSchema: EXPLAIN_SCHEMA, ...(check ? { thinkingConfig: { thinkingLevel: 'low' } } : {}) } },
     onDeviceParams: { promptOptions: { responseConstraint: EXPLAIN_SCHEMA } },
   }, { timeout: check ? 45000 : 30000 });
@@ -178,6 +188,34 @@ export async function explain(letter, language, { check = false } = {}) {
   const json = JSON.parse(raw.slice(raw.indexOf('{'), raw.lastIndexOf('}') + 1));
   const back = (v) => (typeof v === 'string' ? restore(v, letter.vault) : Array.isArray(v) ? v.map(back) : v);
   return { source: result.response.inferenceSource || 'in_cloud', checked: check, ...Object.fromEntries(Object.entries(json).map(([k, v]) => [k, back(v)])) };
+}
+
+// A reply to the office, written in the cloud from the masked letter. The model addresses and
+// signs it with placeholders; the device puts the person's name, address and reference numbers in.
+const REPLY_SCHEMA = {
+  type: 'object',
+  properties: {
+    letter: { type: 'string', description: 'The complete reply in the language of the official letter, ready to send: sender block, date, recipient office, subject line with the reference token, body, closing, signature. Use the tokens for the person\'s name, address and numbers exactly as written' },
+    translation: { type: 'string', description: 'The same reply translated for the reader, so they know what they are sending' },
+    send_to: { type: 'string', description: 'Where the letter says to send replies (postal address, portal or e-mail of the office), as printed, or empty string' },
+  },
+  required: ['letter', 'translation', 'send_to'],
+};
+export const REPLY_KINDS = { installments: 'ask to pay in installments', objection: 'object to this decision or notice', extension: 'ask for more time to pay or to respond' };
+export async function draftReply(letter, language, explanation, kind) {
+  const model = getGenerativeModel(ai, {
+    mode: InferenceMode.ONLY_IN_CLOUD,
+    inCloudParams: { model: CHECK_MODEL, generationConfig: { responseMimeType: 'application/json', responseSchema: REPLY_SCHEMA, thinkingConfig: { thinkingLevel: 'low' } } },
+  }, { timeout: 45000 });
+  const prompt = `Below is an official letter. Personal details were replaced with tokens such as [NAME_1] before the text left the person's device. Write a short, polite, formal reply from the person to the office that sent it, to ${REPLY_KINDS[kind]}. Write it in the language of the official letter and follow that country's conventions for such a letter. Refer to the amounts, dates and legal basis the letter itself gives. Keep every token exactly as written and use them for the sender block, the reference line and the signature; never guess what is behind one. The text was copied from a photo by a small on-device model and can contain misread characters; write the words the letter means, not the misreadings. Put each part of the reply on its own line, with blank lines between paragraphs. State no personal circumstances the letter does not mention: where the person has to add a reason, leave one line in square brackets saying what to fill in, in ${language}. Today's date is ${new Date().toISOString().slice(0, 10)}. The translation is in ${language}.
+
+WHAT THE LETTER IS: ${maskWithVault(`${explanation.what_it_is} ${explanation.objection || ''}`, letter.vault)}
+
+LETTER:
+${letter.outgoing}`;
+  const raw = (await model.generateContent(prompt)).response.text();
+  const json = JSON.parse(raw.slice(raw.indexOf('{'), raw.lastIndexOf('}') + 1));
+  return { sent: prompt, letter: restore(json.letter, letter.vault), translation: restore(json.translation, letter.vault), sendTo: restore(json.send_to || '', letter.vault) };
 }
 
 // Follow-up questions go to the cloud as a chat. The question is masked with the same vault.

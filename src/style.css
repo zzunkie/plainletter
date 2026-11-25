@@ -67,3 +67,5 @@ ul.fixed { padding-left:20px; margin:0 0 6px; font-size:15px; }
 .second { margin-top:14px; } .second summary { cursor:pointer; font-size:15px; font-weight:650; color:var(--send); margin-bottom:8px; }
 .samples img { object-position:top; }
 .band.left span { right:auto; left:0; }
+.reply { margin-top:12px; } .reply pre.letter { white-space:pre-wrap; word-break:break-word; font:14px/1.65 ui-monospace,SFMono-Regular,Menlo,"Noto Sans KR","Noto Sans JP",monospace; background:var(--soft); border:1px solid var(--line); border-radius:8px; padding:14px 16px; margin:0 0 10px; }
+.reply details { margin-top:10px; } .reply summary { cursor:pointer; font-size:14px; color:var(--send); } .reply .said { font-size:14px; color:var(--muted); margin-top:8px; }

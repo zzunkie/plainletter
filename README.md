@@ -14,7 +14,8 @@ Built for #BuildHybridAI 2026.
 4. Gemini in the cloud explains the masked text in your language: the sender, required steps, the amount and deadline, what happens if you ignore it, how to object, and which other figures on the letter are easy to confuse. A larger model then rewrites the explanation from the masked text and any differing lines in the second reading, updates the answer in place, and lists any words Gemini Nano misread.
 5. The browser puts the real values back into the answer and marks them, and after the answer Gemini Nano re-reads thin slices of the page so a band can mark where the amount and the deadline are printed. Follow-up questions are masked the same way and answered using Google Search, with source links under each reply.
 6. Each letter is saved to "Your letters" in IndexedDB with its deadline and the days left, and reopens without a connection. You can also install Plainletter from Chrome as a web app.
-7. When offline, the explanation call automatically falls back to Gemini Nano on the device.
+7. "Write back to the office" drafts a reply in the letter's language (installments, objection, more time) from the masked text, and the browser fills in your details.
+8. When offline, the explanation call automatically falls back to Gemini Nano on the device.
 
 ## Where Firebase AI Logic is used
 
@@ -26,29 +27,31 @@ All inference goes through `firebase/ai`. See [`src/pipeline.js`](src/pipeline.j
 | Find identifying details as JSON | `InferenceMode.ONLY_ON_DEVICE` with `onDeviceParams.promptOptions.responseConstraint` | on device only |
 | Explain the masked letter as JSON | `InferenceMode.PREFER_IN_CLOUD` (`gemini-3.5-flash-lite` `inCloudParams` and Gemini Nano `onDeviceParams` sharing one schema) | cloud, on device when offline |
 | Double-check the explanation | `InferenceMode.ONLY_IN_CLOUD` on `gemini-4-hydrogen` with `thinkingConfig` and the same schema | cloud only |
+| Draft a reply to the office | `InferenceMode.ONLY_IN_CLOUD` on `gemini-4-hydrogen` with `responseSchema`; placeholders are filled in on the device | cloud only |
 | Follow-up questions | `getGenerativeModel()` on `gemini-4-hydrogen` with `tools: [{ googleSearch: {} }]`, `startChat()`, and `sendMessageStream()` | cloud only |
 
 `src/firebase.js` initializes App Check (reCAPTCHA Enterprise) before any model call. `src/redact.js` builds the masked text and restores real values in the answer. `src/pages.js` turns photos and PDF pages into strips, and `src/box.js` is the letter box.
 
 ## Results on the test set
 
-We created 66 fictional letters (84 pages) with invented recipients in Korean, German, Japanese, English, French, and Spanish, modeled on real agency forms from 16 countries: tax assessments, insurance and pension arrears, immigration document requests, traffic fines, court payment orders, hospital bills, utility cutoff notices, benefit repayments, and summonses. Each page includes tables, multiple amounts and dates, and numbered legal notes; 18 letters span two pages with a required fact only on page 2, and 12 require an action without a payment. Every page was rendered as a camera-style image with tilt, shear, blur, shadow, noise, and JPEG compression.
+We created 84 fictional letters (108 pages) in Korean, German, Japanese, English, French, and Spanish with invented recipients, modeled on real notices and bills from 16 countries: tax assessments, insurance and pension arrears, immigration document requests, traffic fines, court payment orders, hospital bills, utility cutoff notices, benefit decisions, installment plans, refunds, and summonses. Each page includes tables, multiple amounts and dates, and numbered legal notes; 24 letters span two pages with a required fact only on page 2, and 18 require an action without a payment. Every page was rendered as a camera-style image with tilt, shear, blur, shadow, noise, and JPEG compression.
 
-To evaluate without overfitting, we split the 66 letters into three groups: 18 tuning letters, 30 held-out letters untouched until the first full run, and 18 new letters written after updating our prompts and rules. That first run on the 30 held-out letters masked 175 of 183 personal identifiers and left 8 in the text sent to the cloud (four vehicle plates, three names printed in a second format, and one five-digit customer number). After we added vehicle plates to the on-device prompt and introduced the multi-format name rule, the 18 new letters kept 118 of 119 identifiers on the device, leaving 1 in the sent text.
+To evaluate without overfitting, we wrote the letters in four groups and changed prompts and rules only between groups: 18 tuning letters, 30 held-out letters untouched until the first full run, 18 letters written after that run, and 18 final letters written after the last change and run once. The first run on the 30 held-out letters left 8 of 183 personal identifiers in the text sent to the cloud (four vehicle plates, three names printed in a second format, and one five-digit customer number). We added vehicle plates to the on-device prompt and added a rule for names printed in multiple formats, leaving 1 of 119 identifiers on the next 18 letters. Two of those letters lost their deadline because the date rule did not yet recognize German and French month names. After we added those month names, the run on the 18 final letters left 0 of 119 identifiers and matched 17 of 18 deadlines.
 
-| Check | 18 new letters (24 pages) | 30 held-out letters (42 pages), first run |
-|---|---|---|
-| Amounts and deadlines transcribed correctly by Gemini Nano | 30 of 30 | 58 of 58 |
-| Personal identifiers masked by Gemini Nano alone | 102 of 119 | 156 of 183 |
-| Personal identifiers remaining in text sent to the cloud, after `src/redact.js` | 1 of 119 | 8 of 183 |
-| Deadline matches the letter (first answer → after double-check) | 14 of 18 → 16 of 18 | 30 of 30 → 30 of 30 |
-| Amount due matches the letter (first → after double-check) | 18 of 18 → 18 of 18 | 29 of 30 → 30 of 30 |
-| Required action stated correctly (first → after double-check) | 17 of 18 → 18 of 18 | 30 of 30 → 30 of 30 |
-| Consequence of ignoring stated correctly (first → after double-check) | 17 of 18 → 18 of 18 | 28 of 30 → 29 of 30 |
+| Check | 18 final letters (24 pages), run once | 18 letters after the first fix | 30 held-out letters, first run |
+|---|---|---|---|
+| Amounts and deadlines transcribed correctly by Gemini Nano | 29 of 30 | 30 of 30 | 58 of 58 |
+| Personal identifiers masked by Gemini Nano alone | 113 of 119 | 102 of 119 | 156 of 183 |
+| Personal identifiers remaining in text sent to the cloud, after `src/redact.js` | 0 of 119 | 1 of 119 | 8 of 183 |
+| Deadline matches the letter (first answer → after double-check) | 17 of 18 → 17 of 18 | 14 of 18 → 16 of 18 | 30 of 30 → 30 of 30 |
+| Amount due matches the letter (first → after double-check) | 16 of 18 → 18 of 18 | 18 of 18 → 18 of 18 | 29 of 30 → 30 of 30 |
+| Required action stated correctly (first → after double-check) | 18 of 18 → 18 of 18 | 17 of 18 → 18 of 18 | 30 of 30 → 30 of 30 |
+| Consequence of ignoring stated correctly (first → after double-check) | 16 of 18 → 17 of 18 | 17 of 18 → 18 of 18 | 28 of 30 → 29 of 30 |
+| Same explanation from Gemini Nano alone, on the same masked text | deadline 15 of 18, amount 11 of 18, action 17 of 18, consequence 7 of 18 | not run | not run |
 
-Both deadline misses on the 18 new letters had the same root cause: Gemini Nano flagged deadlines with spelled-out month names ("7. Januar 2027" and "8 janvier 2027"), and our date pattern did not yet recognize German, French, or Spanish months to keep them unmasked. Adding those month names resolved both cases. The single unmasked identifier on the new set was a 12-character reference number on a Colombian vehicle tax notice. Re-running the earlier splits with the current rules leaves 4 of 183 identifiers on the 30 held-out letters and 0 of 101 on the 18 tuning letters. Across all 66 letters, the cloud double-check listed and corrected 156 misread words.
+The last row shows why the explanation runs in the cloud. Gemini Nano reads and masks these pages well, yet from the same masked text it got the amount right on 11 of 18 letters and the consequence on 7, compared with 18 and 17 from the cloud models. Across all 84 letters, the cloud double-check also listed and corrected 204 misread words. When the device is offline, the app still returns the on-device explanation and says that it came from the on-device model.
 
-We also ran 11 sample notices that agencies publish themselves, which we did not write: IRS notices CP14 and CP503, the CP14 in Spanish, two UK council tax bills, a New York City water bill, a North Rhine-Westphalia income tax assessment, a Cologne property charges notice, two French traffic fine notices from ANTAI, and a Tokyo ward's resident tax notice. `eval/real/sources.json` lists where each one comes from. On the first run the explanation gave the amount to pay on 6 of 11. Four of the five misses were bills paid in instalments or at a reduced early rate, where the app reported the yearly total or the standard fine. After we told the model to report the next instalment, a rerun gave the amount on 10 of 11, the required action on 10 of 11, the consequence on 11 of 11, and the deadline on 6 of the 8 notices that print one. Gemini Nano read 15 of 19 amounts and deadlines on these pages, several of which are low-resolution images, and across three runs between 0 and 3 of 47 identifiers remained in the sent text.
+We also tested 11 official sample notices published by public agencies, including several low-resolution web images: IRS notices CP14 (in English and Spanish) and CP503, two UK council tax bills, a New York City water bill, a North Rhine-Westphalia income tax assessment, a Cologne property charges notice, two French traffic fine notices from ANTAI, and a Tokyo ward's resident tax notice (`eval/real/sources.json` lists each source). On these pages, Gemini Nano transcribed 15 of 19 amounts and deadlines, and across three runs, 0 to 3 of 47 identifiers remained in the text sent to the cloud. On the first run, the cloud explanation gave the right amount to pay on 6 of 11 notices; four of the five misses were bills paid in installments or at a reduced early rate, where the app reported the yearly total or the standard fine. After we updated the prompt to report the next installment, a rerun matched the amount on 10 of 11, the required action on 10 of 11, the consequence on 11 of 11, and the deadline on 6 of the 8 notices that print one.
 
 `eval/eval.html` runs the app's production pipeline, including the double-check, over the rendered page images. `eval/docs/` stores every letter and answer key, and `eval/out/runs/` logs the per-letter transcripts, outgoing masked text, and explanations for each run.
 
@@ -58,7 +61,7 @@ To reproduce, start `npm run dev`, start Chrome with `--remote-debugging-port=93
 
 ```
 node eval/build.mjs            # render eval/docs to page photos in eval/out
-node eval/run.mjs fresh run-1  # or dev, held-out, or a list of ids such as ko01,de08
+node eval/run.mjs final run-1 nano  # or dev, held-out, fresh, or a list of ids such as ko01,de08; "nano" adds the on-device-only comparison
 node eval/replay.mjs run-1     # re-apply the current masking rules to a saved run, without model calls
 node eval/run.mjs real real-1   # the agency samples; download them first from the addresses in eval/real/sources.json
 ```

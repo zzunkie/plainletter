@@ -1,0 +1,3279 @@
+{
+ "failedToRead": [],
+ "summary": {
+  "final": {
+   "letters": 18,
+   "pages": 24,
+   "figuresReadByNano": "29 of 30",
+   "figuresKeptVisible": "29 of 30",
+   "identifiersMaskedByNanoAlone": "113 of 119",
+   "identifiersSentAfterRules": "0 of 119",
+   "agencyNumbersKeptVisible": "24 of 32",
+   "deadline": "17 first, 17 after double-check, of 18 with a printed deadline",
+   "amount": "16 first, 18 after double-check, of 18",
+   "action": "18 first, 18 after double-check, of 18",
+   "consequence": "16 first, 17 after double-check, of 18",
+   "onDeviceModelAlone": "deadline 15 of 18, amount 11, action 17, consequence 7, of 18",
+   "misreadWordsCorrected": "48 on 11 letters",
+   "readSeconds": "median 43 (30 to 79)",
+   "explainSeconds": "median 3 (2 to 4)",
+   "doubleCheckSeconds": "median 20 (13 to 60)"
+  }
+ },
+ "rows": [
+  {
+   "alone": {
+    "deadline": true,
+    "amount": false,
+    "action": true,
+    "consequence": true,
+    "sec": 12.050399999976158,
+    "amountText": "186.40 EUR",
+    "deadline_iso": "2027-01-08"
+   },
+   "id": "de12",
+   "split": "final",
+   "pages": 1,
+   "readSec": 60.73680000001192,
+   "actionFirst": true,
+   "actionFinal": true,
+   "explainSec": 2.813199999988079,
+   "checkSec": 22.432600000023843,
+   "consequenceFirst": true,
+   "consequenceFinal": true,
+   "finalDeadlineRight": true,
+   "deadlinePrinted": true,
+   "finalAmountRight": true,
+   "final": {
+    "title": "Housing allowance approval with document request",
+    "steps": [
+     "Check that your bank account IBAN AT47 2011 1822 4419 0365 receives the payments for November and December 2026 on December 15, 2026.",
+     "Submit the 2026 annual payslip (Jahreslohnzettel L16) for Frau Jelena Petrovčič and the January 2027 rent statement (Mietzinsvorschreibung) by January 8, 2027.",
+     "Report any changes to your income, household size, or rent within one month."
+    ],
+    "objection": "You can file a written appeal (Beschwerde) to the Administrative Court of Vienna (Verwaltungsgericht Wien) within four weeks of receiving this letter. The appeal must be submitted to the City of Vienna, MA 50 (Magistrat der Stadt Wien, MA 50).",
+    "deadline_iso": "2027-01-08",
+    "amount": "",
+    "if_ignored": "If you do not submit the requested documents by January 8, 2027, your housing allowance payments will be stopped starting February 2027.",
+    "corrected": [
+     "read as \"ab Februar 2021\", understood as \"ab Februar 2027\" (from February 2027)",
+     "read as \"stattg gegeben\", understood as \"stattgegeben\" (granted)",
+     "read as \"Haushalteinkommen\", understood as \"Haushaltseinkommen\" (household income)",
+     "read as \"Partienverkehr\", understood as \"Parteienverkehr\" (public office hours)",
+     "read as \"WWFsg 1989\" / \"WVFSG 1989\", understood as \"WWFSG 1989\" (Vienna Housing Promotion and Renovation Act 1989)"
+    ]
+   },
+   "figuresRead": [
+    true
+   ],
+   "figuresKept": [
+    true
+   ],
+   "idsMissedByModel": [],
+   "idsSent": [],
+   "agencyKept": [
+    true
+   ],
+   "deadlineRight": true,
+   "amountRight": true,
+   "explained": {
+    "title": "Housing subsidy approval",
+    "steps": [
+     "Submit the 2026 annual wage slip (L16) for Frau Jelena Petrovčič and the rent prescription for January 2027 by January 8, 2027."
+    ],
+    "deadline_iso": "2027-01-08",
+    "amount": "",
+    "if_ignored": "If you do not submit the required documents, the disbursement of your subsidy will be stopped starting from February 2027.",
+    "corrected": [
+     "read as \"stattg gegeben\", understood as \"stattgegeben\" (approved)",
+     "read as \"WWFsg 1989\", understood as \"WWFSG 1989\" (law abbreviation)",
+     "read as \"Partienverkehr\", understood as \"Parteienverkehr\" (office hours)"
+    ]
+   },
+   "transcript": "Stadt Wien\nMagistratsabteilung 50 · Referat Wohnbeihilfe\nMuthgasse 62, 1190 Wien\nHerrn Goran Petrović\nFrau Jelena Petrović\nQuellenstraße 8 e 118/3/14\n1100 Wien\nGZ MA 50-WBH-418273/2026\nWien, 3. Dezember 2026\nQuellenstraße 118/3/14\n1100 Wien\nBescheid\nWohnbeihilfe nach dem Wiener Wohnbauförderungs- und Wohnhaussanierungsgesetz (WWFSG 1989)\nSpruch: Ihrem Antrag vom 2. Oktober 2026 wird stattg gegeben. Gemäß § § 60 bis 61a WWFSG 1989 wird Ihnen für die Wohnung Quellenstraße 118/3/14 eine Wohnbeihilfe von monatlich € 186,40 für die Dauer von zwölf Monaten ab 1. November 2026 gewährt.\nBerechnung\nHaushalteinkommen monatlich (3 Personen)\nAnrechenbarer Wohnungsaufwand (62,40 m2)\nZumutbarer Wohnungsaufwand\nBetrag\n€ 2.418,60\n€ 791,05\n€ 604,65\nAnrechenbarer Wohnungsaufwand (62,40 m2) € 791,05\nZumutbarer Wohnungsaufwand € 604,65\nWohnbeihilfe monatlich € 186,40\nDie Auszahlung erfolgt monatlich im Nachhinein auf das Konto IBAN AT47 2011 1822 4419 0365. Die Beträge für November und Dezember 2026 werden am 15. Dezember 2026 überwiesen.\nAuflage: Legen Sie bis 8. Jänner 2027 vor:\nden Jahreslohnzettel (L16) 2026 von Frau Jelena Petrovčič und die Mietzinsvorschreibung für Jänner 2027.\nOhne diese Unterlagen wird die Auszahlung ab Februar 2027 eingestellt.\nHinweise und Rechtsmittelbelehrung\nOhne diese Unterlagen wird die Auszahlung ab Februar 2021 eingestellt.\nHinweise und Rechtsmittelbelehrung\n1. Änderungen des Einkommens, der Haushaltsgröße oder des Mietzines sind binnen eines Monats zu melden (§ 61 Abs. 5 WWFsg 1989).\n2. Gegen diesen Bescheid können Sie binnen vier Wochen nach Zustellung schriftlich Beschwerde an das Verwaltungsgericht Wien erheben. Die Beschwerde ist beim Magistrat der Stadt Wien, MA 50, einzubringen.\nMA 50 Referat Wohnbeihilfe: Telefon 01 4000-74880 · Partienverkehr Mo, Di, Do 8 - 13 Uhr\npost@ma50.wien.gv.at",
+   "second": "Stadt Wien\nMagistratsabteilung 50 - Referat Wohnbeihilfe\nMuthgasse 62, 1190 Wien\nHerrn Goran Petrović\nFrau Jelena Petrović\nQuellenstraße 8 e 118/3/14\n1100 Wien\nGZ MA 50-WBH-418273/2026\nWien, 3. Dezember 2026\nBescheid\nWohnbeihilfe nach dem Wiener Wohnbauförderungs- und Wohnhaussanierungsgesetz (WWFSG 1989)\nSpruch: Ihrem Antrag vom 2. Oktober 2026 wird stattgegeben. Gemäß § § 60 bis 61a WWFSG 1989 wird Ihnen für die Wohnung Quellenstraße 8 e 118/3/14 eine\nSpruch: Ihrem Antrag vom 2. Oktober 2026 wird stattgeben. Gemäß § 60 bis 61a WWFSG 1989 wird Ihnen für die Wohnung Quellenstraße 118/3/14 eine Wohnbeihilfe von monatlich € 186,40 für die Dauer von zwölf Monaten ab 1. November 2026 gewährt.\nBerechnung\nHaushaltseinkommen monatlich (3 Personen) € 2.418,60\nAnrechenbarer Wohnungsaufwand (62,40 m2) € 791,05\nZumutbarer Wohnungsaufwand € 604,65\nWohnbeihilfe monatlich € 186,40\nBetrag\nDie Auszahlung erfolgt monatlich im Nachhinein auf das Konto IBAN AT47 2011 1822 4419 0365. Die Beträge für November und Dezember 2026 werden am 15. Dezember 2026 überwiesen.\nAuflage: Legen Sie bis 8. Jänner 2027 vor:\nden Jahreslohnzettel (L16) 2026 von Frau Jelena Petrovčič und die Mitzinvorschreibung für Jänner 2027.\nOhne diese Unterlagen wird die Auszahlung ab Februar 2027 eingestellt.\nHinweise und Rechtsmittelbelehrung\n1. Änderungen des Einkommens, der Haushaltsgröße oder des Mietzines sind binnen eines Monats zu melden (§ 61 Abs. 5 WVFSG 1989).\n2. Gegen diesen Bescheid können Sie binnen vier Wochen nach Zustellung schriftlich Beschwerde an das Verwaltungsgericht Wien erheben. Die Beschwerde ist beim Magistrat der Stadt Wien, MA 50, einzubringen.\nMA 50 Referat Wohnbeihilfe: Telefon 01 4000-74880 · Parteienverkehr Mo., Di., Do 8 - 13 Uhr · post@ma50.wien.gv.at",
+   "items": [
+    {
+     "kind": "NAME",
+     "value": "Herrn Goran Petrović"
+    },
+    {
+     "kind": "NAME",
+     "value": "Frau Jelena Petrović"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Quellenstraße 8 e 118/3/14"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "1100 Wien"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "GZ MA 50-WBH-418273/2026"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Quellenstraße 118/3/14"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "1100 Wien"
+    },
+    {
+     "kind": "ACCOUNT",
+     "value": "IBAN AT47 2011 1822 4419 0365"
+    },
+    {
+     "kind": "PHONE",
+     "value": "01 4000-74880"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "post@ma50.wien.gv.at"
+    },
+    {
+     "kind": "NAME",
+     "value": "Herrn Goran Petrović"
+    },
+    {
+     "kind": "NAME",
+     "value": "Frau Jelena Petrović"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Quellenstraße 8 e 118/3/14"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "1100 Wien"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "GZ MA 50-WBH-418273/2026"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Quellenstraße 8 e 118/3/14"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "1100 Wien"
+    },
+    {
+     "kind": "ACCOUNT",
+     "value": "AT47 2011 1822 4419 0365"
+    },
+    {
+     "kind": "PHONE",
+     "value": "01 4000-74880"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "MA 50 Referat Wohnbeihilfe: Telefon 01 4000-74880 · Parteienverkehr Mo., Di., Do 8 - 13 Uhr · post@ma50.wien.gv.at"
+    }
+   ],
+   "outgoing": "Stadt Wien\nMagistratsabteilung 50 · Referat Wohnbeihilfe\nMuthgasse 62, [ADDRESS_5]\n[NAME_2]\n[NAME_3]\n[ADDRESS_1]\n[ADDRESS_4]\n[REFERENCE_NUMBER_1]\nWien, 3. Dezember 2026\n[ADDRESS_2]\n[ADDRESS_4]\nBescheid\nWohnbeihilfe nach dem Wiener Wohnbauförderungs- und Wohnhaussanierungsgesetz (WWFSG 1989)\nSpruch: Ihrem Antrag vom 2. Oktober 2026 wird stattg gegeben. Gemäß § § 60 bis 61a WWFSG 1989 wird Ihnen für die Wohnung [ADDRESS_2] eine Wohnbeihilfe von monatlich € 186,40 für die Dauer von zwölf Monaten ab 1. November 2026 gewährt.\nBerechnung\nHaushalteinkommen monatlich (3 Personen)\nAnrechenbarer Wohnungsaufwand (62,40 m2)\nZumutbarer Wohnungsaufwand\nBetrag\n€ 2.418,60\n€ 791,05\n€ 604,65\nAnrechenbarer Wohnungsaufwand (62,40 m2) € 791,05\nZumutbarer Wohnungsaufwand € 604,65\nWohnbeihilfe monatlich € 186,40\nDie Auszahlung erfolgt monatlich im Nachhinein auf das Konto [ACCOUNT_1]. Die Beträge für November und Dezember 2026 werden am 15. Dezember 2026 überwiesen.\nAuflage: Legen Sie bis 8. Jänner 2027 vor:\nden Jahreslohnzettel (L16) 2026 von [NAME_1] und die Mietzinsvorschreibung für Jänner 2027.\nOhne diese Unterlagen wird die Auszahlung ab Februar 2027 eingestellt.\nHinweise und Rechtsmittelbelehrung\nOhne diese Unterlagen wird die Auszahlung ab Februar 2021 eingestellt.\nHinweise und Rechtsmittelbelehrung\n1. Änderungen des Einkommens, der Haushaltsgröße oder des Mietzines sind binnen eines Monats zu melden (§ 61 Abs. 5 WWFsg 1989).\n2. Gegen diesen Bescheid können Sie binnen vier Wochen nach Zustellung schriftlich Beschwerde an das Verwaltungsgericht Wien erheben. Die Beschwerde ist beim Magistrat der Stadt Wien, MA 50, einzubringen.\nMA 50 Referat Wohnbeihilfe: Telefon 01 4000-74880 · Partienverkehr Mo, Di, Do 8 - 13 Uhr\npost@ma50.wien.gv.at",
+   "alternates": [
+    "Haushaltseinkommen monatlich (3 Personen) € 2.418,60",
+    "1. Änderungen des Einkommens, der Haushaltsgröße oder des Mietzines sind binnen eines Monats zu melden (§ 61 Abs. 5 WVFSG 1989).",
+    "MA 50 Referat Wohnbeihilfe: Telefon 01 4000-74880 · Parteienverkehr Mo., Di., Do 8 - 13 Uhr · post@ma50.wien.gv.at"
+   ]
+  },
+  {
+   "alone": {
+    "deadline": true,
+    "amount": true,
+    "action": true,
+    "consequence": false,
+    "sec": 12.392400000035762,
+    "amountText": "415.10",
+    "deadline_iso": "2027-03-31"
+   },
+   "id": "de13",
+   "split": "final",
+   "pages": 1,
+   "readSec": 42.517100000023845,
+   "actionFirst": true,
+   "actionFinal": true,
+   "explainSec": 2.4005999999642373,
+   "checkSec": 20.61030000001192,
+   "consequenceFirst": true,
+   "consequenceFinal": true,
+   "finalDeadlineRight": true,
+   "deadlinePrinted": true,
+   "finalAmountRight": true,
+   "final": {
+    "title": "Social security contribution bill for Q1 2027",
+    "steps": [
+     "Pay Fr. 415.10 by March 31, 2027, using the QR payment slip to account CH44 3000 0002 3104 8271 9 (SVA Zürich, Ausgleichskasse) with reference 00 0000 10048 27190 27011 22."
+    ],
+    "objection": "You can file a written objection (Einsprache) against this decision within 30 days of receiving it.",
+    "deadline_iso": "2027-03-31",
+    "amount": "Fr. 415.10",
+    "if_ignored": "If you do not pay on time, you will receive a reminder with a reminder fee, followed by debt collection proceedings. You will also be charged default interest of 5% per year on overdue amounts.",
+    "corrected": [
+     "read as \"Aktenrechnung\" / \"Akontoerechnung\", understood as \"Akontorechnung\" (provisional/advance bill)",
+     "read as \"Verzuzgsinzen\", understood as \"Verzugszinsen\" (default interest)",
+     "read as \"inner\" / \"innerst\", understood as \"innert\" (within)",
+     "read as \"Nichtwerbstätige\" / \"Nichterwerbsteue\", understood as \"Nichterwerbstätige\" (non-employed persons)"
+    ]
+   },
+   "figuresRead": [
+    true,
+    true
+   ],
+   "figuresKept": [
+    true,
+    true
+   ],
+   "idsMissedByModel": [
+    "Carvalho Antunes Rui Miguel"
+   ],
+   "idsSent": [],
+   "agencyKept": [
+    true
+   ],
+   "deadlineRight": true,
+   "amountRight": true,
+   "explained": {
+    "title": "Social security contribution invoice for non-gainfully employed",
+    "steps": [
+     "Pay Fr. 415.10 by March 31, 2027 using account CH44 3000 0002 3104 8271 9 and reference 00 0000 10048 27190 27011 22 with the QR payment part."
+    ],
+    "deadline_iso": "2027-03-31",
+    "amount": "Fr. 415.10",
+    "if_ignored": "Contributions not paid on time will be subject to a reminder fee followed by debt collection enforcement, and default interest of 5% per year will be charged.",
+    "corrected": [
+     "read as \"Aktenrechnung\", understood as \"Akontorechnung\" (account-based invoice)",
+     "read as \"Verzuzgsinzen\", understood as \"Verzugszinsen\" (default interest)",
+     "read as \"inner\", understood as \"innerst\" (within)"
+    ]
+   },
+   "transcript": "SVA Zürich\nAusgleichskasse · Beiträge Nichterwerbstätige\nRöntgenstrasse 17, 8005 Zürich\nAbrechnungsnummer 100.482.719\nZürich, 15. Februar 2027\nHerr\nRui Miguel Carvalho Antunes\nBadenerstrasse 512\n8048 Zürich\nAktenrechnung persönliche Beiträge\nAHV/IV/EO für Nichterwerbstätige - Beitragsjahr 2027 · 1. Quartal\nVersicherte Person Carvalho Antunes Rui Miguel AHV-Nr. 756.4821.3390.57\nGeburtsdatum 27.02.1971 Beitragssstatus nichterwerbstätig\nBerechnung des Jahresbeiträge 2027\nPosition Betrag\nMassgebendes Vermögen inkl. Renten × 20 (Stand 2025) Fr. 640'000.00\nJahresbeitrag AHV/IV/EO Fr. 1'612.00\nVerwaltungskosten 3 % Fr. 48.40\nMassgebendes Vermögen mit Rendite - ab Q1 2027\nFr. 1'612.00\nJahresbeitrag AHV/IV/EO\nFr. 48.40\nVerwaltungskosten 3 %\nFr. 1'660.40\nJahrestotal 2027\nRate\nZahlbar bis\nBetrag\n1. Quartal 2027\n31.03.2027\nFr. 415.10\n2. bis 4. Quartal 2027\nRechnung folgt jeweils vor Quartalsende\nje Fr. 415.10\nZu bezahlen: Fr. 415.10 bis 31.03.2027\nKonto CH44 3000 0002 3104 8271 9 - SVA Zürich, Ausgleichskasse\nReferenz 00 0000 10048 27190 27011 22 (bitte mit dem QR-Zahlteil bezahlen)\nWichtige Hinweise\nReferenz 00 00000 10048 27190 2701 22 (bitte mit dem QR-Scanner bezeichnen)\nWichtige Hinweise\n1. Nicht fristgerecht bezahlte Beiträge werden gegen Mahngebühr gemahnt und anschliessend betrieben.\n2. Auf Beiträgen, die nicht innerhalb der Frist bezahlt werden, schuldend Sie Verzuzgsinzen von 5 pro Jahr (Art. 41bis AHVv).\n3. Gegen diese Verfügung können Sie inner 30 Tagen seit Zustellung schriftlich Einsprache erheben.\nSVA Zürich, Beiträge Nichtwerbstätige: Telefon 044 448 52 31 · Mo-Fr 8.00-17.00 Uhr · www.svazurich.ch",
+   "second": "SVA Zürich\nAusgleichskasse · Beiträge Nichterwerbstätige\nRöntgstrasse 17, 8005 Zürich\nHerr\nRui Miguel Carvalho Antunes\nBadenerstrasse 512\n8048 Zürich\nAkontoerechnung persönliche Beiträge\nAHV/IV/EO für Nichterwerbstätige · Beitragsjahr 2027 · 1. Quartal\nVersicherte Person Carvalho Antunes Rui Miguel AHV-Nr. 756.4821.3390.57\nGeburtsdatum 27.02.1971 Beitragssstatus nichterwerbstätig\nBerechnung der Jahresbeiträge 2027\nPosition Betrag\nMassgebendes Vermögen inkl. Renten × 20 (Stand 2025) Fr. 640'000.00\nJahresbeitrag AHV/IV/EO Fr. 1'612.00\nVerwaltungskosten 3 % Fr. 48.40\nJahrestotal 2027 Fr. 1'660.40\nRate Zahlbar bis Betrag\n1. Quartal 2027 31.03.2027 Fr. 415.10\n2. bis 4. Quartal 2027 Rechnung folgt jeweils vor Quartalsende je Fr. 415.10\nZu bezahlen: Fr. 415.10 bis 31.03.2027\nKonto CH44 3000 0002 3104 8271 9 - SVA Zürich, Ausgleichskasse\n2. bis 4. Quartal 2027\nRechnung folgt jeweils vor Quartalsende\nje Fr. 415.10\nZu bezahlen: Fr. 415.10 bis 31.03.2027\nKonto CH44 3000 0002 3104 8271 9 - SVA Zürich, Ausgleichskasse\nReferenz 00 00000 10048 27190 27011 22 (bitte mit dem QR-Zahlteil bezahlen)\nWichtige Hinweise\n1. Nicht fristgerecht bezahlte Beiträge werden gegen Mahngebühr gemahnt und anschliessend betrieben.\n2. Auf Beiträge, die nicht innerst der Frist bezahlt werden, schulden Sie Verzugszinsen von 5 % pro Jahr (Art. 41bis AHVv).\n3. Gegen diese Verfügung können Sie innerst 30 Tagen seit Zustellung schriftlich Einsprache erheben.\nSVA Zürich, Beiträge Nichterwerbsteue: Telefon 044 448 52 31 - Mo-Fr 8.00-17.00 Uhr - www.svazurich.ch",
+   "items": [
+    {
+     "kind": "NAME",
+     "value": "Rui Miguel Carvalho Antunes"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Badenerstrasse 512\n8048 Zürich"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "756.4821.3390.57"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Röntgenstrasse 17, 8005 Zürich"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "100.482.719"
+    },
+    {
+     "kind": "BIRTH_DATE",
+     "value": "27.02.1971"
+    },
+    {
+     "kind": "ACCOUNT",
+     "value": "CH44 3000 0002 3104 8271 9"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "00 0000 10048 27190 27011 22"
+    },
+    {
+     "kind": "PHONE",
+     "value": "044 448 52 31"
+    },
+    {
+     "kind": "NAME",
+     "value": "Rui Miguel Carvalho Antunes"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Badenerstrasse 512"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "8048 Zürich"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "756.4821.3390.57"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Röntgstrasse 17"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "8005 Zürich"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "00 00000 10048 27190 27011 22"
+    },
+    {
+     "kind": "ACCOUNT",
+     "value": "CH44 3000 0002 3104 8271 9"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "Telefon 044 448 52 31 - Mo-Fr 8.00-17.00 Uhr - www.svazurich.ch"
+    }
+   ],
+   "outgoing": "SVA Zürich\nAusgleichskasse · Beiträge Nichterwerbstätige\n[ADDRESS_2]\nAbrechnungsnummer [REFERENCE_NUMBER_2]\nZürich, 15. Februar 2027\nHerr\n[NAME_1]\n[ADDRESS_1]\nAktenrechnung persönliche Beiträge\nAHV/IV/EO für Nichterwerbstätige - Beitragsjahr 2027 · 1. Quartal\nVersicherte Person [NAME_2] AHV-Nr. [ID_NUMBER_1]\nGeburtsdatum [BIRTH_DATE_1] Beitragssstatus nichterwerbstätig\nBerechnung des Jahresbeiträge 2027\nPosition Betrag\nMassgebendes Vermögen inkl. Renten × 20 (Stand 2025) Fr. 640'000.00\nJahresbeitrag AHV/IV/EO Fr. 1'612.00\nVerwaltungskosten 3 % Fr. 48.40\nMassgebendes Vermögen mit Rendite - ab Q1 2027\nFr. 1'612.00\nJahresbeitrag AHV/IV/EO\nFr. 48.40\nVerwaltungskosten 3 %\nFr. 1'660.40\nJahrestotal 2027\nRate\nZahlbar bis\nBetrag\n1. Quartal 2027\n31.03.2027\nFr. 415.10\n2. bis 4. Quartal 2027\nRechnung folgt jeweils vor Quartalsende\nje Fr. 415.10\nZu bezahlen: Fr. 415.10 bis 31.03.2027\nKonto [ACCOUNT_1] - SVA Zürich, Ausgleichskasse\nReferenz [REFERENCE_NUMBER_1] (bitte mit dem QR-Zahlteil bezahlen)\nWichtige Hinweise\nReferenz [NUMBER_1] (bitte mit dem QR-Scanner bezeichnen)\nWichtige Hinweise\n1. Nicht fristgerecht bezahlte Beiträge werden gegen Mahngebühr gemahnt und anschliessend betrieben.\n2. Auf Beiträgen, die nicht innerhalb der Frist bezahlt werden, schuldend Sie Verzuzgsinzen von 5 pro Jahr (Art. 41bis AHVv).\n3. Gegen diese Verfügung können Sie inner 30 Tagen seit Zustellung schriftlich Einsprache erheben.\nSVA Zürich, Beiträge Nichtwerbstätige: Telefon 044 448 52 31 · Mo-Fr 8.00-17.00 Uhr · www.svazurich.ch",
+   "alternates": [
+    "Akontoerechnung persönliche Beiträge",
+    "Berechnung der Jahresbeiträge 2027",
+    "Jahrestotal 2027 Fr. 1'660.40",
+    "Rate Zahlbar bis Betrag",
+    "1. Quartal 2027 31.03.2027 Fr. 415.10",
+    "2. bis 4. Quartal 2027 Rechnung folgt jeweils vor Quartalsende je Fr. 415.10",
+    "2. Auf Beiträge, die nicht innerst der Frist bezahlt werden, schulden Sie Verzugszinsen von 5 % pro Jahr (Art. 41bis AHVv).",
+    "3. Gegen diese Verfügung können Sie innerst 30 Tagen seit Zustellung schriftlich Einsprache erheben.",
+    "SVA Zürich, Beiträge Nichterwerbsteue: Telefon 044 448 52 31 - Mo-Fr 8.00-17.00 Uhr - www.svazurich.ch"
+   ]
+  },
+  {
+   "alone": {
+    "deadline": true,
+    "amount": true,
+    "action": true,
+    "consequence": false,
+    "sec": 10.343899999976157,
+    "amountText": "336.00 EUR",
+    "deadline_iso": "2027-01-15"
+   },
+   "id": "de14",
+   "split": "final",
+   "pages": 2,
+   "readSec": 78.79530000001192,
+   "actionFirst": true,
+   "actionFinal": true,
+   "explainSec": 2.851,
+   "checkSec": 19.434,
+   "consequenceFirst": true,
+   "consequenceFinal": true,
+   "finalDeadlineRight": true,
+   "deadlinePrinted": true,
+   "finalAmountRight": true,
+   "final": {
+    "title": "Recalculated childcare fee and back payment",
+    "steps": [
+     "Transfer 336,00 € by January 15, 2027 to Stadt Bielefeld, Stadtkasse, account IBAN DE62 4809 3311 0000 7318 56, using only the reference Kassenzeichen 5.0412.073185.6.",
+     "If you cannot pay the full amount at once, call the city treasury (Stadtkasse) at 0521 51-2264 before January 15, 2027 to request an instalment plan.",
+     "Report any future changes in your income to the Youth Welfare Office (Jugendamt) without delay."
+    ],
+    "objection": "You can file a lawsuit against this notice at the Administrative Court (Minden, Königswall 8, 32423 Minden, erhoben) within one month of receiving it, but filing a lawsuit does not pause the payment deadline.",
+    "deadline_iso": "2027-01-15",
+    "amount": "336,00 €",
+    "if_ignored": "If you do not pay by January 15, 2027, a reminder fee and a late-payment surcharge of 1% for each commenced month will be charged, and overdue amounts can be enforced under North Rhine-Westphalia administrative enforcement law, for example by garnishing your wages or bank account.",
+    "corrected": [
+     "read as \"Sassenzeichen\", understood as \"Kassenzeichen\" (payment reference number)",
+     "read as \"ffristgerecht\", understood as \"fristgerecht\" (on time)",
+     "read as \"Verwaltungsverfolgungsgesetz\", understood as \"Verwaltungsvollstreckungsgesetz\" (administrative enforcement act)",
+     "read as \"beigetragen\", understood as \"betrieben\" (enforced)"
+    ]
+   },
+   "figuresRead": [
+    true,
+    true
+   ],
+   "figuresKept": [
+    true,
+    true
+   ],
+   "idsMissedByModel": [],
+   "idsSent": [],
+   "agencyKept": [
+    true,
+    true
+   ],
+   "deadlineRight": true,
+   "amountRight": true,
+   "explained": {
+    "title": "Childcare fee reassessment and arrears",
+    "steps": [
+     "Transfer the retroactive payment of 336,00 € using bank account token IBAN DE62 4809 3311 0000 7318 56 and reference token Kassenzeichen 5.0412.073185.6 by January 15, 2027.",
+     "Ensure your ongoing monthly contribution of 182,00 € continues to be paid by direct debit on the 15th of each month."
+    ],
+    "deadline_iso": "2027-01-15",
+    "amount": "336,00 €",
+    "if_ignored": "If you do not pay by the due date, reminder fees and a late payment surcharge of 1% per month will be charged, and arrears can be collected through enforcement measures such as wage or bank account seizure.",
+    "corrected": [
+     "read as \"Sassenzeichen\", understood as \"Kassenzeichen\" (cash register or payment reference number)."
+    ]
+   },
+   "transcript": "Stadt Bielefeld\nAmt für Jugend und Familie - Jugendamt\nElternbeiträge Kinderbetreuung · Niederwall 23, 33602\nBielefeld\nAktenzeichen 512.31-EB-\n26/07318\nDatum 07.12.2026\nHerrn\nKofi Asante\nHeeper Straße 214\n33607 Bielefeld\nElternbeitragsbescheid\nNeufestsetzung nach dem Kinderbildungsgesetz (KiBiz) und der Elternbeitragssatzung der Stadt Bielefeld\nSehr geehrter Herr Asante,\naufgrund der von Ihnen am 12.11.2026 vorgelegten Einkommensnachweise für das Jahr 2025 wird der Elternbeitrag für Ihr Kind ab dem 01.08.2026 neu festgesetzt.\nKind Ama Serwaa Asante geboren am 03.04.2024\nEinrichtung Städtische Kita Sonnenblume, Betreuungsumfang 45 Stunden/Woche\nFestsetzung bisher neu ab 01.08.2026\nMaß gebliches Jahreseinkommen bis 37.000 € 52.840 € (Stufe bis 61.000 €)\nMonatlicher Elternbeitrag 98,00 € 182,00 €\nNachrechnung Betrag\nAugust bis November 2026 (4 × 84,00 € Differenz) 336,00 €\nBitte überweisen Sie die Nachzahlung von 336,00 € bis zum 15. Januar 2027.\nBankverbindung und Sassenzeichen finden Sie auf Seite 2. Der laufende Monatsbeitrag von 182,00 € wird weiterhin zum 15. eines Monats per Lastschrift eingezogen.\nHinweise\neingezogen.\nHinweise\n1. Änderungen Ihres Einkommens sind dem Jugendamt unverzüglich mitzuteilen.\n2. Rechtsbehelfsbelehrung und Zahlungshinweise finden Sie auf Seite 2.\nElternbeiträge Kindertagesbetreuung: Telefon 0521 51-3872 · Mo-Do 8.30 - 15.30 Uhr, Fr 8.30 - 12.00 Uhr\nSeite 1 von 2\nStadt Bielefeld\nAmt für Jugend und Familie - Jugendamt\nAktenzeichen 512.31-EB-26/07318\nSeite 2 von 2\nNachrechnung im Einzelnen\nMonat | gezahlt | festgesetzt | Differenz\n------- | -------- | -------- | --------\nAugust 2026 | 98,00 € | 182,00 € | 84,00 €\nSeptember 2026 | 98,00 € | 182,00 € | 84,00 €\nAugust 2026\nSeptember 2026\nOktober 2026\nNovember 2026\nNachzahlung\nZahlungshinweise\nEmpfänger: Stadt Bielefeld, Stadtkasse\nIBAN DE62 4809 3311 0000 7318 56\nKassenzeichen 5.0412.073185.6\nBitte geben Sie bei der Überweisung ausschließlich das Kassenzeichen an.\nWenn Sie den Betrag nicht in einer Summe zahlen können, können Sie bei der\nWenn Sie den Betrag nicht in einer Summe zahlen können, können Sie bei der Stadtkasse vor Fälligkeit eine Ratenzahlung beantragen, Telefon 0521 51-2264.\nRechtsbehelfsbelehrung\n1. Gegen diesen Bescheid kann innerhalb eines Monats nach Bekanntgabe Klage beim Verwaltungsgericht Minden, Königswall 8, 32423 Minden, erhoben werden.\n2. Die Klage hat keine aufschiebende Wirkung; der Betrag ist trotzdem ffristgerecht zu zahlen.\n3. Wird der Betrag nicht bis zum Fälligkeitstag gezahlt, werden eine Mahngebühr und für jeden angefangenen Monat ein Säumniszuschlag von 1 % erhoben.\n4. Rückstände werden nach dem Verwaltungsverfolgungsgesetz NRW beigetragen, zum Beispiel durch Pfändung von Lohn oder Konto.\nElternbeiträge Kindertagesbetreuung: Telefon 0521 51-3872 · Stadtkasse: Telefon 0521 51-2264\nwww.bielefeld.de · Seite 2 von 2",
+   "second": "Stadt Bielefeld\nAmt für Jugend und Familie - Jugendamt\nElternbeiträge Kindertagesbetreuung · Niederwall 23, 33602\nBielefeld\nAktenzeichen 512.31-EB-\n26/07318\nDatum 07.12.2026\nHerrn\nKofi Asante\nHeeper Stra ße 214\n33607 Bielefeld\nElternbeitragsbescheid\nNeufestsetzung nach dem Kinderbildungsgesetz (KiBiz) und der Elternbeitragssatzung der Stadt Bielefeld\naufgrund der von Ihnen am 12.11.2026 vorgelegten Einkommensnachweise für das Jahr 2025 wird der Elternbeitrag für Ihr Kind ab dem 01.08.2026 neu festgesetzt.\nKind\nAma Serwaa Asante\ngeboren am\n03.04.2024\nEinrichtung\nStädtische Kita Sonnenblume, Betreuungsumfang 45 Stunden/Woche\nFestsetzung\nbisher\nneu ab 01.08.2026\nMaß gebliches Jahreseinkommen bis 37.000 € 52.840 € (Stufe bis 61.000 €)\nMontlicher Elternbeitrag 98,00 € 182,00 €\nNachrechnung\nBetrag\nAugust bis November 2026 (4 × 84,00 € Differenz)\n336,00 €\nBitte überweisen Sie die Nachzahlung von 336,00 € bis zum 15. Januar 2027.\nBankverbindung und Kassenzeichen finden Sie auf Seite 2. Der laufende\nAugust bis November 2026 (4 × 84,00 € Differenz) 336,00 €\nBitte überweisen Sie die Nachzahlung von 336,00 € bis zum 15. Januar 2027. Bankverbindung und Sassenzeichen finden Sie auf Seite 2. Der laufende Monatsbeitrag von 182,00 € wird weiterhin zum 15. eines Monats per Lastschrift eingezogen.\nHinweise\n1. Änderungen Ihres Einkommens sind dem Jugendamt unverzüglich mitzuteilen.\n2. Rechtsbehelfsbelehrung und Zahlungshinweise finden Sie auf Seite 2.\nElternbeiträge Kindertagesbetreuung: Telefon 0521 51-3872 Mo - Do 8.30 - 15.30 Uhr, Fr 8.30 - 12.00 Uhr\nSeite 1 von 2\nStadt Bielefeld\nAmt für Jugend und Familie - Jugendamt\nAktenzeichen 512.31-EB-26/07318\nSeite 2 von 2\nNachrechnung im Einzelnen\nMonat | gezahlt | festgesetzt | Differenz\n------- | -------- | -------- | --------\nAugust 2026 | 98,00 € | 182,00 € | 84,00 €\nSeptember 2026 | 98,00 € | 182,00 € | 84,00 €\nOktober 2026 | 98,00 € | 182,00 € | 84,00 €\nNovember 2026 | 98,00 € | 182,00 € | 84,00 €\nNachzahlung | | | 336,00 €\nNovember 2026\nNachzahlung\nZahlungshinweise\nEmpfänger: Stadt Bielefeld, Stadtkasse\nIBAN DE62 4809 3311 0000 7318 56\nKassenzeichen 5.0412.073185.6\nBitte geben Sie bei der Überweisung ausschließlich das Kassenzeichen an.\nWenn Sie den Betrag nicht in einer Summe zahlen können, können Sie bei der Stadtkasse vor Fälligkeit eine Ratenzahlung beantragen, Telefon 0521 51-2264.\nRechtsbehelfsbelehrung\n1. Gegen diesen Bescheid kann innerhalb eines Monats nach Bekanntgabe Klage beim Verwaltungsgericht Minden, Königswall 8, 32423 Minden, erhoben werden.\n2. Die Klage hat keine aufschiebende Wirkung; der Betrag ist trotzdem ffristgerecht zu zahlen.\n3. Wird der Betrag nicht bis zum Fälligkeitstag gezahlt, werden eine Mahngebühr und für jeden angefangenen Monat ein Säumniszuschlag von 1 % erhoben.\n4. Rückstände werden nach dem Verwaltungsvollstreckungsgesetz NRW betrieben, zum Beispiel durch Pfändung von Lohn oder Konto.\nElternbeiträge Kindertagesbetreuung: Telefon 0521 51-3872 · Stadtkasse: Telefon 0521 51-2264\nwww.bielefeld.de · Seite 2 von 2",
+   "items": [
+    {
+     "kind": "NAME",
+     "value": "Kofi Asante"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Heeper Straße 214"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "33607 Bielefeld"
+    },
+    {
+     "kind": "NAME",
+     "value": "Ama Serwaa Asante"
+    },
+    {
+     "kind": "BIRTH_DATE",
+     "value": "03.04.2024"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Stadt Bielefeld\nAmt für Jugend und Familie - Jugendamt\nElternbeiträge Kinderbetreuung · Niederwall 23, 33602 Bielefeld"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "Aktenzeichen 512.31-EB-26/07318"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Niederwall 23, 33602 Bielefeld"
+    },
+    {
+     "kind": "PHONE",
+     "value": "0521 51-3872"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Stadt Bielefeld, Königswall 8, 32423 Minden"
+    },
+    {
+     "kind": "ACCOUNT",
+     "value": "IBAN DE62 4809 3311 0000 7318 56"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "512.31-EB-26/07318"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "5.0412.073185.6"
+    },
+    {
+     "kind": "PHONE",
+     "value": "0521 51-2264"
+    },
+    {
+     "kind": "PHONE",
+     "value": "0521 51-3872"
+    },
+    {
+     "kind": "NAME",
+     "value": "Kofi Asante"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Heeper Stra ße 214"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "33607 Bielefeld"
+    },
+    {
+     "kind": "NAME",
+     "value": "Ama Serwaa Asante"
+    },
+    {
+     "kind": "BIRTH_DATE",
+     "value": "03.04.2024"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Städtische Kita Sonnenblume, Betreuungsumfang 45 Stunden/Woche"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Niederwall 23, 33602 Bielefeld"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "512.31-EB-"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "26/07318"
+    },
+    {
+     "kind": "PHONE",
+     "value": "0521 51-3872"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Stadt Bielefeld"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Amt für Jugend und Familie - Jugendamt"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "Aktenzeichen 512.31-EB-26/07318"
+    },
+    {
+     "kind": "ACCOUNT",
+     "value": "IBAN DE62 4809 3311 0000 7318 56"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "Kassenzeichen 5.0412.073185.6"
+    },
+    {
+     "kind": "PHONE",
+     "value": "0521 51-2264"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "0521 51-3872"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "0521 51-2264"
+    }
+   ],
+   "outgoing": "[ADDRESS_7]\n[ADDRESS_4]\nElternbeiträge Kinderbetreuung · Niederwall 23, 33602\nBielefeld\nAktenzeichen [REFERENCE_NUMBER_5]\n[REFERENCE_NUMBER_6]\nDatum 07.12.2026\nHerrn\n[NAME_3]\n[ADDRESS_5]\n[ADDRESS_6]\nElternbeitragsbescheid\nNeufestsetzung nach dem Kinderbildungsgesetz (KiBiz) und der Elternbeitragssatzung der [ADDRESS_7]\nSehr geehrter [NAME_4],\naufgrund der von Ihnen am 12.11.2026 vorgelegten Einkommensnachweise für das Jahr 2025 wird der Elternbeitrag für Ihr Kind ab dem 01.08.2026 neu festgesetzt.\nKind [NAME_1] geboren am [BIRTH_DATE_1]\nEinrichtung [ADDRESS_1]\nFestsetzung bisher neu ab 01.08.2026\nMaß gebliches Jahreseinkommen bis 37.000 € 52.840 € (Stufe bis 61.000 €)\nMonatlicher Elternbeitrag 98,00 € 182,00 €\nNachrechnung Betrag\nAugust bis November 2026 (4 × 84,00 € Differenz) 336,00 €\nBitte überweisen Sie die Nachzahlung von 336,00 € bis zum 15. Januar 2027.\nBankverbindung und Sassenzeichen finden Sie auf Seite 2. Der laufende Monatsbeitrag von 182,00 € wird weiterhin zum 15. eines Monats per Lastschrift eingezogen.\nHinweise\neingezogen.\nHinweise\n1. Änderungen Ihres Einkommens sind dem Jugendamt unverzüglich mitzuteilen.\n2. Rechtsbehelfsbelehrung und Zahlungshinweise finden Sie auf Seite 2.\nElternbeiträge Kindertagesbetreuung: Telefon 0521 51-3872 · Mo-Do 8.30 - 15.30 Uhr, Fr 8.30 - 12.00 Uhr\nSeite 1 von 2\n[ADDRESS_7]\n[ADDRESS_4]\n[REFERENCE_NUMBER_1]\nSeite 2 von 2\nNachrechnung im Einzelnen\nMonat | gezahlt | festgesetzt | Differenz\n------- | -------- | -------- | --------\nAugust 2026 | 98,00 € | 182,00 € | 84,00 €\nSeptember 2026 | 98,00 € | 182,00 € | 84,00 €\nAugust 2026\nSeptember 2026\nOktober 2026\nNovember 2026\nNachzahlung\nZahlungshinweise\nEmpfänger: [ADDRESS_7], Stadtkasse\n[ACCOUNT_1]\n[REFERENCE_NUMBER_2]\nBitte geben Sie bei der Überweisung ausschließlich das Kassenzeichen an.\nWenn Sie den Betrag nicht in einer Summe zahlen können, können Sie bei der\nWenn Sie den Betrag nicht in einer Summe zahlen können, können Sie bei der Stadtkasse vor Fälligkeit eine Ratenzahlung beantragen, Telefon 0521 51-2264.\nRechtsbehelfsbelehrung\n1. Gegen diesen Bescheid kann innerhalb eines Monats nach Bekanntgabe Klage beim Verwaltungsgericht [ADDRESS_3] werden.\n2. Die Klage hat keine aufschiebende Wirkung; der Betrag ist trotzdem ffristgerecht zu zahlen.\n3. Wird der Betrag nicht bis zum Fälligkeitstag gezahlt, werden eine Mahngebühr und für jeden angefangenen Monat ein Säumniszuschlag von 1 % erhoben.\n4. Rückstände werden nach dem Verwaltungsverfolgungsgesetz NRW beigetragen, zum Beispiel durch Pfändung von Lohn oder Konto.\nElternbeiträge Kindertagesbetreuung: Telefon 0521 51-3872 · Stadtkasse: Telefon 0521 51-2264\nwww.bielefeld.de · Seite 2 von 2",
+   "alternates": [
+    "Elternbeiträge Kindertagesbetreuung · Niederwall 23, 33602",
+    "Kind",
+    "Festsetzung",
+    "bisher",
+    "neu ab 01.08.2026",
+    "Montlicher Elternbeitrag 98,00 € 182,00 €",
+    "Nachrechnung",
+    "Betrag",
+    "August bis November 2026 (4 × 84,00 € Differenz)",
+    "336,00 €",
+    "Bankverbindung und Kassenzeichen finden Sie auf Seite 2. Der laufende",
+    "Bitte überweisen Sie die Nachzahlung von 336,00 € bis zum 15. Januar 2027. Bankverbindung und Sassenzeichen finden Sie auf Seite 2. Der laufende Monatsbeitrag von 182,00 € wird weiterhin zum 15. eines Monats per Lastschrift eingezogen.",
+    "Oktober 2026 | 98,00 € | 182,00 € | 84,00 €",
+    "November 2026 | 98,00 € | 182,00 € | 84,00 €",
+    "Nachzahlung | | | 336,00 €",
+    "4. Rückstände werden nach dem Verwaltungsvollstreckungsgesetz NRW betrieben, zum Beispiel durch Pfändung von Lohn oder Konto."
+   ]
+  },
+  {
+   "alone": {
+    "deadline": true,
+    "amount": true,
+    "action": true,
+    "consequence": true,
+    "sec": 11.353100000023842,
+    "amountText": "$1,245.00",
+    "deadline_iso": "2027-03-15"
+   },
+   "id": "en12",
+   "split": "final",
+   "pages": 1,
+   "readSec": 29.687299999952316,
+   "actionFirst": true,
+   "actionFinal": true,
+   "explainSec": 2.667199999988079,
+   "checkSec": 17.84140000003576,
+   "consequenceFirst": true,
+   "consequenceFinal": true,
+   "finalDeadlineRight": true,
+   "deadlinePrinted": true,
+   "finalAmountRight": true,
+   "final": {
+    "title": "2027 income tax instalment reminder",
+    "steps": [
+     "Pay $1,245.00 by March 15, 2027.",
+     "Pay online through your financial institution using payee \"Federal - Tax Instalment - Individual\" and your social insurance number 528 491 736 as the account number, or pay with My Payment on canada.ca, or at a Canada Post outlet with a QR code from My Account.",
+     "You do not have to pay instalments if your net tax owing for 2027 will be $3,000 or less."
+    ],
+    "objection": "",
+    "deadline_iso": "2027-03-15",
+    "amount": "$1,245.00",
+    "if_ignored": "If you pay late or pay less than the required amount, the Canada Revenue Agency charges instalment interest at the prescribed rate, compounded daily. If your instalment interest for 2027 is more than $1,000, you may also have to pay an instalment penalty.",
+    "corrected": []
+   },
+   "figuresRead": [
+    true,
+    true
+   ],
+   "figuresKept": [
+    true,
+    true
+   ],
+   "idsMissedByModel": [
+    "Farhan Siddiqui"
+   ],
+   "idsSent": [],
+   "agencyKept": [
+    true,
+    true
+   ],
+   "deadlineRight": true,
+   "amountRight": true,
+   "explained": {
+    "title": "Canada Revenue Agency 2027 tax instalment reminder",
+    "steps": [
+     "Pay $1,245.00 by March 15, 2027 online through your financial institution using payee \"Federal - Tax Instalment - Individual\" and your social insurance number 528 491 736 as the account number, with My Payment on canada.ca, or at a Canada Post outlet with a QR code from My Account."
+    ],
+    "deadline_iso": "2027-03-15",
+    "amount": "$1,245.00",
+    "if_ignored": "The Canada Revenue Agency will charge instalment interest at the prescribed rate, compounded daily. If your instalment interest for 2027 is more than $1,000, you may also have to pay an instalment penalty.",
+    "corrected": []
+   },
+   "transcript": "Canada Revenue Agency\nAgence du revenu du Canada\nSudbury Tax Centre, 1050 Notre Dame Ave, Sudbury ON P3A 5C1\nInstalment Reminder\nDate: February 12, 2027\nMR FARHAN SIDDIQUI\n908-2214 VICTORIA PARK AVE\nTORONTO ON M1R 1V7\nInstalment Reminder\nTax year 2027 · Individual income tax\nSocial insurance number 528 491 736 Document locator 27-0212-4418-305\nDear Farhan Siddiqui,\nOur records show that you may have to pay your 2027 income tax by instalments, because your net tax owing was more than $3,000 in 2025 and in 2026. The amounts below are based on the no-calculation option.\nYour instalment information\nItem Amount\nNet tax owing, 2025 return $4,980.00\nInstallments paid for 2026 $3,735.00\nSuggested installments for 2027 (total for the year) $4,980.00\nInstallments in 2027 (March, June, September, December) 4 × $1,245.00\nInstallment due March 15, 2027 $1,245.00\nPay $1,245.00 by March 15, 2027\nPay online through your financial institution (payee: \"Federal - Tax Instalment - Individual\", account number: your social insurance number), with My Payment on canada.ca, or at a Canada Post outlet with a QR code from My Account.\nWhat you should know\n1. If you pay late or pay less than the required amount, we charge instalment interest at the prescribed rate, compounded daily.\n2. If your instalment interest for 2027 is more than $1,000, you may also have to pay an instalment penalty.\n3. You do not have to pay instalments if your net tax owing for 2027 will be $3,000 or less.\nIndividual tax enquiries: 1-800-959-8281 - From outside Canada and the U.S.: 613-940-8495 - canada.ca/taxes",
+   "second": "Canada Revenue Agency\nAgence du revenu du Canada\nSudbury Tax Centre, 1050 Notre Dame Ave, Sudbury ON P3A 5C1\nMR FARHAN SIDDIQUI\n908-2214 VICTORIA PARK AVE\nTORONTO ON M1R 1V7\nInstalment Reminder\nDate: February 12, 2027\nInstalment Reminder\nTax year 2027 - Individual income tax\nSocial insurance number 528 491 736 Document locator 27-0212-4418-305\nDear Farhan Siddiqui,\nOur records show that you may have to pay your 2027 income tax by instalments, because your net tax owing was more than $3,000 in 2025 and in 2026. The amounts below are based on the no-calculation option.\nYour instalment information\nItem Amount\nNet tax owing, 2025 return $4,980.00\nInstallments paid for 2026 $3,735.00\nSuggested installments for 2027 (total for the year) $4,980.00\nInstallments in 2027 (March, June, September, December) 4 × $1,245.00\nInstallment due March 15, 2027 $1,245.00\nPay $1,245.00 by March 15, 2027\nPay online through your financial institution (payee: \"Federal - Tax instalment - Individual\", account number: your social insurance number), with My Payment on canada.ca, or at a\nWhat you should know\n1. If you pay late or pay less than the required amount, we charge instalment interest at the prescribed rate, compounded daily.\n2. If your instalment interest for 2027 is more than $1,000, you may also have to pay an instalment penalty.\n3. You do not have to pay instalments if your net tax owing for 2027 will be $3,000 or less.\nIndividual tax enquiries: 1-800-959-8281 · From outside Canada and the U.S.: 613-940-8495 · canada.ca/taxes",
+   "items": [
+    {
+     "kind": "NAME",
+     "value": "FARHAN SIDDIQUI"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "908-2214 VICTORIA PARK AVE"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "TORONTO ON M1R 1V7"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "528 491 736"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "27-0212-4418-305"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "1-800-959-8281"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "613-940-8495"
+    },
+    {
+     "kind": "NAME",
+     "value": "MR FARHAN SIDDIQUI"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "908-2214 VICTORIA PARK AVE"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "TORONTO ON M1R 1V7"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "528 491 736"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "27-0212-4418-305"
+    },
+    {
+     "kind": "PHONE",
+     "value": "1-800-959-8281"
+    },
+    {
+     "kind": "PHONE",
+     "value": "613-940-8495"
+    }
+   ],
+   "outgoing": "Canada Revenue Agency\nAgence du revenu du Canada\nSudbury Tax Centre, 1050 Notre Dame Ave, Sudbury ON P3A 5C1\nInstalment Reminder\nDate: February 12, 2027\n[NAME_1]\n[ADDRESS_1]\n[ADDRESS_2]\nInstalment Reminder\nTax year 2027 · Individual income tax\nSocial insurance number [ID_NUMBER_1] Document locator [REFERENCE_NUMBER_1]\nDear [NAME_2],\nOur records show that you may have to pay your 2027 income tax by instalments, because your net tax owing was more than $3,000 in 2025 and in 2026. The amounts below are based on the no-calculation option.\nYour instalment information\nItem Amount\nNet tax owing, 2025 return $4,980.00\nInstallments paid for 2026 $3,735.00\nSuggested installments for 2027 (total for the year) $4,980.00\nInstallments in 2027 (March, June, September, December) 4 × $1,245.00\nInstallment due March 15, 2027 $1,245.00\nPay $1,245.00 by March 15, 2027\nPay online through your financial institution (payee: \"Federal - Tax Instalment - Individual\", account number: your social insurance number), with My Payment on canada.ca, or at a Canada Post outlet with a QR code from My Account.\nWhat you should know\n1. If you pay late or pay less than the required amount, we charge instalment interest at the prescribed rate, compounded daily.\n2. If your instalment interest for 2027 is more than $1,000, you may also have to pay an instalment penalty.\n3. You do not have to pay instalments if your net tax owing for 2027 will be $3,000 or less.\nIndividual tax enquiries: 1-800-959-8281 - From outside Canada and the U.S.: 613-940-8495 - canada.ca/taxes",
+   "alternates": [
+    "Pay online through your financial institution (payee: \"Federal - Tax instalment - Individual\", account number: your social insurance number), with My Payment on canada.ca, or at a"
+   ]
+  },
+  {
+   "alone": {
+    "deadline": true,
+    "amount": true,
+    "action": false,
+    "consequence": true,
+    "sec": 6.162899999976158,
+    "amountText": "",
+    "deadline_iso": "2027-01-14"
+   },
+   "id": "en13",
+   "split": "final",
+   "pages": 1,
+   "readSec": 32.16229999995232,
+   "actionFirst": true,
+   "actionFinal": true,
+   "explainSec": 2.5415,
+   "checkSec": 12.794199999988079,
+   "consequenceFirst": true,
+   "consequenceFinal": true,
+   "finalDeadlineRight": true,
+   "deadlinePrinted": true,
+   "finalAmountRight": true,
+   "final": {
+    "title": "Universal Credit appointment and document check",
+    "steps": [
+     "Both Babajide Oyelaran (QH 41 82 77 C) and Funmilayo Oyelaran (SK 30 19 64 A) must attend the appointment at Hounslow Jobcentre, ground floor reception, on Thursday 14 January 2027 at 10:20am.",
+     "Arrive 10 minutes early and bring this letter.",
+     "Bring passports, biometric residence permits or eVisa share codes for both of you, bank statements for October, November and December 2026 for every account of each of you, your joint tenancy agreement and latest rent statement, and payslips since 1 November 2026 for Mrs Mr Babajide Oyelaran.",
+     "If you need an interpreter or reasonable adjustments, tell them by 8 January 2027.",
+     "If you cannot attend, tell them before the appointment through your online journal or by calling 0800 328 5644 (Relay UK: 18001 then 0800 328 5644)."
+    ],
+    "objection": "",
+    "deadline_iso": "2027-01-14",
+    "amount": "",
+    "if_ignored": "If either of you does not attend without a good reason, your Universal Credit payment may be reduced (a sanction). If you do not provide the documents, they may stop paying the housing element or close your claim.",
+    "corrected": []
+   },
+   "figuresRead": [
+    true
+   ],
+   "figuresKept": [
+    true
+   ],
+   "idsMissedByModel": [],
+   "idsSent": [],
+   "agencyKept": [
+    true
+   ],
+   "deadlineRight": true,
+   "amountRight": true,
+   "explained": {
+    "title": "Universal Credit appointment and evidence check",
+    "steps": [
+     "Attend the appointment at Hounslow Jobcentre, ground floor reception on Thursday 14 January 2027 at 10:20am.",
+     "Bring your passport, biometric residence permit or eVisa share code for both of you.",
+     "Bring bank statements for October, November and December 2026 for every account of each of you.",
+     "Bring your tenancy agreement and latest rent statement.",
+     "Bring payslips since 1 November 2026.",
+     "If you cannot come, tell them before the appointment through your online journal or by calling the helpline.",
+     "Arrive 10 minutes early and bring this letter."
+    ],
+    "deadline_iso": "2027-01-14",
+    "amount": "",
+    "if_ignored": "Your Universal Credit payment may be reduced (a sanction), the housing element may be stopped, or your claim may be closed.",
+    "corrected": []
+   },
+   "transcript": "Department for Work and Pensions\nUniversal Credit · Hounslow Jobcentre\nBath Road, Hounslow TW3 3EB\nClaim reference UC 7 4418 2093\nDate: 15 December 2026\nMr Babajide Oyelaran and Mrs Funmilayo Oyelaran\nFlat 9, Brabazon Court, 112 Staines Road\nHounslow TW3 3LF\nYou both need to attend an appointment\nUniversal Credit joint claim work search review and evidence check\nDear Mr and Mrs Oyelaran,\nAs part of your joint Universal Credit claim, you both need to come to a face-to-face appointment with your work coach. You must bring the documents listed below.\nDate and time Thursday 14 January 2027 at 10:20am\nPlace Hounslow Jobcentre, ground floor reception\nWho must attend Babajide Oyelaran (National Insurance number QH 41 82 77 C)\nFunmilayo Oyelaran (National Insurance number SK 30 19 64 A)\nWhat to bring\nDocument | Whose\n---|---\nPassport, biometric residence permit or eVisa share code | both\nBank statements for October, November and December 2026 | every account of each of you\nTenancy agreement and latest rent statement | joint\nPayslips since 1 November 2026 | Mrs Oyelaran\nPlease both attend on 14 January 2027 at 10:20am.\nIf you cannot come, tell us before the appointment through your online journal or by calling the Universal Credit helpline. Arrive 10 minutes early and bring this letter.\nImportant\n1. If either of you does not attend and does not have a good reason, your Universal Credit payment may be reduced.\nThis is called a sanction.\n2. If you do not provide the documents, we may stop paying the housing element or close your claim.\n3. You can ask for an interpreter or for reasonable adjustments. Please tell us by 8 January 2027.\nUniversal Credit helpline: 0800 328 5644 (Relay UK: 18001 then 0800 328 5644) - Monday to Friday, 8am to 6pm ·\nCalls are free",
+   "second": "Department for Work and Pensions\nUniversal Credit • Hounslow Jobcentre\nBath Road, Hounslow TW3 3EB\nClaim reference UC 7 4418 2093\nDate: 15 December 2026\nMr Babajide Oyelaran and Mrs Funmilayo Oyelaran\nFlat 9, Brabazon Court, 112 Staines Road\nHounslow TW3 3LF\nYou both need to attend an appointment\nUniversal Credit joint claim · work search review and evidence check\nDear Mr and Mrs Oyelaran,\nAs part of your joint Universal Credit claim, you both need to come to a face-to-face appointment with your work coach. You must bring the documents listed below.\nDate and time Thursday 14 January 2027 at 10:20am\nPlace Hounslow Jobcentre, ground floor reception\nWho must attend Babajide Oyelaran (National Insurance number QH 41 82 77 C) Funmilayo Oyelaran (National Insurance number SK 30 19 64 A)\nWhat to bring\nDocument Whose\nPassport, biometric residence permit or eVisa share code both\nBank statements for October, November and December 2026 every account of each of you\nTenancy agreement and latest rent statement joint\nPayslips since 1 November 2026 Mrs Oyelaran\nPlease both attend on 14 January 2027 at 10:20am.\nMrs Oyelarans\nPlease both attend on 14 January 2027 at 10:20am.\nIf you cannot come, tell us before the appointment through your online journal or by calling the Universal Credit helpline. Arrive 10 minutes early and bring this letter.\nImportant\n1. If either of you does not attend and does not have a good reason, your Universal Credit payment may be reduced. This is called a sanction.\n2. If you do not provide the documents, we may stop paying the housing element or close your claim.\n3. You can ask for an interpreter or for reasonable adjustments. Please tell us by 8 January 2027.\nUniversal Credit helpline: 0800 328 5644 (Relay UK: 18001 then 0800 328 5644) Monday to Friday, 8am to 6pm.\nCalls are free",
+   "items": [
+    {
+     "kind": "NAME",
+     "value": "Mr Babajide Oyelaran"
+    },
+    {
+     "kind": "NAME",
+     "value": "Mrs Funmilayo Oyelaran"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Flat 9, Brabazon Court, 112 Staines Road"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Hounslow TW3 3LF"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "UC 7 4418 2093"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "QH 41 82 77 C"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "SK 30 19 64 A"
+    },
+    {
+     "kind": "PHONE",
+     "value": "0800 328 5644"
+    },
+    {
+     "kind": "NAME",
+     "value": "Babajide Oyelaran"
+    },
+    {
+     "kind": "NAME",
+     "value": "Funmilayo Oyelaran"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Flat 9, Brabazon Court, 112 Staines Road"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Hounslow TW3 3LF"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "QH 41 82 77 C"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "SK 30 19 64 A"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "UC 7 4418 2093"
+    },
+    {
+     "kind": "PHONE",
+     "value": "0800 328 5644"
+    },
+    {
+     "kind": "PHONE",
+     "value": "18001 then 0800 328 5644"
+    }
+   ],
+   "outgoing": "Department for Work and Pensions\nUniversal Credit · Hounslow Jobcentre\nBath Road, [ADDRESS_3]\nClaim reference [REFERENCE_NUMBER_1]\nDate: 15 December 2026\nMr [NAME_2] [NAME_1]\n[ADDRESS_1]\n[ADDRESS_2]\nYou both need to attend an appointment\nUniversal Credit joint claim work search review and evidence check\nDear [NAME_4],\nAs part of your joint Universal Credit claim, you both need to come to a face-to-face appointment with your work coach. You must bring the documents listed below.\nDate and time Thursday 14 January 2027 at 10:20am\nPlace Hounslow Jobcentre, ground floor reception\nWho must attend [NAME_6] (National Insurance number [ID_NUMBER_1])\n[NAME_5] (National Insurance number [ID_NUMBER_2])\nWhat to bring\nDocument | Whose\n---|---\nPassport, biometric residence permit or eVisa share code | both\nBank statements for October, November and December 2026 | every account of each of you\nTenancy agreement and latest rent statement | joint\nPayslips since 1 November 2026 | Mrs [NAME_3]\nPlease both attend on 14 January 2027 at 10:20am.\nIf you cannot come, tell us before the appointment through your online journal or by calling the Universal Credit helpline. Arrive 10 minutes early and bring this letter.\nImportant\n1. If either of you does not attend and does not have a good reason, your Universal Credit payment may be reduced.\nThis is called a sanction.\n2. If you do not provide the documents, we may stop paying the housing element or close your claim.\n3. You can ask for an interpreter or for reasonable adjustments. Please tell us by 8 January 2027.\nUniversal Credit helpline: 0800 328 5644 (Relay UK: [PHONE_1]) - Monday to Friday, 8am to 6pm ·\nCalls are free",
+   "alternates": [
+    "Universal Credit • Hounslow Jobcentre",
+    "Document Whose",
+    "Passport, biometric residence permit or eVisa share code both",
+    "Bank statements for October, November and December 2026 every account of each of you",
+    "Tenancy agreement and latest rent statement joint",
+    "Mrs Oyelarans",
+    "1. If either of you does not attend and does not have a good reason, your Universal Credit payment may be reduced. This is called a sanction."
+   ]
+  },
+  {
+   "alone": {
+    "deadline": true,
+    "amount": false,
+    "action": true,
+    "consequence": false,
+    "sec": 7.159199999988079,
+    "amountText": "PN-26-04817",
+    "deadline_iso": "2027-01-06"
+   },
+   "id": "en14",
+   "split": "final",
+   "pages": 2,
+   "readSec": 53.14980000001192,
+   "actionFirst": true,
+   "actionFinal": true,
+   "explainSec": 2.248899999976158,
+   "checkSec": 15.173100000023842,
+   "consequenceFirst": false,
+   "consequenceFinal": false,
+   "finalDeadlineRight": true,
+   "deadlinePrinted": true,
+   "finalAmountRight": true,
+   "final": {
+    "title": "School attendance penalty notice",
+    "steps": [
+     "Pay £80 by 6 January 2027 (or £160 by 13 January 2027) using payment reference 3312 0481 7726.",
+     "Pay online at www.leeds.gov.uk/pay (select \"Education penalty notice\") or by automated telephone payment on 0113 378 4402 (24 hours). Do not pay at the school."
+    ],
+    "objection": "There is no statutory right of appeal. If you believe the notice was issued in error, write to the Attendance Enforcement Team within 14 days (this does not extend the payment periods).",
+    "deadline_iso": "2027-01-06",
+    "amount": "£80",
+    "if_ignored": "If the penalty is not paid in full within 28 days (by 13 January 2027), the council may prosecute you in the magistrates' court. On conviction, you could be fined up to £1,000, ordered to pay costs, and the court can also make a parenting order.",
+    "corrected": []
+   },
+   "figuresRead": [
+    true,
+    true
+   ],
+   "figuresKept": [
+    true,
+    true
+   ],
+   "idsMissedByModel": [],
+   "idsSent": [],
+   "agencyKept": [
+    true,
+    false
+   ],
+   "deadlineRight": true,
+   "amountRight": true,
+   "explained": {
+    "title": "School attendance penalty notice",
+    "steps": [
+     "Pay £80 so that payment reaches the council by 6 January 2027 using payment reference 3312 0481 7726 online at www.leeds.gov.uk/pay or via automated telephone payments at 0113 378 4402.",
+     "Alternatively, pay £160 if paying between 22 and 28 days, reaching the council by 13 January 2027.",
+     "If you believe the notice was issued in error, write to the Attendance Enforcement Team within 14 days."
+    ],
+    "deadline_iso": "2027-01-06",
+    "amount": "£80",
+    "if_ignored": "If the penalty is not paid in full within 28 days, the council may prosecute you in the magistrates' court where on conviction you could be fined up to £1,000 and ordered to pay costs.",
+    "corrected": []
+   },
+   "transcript": "Leeds City Council\nChildren and Families Attendance Enforcement Team\nMerrion House, 110 Merrion Centre, Leeds LS2 8BB\nPenalty Notice No. PN-26-04817\nDate of issue: 14 December 2026\nMrs Rūta Kazlauskienė\n27 Harehills Avenue\nLeeds LS8 4EX\nPenalty Notice\nFailure to secure regular attendance at school · Section 444A, Education Act 1996\nThis notice gives you the opportunity to discharge your liability to conviction for an offence under section 444(1) of the Education Act 1996 by paying a penalty.\nPupil Jonas Kazlauskas Date of birth 19/03/2016\nSchool Roundhay Lane Primary School, Year 5\nPeriod 2 November 2026 to 27 November 2026 · 8 sessions of unauthorised absence (holiday taken in term time, 17 to 19 November 2026)\nAmount of the penalty\nIf paid Payment must reach us by Amount\nwithin 21 days of receipt | 6 January 2027 | £80\nwithin 28 days of receipt | 13 January 2027 | £160\nnot paid in full within 28 days | - | prosecution\nTo pay £80, payment must reach us by 6 January 2027.\nYou will need the payment reference printed on page 2. Payment cannot be made at the school.\nNotes\n1. This notice is deemed to be served two working days after posting. Payment discharges your liability and no further action will be taken for this absence.\n2. If the penalty is not paid in full within 28 days, the council may prosecute you in the magistrate's court.\n2. If the penalty is not paid in full within 28 days, the council may prosecute you in the magistrates' court. On conviction you could be fined up to £1,000 and ordered to pay costs.\n3. There is no statutory right of appeal. If you believe the notice was issued in error, write to the Attendance Enforcement Team within 14 days.\n4. A second penalty notice within three years will be charged at £160 with no reduced rate.\nAttendance Enforcement Team: 0113 378 5527 · Monday to Friday, 9am to 5pm · Page 1 of 2\nLeeds City Council\nAttendance Enforcement Team\nPenalty Notice No. PN-26-04817\nPage 2 of 2\nHow to pay\nName: KAZLAUSKIENE, RUTA\nPayment reference: 3312 0481 7726\nOnline: www.leeds.gov.uk/pay (select \"Education penalty notice\")\nAutomated telephone payments: 0113 378 4402, 24 hours\nPlease quote the payment reference in full. Payments without it cannot be matched to this notice.\nRecord of unauthorised absence\nDate Session Code Reason recorded by school\n17/11/2026 to AM and G Holiday not agreed by the school (6\n19/11/2026 PM sessions)\n23/11/2026 AM O Absence not explained\n27/11/2026 PM O Absence not explained\nTotal unauthorised sessions 8\nPM\nO\nAbsence not explained\nTotal unauthorised sessions\n8\nWithdrawal of a penalty notice\n1. The council may withdraw a notice only if it was issued in error, issued to the wrong person, or does not meet the legal requirements.\n2. A request to withdraw does not extend the payment periods shown on page 1.\n3. If you are prosecuted, the court can also make a parenting order.\n4. Each parent with day-to-day responsibility for the child may receive a separate notice.\nAttendance Enforcement Team: 0113 378 5527 · Automated payments: 0113 378 4402 · Page 2 of 2",
+   "second": "Leeds City Council\nChildren and Families · Attendance Enforcement Team\nMerrion House, 110 Merrion Centre, Leeds LS2 8BB\nPenalty Notice No. PN-26-04817\nDate of issue: 14 December 2026\nMrs Rūta Kazlauskienė\n27 Harehills Avenue\nLeeds LS8 4EX\nPenalty Notice\nFailure to secure regular attendance at school · Section 444A, Education Act 1996\nThis notice gives you the opportunity to discharge your liability to conviction for an offence under section 444(1) of the Education Act 1996 by paying a penalty.\nPupil Jonas Kazlauskas Date of birth 19/03/2016\nSchool Roundhay Lane Primary School, Year 5\nPeriod 2 November 2026 to 27 November 2026 · 8 sessions of unauthorised absence (holiday taken in term time, 17 to 19 November 2026)\nAmount of the penalty\nIf paid Payment must reach us by Amount\nwithin 21 days of receipt 6 January 2027 £80\nwithin 28 days of receipt 13 January 2027 £160\nnot paid in full within 28 days - prosecution\nTo pay £80, payment must reach us by 6 January 2027.\nYou will need the payment reference printed on page 2. Payment cannot be made at the school.\nNotes\n1. This notice is deemed to be served two working days after posting. Payment discharges your liability and no further action will be taken for this absence.\n2. If the penalty is not paid in full within 28 days, the council may prosecute you in the magistrates' court.\nOn conviction you could be fined up to £1,000 and ordered to pay costs.\n3. There is no statutory right of appeal. If you believe the notice was issued in error, write to the Attendance Enforcement Team within 14 days.\n4. A second penalty notice within three years will be charged at £160 with no reduced rate.\nAttendance Enforcement Team: 0113 378 5527 · Monday to Friday, 9am to 5pm · Page 1 of 2\nLeeds City Council\nAttendance Enforcement Team\nPenalty Notice No. PN-26-04817\nPage 2 of 2\nHow to pay\nName: KAZLAUSKIENE, RUTA\nPayment reference: 3312 0481 7726\nOnline: www.leeds.gov.uk/pay (select \"Education penalty notice\")\nAutomated telephone payments: 0113 378 4402, 24 hours\nPlease quote the payment reference in full. Payments without it cannot be matched to this notice.\nRecord of unauthorised absence\nDate Session Code Reason recorded by school\n17/11/2026 to AM and PM G Holiday not agreed by the school (6 sessions)\n19/11/2026 AM O Absence not explained\n23/11/2026 PM O Absence not explained\n27/11/2026\nTotal unauthorised sessions 8\nWithdrawal of a penalty notice\n1. The council may withdraw a notice only if it was issued in error, issued to the wrong person, or does not meet the legal requirements.\n2. A request to withdraw does not extend the payment periods shown on page 1.\n3. If you are prosecuted, the court can also make a parenting order.\n4. Each parent with day-to-day responsibility for the child may receive a separate notice.\nAttendance Enforcement Team: 0113 378 5527 · Automated payments: 0113 378 4402 · Page 2 of 2",
+   "items": [
+    {
+     "kind": "NAME",
+     "value": "Mrs Rūta Kazlauskienė"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "27 Harehills Avenue"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Leeds LS8 4EX"
+    },
+    {
+     "kind": "BIRTH_DATE",
+     "value": "19/03/2016"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "110 Merrion Centre, Leeds LS2 8BB"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "PN-26-04817"
+    },
+    {
+     "kind": "PHONE",
+     "value": "0113 378 5527"
+    },
+    {
+     "kind": "NAME",
+     "value": "KAZLAUSKIENE, RUTA"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "PN-26-04817"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "3312 0481 7726"
+    },
+    {
+     "kind": "PHONE",
+     "value": "0113 378 4402"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "0113 378 5527"
+    },
+    {
+     "kind": "PHONE",
+     "value": "0113 378 4402"
+    },
+    {
+     "kind": "NAME",
+     "value": "Mrs Rūta Kazlauskienė"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "27 Harehills Avenue"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Leeds LS8 4EX"
+    },
+    {
+     "kind": "NAME",
+     "value": "Jonas Kazlauskas"
+    },
+    {
+     "kind": "BIRTH_DATE",
+     "value": "19/03/2016"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "School Roundhay Lane Primary School"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "PN-26-04817"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "Section 444A, Education Act 1996"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "section 444(1) of the Education Act 1996"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "Period 2 November 2026 to 27 November 2026"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "8 sessions of unauthorised absence"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Merrion House, 110 Merrion Centre, Leeds LS2 8BB"
+    },
+    {
+     "kind": "PHONE",
+     "value": "0113 378 5527"
+    },
+    {
+     "kind": "NAME",
+     "value": "KAZLAUSKIENE, RUTA"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "PN-26-04817"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "3312 0481 7726"
+    },
+    {
+     "kind": "PHONE",
+     "value": "0113 378 4402"
+    },
+    {
+     "kind": "PHONE",
+     "value": "0113 378 5527"
+    }
+   ],
+   "outgoing": "Leeds City Council\nChildren and Families Attendance Enforcement Team\n[ADDRESS_1]\nPenalty Notice No. [REFERENCE_NUMBER_6]\nDate of issue: 14 December 2026\n[NAME_1]\n[ADDRESS_5]\n[ADDRESS_7]\nPenalty Notice\nFailure to secure regular attendance at school · [REFERENCE_NUMBER_4]\nThis notice gives you the opportunity to discharge your liability to conviction for an offence under [REFERENCE_NUMBER_2] by paying a penalty.\nPupil [NAME_4] Date of birth [BIRTH_DATE_1]\n[ADDRESS_3], Year 5\n[REFERENCE_NUMBER_1] · [REFERENCE_NUMBER_3] (holiday taken in term time, 17 to 19 November 2026)\nAmount of the penalty\nIf paid Payment must reach us by Amount\nwithin 21 days of receipt | 6 January 2027 | £80\nwithin 28 days of receipt | 13 January 2027 | £160\nnot paid in full within 28 days | - | prosecution\nTo pay £80, payment must reach us by 6 January 2027.\nYou will need the payment reference printed on page 2. Payment cannot be made at the school.\nNotes\n1. This notice is deemed to be served two working days after posting. Payment discharges your liability and no further action will be taken for this absence.\n2. If the penalty is not paid in full within 28 days, the council may prosecute you in the magistrate's court.\n2. If the penalty is not paid in full within 28 days, the council may prosecute you in the magistrates' court. On conviction you could be fined up to £1,000 and ordered to pay costs.\n3. There is no statutory right of appeal. If you believe the notice was issued in error, write to the Attendance Enforcement Team within 14 days.\n4. A second penalty notice within three years will be charged at £160 with no reduced rate.\nAttendance Enforcement Team: 0113 378 5527 · Monday to Friday, 9am to 5pm · Page 1 of 2\nLeeds City Council\nAttendance Enforcement Team\nPenalty Notice No. [REFERENCE_NUMBER_6]\nPage 2 of 2\nHow to pay\nName: [NAME_2]\nPayment reference: [REFERENCE_NUMBER_5]\nOnline: www.leeds.gov.uk/pay (select \"Education penalty notice\")\nAutomated telephone payments: [PHONE_1], 24 hours\nPlease quote the payment reference in full. Payments without it cannot be matched to this notice.\nRecord of unauthorised absence\nDate Session Code Reason recorded by school\n17/11/2026 to AM and G Holiday not agreed by the school (6\n19/11/2026 PM sessions)\n23/11/2026 AM O Absence not explained\n27/11/2026 PM O Absence not explained\nTotal unauthorised sessions 8\nPM\nO\nAbsence not explained\nTotal unauthorised sessions\n8\nWithdrawal of a penalty notice\n1. The council may withdraw a notice only if it was issued in error, issued to the wrong person, or does not meet the legal requirements.\n2. A request to withdraw does not extend the payment periods shown on page 1.\n3. If you are prosecuted, the court can also make a parenting order.\n4. Each parent with day-to-day responsibility for the child may receive a separate notice.\nAttendance Enforcement Team: 0113 378 5527 · Automated payments: [PHONE_1] · Page 2 of 2",
+   "alternates": [
+    "within 21 days of receipt 6 January 2027 £80",
+    "within 28 days of receipt 13 January 2027 £160",
+    "not paid in full within 28 days - prosecution",
+    "2. If the penalty is not paid in full within 28 days, the council may prosecute you in the magistrates' court.",
+    "On conviction you could be fined up to £1,000 and ordered to pay costs.",
+    "17/11/2026 to AM and PM G Holiday not agreed by the school (6 sessions)",
+    "19/11/2026 AM O Absence not explained",
+    "23/11/2026 PM O Absence not explained",
+    "27/11/2026"
+   ]
+  },
+  {
+   "alone": {
+    "deadline": true,
+    "amount": false,
+    "action": true,
+    "consequence": true,
+    "sec": 8.663600000023841,
+    "amountText": "500.00",
+    "deadline_iso": "2027-01-15"
+   },
+   "id": "es12",
+   "split": "final",
+   "pages": 1,
+   "readSec": 36.411900000035764,
+   "actionFirst": true,
+   "actionFinal": true,
+   "explainSec": 2.7545999999642374,
+   "checkSec": 17.26310000002384,
+   "consequenceFirst": true,
+   "consequenceFinal": true,
+   "finalDeadlineRight": true,
+   "deadlinePrinted": true,
+   "finalAmountRight": true,
+   "final": {
+    "title": "Youth rental aid grant decision",
+    "steps": [
+     "Submit your rent payment receipts for November and December 2026 before January 15, 2027, through the Electronic Registry of the Community of Madrid (Registro Electrónico de la Comunidad de Madrid), quoting your file number Expediente: BAJ-2026/18437.",
+     "Report any change of address, rental contract, or income within 15 days."
+    ],
+    "objection": "You can file an appeal (recurso de alzada) with the Regional Minister of Housing, Transport and Infrastructure within one month from the day after you receive this notice.",
+    "deadline_iso": "2027-01-15",
+    "amount": "",
+    "if_ignored": "If you do not submit the receipts on time, the payment of the aid will be suspended and a procedure may be started to recover the amounts already paid to you.",
+    "corrected": [
+     "read as \"obradas\", understood as \"cobradas\" (received/paid)"
+    ]
+   },
+   "figuresRead": [
+    true
+   ],
+   "figuresKept": [
+    true
+   ],
+   "idsMissedByModel": [
+    "RÍOS ACOSTA, VALENTINA"
+   ],
+   "idsSent": [],
+   "agencyKept": [
+    true,
+    true
+   ],
+   "deadlineRight": true,
+   "amountRight": true,
+   "explained": {
+    "title": "Youth Rent Subsidy Grant",
+    "steps": [
+     "Submit the proof of rent payment for November and December 2026 before January 15, 2027 through the Electronic Register of the Community of Madrid, indicating reference number Expediente: BAJ-2026/18437.",
+     "Communicate any change of address, contract, or income within a period of 15 days."
+    ],
+    "deadline_iso": "2027-01-15",
+    "amount": "",
+    "if_ignored": "If you do not present the proof of payment on time, the payment of the aid will be suspended and a procedure to recover the amounts already collected may be initiated.",
+    "corrected": [
+     "read as \"obradas\", understood as \"cobradas\" (collected)"
+    ]
+   },
+   "transcript": "Comunidad de Madrid\nConsejería de Vivienda, Transportes e Infraestructuras\nDirección General de Vivienda y Rehabilitación · Área de Ayudas al Alquiler\nExpediente: BAJ-2026/18437\nMadrid, 10 de diciembre de 2026\nDña. Valentina Ríos Acosta\nCalle de Antonio López 156, 2o C\n28026 Madrid\nResolución de concesión de ayuda\nBono Alquiler Joven · Real Decreto 42/2022, de 18 de enero\nVista la solicitud presentada el 14 de octubre de 2026 por RÍOS ACOSTA, VALENTINA, y comprobado que cumple los requisitos de la convocatoria, esta Dirección General RESUELVE conceder la ayuda en las condiciones siguientes:\nBeneficiaria RÍOS ACOSTA, VALENTINA NIE Y6038217M\nFecha de nacimiento 05/07/1999 Renta mensual 780,00 €\nCuenta de abono ES31 0481 7203 5590 1284 6637\nConcepto Importe\nAyuda mensual (24 mensualidades de 325,00 euros mensuales).\nAyuda mensual (24 mensualidades desde noviembre de 2026)\nPrimer abono, noviembre y diciembre de 2026 (antes del 31 de diciembre de 2026)\nImporte\n250,00 €\n500,00 €\nDebe presentar los justificantes de pago del alquiler de noviembre y diciembre de 2026 antes del 15 de enero de 2027.\nPreséntelos en el Registro Electrónico de la Comunidad de Madrid indicando el número de expediente.\nCondiciones y recursos\n1. Si no presenta los justificantes en plazo, se suspenderá el abono de la ayuda y podrá iniciarse un procedimiento de reintegro de las cantidades ya obradas\n2. Debe comunicar en un plazo de 15 días cualquier cambio de domicilio, de contrato o de ingresos.\n3. Contra esta resolución, que no pone fin a la vía administrativa, puede interponer recurso de alzada ante el Consejero de Vivienda, Transportes e Infraestructuras en el plazo de un mes desde el día siguiente a su notificación (artículos 121 y 122 de la Ley 39/2015).\nInformación: 012 Área de Ayudas al Alquiler: 91 438 27 54 comunidad.madrid/servicios/vivienda",
+   "second": "Comunidad de Madrid\nConsejería de Vivienda, Transportes e Infraestructuras\nDirección General de Vivienda y Rehabilitación · Área de Ayudas al Alquiler\nExpediente: BAJ-2026/18437\nMadrid, 10 de diciembre de 2026\nDña. Valentina Ríos Acosta\nCalle de Antonio López 156, 2o C\n28026 Madrid\nResolución de concesión de ayuda\nBono Alquiler Joven · Real Decreto 42/2022, de 18 de enero\nVista la solicitud presentada el 14 de octubre de 2026 por ríos ACOSTA, VALENTINA, y comprobado que cumple los requisitos de la convocatoria, esta Dirección General RESUELVE conceder la ayuda\nBeneficiaria RÍOS ACOSTA, VALENTINA NIE Y6038217M\nFecha de nacimiento 05/07/1999 Renta mensual 780,00 €\nCuenta de abono ES31 0481 7203 5590 1284 6637\nConcepto Importe\nAyuda mensual (24 mensualidades desde noviembre de 2026) 250,00 €\nPrimer abono, noviembre y diciembre de 2026 (antes del 31 de diciembre de 2026) 500,00 €\n€\nDebe presentar los justificantes de pago del alquiler de noviembre y diciembre de 2026 antes del 15 de enero de 2027.\nPreséntelos en el Registro Electrónico de la Comunidad de Madrid indicando el número de expediente.\nCondiciones y recursos\n1. Si no presenta los justificantes en plazo, se suspenderá el abono de la ayuda y podrá iniciarse un procedimiento de reintegro de las cantidades ya cobradas.\n2. Debe comunicar en un plazo de 15 días cualquier cambio de domicilio, de contrato o de ingresos.\n3. Contra esta resolución, que no pone fin a la vía administrativa, puede interponer recurso de alzada ante el Consejero de Vivienda, Transportes e Infraestructuras en el plazo de un mes desde el día siguiente a su notificación (artículos 121 y 122 de la Ley 39/2015).\nInformación: 012 · Área de Ayudas al Alquiler: 91 438 27 54 · comunidad.madrid/servicios/vivienda",
+   "items": [
+    {
+     "kind": "NAME",
+     "value": "Valentina Ríos Acosta"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Calle de Antonio López 156, 2o C"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "28026 Madrid"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "Y6038217M"
+    },
+    {
+     "kind": "BIRTH_DATE",
+     "value": "05/07/1999"
+    },
+    {
+     "kind": "ACCOUNT",
+     "value": "ES31 0481 7203 5590 1284 6637"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "BAJ-2026/18437"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "Expediente: BAJ-2026/18437"
+    },
+    {
+     "kind": "PHONE",
+     "value": "91 438 27 54"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "comunidad.madrid/servicios/vivienda"
+    },
+    {
+     "kind": "NAME",
+     "value": "Valentina Ríos Acosta"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Calle de Antonio López 156, 2o C"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "BAJ-2026/18437"
+    },
+    {
+     "kind": "NAME",
+     "value": "Valentina Ríos Acosta"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "Y6038217M"
+    },
+    {
+     "kind": "BIRTH_DATE",
+     "value": "05/07/1999"
+    },
+    {
+     "kind": "ACCOUNT",
+     "value": "ES31 0481 7203 5590 1284 6637"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "012"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "91 438 27 54"
+    }
+   ],
+   "outgoing": "Comunidad de Madrid\nConsejería de Vivienda, Transportes e Infraestructuras\nDirección General de Vivienda y Rehabilitación · Área de Ayudas al Alquiler\n[REFERENCE_NUMBER_1]\nMadrid, 10 de diciembre de 2026\nDña. [NAME_1]\n[ADDRESS_1]\n[ADDRESS_2]\nResolución de concesión de ayuda\nBono Alquiler Joven · Real Decreto 42/2022, de 18 de enero\nVista la solicitud presentada el 14 de octubre de 2026 por [NAME_1], y comprobado que cumple los requisitos de la convocatoria, esta Dirección General RESUELVE conceder la ayuda en las condiciones siguientes:\nBeneficiaria [NAME_1] NIE [ID_NUMBER_1]\nFecha de nacimiento [BIRTH_DATE_1] Renta mensual 780,00 €\nCuenta de abono [ACCOUNT_1]\nConcepto Importe\nAyuda mensual (24 mensualidades de 325,00 euros mensuales).\nAyuda mensual (24 mensualidades desde noviembre de 2026)\nPrimer abono, noviembre y diciembre de 2026 (antes del 31 de diciembre de 2026)\nImporte\n250,00 €\n500,00 €\nDebe presentar los justificantes de pago del alquiler de noviembre y diciembre de 2026 antes del 15 de enero de 2027.\nPreséntelos en el Registro Electrónico de la Comunidad de Madrid indicando el número de expediente.\nCondiciones y recursos\n1. Si no presenta los justificantes en plazo, se suspenderá el abono de la ayuda y podrá iniciarse un procedimiento de reintegro de las cantidades ya obradas\n2. Debe comunicar en un plazo de 15 días cualquier cambio de domicilio, de contrato o de ingresos.\n3. Contra esta resolución, que no pone fin a la vía administrativa, puede interponer recurso de alzada ante el Consejero de Vivienda, Transportes e Infraestructuras en el plazo de un mes desde el día siguiente a su notificación (artículos 121 y 122 de la Ley 39/2015).\nInformación: 012 Área de Ayudas al Alquiler: 91 438 27 54 comunidad.madrid/servicios/vivienda",
+   "alternates": [
+    "Ayuda mensual (24 mensualidades desde noviembre de 2026) 250,00 €",
+    "Primer abono, noviembre y diciembre de 2026 (antes del 31 de diciembre de 2026) 500,00 €",
+    "€",
+    "1. Si no presenta los justificantes en plazo, se suspenderá el abono de la ayuda y podrá iniciarse un procedimiento de reintegro de las cantidades ya cobradas."
+   ]
+  },
+  {
+   "alone": {
+    "deadline": true,
+    "amount": true,
+    "action": true,
+    "consequence": false,
+    "sec": 12.3275,
+    "amountText": "$355,900",
+    "deadline_iso": "2027-01-21"
+   },
+   "id": "es13",
+   "split": "final",
+   "pages": 1,
+   "readSec": 39.539399999976155,
+   "actionFirst": true,
+   "actionFinal": true,
+   "explainSec": 2.8836000000238418,
+   "checkSec": 22.69180000001192,
+   "consequenceFirst": true,
+   "consequenceFinal": true,
+   "finalDeadlineRight": true,
+   "deadlinePrinted": true,
+   "finalAmountRight": true,
+   "final": {
+    "title": "Traffic fine notice for speeding",
+    "steps": [
+     "Complete the traffic rules course at an authorized service center (Centro de Atención autorizado) before January 21, 2027.",
+     "Pay $ 355.900 by January 21, 2027 using payment reference 26-0048217396 at authorized payment points or on the Secretariat's website (www.movilidadbogota.gov.co)."
+    ],
+    "objection": "If you disagree or were not the driver, request a public hearing within 11 business days of notification, by January 21, 2027.",
+    "deadline_iso": "2027-01-21",
+    "amount": "$ 355.900",
+    "if_ignored": "If you do not pay or appear within 30 business days, you will be declared an offender and will owe the full amount plus late interest. The fine is reported to SIMIT and collected through enforced collection, including seizure of assets, and you will not be able to complete any traffic-related procedures while the debt exists.",
+    "corrected": [
+     "read as \"Comparando\", understood as \"Comparendo\" (traffic ticket)",
+     "read as \"contratvensor\" / \"contraventer\", understood as \"contraventor\" (offender)"
+    ]
+   },
+   "figuresRead": [
+    true,
+    true
+   ],
+   "figuresKept": [
+    true,
+    true
+   ],
+   "idsMissedByModel": [],
+   "idsSent": [],
+   "agencyKept": [
+    false,
+    true
+   ],
+   "deadlineRight": true,
+   "amountRight": true,
+   "explained": {
+    "title": "Traffic ticket for speeding in Bogota",
+    "steps": [
+     "To get a 50 percent discount, pay $ 355.900 by January 21, 2027, and complete a traffic rules course at an authorized service center.",
+     "Pay using payment reference 26-0048217396 at authorized payment points or through the Secretariat portal."
+    ],
+    "deadline_iso": "2027-01-21",
+    "amount": "$ 355.900",
+    "if_ignored": "If you do not pay or appear within 30 business days, you will be declared a traffic offender and will owe the total amount plus late interest. The fine will be reported to SIMIT and collected through coercive jurisdiction with asset seizure, and you will not be able to perform traffic procedures.",
+    "corrected": []
+   },
+   "transcript": "Alcaldía Mayor de Bogotá D.C.\nSecretaría Distrital de Movilidad · Subdirección de Contravenciones\nCalle 13 # 37-35, Bogotá D.C.\nComparando No. 11001000000048217396\nFecha de envío: 5 de enero de 2027\nSeñor\nYORMAN ALEXANDER PÉREZ LINARES\nCarrera 68D # 25B-41, Apto 302\nBogotá D.C.\nNotificación de comparendo\nInfracción detectada por medios técnicos o tecnológicos · Ley 1843 de 2017\nPropietario YORMAN ALEXANDER PÉREZ LINARES · C.E. 6482317\nPlaca KQX 482 Clase Automóvil particular\nFecha y hora 19/12/2026 07:52 Velocidad 68 km/h en zona de 50 km/h\nLugar Av. Calle 26 con Carrera 50, sentido oriente-occidente\nInfracción C29. Conducir un vehículo a velocidad superior a la máxima permitida (Ley 769 de 2002, art. 131)\nValor a pagar según la fecha\nOpción | Plazo | Valor\n------- | -------- | --------\nDescuento del 50 % (con curso pedagógico) | hasta el 21 de enero de 2027 | $ 355.900\nDescuento del 25 % (con curso pedagógico) | hasta el 11 de febrero de 2027 | $ 533.850\nValor total de la multa (15 SMDLV) | después del 11 de febrero de 2027 | $ 711.800\nPague $ 355.900 hasta el 21 de enero de 2027 realizando antes el curso sobre normas de tránsito en un Centro de Atención autorizado.\nReferencia de pago: 26-0048217396 · Puntos de pago autorizados o portal de la Secretaría.\nInformación para el propietario\n1. Si no está de acuerdo o no era el conductor, solicite audiencia pública dentro de los 11 días hábiles siguientes a la notificación, es decir, hasta el 21 de enero de 2027.\n2. Si no paga ni se presenta dentro de los 30 días hábiles, será declarado contratvensor y deberá el valor total más intereses de mora.\n3. La multa se reporta en el SIMIT y se cobra por jurisdicción coactiva, con embargo de bienes. No podrá realizar trámites de tránsito mientras exista la deuda.\nLínea 195 · Secretaría Distrital de Movilidad: 601 364 9471 · Lunes a viernes, 7:00 a 16:30 ·\nwww.movilidadbogota.gov.co",
+   "second": "Alcaldía Mayor de Bogotá D.C.\nSecretaría Distrital de Movilidad · Subdirección de Contravenciones\nCalle 13 # 37-35, Bogotá D.C.\nComparando No. 110010000000048217396\nFecha de envío: 5 de enero de 2027\nSeñor\nYORMAN ALEXANDER PÉREZ LINARES\nCarrera 68D # 25B-41, Apto 302\nBogotá D.C.\nNotificación de comparendo\nInfracción detectada por medios técnicos o tecnológicos · Ley 1843 de 2017\nPropietario YORMAN ALEXANDER PÉREZ LINARES · C.E. 6482317\nPlaca KQX 482\nClase Automóvil particular\nFecha y hora 19/12/2026 07:52 Velocidad 68 km/h en zona de 50 km/h\nLugar Av. Calle 26 con Carrera 50, sentido oriente-occidente\nInfracción C29. Conducir un vehículo a velocidad superior a la máxima permitida (Ley 769 de 2002, art. 131)\nValor a pagar según la fecha\nOpción Plazo Valor\nDescuento del 50 % (con curso pedagógico) hasta el 21 de enero de 2027 $ 355.900\nDescuento del 25 % (con curso pedagógico) hasta el 11 de febrero de 2027 $ 533.850\nValor total de la multa (15 SMDLV) después del 11 de febrero de 2027 $ 711.800\nPague $ 355.900 hasta el 21 de enero de 2027 realizando antes el curso sobre normas de tránsito en un Centro de Atención autorizado.\nReferencia de pago: 26-0048217396 · Puntos de pago autorizados o portal de la Secretaría\nInformación para el propietario\n1. Si no está de acuerdo o no era el conductor, solicite audiencia pública dentro de los 11 días hábiles siguientes a la notificación, es decir, hasta el 21 de enero de 2027.\n2. Si no paga ni se presenta dentro de los 30 días hábiles, será declarado contraventer y deberá el valor total más intereses de mora.\n3. La multa se reporta en el SIMIT y se cobra por jurisdicción coactiva, con embargo de bienes. No podrá realizar trámites de tránsito mientras exista la deuda.\nLínea 195 · Secretaría Distrital de Movilidad: 601 364 9471 · Lunes a viernes, 7:00 a 16:30 ·\nwww.movilidadbogota.gov.co",
+   "items": [
+    {
+     "kind": "NAME",
+     "value": "YORMAN ALEXANDER PÉREZ LINARES"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Carrera 68D # 25B-41, Apto 302"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "C.E. 6482317"
+    },
+    {
+     "kind": "VEHICLE_PLATE",
+     "value": "KQX 482"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "11001000000048217396"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "26-0048217396"
+    },
+    {
+     "kind": "PHONE",
+     "value": "195"
+    },
+    {
+     "kind": "NAME",
+     "value": "YORMAN ALEXANDER PÉREZ LINARES"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Carrera 68D # 25B-41, Apto 302"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Carrera 68D # 25B-41, Apto 302"
+    },
+    {
+     "kind": "VEHICLE_PLATE",
+     "value": "KQX 482"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "6482317"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Calle 13 # 37-35, Bogotá D.C."
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "110010000000048217396"
+    },
+    {
+     "kind": "PHONE",
+     "value": "195"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "26-0048217396"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Calle 13 # 37-35, Bogotá D.C."
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "601 364 9471"
+    }
+   ],
+   "outgoing": "Alcaldía Mayor de Bogotá D.C.\nSecretaría Distrital de Movilidad · Subdirección de Contravenciones\n[ADDRESS_2]\nComparando No. [REFERENCE_NUMBER_1]\nFecha de envío: 5 de enero de 2027\nSeñor\n[NAME_2]\n[ADDRESS_1]\nBogotá D.C.\nNotificación de comparendo\nInfracción detectada por medios técnicos o tecnológicos · Ley 1843 de 2017\nPropietario [NAME_1] [ID_NUMBER_1]\nPlaca [VEHICLE_PLATE_1] Clase Automóvil particular\nFecha y hora 19/12/2026 07:52 Velocidad 68 km/h en zona de 50 km/h\nLugar Av. Calle 26 con Carrera 50, sentido oriente-occidente\nInfracción C29. Conducir un vehículo a velocidad superior a la máxima permitida (Ley 769 de 2002, art. 131)\nValor a pagar según la fecha\nOpción | Plazo | Valor\n------- | -------- | --------\nDescuento del 50 % (con curso pedagógico) | hasta el 21 de enero de 2027 | $ 355.900\nDescuento del 25 % (con curso pedagógico) | hasta el 11 de febrero de 2027 | $ 533.850\nValor total de la multa (15 SMDLV) | después del 11 de febrero de 2027 | $ 711.800\nPague $ 355.900 hasta el 21 de enero de 2027 realizando antes el curso sobre normas de tránsito en un Centro de Atención autorizado.\nReferencia de pago: [REFERENCE_NUMBER_2] · Puntos de pago autorizados o portal de la Secretaría.\nInformación para el propietario\n1. Si no está de acuerdo o no era el conductor, solicite audiencia pública dentro de los 11 días hábiles siguientes a la notificación, es decir, hasta el 21 de enero de 2027.\n2. Si no paga ni se presenta dentro de los 30 días hábiles, será declarado contratvensor y deberá el valor total más intereses de mora.\n3. La multa se reporta en el SIMIT y se cobra por jurisdicción coactiva, con embargo de bienes. No podrá realizar trámites de tránsito mientras exista la deuda.\nLínea [PHONE_1] · Secretaría Distrital de Movilidad: 601 364 9471 · Lunes a viernes, 7:00 a 16:30 ·\nwww.movilidadbogota.gov.co",
+   "alternates": [
+    "Clase Automóvil particular",
+    "Opción Plazo Valor",
+    "Descuento del 50 % (con curso pedagógico) hasta el 21 de enero de 2027 $ 355.900",
+    "Descuento del 25 % (con curso pedagógico) hasta el 11 de febrero de 2027 $ 533.850",
+    "Valor total de la multa (15 SMDLV) después del 11 de febrero de 2027 $ 711.800",
+    "2. Si no paga ni se presenta dentro de los 30 días hábiles, será declarado contraventer y deberá el valor total más intereses de mora."
+   ]
+  },
+  {
+   "alone": {
+    "deadline": true,
+    "amount": false,
+    "action": true,
+    "consequence": false,
+    "sec": 16.0765,
+    "amountText": "2.963,54",
+    "deadline_iso": "2026-12-20"
+   },
+   "id": "es14",
+   "split": "final",
+   "pages": 2,
+   "readSec": 61.18619999998808,
+   "actionFirst": true,
+   "actionFinal": true,
+   "explainSec": 2.898600000023842,
+   "checkSec": 25.08680000001192,
+   "consequenceFirst": true,
+   "consequenceFinal": true,
+   "finalDeadlineRight": true,
+   "deadlinePrinted": true,
+   "finalAmountRight": true,
+   "final": {
+    "title": "Tax installment plan approval",
+    "steps": [
+     "Make sure your bank account ES76 2390 4417 0260 1385 9921 has at least 737,34 € before December 20, 2026, for the first installment.",
+     "Keep enough money in account ES76 2390 4417 0260 1385 9921 on the 20th of each following month for the remaining three installments (739,72 € on January 20, 2027; 742,08 € on February 20, 2027; and 744,40 € on March 20, 2027).",
+     "After each payment is charged, you can download the payment receipt using your NRC on the Tax Agency's electronic headquarters (Sede electrónica)."
+    ],
+    "objection": "You can file an appeal for reconsideration (recurso de reposición) with the issuing office or an economic-administrative claim (reclamación económico-administrativa) with the Regional Economic-Administrative Court of Catalonia within one month from the day after you receive this notice. You cannot file both at the same time.",
+    "deadline_iso": "2026-12-20",
+    "amount": "737,34 €",
+    "if_ignored": "If an installment is not paid on its due date, it will be enforced with a surcharge. If it is still not paid within the enforcement notice deadline, all remaining installments will become due immediately, and the Tax Agency may seize your bank accounts, wages, and other assets.",
+    "corrected": []
+   },
+   "figuresRead": [
+    true,
+    true
+   ],
+   "figuresKept": [
+    true,
+    true
+   ],
+   "idsMissedByModel": [
+    "A0860026500067315"
+   ],
+   "idsSent": [],
+   "agencyKept": [
+    true,
+    true
+   ],
+   "deadlineRight": true,
+   "amountRight": true,
+   "explained": {
+    "title": "Tax debt installment payment approval",
+    "steps": [
+     "Make sure account ES76 2390 4417 0260 1385 9921 has at least 737,34 € by 20/12/2026 for the first installment."
+    ],
+    "deadline_iso": "2026-12-20",
+    "amount": "737,34 €",
+    "if_ignored": "If an installment is not paid on time, the unpaid fraction and its interest will be demanded through enforcement proceedings with an executive surcharge, and further unpaid installments may also become immediately due, leading to potential seizure of your accounts, salary, and other assets.",
+    "corrected": []
+   },
+   "transcript": "Agencia Tributaria\nDelegación Especial de Cataluña · Dependencia Regional de\nRecaudación\nPlaza Doctor Letamendi 13-23, 08007 Barcelona\nExpediente: A0826 2026 5008\n1473\nBarcelona, 1 de diciembre de 2026\nZHOU, MINGYU\nCarrer de Provença 241, 3o 1 a\n08008 Barcelona\nAcuerdo de concesión de fraccionamiento\nArtículo 65 de la Ley 58/2003, General Tributaria · Reglamento General de Recaudación\nObligado al pago ZHOU, MINGYU NIF Y8124570K\nFecha de solicitud 6 de noviembre de 2026 Garantía dispensada (deuda inferior a 50.000 €)\nEn relación con su solicitud, se concede el fraccionamiento de la deuda que se indica, en los plazos y por los importes siguientes. Los intereses de demora se han calculado hasta el vencimiento de cada plazo.\nClave de liquidación Concepto Importe\nA08002600067315 IRPF 2025, autoliquidación a impres...\nA0860026500067315\nConcepto\nIRPF 2025, autoliquidación a ingresar\nImporte\n2.940,00 €\nCalendario de pagos\nPlazo | Vencimiento | Principal | Intereses | Total plazo\n---|---|---|---|---\n1 | 20/12/2026 | 735,00 € | 2,34 € | 737,34 €\n2 | 20/01/2027 | 735,00 € | 4,72 € | 739,72 €\n3 | 20/02/2027 | 735,00 € | 7,08 € | 742,08 €\n4 | 20/03/2027 | 735,00 € | 9,40 € | 744,40 €\nTotal a pagar | | | | 2.963,54 €\nPrimer plazo: 737,34 €, con cargo el 20 de diciembre de 2026.\nTotal a pagar\nPrimer plazo: 737,34 €, con cargo el 20 de diciembre de 2026.\nCada plazo se cargará por domiciliación en la cuenta indicada en la página 2.\nAsegúrese de que la cuenta tenga saldo suficiente en cada vencimiento.\nLas consecuencias del impago de un plazo y los recursos que puede interponer figuran en la página 2.\nAgencia Tributaria · Información: 91 554 87 70 · Recaudación Cataluña: 93 291 13 48 · Página 1 de 2\nAgencia Tributaria\nDependencia Regional de Recaudación de Cataluña\nExpediente: A0826 2026 5008 1473\nPágina 2 de 2\nDomiciliación de los plazos\nCuenta de cargo: ES76 2390 4417 0260 1385 9921\nTitular: ZHOU, MINGYU\nLos cargos se realizan el día 20 de cada mes de vencimiento. Tras cada cargo podrá descargar el justificante con su NRC en la Sede electrónica.\nDatos del cargo Plazo 1 Plazo 2\nFecha de cargo 20/12/2026 20/01/2027\nImporte 737,34 € 739,72 €\nReferencia del cargo 0826 5008 1473 01 0826 5008 1473 02\nConsecuencias del impago\n1. Si un plazo no se paga a su vencimiento, se exigirá por la vía de apremio la fracción incumplida y sus intereses, con el recargo del período ejecutivo (artículo 54 del Reglamento General de Recaudación).\n2. Si la fracción tampoco se paga en el plazo que fija la providencia de apremio, se considerarán vencidas todas las fracciones pendientes y se iniciará el procedimiento de apremio por la deuda restante.\n3. En el procedimiento de apremio podrán embargarse sus cuentas, salarios y otros bienes.\n4. Puede pagar anticipadamente uno o varios plazos; los intereses se recalcularán a la fecha de pago.\nAgencia Tributaria · Información: 91 554 87 70 · Recaudación Cataluña: 93 291 13 48 ·\nsede.agenciatributaria.gob.es · Página 2 de 2",
+   "second": "Agencia Tributaria\nDelegación Especial de Cataluña · Dependencia Regional de Recaudación\nPlaza Doctor Letamendi 13-23, 08007 Barcelona\nZHOU, MINGYU\nCarrer de Provença 241, 3o 1a\n08008 Barcelona\nExpediente: A0826 2026 5008 1473\nBarcelona, 1 de diciembre de 2026\nAcuerdo de concesión de fraccionamiento\nArtículo 65 de la Ley 58/2003, General Tributaria · Reglamento General de Recaudación\nObligado al pago ZHOU, MINGYU NIF Y8124570K\nFecha de solicitud 6 de noviembre de Garantía dispensada (debido inferior\nFecha de solicitud 6 de noviembre de Garantía dispensada (deuda inferior a 2026 50.000 €)\nEn relación con su solicitud, se concede la fraccionamiento de la deuda que se indica, en los plazos y por los importes siguientes. Los intereses de demora se han calculado hasta el vencimiento de cada plazo.\nClave de liquidación Concepto Importe\nA0860026500067315 IRPF 2025, autoliquidación a ingresar 2.940,00 €\nCalendario de pagos\nPlazo Vencimiento Principal Intereses Total plazo\n1 20/12/2026 735,00 € 2,34 € 737,34 €\n2 20/01/2027 735,00 € 4,72 € 739,72 €\n3 20/02/2027 735,00 € 7,08 € 742,08 €\n4 20/03/2027\n4 20/03/2027 735,00 € 9,40 € 744,40 €\nTotal a pagar 2.963,54 €\nPrimer plazo: 737,34 €, con cargo el 20 de diciembre de 2026.\nCada plazo se cargará por domiciliación en la cuenta indicada en la página 2.\nAsegúrese de que la cuenta tenga saldo suficiente en cada vencimiento.\nLas consecuencias del impago de un plazo y los recursos que puede interponer figuran en la página 2.\nAgencia Tributaria Información: 91 554 87 70 Recaudación Cataluña: 93 291 13 48 Página 1 de 2\nAgencia Tributaria\nDependencia Regional de Recaudación de Cataluña\nExpediente: A0826 2026 5008 1473\nPágina 2 de 2\nDomiciliación de los plazos\nCuenta de cargo: ES76 2390 4417 0260 1385 9921\nTitular: ZHOU, MINGYU\nLos cargos se realizan el día 20 de cada mes de vencimiento. Tras cada cargo podrá descargar el justificante con su NRC en la Sede electrónica.\nDatos del cargo Plazo 1 Plazo 2\nFecha de cargo 20/12/2026 20/01/2027\nImporte 737,34 € 739,72 €\nDatos del cargo\nFecha de cargo\nImporte\nReferencia del cargo\nPlazo 1\n20/12/2026\n737,34 €\n0826 5008 1473 01\nPlazo 2\n20/01/2027\n739,72 €\n0826 5008 1473 02\nConsecuencias del impago\n1. Si un plazo no se paga a su vencimiento, se exigirá por la vía de apremio la fracción incumplida y sus intereses, con el recargo del periodo ejecutivo (artículo 54 del Reglamento General de Recaudación).\n2. Si la fracción tampoco se paga en el plazo que fije la providencia de apremio, se considerarán vencidas todas las fracciones pendientes y se iniciará el procedimiento de apremio por la deuda restante.\n3. En el procedimiento de apremio podrán embargarse sus cuentas, salarios y otros bienes.\n4. Puede pagar anticipadamente uno o varios plazos; los intereses se recalcularán a la fecha de pago.\nRecursos\nContra este acuerdo puede interponer recurso de reposición ante el órgano que lo ha dictado o reclamación económico-administrativa ante el Tribunal Económico-Administrativo Regional de Cataluña, en el plazo de un mes a contar desde el día siguiente a su notificación, sin que puedan simultanearse ambos.\nAgencia Tributaria Información: 91 554 87 70 Recaudación Cataluña: 93 291 13 48\nsede.agenciatributaria.gob.es Página 2 de 2",
+   "items": [
+    {
+     "kind": "NAME",
+     "value": "ZHOU, MINGYU"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Carrer de Provença 241, 3o 1 a"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "08008 Barcelona"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "Y8124570K"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "A0826 2026 5008"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "1473"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Plaza Doctor Letamendi 13-23, 08007 Barcelona"
+    },
+    {
+     "kind": "PHONE",
+     "value": "91 554 87 70"
+    },
+    {
+     "kind": "PHONE",
+     "value": "93 291 13 48"
+    },
+    {
+     "kind": "NAME",
+     "value": "ZHOU, MINGYU"
+    },
+    {
+     "kind": "ACCOUNT",
+     "value": "ES76 2390 4417 0260 1385 9921"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "A0826 2026 5008 1473"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "0826 5008 1473 01"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "0826 5008 1473 02"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "91 554 87 70"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "93 291 13 48"
+    },
+    {
+     "kind": "NAME",
+     "value": "ZHOU, MINGYU"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Carrer de Provença 241, 3o 1a"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "08008 Barcelona"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "A0826 2026 5008 1473"
+    },
+    {
+     "kind": "NAME",
+     "value": "ZHOU, MINGYU"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "Y8124570K"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Plaza Doctor Letamendi 13-23, 08007 Barcelona"
+    },
+    {
+     "kind": "PHONE",
+     "value": "91 554 87 70"
+    },
+    {
+     "kind": "PHONE",
+     "value": "93 291 13 48"
+    },
+    {
+     "kind": "NAME",
+     "value": "ZHOU, MINGYU"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "A0826 2026 5008 1473"
+    },
+    {
+     "kind": "ACCOUNT",
+     "value": "ES76 2390 4417 0260 1385 9921"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "sede.agenciatributaria.gob.es"
+    },
+    {
+     "kind": "PHONE",
+     "value": "91 554 87 70"
+    },
+    {
+     "kind": "PHONE",
+     "value": "93 291 13 48"
+    }
+   ],
+   "outgoing": "Agencia Tributaria\nDelegación Especial de Cataluña · Dependencia Regional de\nRecaudación\n[ADDRESS_1]\nExpediente: [REFERENCE_NUMBER_4]\n[REFERENCE_NUMBER_5]\nBarcelona, 1 de diciembre de 2026\n[NAME_1]\n[ADDRESS_3]\n[ADDRESS_5]\nAcuerdo de concesión de fraccionamiento\nArtículo 65 de la Ley 58/2003, General Tributaria · Reglamento General de Recaudación\nObligado al pago [NAME_1] NIF [ID_NUMBER_1]\nFecha de solicitud 6 de noviembre de 2026 Garantía dispensada (deuda inferior a 50.000 €)\nEn relación con su solicitud, se concede el fraccionamiento de la deuda que se indica, en los plazos y por los importes siguientes. Los intereses de demora se han calculado hasta el vencimiento de cada plazo.\nClave de liquidación Concepto Importe\nA[NUMBER_1] IRPF 2025, autoliquidación a impres...\nA[NUMBER_2]\nConcepto\nIRPF 2025, autoliquidación a ingresar\nImporte\n2.940,00 €\nCalendario de pagos\nPlazo | Vencimiento | Principal | Intereses | Total plazo\n---|---|---|---|---\n1 | 20/12/2026 | 735,00 € | 2,34 € | 737,34 €\n2 | 20/01/2027 | 735,00 € | 4,72 € | 739,72 €\n3 | 20/02/2027 | 735,00 € | 7,08 € | 742,08 €\n4 | 20/03/2027 | 735,00 € | 9,40 € | 744,40 €\nTotal a pagar | | | | 2.963,54 €\nPrimer plazo: 737,34 €, con cargo el 20 de diciembre de 2026.\nTotal a pagar\nPrimer plazo: 737,34 €, con cargo el 20 de diciembre de 2026.\nCada plazo se cargará por domiciliación en la cuenta indicada en la página 2.\nAsegúrese de que la cuenta tenga saldo suficiente en cada vencimiento.\nLas consecuencias del impago de un plazo y los recursos que puede interponer figuran en la página 2.\nAgencia Tributaria · Información: 91 554 87 70 · Recaudación Cataluña: 93 291 13 48 · Página 1 de 2\nAgencia Tributaria\nDependencia Regional de Recaudación de Cataluña\nExpediente: [REFERENCE_NUMBER_1]\nPágina 2 de 2\nDomiciliación de los plazos\nCuenta de cargo: [ACCOUNT_1]\nTitular: [NAME_1]\nLos cargos se realizan el día 20 de cada mes de vencimiento. Tras cada cargo podrá descargar el justificante con su NRC en la Sede electrónica.\nDatos del cargo Plazo 1 Plazo 2\nFecha de cargo 20/12/2026 20/01/2027\nImporte 737,34 € 739,72 €\nReferencia del cargo [REFERENCE_NUMBER_2] [REFERENCE_NUMBER_3]\nConsecuencias del impago\n1. Si un plazo no se paga a su vencimiento, se exigirá por la vía de apremio la fracción incumplida y sus intereses, con el recargo del período ejecutivo (artículo 54 del Reglamento General de Recaudación).\n2. Si la fracción tampoco se paga en el plazo que fija la providencia de apremio, se considerarán vencidas todas las fracciones pendientes y se iniciará el procedimiento de apremio por la deuda restante.\n3. En el procedimiento de apremio podrán embargarse sus cuentas, salarios y otros bienes.\n4. Puede pagar anticipadamente uno o varios plazos; los intereses se recalcularán a la fecha de pago.\nAgencia Tributaria · Información: 91 554 87 70 · Recaudación Cataluña: 93 291 13 48 ·\n[ADDRESS_2] Página 2 de 2",
+   "alternates": [
+    "Delegación Especial de Cataluña · Dependencia Regional de Recaudación",
+    "Fecha de solicitud 6 de noviembre de Garantía dispensada (debido inferior",
+    "Fecha de solicitud 6 de noviembre de Garantía dispensada (deuda inferior a 2026 50.000 €)",
+    "En relación con su solicitud, se concede la fraccionamiento de la deuda que se indica, en los plazos y por los importes siguientes. Los intereses de demora se han calculado hasta el vencimiento de cada plazo.",
+    "Plazo Vencimiento Principal Intereses Total plazo",
+    "1 20/12/2026 735,00 € 2,34 € 737,34 €",
+    "2 20/01/2027 735,00 € 4,72 € 739,72 €",
+    "3 20/02/2027 735,00 € 7,08 € 742,08 €",
+    "4 20/03/2027",
+    "4 20/03/2027 735,00 € 9,40 € 744,40 €",
+    "Total a pagar 2.963,54 €",
+    "Datos del cargo",
+    "Fecha de cargo",
+    "Plazo 1",
+    "20/12/2026",
+    "737,34 €",
+    "Plazo 2",
+    "20/01/2027",
+    "739,72 €",
+    "1. Si un plazo no se paga a su vencimiento, se exigirá por la vía de apremio la fracción incumplida y sus intereses, con el recargo del periodo ejecutivo (artículo 54 del Reglamento General de Recaudación).",
+    "2. Si la fracción tampoco se paga en el plazo que fije la providencia de apremio, se considerarán vencidas todas las fracciones pendientes y se iniciará el procedimiento de apremio por la deuda restante.",
+    "Recursos",
+    "Contra este acuerdo puede interponer recurso de reposición ante el órgano que lo ha dictado o reclamación económico-administrativa ante el Tribunal Económico-Administrativo Regional de Cataluña, en el plazo de un mes a contar desde el día siguiente a su notificación, sin que puedan simultanearse ambos."
+   ]
+  },
+  {
+   "alone": {
+    "deadline": true,
+    "amount": true,
+    "action": true,
+    "consequence": false,
+    "sec": 10.1405,
+    "amountText": "343.48",
+    "deadline_iso": "2027-01-29"
+   },
+   "id": "fr12",
+   "split": "final",
+   "pages": 1,
+   "readSec": 33.32219999998808,
+   "actionFirst": true,
+   "actionFinal": true,
+   "explainSec": 2.281300000011921,
+   "checkSec": 17.614199999988077,
+   "consequenceFirst": true,
+   "consequenceFinal": true,
+   "finalDeadlineRight": true,
+   "deadlinePrinted": true,
+   "finalAmountRight": true,
+   "final": {
+    "title": "Vehicle registration payment notice",
+    "steps": [
+     "Pay 343,48 $ by January 29, 2027 online at saaq.gouv.qc.ca, through your financial institution, or at a service centre, using reference number 3 0072 4418 5520 7.",
+     "If you are not using your vehicle, you can put it into storage before January 29, 2027 so you do not have to pay these fees.",
+     "If you have moved, report your new address to the SAAQ within 30 days."
+    ],
+    "objection": "",
+    "deadline_iso": "2027-01-29",
+    "amount": "343,48 $",
+    "if_ignored": "If payment is not received by January 29, 2027 at midnight, your right to drive this vehicle ends. Driving an unregistered vehicle is an offence punishable by a fine, and the vehicle can be seized and towed.",
+    "corrected": []
+   },
+   "figuresRead": [
+    true,
+    true
+   ],
+   "figuresKept": [
+    true,
+    true
+   ],
+   "idsMissedByModel": [
+    "BOUCHAREB, NADIA"
+   ],
+   "idsSent": [],
+   "agencyKept": [
+    true,
+    true
+   ],
+   "deadlineRight": true,
+   "amountRight": true,
+   "explained": {
+    "title": "Vehicle registration payment notice 2027",
+    "steps": [
+     "Pay the amount of 343,48 $ online at saaq.gouv.qc.ca, through your financial institution, or at a service centre, using the reference number 3 0072 4418 5520 7.",
+     "Pay by January 29, 2027."
+    ],
+    "deadline_iso": "2027-01-29",
+    "amount": "343,48 $",
+    "if_ignored": "If payment is not received by the deadline, your right to drive this vehicle ends at midnight on January 29, 2027. Driving an unregistered vehicle is punishable by a fine, and the vehicle may be seized and towed.",
+    "corrected": []
+   },
+   "transcript": "Société de l'assurance automobile du Québec\nCase postale 19500, succursale Terminus\nQuébec (Québec) G1K 8J6\nNADIA BOUCHAREB\n4520, rue Saint-Denis, app. 3\nMontréal (Québec) H2J 2L3\nAvis de paiement - Immatriculation 2027\nMONTREAL (QUÉBEC) H2J 2L3\nAvis de paiement - Immatriculation 2027\nDroits d'immatriculation et contribution d'assurance\nTitulaire BOUCHAREB, NADIA Numéro de permis B2416-280693-08\nPlaque G18 MTN Type de véhicule Véhicule de promenade\nVéhicule Berline 2019, essence NIV 2T1BURHE4KC183920\nPériode couverte 12 mois à compter du 1er février 2027\nDétail du montant Montant\nDescription Droits d'immatriculation 154,00 $\nDescription\nDroits d'immatriculation 154,00 $\nContribution d'assurance (régime public) 126,23 $\nContribution au transport en commun (agglomération de Montréal) 59,00 $\nFrais de traitement 4,25 $\nMontant à payer 343,48 $\nMontant à payer : 343,48 $\nÀ payer au plus tard le 29 janvier 2027\nPayez en ligne sur saaq.gouv.qc.ca, par votre institution financière ou dans un centre de services, avec le numéro de référence 3 0072 4418 5520 7.\nRenseignements importants\n1. Si le paiement n'est pas reçu à la date limite, votre droit de circuler avec ce véhicule prend fin le 29 janvier 2027 à minuit.\n2. Circuler avec un véhicule dont l'immatriculation n'est pas payée est une infraction passible d'une amende, et le véhicule peut être saisi et remorqué.\n3. Si vous n'utilisez pas votre véhicule, vous pouvez le remiser avant la date limite pour ne pas payer ces droits.\n4. Si vous avez déménagé, signalez votre nouvelle adresse à la SAAQ dans les 30 jours.\nRenseignements : Montréal 514 954-3180 - ailleurs au Québec 1 855 612-4471 - saaq.gouv.qc.ca",
+   "second": "Société de l'assurance automobile du Québec\nCase postale 19500, succursale Terminus\nQuébec (Québec) G1K 8J6\nNADIA BOUCHAREB\n4520, rue Saint-Denis, app. 3\nMontréal (Québec) H2J 2L3\nAvis de paiement - Immatriculation 2027\nDroits d'immatriculation et contribution d'assurance\nTitulaire BOUCHAREB, NADIA Numéro de permis B2416-280693-08\nPlaque G18 MTN Type de véhicule Véhicule de promenade\nBOUCHAREB, NADIA\nG18 MTN\nBerline 2019, essence\nVehicule\nPériode couverte 12 mois à compter du 1er février 2027\nB2416-280693-08\nVéhicule de promenade\nNIV\n2TIBURHE4KC183920\nDétail du montant\nMontant\nDescription\nDroits d'immatriculation 126,23 $\nContribution d'assurance (régime public) 59,00 $\nContribution au transport en commun (agglomération de Montréal) 4,25 $\nFrais de traitement\nMontant à payer 343,48 $\nMontant à payer : 343,48 $\nÀ payer au plus tard le 29 janvier 2027\nPayez en ligne sur saaq.gouv.qc.ca, par votre institution financière ou dans un centre de\nPayez en ligne sur saaq.gouv.qc.ca, par votre institution financière ou dans un centre de services, avec le numéro de référence 3 0072 4418 5520 7.\nRenseignements importants\n1. Si le paiement n’est pas reçu à la date limite, votre droit de circuler avec ce véhicule prend fin le 29 janvier 2027 à minuit.\n2. Circuler avec un véhicule dont l’immatriculation n’est pas payée est une infraction passible d’une amende, et le véhicule peut être saisi et remorqué.\n3. Si vous n’utilisez pas votre véhicule, vous pouvez le remettre avant la date limite pour ne pas payer ces droits.\n4. Si vous avez déménagé, signalez votre nouvelle adresse à la SAAQ dans les 30 jours.\nRenseignements : Montréal 514 954-3180 • ailleurs au Québec 1 855 612-4471 • saaq.gouv.qc.ca",
+   "items": [
+    {
+     "kind": "NAME",
+     "value": "NADIA BOUCHAREB"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "4520, rue Saint-Denis, app. 3"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Montréal (Québec) H2J 2L3"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "B2416-280693-08"
+    },
+    {
+     "kind": "VEHICLE_PLATE",
+     "value": "G18 MTN"
+    },
+    {
+     "kind": "VEHICLE_PLATE",
+     "value": "2T1BURHE4KC183920"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Case postale 19500, succursale Terminus"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Québec (Québec) G1K 8J6"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "3 0072 4418 5520 7"
+    },
+    {
+     "kind": "NAME",
+     "value": "NADIA BOUCHAREB"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "4520, rue Saint-Denis, app. 3"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Montréal (Québec) H2J 2L3"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "B2416-280693-08"
+    },
+    {
+     "kind": "VEHICLE_PLATE",
+     "value": "G18 MTN"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "3 0072 4418 5520 7"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "Montréal 514 954-3180"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "ailleurs au Québec 1 855 612-4471"
+    }
+   ],
+   "outgoing": "Société de l'assurance automobile du Québec\n[ADDRESS_1]\n[ADDRESS_4]\n[NAME_2]\n[ADDRESS_2]\n[ADDRESS_3]\nAvis de paiement - Immatriculation 2027\nMONTREAL (QUÉBEC) H2J 2L3\nAvis de paiement - Immatriculation 2027\nDroits d'immatriculation et contribution d'assurance\nTitulaire [NAME_1] Numéro de permis [REFERENCE_NUMBER_2]\nPlaque [VEHICLE_PLATE_2] Type de véhicule Véhicule de promenade\nVéhicule Berline 2019, essence NIV [VEHICLE_PLATE_1]\nPériode couverte 12 mois à compter du 1er février 2027\nDétail du montant Montant\nDescription Droits d'immatriculation 154,00 $\nDescription\nDroits d'immatriculation 154,00 $\nContribution d'assurance (régime public) 126,23 $\nContribution au transport en commun (agglomération de Montréal) 59,00 $\nFrais de traitement 4,25 $\nMontant à payer 343,48 $\nMontant à payer : 343,48 $\nÀ payer au plus tard le 29 janvier 2027\nPayez en ligne sur saaq.gouv.qc.ca, par votre institution financière ou dans un centre de services, avec le numéro de référence [REFERENCE_NUMBER_1].\nRenseignements importants\n1. Si le paiement n'est pas reçu à la date limite, votre droit de circuler avec ce véhicule prend fin le 29 janvier 2027 à minuit.\n2. Circuler avec un véhicule dont l'immatriculation n'est pas payée est une infraction passible d'une amende, et le véhicule peut être saisi et remorqué.\n3. Si vous n'utilisez pas votre véhicule, vous pouvez le remiser avant la date limite pour ne pas payer ces droits.\n4. Si vous avez déménagé, signalez votre nouvelle adresse à la SAAQ dans les 30 jours.\nRenseignements : Montréal 514 954-3180 - ailleurs au Québec 1 855 612-4471 - saaq.gouv.qc.ca",
+   "alternates": [
+    "2TIBURHE4KC183920",
+    "Détail du montant",
+    "Montant",
+    "Droits d'immatriculation 126,23 $",
+    "Contribution d'assurance (régime public) 59,00 $",
+    "Contribution au transport en commun (agglomération de Montréal) 4,25 $",
+    "Frais de traitement",
+    "1. Si le paiement n’est pas reçu à la date limite, votre droit de circuler avec ce véhicule prend fin le 29 janvier 2027 à minuit.",
+    "2. Circuler avec un véhicule dont l’immatriculation n’est pas payée est une infraction passible d’une amende, et le véhicule peut être saisi et remorqué.",
+    "3. Si vous n’utilisez pas votre véhicule, vous pouvez le remettre avant la date limite pour ne pas payer ces droits.",
+    "Renseignements : Montréal 514 954-3180 • ailleurs au Québec 1 855 612-4471 • saaq.gouv.qc.ca"
+   ]
+  },
+  {
+   "alone": {
+    "deadline": true,
+    "amount": true,
+    "action": true,
+    "consequence": false,
+    "sec": 12.012800000011921,
+    "amountText": "",
+    "deadline_iso": "2027-01-12"
+   },
+   "id": "fr13",
+   "split": "final",
+   "pages": 1,
+   "readSec": 36.41180000001192,
+   "actionFirst": true,
+   "actionFinal": true,
+   "explainSec": 2.523199999988079,
+   "checkSec": 19.174200000047684,
+   "consequenceFirst": true,
+   "consequenceFinal": true,
+   "finalDeadlineRight": true,
+   "deadlinePrinted": true,
+   "finalAmountRight": true,
+   "final": {
+    "title": "Biometric appointment for residence permit renewal",
+    "steps": [
+     "Go in person to OCPM, Route de Chancy 88, 1213 Onex, biometrics counter, OCPP, Route de Chancy 88, 1213 Onex, guichet biométrie, 1er étage, on Tuesday, January 12, 2027 at 9:40 AM.",
+     "Bring your valid national passport, your current residence permit, an employer's certificate dated less than 3 months ago, and this appointment letter.",
+     "If you cannot attend, request a new appointment at least 48 hours in advance by calling 022 546 48 30 or 022 546 48 00 or using the online form.",
+     "Report any change of address to the OCPM within 14 days."
+    ],
+    "objection": "",
+    "deadline_iso": "2027-01-12",
+    "amount": "",
+    "if_ignored": "If you do not show up and do not have a valid excuse, your renewal application will be considered withdrawn and closed, and you would no longer be authorized to stay in Switzerland.",
+    "corrected": []
+   },
+   "figuresRead": [
+    true
+   ],
+   "figuresKept": [
+    true
+   ],
+   "idsMissedByModel": [
+    "MOYO Tendai"
+   ],
+   "idsSent": [],
+   "agencyKept": [
+    false,
+    false
+   ],
+   "deadlineRight": true,
+   "amountRight": true,
+   "explained": {
+    "title": "Biometric data appointment for residence permit renewal",
+    "steps": [
+     "Go to OCPM, Route de Chancy 88, 1213 Onex, guichet biométrie, OCPP, Route de Chancy 88, 1213 Onex, guichet biométrie, 1er étage on Tuesday, January 12, 2027 at 9:40 AM.",
+     "Bring your valid national passport, your current residence permit, an employer certificate dated less than 3 months ago, and this summons.",
+     "If you cannot attend, request a new appointment at least 48 hours in advance by phone or through the online form, referencing OCPM/ETR/2026/481266."
+    ],
+    "deadline_iso": "2027-01-12",
+    "amount": "",
+    "if_ignored": "Your renewal request will be considered withdrawn and closed, and you will no longer be authorized to stay in Switzerland.",
+    "corrected": []
+   },
+   "transcript": "République et canton de Genève\nOffice cantonal de la population et des migrations (OCPM)\nRoute de Chancy 88, 1213 Onex\nRéférence : OCPM/ETR/2026/481266\nOnex, le 7 décembre 2026\nMonsieur\nTendai Moyo\nRue de Lyon 87\n1203 Genève\nConvocation\nSaisie des données biométriques · renouvellement de l'autorisation de séjour (permis B)\nMonsieur,\nDans le cadre de votre demande de renouvellement déposée le 23 novembre 2026, vous êtes prié de vous présenter personnellement à nos guichets afin de procéder à la saisie de vos données biométriques (photographie, empreintes digitales et signature).\nPersonne convoquée MOYO Tendai Né le 23.08.1990\nNationalité Zimbabwe N° SYMIC 41 382 905.7\nDate et heure Mardi 12 janvier 2027 à 9 h 40\nLieu OCPM, Route de Chancy 88, 1213 Onex, guichet biométrie,\nLieu OCPP, Route de Chancy 88, 1213 Onex, guichet biométrie, 1er étage\nAutorisation actuelle Permis B valable jusqu'au 31.12.2026\nDocuments à présenter : passeport national valable, titre de séjour actuel, attestation de l'employeur datée de moins de 3 mois et la présente convocation.\nPrésentez-vous le mardi 12 janvier 2027 à 9 h 40.\nEn cas d'empêchement, demandez un nouveau rendez-vous au moins 48 heures à l'avance, par téléphone ou par le formulaire en ligne.\nInformations importantes\n1. Sans présentation ni excuse valable, votre demande sera considérée comme retirée et classée. Vous ne\n2. Pendant l'examen de votre demande, vous pouvez rester en Suisse et y travailler. Une attestation peut vous être remise au guichet.\n3. Tout changement d'adresse doit être annoncé à l'OCPM dans les 14 jours.\nOCPM, Service étrangers : 022 546 48 30 · Centrale : 022 546 48 00 · Lundi à vendredi, 8 h - 12 h · www.ge.ch/ocpm",
+   "second": "République et canton de Genève\nOffice cantonal de la population et des migrations (OCPM)\nRoute de Chancy 88, 1213 Onex\nMonsieur\nTendai Moyo\nRue de Lyon 87\n1203 Genève\nRéférence : OCPM/ETR/2026/481266\nOnex, le 7 décembre 2026\nConvocation\nSaisie des données biométriques · renouvellement de l'autorisation de séjour (permis B)\nMonsieur,\nDans le cadre de votre demande de renouvellement déposée le 23 novembre 2026, vous\nPersonne convoquée MOYO Tendai Né le 23.08.1990\nNationalité Zimbabwe N° SYMIC 41 382 905.7\nDate et heure Mardi 12 janvier 2027 à 9 h 40\nLieu OCPM, Route de Chancy 88, 1213 Ones, guichet biométrie, 1er étage\nAutorisation actuelle Permis B valable jusqu'au 31.12.2026\nDocuments à présenter : passeport national valable, titre de séjour actuel, attestation de l'employeur datée de moins de 3 mois et la présente convocation.\nPrésentez-vous le mardi 12 janvier 2027 à 9 h 40.\nEn cas d'empêchement, demandez un nouveau rendez-vous au moins 48 heures à\nInformations importantes\n1. Sans présentation ni excuse valable, votre demande sera considérée comme retirée et classée. Vous ne seriez alors plus autorisé à séjourner en Suisse.\n2. Pendant l'examen de votre demande, vous pouvez rester en Suisse et y travailler. Une attestation peut vous être remise au guichet.\n3. Tout changement d'adresse doit être annoncé à l'OCPM dans les 14 jours.\nOCPM, Service étrangers : 022 546 48 30 · Centrale : 022 546 48 00 · Lundi à vendredi, 8 h - 12 h · www.ge.ch/ocpm",
+   "items": [
+    {
+     "kind": "NAME",
+     "value": "Tendai Moyo"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Rue de Lyon 87"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "1203 Genève"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "OCPM/ETR/2026/481266"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Route de Chancy 88, 1213 Onex"
+    },
+    {
+     "kind": "BIRTH_DATE",
+     "value": "23.08.1990"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "SYMIC 41 382 905.7"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Route de Chancy 88, 1213 Onex"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Route de Chancy 88, 1213 Onex"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Route de Chancy 88, 1213 Onex"
+    },
+    {
+     "kind": "PHONE",
+     "value": "022 546 48 30"
+    },
+    {
+     "kind": "PHONE",
+     "value": "022 546 48 00"
+    },
+    {
+     "kind": "NAME",
+     "value": "Tendai Moyo"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Rue de Lyon 87"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "1203 Genève"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "OCPM/ETR/2026/481266"
+    },
+    {
+     "kind": "BIRTH_DATE",
+     "value": "23.08.1990"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "SYMIC 41 382 905.7"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Route de Chancy 88, 1213 Onex"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "OCPM, Route de Chancy 88, 1213 Ones, guichet biométrie, 1er étage"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "www.ge.ch/ocpm"
+    }
+   ],
+   "outgoing": "République et canton de Genève\nOffice cantonal de la population et des migrations (OCPM)\n[ADDRESS_2]\nRéférence : [REFERENCE_NUMBER_1]\nOnex, le 7 décembre 2026\nMonsieur\n[NAME_1]\n[ADDRESS_4]\n[ADDRESS_6]\nConvocation\nSaisie des données biométriques · renouvellement de l'autorisation de séjour (permis B)\nMonsieur,\nDans le cadre de votre demande de renouvellement déposée le 23 novembre 2026, vous êtes prié de vous présenter personnellement à nos guichets afin de procéder à la saisie de vos données biométriques (photographie, empreintes digitales et signature).\nPersonne convoquée [NAME_2] Né le [BIRTH_DATE_1]\nNationalité Zimbabwe N° [ID_NUMBER_1]\nDate et heure Mardi 12 janvier 2027 à 9 h 40\nLieu OCPM, [ADDRESS_2], guichet biométrie,\nLieu [ADDRESS_1]\nAutorisation actuelle Permis B valable jusqu'au 31.12.2026\nDocuments à présenter : passeport national valable, titre de séjour actuel, attestation de l'employeur datée de moins de 3 mois et la présente convocation.\nPrésentez-vous le mardi 12 janvier 2027 à 9 h 40.\nEn cas d'empêchement, demandez un nouveau rendez-vous au moins 48 heures à l'avance, par téléphone ou par le formulaire en ligne.\nInformations importantes\n1. Sans présentation ni excuse valable, votre demande sera considérée comme retirée et classée. Vous ne\n2. Pendant l'examen de votre demande, vous pouvez rester en Suisse et y travailler. Une attestation peut vous être remise au guichet.\n3. Tout changement d'adresse doit être annoncé à l'OCPM dans les 14 jours.\nOCPM, Service étrangers : [PHONE_1] · Centrale : [PHONE_2] · Lundi à vendredi, 8 h - 12 h [ADDRESS_3]",
+   "alternates": [
+    "Dans le cadre de votre demande de renouvellement déposée le 23 novembre 2026, vous",
+    "En cas d'empêchement, demandez un nouveau rendez-vous au moins 48 heures à",
+    "1. Sans présentation ni excuse valable, votre demande sera considérée comme retirée et classée. Vous ne seriez alors plus autorisé à séjourner en Suisse."
+   ]
+  },
+  {
+   "alone": {
+    "deadline": true,
+    "amount": true,
+    "action": true,
+    "consequence": false,
+    "sec": 8.201099999964237,
+    "amountText": "139,30",
+    "deadline_iso": "2027-01-08"
+   },
+   "id": "fr14",
+   "split": "final",
+   "pages": 2,
+   "readSec": 50.67290000003576,
+   "actionFirst": true,
+   "actionFinal": true,
+   "explainSec": 2.608800000011921,
+   "checkSec": 18.587,
+   "consequenceFirst": true,
+   "consequenceFinal": true,
+   "finalDeadlineRight": true,
+   "deadlinePrinted": true,
+   "finalAmountRight": true,
+   "final": {
+    "title": "School meals and after-school care bill",
+    "steps": [
+     "Pay 139,30 € by January 8, 2027 using one of the following methods:",
+     "Pay online at www.payfip.gouv.fr by bank card or one-time direct debit, using authority ID (Identifiant collectivités) 069123 and reference 2026-ROL-073-0418273.",
+     "Or pay by cheque made out to \"Trésor public\", with reference 2026-ROL-073-0418273 written on the back.",
+     "Or pay by cash or card at an approved tobacconist (\"paiement de proximité\").",
+     "If you have trouble paying, contact the billing service at 04 26 99 41 70 before January 8, 2027 to ask for a payment plan."
+    ],
+    "objection": "You can challenge this amount before the competent court within two months of receiving this bill. If you want to dispute the number of meals or care sessions, contact the billing service before January 8, 2027.",
+    "deadline_iso": "2027-01-08",
+    "amount": "139,30 €",
+    "if_ignored": "If you do not pay by January 8, 2027, the public accountant will send you a reminder and may start enforcement proceedings, such as seizing money from your salary or bank account. You will also have to pay the enforcement fees.",
+    "corrected": []
+   },
+   "figuresRead": [
+    true,
+    true
+   ],
+   "figuresKept": [
+    true,
+    true
+   ],
+   "idsMissedByModel": [],
+   "idsSent": [],
+   "agencyKept": [
+    true,
+    true
+   ],
+   "deadlineRight": true,
+   "amountRight": true,
+   "explained": {
+    "title": "School canteen and after-school care invoice",
+    "steps": [
+     "Pay 139,30 € by January 8, 2027.",
+     "To pay online, go to www.payfip.gouv.fr using public identifier 069123 and reference 2026-ROL-073-0418273.",
+     "To pay by check, make it payable to Trésor public and write the reference on the back.",
+     "To pay by cash or card, go to an authorized tobacconist partner for local payment up to 300 €."
+    ],
+    "deadline_iso": "2027-01-08",
+    "amount": "139,30 €",
+    "if_ignored": "The public accountant will send you a reminder and may then start legal enforcement actions such as seizing your bank account or wages, and collection fees will be charged to you.",
+    "corrected": []
+   },
+   "transcript": "Ville de Lyon\nDirection de l'Éducation · Service facturation\nRestauration scolaire et accueils périscolaires · 69205 Lyon Cedex 01\nM. et Mme RAKOTOMALALA Hery et Voahangy\n18 rue Saint-Maurice\n69008 Lyon\nFacture\nFacture n° 2026-12-0418273\nÉmise le 14/12/2026\nRestauration scolaire et accueils périscolaires · période : novembre 2026\nResponsable 1 RAKOTOMALALA Hery N° famille F-0730418\nResponsable 2 RAKOTOMALALA Voahangy Quotient familial 812 €\nDétail des prestations\nEnfant Prestation Nombre Tarif Montant\nMialy RAKOTOMALALA (CE2) Restauration scolaire 15 3,12 € 46,80 €\nMialy RAKOTOMALALA (CE2) Accueil du soir 10 2,05 € 20,50 €\nTojo RAKOTOMALALA (CP) Restauration scolaire 15 3,12 € 46,80 €\nMialy RAKOTOMALALA (CE2)\nTojo RAKOTOMALALA (CP)\nTojo RAKOTOMALALA (CP)\nAccueil du soir\nR restauration scolaire\nMercredi loisirs\npayé le 27/11/2026\nTotal de la facture\nSolde de la facture précédente (octobre 2026)\nMontant à payer : 139,30 €\nDate limite de paiement : 8 janvier 2027\nLes références de paiement (identifiant collectivités et référence de la dette) figurent en page 2.\nÀ savoir\n1. Les repas non pris pour maladie sont déduits sur présentation d'un certificat médical dans les 8 jours.\n2. Le tarif dépend de votre quotient familial. Si votre situation change, mettez à jour votre dossier sur le portail famille.\n3. Les modalités de paiement et les voies de recours figurent en page 2.\nService facturation : 04 26 99 41 70 · Du lundi au vendredi, 9 h - 16 h 30 · Page 1/2\nVille de Lyon\nDirection de l'Éducation · Service facturation\nFacture n° 2026-12-0418273\nPage 2/2\nModalités de paiement\nPar internet sur www.payfip.gouv.fr :\nIdentifiant collectivités : 069123\nRéférence : 2026-ROL-073-0418273\nMontant : 139,30 €\nMoyen de paiement | Comment faire\n------- | --------\nCarte bancaire ou prélèvement unique | sur payfip.gouv.fr avec les références ci-dessus\nChèque | à l'ordre du Trésor public, en inscrivant la référence au dos\nEspèces ou carte | chez un buraliste agréé « paiement de proximité », jusqu’à 300 €\nPrélèvement automatique | pour les prochaines factures, mandat à remplir sur le portail famille\nLe paiement est encaissé par le Service de gestion comptable de Lyon Municipale et Métropole, comptable public de la Ville de Lyon.\nVoies de recours et poursuites\n1. Vous pouvez contester cette somme devant la juridiction compétente dans un délai de deux mois à compter de la réception de la présente facture (article L. 1617-5 du code général des collectivités territoriales).\n2. Une réclamation sur le nombre de repas ou d'accueils doit être adressée au service facturation avant la date limite de paiement.\n3. À défaut de paiement à la date limite, le comptable public vous adressera une relance, puis pourra engager des poursuites (saisie sur salaire ou sur compte bancaire). Les frais de poursuite sont à votre charge.\n4. En cas de difficultés, contactez le service facturation avant la date limite pour demander un échéancier.\nService facturation : 04 26 99 41 70 - Service de gestion comptable : 04 78 63 18 52 - Page 2/2",
+   "second": "Ville de Lyon\nDirection de l'éducation · Service facturation\nRestauration scolaire et accueils périscolaires · 69205 Lyon Cedex 01\nM. et Mme RAKOTOMALALA Hery et Voahangy\n18 rue Saint-Maurice\n69008 Lyon\nFacture\nRestauration scolaire et accueils périscolaires · période : novembre 2026\nResponsable 1 RAKOTOMALALA Hery\nResponsable 2 RAKOTOMALALA Voahangy\nN° famille\nQuotient familial\nF-0730418\n812 €\nRéception scolaire et activités périscolaires\nResponsable 1 RAKOTOMALALA Hery\nResponsable 2 RAKOTOMALALA Voahangy\nN° famille F-0730418\nQuotient familial 812 €\nDétail des prestations\nEnfant Prestation Nombre Tarif Montant\nMialy RAKOTOMALALA (CE2) Restauration scolaire 15 3,12 € 46,80 €\nMialy RAKOTOMALALA (CE2) Accueil du soir 10 2,05 € 20,50 €\nTojo RAKOTOMALALA (CP) Restauration scolaire 15 3,12 € 46,80 €\nTojo RAKOTOMALALA (CP) Mercredi loisirs 3 8,40 € 25,20 €\nTotal de la facture 139,30 €\nSolde de la facture précédente (octobre 2026) payé le 27/11/2026\nMontant à payer : 139,30 €\nDate limite de paiement : 8 Janvier 2027\nLes références de paiement (identifiant collectivités et référence de la dette) figurent en page 2.\nÀ savoir\n1. Les repas non pris pour maladie sont déduits sur présentation d'un certificat médical dans les 8 jours.\n2. Le tarif dépend de votre quotient familial. Si votre situation change, mettez à jour votre dossier sur le portail famille.\n3. Les modalités de paiement et les voies de recours figurent en page 2.\nService facturation : 04 26 99 41 70 · Du lundi au vendredi, 9 h - 16 h 30 · Page 1/2\nVille de Lyon\nDirection de l'Éducation · Service facturation\nFacture n° 2026-12-0418273\nPage 2/2\nModalités de paiement\nPar internet sur www.payfip.gouv.fr :\nIdentifiant collectivités : 069123\nRéférence : 2026-ROL-073-0418273\nMontant : 139,30 €\nMoyen de paiement | Comment faire\nCarte bancaire ou prélèvement unique | sur payfip.gouv.fr avec les références ci-dessus\nChèque | à l'ordre du Trésor public, en inscrivant la référence au dos\nEspèces ou carte | chez un buraliste agréé « paiement de proximité », jusqu'à 300 €\nPrélèvement automatique | pour les prochaines factures, mandat à remplir sur le portail famille\nLe paiement est encaissé par le Service de gestion comptable de Lyon Municipale et Métropole, comptable public de la Ville de Lyon.\nVoies de recours et poursuites\n1. Vous pouvez contester cette somme devant la juridiction compétente dans un délai de deux mois à compter de la réception de la présente facture (article L. 1617-5 du code général des collectivités territoriales).\n2. Une réclamation sur le nombre de repas ou d'accueils doit être adressée au service facturation avant la date limite de paiement.\n3. À défaut de paiement à la date limite, le comptable public vous adressera une relance, puis pourra engager des poursuites (saisie sur salaire ou sur compte bancaire). Les frais de poursuite sont à votre charge.\n4. En cas de difficultés, contactez le service facturation avant la date limite pour demander un échéancier.",
+   "items": [
+    {
+     "kind": "NAME",
+     "value": "RAKOTOMALALA Hery"
+    },
+    {
+     "kind": "NAME",
+     "value": "RAKOTOMALALA Voahangy"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "18 rue Saint-Maurice"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "69008 Lyon"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "F-0730418"
+    },
+    {
+     "kind": "NAME",
+     "value": "Mialy RAKOTOMALALA"
+    },
+    {
+     "kind": "NAME",
+     "value": "Tojo RAKOTOMALALA"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "04 26 99 41 70"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "04 78 63 18 52"
+    },
+    {
+     "kind": "NAME",
+     "value": "Ville de Lyon"
+    },
+    {
+     "kind": "NAME",
+     "value": "RAKOTOMALALA Hery"
+    },
+    {
+     "kind": "NAME",
+     "value": "Voahangy RAKOTOMALALA"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "18 rue Saint-Maurice"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "69008 Lyon"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "F-0730418"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "F-0730418"
+    },
+    {
+     "kind": "PHONE",
+     "value": "04 26 99 41 70"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "04 26 99 41 70"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "2026-12-0418273"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "2026-ROL-073-0418273"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "www.payfip.gouv.fr"
+    }
+   ],
+   "outgoing": "[NAME_15]\nDirection de l'Éducation · Service facturation\nRestauration scolaire et accueils périscolaires · 69205 [NAME_16]\nM. et Mme [NAME_4] [NAME_2]\n[ADDRESS_1]\n[ADDRESS_3]\nFacture\nFacture n° [REFERENCE_NUMBER_2]\nÉmise le 14/12/2026\nRestauration scolaire et accueils périscolaires · période : novembre 2026\nResponsable [NAME_5] N° famille [REFERENCE_NUMBER_3]\nResponsable [NAME_1] Quotient familial 812 €\nDétail des prestations\nEnfant Prestation Nombre Tarif Montant\n[NAME_7] Restauration scolaire 15 3,12 € 46,80 €\n[NAME_7] Accueil du soir 10 2,05 € 20,50 €\n[NAME_3]) Restauration scolaire 15 3,12 € 46,80 €\n[NAME_7]\n[NAME_3])\n[NAME_3])\nAccueil du soir\nR restauration scolaire\nMercredi loisirs\npayé le 27/11/2026\nTotal de la facture\nSolde de la facture précédente (octobre 2026)\nMontant à payer : 139,30 €\nDate limite de paiement : 8 janvier 2027\nLes références de paiement (identifiant collectivités et référence de la dette) figurent en page 2.\nÀ savoir\n1. Les repas non pris pour maladie sont déduits sur présentation d'un certificat médical dans les 8 jours.\n2. Le tarif dépend de votre quotient familial. Si votre situation change, mettez à jour votre dossier sur le portail famille.\n3. Les modalités de paiement et les voies de recours figurent en page 2.\nService facturation : 04 26 99 41 70 · Du lundi au vendredi, 9 h - 16 h 30 · Page 1/2\n[NAME_15]\nDirection de l'Éducation · Service facturation\nFacture n° [REFERENCE_NUMBER_2]\nPage 2/2\nModalités de paiement\nPar internet sur www.payfip.gouv.fr :\nIdentifiant collectivités : 069123\nRéférence : [REFERENCE_NUMBER_1]\nMontant : 139,30 €\nMoyen de paiement | Comment faire\n------- | --------\nCarte bancaire ou prélèvement unique | sur payfip.gouv.fr avec les références ci-dessus\nChèque | à l'ordre du Trésor public, en inscrivant la référence au dos\nEspèces ou carte | chez un buraliste agréé « paiement de proximité », jusqu’à 300 €\nPrélèvement automatique | pour les prochaines factures, mandat à remplir sur le portail famille\nLe paiement est encaissé par le Service de gestion comptable de [NAME_15] Municipale et Métropole, comptable public de la [NAME_15].\nVoies de recours et poursuites\n1. Vous pouvez contester cette somme devant la juridiction compétente dans un délai de deux mois à compter de la réception de la présente facture (article L. 1617-5 du code général des collectivités territoriales).\n2. Une réclamation sur le nombre de repas ou d'accueils doit être adressée au service facturation avant la date limite de paiement.\n3. À défaut de paiement à la date limite, le comptable public vous adressera une relance, puis pourra engager des poursuites (saisie sur salaire ou sur compte bancaire). Les frais de poursuite sont à votre charge.\n4. En cas de difficultés, contactez le service facturation avant la date limite pour demander un échéancier.\nService facturation : 04 26 99 41 70 - Service de gestion comptable : 04 78 63 18 52 - Page 2/2",
+   "alternates": [
+    "Direction de l'éducation · Service facturation",
+    "Réception scolaire et activités périscolaires",
+    "Total de la facture 139,30 €",
+    "Solde de la facture précédente (octobre 2026) payé le 27/11/2026",
+    "Date limite de paiement : 8 Janvier 2027",
+    "Espèces ou carte | chez un buraliste agréé « paiement de proximité », jusqu'à 300 €"
+   ]
+  },
+  {
+   "alone": {
+    "deadline": true,
+    "amount": false,
+    "action": true,
+    "consequence": false,
+    "sec": 9.143199999988079,
+    "amountText": "23,700円",
+    "deadline_iso": "2027-02-05"
+   },
+   "id": "ja12",
+   "split": "final",
+   "pages": 1,
+   "readSec": 35.12680000001192,
+   "actionFirst": true,
+   "actionFinal": true,
+   "explainSec": 2.6075,
+   "checkSec": 23.885199999988078,
+   "consequenceFirst": true,
+   "consequenceFinal": true,
+   "finalDeadlineRight": true,
+   "deadlinePrinted": true,
+   "finalAmountRight": true,
+   "final": {
+    "title": "Notice of municipal tax overpayment refund",
+    "steps": [
+     "Fill in your own bank account details on the enclosed refund claim form (還付請求書). If you want the money sent to someone else's account, you must also include a power of attorney (委任状).",
+     "Submit the form by February 5, 2027, either by mailing it in the enclosed return envelope or by bringing it to 亀山区税務課の窓口.",
+     "Wait about 3 weeks after submitting the form for the refund to be transferred to your account.",
+     "If you plan to leave Japan (such as returning to your home country), report a tax agent (納税管理人) before you depart."
+    ],
+    "objection": "",
+    "deadline_iso": "2027-02-05",
+    "amount": "",
+    "if_ignored": "If you do not submit the claim form by the deadline, the refund may be applied to any other unpaid taxes you owe, and your right to receive the refund will expire after 5 years.",
+    "corrected": [
+     "read as \"観光区役所\" / \"観覧区役所\", understood as \"鶴見区役所\" (Tsurumi Ward Office)",
+     "read as \"更後後税額\", understood as \"更正後税額\" (revised tax amount)",
+     "read as \"韓国など\" / \"排国など\", understood as \"帰国など\" (returning to one's home country, etc.)",
+     "read as \"納税代理人\", understood as \"納税管理人\" (tax agent)",
+     "read as \"一時的に減少します\", understood as \"時効により消滅します\" (expires by statute of limitations)",
+     "read as \"偶付金詐欺\" / \"交付金詐欺\", understood as \"還付金詐欺\" (refund fraud)"
+    ]
+   },
+   "figuresRead": [
+    true
+   ],
+   "figuresKept": [
+    true
+   ],
+   "idsMissedByModel": [],
+   "idsSent": [],
+   "agencyKept": [
+    false
+   ],
+   "deadlineRight": true,
+   "amountRight": false,
+   "explained": {
+    "title": "Local tax refund notification",
+    "steps": [
+     "Fill out the enclosed refund claim form (bank transfer request form) with your own bank account details.",
+     "Mail the form back using the return envelope or bring it to the 亀山区税務課の窓口 by February 5, 2027."
+    ],
+    "deadline_iso": "2027-02-05",
+    "amount": "23,700円",
+    "if_ignored": "If you do not submit the claim by the deadline, the refund may be applied to other unpaid taxes, and the right to receive the refund will eventually expire after 5 years.",
+    "corrected": [
+     "read as \"観光区長印\", understood as \"鶴見区長印\" (Tsurumi Ward Mayor's seal).",
+     "read as \"観光区役所\", understood as \"鶴見区役所\" (Tsurumi Ward Office).",
+     "read as \"排国\", understood as \"出国\" (leaving the country).",
+     "read as \"偶付金詐欺\", understood as \"還付金詐欺\" (refund fraud)."
+    ]
+   },
+   "transcript": "横浜市鶴見区役所\n税務課 市民税担当 - 横浜市鶴見区鶴見中央三丁目20番1号\n通知番号 R8-観見-004172\n令和8年12月4日\n市税過納金還付通知書\n(還付請求書のご提出のお願い)\n〒230-0062 神奈川県横浜市鶴見区豊町14番7号 レジデンス鶴見301\nベラニラマ 様\nベラニルマラ様\n氏名 ペラニルマラ\nローマ字氏名 PERERA NIRMALA\n宛名番号 1083-447-2915 生年月日 1990年6月11日\n令和8年度 市民税(普通徴収)について、所得の更正により税額が減額となりました。納め過ぎとなった次回の金額をお返しします。\n還付金の内訳\n年度税目 期間 納付済額 更後後税額 還付額\n令和8年度 市民税 第1期~第3期 87,600円 64,200円 23,400円\n還付加算金 - - 300円\n還付金合計 23,700円\n還付加算金\n還付金合計\n変更決定日\n還付請求書(口座振込依頼書)の提出期限:令和9年2月5日\n同封の請求書にご本人名義の振込先口座を記入し、返信用封筒で郵送するか、亀山区税務課の窓口にお持ちください。届出から約3週間で振込みます。\nご案内\n1. 期限までに請求書の提出がない場合、還付金を他の未納の税に充当することがあります。また、還付金を受取る権利を5年で一時的に減少します。\n2. ご本人名義以外の口座への振込を希望する場合は、委任状が必要です。\n3. 韓国など日本を離れる予定の方、出国時に納税管理人を届け出てください。\n4. 市の職員で通話でのATM操作をお願いすることは致にありません。還付金詐欺にご注意ください。\n3. 国際的なבדを承れる予定の出方は、出国前に税務署へ届け出てください。\n4. 市の職員が通話でATMの操作をお願いすることは対応致しません。偶付金詐欺にご注意ください。\n横浜市観光区長印\nお問い合わせ:観光区役所 税務課 税務班 担当 045-510-1708 平日 8:45~17:00",
+   "second": "横浜市鶴見区役所\n税務課 市民税担当・横浜市鶴見区鶴見中央三丁目20番1号\n通知番号 R8ー鶴見通ー004172\n令和8年12月4日\n市税過納金還付通知書\n(還付請求書のご提出のお願い)\n〒230-0062 神奈川県横浜市鶴見区豊岡町14番7号 レジデンス鶴見301\nベレラニラマラ様\n氏名\nベレラニラマラ\nローマ字氏名\nPERERA NIRMALA\n宛名番号\n1083-447-2915\n生年月日\n1990年6月11日\n令和8年度 市民税・県民税(普通徴収)について、所得の更正により税額が減額となりました。納め過ぎ\n還付金の内訳\n年度・税目 期別 納付済額 更正後税額 還付額\n令和8年度 市民税 第1期~第3期 87,600円 64,200円 23,400円\n還付加算金 - - 300円\n還付金合計 23,700円\n更正決定日 令和8年11月27日 第4期(令和9年1月) 0円(納付不要)\n還付請求書(口座振込依頼書)の提出期限:令和9年2月5日\n同封の請求書にご本人様の振込口座を記入し、返信封筒で郵送するか、観覧区役所税務課の窓口にお持ちください。届出から約3週間で振り込みます。\nご案内\n1. 期末までに請求書の提出がない場合、還付金を他の未納の税款に充当することがあります。また、還付金を受け取る権利は5年\n2. ご本人名義以外の口座への入金を希望する場合は、委任状が必要です。\n3. 排国などで日本を離れる予定の方は、出国前に納税代理人を届出してください。\n4. 市の職員が電話でATMの操作をお願いすることは絶対にありません。交付金詐欺にご注意ください。\n横浜市鶴見区長印\nお問い合わせ:鶴見区役所 税務課 市民税担当 045-510-1708 平日 8:45~17:00",
+   "items": [
+    {
+     "kind": "ADDRESS",
+     "value": "横浜市鶴見区役所税務課 市民税担当 横浜市鶴見区鶴見中央三丁目20番1号"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "R8-観見-004172"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "〒230-0062 神奈川県横浜市鶴見区豊町14番7号 レジデンス鶴見301"
+    },
+    {
+     "kind": "NAME",
+     "value": "ベラニラマ 様"
+    },
+    {
+     "kind": "NAME",
+     "value": "ベラニルマラ様"
+    },
+    {
+     "kind": "NAME",
+     "value": "ペラニルマラ"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "PERERA NIRMALA"
+    },
+    {
+     "kind": "BIRTH_DATE",
+     "value": "1990年6月11日"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "1083-447-2915"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "令和8年度 市民税(普通徴収)"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "令和9年2月5日"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "亀山区税務課の窓口"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "045-510-1708 平日 8:45~17:00"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "横浜市鶴見区役所 税務課 市民税担当・横浜市鶴見区鶴見中央三丁目20番1号"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "R8ー鶴見通ー004172"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "〒230-0062 神奈川県横浜市鶴見区豊岡町14番7号 レジデンス鶴見301"
+    },
+    {
+     "kind": "NAME",
+     "value": "ベレラニラマラ"
+    },
+    {
+     "kind": "NAME",
+     "value": "PERERA NIRMALA"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "1083-447-2915"
+    },
+    {
+     "kind": "BIRTH_DATE",
+     "value": "1990年6月11日"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "鶴見区役所 税務課 市民税担当 045-510-1708"
+    }
+   ],
+   "outgoing": "横浜市鶴見区役所\n税務課 市民税担当 - 横浜市鶴見区鶴見中央三丁目20番1号\n通知番号 [REFERENCE_NUMBER_2]\n令和8年12月4日\n市税過納金還付通知書\n(還付請求書のご提出のお願い)\n[ADDRESS_1]\n[NAME_2]\n[NAME_3]\n[NAME_1]\nローマ字氏名 [ID_NUMBER_1]\n宛名番号 [REFERENCE_NUMBER_1] 生年月日 [BIRTH_DATE_1]\n[REFERENCE_NUMBER_3](普通徴収)について、所得の更正により税額が減額となりました。納め過ぎとなった次回の金額をお返しします。\n還付金の内訳\n年度税目 期間 納付済額 更後後税額 還付額\n[REFERENCE_NUMBER_3] 第1期~第3期 87,600円 64,200円 23,400円\n還付加算金 - - 300円\n還付金合計 23,700円\n還付加算金\n還付金合計\n変更決定日\n還付請求書(口座振込依頼書)の提出期限:令和9年2月5日\n同封の請求書にご本人名義の振込先口座を記入し、返信用封筒で郵送するか、[ADDRESS_3]にお持ちください。届出から約3週間で振込みます。\nご案内\n1. 期限までに請求書の提出がない場合、還付金を他の未納の税に充当することがあります。また、還付金を受取る権利を5年で一時的に減少します。\n2. ご本人名義以外の口座への振込を希望する場合は、委任状が必要です。\n3. 韓国など日本を離れる予定の方、出国時に納税管理人を届け出てください。\n4. 市の職員で通話でのATM操作をお願いすることは致にありません。還付金詐欺にご注意ください。\n3. 国際的なבדを承れる予定の出方は、出国前に税務署へ届け出てください。\n4. 市の職員が通話でATMの操作をお願いすることは対応致しません。偶付金詐欺にご注意ください。\n横浜市観光区長印\nお問い合わせ:観光区役所 [ADDRESS_2] 8:45~17:00",
+   "alternates": [
+    "税務課 市民税担当・横浜市鶴見区鶴見中央三丁目20番1号",
+    "生年月日",
+    "[REFERENCE_NUMBER_3]・県民税(普通徴収)について、所得の更正により税額が減額となりました。納め過ぎ",
+    "年度・税目 期別 納付済額 更正後税額 還付額",
+    "同封の請求書にご本人様の振込口座を記入し、返信封筒で郵送するか、観覧区役所税務課の窓口にお持ちください。届出から約3週間で振り込みます。",
+    "1. 期末までに請求書の提出がない場合、還付金を他の未納の税款に充当することがあります。また、還付金を受け取る権利は5年",
+    "2. ご本人名義以外の口座への入金を希望する場合は、委任状が必要です。",
+    "3. 排国などで日本を離れる予定の方は、出国前に納税代理人を届出してください。",
+    "4. 市の職員が電話でATMの操作をお願いすることは絶対にありません。交付金詐欺にご注意ください。",
+    "横浜市鶴見区長印"
+   ]
+  },
+  {
+   "alone": {
+    "deadline": false,
+    "amount": true,
+    "action": true,
+    "consequence": false,
+    "sec": 8.329300000011921,
+    "amountText": "11,724",
+    "deadline_iso": "2024-12-25"
+   },
+   "id": "ja13",
+   "split": "final",
+   "pages": 1,
+   "readSec": 33.14,
+   "actionFirst": true,
+   "actionFinal": true,
+   "explainSec": 3.951,
+   "checkSec": 20.10739999997616,
+   "consequenceFirst": false,
+   "consequenceFinal": true,
+   "finalDeadlineRight": true,
+   "deadlinePrinted": true,
+   "finalAmountRight": true,
+   "final": {
+    "title": "Long-term care insurance premium change and payment notice",
+    "steps": [
+     "Pay 11,724円 for Installment 7 by December 25, 2026, using the enclosed Installment 7 payment slip at a bank, convenience store, or via smartphone payment.",
+     "Pay the remaining three installments of 11,724円 each by February 1, 2027 (Installment 8), March 1, 2027 (Installment 9), and March 31, 2027 (Installment 10)."
+    ],
+    "objection": "If you disagree with this decision, you can file a request for review with the Aichi Prefecture Long-Term Care Insurance Examination Board within 3 months from the day after you receive this notice.",
+    "deadline_iso": "2026-12-25",
+    "amount": "11,724円",
+    "if_ignored": "If you miss the deadline, a reminder notice will be sent and late fees will be added, and your property or savings may be seized. If you are in arrears for one year or more, you will have to pay the full cost when using long-term care services.",
+    "corrected": [
+     "read as \"滞納状と減額\" / \"薄納帳紙や封筒\", understood as \"財産や預金\" (property and savings)",
+     "read as \"1年以上介護を受ける\" / \"1年以随降すると\", understood as \"1年以上滞納すると\" (if you are in arrears for 1 year or more)",
+     "read as \"お受領介護保険審查会\" / \"お気軽介護保険審議会\", understood as \"愛知県介護保険審査会\" (Aichi Prefecture Long-Term Care Insurance Examination Board)"
+    ]
+   },
+   "figuresRead": [
+    true,
+    true
+   ],
+   "figuresKept": [
+    true,
+    true
+   ],
+   "idsMissedByModel": [],
+   "idsSent": [],
+   "agencyKept": [
+    true,
+    true
+   ],
+   "deadlineRight": true,
+   "amountRight": true,
+   "explained": {
+    "title": "Long-term care insurance fee change notice",
+    "steps": [
+     "Pay the amount of 11,724 yen for the seventh period using the enclosed payment slip by December 25, 2026.",
+     "Pay at a financial institution, convenience store, or via smartphone payment."
+    ],
+    "deadline_iso": "2026-12-25",
+    "amount": "11,724円",
+    "if_ignored": "If you miss the deadline, a reminder will be sent and overdue fines will be added. Your assets may be seized.",
+    "corrected": [
+     "read as \"納入通知書\", understood as \"納入通知書\" (payment notice)",
+     "read as \"別期\", understood as \"期別\" (period)",
+     "read as \"納期限を過ぎると督促状を送付し、延滞金が加算されます。滞納状と減額を差し押さえることがあります。\", understood as \"納期期限を過ぎると督促状を送付し、延滞金が加算されます。滞納処分として財産を差し押さえることがあります。\" (if the deadline is missed, a reminder is sent, late fees are added, and property may be seized for delinquency)",
+     "read as \"お受領介護保険審查会\", understood as \"介護保険審査会\" (Long-Term Care Insurance Review Board)",
+     "read as \"この次定額である場合は\", understood as \"この決定に不服がある場合は\" (if you are dissatisfied with this decision)"
+    ]
+   },
+   "transcript": "名古屋市中村区役所\n福祉介護保険担当:名古屋市中村区竹橋町36番31号\n被保険者番号 0061-48273\n令和8年12月1日\n介護保険料額変更通知書 納入通知書\n(令和8年度 普通徴収)\n〒453-0015 名古屋市中村区竹橋町18番4号 メゾン橋602\nキムスンジャ様\n氏名 キム スンジャ( KIM SOONJA ) 生年月日 1959年3月8日\n所得段階 第7段階(変更前 第5段階) 変更理由 令和7年分所得の修正告\n令和7年中の所得が修正されたため、令和8年度の介護保険料を次のとおり変更しました。変更後の年額から納付済額を差し引いた残りを、第7期から第10期にかけて納めていただきます。\n年額保険料 変更前年額 変更後年額 差額\n71,040円 89,520円 18,480円\n期別納付額\n別期 納期 保険料 状況\n第1期〜第6期 令和8年6月〜11月 42,624円 納付済\n第7期 令和8年12月25日 11,724円 今回納付分\n第8期 令和9年2月1日 11,724円\n第9期 令和9年3月1日 11,724円\n第10期 令和9年3月31日 11,724円\n今回の納付額:11,724円(第7期)\n納期限:令和8年12月25日\n同時期の第期の納付書で、金融機関、コンビニエンスストア、スマートフォン決済で納めてください。\n同封の第7期の納付書で、金融機関、コンビニエンスストア、スマートフォン決済で納めてください。\nご注意\n1. 納期限を過ぎると督促状を送付し、延滞金が加算されます。滞納状と減額を差し押さえることがあります。\n2. 1年以上介護を受ける、介護サービスを利用したごとに費用の金物があったお支払いいただくことになります。\n3. この次定額である場合は、通知を受けた日の翌日から3か月以内にお受領介護保険審查会に審査請求ができます。\nお問い合わせ:中村区役所 介護保険担当 052-433-3093 ・ 保険料収納課 052-433-3096 平日 8:45-17:15",
+   "second": "名古屋市中村区役所\n福祉介護保険担当- 名古屋市中村区竹橋町36番31号\n被保険者番号 0061-48273\n令和5年12月1日\n介護保険料額変更通知書 案 入通知書\n(令和8年度 書類徴収)\n〒453-0015 名古屋市中村区竹橋町18番4号 メゾン橋602\nキム スンジャ様\n氏名 キム スンジャ( KIM SOONJA ) 生年月日 1959年3月8日\n所得段階 第7段階(変更前 第5段階) 変更理由 令和7年分所得の修正申告\n令和7年中の所得が修正されたため、令和8年度の介護保険料を次のとおり変更しました。変更後の年額から納付済額を差し引いた残りを、第7期から第10期に分けて納めていただきます。\n年額保険料\n変更前 年額\n71,040円\n変更後 年額\n89,520円\n差額\n18,480円\n別割納付額\n期別 納期限 保険料 状況\n第1期~第6期 令和8年6月~11月 42,624円 納付済\n第7期 令和8年12月25日 11,724円 今回納付分\n第8期 令和9年2月1日 11,724円\n第9期 令和9年3月31日 11,724円\n第10期 令和9年3月31日 11,724円\n第9期\n令和9年3月1日\n11,724円\n第10期\n令和9年3月31日\n11,724円\n今回の納付額:11,724円(第7期)\n締期日:令和8年12月25日\n同封の第7期の納付書で、金融機関、コンビニエンスストア、スマートフォン決済で納めてください。\nご注意\n1. 納期期限を過ぎると督促状を送付し、延滞金が加算されます。薄納帳紙や封筒を差し押さえることがあります。\n2. 1年以随降すると、介護サービスを利用したときに費用の全額をお支払いいただくことになります。\n3. この決定に不服がある場合は、通知を受け取った日の翌日から3か月以内にお気軽介護保険審議会に書面請求ができます。\nお問い合わせ:中村区役所 介護保険課 保険担当 052-433-3093 保険料収納課 052-433-3096 平日 8:45-17:15",
+   "items": [
+    {
+     "kind": "NAME",
+     "value": "キムスンジャ"
+    },
+    {
+     "kind": "NAME",
+     "value": "キム スンジャ"
+    },
+    {
+     "kind": "BIRTH_DATE",
+     "value": "1959年3月8日"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "名古屋市中村区竹橋町36番31号"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "〒453-0015 名古屋市中村区竹橋町18番4号 メゾン橋602"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "0061-48273"
+    },
+    {
+     "kind": "PHONE",
+     "value": "052-433-3093"
+    },
+    {
+     "kind": "PHONE",
+     "value": "052-433-3096"
+    },
+    {
+     "kind": "NAME",
+     "value": "キム スンジャ"
+    },
+    {
+     "kind": "NAME",
+     "value": "キム スンジャ( KIM SOONJA )"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "0061-48273"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "名古屋市中村区竹橋町36番31号"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "〒453-0015 名古屋市中村区竹橋町18番4号 メゾン橋602"
+    },
+    {
+     "kind": "BIRTH_DATE",
+     "value": "1959年3月8日"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "令和8年度"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "第7段階"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "令和7年"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "名古屋市中村区竹橋町18番4号 メゾン橋602"
+    },
+    {
+     "kind": "PHONE",
+     "value": "052-433-3093"
+    },
+    {
+     "kind": "PHONE",
+     "value": "052-433-3096"
+    }
+   ],
+   "outgoing": "名古屋市中村区役所\n福祉介護保険担当:[ADDRESS_3]\n被保険者番号 [REFERENCE_NUMBER_1]\n令和8年12月1日\n介護保険料額変更通知書 納入通知書\n([REFERENCE_NUMBER_2] 普通徴収)\n[ADDRESS_1]\n[NAME_4]\n氏名 [NAME_2] [NAME_1] ) 生年月日 [BIRTH_DATE_1]\n所得段階 [REFERENCE_NUMBER_3](変更前 第5段階) 変更理由 令和7年分所得の修正告\n令和7年中の所得が修正されたため、[REFERENCE_NUMBER_2]の介護保険料を次のとおり変更しました。変更後の年額から納付済額を差し引いた残りを、第7期から第10期にかけて納めていただきます。\n年額保険料 変更前年額 変更後年額 差額\n71,040円 89,520円 18,480円\n期別納付額\n別期 納期 保険料 状況\n第1期〜第6期 令和8年6月〜11月 42,624円 納付済\n第7期 令和8年12月25日 11,724円 今回納付分\n第8期 令和9年2月1日 11,724円\n第9期 令和9年3月1日 11,724円\n第10期 令和9年3月31日 11,724円\n今回の納付額:11,724円(第7期)\n納期限:令和8年12月25日\n同時期の第期の納付書で、金融機関、コンビニエンスストア、スマートフォン決済で納めてください。\n同封の第7期の納付書で、金融機関、コンビニエンスストア、スマートフォン決済で納めてください。\nご注意\n1. 納期限を過ぎると督促状を送付し、延滞金が加算されます。滞納状と減額を差し押さえることがあります。\n2. 1年以上介護を受ける、介護サービスを利用したごとに費用の金物があったお支払いいただくことになります。\n3. この次定額である場合は、通知を受けた日の翌日から3か月以内にお受領介護保険審查会に審査請求ができます。\nお問い合わせ:中村区役所 介護保険担当 052-433-3093 ・ 保険料収納課 052-433-3096 平日 8:45-17:15",
+   "alternates": [
+    "令和5年12月1日",
+    "介護保険料額変更通知書 案 入通知書",
+    "年額保険料",
+    "変更前 年額",
+    "71,040円",
+    "変更後 年額",
+    "89,520円",
+    "差額",
+    "18,480円",
+    "別割納付額",
+    "期別 納期限 保険料 状況",
+    "第9期 令和9年3月31日 11,724円",
+    "第9期",
+    "令和9年3月1日",
+    "11,724円",
+    "令和9年3月31日",
+    "11,724円",
+    "締期日:令和8年12月25日",
+    "1. 納期期限を過ぎると督促状を送付し、延滞金が加算されます。薄納帳紙や封筒を差し押さえることがあります。",
+    "2. 1年以随降すると、介護サービスを利用したときに費用の全額をお支払いいただくことになります。",
+    "3. この決定に不服がある場合は、通知を受け取った日の翌日から3か月以内にお気軽介護保険審議会に書面請求ができます。",
+    "お問い合わせ:中村区役所 介護保険課 保険担当 052-433-3093 保険料収納課 052-433-3096 平日 8:45-17:15"
+   ]
+  },
+  {
+   "alone": {
+    "deadline": false,
+    "amount": false,
+    "action": true,
+    "consequence": false,
+    "sec": 12.928,
+    "amountText": "33,600",
+    "deadline_iso": "2026-11-30"
+   },
+   "id": "ja14",
+   "split": "final",
+   "pages": 2,
+   "readSec": 53.622,
+   "actionFirst": true,
+   "actionFinal": true,
+   "explainSec": 2.270599999964237,
+   "checkSec": 24.816400000035763,
+   "consequenceFirst": true,
+   "consequenceFinal": true,
+   "finalDeadlineRight": true,
+   "deadlinePrinted": true,
+   "finalAmountRight": true,
+   "final": {
+    "title": "Overdue childcare fee reminder",
+    "steps": [
+     "Pay 67,300円 by January 26, 2027.",
+     "At a convenience store, tell the cashier you are making a Pay-easy payment and show your payment number (1407-2266-0718-354) and confirmation number (418273).",
+     "Alternatively, use a smartphone payment app's bill payment option and enter the institution number (32141), payment number (1407-2266-0718-354), and confirmation number (418273).",
+     "If you cannot pay by January 26, 2027, call 044-200-3741 before the deadline to discuss your situation."
+    ],
+    "objection": "If you disagree with this reminder, you can file a formal request for review with the Mayor of Kawasaki within 3 months from the day after you receive this letter.",
+    "deadline_iso": "2027-01-26",
+    "amount": "67,300円",
+    "if_ignored": "If you do not pay by the deadline, your salary, bank deposits, or other assets may be seized under local tax delinquency procedures, and late fees may be added for each day past the due date.",
+    "corrected": [
+     "read as \"給付金額\", understood as \"納付金額\" (payment amount)",
+     "read as \"令和1年1月26日(火)\", understood as \"令和9年1月26日(火)\" (January 26, 2027, Tuesday)",
+     "read as \"保母手帳数\", understood as \"督促手数料\" (reminder fee)",
+     "read as \"乳児手当\", understood as \"児童手当\" (child allowance)",
+     "read as \"川崎市청に書面請求\", understood as \"川崎市長に審査請求\" (request for review to the Mayor of Kawasaki)"
+    ]
+   },
+   "figuresRead": [
+    true,
+    true
+   ],
+   "figuresKept": [
+    true,
+    true
+   ],
+   "idsMissedByModel": [],
+   "idsSent": [],
+   "agencyKept": [
+    true,
+    true
+   ],
+   "deadlineRight": true,
+   "amountRight": true,
+   "explained": {
+    "title": "Overdue childcare fee reminder",
+    "steps": [
+     "Pay the total amount of 67,300円 by January 26, 2027 using convenience store payment, smartphone payment, or Pay-easy with納付番号 1407-2266-0718-354, 確認番号 418273, and 収納機関番号 32141."
+    ],
+    "deadline_iso": "2027-01-26",
+    "amount": "67,300円",
+    "if_ignored": "If you do not pay by the specified deadline, your property such as salary and deposits may be seized under local tax delinquency disposal rules, and overdue fines may be added.",
+    "corrected": [
+     "read as \"令和1年1月26日\", understood as \"令和9年1月26日\" (Year 9 of Reiwa, 2027, based on the payment period of January 2027)",
+     "read as \"保有額\", understood as \"保育料\" (childcare fee)",
+     "read as \"川崎市청\", understood as \"川崎市長\" (Mayor of Kawasaki)"
+    ]
+   },
+   "transcript": "川崎市子ども未来局\n保育対策課 保育料係:川崎市川崎区本町番地\n督促状(保育料)\n(保育所等利用者負担額・児童福祉法第56条)\n〒211-0063 神奈川県川崎市中原区小杉三丁目440番地 パークハイツ小杉1104\nベルナルトママ様\nベルナートルマ様\n保護者 ベルナートルマ\n児 童 ベルナルレア(令和6年9月2日生) 施設 中原第二保育園\n利用者負担額 月額 33,600円 隔週区分 D12\n下記の保育料が納期限までに納付されていません。指定期限までに納付してください。\n未納の保育料\n月 分 納期限 金額\n令和8年11月分 令和8年11月30日 33,600円\n令和8年12月分 令和8年12月28日 33,600円\n保母手帳数 ー 100円\n令和年11月分\n令和年12月分\n督促手数料\n給付金額\n督促手数料\n-\n100円\n67,300円\n給付金額:67,300円\n指定期限:令和1年1月26日(火)\nコンビニエンスストア、スマートフォン決済、Pay-easyでの給付には、2ページ目の日付番号と確認番号が必要です。\nご注意\n1. 指定期限までに納付がない場合は、地方税の滞納処分の則により、給与や預金などの財産を差し押さえることがあります。\n2. 期限の翌日から納付の日まで日数を加算して、延滞金を加算することがあります。\n3. 乳児手当を受給している方は、申出により児童手当から保有額を納めることができます。\n4. 天候や気候などで納付し難しい場合は、指定期限までにご相談ください。\nお問い合わせ:こども未来局 保育支援課 保険料係 044-200-3741 平日 8:30-17:15・1/2\n川崎市 こども未来局\n保育対策課 保育料係\n督促番号 R8-保-0072418\n2/2\n納付番号のご案内\n納付者(ローマ字) BERNARD THOMAS\n納付番号 1407-2266-0718-354\n確認番号 418273\n確認番号\n418273\n収納機関番号(Pay-easy)\n32141\n納付金額\n67,300円\n納付できる期間\n令和9年1月26日まで\nコンビニエンスストアでは、レジで“Pay-easy”収納代行の支払いと伝え、納付番号と確認番号を提示してください。スマートフォン決済アプリでは請求書払いから上記の番号を入力してください。\n月別の保育料(令和8年度)\n月分\n保育料 状況\n令和8年10月分\n33,600円 納付済(令和8年11月24日)\n令和8年11月分\n33,600円 未納\n令和8年12月分\n33,600円 納付済(令和8年11月24日)\n33,600円 未納\n33,600円 未納\nその他\n1.この督促状と行き違いで納付された場合、ご容赦ください。\n2.口座振替をご希望の方は、口座振替依頼書を保料係に提出してください。\n3.この督促に不服がある場合は、督促状を受け取った日の翌日から起算して3か月以内に川崎市청に書面請求することができます。\nお問い合わせ:こども未来局 保育環境 保育係 โทร 044-200-3741・収納担当 044-200-3748・2/2",
+   "second": "川崎市 こども未来局\n保育対策課 保育料係:川崎市川崎区室本町1番地\n督促状(保育料)\n(保育所等利用者負担額・児童福祉法第56条)\n〒211-0063 神奈川県川崎市中原区小杉三丁目440番地 パークハイツ小杉1104 ベルナール トマ様\n保護者 ベルナール トマ\n児童 ベルナールレア(令和6年9月2日生)\n利用者負担額 月額 33,600円\n世帯番号 中原 07-226018\n施設 中原第二保育園\n階層区分 D12\n児童\nベルナールレーア(令和6年9月2日生)\n利用者負担額 月額 33,600円\n施設 中原第二保育園\n隔区区分 D12\n下記の保育料が納期限までに納付されていません。指定期限までに納付してください。\n未納の保育料\n月分 納期限 金額\n令和8年11月分 令和8年11月30日 33,600円\n令和8年12月分 令和8年12月28日 33,600円\n督促手数料 - 100円\n納付金額 67,300円\n納付金額:67,300円\n指定期限:令和1年1月26日(火)\nコンビニエンスストア、スマートフォン決済、Pay-easyでの納付には、2ページ目の納付番号と確認番号が必要です。\nご注意\nコンビニエンスストア、スマートフォン決済、Pay-easyでの納付には、ページ目の納付書番号と確認番号が必要です。\nご注意\n1. 指定期限までに納付がない場合は、地方税の納付分の印加により、船等料金などの減額を差し押さえることがあります。\n2. 納期限の翌日から納付日までの日数に応じて、延滞金を加算することがあります。\n3. 乳児手当を受給している方は、申出により児童手当から保育料を納めることができます。\n4. 天候や природなどで納付が難しい場合は、指定期限までにご相談ください。\n川崎市民印\nお問い合わせ:こども未来局 保育料等課 保育料課 044-200-3741 平日 8:30-17:15 / 1/2\n川崎市 子ども未来局\n保育対策課 保育関係\n督促番号 R8-保-0072418\n2/2\n納付番号のご案内\n納付者(ローマ字) \nBERNARD THOMAS\n納付番号 \n1407-2266-0718-354\n確認番号 \n418273\n収納機関番号(Pay-easy) \n32141\n納付金額 \n67,300円\n納付できる期間 \n令和9年1月26日まで\nコンビニエンスストアでは、レジでPay-easy一時的支払いに払と、伝付番号と確認番号を提示してください。スマートフォン決済アプリでは「請求書払いから上記の番号を入力してください」。\n月別の保育料(令和8年度)\n月分\n保育料\n状況\n令和8年10月分\n33,600円 納付済(令和8年11月24日)\n令和8年11月分\n33,600円 未納\n令和8年12月分\n33,600円 未納\nその他\n1. この領収書と行き渡りて納付された場合は、ご容赦ください。\n2. 口座振替をご希望の方は、口座振替依頼書を保育料に提出してください。\n3. この領収書に不備がある場合は、署状を受け取った日の翌日から起算して3か月以内に川崎市長に書面請求することができます。\n2. 口腔検査を希望の pupils は、口腔顕微鏡を保有料帳に確認してください。\n3. この確認に不服がある場合は、督促状を受け取った日の翌日から起算して3か月以内川崎市税に審議請求することができます。\nお問い合わせ:こども未来局 保育課 保育科係 044-200-3741・収納担当 044-200-3748 ・ 2/2",
+   "items": [
+    {
+     "kind": "NAME",
+     "value": "ベルナルトママ様"
+    },
+    {
+     "kind": "NAME",
+     "value": "ベルナートルマ様"
+    },
+    {
+     "kind": "NAME",
+     "value": "ベルナートルマ"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "神奈川県川崎市中原区小杉三丁目440番地 パークハイツ小杉1104"
+    },
+    {
+     "kind": "BIRTH_DATE",
+     "value": "令和6年9月2日生"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "川崎市川崎区本町番地"
+    },
+    {
+     "kind": "PHONE",
+     "value": "044-200-3741"
+    },
+    {
+     "kind": "NAME",
+     "value": "BERNARD THOMAS"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "R8-保-0072418"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "1407-2266-0718-354"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "418273"
+    },
+    {
+     "kind": "ACCOUNT",
+     "value": "32141"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "川崎市 こども未来局 保育対策課 保育料係"
+    },
+    {
+     "kind": "PHONE",
+     "value": "044-200-3741"
+    },
+    {
+     "kind": "PHONE",
+     "value": "044-200-3748"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "神奈川県川崎市中原区小杉三丁目440番地 パークハイツ小杉1104 ベルナール トマ様"
+    },
+    {
+     "kind": "NAME",
+     "value": "ベルナール トマ"
+    },
+    {
+     "kind": "NAME",
+     "value": "ベルナールレア"
+    },
+    {
+     "kind": "BIRTH_DATE",
+     "value": "令和6年9月2日生"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "〒211-0063 神奈川県川崎市中原区小杉三丁目440番地 パークハイツ小杉1104 ベルナール トマ"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "中原 07-226018"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "中原第二保育園"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "川崎市川崎区室本町1番地 保育対策課 保育料係"
+    },
+    {
+     "kind": "PHONE",
+     "value": "044-200-3741"
+    },
+    {
+     "kind": "NAME",
+     "value": "BERNARD THOMAS"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "R8-保-0072418"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "1407-2266-0718-354"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "418273"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "32141"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "令和9年1月26日まで"
+    },
+    {
+     "kind": "PHONE",
+     "value": "044-200-3741"
+    },
+    {
+     "kind": "PHONE",
+     "value": "044-200-3748"
+    }
+   ],
+   "outgoing": "川崎市子ども未来局\n[ADDRESS_4]\n督促状(保育料)\n(保育所等利用者負担額・児童福祉法第56条)\n[ADDRESS_1]\n[NAME_2]\n[NAME_3]\n保護者 [NAME_5]\n児 童 ベルナルレア([BIRTH_DATE_1]) [ADDRESS_6]\n利用者負担額 月額 33,600円 隔週区分 D12\n下記の保育料が納期限までに納付されていません。指定期限までに納付してください。\n未納の保育料\n月 分 納期限 金額\n令和8年11月分 令和8年11月30日 33,600円\n令和8年12月分 令和8年12月28日 33,600円\n保母手帳数 ー 100円\n令和年11月分\n令和年12月分\n督促手数料\n給付金額\n督促手数料\n-\n100円\n67,300円\n給付金額:67,300円\n指定期限:令和1年1月26日(火)\nコンビニエンスストア、スマートフォン決済、Pay-easyでの給付には、2ページ目の日付番号と確認番号が必要です。\nご注意\n1. 指定期限までに納付がない場合は、地方税の滞納処分の則により、給与や預金などの財産を差し押さえることがあります。\n2. 期限の翌日から納付の日まで日数を加算して、延滞金を加算することがあります。\n3. 乳児手当を受給している方は、申出により児童手当から保有額を納めることができます。\n4. 天候や気候などで納付し難しい場合は、指定期限までにご相談ください。\nお問い合わせ:こども未来局 保育支援課 保険料係 044-200-3741 平日 8:30-17:15・1/2\n川崎市 こども未来局\n保育対策課 保育料係\n督促番号 [REFERENCE_NUMBER_2]\n2/2\n納付番号のご案内\n納付者(ローマ字) [NAME_1]\n納付番号 [REFERENCE_NUMBER_1]\n確認番号 [REFERENCE_NUMBER_3]\n確認番号\n[REFERENCE_NUMBER_3]\n収納機関番号(Pay-easy)\n[ACCOUNT_1]\n納付金額\n67,300円\n納付できる期間\n令和9年1月26日まで\nコンビニエンスストアでは、レジで“Pay-easy”収納代行の支払いと伝え、納付番号と確認番号を提示してください。スマートフォン決済アプリでは請求書払いから上記の番号を入力してください。\n月別の保育料(令和8年度)\n月分\n保育料 状況\n令和8年10月分\n33,600円 納付済(令和8年11月24日)\n令和8年11月分\n33,600円 未納\n令和8年12月分\n33,600円 納付済(令和8年11月24日)\n33,600円 未納\n33,600円 未納\nその他\n1.この督促状と行き違いで納付された場合、ご容赦ください。\n2.口座振替をご希望の方は、口座振替依頼書を保料係に提出してください。\n3.この督促に不服がある場合は、督促状を受け取った日の翌日から起算して3か月以内に川崎市청に書面請求することができます。\nお問い合わせ:こども未来局 保育環境 保育係 โทร 044-200-3741・収納担当 044-200-3748・2/2",
+   "alternates": [
+    "利用者負担額 月額 33,600円",
+    "階層区分 D12",
+    "児童",
+    "利用者負担額 月額 33,600円",
+    "隔区区分 D12",
+    "督促手数料 - 100円",
+    "納付金額 67,300円",
+    "納付金額:67,300円",
+    "コンビニエンスストア、スマートフォン決済、Pay-easyでの納付には、2ページ目の納付番号と確認番号が必要です。",
+    "コンビニエンスストア、スマートフォン決済、Pay-easyでの納付には、ページ目の納付書番号と確認番号が必要です。",
+    "1. 指定期限までに納付がない場合は、地方税の納付分の印加により、船等料金などの減額を差し押さえることがあります。",
+    "2. 納期限の翌日から納付日までの日数に応じて、延滞金を加算することがあります。",
+    "3. 乳児手当を受給している方は、申出により児童手当から保育料を納めることができます。",
+    "4. 天候や природなどで納付が難しい場合は、指定期限までにご相談ください。",
+    "川崎市民印",
+    "お問い合わせ:こども未来局 保育料等課 保育料課 044-200-3741 平日 8:30-17:15 / 1/2",
+    "保育対策課 保育関係",
+    "納付番号 ",
+    "コンビニエンスストアでは、レジでPay-easy一時的支払いに払と、伝付番号と確認番号を提示してください。スマートフォン決済アプリでは「請求書払いから上記の番号を入力してください」。",
+    "保育料",
+    "状況",
+    "1. この領収書と行き渡りて納付された場合は、ご容赦ください。",
+    "2. 口座振替をご希望の方は、口座振替依頼書を保育料に提出してください。",
+    "3. この領収書に不備がある場合は、署状を受け取った日の翌日から起算して3か月以内に川崎市長に書面請求することができます。",
+    "2. 口腔検査を希望の pupils は、口腔顕微鏡を保有料帳に確認してください。",
+    "3. この確認に不服がある場合は、督促状を受け取った日の翌日から起算して3か月以内川崎市税に審議請求することができます。",
+    "お問い合わせ:こども未来局 保育課 保育科係 044-200-3741・収納担当 044-200-3748 ・ 2/2"
+   ]
+  },
+  {
+   "alone": {
+    "deadline": true,
+    "amount": false,
+    "action": true,
+    "consequence": true,
+    "sec": 48.897400000035766,
+    "amountText": "159,260원",
+    "deadline_iso": "2027-01-22"
+   },
+   "id": "ko12",
+   "split": "final",
+   "pages": 1,
+   "readSec": 47.20769999998808,
+   "actionFirst": true,
+   "actionFinal": true,
+   "explainSec": 2.412800000011921,
+   "checkSec": 60.218,
+   "consequenceFirst": true,
+   "consequenceFinal": true,
+   "finalDeadlineRight": true,
+   "deadlinePrinted": true,
+   "finalAmountRight": true,
+   "final": {
+    "title": "Health insurance premium refund notice",
+    "steps": [
+     "Register your own bank account on the NHIS website (www.nhis.or.kr) or the \"The 건강보험\" app, OR write your bank account number on the enclosed refund claim form and send it by mail or fax to 031-412-7799 by January 22, 2027.",
+     "Submit a copy of your Alien Registration Card (외국인등록증 사본) together with your claim.",
+     "If you plan to leave the country, submit your claim before departure, as refunds are not paid overseas after you leave. The refund will be deposited within 7 days of your claim."
+    ],
+    "objection": "",
+    "deadline_iso": "2027-01-22",
+    "amount": "",
+    "if_ignored": "If you do not claim the refund by January 22, 2027, it will be applied toward your payable insurance premiums under Article 86 of the National Health Insurance Act. Your right to receive the refund expires if not exercised for 3 years.",
+    "corrected": [
+     "read as \"들러드립니다\", understood as \"돌려드립니다\" (we will refund to you)",
+     "read as \"확금 내역\", understood as \"환급 내역\" (refund details)",
+     "read as \"지급정기 기한\", understood as \"지급청구 기한\" (payment claim deadline)",
+     "read as \"통봉환급 지급청구서\", understood as \"동봉한 지급청구서\" (enclosed payment claim form)",
+     "read as \"종담합니다\" / \"통일됩니다\", understood as \"충당됩니다\" (is applied toward)",
+     "read as \"해의 제휴로\" / \"해지료\" / \"처리로\", understood as \"해외 계좌로\" (to an overseas account)"
+    ]
+   },
+   "figuresRead": [
+    true
+   ],
+   "figuresKept": [
+    true
+   ],
+   "idsMissedByModel": [],
+   "idsSent": [],
+   "agencyKept": [
+    true,
+    true,
+    false
+   ],
+   "deadlineRight": true,
+   "amountRight": false,
+   "explained": {
+    "title": "National Health Insurance refund notice",
+    "steps": [
+     "Register your bank account on the NHIS website or The Health Insurance app, or write your account number on the refund claim form and send it by mail or fax to 031-412-7799."
+    ],
+    "deadline_iso": "2027-01-22",
+    "amount": "159,260원",
+    "if_ignored": "If you do not claim the refund by the deadline, it will be handled according to Article 86 of the National Health Insurance Act. The right to claim the refund expires if not exercised within 3 years.",
+    "corrected": [
+     "read as \"들러드립니다\", understood as \"돌려드립니다\" (return/refund)",
+     "read as \"확금\", understood as \"환급\" (refund)",
+     "read as \"종담합니다\", understood as \"충당됩니다\" (allocated/credited)",
+     "read as \"소멸기로 소멸합니다\", understood as \"소멸합니다\" (expires)"
+    ]
+   },
+   "transcript": "국민건강보험공단\n안산시지구·경기도 안산시 단원구 고잔로 76\n보험료 환급금 지급 안내\n(과오납 보험료 환급금 지급 청구서 제출 요청)\n성명\n다니엘 오코로\n외국인등록번호\n910822-5187364\n영문 성명\nDANIEL OKORO\n생년월일\n1991. 8. 22.\n환급번호 2026-12-A0731846\n발행일 2026년 12월 7일\n다니엘 오코로\n외국인등록번호\n910822-5187364\n영문 성명\nDANIEL OKORO\n생년월일\n1991. 8. 22.\n주소\n경기도 안산시 단원구 원곡로 45, 203호\n관리번호\n1-12045-88317\n가입자 구분\n직장가입자 (2026. 9. 1. 취득)\n귀하는 2026년 9월 1일 직장가입자 자격을 취득했으나, 같은 기간의 지역가입자 보험료가 함께 납부되어 아래 금액을 들러드립니다.\n확금 내역\n구축 월\n납부일\n납부 금액\n확금 금액\n2026년 9월 (지역)\n2026. 10. 12.\n78,540원\n78,540원\n2026년 10월 (지역)\n2026. 11. 10.\n78,540원\n78,540원\n확금가산금\n-\n-\n2,180원\n2026년 10월 (지역)\n2026. 11. 10.\n78,540원\n78,540원\n환급가산금\n-\n-\n2,180원\n보험료 총담액\n-\n-\n0원\n지급 환급금\n159,260원\n지급정기 기한: 2027년 1월 22일까지\n공단 홈페이지 또는 The 건강보험 앱에서 본인의 계좌를 등록하거나, 통봉환급 지급청구서에 계좌번호를 적어 우편 또는 팩스(031-412-7799)로 보내 주십시오. 청구 후 7일 이내에 입금됩니다.\n유의사항\n1. 기한까지 청구하지 않으면 환급금은 국민건강보험법 제86조에 따라 납부보험료에 종담합니다.\n2. 환급금을 받을 권리는 3년 경과하지 않으면 소멸기로 소멸합니다.\n3. 본인의 명의로 제휴된 계좌만 하여, 외국인 국민등록증 사본을 함께 제출해야 합니다.\n4. 출국 예정일 이전 출국 청구하십시오. 출국 후에는 해의 제휴로 지급하지 않습니다.\n5. 지급은 채권 회피를 바와 비슷한 금고나 화조가 조속으로 받으십시오.\n1. 가입자에게 가입 시 함께 받은 건강보험증은 적신 근로소득용으로 등록합니다.\n2. 환급금을 받을 권리는 3년간 행사하지 않으면 소멸합니다.\n3. 본인의 계좌로 지급하지만 외국인으로 등록을 함께 제출해야 합니다.\n4. 출국 예정이면 출국 전에 접수하십시오. 출국 후에는 해지료 지급하지 않습니다.\n5. 공단은 전화로 재확 비밀번호, 카드번호, 현금지급 기 조서를 요구하지 않습니다.\n국민건강보험공단 이사장\n문의: 1577-1000 (외국어 상담 033-811-2000) • 안산지사 031-412-7730 • 평일 09:00~18:00 • www.nhis.or.kr",
+   "second": "국민건강보험공단\n안산시산곡동 건우단로 76\n보험료 환급 지급 안내\n(과오납 보험료 · 환급 지급 청구서 제출 요청)\n성명\n다니엘 오코로\n외국인등록번호\n910822-5187364\n영문 성명\nDANIEL OKORO\n생년월일\n1991. 8. 22.\n주소\n경기도 안산시 단원구 원곡로 45, 203호\n처리번호\n1-12045-88317\n가입자 구분\n직장가입자 (2026. 9. 1. 취득)\n귀하는 2026년 9월 1일 직장가입자 자격을 취득하였으나, 같은 기간의 지역가입자 보험료가 함께 납부되\n환급 내역\n귀속 월\n납부일\n납부 금액\n환급 금액\n2026년 9월 (지역)\n2026. 10. 12.\n78,540원\n78,540원\n2026년 10월 (지역)\n2026. 11. 10.\n78,540원\n78,540원\n환급가산금\n-\n-\n2,180원\n체납 보험료 총당액\n-\n-\n0원\n지급할 환급금\n159,260원\n지급청구 기한: 2027년 1월 22일까지\n공단 홈페이지 또는 The 건강보험 앱에서 본인의 계좌를 등록하거나, 동봉한 환급 신청서에 계좌번호를 적어 우편 또는 팩스(031-412-7799)로 보내 주십시오. 청구 후 7일 이내에 입금됩니다.\n유의사항\n1. 기한까지 접수하지 않으면 환급금은 국민건강보험법 제86조에 따라 납부 보험료에 통일됩니다.\n2. 환급금을 받는 질 권리는 3년간 행사하지 않으면 소멸로 소멸됩니다.\n3. 본인의 계좌로만 지급하며, 외국인등록증 사본을 함께 제출해야 합니다.\n4. 출국 예정일 출국 전 청구하시 역시 출국 후에는 처리로 지급하지 않습니다.\n5. 공단은 전화로 계좌 비밀번호, 카드번호, 현금지급 기 조작을 요구하지 않습니다.\n국민건강보험공단 이사장\n문의: 1577-1000 (외국어 상담 033-811-2000) · 안산시 소재 031-412-7730 · 평일 09:00-18:00 · www.nhis.or.kr",
+   "items": [
+    {
+     "kind": "NAME",
+     "value": "다니엘 오코로"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "910822-5187364"
+    },
+    {
+     "kind": "NAME",
+     "value": "DANIEL OKORO"
+    },
+    {
+     "kind": "BIRTH_DATE",
+     "value": "1991. 8. 22."
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "2026-12-A0731846"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "경기도 안산시 단원구 원곡로 45, 203호"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "1-12045-88317"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "경기도 안산시 단원구 원곡로 45, 203호"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "1-12045-88317"
+    },
+    {
+     "kind": "PHONE",
+     "value": "1577-1000"
+    },
+    {
+     "kind": "PHONE",
+     "value": "033-811-2000"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "안산지사 031-412-7730"
+    },
+    {
+     "kind": "NAME",
+     "value": "다니엘 오코로"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "910822-5187364"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "1-12045-88317"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "경기도 안산시 단원구 원곡로 45, 203호"
+    },
+    {
+     "kind": "BIRTH_DATE",
+     "value": "1991. 8. 22."
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "경기도 안산시 단원구 원곡로 45, 203호"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "경기도 안산시 단원구 원곡로 45, 203호"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "1-12045-88317"
+    },
+    {
+     "kind": "ACCOUNT",
+     "value": ""
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "1-12045-88317"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "경기도 안산시 단원구 원곡로 45, 203호"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "경기도 안산시 단원구 원곡로 45, 203호"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "경기도 안산시 단원구 원곡로 45, 203호"
+    },
+    {
+     "kind": "ACCOUNT",
+     "value": ""
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "1577-1000"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "033-811-2000"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "031-412-7730"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "031-412-7730"
+    }
+   ],
+   "outgoing": "국민건강보험공단\n안산시지구·경기도 안산시 단원구 고잔로 76\n보험료 환급금 지급 안내\n(과오납 보험료 환급금 지급 청구서 제출 요청)\n성명\n[NAME_2]\n외국인등록번호\n[ID_NUMBER_1]\n영문 성명\n[NAME_1]\n생년월일\n[BIRTH_DATE_1]\n환급번호 [REFERENCE_NUMBER_1]\n발행일 2026년 12월 7일\n[NAME_2]\n외국인등록번호\n[ID_NUMBER_1]\n영문 성명\n[NAME_1]\n생년월일\n[BIRTH_DATE_1]\n주소\n[ADDRESS_1]\n관리번호\n[REFERENCE_NUMBER_2]\n가입자 구분\n직장가입자 (2026. 9. 1. 취득)\n귀하는 2026년 9월 1일 직장가입자 자격을 취득했으나, 같은 기간의 지역가입자 보험료가 함께 납부되어 아래 금액을 들러드립니다.\n확금 내역\n구축 월\n납부일\n납부 금액\n확금 금액\n2026년 9월 (지역)\n2026. 10. 12.\n78,540원\n78,540원\n2026년 10월 (지역)\n2026. 11. 10.\n78,540원\n78,540원\n확금가산금\n-\n-\n2,180원\n2026년 10월 (지역)\n2026. 11. 10.\n78,540원\n78,540원\n환급가산금\n-\n-\n2,180원\n보험료 총담액\n-\n-\n0원\n지급 환급금\n159,260원\n지급정기 기한: 2027년 1월 22일까지\n공단 홈페이지 또는 The 건강보험 앱에서 본인의 계좌를 등록하거나, 통봉환급 지급청구서에 계좌번호를 적어 우편 또는 팩스([NUMBER_1])로 보내 주십시오. 청구 후 7일 이내에 입금됩니다.\n유의사항\n1. 기한까지 청구하지 않으면 환급금은 국민건강보험법 제86조에 따라 납부보험료에 종담합니다.\n2. 환급금을 받을 권리는 3년 경과하지 않으면 소멸기로 소멸합니다.\n3. 본인의 명의로 제휴된 계좌만 하여, 외국인 국민등록증 사본을 함께 제출해야 합니다.\n4. 출국 예정일 이전 출국 청구하십시오. 출국 후에는 해의 제휴로 지급하지 않습니다.\n5. 지급은 채권 회피를 바와 비슷한 금고나 화조가 조속으로 받으십시오.\n1. 가입자에게 가입 시 함께 받은 건강보험증은 적신 근로소득용으로 등록합니다.\n2. 환급금을 받을 권리는 3년간 행사하지 않으면 소멸합니다.\n3. 본인의 계좌로 지급하지만 외국인으로 등록을 함께 제출해야 합니다.\n4. 출국 예정이면 출국 전에 접수하십시오. 출국 후에는 해지료 지급하지 않습니다.\n5. 공단은 전화로 재확 비밀번호, 카드번호, 현금지급 기 조서를 요구하지 않습니다.\n국민건강보험공단 이사장\n문의: 1577-1000 (외국어 상담 033-811-2000) [ADDRESS_2] • 평일 09:00~18:00 • www.nhis.or.kr",
+   "alternates": [
+    "안산시산곡동 건우단로 76",
+    "보험료 환급 지급 안내",
+    "(과오납 보험료 · 환급 지급 청구서 제출 요청)",
+    "처리번호",
+    "귀하는 2026년 9월 1일 직장가입자 자격을 취득하였으나, 같은 기간의 지역가입자 보험료가 함께 납부되",
+    "환급 내역",
+    "귀속 월",
+    "환급 금액",
+    "체납 보험료 총당액",
+    "지급할 환급금",
+    "지급청구 기한: 2027년 1월 22일까지",
+    "1. 기한까지 접수하지 않으면 환급금은 국민건강보험법 제86조에 따라 납부 보험료에 통일됩니다.",
+    "2. 환급금을 받는 질 권리는 3년간 행사하지 않으면 소멸로 소멸됩니다.",
+    "3. 본인의 계좌로만 지급하며, 외국인등록증 사본을 함께 제출해야 합니다.",
+    "4. 출국 예정일 출국 전 청구하시 역시 출국 후에는 처리로 지급하지 않습니다.",
+    "5. 공단은 전화로 계좌 비밀번호, 카드번호, 현금지급 기 조작을 요구하지 않습니다."
+   ]
+  },
+  {
+   "alone": {
+    "deadline": false,
+    "amount": true,
+    "action": true,
+    "consequence": true,
+    "sec": 6.046400000035763,
+    "amountText": "309,000원",
+    "deadline_iso": "2027-12-31"
+   },
+   "id": "ko13",
+   "split": "final",
+   "pages": 1,
+   "readSec": 41.61410000002384,
+   "actionFirst": true,
+   "actionFinal": true,
+   "explainSec": 3.0645,
+   "checkSec": 16.647699999988077,
+   "consequenceFirst": true,
+   "consequenceFinal": true,
+   "finalDeadlineRight": false,
+   "deadlinePrinted": true,
+   "finalAmountRight": true,
+   "final": {
+    "title": "Local tax 2nd installment payment notice",
+    "steps": [
+     "Pay 309,000원 for the 2nd installment by 2026년 December 31.",
+     "Pay via virtual account 266-0917-4402-38 (account holder: Mapo-gu Office) or through Wetax using electronic payment number 11440-2-26-12-0083172."
+    ],
+    "objection": "",
+    "deadline_iso": "",
+    "amount": "309,000원",
+    "if_ignored": "If you do not pay each installment by the deadline, the installment approval will be canceled and the entire remaining tax amount will be collected at once. Late payment surcharges will be added again, and your bank deposits, wages, or car may be seized under the Local Tax Collection Act.",
+    "corrected": [
+     "read as \"습인번호\", understood as \"승인번호\" (approval number)",
+     "read as \"남세번호\", understood as \"납세번호\" (taxpayer number)",
+     "read as \"회사\", understood as \"회차\" (installment number)",
+     "read as \"마프구청\", understood as \"마포구청\" (Mapo-gu Office)",
+     "read as \"불합부납 수인이 취소되고\", understood as \"분할납부 승인이 취소되고\" (installment payment approval is canceled)",
+     "read as \"납부자면세가 다시 불고\", understood as \"납부지연세가 다시 붙고\" (late payment surcharge is added again)",
+     "read as \"금곡\", understood as \"급여\" (wages/salary)"
+    ]
+   },
+   "figuresRead": [
+    true,
+    true
+   ],
+   "figuresKept": [
+    true,
+    false
+   ],
+   "idsMissedByModel": [],
+   "idsSent": [],
+   "agencyKept": [
+    false,
+    false
+   ],
+   "deadlineRight": false,
+   "amountRight": true,
+   "explained": {
+    "title": "Local tax installment payment notice (2nd payment)",
+    "steps": [
+     "Pay the amount of 309,000원 by December 31 using the virtual account 266-0917-4402-38 or electronic payment number 11440-2-26-12-0083172."
+    ],
+    "deadline_iso": "",
+    "amount": "309,000원",
+    "if_ignored": "If you do not pay the installment amount by the deadline, the installment payment approval will be cancelled, the remaining tax amount will be collected all at once, late payment penalties will apply, and assets such as bank deposits, securities, or vehicles may be seized according to the Local Tax Collection Act.",
+    "corrected": [
+     "read as \"습인번호\", understood as \"승인번호\" (approval number)",
+     "read as \"습인 통지서\", understood as \"승인 통지서\" (approval notice)",
+     "read as \"남세번호\", understood as \"납세번호\" (taxpayer number)",
+     "read as \"화차별\", understood as \"회차별\" (per installment/round)",
+     "read as \"없으면\", understood as \"내지 않으면\" (if not paid)",
+     "read as \"불합부납 수인이 취소되고\", understood as \"분할납부 승인이 취소되고\" (installment approval is cancelled)",
+     "read as \"납부자면세\", understood as \"납부지연가산세\" (late payment tax penalty)"
+    ]
+   },
+   "transcript": "서울특별시 마포구청\n세무2과 재심징수팀 · 서울특별시 마포구 월드컵로 212\n습인번호 마포-분남-2026-0417\n발행일 2026년 12월 2일\n지방세 분할납부 습인 통지서\n(제2회차 납부 안내)\n남재자 카를리나 멘데스 외국인등록번호 870304-6923518\n영문 성명 MENDES CAROLINA 남세번호 11440-2026-0083172\n주소 서울특별시 마포구 월드컵로 21길 30, 502호\n2026년 11월 20일에 신청하신 2026년도 지방세의 분할납부(4회)를 아래와 같이 승인합니다.\n2026년도 부과 내역\n세목 과세 기간 금액\n재산세(주택, 7월분) 2026년 1기 418,500원\n재산세(주택, 9월분) 2026년 2기 418,500원\n지방교육세・지적재산시설세・주민세 2026년 399,000원\n연간 총액 1,236,000원\n시명교육재 사회사업시설 및 수인세\n연간 총액\n분할납부 일정\n회사 납부기한 금액 상태\n제1회 2026. 11. 30. 309,000원 납부 완료 (2026. 11. 27.)\n제2회 2026. 12. 31. 309,000원 이번 납부분\n제3회 2027. 1. 31. 309,000원 예정\n제4회 2027. 2. 28. 309,000원 예정\n이번에 납부할 금액: 309,000원 (제2차)\n납부기한: 2026년 12월 31일\n가상계좌 266-0917-4402-38 (예금주: 마프구청) 위택스- 전자납부번호 11440-2-26-12-0083172\n유의사항\n1. 화차별 금액을 납부기한까지 없으면 불합부납 수인이 취소되고, 남은 세액 전부를 한꺼번에 정산합니다.\n2. 승인이 취소되면 납부자면세가 다시 불고, 지방세징수법에 따라 예금, 금곡, 자동차 등이 압류될 수 있습니다.\n문의: 마포구청 세무과 2채 민징수팀 02-3153-8642 · 외국인 세무 상담 02-3153-8650 · 평일 09:00~18:00",
+   "second": "서울특별시 마포구청\n세무2과 재심징수팀 서울특별시 마포구 월드컵로 212\n송인번호 마포-붙잡-2026-0417\n발행일 2026년 12월 2일\n지방세 분할납부 승인 통지서\n(제2차 납부 안내)\n남재자\n카를리나 멘데스\n외국인등록번호\n870304-6923518\n영문 성명\nMENDES CAROLINA\n남세번호\n11440-2026-0083172\n주소\n서울특별시 마포구 월드컵로 21길 30, 502호\n2026년 11월 20일에 신청하신 2026년도 지방세의 분할납부(4회)를 아래와 같이 승인합니다.\n2026년도 부과 내역\n세목 | 과세 기간 | 금액\n---|---|---\n재산세(주택, 7월분) | 2026년 1기 | 418,500원\n재산세(주택, 9월분) | 2026년 2기 | 418,500원\n지방교육세·지역지원시설세·주민세 | 2026년 | 399,000원\n연간 총액 | | 1,236,000원\n분할납부 일정\n회차 | 납부기한 | 금액 | 상태\n---|---|---|---\n제1회 | 2026. 11. 30. | 309,000원 | 납부 완료 (2026. 11. 27.)\n제2회 | 2026. 12. 31. | 309,000원 | 이번 납부분\n제3회 | 2027. 1. 31. | 309,000원 | 예정\n제4회 | 2027. 2. 28. | 309,000원 | 예정\n이번에 납부할 금액: 309,000원(제2차)\n납부기한: 2026년 12월 31일\n가상계좌 266-0917-4402-38 (예금주: 마쿄구청) 위텍스 • 전자납부번호 11440-2-26-12-0083172\n유의사항\n1. 회차별 금액을 납부하지 내지 없으면 분납부 습이 허용되고, 남은 세액을 한꺼번에 집중합니다.\n2. 승인이 취소되면 납부지연세가 다시 붙고, 지방세징수법에 따라 예금, 금곡, 자동차 등이 압류될 수 있습니다.\n문의: 마쿄구청 세무과 2채 정납수업 02-3153-8642 · 외국인 세무 상담 02-3153-8650 평일 09:00~18:00",
+   "items": [
+    {
+     "kind": "NAME",
+     "value": "남재자 카를리나 멘데스"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "870304-6923518"
+    },
+    {
+     "kind": "NAME",
+     "value": "MENDES CAROLINA"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "11440-2026-0083172"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "서울특별시 마포구 월드컵로 21길 30, 502호"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "서울특별시 마포구 월드컵로 212"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "마포-분남-2026-0417"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "2026"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "266-0917-4402-38"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "11440-2-26-12-0083172"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "2026년 11월 20일"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "2026년"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "02-3153-8642"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "02-3153-8650"
+    },
+    {
+     "kind": "NAME",
+     "value": "남재자"
+    },
+    {
+     "kind": "NAME",
+     "value": "카를리나 멘데스"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "870304-6923518"
+    },
+    {
+     "kind": "NAME",
+     "value": "MENDES CAROLINA"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "11440-2026-0083172"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "서울특별시 마포구 월드컵로 21길 30, 502호"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "서울특별시 마포구 월드컵로 212"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "마포-붙잡-2026-0417"
+    },
+    {
+     "kind": "PHONE",
+     "value": "02-3153-8642"
+    },
+    {
+     "kind": "PHONE",
+     "value": "02-3153-8650"
+    },
+    {
+     "kind": "ACCOUNT",
+     "value": "266-0917-4402-38"
+    }
+   ],
+   "outgoing": "서울특별시 마포구청\n세무2과 [ADDRESS_3]\n습인번호 [REFERENCE_NUMBER_3]\n발행일 [REFERENCE_NUMBER_4] 12월 2일\n지방세 분할납부 습인 통지서\n(제2회차 납부 안내)\n[NAME_3] 외국인등록번호 [ID_NUMBER_1]\n영문 [NAME_1] 남세번호 [REFERENCE_NUMBER_2]\n[ADDRESS_1]\n[REFERENCE_NUMBER_4] 11월 20일에 신청하신 [REFERENCE_NUMBER_4]도 지방세의 분할납부(4회)를 아래와 같이 승인합니다.\n[REFERENCE_NUMBER_4]도 부과 내역\n세목 과세 기간 금액\n재산세(주택, 7월분) [REFERENCE_NUMBER_4] 1기 418,500원\n재산세(주택, 9월분) [REFERENCE_NUMBER_4] 2기 418,500원\n지방교육세・지적재산시설세・주민세 [REFERENCE_NUMBER_4] 399,000원\n연간 총액 1,236,000원\n시명교육재 사회사업시설 및 수인세\n연간 총액\n분할납부 일정\n회사 납부기한 금액 상태\n제1회 [REFERENCE_NUMBER_5]. 11. 30. 309,000원 납부 완료 ([REFERENCE_NUMBER_5]. 11. 27.)\n제2회 [REFERENCE_NUMBER_5]. 12. 31. 309,000원 이번 납부분\n제3회 2027. 1. 31. 309,000원 예정\n제4회 2027. 2. 28. 309,000원 예정\n이번에 납부할 금액: 309,000원 (제2차)\n납부기한: [REFERENCE_NUMBER_4] 12월 31일\n가상계좌 [ADDRESS_7] (예금주: 마프구청) 위택스- 전자납부번호 [REFERENCE_NUMBER_1]\n유의사항\n1. 화차별 금액을 납부기한까지 없으면 불합부납 수인이 취소되고, 남은 세액 전부를 한꺼번에 정산합니다.\n2. 승인이 취소되면 납부자면세가 다시 불고, 지방세징수법에 따라 예금, 금곡, 자동차 등이 압류될 수 있습니다.\n문의: 마포구청 세무과 2채 민징수팀 [ADDRESS_8] 외국인 세무 상담 [ADDRESS_9] 평일 09:00~18:00",
+   "alternates": [
+    "지방세 분할납부 승인 통지서",
+    "(제2차 납부 안내)",
+    "주소",
+    "세목 | 과세 기간 | 금액",
+    "---|---|---",
+    "연간 총액 | | 1,236,000원",
+    "회차 | 납부기한 | 금액 | 상태",
+    "---|---|---|---",
+    "제3회 | 2027. 1. 31. | 309,000원 | 예정",
+    "제4회 | 2027. 2. 28. | 309,000원 | 예정",
+    "1. 회차별 금액을 납부하지 내지 없으면 분납부 습이 허용되고, 남은 세액을 한꺼번에 집중합니다.",
+    "2. 승인이 취소되면 납부지연세가 다시 붙고, 지방세징수법에 따라 예금, 금곡, 자동차 등이 압류될 수 있습니다."
+   ]
+  },
+  {
+   "alone": {
+    "deadline": true,
+    "amount": true,
+    "action": true,
+    "consequence": true,
+    "sec": 16.388099999964236,
+    "amountText": "112,000",
+    "deadline_iso": "2027-01-08"
+   },
+   "id": "ko14",
+   "split": "final",
+   "pages": 2,
+   "readSec": 63.19530000001192,
+   "actionFirst": true,
+   "actionFinal": true,
+   "explainSec": 3.589,
+   "checkSec": 26.2735,
+   "consequenceFirst": true,
+   "consequenceFinal": true,
+   "finalDeadlineRight": true,
+   "deadlinePrinted": true,
+   "finalAmountRight": true,
+   "final": {
+    "title": "Advance notice of fine for overdue car inspection",
+    "steps": [
+     "Pay 112,000원 by January 8, 2027 using virtual account 479-26-1183-72045 (예금주: 노원구청), electronic payment number 11350-1-26-12-4183720, 위텍스(www.wetax.go.kr), or a bank ATM.",
+     "Or, if you have a valid reason for missing the inspection (such as hospitalization or being abroad), submit the opinion form by January 8, 2027 in person, by mail, by fax to 02-2116-4299, or on the Nowon-gu Office website, including your name, vehicle registration number 38러리 7215, your opinion, and supporting documents.",
+     "Get your regular vehicle inspection done separately from paying the fine."
+    ],
+    "objection": "If you disagree with the fine after it is formally imposed, you can submit a written objection to the Mayor of Nowon-gu within 60 days of receiving the formal notice. However, if you pay the reduced amount early, you cannot submit an opinion or file an objection.",
+    "deadline_iso": "2027-01-08",
+    "amount": "112,000원",
+    "if_ignored": "If you do not pay by January 8, 2027, the full fine of 140,000원 will be imposed. If you miss the formal payment deadline, a 3% late fee (increasing it to 144,200원) and a 1.2% monthly surcharge will be added, and your vehicle or other property may be seized. If you continue not to get the inspection, your license plate may be impounded.",
+    "corrected": [
+     "read as \"의료진술 제한 내 자신 부담 사\", understood as \"의견 제출 기한 내 자진 납부 시\" (if you pay voluntarily within the opinion submission deadline)",
+     "read as \"통면번호이 영장내릴 수 있습니다\", understood as \"등록번호판이 영치될 수 있습니다\" (the license plate may be impounded)",
+     "read as \"자동차 등 제산이 압류될 수 있습니다\", understood as \"자동차 등 재산이 압류될 수 있습니다\" (property such as your car may be seized)",
+     "read as \"인원, 해외 체류\", understood as \"입원, 해외 체류\" (hospitalization, staying abroad)",
+     "read as \"2027년 1월 9일까지\", understood as \"2027년 1월 8일까지\" (until January 8, 2027)"
+    ]
+   },
+   "figuresRead": [
+    true,
+    false
+   ],
+   "figuresKept": [
+    true,
+    true
+   ],
+   "idsMissedByModel": [],
+   "idsSent": [],
+   "agencyKept": [
+    true
+   ],
+   "deadlineRight": true,
+   "amountRight": true,
+   "explained": {
+    "title": "Notice of fine for late car inspection",
+    "steps": [
+     "Pay the early payment amount of 112,000원 by January 8, 2027 using virtual account 479-26-1183-72045 (예금주: 노원구청) or electronic payment number 11350-1-26-12-4183720.",
+     "Or, submit an opinion statement by January 8, 2027 by visiting, mailing, faxing to 02-2116-4299, or via the Nowon-gu Office website."
+    ],
+    "deadline_iso": "2027-01-08",
+    "amount": "112,000원",
+    "if_ignored": "If you do not pay by the deadline, the full fine of 140,000원 will be charged, a 3% late fee and monthly additions of 1.2% will apply, and your car or other property may be seized. If you continue to not get your car inspected, your license plate may be removed.",
+    "corrected": [
+     "read as \"의료진술\", understood as \"의견제출\" (opinion submission)",
+     "read as \"절세원행위계법\", understood as \"질서위반행위규제법\" (Act on the Regulation of Violations of Public Order)",
+     "read as \"통면번호이 영장내릴\", understood as \"등록번호판이 영치될\" (license plate may be confiscated)",
+     "read as \"남부 금액\", understood as \"납부 금액\" (payment amount)"
+    ]
+   },
+   "transcript": "서울특별시 노원구청\n고공 행정과 · 서울특별시 노원구 노행로 437\n통지번호 노원고통-2026-0418372\n발송일 2026년 12월 9일\n과태료 부과 사전 통지서\n(자동차 정기검사 지연 · 의견 제출 안내)\n소유자\n주소\n비크람 성 (VIKRAM SINGH)\n서울특별시 노원구 상계로 77, 104동 1203호\n외국인등록번호\n850619-5361402\n소유자 비크람 싱 (VIKRAM SINGH) 외국인등록번호 850619-5361402 주소 서울특별시 노원구 상계로 77, 104동 1203호 자동차등록번호 38러리 7215 차종 승용 (2018년식)\n위반 내용 검사 유효기간 만료일 2026. 9. 18. 검사 기간 2026. 8. 19. ~ 2026. 10. 18. 지연 기간 2026. 10. 19. ~ 2026. 11. 30. (43일) 근거 법령 자동차관리법 제43조, 제84조 및 같은 법 시행령 별표 2\n과태료 산출 구분 금액\n과대로 산출\n구분 금액\n검사 기간 경과 30일 이내 40,000원\n30일 초과 후 3마다 20,000원 (5회) 100,000원\n부과 및 예정 과태료 140,000원\n의료진술 제한 내 자신 부담 사 (20% 감경) 112,000원\n자진납부 금액: 112,000원 (2027년 1월 9일까지)\n기한이 지나면 140,000원이 부과됩니다. 납부 계좌와 전자납부 번호는 2쪽에 있습니다.\n안내\n1. 이 통지에 의거 어떤 의건제출 기한까지 2국의 의건제출서를 제출하셔야요.\n2. 기타 내 자신 납부하면 절세원행위계법 제18조에 따라 20%를 감경하고 과태료 절차가 갑니다.\n3. 과태료와 별도로 자동차 정기검사를 받아야 하며, 계속 받지 않으면 통면번호이 영장내릴 수 있습니다.\n4. 부과 후 납부기까지 내지 않으면 가산금 3% 및 매월 1.2%의 중가금이 붙고, 자동차 등 제산이 압류될 수 있습니다.\n구청장인\n문의: 노원구청 교통행정과 02-2116-4271 행사일 09:00-18:00 · 1쪽 / 2쪽\n서울특별시 노원구청\n고공행정과\n통지번호 노원고통-2026-0418372\n2쪽 / 2쪽\n남부 안내\n남부 금액 남부 기간 금액\n자진남부 (20% 감경) 2027. 1. 8까지 112,000원\n분 부과 부과 고지서의 납부기한까지 140,000원\n자진납부(20% 감경)\n2027. 1. 8까지\n112,000원\n분 부과\n부과고지서의 납부기한까지\n140,000원\n체납 시 가산금\n납부기한 경과 후\n144,200원\n가상계좌: 479-26-1183-72045 (예금주: 노원구청)\n전자납부번호: 11350-1-26-12-4183720\n위텍스(www.wetax.go.kr), 금융기관 현금지급기, 가상계좌로 납부할 수 있습니다.\n의건제출서\n제출 기한 2027. 1. 8.\n제출 방법 방문, 우편, 팩스 02-2116-4299, 노원구청 누리집\n적용 내용 성명, 자동차등록번호, 의견 내용, 증빙자료 (인원, 해외 체류 등 검사를 받지 못한 사유)\n이의제기\n1. 과태료가 부과된에도 이의가 있으면 부과 통지를 받은 날부터 60일 이내에 노원구청장에게 서면으로 이의를 제기할 수 있습니다.\n2. 이의를 제기하면 과태료 차액은 환불을 않고, 법원이 과태료 채권으로 결정합니다.\n3. 자진납부를 하면 의견제출과 이의제기를 할 수 없습니다.\n4. 자동차 이름 다른 사람에게 넘긴 경우에는 매매계약서와 함께 보내 주십시오.\n5. 이미 납부된 경우 이 통지는 제기하지도 됩니다.\n문의: 노원구청 교통행정과 02-2116-4271 - 방일 09:00-18:00 - 2층 / 2채",
+   "second": "서울특별시 노원구청\n고교행정과 · 서울특별시 노원구 노예로 437\n통지번호 노원고-2026-0418372\n발송일 2026년 12월 9일\n과태료 부과 사전통지서\n(자동차 정기검사 지연 · 의견제출 안내)\n소유자 빅크램 싱 (VIKRAM SINGH) 외국인등록번호 850619-5361402\n주소 서울특별시 노원구 상계로 77, 104동 1203호 차종 승용 (2018년식) \n자동차등록번호 38러 7215\n위반 내용\n검사 유효기간 만료일 2026. 9. 18.\n검사 기간 2026. 8. 19. ~ 2026. 10. 18.\n지연 기간 2026. 10. 19. ~ 2026. 11. 30. (43일)\n근거 법령 자동차관리법 제43조, 제84조 및 같은 법 시행령 별표 2\n과태료 산출\n구분 금액\n검사 기간 경과 30일 이내 40,000원\n30일 초과 후 3일마다 20,000원 (5회) 100,000원\n부과 예정 과태료 140,000원\n의견 제출 기한 내 자진 납부 시 (20% 감경) 112,000원\n자진 납부 금액: 112,000원 (2027년 1월 8일까지)\n기한이 지나면 140,000원이 부과됩니다. 납부 계좌와 전자납부번호는 2쪽에 있습니다.\n안내\n1. 이 통지에 의견이 있으면 의견 제출 기한까지 2쪽의 의견제출서를 제출하십시오.\n2. 기한 내 자신납부하면 질서원행위법 제8조에 따라 20%를 감면하고 과태료 절차가 갑니다.\n3. 과태료와 별도로 자동차 정기검사를 받아야 하며, 계속 받지 않으면 등록번호판이 영점 될 수 있습니다.\n4. 부과 후 납부기한까지 없으면 가산금 3%와 매월 1.2%의 중가산금이 붙고, 자동차 등 재산이 압류될 수 있습니다.\n구청장인\n문의: 노원구 교통행정 02-2116-4271 평일 09:00~18:00 1쪽 / 2쪽\n서울특별시 노원구청\n고용행정과\n남부 안내\n남부 금액\n자진납부 (20% 감경)\n분 부과\n체납 시 가산금\n남부 기간\n2027. 1. 8까지\n부과 및 고지서의 납부기한까지\n납부기한 경과 후\n액\n112,000원\n140,000원\n144,200원\n가상계좌: 479-26-1183-72045 (예금주: 노원구청)\n전자납부번호: 11350-1-26-12-4183720\n위택스(www.wetax.go.kr), 금융기관 현금 지급기기, 가상계좌로 납부할 수 있습니다.\n가상계좌: 47-26-1183-72045 (예금주: 노원구청)\n전자납부번호: 11350-1-26-12-4183720\n위택스(www.wetax.go.kr), 금융기관 현금지급기, 가상계좌로 납부할 수 있습니다.\n의건제출서\n제출 기한 2027. 1. 8.\n제출 방법 방문, 우편, 팩스 02-2116-4299, 노원구청 누리집\n적용 내용 자명, 자동차등록번호, 의견 내용, 증빙자료 (인원, 해외의 체류 증 검사를 받지 못한 사유)\n의의제기\n1. 과료가 부과된 위에도 이의가 있으면 부과 통지를 받은 날부터 60일 이내에 노원구청에게 서면으로 이의를 제기할 수 있습니다.\n2. 이의를 제기하면 과료부과처분은 효력을 일고, 방법이 이의제출 재판으로 결정됩니다.\n3. 자진 납부를 하면 의견제출과 의의제기를 할 수 있습니다.\n4. 자동차를 이의 다른 사람에게 넘긴 경우에 대해서로서 이의제출서와 함께 보내 주십시오.\n5. 이의 납부 경우 이 통지서는 폐기하지도 됩니다.\n문의: 노원구청 교통행정과 02-2116-4271 방일 09:00-18:00 2층 / 2채",
+   "items": [
+    {
+     "kind": "NAME",
+     "value": "비크람 성 (VIKRAM SINGH)"
+    },
+    {
+     "kind": "NAME",
+     "value": "비크람 싱 (VIKRAM SINGH)"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "서울특별시 노원구 상계로 77, 104동 1203호"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "850619-5361402"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "서울특별시 노원구 상계로 77, 104동 1203호"
+    },
+    {
+     "kind": "VEHICLE_PLATE",
+     "value": "38러리 7215"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "노원고통-2026-0418372"
+    },
+    {
+     "kind": "PHONE",
+     "value": "02-2116-4271"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "서울특별시 노원구청"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "고공행정과"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "노원고통-2026-0418372"
+    },
+    {
+     "kind": "ACCOUNT",
+     "value": "479-26-1183-72045"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "위텍스(www.wetax.go.kr)"
+    },
+    {
+     "kind": "PHONE",
+     "value": "02-2116-4299"
+    },
+    {
+     "kind": "PHONE",
+     "value": "02-2116-4271"
+    },
+    {
+     "kind": "NAME",
+     "value": "빅크램 싱"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "850619-5361402"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "서울특별시 노원구 상계로 77, 104동 1203호"
+    },
+    {
+     "kind": "VEHICLE_PLATE",
+     "value": "38러 7215"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "02-2116-4271"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "서울특별시 노원구청"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "남부 안내"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "479-26-1183-72045 (예금주: 노원구청)"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "47-26-1183-72045 (예금주: 노원구청)"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "11350-1-26-12-4183720"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "11350-1-26-12-4183720"
+    },
+    {
+     "kind": "PHONE",
+     "value": "02-2116-4299"
+    },
+    {
+     "kind": "PHONE",
+     "value": "02-2116-4271"
+    }
+   ],
+   "outgoing": "[ADDRESS_9]\n[ADDRESS_11] [ADDRESS_8] 노행로 437\n통지번호 [REFERENCE_NUMBER_2]\n발송일 2026년 12월 9일\n과태료 부과 사전 통지서\n(자동차 정기검사 지연 · 의견 제출 안내)\n소유자\n주소\n[NAME_2]\n[ADDRESS_3]\n외국인등록번호\n[ID_NUMBER_1]\n소유자 [NAME_3] ([NAME_1]) 외국인등록번호 [ID_NUMBER_1] [ADDRESS_1] 자동차등록번호 [VEHICLE_PLATE_1] 차종 승용 (2018년식)\n위반 내용 검사 유효기간 만료일 2026. 9. 18. 검사 기간 2026. 8. 19. ~ 2026. 10. 18. 지연 기간 2026. 10. 19. ~ 2026. 11. 30. (43일) 근거 법령 자동차관리법 제43조, 제84조 및 같은 법 시행령 별표 2\n과태료 산출 구분 금액\n과대로 산출\n구분 금액\n검사 기간 경과 30일 이내 40,000원\n30일 초과 후 3마다 20,000원 (5회) 100,000원\n부과 및 예정 과태료 140,000원\n의료진술 제한 내 자신 부담 사 (20% 감경) 112,000원\n자진납부 금액: 112,000원 (2027년 1월 9일까지)\n기한이 지나면 140,000원이 부과됩니다. 납부 계좌와 전자납부 번호는 2쪽에 있습니다.\n안내\n1. 이 통지에 의거 어떤 의건제출 기한까지 2국의 의건제출서를 제출하셔야요.\n2. 기타 내 자신 납부하면 절세원행위계법 제18조에 따라 20%를 감경하고 과태료 절차가 갑니다.\n3. 과태료와 별도로 자동차 정기검사를 받아야 하며, 계속 받지 않으면 통면번호이 영장내릴 수 있습니다.\n4. 부과 후 납부기까지 내지 않으면 가산금 3% 및 매월 1.2%의 중가금이 붙고, 자동차 등 제산이 압류될 수 있습니다.\n구청장인\n문의: 노원구청 교통행정과 02-2116-4271 행사일 09:00-18:00 · 1쪽 / 2쪽\n[ADDRESS_9]\n[ADDRESS_12]\n통지번호 [REFERENCE_NUMBER_2]\n2쪽 / 2쪽\n[ADDRESS_13]\n남부 금액 남부 기간 금액\n자진남부 (20% 감경) 2027. 1. 8까지 112,000원\n분 부과 부과 고지서의 납부기한까지 140,000원\n자진납부(20% 감경)\n2027. 1. 8까지\n112,000원\n분 부과\n부과고지서의 납부기한까지\n140,000원\n체납 시 가산금\n납부기한 경과 후\n144,200원\n가상계좌: [ADDRESS_2]\n전자납부번호: [REFERENCE_NUMBER_1]\n[ADDRESS_6], 금융기관 현금지급기, 가상계좌로 납부할 수 있습니다.\n의건제출서\n제출 기한 2027. 1. 8.\n제출 방법 방문, 우편, 팩스 [PHONE_1], 노원구청 누리집\n적용 내용 성명, 자동차등록번호, 의견 내용, 증빙자료 (인원, 해외 체류 등 검사를 받지 못한 사유)\n이의제기\n1. 과태료가 부과된에도 이의가 있으면 부과 통지를 받은 날부터 60일 이내에 노원구청장에게 서면으로 이의를 제기할 수 있습니다.\n2. 이의를 제기하면 과태료 차액은 환불을 않고, 법원이 과태료 채권으로 결정합니다.\n3. 자진납부를 하면 의견제출과 이의제기를 할 수 없습니다.\n4. 자동차 이름 다른 사람에게 넘긴 경우에는 매매계약서와 함께 보내 주십시오.\n5. 이미 납부된 경우 이 통지는 제기하지도 됩니다.\n문의: 노원구청 교통행정과 02-2116-4271 - 방일 09:00-18:00 - 2층 / 2채",
+   "alternates": [
+    "소유자 [NAME_4] 외국인등록번호 [ID_NUMBER_1]",
+    "[ADDRESS_1] 차종 승용 (2018년식) ",
+    "검사 유효기간 만료일 2026. 9. 18.",
+    "근거 법령 자동차관리법 제43조, 제84조 및 같은 법 시행령 별표 2",
+    "과태료 산출",
+    "30일 초과 후 3일마다 20,000원 (5회) 100,000원",
+    "부과 예정 과태료 140,000원",
+    "의견 제출 기한 내 자진 납부 시 (20% 감경) 112,000원",
+    "자진 납부 금액: 112,000원 (2027년 1월 8일까지)",
+    "1. 이 통지에 의견이 있으면 의견 제출 기한까지 2쪽의 의견제출서를 제출하십시오.",
+    "2. 기한 내 자신납부하면 질서원행위법 제8조에 따라 20%를 감면하고 과태료 절차가 갑니다.",
+    "3. 과태료와 별도로 자동차 정기검사를 받아야 하며, 계속 받지 않으면 등록번호판이 영점 될 수 있습니다.",
+    "4. 부과 후 납부기한까지 없으면 가산금 3%와 매월 1.2%의 중가산금이 붙고, 자동차 등 재산이 압류될 수 있습니다.",
+    "문의: 노원구 교통행정 02-2116-4271 평일 09:00~18:00 1쪽 / 2쪽",
+    "남부 기간",
+    "부과 및 고지서의 납부기한까지",
+    "액",
+    "[ADDRESS_17]), 금융기관 현금 지급기기, 가상계좌로 납부할 수 있습니다.",
+    "적용 내용 자명, 자동차등록번호, 의견 내용, 증빙자료 (인원, 해외의 체류 증 검사를 받지 못한 사유)",
+    "의의제기",
+    "1. 과료가 부과된 위에도 이의가 있으면 부과 통지를 받은 날부터 60일 이내에 노원구청에게 서면으로 이의를 제기할 수 있습니다.",
+    "2. 이의를 제기하면 과료부과처분은 효력을 일고, 방법이 이의제출 재판으로 결정됩니다.",
+    "3. 자진 납부를 하면 의견제출과 의의제기를 할 수 있습니다.",
+    "4. 자동차를 이의 다른 사람에게 넘긴 경우에 대해서로서 이의제출서와 함께 보내 주십시오.",
+    "5. 이의 납부 경우 이 통지서는 폐기하지도 됩니다."
+   ]
+  }
+ ]
+}

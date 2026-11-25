@@ -28,6 +28,8 @@ const isDateOrAmount = (value) => {
 
 // Words that mark a line as the office's contact line, in the languages the test set covers.
 const INQUIRY = /문의|상담|お問合|contact us|contact citoyen|TTY|問い?合わ?せ|照会|Auskunft|Rückfragen|Fragen|Servicetelefon|Hotline|Helpline|enquir|inquir|questions?\b|call us|contact us|customer service|renseignement|accueil|Atención|consultas|información/i;
+// Field labels the on-device model sometimes copies together with the name.
+const LABEL = /^(?:성명|이름|수신인?|납세자|氏名|名前|Name|Nom|Nombre|Titular)[ :]+/i;
 const grams = (t) => { const f = t.replace(/\s/g, ''); return new Set([...f].slice(0, -1).map((c, i) => c + f[i + 1])); };
 const shared = (want, have) => { let n = 0; want.forEach((g) => { if (have.has(g)) n += 1; }); return n / Math.max(1, want.size); };
 
@@ -58,16 +60,23 @@ export function redact(rawText, items, vault = []) {
     const m = it.kind === 'NAME' && /^(.+?)\s*\(([^()]+)\)\s*$/.exec(normalize(it.value || ''));
     return m ? [{ kind: 'NAME', value: m[1] }, { kind: 'NAME', value: m[2] }] : [it];
     // Forms of address are not part of the name.
-  }).map((it) => (it.kind === 'NAME' ? { kind: 'NAME', value: normalize(it.value || '').replace(/\s*(様|殿|さん|님|귀하)$/, '') } : it));
+  }).map((it) => (it.kind === 'NAME' ? { kind: 'NAME', value: normalize(it.value || '').replace(/\s*(様|殿|さん|님|귀하)$/, '').replace(LABEL, '') } : it));
   // The model copies a name or an address from one reading; the other reading, or another strip
   // of the same page, may spell it a little differently. Those near-copies are masked as well.
   const near = listed.filter((it) => ['NAME', 'ADDRESS'].includes(it.kind)).flatMap((it) => {
     const value = normalize(it.value || ''); const want = grams(value); const n = value.split(' ').length;
     if (want.size < 3) return [];
+    const need = it.kind === 'NAME' ? 0.5 : 0.6;
+    // On each line, only the window of words closest to the listed value.
     return text.split('\n').flatMap((line) => {
-      const words = line.split(' ');
-      return words.flatMap((_, i) => [words.slice(i, i + n).join(' '), words.slice(i, i + n + 1).join(' ')]).filter((span) => span !== value && Math.abs(span.length - value.length) <= 3 && !/\d{4}/.test(span) === !/\d{4}/.test(value) && shared(want, grams(span)) * want.size / Math.max(want.size, grams(span).size) >= (it.kind === 'NAME' ? 0.5 : 0.6))
-        .map((span) => ({ kind: it.kind, value: span.replace(/^[(\[]+|[)\],.:;]+$/g, '') }));
+      const words = line.split(' '); let best = null;
+      words.forEach((_, i) => [n, n + 1].forEach((size) => {
+        const span = words.slice(i, i + size).join(' ');
+        if (span === value || Math.abs(span.length - value.length) > 3 || /\d{4}/.test(span) !== /\d{4}/.test(value)) return;
+        const have = grams(span); const score = shared(want, have) * want.size / Math.max(want.size, have.size);
+        if (score >= need && (!best || score > best.score)) best = { score, span };
+      }));
+      return best ? [{ kind: it.kind, value: best.span.replace(/^[(\[]+|[)\],.:;]+$/g, '') }] : [];
     });
   });
 
@@ -188,4 +197,25 @@ export function typedNames(text, vault) {
     typed.push({ token, value: span.length <= hits.reduce((n, h) => n + h[0].length + 2, 0) ? span : hits[0][0] });
   }
   return typed;
+}
+
+// After both readings are masked, one person can sit under several placeholders: two misread
+// spellings of the same name, or a native spelling next to its Latin one. Those are joined, and
+// placeholders are renumbered in the order they appear, so the cloud model sees one person as
+// [NAME_1] throughout. texts: masked texts that share the vault. Returns the rewritten texts.
+export function tidyTokens(texts, vault) {
+  const distance = (x, y) => { let row = [...Array(y.length + 1).keys()]; for (let i = 1; i <= x.length; i += 1) { const next = [i]; for (let j = 1; j <= y.length; j += 1) next[j] = Math.min(row[j] + 1, next[j - 1] + 1, row[j - 1] + (x[i - 1] === y[j - 1] ? 0 : 1)); row = next; } return row[y.length]; };
+  const parent = new Map(); const find = (t) => (parent.get(t) && parent.get(t) !== t ? find(parent.get(t)) : t); const join = (x, y) => parent.set(find(y), find(x));
+  const names = vault.filter((v) => v.token.startsWith('[NAME_'));
+  names.forEach((x, i) => names.slice(i + 1).forEach((y) => {
+    const p = [...x.value.replace(/\s/g, '').toLowerCase()], q = [...y.value.replace(/\s/g, '').toLowerCase()];
+    if (x.token !== y.token && Math.min(p.length, q.length) >= 5 && distance(p, q) / Math.max(p.length, q.length) <= 0.34) join(x.token, y.token);
+  }));
+  const all = texts.join('\n');
+  for (const m of all.matchAll(/(\[NAME_\d+\])\s*\((\[NAME_\d+\])\)/g)) join(m[1], m[2]);
+  const order = [...new Set([...(all.match(/\[[A-Z_]+_\d+\]/g) || []), ...vault.map((v) => v.token)].map(find))];
+  const count = {}; const renamed = new Map(order.map((t) => { const kind = t.slice(1, t.lastIndexOf('_')); count[kind] = (count[kind] || 0) + 1; return [t, `[${kind}_${count[kind]}]`]; }));
+  const rename = (t) => renamed.get(find(t)) || t;
+  vault.forEach((v) => { v.token = rename(v.token); });
+  return texts.map((text) => text.replace(/\[[A-Z_]+_\d+\]/g, rename).replace(/(\[NAME_\d+\])(?:\s*\(\1\)|\s+\1)+/g, '$1'));
 }
