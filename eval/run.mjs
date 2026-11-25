@@ -4,7 +4,7 @@ import fs from 'node:fs';
 const dir = new URL('.', import.meta.url).pathname;
 // Usage: node eval/run.mjs [dev|held-out|id,id] [outName]
 const arg = process.argv[2] || '';
-const only = !arg ? '' : ['dev', 'held-out', 'fresh'].includes(arg) ? `?split=${arg}` : `?only=${arg}`;
+const only = !arg ? '' : arg === 'real' ? '?set=real' : ['dev', 'held-out', 'fresh'].includes(arg) ? `?split=${arg}` : `?only=${arg}`;
 const outName = process.argv[3];
 const list = await (await fetch('http://127.0.0.1:9333/json')).json();
 const ws = new WebSocket(list.find((t) => t.type === 'page').webSocketDebuggerUrl);

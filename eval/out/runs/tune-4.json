@@ -1,0 +1,2597 @@
+{
+ "failedToRead": [],
+ "summary": {
+  "dev": {
+   "letters": 18,
+   "pages": 18,
+   "figuresReadByNano": "32 of 32",
+   "figuresKeptVisible": "32 of 32",
+   "identifiersMaskedByNanoAlone": "94 of 101",
+   "identifiersSentAfterRules": "0 of 101",
+   "agencyNumbersKeptVisible": "26 of 33",
+   "deadline": "18 first, 17 after double-check, of 18 with a printed deadline",
+   "amount": "18 first, 17 after double-check, of 18",
+   "action": "18 first, 17 after double-check, of 18",
+   "consequence": "18 first, 17 after double-check, of 18",
+   "misreadWordsCorrected": "36 on 8 letters",
+   "readSeconds": "median 30 (25 to 34)",
+   "explainSeconds": "median 3 (2 to 3)",
+   "doubleCheckSeconds": "median 8 (6 to 45)"
+  }
+ },
+ "rows": [
+  {
+   "id": "de01",
+   "split": "dev",
+   "pages": 1,
+   "readSec": 32.06210000002384,
+   "actionFirst": true,
+   "actionFinal": true,
+   "explainSec": 2.867100000023842,
+   "checkSec": 9.048100000023842,
+   "consequenceFirst": true,
+   "consequenceFinal": true,
+   "finalDeadlineRight": true,
+   "deadlinePrinted": true,
+   "finalAmountRight": true,
+   "final": {
+    "title": "2025 income tax assessment notice",
+    "steps": [
+     "Pay 1.284,56 € by December 28, 2026 to Finanzamt Köln-Mitte, IBAN DE27 3709 9000 0021 4508 73, using the payment reference 214/5087/3361 EST 2025."
+    ],
+    "objection": "You can file an objection (Einspruch) with Finanzamt Köln-Mitte in writing, electronically via www.elster.de, or in person for the record within one month of the day the notice is deemed notified (four days after posting if sent by mail). Filing an objection does not pause the payment obligation.",
+    "deadline_iso": "2026-12-28",
+    "amount": "1.284,56 €",
+    "if_ignored": "If you pay after the due date, a late payment surcharge of 1% of the rounded arrears (12,50 € per month) is charged for each started month, and overdue amounts will be enforced without further notice.",
+    "corrected": [
+     "read as \"Steuererzug\", understood as \"Steuerabzug\" (tax deduction)",
+     "read as \"unäbig\", understood as \"zulässig\" (admissible)",
+     "read as \"1.204,00 €\", understood as \"1.284,56 €\" (remaining amount to pay)"
+    ]
+   },
+   "figuresRead": [
+    true,
+    true
+   ],
+   "figuresKept": [
+    true,
+    true
+   ],
+   "idsMissedByModel": [],
+   "idsSent": [],
+   "agencyKept": [
+    false,
+    true
+   ],
+   "deadlineRight": true,
+   "amountRight": true,
+   "explained": {
+    "title": "Income tax assessment and payment notice",
+    "steps": [
+     "Pay 1.284,56 € by December 28, 2026 to the IBAN DE27 3709 9000 0021 4508 73 using the reference number 214/5087/3361 EST 2025"
+    ],
+    "deadline_iso": "2026-12-28",
+    "amount": "1.284,56 €",
+    "if_ignored": "If you pay after the deadline, a late payment surcharge of 1% per month will be added (12,50 € per month). Unpaid amounts will be collected through enforcement without further notice.",
+    "corrected": [
+     "read as \"Steuererzug\", understood as \"Steuerabzug\" (tax deduction from wages)",
+     "read as \"unäbig\", understood as \"zulässig\" (admissible/allowed)"
+    ]
+   },
+   "transcript": "Finanzamt Köln-Mitte\nPostfach 10 05 12 · 50445 Köln\nSteuernummer 214/5087/3361\nIdentifikationsnummer 47 381 902 655\nDatum 24.11.2026\nFrau\nPriya Raghunathan\nVenloer Straße 412\n50825 Köln\nEinkommensteuerbescheid 2025\nEinkommensteuer und Solidaritätszuschlag · Einzelveranlagung\nErmittlung des zu versteuernden Einkommens\nBezeichnung Betrag\nEinkünfte aus nichtselbständiger Arbeit (58.400 € abgl. Pauschbetrag 1.230 €) 57.170 €\nEinkünfte aus selbständiger Arbeit 64.020 €\nSumme der Einkünfte - 7.912 €\nSonderausgaben (Vorsorgeaufwendungen, Spenden) 56.108 €\nZu versteuerndes Einkommen \nAbrechnung Einkommensteuer Solidaritätszuschlag\nFestgesetzt werden\nabzüglich Steuererzug vom Lohn\nVerbleibende Beträge (Nachzahlung)\nBitte zahlen Sie 1.284,56 € spätestens am 28.12.2026.\nEmpfänger: Finanzamt Köln-Mitte - IBAN DE27 3709 9000 0021 4508 73\nVerwendungszweck: 214/5087/3361 EST 2025\nEinkommensteuer 13.402,00 €\nSolidaritätszuschlag 0,00 €\n12.117,44 € 0,00 €\n1.284,56 € 0,00 €\nErklärungen und Rechtsbehelfsbelehrung\n1. Bei Zahlung nach dem Fälligkeitstag entsteht für jeden angefangenen Monat ein Säumniszuschlag von 1 % des abgerundeten Rückstands (hier 12,50 € je Monat, § 240 AO). Rückstände werden ohne weitere Ankündigung vollstreckt.\n2. Gegen diesen Bescheid ist der Einspruch beim Finanzamt Köln-Mitte unäbig (schriftlich, elektronisch oder\n1. Bei Zahlung nach dem Fälligkeitstag entsteht für jeden angefallenen Monat eine weitere des abgerundeten Rückstanda (hier 12,50 € je Monat, § 240 AO). Rückstände werden ohne weitere Ankündigung vollstreckt.\n2. Gegen diesen Bescheid ist der Einspruch beim Finanzamt Köln-Mitte zulässig (schriftlich, elektronisch oder zur Niederschrift). Die Einspruchsfrist beträgt einen Monat. Sie beginnt mit Ablauf des Tages, an dem Ihnen zur Niederschrift) bekannt gegeben worden ist. Bei Übermittlung mit der Post gilt der Bescheid am vierten Tag nach Aufgabe zur Post als bekannt gegeben. Der Einspruch hemmt die Vollziehung nicht (§ 361 AO).\nTelefon 0221 9466-0 · Bezirk z1: 0221 9466-2174 Mo - Do 8:00 - 15:30, Fr 8:00 - 12:00\nwww.finanzverwaltung.nrw.de · Einspruch elektronisch über www.elster.de",
+   "second": "Finanzamt Köln-Mitte\nPostfach 10 05 12 · 50445 Köln\nSteuernummer 214/5087/3361\nIdentifikationsnummer 47 381 902 655\nDatum 24.11.2026\nFrau\nPriya Raghunathan\nVenloer Straße 412\n50825 Köln\nEinkommensteuerbescheid 2025\nEinkommensteuer und Solidaritätszuschlag · Einzelveranlagung\nErmittlung des zu versteuernden Einkommens\nBezeichnung Betrag\nEinkünfte aus nichtselbständiger Arbeit (58.400 € abgl. Pauschbetrag 1.230 €) 57.170 €\nEinkünfte aus selbständiger Arbeit 6.850 €\n64.020 €\nSumme der Einkünfte - 7.912 €\nSonderausgaben (Vorsorgeaufwendungen, Spenden) 56.108 €\nZu versteuerndes Einkommen\nAbrechnung Einkommensteuer Solidaritätszuschlag\nFestgesetzt werden 13.402,00 € 0,00 €\nabzüglich Steuerabzug vom Lohn 12.117,44 € 0,00 €\nVerbleibende Beträge (Nachzahlung) 1.284,56 €\nBitte zahlen Sie 1.284,56 € spätestens am 28.12.2026.\nEmpfänger: Finanzamt Köln-Mitte IBAN DE27 3709 9000 0021 4508 73\nVerwendungszweck: 214/5087/3361 EST 2025\nBitte zahlen Sie 1.204,00 € aus.\nEmpfänger: Finanzamt Köln-Mitte IBAN DE27 3709 9000 0021 4508 73\nVerwendungszweck: 214/5087/3361 EST 2025\nErläuterungen und Rechtsbehelfsbelehrung\n1. Bei Zahlung nach dem Fälligkeitstag entsteht für jeden angefangenen Monat ein Säumniszuschlag von 1 % des abgerundeten Rückstands (hier 12,50 € je Monat, § 240 AO). Rückstände werden ohne weitere Ankündigung vollstreckt.\n2. Gegen diesen Bescheid ist der Einspruch beim Finanzamt Köln-Mitte zulässig (schriftlich, elektronisch oder zur Niederschrift). Die Einspruchsfrist beträgt einen Monat. Sie beginnt mit Ablauf des Tages, an dem Ihnen zur Niederschrift). Die Einspruchsfrist beträgt einen Monat. Sie beginnt mit Ablauf des Tages, an dem Ihnen dieser Bescheid bekannt gegeben worden ist. Bei Übermittlung mit der Post gilt der Bescheid am vierten Tag nach Aufgabe zur Post als bekannt gegeben. Der Einspruch hemmt die Vollziehung nicht (§ 361 AO).\nTelefon 0221 9466-0 Bezirk 21: 0221 9466-2174 Mo - Do 8:00 - 15:30, Fr 8:00 - 12:00\nwww.finanzverwaltung.nrw.de Einspruch elektronisch über www.elater.de",
+   "items": [
+    {
+     "kind": "ADDRESS",
+     "value": "Venloer Straße 412"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "50825 Köln"
+    },
+    {
+     "kind": "NAME",
+     "value": "Priya Raghunathan"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "214/5087/3361"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "47 381 902 655"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "Telefon 0221 9466-0"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "Bezirk z1: 0221 9466-2174"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Postfach 10 05 12 · 50445 Köln"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "214/5087/3361"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "47 381 902 655"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Venloer Straße 412"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "50825 Köln"
+    },
+    {
+     "kind": "PHONE",
+     "value": "0221 9466-0"
+    },
+    {
+     "kind": "PHONE",
+     "value": "0221 9466-2174"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "0221 9466-0 Bezirk 21: 0221 9466-2174 Mo - Do 8:00 - 15:30, Fr 8:00 - 12:00"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "www.elater.de"
+    }
+   ],
+   "outgoing": "Finanzamt Köln-Mitte\n[ADDRESS_1]\nSteuernummer [REFERENCE_NUMBER_1]\nIdentifikationsnummer [ID_NUMBER_1]\nDatum 24.11.2026\nFrau\n[NAME_1]\n[ADDRESS_2]\n[ADDRESS_4]\nEinkommensteuerbescheid 2025\nEinkommensteuer und Solidaritätszuschlag · Einzelveranlagung\nErmittlung des zu versteuernden Einkommens\nBezeichnung Betrag\nEinkünfte aus nichtselbständiger Arbeit (58.400 € abgl. Pauschbetrag 1.230 €) 57.170 €\nEinkünfte aus selbständiger Arbeit 64.020 €\nSumme der Einkünfte - 7.912 €\nSonderausgaben (Vorsorgeaufwendungen, Spenden) 56.108 €\nZu versteuerndes Einkommen \nAbrechnung Einkommensteuer Solidaritätszuschlag\nFestgesetzt werden\nabzüglich Steuererzug vom Lohn\nVerbleibende Beträge (Nachzahlung)\nBitte zahlen Sie 1.284,56 € spätestens am 28.12.2026.\nEmpfänger: Finanzamt Köln-Mitte - IBAN [ACCOUNT_1]\nVerwendungszweck: [REFERENCE_NUMBER_1] EST 2025\nEinkommensteuer 13.402,00 €\nSolidaritätszuschlag 0,00 €\n12.117,44 € 0,00 €\n1.284,56 € 0,00 €\nErklärungen und Rechtsbehelfsbelehrung\n1. Bei Zahlung nach dem Fälligkeitstag entsteht für jeden angefangenen Monat ein Säumniszuschlag von 1 % des abgerundeten Rückstands (hier 12,50 € je Monat, § 240 AO). Rückstände werden ohne weitere Ankündigung vollstreckt.\n2. Gegen diesen Bescheid ist der Einspruch beim Finanzamt Köln-Mitte unäbig (schriftlich, elektronisch oder\n1. Bei Zahlung nach dem Fälligkeitstag entsteht für jeden angefallenen Monat eine weitere des abgerundeten Rückstanda (hier 12,50 € je Monat, § 240 AO). Rückstände werden ohne weitere Ankündigung vollstreckt.\n2. Gegen diesen Bescheid ist der Einspruch beim Finanzamt Köln-Mitte zulässig (schriftlich, elektronisch oder zur Niederschrift). Die Einspruchsfrist beträgt einen Monat. Sie beginnt mit Ablauf des Tages, an dem Ihnen zur Niederschrift) bekannt gegeben worden ist. Bei Übermittlung mit der Post gilt der Bescheid am vierten Tag nach Aufgabe zur Post als bekannt gegeben. Der Einspruch hemmt die Vollziehung nicht (§ 361 AO).\nTelefon [NUMBER_1] · Bezirk z1: 0221 9466-2174 Mo - Do 8:00 - 15:30, Fr 8:00 - 12:00\nwww.finanzverwaltung.nrw.de · Einspruch elektronisch über [ADDRESS_3]",
+   "alternates": [
+    "Einkünfte aus selbständiger Arbeit 6.850 €",
+    "64.020 €",
+    "Festgesetzt werden 13.402,00 € 0,00 €",
+    "abzüglich Steuerabzug vom Lohn 12.117,44 € 0,00 €",
+    "Verbleibende Beträge (Nachzahlung) 1.284,56 €",
+    "Bitte zahlen Sie 1.204,00 € aus.",
+    "Erläuterungen und Rechtsbehelfsbelehrung",
+    "2. Gegen diesen Bescheid ist der Einspruch beim Finanzamt Köln-Mitte zulässig (schriftlich, elektronisch oder zur Niederschrift). Die Einspruchsfrist beträgt einen Monat. Sie beginnt mit Ablauf des Tages, an dem Ihnen zur Niederschrift). Die Einspruchsfrist beträgt einen Monat. Sie beginnt mit Ablauf des Tages, an dem Ihnen dieser Bescheid bekannt gegeben worden ist. Bei Übermittlung mit der Post gilt der Bescheid am vierten Tag nach Aufgabe zur Post als bekannt gegeben. Der Einspruch hemmt die Vollziehung nicht (§ 361 AO)."
+   ]
+  },
+  {
+   "id": "de02",
+   "split": "dev",
+   "pages": 1,
+   "readSec": 33.871,
+   "actionFirst": true,
+   "actionFinal": true,
+   "explainSec": 2.326300000011921,
+   "checkSec": 8.091300000011922,
+   "consequenceFirst": true,
+   "consequenceFinal": true,
+   "finalDeadlineRight": true,
+   "deadlinePrinted": true,
+   "finalAmountRight": true,
+   "final": {
+    "title": "Overdue broadcasting fee assessment notice",
+    "steps": [
+     "Transfer 118,16 € by March 31, 2027 to IBAN DE63 3709 1500 0476 1120 09, recipient Rundfunk Berlin-Brandenburg, with payment reference Beitragsnummer 487 612 093.",
+     "If you receive Bürgergeld, Grundsicherung, or BAföG, you can apply for an exemption, though it will not apply retroactively to this assessed period."
+    ],
+    "objection": "You can file an objection (Widerspruch) within one month of notification, either in writing or in person for the record at Rundfunk Berlin-Brandenburg, Masurenallee 8-14, 14057 Berlin; filing an objection does not suspend the requirement to pay.",
+    "deadline_iso": "2027-03-31",
+    "amount": "118,16 €",
+    "if_ignored": "Compulsory enforcement (Zwangsvollstreckung) will be initiated without any further reminder, which will cause additional costs.",
+    "corrected": []
+   },
+   "figuresRead": [
+    true,
+    true
+   ],
+   "figuresKept": [
+    true,
+    true
+   ],
+   "idsMissedByModel": [],
+   "idsSent": [],
+   "agencyKept": [
+    false
+   ],
+   "deadlineRight": true,
+   "amountRight": true,
+   "explained": {
+    "title": "Overdue broadcasting fee assessment notice",
+    "steps": [
+     "Transfer 118,16 € to IBAN DE63 3709 1500 0476 1120 09 with reference Beitragsnummer 487 612 093 by March 31, 2027."
+    ],
+    "deadline_iso": "2027-03-31",
+    "amount": "118,16 €",
+    "if_ignored": "Enforcement proceedings (Zwangsvollstreckung) will be initiated without further warning, which will cause additional costs.",
+    "corrected": []
+   },
+   "transcript": "Rundfunk Berlin-Brandenburg\nARD ZDF Deutschlandradio Beitragsservice\n50656 Köln\nBeitragsnummer 487 612 093\nDatum 03.03.2027\nHerrn\nOluwaseun Adeyemi\nSonnenallee 187\n12059 Berlin\nFestsetzungsbescheid\nüber rückständige Rundfunkbeiträge nach § 10 Abs. 5 Rundfunkbeitragsstaatvertrag\nSehr geehrter Herr Adeyemi,\nfür Ihre Wohnung unter der oben genannten Anschrift wurden die folgenden Rundfunkbeiträge trotz Zahlungserinnerung vom 04.12.2026 nicht gezahlt. Der Rundfunk Berlin-Brandenburg setzt diese Beiträge hiermit fest.\nZeitraum | Monate | Monatsbeitrag | Betrag\n------- | -------- | -------- | --------\n10.2026 bis 12.2026 | 3 | 18,36 € | 55,08 €\n01.2027 bis 03.2027 | 3 | 18,36 € | 55,08 €\nRückständige Rundfunkbeiträge | | | 110,16 €\n10.2026 bis 12.2027\n01.2027 bis 03.2027\n3\n18,36 €\n55,08 €\nRückständige Rundfunkbeiträge\n110,16 €\nSäumniszuschlag (§ 11 Abs. 1 Rundfunkbeitragssatzung)\n8,00 €\nFestgesetzter Gesamtbetrag\n118,16 €\nBitte überweisen Sie 118,16 € bis zum 31.03.2027.\nIBAN DE63 3709 1500 0476 1120 09 · Empfänger: Rundfunk Berlin-Brandenburg\nVerwendungszweck: Beitragsnummer 487 612 093\nHinweise\n1. Der Säumniszuschlag beträgt 1 % der rückständigen Beitrags Schuld, mindestens jedoch 8,00 €.\n2. Der Beitrag für 04.2027 bis 06.2027 (55,08 €) ist nicht Gegenstand dieses Bescheids.\n3. Zahlen Sie den festgesetzten Betrag nicht fristgerecht, wird ohne weitere Mahnung die Zwangsvollstreckung eingeleitet. Dadurch entstehen Ihnen weitere Kosten.\n1. Der Säumniszuschlag beträgt (1 % des rückständigen Betrags).\n2. Der Beitrag für 04.2027 bis 06.2027 (55,08 €) ist nicht Gegenstand dieses Bescheids.\n3. Zahlen Sie den festgesetzten Beitrag nicht fristgerecht, wird ohne weitere Mahnung die Zwangsvollstreckung eingeleitet. Dadurch entstehen weitere Kosten.\n4. Wer Bürgergeld, Grundsicherung oder BAföG erhält, kann eine Befreiung beantragen. Eine Befreiung wirkt nicht rückwirkend für den festgesetzten Zeitraum.\n5. Rechtsbehelfsbelehrung: Gegen diesen Bescheid kann innerhalb eines Monats nach Bekanntgabe Widerspruch erhoben werden. Der Widerspruch ist schriftlich oder zur Niederschrift beim Rundfunk Berlin-Brandenburg, Masurenallee 8-14, 14057 Berlin, einzulegen. Er hat keine aufschiebende Wirkung.\nTelefon 0221 5061-4400 (Mo-Fr 7:00-19:00 Uhr) · www.rundfunkbeitrag.de\nBitte geben Sie bei jedem Kontakt Ihre Beitragsnummer an.",
+   "second": "Beitragsnummer 487 612 093\nDatum 03.03.2027\nRundfunk Berlin-Brandenburg\nARD ZDF Deutschlandradio Beitragsservice\n50656 Köln\nHerrn\nOluwaseun Adeyemi\nSonnenallee 187\n12059 Berlin\nFestsetzungsbescheid\nüber rückständige Rundfunkbeiträge nach § 10 Abs. 5 Rundfunkbeitragsstaatsvertrag\nSehr geehrter Herr Adeyemi,\nfür Ihre Wohnung unter der oben genannten Anschrift wurden die folgenden Rundfunkbeiträge trotz Zahlungserinnerung vom 04.12.2026 nicht gezahlt. Der Rundfunk Berlin-Brandenburg setzt diese Beiträge hiermit fest.\nZeitraum | Monate | Monatsbeitrag | Betrag\n------- | -------- | -------- | --------\n10.2026 bis 12.2026 | 3 | 18,36 € | 55,08 €\n01.2027 bis 03.2027 | 3 | 18,36 € | 55,08 €\nRückständige Rundfunkbeiträge | | | 110,16 €\nSäumniszuschlag (§ 11 Abs. 1 Rundfunkbeitragssatzung) | | | 8,00 €\nFestgesetzter Gesamtbetrag | | | 118,16 €\nBitte überweisen Sie 118,16 € bis zum 31.03.2027.\nIBAN DE63 3709 1500 0476 1120 09 · Empfänger: Rundfunk Berlin-Brandenburg\nVerwendungszweck: Beitragsnummer 487 612 093\nHinweise\n1. Der Säumniszuschlag beträgt 1 % der rückständigen Beitragsschuld, mindestens jedoch 8,00 €.\n2. Der Beitrag für 04.2027 bis 06.2027 (55,08 €) ist nicht Gegenstand dieses Bescheids.\n3. Zahlen Sie den festgesetzten Beitrag nicht fristgerecht, wird ohne weitere Mahnung die Zwangsvollstreckung eingeleitet. Dadurch entstehen Ihnen weitere Kosten.\n4. Wer Bürgergeld, Grundsicherung oder BAföG erhält, kann eine Befreiung beantragen. Eine Befreiung wirkt nicht rückwirkend für den festgesetzten Zeitraum.\n5. Rechtsbehelfsbelehrung: Gegen diesen Bescheid kann innerhalb eines Monats nach Bekanntgabe Widerspruch erhoben werden. Der Widerspruch ist schriftlich oder zur Niederschrift beim Rundfunk Berlin-Brandenburg, Masurenallee 8-14, 14057 Berlin, einzulegen. Er hat keine aufscheidende Wirkung.\nTelefon 0221 5061-4400 (Mo-Fr 7:00-19:00 Uhr) • www.rundfunkbeitrag.de\nBitte geben Sie bei jedem Kontakt Ihre Beitragsnummer an.",
+   "items": [
+    {
+     "kind": "NAME",
+     "value": "Oluwaseun Adeyemi"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Sonnenallee 187"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "12059 Berlin"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "Beitragsnummer 487 612 093"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "Festsetzungsbescheid über rückständige Rundfunkbeiträge nach § 10 Abs. 5 Rundfunkbeitragsstaatvertrag"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Masurenallee 8-14"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "14057 Berlin"
+    },
+    {
+     "kind": "PHONE",
+     "value": "0221 5061-4400"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "Beitragsnummer 487 612 093"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "487 612 093"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Sonnenallee 187"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "12059 Berlin"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Masurenallee 8-14"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "14057 Berlin"
+    },
+    {
+     "kind": "NAME",
+     "value": "Oluwaseun Adeyemi"
+    },
+    {
+     "kind": "PHONE",
+     "value": "0221 5061-4400"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "Telefon 0221 5061-4400 (Mo-Fr 7:00-19:00 Uhr)"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "www.rundfunkbeitrag.de"
+    }
+   ],
+   "outgoing": "Rundfunk Berlin-Brandenburg\nARD ZDF Deutschlandradio Beitragsservice\n50656 Köln\n[REFERENCE_NUMBER_1]\nDatum 03.03.2027\nHerrn\n[NAME_1]\n[ADDRESS_2]\n[ADDRESS_3]\nFestsetzungsbescheid\nüber rückständige Rundfunkbeiträge nach § 10 Abs. 5 Rundfunkbeitragsstaatvertrag\nSehr geehrter Herr [NAME_1],\nfür Ihre Wohnung unter der oben genannten Anschrift wurden die folgenden Rundfunkbeiträge trotz Zahlungserinnerung vom 04.12.2026 nicht gezahlt. Der Rundfunk Berlin-Brandenburg setzt diese Beiträge hiermit fest.\nZeitraum | Monate | Monatsbeitrag | Betrag\n------- | -------- | -------- | --------\n10.2026 bis 12.2026 | 3 | 18,36 € | 55,08 €\n01.2027 bis 03.2027 | 3 | 18,36 € | 55,08 €\nRückständige Rundfunkbeiträge | | | 110,16 €\n10.2026 bis 12.2027\n01.2027 bis 03.2027\n3\n18,36 €\n55,08 €\nRückständige Rundfunkbeiträge\n110,16 €\nSäumniszuschlag (§ 11 Abs. 1 Rundfunkbeitragssatzung)\n8,00 €\nFestgesetzter Gesamtbetrag\n118,16 €\nBitte überweisen Sie 118,16 € bis zum 31.03.2027.\nIBAN [ACCOUNT_1] · Empfänger: Rundfunk Berlin-Brandenburg\nVerwendungszweck: [REFERENCE_NUMBER_1]\nHinweise\n1. Der Säumniszuschlag beträgt 1 % der rückständigen Beitrags Schuld, mindestens jedoch 8,00 €.\n2. Der Beitrag für 04.2027 bis 06.2027 (55,08 €) ist nicht Gegenstand dieses Bescheids.\n3. Zahlen Sie den festgesetzten Betrag nicht fristgerecht, wird ohne weitere Mahnung die Zwangsvollstreckung eingeleitet. Dadurch entstehen Ihnen weitere Kosten.\n1. Der Säumniszuschlag beträgt (1 % des rückständigen Betrags).\n2. Der Beitrag für 04.2027 bis 06.2027 (55,08 €) ist nicht Gegenstand dieses Bescheids.\n3. Zahlen Sie den festgesetzten Beitrag nicht fristgerecht, wird ohne weitere Mahnung die Zwangsvollstreckung eingeleitet. Dadurch entstehen weitere Kosten.\n4. Wer Bürgergeld, Grundsicherung oder BAföG erhält, kann eine Befreiung beantragen. Eine Befreiung wirkt nicht rückwirkend für den festgesetzten Zeitraum.\n5. Rechtsbehelfsbelehrung: Gegen diesen Bescheid kann innerhalb eines Monats nach Bekanntgabe Widerspruch erhoben werden. Der Widerspruch ist schriftlich oder zur Niederschrift beim Rundfunk Berlin-Brandenburg, [ADDRESS_1], [ADDRESS_4], einzulegen. Er hat keine aufschiebende Wirkung.\nTelefon [NUMBER_1] (Mo-Fr 7:00-19:00 Uhr) · www.rundfunkbeitrag.de\nBitte geben Sie bei jedem Kontakt Ihre Beitragsnummer an.",
+   "alternates": [
+    "über rückständige Rundfunkbeiträge nach § 10 Abs. 5 Rundfunkbeitragsstaatsvertrag",
+    "Säumniszuschlag (§ 11 Abs. 1 Rundfunkbeitragssatzung) | | | 8,00 €",
+    "Festgesetzter Gesamtbetrag | | | 118,16 €",
+    "1. Der Säumniszuschlag beträgt 1 % der rückständigen Beitragsschuld, mindestens jedoch 8,00 €.",
+    "3. Zahlen Sie den festgesetzten Beitrag nicht fristgerecht, wird ohne weitere Mahnung die Zwangsvollstreckung eingeleitet. Dadurch entstehen Ihnen weitere Kosten.",
+    "5. Rechtsbehelfsbelehrung: Gegen diesen Bescheid kann innerhalb eines Monats nach Bekanntgabe Widerspruch erhoben werden. Der Widerspruch ist schriftlich oder zur Niederschrift beim Rundfunk Berlin-Brandenburg, [ADDRESS_1], [ADDRESS_4], einzulegen. Er hat keine aufscheidende Wirkung."
+   ]
+  },
+  {
+   "id": "de03",
+   "split": "dev",
+   "pages": 1,
+   "readSec": 27.73439999997616,
+   "actionFirst": true,
+   "actionFinal": true,
+   "explainSec": 2.639800000011921,
+   "checkSec": 9.799899999976159,
+   "consequenceFirst": true,
+   "consequenceFinal": true,
+   "finalDeadlineRight": true,
+   "deadlinePrinted": true,
+   "finalAmountRight": true,
+   "final": {
+    "title": "Request for missing residence permit documents",
+    "steps": [
+     "Gather the original and a copy of these four documents: pay slips for September, October, and November 2026; proof of accommodation (rental contract and current Meldezettel); an insurance data extract from the Austrian Health Insurance Fund (ÖGK); and your ÖIF A2 certificate (Module 1 of the Integration Agreement).",
+     "If any documents are in a foreign language, include a certified translation.",
+     "Submit all documents by January 11, 2027, either by post or in person by making an appointment at +43 1 4000-35590, and quote reference number MA35-9/2615448-2026."
+    ],
+    "objection": "No appeal is mentioned, but you can apply in writing with reasons to extend the deadline before January 11, 2027.",
+    "deadline_iso": "2027-01-11",
+    "amount": "",
+    "if_ignored": "Your application will be rejected. After rejection and once your current residence permit expires on 28.02.2027, you will no longer be legally residing in Austria.",
+    "corrected": [
+     "read as \"regelmäßig\", understood as \"rechtmäßig\" (lawful/legal)",
+     "read as \"Meldezeitel\", understood as \"Meldezettel\" (registration form)",
+     "read as \"Telon\", understood as \"Telefon\" (telephone)"
+    ]
+   },
+   "figuresRead": [
+    true
+   ],
+   "figuresKept": [
+    true
+   ],
+   "idsMissedByModel": [],
+   "idsSent": [],
+   "agencyKept": [
+    true,
+    true
+   ],
+   "deadlineRight": true,
+   "amountRight": true,
+   "explained": {
+    "title": "Incomplete residence permit extension application",
+    "steps": [
+     "Submit the original and a copy of salary confirmations for September, October, and November 2026 under reference number MA35-9/2615448-2026.",
+     "Submit the original and a copy of proof of local accommodation (lease agreement, current registration certificate) under reference number MA35-9/2615448-2026.",
+     "Submit the original and a copy of the insurance data extract from the Austrian Health Insurance Fund under reference number MA35-9/2615448-2026.",
+     "Submit the original and a copy of proof of module 1 of the integration agreement (ÖIF certificate A2) under reference number MA35-9/2615448-2026."
+    ],
+    "deadline_iso": "2027-01-11",
+    "amount": "",
+    "if_ignored": "If the documents are not submitted on time, your application will be dismissed, and after the dismissal and the expiration of your residence permit, you will no longer reside legally in Austria.",
+    "corrected": [
+     "read as \"Meldezeitel\", understood as \"Meldezettel\" (registration certificate)"
+    ]
+   },
+   "transcript": "Magistrat der Stadt Wien\nMagistratsabteilung 35 · Einwanderung und Staatsbürgerschaft\nReferat Aufenthalt · Dresdner Straße 93, 1200 Wien\nZahl MA35-9/2615448-2026\nWien, 30. November 2026\nFrau\nCamila Rojas Herrera\nThaliastraße 64/2/17\n1160 Wien\ngemäß § 13 Abs. 3 AVG - Verlängerung des Aufenthaltstitels „Rot-Weiß-Rot - Karte plus“\nName Camila Rojas Herrera Geburtsdatum 14.08.1991\nStaatsangehörigkeit Kolumbien Reisepass AU482915\nAntrag eingelangt 23.11.2026 Titel gültig bis 28.02.2027\nSehr geehrte Frau Rojas Herrera, Ihr Antrag ist unvollständig. Bitte reichen Sie folgende Unterlagen im Original und in Kopie nach:\nNr. Unterlage\n1 Gehaltsbestätigungen für September, Oktober und November 2026\n2 Nachweis einer örtlichen Unterkunft (Mietvertrag, aktueller Meldezettel)\n3 Versicherungsdatenauszug der Österreichischen Gesundheitskasse\n4 Nachweis über Modul 1 der Integrationsvereinbarung (ÖIF-Zeugnis A2)\nFrist für die Vorlage: 11. Jänner 2027\nEinbringung per Post oder persönlich nach Terminvereinbarung unter Angabe der Zahl.\nRechtliche Hinweise\n1. Werden die Unterlagen nicht fristgerecht vorgelegt, wird Ihr Antrag gemäß § 13 Abs. 3 AVG zurückgewiesen.\nzurückgewiesen.\n2. Nach einer Zurückweisung und dem Ablauf Ihres Aufenthaltstitels halten Sie sich nicht mehr regelmäßig\nim Bundesgebiet auf (§ 24 Abs. 1 NAG).\n3. Fremdsprachige Urkunden sind mit beglaubigter Übersetzung vorzulegen.\n4. Eine Verlängerung der Frist kann vor Ihrem Ablauf schriftlich und begründet beantragt werden!\nTelefon +43 1 4000-35570 Terminvereinbarung +43 1 4000-35590 Mo - Fr 8:00 - 15:30\nE-Mail post@ma35.wien.gv.at www.wien.gv.at/einwanderung\nMA 35\nWien",
+   "second": "Magistrat der Stadt Wien\nMagistratsabteilung 35 · Einwanderung und Staatsbürgerschaft\nReferat Aufenthalt · Dresdner Straße 93, 1200 Wien\nZahl MA35-9/2615448-2026\nWien, 30. November 2026\nFrau\nCamila Rojas Herrera\nThalastra Straße 64/2/17\n1160 Wien\nVerbesserungsauftrag\ngemäß § 13 Abs. 3 AVG · Verlängerung des Aufenthaltstitels „Rot-Weiß-Rot – Karte plus“\nName Camila Rojas Herrera\nGeburtsdatum 14.08.1991\nReisepass AU482915\nStaatsangehörigkeit\nKolumbien\nReisepass AU482915\nAntrag eingelangt 23.11.2026\nTitel gültig bis 28.02.2027\nSehr geehrte Frau Rojas Herrera, Ihr Antrag ist unvollständig. Bitte reichen Sie folgende Unterlagen im Original und in Kopie nach:\nNr. Unterlage\n1 Gehaltsbestätigungen für September, Oktober und November 2026\n2 Nachweis einer örtlichen Unterkunft (Mietvertrag, aktueller Meldezeitel)\n3 Versicherungsdatenauszug der Österreichischen Gesundheitskasse\n4 Nachweis über Modul 1 der Integrationsvereinbarung (ÖIF-Zeugnis A2)\nFrist für die Vorlage: 11. Jänner 2027\nEinbringung per Post oder persönlich nach Terminvereinbarung unter Angabe der Zahl.\nRechtliche Hinweise\n1. Werden die Unterlagen nicht fristgerecht vorgelegt, wird Ihr Antrag gemäß § 13 Abs. 3 AVG zurückgewiesen.\n2. Nach einer Zurückweisung und dem Ablauf Ihres Aufenthaltstitels halten Sie sich nicht mehr rechtmäßig im Bundesgebiet auf (§ 24 Abs. 1 NAG).\n3. Fremdsprachige Urkunden sind mit beglaubigter Übersetzung vorzulegen.\n4. Eine Verlängerung der Frist kann vor Ihrem Ablauf schriftlich und begründet beantragt werden.\nTelon +43 1 4000-35570 · Terminvereinbarung +43 1 4000-35590 Mo - Fr 8:00 - 15:30\nE-Mail post@ma35.wien.gv.at · www.wien.gv.at/einwanderung\nMA 35\nWien",
+   "items": [
+    {
+     "kind": "NAME",
+     "value": "Camila Rojas Herrera"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Thaliastraße 64/2/17"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "1160 Wien"
+    },
+    {
+     "kind": "BIRTH_DATE",
+     "value": "14.08.1991"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "AU482915"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "MA35-9/2615448-2026"
+    },
+    {
+     "kind": "PHONE",
+     "value": "+43 1 4000-35570"
+    },
+    {
+     "kind": "PHONE",
+     "value": "+43 1 4000-35590"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "post@ma35.wien.gv.at"
+    },
+    {
+     "kind": "NAME",
+     "value": "Camila Rojas Herrera"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Thalastra Straße 64/2/17"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "1160 Wien"
+    },
+    {
+     "kind": "BIRTH_DATE",
+     "value": "14.08.1991"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "AU482915"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "AU482915"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "MA35-9/2615448-2026"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "+43 1 4000-35570"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "+43 1 4000-35590"
+    }
+   ],
+   "outgoing": "Magistrat der Stadt Wien\nMagistratsabteilung 35 · Einwanderung und Staatsbürgerschaft\nReferat Aufenthalt · Dresdner Straße 93, 1200 Wien\nZahl [REFERENCE_NUMBER_1]\nWien, 30. November 2026\nFrau\n[NAME_2]\n[ADDRESS_1]\n[ADDRESS_2]\ngemäß § 13 Abs. 3 AVG - Verlängerung des Aufenthaltstitels „Rot-Weiß-Rot - Karte plus“\nName [NAME_2] Geburtsdatum [BIRTH_DATE_1]\nStaatsangehörigkeit Kolumbien Reisepass [ID_NUMBER_1]\nAntrag eingelangt 23.11.2026 Titel gültig bis 28.02.2027\nSehr geehrte [NAME_1] Antrag ist unvollständig. Bitte reichen Sie folgende Unterlagen im Original und in Kopie nach:\nNr. Unterlage\n1 Gehaltsbestätigungen für September, Oktober und November 2026\n2 Nachweis einer örtlichen Unterkunft (Mietvertrag, aktueller Meldezettel)\n3 Versicherungsdatenauszug der Österreichischen Gesundheitskasse\n4 Nachweis über Modul 1 der Integrationsvereinbarung (ÖIF-Zeugnis A2)\nFrist für die Vorlage: 11. Jänner 2027\nEinbringung per Post oder persönlich nach Terminvereinbarung unter Angabe der Zahl.\nRechtliche Hinweise\n1. Werden die Unterlagen nicht fristgerecht vorgelegt, wird Ihr Antrag gemäß § 13 Abs. 3 AVG zurückgewiesen.\nzurückgewiesen.\n2. Nach einer Zurückweisung und dem Ablauf Ihres Aufenthaltstitels halten Sie sich nicht mehr regelmäßig\nim Bundesgebiet auf (§ 24 Abs. 1 NAG).\n3. Fremdsprachige Urkunden sind mit beglaubigter Übersetzung vorzulegen.\n4. Eine Verlängerung der Frist kann vor Ihrem Ablauf schriftlich und begründet beantragt werden!\nTelefon +43 1 4000-35570 Terminvereinbarung +43 1 4000-35590 Mo - Fr 8:00 - 15:30\nE-Mail post@ma35.wien.gv.at www.wien.gv.at/einwanderung\nMA 35\nWien",
+   "alternates": [
+    "Verbesserungsauftrag",
+    "gemäß § 13 Abs. 3 AVG · Verlängerung des Aufenthaltstitels „Rot-Weiß-Rot – Karte plus“",
+    "Antrag eingelangt 23.11.2026",
+    "Titel gültig bis 28.02.2027",
+    "2 Nachweis einer örtlichen Unterkunft (Mietvertrag, aktueller Meldezeitel)",
+    "2. Nach einer Zurückweisung und dem Ablauf Ihres Aufenthaltstitels halten Sie sich nicht mehr rechtmäßig im Bundesgebiet auf (§ 24 Abs. 1 NAG).",
+    "4. Eine Verlängerung der Frist kann vor Ihrem Ablauf schriftlich und begründet beantragt werden.",
+    "Telon +43 1 4000-35570 · Terminvereinbarung +43 1 4000-35590 Mo - Fr 8:00 - 15:30"
+   ]
+  },
+  {
+   "id": "en01",
+   "split": "dev",
+   "pages": 1,
+   "readSec": 25.646200000047685,
+   "actionFirst": true,
+   "actionFinal": true,
+   "explainSec": 2.037400000035763,
+   "checkSec": 7.2,
+   "consequenceFirst": true,
+   "consequenceFinal": true,
+   "finalDeadlineRight": true,
+   "deadlinePrinted": true,
+   "finalAmountRight": true,
+   "final": {
+    "title": "Second reminder for unpaid 2025 taxes",
+    "steps": [
+     "Pay $2,475.57 by December 21, 2026, either online at www.irs.gov/payments or by mailing a check or money order payable to \"United States Treasury\".",
+     "If you cannot pay the full amount, set up a payment plan at www.irs.gov/paymentplan or call 800-829-1040.",
+     "If you already paid your balance in full within the past 14 days or made a payment plan, you can disregard this notice."
+    ],
+    "objection": "If you think the IRS made a mistake, call 800-829-1040 and have this notice and your records available.",
+    "deadline_iso": "2026-12-21",
+    "amount": "$2,475.57",
+    "if_ignored": "Penalties and interest will continue to increase, so you will owe more if you pay after December 21, 2026. The IRS may also file a Notice of Federal Tax Lien and seize your wages, bank accounts, or other property to collect the balance.",
+    "corrected": []
+   },
+   "figuresRead": [
+    true,
+    true
+   ],
+   "figuresKept": [
+    true,
+    true
+   ],
+   "idsMissedByModel": [],
+   "idsSent": [],
+   "agencyKept": [
+    true,
+    true
+   ],
+   "deadlineRight": true,
+   "amountRight": true,
+   "explained": {
+    "title": "Second reminder: You have unpaid taxes",
+    "steps": [
+     "Pay $2,475.57 by December 21, 2026. Pay online at www.irs.gov/payments or mail a check or money order payable to \"United States Treasury\".",
+     "If you can't pay the full amount, set up a payment plan at www.irs.gov/paymentplan or call 800-829-1040."
+    ],
+    "deadline_iso": "2026-12-21",
+    "amount": "$2,475.57",
+    "if_ignored": "Penalty and interest continue to increase until you pay the full amount. The IRS may file a Notice of Federal Tax Lien and levy (seize) your wages, bank accounts or other property to collect the balance.",
+    "corrected": []
+   },
+   "transcript": "Department of the Treasury\nInternal Revenue Service\nKansas City, MO 64999-0025\nNotice CP503\nNotice date December 1, 2026\nTaxpayer ID number 912-78-4521\nTo contact us 800-829-1040\nPRIYA RAGHUNATHAN\n4471 LARKSPUR AVE APT 3B\nCOLUMBUS OH 43214-2208\nSecond reminder: You have unpaid taxes\nForm 1040, U.S. Individual Income Tax Return, tax year 2025\nDescription | Amount\n------- | --------\nAmount you owed | $2,846.00\nFailure-to-pay penalty | $71.15\nInterest charges | $58.42\nPayments and credits (received November 23, 2026) | -$500.00\nAmount due by December 21, 2026 | $2,475.57\nWhat you need to do immediately\nAmount due by December 21, 2026\nWhat you need to do immediately\nPay $2,475.57 by December 21, 2026. Pay online at www.irs.gov/payments or mail a check or money order payable to “United States Treasury”.\nIf you can’t pay the full amount, set up a payment plan at www.irs.gov/paymentplan or call us at 800-829-1040.\nPenalty and interest\nCharge | Rate | Charged through | Amount\n------- | -------- | -------- | --------\nFailure-to-pay penalty (IRC 6651) | 0.5% per month | December 1, 2026 | $71.15\nUnderpayment interest (IRC 6601) | 7% per year | December 1, 2026 | $58.42\nIf you don’t pay\n1. Penalty and interest continue to increase until you pay the full amount. If you pay after December 21, 2026, the amount you owe will be higher than the amount shown above.\n2. If you don't pay or contact us, we may file a Notice of Federal Tax Lien, and we may levy (seize) your wages, bank accounts or other property to collect the balance.\n3. If you already paid your balance in full within the past 14 days, or made a payment plan, you can disregard this notice.\n4. If you think we made a mistake, call us at 800-829-1040 and have this notice and your records available.\nInternal Revenue Service • 800-829-1040 (TTY/TDD 800-829-4059) • www.irs.gov/cp503",
+   "second": "Department of the Treasury\nInternal Revenue Service\nKansas City, MO 64999-0025\nPRIYA RAGHUNATHAN\n4471 LARKSPUR AVE APT 3B\nCOLUMBUS OH 43214-2208\nNotice CP503\nNotice date December 1, 2026\nTaxpayer ID number 912-78-4521\nTo contact us 800-829-1040\nSecond reminder: You have unpaid taxes\nForm 1040, U.S. Individual Income Tax Return, tax year 2025\nDescription Amount\nAmount you owed $2,846.00\nFailure-to-pay penalty $71.15\nInterest charges $58.42\nPayments and credits (received November 23, 2026) -$500.00\nAmount due by December 21, 2026 $2,475.57\nWhat you need to do immediately\nPay $2,475.57 by December 21, 2026. Pay online at www.irs.gov/payments or mail a check or money order payable to \"United States Treasury\".\nIf you can't pay the full amount, set up a payment plan at www.irs.gov/paymentplan or call us at 800-829-1040.\nPenalty and interest\nCharge Rate Charged through Amount\nFailure-to-pay penalty (IRC 6651) 0.5% per month December 1, 2026 $71.15\nUnderpayment interest (IRC 6601) 7% per year December 1, 2026 $58.42\nIf you don’t pay\n1. Penalty and interest continue to increase until you pay the full amount. If you pay after December 21, 2026, the amount you owe will be higher than the amount shown above.\n2. If you don’t pay or contact us, we may file a Notice of Federal Tax Lien, and we may levy (seize) your wages, bank accounts or other property to collect the balance.\n3. If you already paid your balance in full within the past 14 days, or made a payment plan, you can disregard this notice.\n4. If you think we made a mistake, call at 800-829-1040 and have this notice and your records available.\nInternal Revenue Service • 800-829-1040 (TTY/TDD 800-829-4059) • www.irs.gov/cp503",
+   "items": [
+    {
+     "kind": "NAME",
+     "value": "PRIYA RAGHUNATHAN"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "4471 LARKSPUR AVE APT 3B"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "COLUMBUS OH 43214-2208"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "912-78-4521"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "CP503"
+    },
+    {
+     "kind": "PHONE",
+     "value": "800-829-1040"
+    },
+    {
+     "kind": "PHONE",
+     "value": "800-829-4059"
+    },
+    {
+     "kind": "NAME",
+     "value": "PRIYA RAGHUNATHAN"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "4471 LARKSPUR AVE APT 3B"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "COLUMBUS OH 43214-2208"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "912-78-4521"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "CP503"
+    },
+    {
+     "kind": "PHONE",
+     "value": "800-829-1040"
+    },
+    {
+     "kind": "PHONE",
+     "value": "800-829-4059"
+    }
+   ],
+   "outgoing": "Department of the Treasury\nInternal Revenue Service\nKansas City, MO [NUMBER_1]\nNotice [REFERENCE_NUMBER_1]\nNotice date December 1, 2026\nTaxpayer ID number [ID_NUMBER_1]\nTo contact us 800-829-1040\n[NAME_1]\n[ADDRESS_1]\n[ADDRESS_2]\nSecond reminder: You have unpaid taxes\nForm 1040, U.S. Individual Income Tax Return, tax year 2025\nDescription | Amount\n------- | --------\nAmount you owed | $2,846.00\nFailure-to-pay penalty | $71.15\nInterest charges | $58.42\nPayments and credits (received November 23, 2026) | -$500.00\nAmount due by December 21, 2026 | $2,475.57\nWhat you need to do immediately\nAmount due by December 21, 2026\nWhat you need to do immediately\nPay $2,475.57 by December 21, 2026. Pay online at www.irs.gov/payments or mail a check or money order payable to “United States Treasury”.\nIf you can’t pay the full amount, set up a payment plan at www.irs.gov/paymentplan or call us at 800-829-1040.\nPenalty and interest\nCharge | Rate | Charged through | Amount\n------- | -------- | -------- | --------\nFailure-to-pay penalty (IRC 6651) | 0.5% per month | December 1, 2026 | $71.15\nUnderpayment interest (IRC 6601) | 7% per year | December 1, 2026 | $58.42\nIf you don’t pay\n1. Penalty and interest continue to increase until you pay the full amount. If you pay after December 21, 2026, the amount you owe will be higher than the amount shown above.\n2. If you don't pay or contact us, we may file a Notice of Federal Tax Lien, and we may levy (seize) your wages, bank accounts or other property to collect the balance.\n3. If you already paid your balance in full within the past 14 days, or made a payment plan, you can disregard this notice.\n4. If you think we made a mistake, call us at 800-829-1040 and have this notice and your records available.\nInternal Revenue Service • 800-829-1040 (TTY/TDD 800-829-4059) • www.irs.gov/cp503",
+   "alternates": [
+    "Description Amount",
+    "Amount you owed $2,846.00",
+    "Failure-to-pay penalty $71.15",
+    "Interest charges $58.42",
+    "Payments and credits (received November 23, 2026) -$500.00",
+    "Amount due by December 21, 2026 $2,475.57",
+    "Pay $2,475.57 by December 21, 2026. Pay online at www.irs.gov/payments or mail a check or money order payable to \"United States Treasury\".",
+    "If you can't pay the full amount, set up a payment plan at www.irs.gov/paymentplan or call us at 800-829-1040.",
+    "Charge Rate Charged through Amount",
+    "Failure-to-pay penalty (IRC 6651) 0.5% per month December 1, 2026 $71.15",
+    "Underpayment interest (IRC 6601) 7% per year December 1, 2026 $58.42",
+    "2. If you don’t pay or contact us, we may file a Notice of Federal Tax Lien, and we may levy (seize) your wages, bank accounts or other property to collect the balance.",
+    "4. If you think we made a mistake, call at 800-829-1040 and have this notice and your records available."
+   ]
+  },
+  {
+   "id": "en02",
+   "split": "dev",
+   "pages": 1,
+   "readSec": 27.879700000047684,
+   "actionFirst": true,
+   "actionFinal": true,
+   "explainSec": 2.3843000000119208,
+   "checkSec": 6.487899999976158,
+   "consequenceFirst": true,
+   "consequenceFinal": true,
+   "finalDeadlineRight": true,
+   "deadlinePrinted": true,
+   "finalAmountRight": true,
+   "final": {
+    "title": "Council Tax reminder notice",
+    "steps": [
+     "Pay £184.23 by 8 December 2026 online at at www.birmingham.gov.uk/counciltax or by calling the automated phone line 0121 303 1113, quoting account reference 40112398765.",
+     "If you are on a low income, contact the council before 8 December 2026 to ask about Council Tax Support."
+    ],
+    "objection": "",
+    "deadline_iso": "2026-12-08",
+    "amount": "£184.23",
+    "if_ignored": "If you do not pay £184.23 by 8 December 2026, you will lose the right to pay by instalments and the full remaining balance of £736.92 will become due 7 days later. If you still do not pay, the council will apply to the Magistrates' Court for a liability order, adding £85.00 in court costs, and may deduct money from your wages or benefits or pass the debt to enforcement agents.",
+    "corrected": []
+   },
+   "figuresRead": [
+    true,
+    true
+   ],
+   "figuresKept": [
+    true,
+    true
+   ],
+   "idsMissedByModel": [],
+   "idsSent": [],
+   "agencyKept": [
+    true
+   ],
+   "deadlineRight": true,
+   "amountRight": true,
+   "explained": {
+    "title": "Council Tax reminder notice",
+    "steps": [
+     "Pay the overdue amount of £184.23 by 8 December 2026 online at at www.birmingham.gov.uk/counciltax or by automated phone line at 0121 303 1113, quoting account reference 40112398765."
+    ],
+    "deadline_iso": "2026-12-08",
+    "amount": "£184.23",
+    "if_ignored": "If you do not pay, you will lose the right to pay by instalments and the full remaining balance will become due. The council may also apply to the Magistrates' Court for a liability order, add £85.00 in court costs, and take further enforcement action.",
+    "corrected": []
+   },
+   "transcript": "Birmingham City Council\nCouncil Tax Service\nPO Box 4271, Birmingham B4 6WQ\nAccount reference 40112398765\nDate of notice 1 December 2026\nProperty band B\nMr Tomasz Wiśniewski\nFlat 6, 41 Calder Grove Road\nBirmingham\nB23 7QX\nCouncil Tax Reminder Notice\nLocal Government Finance Act 1992 · Financial year 2026/27\nOur records show that the instalment due on 20 November 2026 has not been paid. Please pay it within 7 days.\nAccount summary Amount\nAnnual charge 2026/27 (Band B) £2,456.40\nLess single person discount (25%) -£614.10\nNet charge for the year £1,842.30\nPaid to date -£1,105.38\nBalance remaining for the year £736.92\nOverdue now (instalment due 20 November 2026) £184.23\nAmount to pay now: £184.23\nPay by: 8 December 2026\nPay online at www.birmingham.gov.uk/counciltax or by automated phone line 0121 303 1113, quoting account reference 40112398765.\nYour remaining instalments of £184.23 are due on 20 December 2026, 20 January 2027 and 20 February 2027.\nImportant information\n1. If you do not pay the overdue amount by 8 December 2026, you will lose the right to pay by instalments and the full balance of £736.92 will become payable 7 days later.\n2. If the full balance is not paid, we will apply to the Magistrates' Court for a liability order. Court costs of £85.00 will be added to your account.\n3. A liability order allows the Council to deduct money from your wages or benefits, or to pass the debt to enforcement agents.\n4. If you are on a low income, you may be eligible for Council Tax Support. Contact us before the payment date.\nCouncil Tax enquiries: 0121 303 1113 · Monday to Friday 8.30am to 5pm · www.birmingham.gov.uk",
+   "second": "Birmingham City Council\nCouncil Tax Service\nPO Box 4271, Birmingham B4 6WQ\nAccount reference 40112398765\nDate of notice 1 December 2026\nProperty band B\nMr Tomasz Wiśniewski\nFlat 6, 41 Calder Grove Road\nBirmingham\nB23 7QX\nCouncil Tax Reminder Notice\nLocal Government Finance Act 1992 - Financial year 2026/27\nOur records show that the instalment due on 20 November 2026 has not been paid. Please pay it within 7 days.\nAccount summary Amount\nAnnual charge 2026/27 (Band B) £2,456.40\nLess single person discount (25%) -£614.10\nNet charge for the year £1,842.30\nPaid to date -£1,105.38\nBalance remaining for the year £736.92\nOverdue now (instalment due 20 November 2026) £184.23\nAmount to pay now: £184.23\nPay by: 8 December 2026\nPay online at www.birmingham.gov.uk/counciltax or by automated phone line 0121 303 1113, quoting account reference 40112398765.\nYour remaining instalments of £184.23 are due on 20 December 2026, 20 January 2027 and 20 February 2027.\nPay online at www.birmingham.gov.uk/counciltax or by automated phone line 0121 303 113, quoting account reference 40112398765.\nYour remaining instalments of £184.23 are due on 20 December 2026, 20 January 2027 and 20 February 2027.\nImportant information\n1. If you do not pay the overdue amount by 8 December 2026, you will lose the right to pay in instalments and the full balance of £736.92 will become payable 7 days later.\n2. If the full balance is not paid, we will apply to the Magistrates' Court for a liability order. Court costs of £85.00 will be added to your account.\n3. A liability order allows the Council to deduct money from your wages or benefits, or to pass the debt to enforcement agents.\n4. If you are on a low income, you may be eligible for Council Tax Support. Contact us before the payment date.\nCouncil Tax enquiries: 0121 303 1113 Monday to Friday 8.30am to 5pm www.birmingham.gov.uk",
+   "items": [
+    {
+     "kind": "NAME",
+     "value": "Tomasz Wiśniewski"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Flat 6, 41 Calder Grove Road"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Birmingham"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "B23 7QX"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "40112398765"
+    },
+    {
+     "kind": "PHONE",
+     "value": "0121 303 1113"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "0121 303 1113"
+    },
+    {
+     "kind": "NAME",
+     "value": "Mr Tomasz Wiśniewski"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Flat 6, 41 Calder Grove Road"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Birmingham"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "B23 7QX"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "40112398765"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "PO Box 4271, Birmingham B4 6WQ"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "www.birmingham.gov.uk/counciltax"
+    },
+    {
+     "kind": "PHONE",
+     "value": "0121 303 1113"
+    },
+    {
+     "kind": "PHONE",
+     "value": "0121 303 113"
+    }
+   ],
+   "outgoing": "[ADDRESS_8] City Council\nCouncil Tax Service\n[ADDRESS_4]\nAccount reference [REFERENCE_NUMBER_1]\nDate of notice 1 December 2026\nProperty band B\n[NAME_1]\n[ADDRESS_5]\n[ADDRESS_8]\n[ADDRESS_9]\nCouncil Tax Reminder Notice\nLocal Government Finance Act 1992 · Financial year 2026/27\nOur records show that the instalment due on 20 November 2026 has not been paid. Please pay it within 7 days.\nAccount summary Amount\nAnnual charge 2026/27 (Band B) £2,456.40\nLess single person discount (25%) -£614.10\nNet charge for the year £1,842.30\nPaid to date -£1,105.38\nBalance remaining for the year £736.92\nOverdue now (instalment due 20 November 2026) £184.23\nAmount to pay now: £184.23\nPay by: 8 December 2026\nPay online [ADDRESS_1] or by automated phone line 0121 303 1113, quoting account reference [REFERENCE_NUMBER_1].\nYour remaining instalments of £184.23 are due on 20 December 2026, 20 January 2027 and 20 February 2027.\nImportant information\n1. If you do not pay the overdue amount by 8 December 2026, you will lose the right to pay by instalments and the full balance of £736.92 will become payable 7 days later.\n2. If the full balance is not paid, we will apply to the Magistrates' Court for a liability order. Court costs of £85.00 will be added to your account.\n3. A liability order allows the Council to deduct money from your wages or benefits, or to pass the debt to enforcement agents.\n4. If you are on a low income, you may be eligible for Council Tax Support. Contact us before the payment date.\nCouncil Tax enquiries: 0121 303 1113 · Monday to Friday 8.30am to 5pm · www.birmingham.gov.uk",
+   "alternates": [
+    "1. If you do not pay the overdue amount by 8 December 2026, you will lose the right to pay in instalments and the full balance of £736.92 will become payable 7 days later."
+   ]
+  },
+  {
+   "id": "en03",
+   "split": "dev",
+   "pages": 1,
+   "readSec": 28.397,
+   "actionFirst": true,
+   "actionFinal": true,
+   "explainSec": 2.5235,
+   "checkSec": 6.694199999988079,
+   "consequenceFirst": true,
+   "consequenceFinal": true,
+   "finalDeadlineRight": true,
+   "deadlinePrinted": true,
+   "finalAmountRight": true,
+   "final": {
+    "title": "Request for Evidence for immigration application",
+    "steps": [
+     "Gather all four requested items: (1) Form I-693, Report of Immigration Medical Examination and Vaccination Record, completed by a designated civil surgeon and sealed in its envelope; (2) Joint sponsor's IRS tax return transcript for the most recent tax year, attached to Form I-864; (3) Certified English translation of your birth certificate, with the translator's certification; (4) Two passport-style photographs taken within 30 days of your response.",
+     "Place this notice on top of your response and mail everything together in one envelope to: USCIS National Benefits Center, P.O. Box 648005, Lee's Summit, MO 64002, so that it is received by February 22, 2027. No fee is required.",
+     "You can check your case status online at www.uscis.gov using receipt number IOE0923456781."
+    ],
+    "objection": "",
+    "deadline_iso": "2027-02-22",
+    "amount": "",
+    "if_ignored": "If you do not respond by February 22, 2027, USCIS may deny your application as abandoned, or decide it based on the evidence already in the record. If you submit only some of the requested evidence, it will be considered a request for a decision on the record.",
+    "corrected": []
+   },
+   "figuresRead": [
+    true
+   ],
+   "figuresKept": [
+    true
+   ],
+   "idsMissedByModel": [],
+   "idsSent": [],
+   "agencyKept": [
+    true,
+    true
+   ],
+   "deadlineRight": true,
+   "amountRight": true,
+   "explained": {
+    "title": "Request for Evidence for Permanent Residence Application",
+    "steps": [
+     "Obtain Form I-693, Report of Immigration Medical Examination and Vaccination Record, completed by a designated civil surgeon and sealed in its envelope.",
+     "Obtain your joint sponsor's IRS tax return transcript for the most recent tax year, attached to Form I-864.",
+     "Obtain a certified English translation of your birth certificate, with the translator’s certification.",
+     "Get two passport-style photographs taken within 30 days of your response.",
+     "Place this notice on top of your response and mail everything in one envelope by February 22, 2027 to: USCIS National Benefits Center, P.O. Box 648005, Lee’s Summit, MO 64002."
+    ],
+    "deadline_iso": "2027-02-22",
+    "amount": "",
+    "if_ignored": "If you do not respond by the due date, USCIS may deny your application as abandoned or decide it based on the evidence already in the record.",
+    "corrected": []
+   },
+   "transcript": "Department of Homeland Security\nU.S. Citizenship and Immigration Services\nNational Benefits Center\nI-797E, Notice of Action\nTHIS NOTICE DOES NOT GRANT ANY IMMIGRATION STATUS OR BENEFIT\nRequest for Evidence\nForm I-485, Application to Register Permanent Residence or Adjust Status\nReceipt number 1OE0923456781\nCase type I-485\nReceived date 11/23/2026\nApplicant NGUYEN, THI LAN\nDate of birth 07/22/1991\nAddress 2180 W GRAND AVE APT 214, CHICAGO IL 60612\nCase type I-485\nNotice date 11/30/2026\nA-number A219456873\nPage 1 of 1\nThe evidence you submitted is not sufficient to establish eligibility. Please submit the evidence listed below.\nItem Evidence requested\n1 Form I-693, Report of Immigration Medical Examination and Vaccination Record, completed by a designated civil surgeon and sealed in its envelope\n2\n2 Joint sponsor’s IRS tax return transcript for the most recent tax year, attached to Form I-864\n3 Certified English translation of your birth certificate, with the translator’s certification\n4 Two passport-style photographs taken within 30 days of your response\nYour response must be received in this office by February 22, 2027.\nPlace this notice on top of your response and mail everything in one envelope to: USCIS National Benefits Center, P.O. Box 648005, Lee’s Summit, MO 64002. No fee is required.\nInstructions\n1. Submit all requested evidence at the same time. If you submit only some of it, we will consider it a request for a decision on the record.\n2. If you do not respond by the due date, we may deny your application as abandoned, or decide it based on the evidence already in the record.\n3. The due date cannot be extended. Allow enough time for mailing.\n4. Copies are acceptable unless an original document is requested. Do not send original passports.\n5. You can check your case status online at www.uscis.gov using receipt number IOE0923456781.\nUSCIS Contact Center: 800-375-5283 (TTY 800-767-1833) · www.uscis.gov/contactcenter",
+   "second": "Department of Homeland Security\nU.S. Citizenship and Immigration Services\nNational Benefits Center\nI-797E, Notice of Action\nTHIS NOTICE DOES NOT GRANT ANY IMMIGRATION STATUS OR BENEFIT\nRequest for Evidence\nForm I-485, Application to Register Permanent Residence or Adjust Status\nReceipt number \nIOE0923456781\nCase type \nI-485\nReceived date \n11/23/2026\nNotice date \n11/30/2026\nApplicant \nNGUYEN, THI LAN\nA-number \nA219456873\nDate of birth \n07/22/1991\nPage \n1 of 1\nAddress \n2180 W GRAND AVE APT 214, CHICAGO IL 60612\nApplicant\nNGUYEN, THI LAN\nA-number\nA219456873\nDate of birth\n07/22/1991\nAge\n1 of 1\nAddress\n2180 W GRAND AVE APT 214, CHICAGO IL 60612\nThe evidence you submitted is not sufficient to establish eligibility. Please submit the evidence listed below.\nItem Evidence requested\n1 Form I-693, Report of Immigration Medical Examination and Vaccination Record, completed by a designated civil surgeon and sealed in its envelope\n2 Joint sponsor's IRS tax return transcript for the most recent tax year, attached to Form I-864\n3 Certified English translation of your birth certificate, with the translator's certification\n4 Two passport-style photographs taken within 30 days of your response\nYour response must be received in this office by February 22, 2027.\nPlace this notice on top of your response and mail everything in one envelope to: USCIS National Benefits Center, P.O. Box 648005, Lee's Summit, MO 64002. No fee is required.\nInstructions\n1. Submit all requested evidence at the same time. If you submit only some of it, we will consider it a request for a decision on the record.\n2. If you do not respond by the due date, we may deny your application as abandoned, or decide it based on the evidence already in the record.\n3. The due date cannot be extended. Allow enough time for mailing.\n4. Copies are acceptable unless an original document is requested. Do not send original passports.\n5. You can check your case status online at www.uscis.gov using receipt number IOE0923456781.\nUSCIS Contact Center: 800-375-5283 (TTY 800-767-1833) • www.uscis.gov/contactcenter",
+   "items": [
+    {
+     "kind": "NAME",
+     "value": "NGUYEN, THI LAN"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "1OE0923456781"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "A219456873"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "2180 W GRAND AVE APT 214, CHICAGO IL 60612"
+    },
+    {
+     "kind": "BIRTH_DATE",
+     "value": "07/22/1991"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "I-485"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "I-485"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "1OE0923456781"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "IOE0923456781"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "USCIS Contact Center: 800-375-5283 (TTY 800-767-1833) · www.uscis.gov/contactcenter"
+    },
+    {
+     "kind": "NAME",
+     "value": "NGUYEN, THI LAN"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "IOE0923456781"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "A219456873"
+    },
+    {
+     "kind": "BIRTH_DATE",
+     "value": "07/22/1991"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "2180 W GRAND AVE APT 214, CHICAGO IL 60612"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "USCIS Contact Center: 800-375-5283 (TTY 800-767-1833) • www.uscis.gov/contactcenter"
+    }
+   ],
+   "outgoing": "Department of Homeland Security\nU.S. Citizenship and Immigration Services\nNational Benefits Center\nI-797E, Notice of Action\nTHIS NOTICE DOES NOT GRANT ANY IMMIGRATION STATUS OR BENEFIT\nRequest for Evidence\nForm [REFERENCE_NUMBER_3], Application to Register Permanent Residence or Adjust Status\nReceipt number [ID_NUMBER_1]\nCase type [REFERENCE_NUMBER_3]\nReceived date 11/23/2026\nApplicant [NAME_1]\nDate of birth [BIRTH_DATE_1]\n[ADDRESS_1] 60612\nCase type [REFERENCE_NUMBER_3]\nNotice date 11/30/2026\nA-number [REFERENCE_NUMBER_2]\nPage 1 of 1\nThe evidence you submitted is not sufficient to establish eligibility. Please submit the evidence listed below.\nItem Evidence requested\n1 Form I-693, Report of Immigration Medical Examination and Vaccination Record, completed by a designated civil surgeon and sealed in its envelope\n2\n2 Joint sponsor’s IRS tax return transcript for the most recent tax year, attached to Form I-864\n3 Certified English translation of your birth certificate, with the translator’s certification\n4 Two passport-style photographs taken within 30 days of your response\nYour response must be received in this office by February 22, 2027.\nPlace this notice on top of your response and mail everything in one envelope to: USCIS National Benefits Center, P.O. Box 648005, Lee’s Summit, MO 64002. No fee is required.\nInstructions\n1. Submit all requested evidence at the same time. If you submit only some of it, we will consider it a request for a decision on the record.\n2. If you do not respond by the due date, we may deny your application as abandoned, or decide it based on the evidence already in the record.\n3. The due date cannot be extended. Allow enough time for mailing.\n4. Copies are acceptable unless an original document is requested. Do not send original passports.\n5. You can check your case status online at www.uscis.gov using receipt number [REFERENCE_NUMBER_1].\nUSCIS Contact Center: 800-375-5283 (TTY 800-767-1833) · www.uscis.gov/contactcenter",
+   "alternates": [
+    "Received date ",
+    "11/23/2026",
+    "Notice date ",
+    "11/30/2026",
+    "Page ",
+    "1 of 1",
+    "Address ",
+    "Age",
+    "1 of 1",
+    "Address",
+    "2 Joint sponsor's IRS tax return transcript for the most recent tax year, attached to Form I-864",
+    "3 Certified English translation of your birth certificate, with the translator's certification",
+    "Place this notice on top of your response and mail everything in one envelope to: USCIS National Benefits Center, P.O. Box 648005, Lee's Summit, MO 64002. No fee is required.",
+    "USCIS Contact Center: 800-375-5283 (TTY 800-767-1833) • www.uscis.gov/contactcenter"
+   ]
+  },
+  {
+   "id": "es01",
+   "split": "dev",
+   "pages": 1,
+   "readSec": 33.18769999998808,
+   "actionFirst": true,
+   "actionFinal": true,
+   "explainSec": 2.676600000023842,
+   "checkSec": 8.61769999998808,
+   "consequenceFirst": true,
+   "consequenceFinal": true,
+   "finalDeadlineRight": true,
+   "deadlinePrinted": true,
+   "finalAmountRight": true,
+   "final": {
+    "title": "Overdue income tax enforcement notice",
+    "steps": [
+     "Pay 1.386,00 € by December 21, 2026.",
+     "Make the payment at a partner bank (entidad colaboradora) or online at sede.agenciatributaria.gob.es using receipt number 0021 2026 6017 4288.",
+     "If you cannot pay in full, you may request a deferral or instalment plan before December 21, 2026."
+    ],
+    "objection": "You can file a motion for reconsideration (recurso de reposición) or an economic-administrative claim within one month from the day after you receive this notice, only on the legal grounds in article 167.3 of the General Tax Law (LGT).",
+    "deadline_iso": "2026-12-21",
+    "amount": "1.386,00 €",
+    "if_ignored": "If you do not pay by the deadline, the tax agency will seize your assets and rights, and the surcharge will increase to the ordinary 20% rate (1.512,00 €) plus late-payment interest.",
+    "corrected": []
+   },
+   "figuresRead": [
+    true,
+    true
+   ],
+   "figuresKept": [
+    true,
+    true
+   ],
+   "idsMissedByModel": [],
+   "idsSent": [],
+   "agencyKept": [
+    true,
+    true
+   ],
+   "deadlineRight": true,
+   "amountRight": true,
+   "explained": {
+    "title": "Tax enforcement order for unpaid income tax",
+    "steps": [
+     "Pay the amount of 1.386,00 € at a collaborating bank or on sede.agencia tributaria.gob.es using the justification number 0021 2026 6017 4288 by December 21, 2026."
+    ],
+    "deadline_iso": "2026-12-21",
+    "amount": "1.386,00 €",
+    "if_ignored": "Your assets and rights will be seized, and a 20% ordinary enforcement surcharge plus late payment interest will be charged.",
+    "corrected": []
+   },
+   "transcript": "Agencia Tributaria\nDelegación Especial de Madrid · Dependencia Regional de Recaudación\nC/ Guzmán el Bueno, 139 · 28003 Madrid\nFecha: 1 de diciembre de 2026\nExpediente: 282640026117395\nNo de justificante: 0021 2026 6017 4288\nProvidencia de apremio\nNotificación de providencia de apremio (art. 167 de la Ley 58/2003, General Tributaria)\nObligado al pago\nEL AMRANI, YOUSSEF\nNIF\nX4829317F\nDomicilio fiscal\nDomicilio fiscal Calle de la Oca 47, 39 B, 28025 Madrid\nFinalizado el periodo voluntario sin que haya ingresado la deuda que se detalla, se dicta providencia de apremio y se liquida el recargo del periodo ejecutivo.\nConcepto IRPF 2024 · Liquidación provisional A2860026056001742 20/11/2026 1.260,00 €\nClave de liquidación Fin periodo voluntario Principal\nRecargos del periodo ejecutivo\nSupuesto Recargo Importe recargo Total\nEjecutivo: Ingreso antes de esta notificación 5% 63,00 € 1.323,00 €\nApremio reducido: ingreso en el plazo de 10% 126,00 € 1.386,00 €\nEjecutivo: ingreso antes de esta notificación\n5 %\n63,00 €\n1.323,00 €\nApremio reducido: ingreso en el plazo de esta providencia\n10 %\n126,00 €\n1.386,00 €\nApremio ordinario: ingreso fuera de plazo\n20 %\n252,00 €\n1.512,00 € + intereses\nImporte a ingresar: 1.386,00 €\nPlazo de ingreso: hasta el 21 de diciembre de 2026\nIngreso en entidad colaboradora o en sede.agencia tributaria.gob.es con el justificante 0021 2026 6017 4288.\nAdvertencias\n1. Plazo (Art. 62.5 LGT): notificada entre los días 1 y 15, hasta el día 20 del mismo mes (o el siguiente hábil); entre el 16 y fin de mes, hasta el día 5 del segundo mes posterior.\n2. Si no ingresa en plazo, se procederá al embargo de que dispone...\n2. Si no ingresa en plazo, se procederá al embargo de sus bienes y derechos y se exigirá el recargo de apremio ordinario del 20 % más los intereses de demora.\n3. Contra esta providencia cabe recurso de reposición o reclamación económico-administrativa en el plazo de un mes desde el día siguiente a su notificación, solo por los motivos del artículo 167.3 LGT.\n4. Puede solicitar el aplazamiento o fraccionamiento de la deuda antes de que finalice el plazo de ingreso.\nInformación: 91 554 87 70 · 901 33 55 33 · Lunes a viernes de 9:00 a 19:00 · CSV: 7KQZ M2QP 4R1T X6WD",
+   "second": "Agencia Tributaria\nDelegación Especial de Madrid · Dependencia Regional de Recaudación\nC/ Guzmán el Bueno, 139 · 28003 Madrid\nFecha: 1 de diciembre de 2026\nExpediente: 28264002617395\n No de justificante: 0021 2026 6017 4288\nProvidencia de apremio\nNotificación de providencia de apremio (art. 167 de la Ley 58/2003, General Tributaria)\nObligado al pago\nEL AMRANI, YOUSSEF\nDomicilio fiscal\nCalle de la Oca 47, 39 B, 28025 Madrid\nNIF\nX4829317F\nFinalizado el período voluntario sin que se haya ingresado la deuda que se detalla, se dicta providencia de apremio y se liquida el recargo del período ejecutivo.\nConcepto\nClave de liquidación\nFin período voluntario\nPrincipal\nIRPF 2024 · Liquidación provisional\nA2860026506001742\n20/11/2026\n1.260,00 €\nRecargos del periodo ejecutivo\nSupuesto\nRecargo\nImporte recargo\nTotal\nEjecutivo: ingreso antes de esta notificación\n5 %\n63,00 €\n1.323,00 €\nApremio reducido: ingreso en el plazo de esta providencia\n10 %\n126,00 €\n1.386,00 €\nApremio ordinario: ingreso fuera de plazo\n20 %\n252,00 €\n1.512,00 € + intereses\nImporte a ingresar: 1.386,00 €\nPlazo de ingreso: hasta el 21 de diciembre de 2026\nIngreso en entidad colaboradora o en sede.agenciatributaria.gob.es con el justificante 0021 2026 6017 4288.\nAdvertencias\n1. Plazo (art. 62.5 LGT): notificada entre los días 1 y 15, hasta el día 20 del mismo mes (o el siguiente hábil); entre el 16 y fin de mes, hasta el día 5 del segundo mes posterior.\n2. Si no ingresa en plazo, se procederá al embargo de sus bienes y derechos y se exigirá el recargo de apremio ordinario del 20 % más los intereses de demora.\n3. Contra esta providencia cabe recurso de reposición o reclamación economico-administrativa en el plazo de un mes desde el día siguiente a su notificación, solo por los motivos del artículo 167.3 LGT.\n4. Puede solicitar el aplazamiento o fraccionamiento de la deuda antes de que finalice el plazo de ingreso.\nInformación: 91 554 87 70 · 901 33 55 33 · Lunes a viernes de 9:00 a 19:00 · CSV: 7KQ2 M29P 4R1T X6WD",
+   "items": [
+    {
+     "kind": "NAME",
+     "value": "YOUSSEF EL AMRANI"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "X4829317F"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "282640026117395"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "0021 2026 6017 4288"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Calle de la Oca 47, 39 B, 28025 Madrid"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "C/ Guzmán el Bueno, 139 · 28003 Madrid"
+    },
+    {
+     "kind": "PHONE",
+     "value": "91 554 87 70"
+    },
+    {
+     "kind": "PHONE",
+     "value": "901 33 55 33"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "CSV: 7KQZ M2QP 4R1T X6WD"
+    },
+    {
+     "kind": "NAME",
+     "value": "EL AMRANI, YOUSSEF"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Calle de la Oca 47, 39 B, 28025 Madrid"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "X4829317F"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "28264002617395"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "0021 2026 6017 4288"
+    },
+    {
+     "kind": "PHONE",
+     "value": "91 554 87 70"
+    },
+    {
+     "kind": "PHONE",
+     "value": "901 33 55 33"
+    }
+   ],
+   "outgoing": "Agencia Tributaria\nDelegación Especial de Madrid · Dependencia Regional de Recaudación\n[ADDRESS_2]\nFecha: 1 de diciembre de 2026\nExpediente: [REFERENCE_NUMBER_2]\nNo de justificante: [REFERENCE_NUMBER_1]\nProvidencia de apremio\nNotificación de providencia de apremio (art. 167 de la Ley 58/2003, General Tributaria)\nObligado al pago\n[NAME_1]\nNIF\n[ID_NUMBER_1]\nDomicilio fiscal\nDomicilio fiscal [ADDRESS_1]\nFinalizado el periodo voluntario sin que haya ingresado la deuda que se detalla, se dicta providencia de apremio y se liquida el recargo del periodo ejecutivo.\nConcepto IRPF 2024 · Liquidación provisional A2860026056001742 20/11/2026 1.260,00 €\nClave de liquidación Fin periodo voluntario Principal\nRecargos del periodo ejecutivo\nSupuesto Recargo Importe recargo Total\nEjecutivo: Ingreso antes de esta notificación 5% 63,00 € 1.323,00 €\nApremio reducido: ingreso en el plazo de 10% 126,00 € 1.386,00 €\nEjecutivo: ingreso antes de esta notificación\n5 %\n63,00 €\n1.323,00 €\nApremio reducido: ingreso en el plazo de esta providencia\n10 %\n126,00 €\n1.386,00 €\nApremio ordinario: ingreso fuera de plazo\n20 %\n252,00 €\n1.512,00 € + intereses\nImporte a ingresar: 1.386,00 €\nPlazo de ingreso: hasta el 21 de diciembre de 2026\nIngreso en entidad colaboradora o en sede.agencia tributaria.gob.es con el justificante [REFERENCE_NUMBER_1].\nAdvertencias\n1. Plazo (Art. 62.5 LGT): notificada entre los días 1 y 15, hasta el día 20 del mismo mes (o el siguiente hábil); entre el 16 y fin de mes, hasta el día 5 del segundo mes posterior.\n2. Si no ingresa en plazo, se procederá al embargo de que dispone...\n2. Si no ingresa en plazo, se procederá al embargo de sus bienes y derechos y se exigirá el recargo de apremio ordinario del 20 % más los intereses de demora.\n3. Contra esta providencia cabe recurso de reposición o reclamación económico-administrativa en el plazo de un mes desde el día siguiente a su notificación, solo por los motivos del artículo 167.3 LGT.\n4. Puede solicitar el aplazamiento o fraccionamiento de la deuda antes de que finalice el plazo de ingreso.\nInformación: 91 554 87 70 · 901 33 55 33 · Lunes a viernes de 9:00 a 19:00 · CSV: 7KQZ M2QP 4R1T X6WD",
+   "alternates": [
+    "Finalizado el período voluntario sin que se haya ingresado la deuda que se detalla, se dicta providencia de apremio y se liquida el recargo del período ejecutivo.",
+    "Concepto",
+    "Clave de liquidación",
+    "Fin período voluntario",
+    "Principal",
+    "IRPF 2024 · Liquidación provisional",
+    "20/11/2026",
+    "1.260,00 €",
+    "Supuesto",
+    "Recargo",
+    "Importe recargo",
+    "Total",
+    "1. Plazo (art. 62.5 LGT): notificada entre los días 1 y 15, hasta el día 20 del mismo mes (o el siguiente hábil); entre el 16 y fin de mes, hasta el día 5 del segundo mes posterior.",
+    "3. Contra esta providencia cabe recurso de reposición o reclamación economico-administrativa en el plazo de un mes desde el día siguiente a su notificación, solo por los motivos del artículo 167.3 LGT.",
+    "Información: 91 554 87 70 · 901 33 55 33 · Lunes a viernes de 9:00 a 19:00 · CSV: 7KQ2 M29P 4R1T X6WD"
+   ]
+  },
+  {
+   "id": "es02",
+   "split": "dev",
+   "pages": 1,
+   "readSec": 29.27219999998808,
+   "actionFirst": true,
+   "actionFinal": true,
+   "explainSec": 2.565300000011921,
+   "checkSec": 8.085,
+   "consequenceFirst": true,
+   "consequenceFinal": true,
+   "finalDeadlineRight": true,
+   "deadlinePrinted": true,
+   "finalAmountRight": true,
+   "final": {
+    "title": "Urban property tax payment notice",
+    "steps": [
+     "Pay 771,36 € between December 1, 2026 and February 1, 2027 at partner banks using Emisora 0461250, Referencia 0738215064, and Identificación 1026, or through the municipal online portal (sede electrónica municipal).",
+     "If you cannot pay the full amount at once, request a personalized payment plan before February 1, 2027.",
+     "Optionally, set up direct debit for future tax years by March 31, 2027 to get the discount provided in the tax ordinance."
+    ],
+    "objection": "You can file an appeal for reconsideration (recurso de reposición) with the Mayor's Office (Alcaldía) within one month from the day after the public display period of the tax roll (padrón) ends.",
+    "deadline_iso": "2027-02-01",
+    "amount": "771,36 €",
+    "if_ignored": "If you do not pay by February 1, 2027, the debt will move to enforcement (periodo ejecutivo) with a surcharge of 5%, 10%, or 20% depending on when you pay, plus late-payment interest and any collection costs.",
+    "corrected": []
+   },
+   "figuresRead": [
+    true,
+    true
+   ],
+   "figuresKept": [
+    true,
+    true
+   ],
+   "idsMissedByModel": [
+    "HOLLOWAY, MARGARET ELLEN"
+   ],
+   "idsSent": [],
+   "agencyKept": [
+    true,
+    true
+   ],
+   "deadlineRight": true,
+   "amountRight": true,
+   "explained": {
+    "title": "Property tax payment notice",
+    "steps": [
+     "Pay the amount of 771,36 € using Emisora 0461250, Referencia 0738215064, and Identificación 1026 at a collaborating bank, or online via the municipal electronic office, by February 1, 2027."
+    ],
+    "deadline_iso": "2027-02-01",
+    "amount": "771,36 €",
+    "if_ignored": "The debt will be demanded in the executive period with a surcharge of 5%, 10%, or 20% depending on when you pay, plus late-payment interest and costs.",
+    "corrected": []
+   },
+   "transcript": "Ayuntamiento de Valencia\nServicio de Gestión Tributaria Integral, Recaudación e Inspección\nPlaza del Ayuntamiento, 1 · 46002 Valencia\nEjercicio 2026\nNo de recibo: 2026/IBI/0738215\nFecha de emisión: 20/11/2026\nImpuesto sobre Bienes Inmuebles\nAviso de pago en periodo voluntario · Bienes de naturaleza urbana\nTitular\nHOLLOWAY, MARGARET ELLEN\nDomicilio fiscal\nCalle de Cuba 38. Esc. 2. Pte. 11. 46002 Valencia\nNIF Y2741586T\nCalle de Cuba 38, Esc. 2, Pta. 11, 46006 Valencia\nRef. catastral\n5821304YJ2752A0011PK\nLiquidación\nConcepto\nValor catastral del suelo\nValor catastral de la construcción\nBase imponible (valor catastral total)\nTipo de gravamen\nCuota íntegra\nNIF\nY2741586T\nUso\nResidencial\nCuota líquida (importe del recibo)\nImporte a pagar: 771,36 €\nPeriodo voluntario de pago: del 1 de diciembre de 2026 al 1 de febrero de 2027\nDatos para el pago en entidades colaboradoras: Emisora 0461250 · Referencia 0738215064 · Identificación 1026 · También en la sede electrónica municipal.\nInformación\n1. Transcurrido el periodo voluntario sin realizar el pago, la deuda se exigirá en periodo ejecutivo con el recargo del 5%, del 10 % o del 20 % según el momento del pago (art. 28 de la Ley General Tributaria), más los intereses de demora y, en su caso, las costas.\n2. Puede domiciliar el recibo de los próximos ejercicios hasta el 31 de marzo de 2027: la domiciliación da derecho a la bonificación prevista en la Ordenanza fiscal.\nmás los intereses de demora y, en su caso, las costas.\n2. Puede domiciliar el recibo de los próximos ejercicios hasta el 31 de marzo de 2027: la domiciliación da derecho a la bonificación prevista en la Ordenanza fiscal.\n3. Contra la liquidación puede interponer recurso de reposición ante la Alcaldía en el plazo de un mes desde el día siguiente a la finalización del periodo de exposición pública del padrón.\n4. Si no puede pagar el importe de una vez, puede solicitar un plan personalizado de pagos antes del fin del periodo voluntario.\nInformación tributaria: 010 (desde Valencia) 96 352 54 78 · Lunes a viernes, 8:30 a 14:30",
+   "second": "Ayuntamiento de Valencia\nServicio de Gestión Tributaria Integral, Recaudación e Inspección\nPlaza del Ayuntamiento, 1 · 46002 Valencia\nEjercicio 2026\nNo de recibo: 2026/IBI/0738215\nFecha de emisión: 20/11/2026\nImpuesto sobre Bienes Inmuebles\nAviso de pago en periodo voluntario · Bienes de naturaleza urbana\nTitular\nHOLLOWAY, MARGARET ELLEN\nNIF Y2741586T\nDomicilio fiscal\nCalle de Cuba 38, Esc. 2, Pta. 11, 46006 Valencia\nRef. catastral\n5821304YJ2752A0011PK\nUso Residencial\nLiquidación\nConcepto Importe\nValor catastral del suelo 41.210,00 €\nValor catastral de la construcción 57.430,00 €\nBase imponible (valor catastral total) 98.640,00 €\nTipo de gravamen 0,7820 %\nCuota íntegra 771,36 €\nCuota líquida (importe del recibo) 771,36 €\nImporte a pagar: 771,36 €\nPeriodo voluntario de pago: del 1 de diciembre de 2026 al 1 de febrero de 2027\nDatos para el pago en entidades colaboradoras: Emisora 0461250 · Referencia 0738215064 · Identificación 1026 · También en la sede electrónica municipal.\nInformación\n1. Transcurrido el periodo voluntario sin realizar el pago, la deuda se exigirá en periodo siguiente\n0738215064 · Identificación 1026 · También en la sede electrónica municipal.\nInformación\n1. Transcurrido el periodo voluntario sin realizar el pago, la deuda se exigirá en periodo ejecutivo con el recargo del 5%, del 10% o del 20 % según el momento del pago (art. 28 de la Ley General Tributaria), más los intereses de demora y, en su caso, las costas.\n2. Puede domiciliar el recibo de los próximos ejercicios hasta el 31 de marzo de 2027: la domiciliación da derecho a la bonificación prevista en la Ordenanza fiscal.\n3. Contra la liquidación puede interponer recurso de reposición ante la Alcaldía en el plazo de un mes desde el día siguiente a la finalización del período de exposición pública del padrón.\n4. Si no puede pagar el importe de una vez, puede solicitar un plan personalizado de pagos antes del fin del periodo voluntario.\nInformación tributaria: 010 (desde Valencia · 96 352 54 78 · Lunes a viernes, 8:30 a 14:30",
+   "items": [
+    {
+     "kind": "NAME",
+     "value": "MARGARET ELLEN HOLLOWAY"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Calle de Cuba 38. Esc. 2. Pte. 11. 46002 Valencia"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Calle de Cuba 38, Esc. 2, Pta. 11, 46006 Valencia"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "2026/IBI/0738215"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "5821304YJ2752A0011PK"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "Y2741586T"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "010 (desde Valencia) 96 352 54 78"
+    },
+    {
+     "kind": "NAME",
+     "value": "MARGARET ELLEN HOLLOWAY"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "Y2741586T"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "2026/IBI/0738215"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "5821304YJ2752A0011PK"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "0738215064"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "1026"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Calle de Cuba 38, Esc. 2, Pta. 11, 46006 Valencia"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Plaza del Ayuntamiento, 1 · 46002 Valencia"
+    },
+    {
+     "kind": "PHONE",
+     "value": "010 (desde Valencia · 96 352 54 78 · Lunes a viernes, 8:30 a 14:30"
+    }
+   ],
+   "outgoing": "Ayuntamiento de Valencia\nServicio de Gestión Tributaria Integral, Recaudación e Inspección\n[ADDRESS_3]\nEjercicio 2026\nNo de recibo: [REFERENCE_NUMBER_2]\nFecha de emisión: 20/11/2026\nImpuesto sobre Bienes Inmuebles\nAviso de pago en periodo voluntario · Bienes de naturaleza urbana\nTitular\n[NAME_1]\nDomicilio fiscal\n[ADDRESS_1]\nNIF [ID_NUMBER_1]\n[ADDRESS_2]\nRef. catastral\n[REFERENCE_NUMBER_1]\nLiquidación\nConcepto\nValor catastral del suelo\nValor catastral de la construcción\nBase imponible (valor catastral total)\nTipo de gravamen\nCuota íntegra\nNIF\n[ID_NUMBER_1]\nUso\nResidencial\nCuota líquida (importe del recibo)\nImporte a pagar: 771,36 €\nPeriodo voluntario de pago: del 1 de diciembre de 2026 al 1 de febrero de 2027\nDatos para el pago en entidades colaboradoras: Emisora [NUMBER_1] · Referencia [REFERENCE_NUMBER_3] · Identificación [REFERENCE_NUMBER_4] · También en la sede electrónica municipal.\nInformación\n1. Transcurrido el periodo voluntario sin realizar el pago, la deuda se exigirá en periodo ejecutivo con el recargo del 5%, del 10 % o del 20 % según el momento del pago (art. 28 de la Ley General Tributaria), más los intereses de demora y, en su caso, las costas.\n2. Puede domiciliar el recibo de los próximos ejercicios hasta el 31 de marzo de 2027: la domiciliación da derecho a la bonificación prevista en la Ordenanza fiscal.\nmás los intereses de demora y, en su caso, las costas.\n2. Puede domiciliar el recibo de los próximos ejercicios hasta el 31 de marzo de 2027: la domiciliación da derecho a la bonificación prevista en la Ordenanza fiscal.\n3. Contra la liquidación puede interponer recurso de reposición ante la Alcaldía en el plazo de un mes desde el día siguiente a la finalización del periodo de exposición pública del padrón.\n4. Si no puede pagar el importe de una vez, puede solicitar un plan personalizado de pagos antes del fin del periodo voluntario.\nInformación tributaria: 010 (desde Valencia) 96 352 54 78 · Lunes a viernes, 8:30 a 14:30",
+   "alternates": [
+    "Uso Residencial",
+    "Concepto Importe",
+    "Valor catastral del suelo 41.210,00 €",
+    "Valor catastral de la construcción 57.430,00 €",
+    "Base imponible (valor catastral total) 98.640,00 €",
+    "Tipo de gravamen 0,7820 %",
+    "Cuota íntegra 771,36 €",
+    "Cuota líquida (importe del recibo) 771,36 €",
+    "1. Transcurrido el periodo voluntario sin realizar el pago, la deuda se exigirá en periodo siguiente",
+    "3. Contra la liquidación puede interponer recurso de reposición ante la Alcaldía en el plazo de un mes desde el día siguiente a la finalización del período de exposición pública del padrón.",
+    "Información tributaria: [PHONE_1]"
+   ]
+  },
+  {
+   "id": "es03",
+   "split": "dev",
+   "pages": 1,
+   "readSec": 32.03610000002384,
+   "actionFirst": true,
+   "actionFinal": true,
+   "explainSec": 2.1930999999642373,
+   "checkSec": 6.8311000000238415,
+   "consequenceFirst": true,
+   "consequenceFinal": true,
+   "finalDeadlineRight": true,
+   "deadlinePrinted": true,
+   "finalAmountRight": true,
+   "final": {
+    "title": "Request for missing residence renewal documents",
+    "steps": [
+     "Gather a full copy of your valid passport (all pages, because only the data page was submitted).",
+     "Gather a valid employment contract signed by both parties (the contract submitted expired on 30/11/2026).",
+     "Gather your last three payslips (none are on file).",
+     "Gather proof of schooling for your minor children, if they live in Spain.",
+     "Make sure any documents issued abroad are legalized or apostilled and, if necessary, translated into Spanish or Catalan.",
+     "Submit all documents by December 28, 2026, through the electronic headquarters of the Secretaría de Estado de Migraciones or at any public registry, quoting file number 080020260048731. Do not pay any additional fee."
+    ],
+    "objection": "",
+    "deadline_iso": "2026-12-28",
+    "amount": "",
+    "if_ignored": "If you do not submit the documents by the deadline, your application will be considered withdrawn and your file will be closed.",
+    "corrected": []
+   },
+   "figuresRead": [
+    true
+   ],
+   "figuresKept": [
+    true
+   ],
+   "idsMissedByModel": [],
+   "idsSent": [],
+   "agencyKept": [
+    true,
+    true
+   ],
+   "deadlineRight": true,
+   "amountRight": true,
+   "explained": {
+    "title": "Request for documents for residence renewal",
+    "steps": [
+     "Provide a complete copy of your valid passport containing all pages, as only the data page was provided.",
+     "Provide a current employment contract signed by both parties, as the submitted contract expired on 30/11/2026.",
+     "Provide your last three payslips, as they are not in the file.",
+     "Provide proof of schooling for minor children if they reside in Spain.",
+     "Submit these documents through the electronic office of the Secretary of State for Migrations or at any public registry within ten working days, and include file number 080020260048731."
+    ],
+    "deadline_iso": "2026-12-28",
+    "amount": "",
+    "if_ignored": "If you do not provide the documents within the deadline, you will be considered to have withdrawn your request and the file will be archived after a resolution.",
+    "corrected": []
+   },
+   "transcript": "Subdelegación del Gobierno en Barcelona\nOficina de Extranjería\nC/ Murcia, 42 - 08027 Barcelona\nNo de expediente: 080020260048731\nFecha: 11 de diciembre de 2026\nRegistro de salida: 2026/118402\nRequerimiento de documentación\nRenovación de autorización de residencia temporal y trabajo por cuenta ajena\nInteresada KOTALENKO, OKSANA\nNacimiento 14/03/1991 (Ucrania)\nNIE Y7364158D\nNacimiento 14/03/1991 (Ucrania) NIE Y7364158D\nDomicilio Carrer de Sant Antoni Maria Claret 214, 49 2o, 08041 Barcelona Teléfono 642 318 905\nDatos de la solicitud Fecha de presentación 23/11/2026 Registro de entrada REGAGE26e00041528837\nCaducidad de la autorización 21/12/2026 Tasa 790 cód. 052 16,08 € (abonada)\nExaminada su solicitud, y conforme al artículo 68 de la Ley 39/2015, se le requiere para que aporte:\nDocumento Motivo\nCopia completa del pasaporte en vigor (todas las páginas) Solo se aportó la página de datos\nContrato de trabajo vigente firmado por el\nTres últimas nóminas\nJustificante de escolarización de los hijos menores\nPlazo: diez días hábiles, que vence el 28 de diciembre de 2026\nPresente los documentos en la sede electrónica de la Secretaría de Estado de Migraciones o en cualquier registro público, indicando el número de expediente 080020260048731. No debe pagar ninguna tasa adicional.\nAdvertencias\nSolo se aportó la página de datos\nEl contrato aportado venció el 30/11/2026\nNo consta en el expediente\nObligatorio si residen en España\n1. Si no aporta la documentación dentro del plazo, se le tendrá por desistida de su solicitud y se archivará el expediente\n1. Si no aporta la documentación dentro del plazo, se le tendrá por desistida de su solicitud y se archivará el expediente previa resolución (art. 68.1 de la Ley 39/2015).\n2. Mientras se tramita la solicitud presentada en plazo, la autorización anterior se entiende prorrogada hasta la resolución del procedimiento.\n3. Los documentos expedidos en el extranjero deben estar legalizados o apostillados y, en su caso, traducidos al castellano o al catalán.\nInformación: 060 - 93 520 14 10 - Lunes a viernes de 9:00 a 14:00",
+   "second": "Subdelegación del Gobierno en Barcelona\nOficina de Extranjería\nC/ Murcia, 42 - 08027 Barcelona\nNo de expediente: 080020260048731\nFecha: 11 de diciembre de 2026\nRegistro de salida: 2026/118402\nRequerimiento de documentación\nRenovación de autorización de residencia temporal y trabajo por cuenta ajena\nInteresada KOVALENKO, OKSANA\nNacimiento 14/03/1991 (Ucrania)\nDomicilio Carrer de Sant Antoni Maria Claret 214, 49 2a, 08041 Barcelona\nNIE Y7364158D\nTeléfono 642 318 905\nDatos de la solicitud\nFecha de presentación\nDomicilio\nCarrer de Sant Antoni Maria Claret 214, 49 2a, 08041 Barcelona\nDatos de la solicitud\nFecha de presentación 23/11/2026 Registro de entrada REGAGE26e00041528837\nCaducidad de la autorización 21/12/2026 Tasa 790 cód. 052 16,08 € (abonada)\nExaminada su solicitud, y conforme al artículo 68 de la Ley 39/2015, se le requiere para que aporte:\nDocumento Motivo\nCopia completa del pasaporte en vigor (todas las páginas) Solo se aportó la página de datos\nContrato de trabajo vigente firmado por ambas partes El contrato aportado venció el 30/11/2026\nTres últimas nóminas No consta en el expediente\nJustificante de escolarización de los hijos menores Obligatorio si residen en España\nPlazo: diez días hábiles, que vence el 28 de diciembre de 2026\nPresente los documentos en la sede electrónica de la Secretaría de Estado de Migraciones o en cualquier registro público, indicando el número de expediente 080020260048731. No debe pagar ninguna tasa adicional\nAdvertencias\n1. Si no aporta la documentación dentro del plazo, se le tendrá por desistida de su solicitud y se archivará el expediente previa resolución (art. 68.1 de la Ley 39/2015).\n2. Mientras se tramita la solicitud presentada en plazo, la autorización anterior se entiende prorrogada hasta la resolución del procedimiento.\n3. Los documentos expedidos en el extranjero deben estar legalizados o apostillados y, en su caso, traducidos al castellano o al catalán.\nInformación: 060 - 93 520 14 10 - Lunes a viernes de 9:00 a 14:00",
+   "items": [
+    {
+     "kind": "NAME",
+     "value": "KOTALENKO, OKSANA"
+    },
+    {
+     "kind": "BIRTH_DATE",
+     "value": "14/03/1991"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "Y7364158D"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Carrer de Sant Antoni Maria Claret 214, 49 2o, 08041 Barcelona"
+    },
+    {
+     "kind": "PHONE",
+     "value": "642 318 905"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "080020260048731"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "2026/118402"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "REGAGE26e00041528837"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "052"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "060 - 93 520 14 10"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "080020260048731"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "C/ Murcia, 42 - 08027 Barcelona"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "2026/118402"
+    },
+    {
+     "kind": "NAME",
+     "value": "KOVALENKO, OKSANA"
+    },
+    {
+     "kind": "BIRTH_DATE",
+     "value": "14/03/1991"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Carrer de Sant Antoni Maria Claret 214, 49 2a, 08041 Barcelona"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "Y7364158D"
+    },
+    {
+     "kind": "PHONE",
+     "value": "642 318 905"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Carrer de Sant Antoni Maria Claret 214, 49 2a, 08041 Barcelona"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "REGAGE26e00041528837"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "080020260048731"
+    },
+    {
+     "kind": "PHONE",
+     "value": "060 - 93 520 14 10"
+    }
+   ],
+   "outgoing": "Subdelegación del Gobierno en Barcelona\nOficina de Extranjería\n[ADDRESS_7]\nNo de expediente: [REFERENCE_NUMBER_2]\nFecha: 11 de diciembre de 2026\nRegistro de salida: [REFERENCE_NUMBER_3]\nRequerimiento de documentación\nRenovación de autorización de residencia temporal y trabajo por cuenta ajena\nInteresada [NAME_1]\nNacimiento [BIRTH_DATE_1] (Ucrania)\nNIE [ID_NUMBER_1]\nNacimiento [BIRTH_DATE_1] (Ucrania) NIE [ID_NUMBER_1]\nDomicilio Carrer de [ADDRESS_1] 318 905\nDatos de la solicitud Fecha de presentación 23/11/2026 Registro de entrada [REFERENCE_NUMBER_1]\nCaducidad de la autorización 21/12/2026 Tasa 790 cód. [REFERENCE_NUMBER_4] 16,08 € (abonada)\nExaminada su solicitud, y conforme al artículo 68 de la Ley 39/2015, se le requiere para que aporte:\nDocumento Motivo\nCopia completa del pasaporte en vigor (todas las páginas) Solo se aportó la página de datos\nContrato de trabajo vigente firmado por el\nTres últimas nóminas\nJustificante de escolarización de los hijos menores\nPlazo: diez días hábiles, que vence el 28 de diciembre de 2026\nPresente los documentos en la sede electrónica de la Secretaría de Estado de Migraciones o en cualquier registro público, indicando el número de expediente [REFERENCE_NUMBER_2]. No debe pagar ninguna tasa adicional.\nAdvertencias\nSolo se aportó la página de datos\nEl contrato aportado venció el 30/11/2026\nNo consta en el expediente\nObligatorio si residen en España\n1. Si no aporta la documentación dentro del plazo, se le tendrá por desistida de su solicitud y se archivará el expediente\n1. Si no aporta la documentación dentro del plazo, se le tendrá por desistida de su solicitud y se archivará el expediente previa resolución (art. 68.1 de la Ley 39/2015).\n2. Mientras se tramita la solicitud presentada en plazo, la autorización anterior se entiende prorrogada hasta la resolución del procedimiento.\n3. Los documentos expedidos en el extranjero deben estar legalizados o apostillados y, en su caso, traducidos al castellano o al catalán.\nInformación: 060 - 93 520 14 10 - Lunes a viernes de 9:00 a 14:00",
+   "alternates": [
+    "Domicilio",
+    "Datos de la solicitud",
+    "Fecha de presentación 23/11/2026 Registro de entrada [REFERENCE_NUMBER_1]",
+    "Contrato de trabajo vigente firmado por ambas partes El contrato aportado venció el 30/11/2026",
+    "Tres últimas nóminas No consta en el expediente",
+    "Justificante de escolarización de los hijos menores Obligatorio si residen en España"
+   ]
+  },
+  {
+   "id": "fr01",
+   "split": "dev",
+   "pages": 1,
+   "readSec": 30.675799999952318,
+   "actionFirst": true,
+   "actionFinal": true,
+   "explainSec": 2.6728000000119208,
+   "checkSec": 7.3085,
+   "consequenceFirst": true,
+   "consequenceFinal": true,
+   "finalDeadlineRight": true,
+   "deadlinePrinted": true,
+   "finalAmountRight": true,
+   "final": {
+    "title": "2026 income tax balance due",
+    "steps": [
+     "Pay 1 284 € by December 15, 2026, online at impots.gouv.fr in your personal space under the \"Payer\" section, using payment reference 2669 4182 7351 0026.",
+     "Alternatively, because the balance is over 300 €, you can choose to pay in four instalments starting in January 2027 if you sign up before December 10, 2026."
+    ],
+    "objection": "You can contest this notice by filing a claim through your secure messaging on impots.gouv.fr until December 31, 2028. Filing a claim does not exempt you from paying the amount due.",
+    "deadline_iso": "2026-12-15",
+    "amount": "1 284 €",
+    "if_ignored": "If you do not pay by the deadline, a 10% late payment penalty of 128 € will be added.",
+    "corrected": []
+   },
+   "figuresRead": [
+    true,
+    true
+   ],
+   "figuresKept": [
+    true,
+    true
+   ],
+   "idsMissedByModel": [],
+   "idsSent": [],
+   "agencyKept": [
+    true,
+    true
+   ],
+   "deadlineRight": true,
+   "amountRight": true,
+   "explained": {
+    "title": "French income tax balance due",
+    "steps": [
+     "Go to impots.gouv.fr, log into your espace particulier, and go to the rubrique « Payer » to make an online payment of 1 284 € using payment reference 2669 4182 7351 0026 before December 15, 2026."
+    ],
+    "deadline_iso": "2026-12-15",
+    "amount": "1 284 €",
+    "if_ignored": "A 10% penalty fee of 128 € will be applied.",
+    "corrected": []
+   },
+   "transcript": "Direction générale des Finances publiques\nSIP Lyon 7e - 165 rue Garibaldi - 69401 Lyon Cedex 03\nAvis d'impôt 2026\nDate d'établissement : 27/11/2026\nImpôt sur le revenu\nAvis d'impôt 2026 sur les revenus de l'année 2025 · Solde à payer\nDéclarant M. ADEBAYO Oluwaseun Numéro fiscal 30 12 456 789 012\nAdresse 14 rue des Lilas, Appartement 23, 69007 Lyon\nRéférence de l'avis 26 69 A418 273 51 Né le 08/05/1991\nDétail du calcul de votre impôt Montant\nÉlément Salaires déclarés (case 1AJ) 38 450 €\n Déduction forfaitaire de 10 % 3 845 €\n Revenu net imposable (1 part) 34 605 €\n Impôt sur le revenu net 3 547 €\n Prélèvement à la source déjà versé en 2025 2 263 €\n 1 284 €\nImpôt sur le revenu net\nPrélèvement à la source déjà versé en 2025\nReste à payer (solde)\n2 263 €\n1 284 €\nMontant à payer : 1 284 €\nDate limite de paiement : 15 décembre 2026\nDate de mise en recouvrement : 30 novembre 2026 . Paiement en ligne sur impots.gouv.fr, espace particulier, rubrique « Payer ».\nRéférence de paiement : 2669 4182 7351 0026\nInformations importantes\n1. Le solde de 1 284 € n'est pas prélevé à la source : il doit être payé en une fois avant la date limite.\n2. Si le solde dépasse 300 €, il peut être prélevé en quatre fois à partir du 26 janvier 2027 si vous adhérez avant le 10 décembre 2026.\n3. À défaut de paiement à la date limite, une majoration de 10 % sera appliquée (article 1730 du code général des impôts), soit 128 €.\n2. Si le solde dépasse 300 €, il peut être prélevé en quatre fois à partir du 1er décembre 2026.\n3. À défaut de paiement à la date limite, une majoration de 10 % sera appliquée (article 1730 du code général des impôts), soit 128 €.\n4. Votre taux de prélèvement à la source sera de 9,2 % à compter du 1er janvier 2027.\n5. Vous pouvez contester cet avis par réclamation jusqu'au 31 décembre 2028 depuis votre messagerie sécurisée. La réclamation ne dispense pas du paiement.\nUne question ? 0 809 401 401 (service gratuit + prix d'un appel) - SIP Lyon 7e : 04 72 40 85 16 - du lundi au vendredi de 8h30 à 19h - impots.gouv.fr",
+   "second": "Direction générale des Finances publiques\nSIP Lyon 7e - 165 rue Garibaldi - 69401 Lyon Cedex 03\nAvis d'impôt 2026\nDate d'établissement : 27/11/2026\nImpôt sur le revenu\nAvis d'impôt 2026 sur les revenus de l'année 2025 · Solde à payer\nDéclarant M. ADEBAYO Oluwaseun Numéro fiscal 30 12 456 789 012\nAdresse 14 rue des Lilas, Appartement 23, 69007 Lyon\nRéférence de l'avis 26 69 A418 273 51 Né le 08/05/1991\nDétail du calcul de votre impôt Élément Montant\nRéférence de l'avis\nDétail du calcul de votre impôt\nÉlément\nMontant\nSalaires déclarés (case 1AJ)\n38 450 €\nDéduction forfaitaire de 10 %\n3 845 €\n34 605 €\nRevenu net imposable (1 part)\n3 547 €\nImpôt sur le revenu net\n2 263 €\nPrélèvement à la source déjà versé en 2025\n1 284 €\nReste à payer (solde)\nMontant à payer : 1 284 €\nDate limite de paiement : 15 décembre 2026\nDate de mise en recouvrement : 30 novembre 2026 · Paiement en ligne sur impots.gouv.fr, espace particulier, rubrique « Payer ».\nRéférence de paiement : 2669 4182 7351 0026\nInformations importantes\nespace particulier, rubrique « payer »\nRéférence de paiement : 2669 4182 7351 0026\nInformations importantes\n1. Le solde de 1 284 € n'est pas prélevé à la source : il doit être payé en une fois avant la date limite.\n2. Si le solde dépasse 300 €, il peut être prélevé en quatre fois à partir du 26 janvier 2027 si vous adhérez avant le 10 décembre 2026.\n3. À défaut de paiement à la date limite, une majoration de 10 % sera appliquée (article 1730 du code général des impôts), soit 128 €.\n4. Votre taux de prélèvement à la source sera de 9,2 % à compter du 1er janvier 2027.\n5. Vous pouvez contester cet avis par réclamation jusqu'au 31 décembre 2028 depuis votre messagerie réclamation ne dispense pas du paiement.\nUne question ? 0 809 401 401 (service gratuit + prix d'un appel) SIP Lyon 7e : 04 72 40 85 16 du lundi au vendredi de 8h30 à 19h · impots.gouv.fr",
+   "items": [
+    {
+     "kind": "NAME",
+     "value": "ADEBAYO Oluwaseun"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "30 12 456 789 012"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "14 rue des Lilas, Appartement 23, 69007 Lyon"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "26 69 A418 273 51"
+    },
+    {
+     "kind": "BIRTH_DATE",
+     "value": "08/05/1991"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "0 809 401 401"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "04 72 40 85 16"
+    },
+    {
+     "kind": "NAME",
+     "value": "ADEBAYO Oluwaseun"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "30 12 456 789 012"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "14 rue des Lilas, Appartement 23, 69007 Lyon"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "26 69 A418 273 51"
+    },
+    {
+     "kind": "BIRTH_DATE",
+     "value": "08/05/1991"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "2669 4182 7351 0026"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "0 809 401 401"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "SIP Lyon 7e : 04 72 40 85 16"
+    }
+   ],
+   "outgoing": "Direction générale des Finances publiques\nSIP Lyon 7e - 165 rue Garibaldi - 69401 Lyon Cedex 03\nAvis d'impôt 2026\nDate d'établissement : 27/11/2026\nImpôt sur le revenu\nAvis d'impôt 2026 sur les revenus de l'année 2025 · Solde à payer\nDéclarant [NAME_1] Numéro fiscal [ID_NUMBER_1]\n[ADDRESS_1] Lyon\nRéférence de l'avis [REFERENCE_NUMBER_2] Né le [BIRTH_DATE_1]\nDétail du calcul de votre impôt Montant\nÉlément Salaires déclarés (case 1AJ) 38 450 €\n Déduction forfaitaire de 10 % 3 845 €\n Revenu net imposable (1 part) 34 605 €\n Impôt sur le revenu net 3 547 €\n Prélèvement à la source déjà versé en 2025 2 263 €\n 1 284 €\nImpôt sur le revenu net\nPrélèvement à la source déjà versé en 2025\nReste à payer (solde)\n2 263 €\n1 284 €\nMontant à payer : 1 284 €\nDate limite de paiement : 15 décembre 2026\nDate de mise en recouvrement : 30 novembre 2026 . Paiement en ligne sur impots.gouv.fr, espace particulier, rubrique « Payer ».\nRéférence de paiement : [REFERENCE_NUMBER_1]\nInformations importantes\n1. Le solde de 1 284 € n'est pas prélevé à la source : il doit être payé en une fois avant la date limite.\n2. Si le solde dépasse 300 €, il peut être prélevé en quatre fois à partir du 26 janvier 2027 si vous adhérez avant le 10 décembre 2026.\n3. À défaut de paiement à la date limite, une majoration de 10 % sera appliquée (article 1730 du code général des impôts), soit 128 €.\n2. Si le solde dépasse 300 €, il peut être prélevé en quatre fois à partir du 1er décembre 2026.\n3. À défaut de paiement à la date limite, une majoration de 10 % sera appliquée (article 1730 du code général des impôts), soit 128 €.\n4. Votre taux de prélèvement à la source sera de 9,2 % à compter du 1er janvier 2027.\n5. Vous pouvez contester cet avis par réclamation jusqu'au 31 décembre 2028 depuis votre messagerie sécurisée. La réclamation ne dispense pas du paiement.\nUne question ? 0 809 401 401 (service gratuit + prix d'un appel) - SIP Lyon 7e : 04 72 40 85 16 - du lundi au vendredi de 8h30 à 19h - impots.gouv.fr",
+   "alternates": [
+    "Détail du calcul de votre impôt Élément Montant",
+    "Détail du calcul de votre impôt",
+    "Élément",
+    "Montant",
+    "Salaires déclarés (case 1AJ)",
+    "38 450 €",
+    "Déduction forfaitaire de 10 %",
+    "3 845 €",
+    "34 605 €",
+    "Revenu net imposable (1 part)",
+    "3 547 €",
+    "espace particulier, rubrique « payer »",
+    "5. Vous pouvez contester cet avis par réclamation jusqu'au 31 décembre 2028 depuis votre messagerie réclamation ne dispense pas du paiement."
+   ]
+  },
+  {
+   "id": "fr02",
+   "split": "dev",
+   "pages": 1,
+   "readSec": 27.728199999988078,
+   "actionFirst": true,
+   "actionFinal": true,
+   "explainSec": 2.145300000011921,
+   "checkSec": 6.385199999988079,
+   "consequenceFirst": true,
+   "consequenceFinal": true,
+   "finalDeadlineRight": true,
+   "deadlinePrinted": true,
+   "finalAmountRight": true,
+   "final": {
+    "title": "Formal demand for unpaid property taxes",
+    "steps": [
+     "Pay 1 360,00 € by January 11, 2027, either online at impots.gouv.fr or by bank transfer using reference 2633 9075 1204 0841.",
+     "If you have difficulty paying, contact SIP Bordeaux Nord at 05 56 24 87 30 or via the secure messaging service on impots.gouv.fr before January 11, 2027 to ask for a payment plan."
+    ],
+    "objection": "You can contest this formal demand in writing to the public accountant within two months of receiving it.",
+    "deadline_iso": "2027-01-11",
+    "amount": "1 360,00 €",
+    "if_ignored": "If you do not pay by January 11, 2027, the public accountant can start enforcement action, including seizing money from your bank accounts or salary, and prosecution fees of 3% of the amount (minimum 7,50 €) will be added to your debt.",
+    "corrected": []
+   },
+   "figuresRead": [
+    true,
+    true
+   ],
+   "figuresKept": [
+    true,
+    true
+   ],
+   "idsMissedByModel": [
+    "MDP 2026 033 08 41927",
+    "2633 9075 1204 0841"
+   ],
+   "idsSent": [],
+   "agencyKept": [
+    true
+   ],
+   "deadlineRight": true,
+   "amountRight": true,
+   "explained": {
+    "title": "Formal notice to pay property tax",
+    "steps": [
+     "Pay the amount of 1 360,00 € by January 11, 2027.",
+     "Go to impots.gouv.fr or use a bank transfer to make the payment.",
+     "Indicate the reference number 2633 9075 1204 0841 when making the payment."
+    ],
+    "deadline_iso": "2027-01-11",
+    "amount": "1 360,00 €",
+    "if_ignored": "The public accountant may initiate enforcement actions, such as an administrative seizure of funds from your bank accounts or salary, and collection fees of 3% (minimum 7.50 €) will be added.",
+    "corrected": []
+   },
+   "transcript": "Direction générale des Finances publiques\nSIP Bordeaux Nord · 24 rue François de Sourdis ·\n33060 Bordeaux Cedex\nN° de mise en demeure : MDP 2026\n033 08 41927\nBordeaux, le 9 décembre 2026\nMise en demeure de payer\nTaxes foncières 2026 · Article L. 257-0 A du livre des procédures fiscales\nMme FERNÁNDEZ ORTEGA Lucía\n37 cours Balguerie-Stuttenberg\n33300 Bordeaux\nNuméro fiscal 21 33 905 614 287 Référence de l'avis 26 33 B907 512 04\nBien imposé 37 cours Balguerie-Stuttenberg, lot 12 (appartement)\nMadame, malgré l'avis de taxes foncières qui vous a été adressé, la somme ci-dessous reste due. Je vous mets en demeure de la régler dans un délai de trente jours.\nDétail Date Montant\nTaxes foncières 2026 (rôle supplémentaire) limite : 23/11/2026 1 236,00 €\nPaiements reçus - 0,00 €\n1er paiement le 24/11/2026 124,00 €\nTaxes foncières 2026 (rôle supplémentaire)\nPaiements reçus\nMajoration de 10 % (art. 1730 du CGI) appliquée le 24/11/2026\nTotal restant dû\nSomme à payer : 1 360,00 €\nÀ régler au plus tard le 11 janvier 2027\nPaiement sur impots.gouv.fr ou par virement, en indiquant la référence 2633 9075 1204 0841.\nMentions légales\n1. À défaut de paiement à la date indiquée, le comptable public pourra engager des poursuites, notamment une saisie administrative à tiers détenteur sur vos comptes ou votre salaire.\n2. Les frais de poursuite (3 % du montant, minimum 7,50 €) s'ajouteront à votre dette.\n3. Vous pouvez contester cette mise en demeure dans un délai de deux mois à compter de sa notification, par\n3. Vous pouvez contester cette mise en demeure dans un délai de deux mois à compter de sa notification, par écrit auprès du comptable public (art. L. 281 du LPF).\n4. Si vous rencontrez des difficultés, contactez votre service avant la date limite pour demander un plan de règlement.\nSIP Bordeaux Nord : 05 56 24 87 30 - accueil sur rendez-vous du lundi au vendredi, 8h45-12h\nmessagerie sécurisée sur impots.gouv.fr",
+   "second": "Direction générale des Finances publiques\nSIP Bordeaux Nord 24 rue François de Sourdis\n33060 Bordeaux Cedex\nN° de mise en demeure : MDP 2026\n033 08 41927\nBordeaux, le 9 décembre 2026\nMise en demeure de payer\nTaxes foncières 2026 · Article L. 257-0 A du livre des procédures fiscales\nMme FERNÁNDEZ ORTEGA Lucía\n37 cours Balguerie-Stuttenberg\n33300 Bordeaux\nNuméro fiscal 21 33 905 614 287 Référence de l'avis 26 33 B907 512 04\nBien imposé 37 cours Balguerie-Stuttenberg, lot 12 (appartement)\nMadame, malgré l'avis de taxes foncières qui vous a été adressé, la somme ci-dessous reste due. Je vous mets en demeure de la régler dans un délai de trente jours.\nDétail Date Montant\nTaxes foncières 2026 (rôle supplémentaire) limite : 23/11/2026 1 236,00 €\nPaiements reçus - 0,00 €\nMajoration de 10 % (art. 1730 du CGI) appliquée le 24/11/2026 124,00 €\nTotal restant dû 1 360,00 €\nSomme à payer : 1 360,00 €\nÀ régler au plus tard le 11 janvier 2027\nPaiement sur impots.gouv.fr ou par virement, en indiquant la référence 2633 9075 1204 0841.\nMentions légales\nPaiement sur impots.gouv.fr ou par virement, en indiquant la référence 2635 9076 1204 0841.\nMentions légales\n1. À défaut de paiement à la date indiquée, le comptable public pourra engager des poursuites, notamment une saisie administrative à tiers détenteur sur vos comptes ou votre salaire.\n2. Les frais de poursuite (3 % du montant, minimum 7,50 €) s'ajouteront à votre dette.\n3. Vous pouvez contester cette mise en demeure dans un délai de deux mois à compter de sa notification, par écrit auprès du comptable public (art. L. 281 du LPF).\n4. Si vous rencontrez des difficultés, contactez votre service avant la date limite pour demander un plan de règlement.\nSIP Bordeaux Nord : 05 56 24 87 30 - accueil sur rendez-vous du lundi au vendredi, 8h45-12h\nmessagerie sécurisée sur impots.gouv.fr",
+   "items": [
+    {
+     "kind": "NAME",
+     "value": "Mme FERNÁNDEZ ORTEGA Lucía"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "37 cours Balguerie-Stuttenberg"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "33300 Bordeaux"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "21 33 905 614 287"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "26 33 B907 512 04"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "37 cours Balguerie-Stuttenberg, lot 12 (appartement)"
+    },
+    {
+     "kind": "PHONE",
+     "value": "05 56 24 87 30"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "SIP Bordeaux Nord · accueil sur rendez-vous du lundi au vendredi, 8h45-12h · messagerie sécurisée sur impots.gouv.fr"
+    },
+    {
+     "kind": "NAME",
+     "value": "Mme FERNÁNDEZ ORTEGA Lucía"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "37 cours Balguerie-Stuttenberg"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "33300 Bordeaux"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "21 33 905 614 287"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "26 33 B907 512 04"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "37 cours Balguerie-Stuttenberg, lot 12 (appartement)"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "05 56 24 87 30"
+    }
+   ],
+   "outgoing": "Direction générale des Finances publiques\nSIP Bordeaux Nord · 24 rue François de Sourdis ·\n[ADDRESS_9] Cedex\nN° de mise en demeure : MDP 2026\n[NUMBER_1]\nBordeaux, le 9 décembre 2026\nMise en demeure de payer\nTaxes foncières 2026 · Article L. 257-0 A du livre des procédures fiscales\n[NAME_1]\n[ADDRESS_5]\n[ADDRESS_8]\nNuméro fiscal [REFERENCE_NUMBER_1] Référence de l'avis [REFERENCE_NUMBER_2]\nBien imposé [ADDRESS_1]\nMadame, malgré l'avis de taxes foncières qui vous a été adressé, la somme ci-dessous reste due. Je vous mets en demeure de la régler dans un délai de trente jours.\nDétail Date Montant\nTaxes foncières 2026 (rôle supplémentaire) limite : 23/11/2026 1 236,00 €\nPaiements reçus - 0,00 €\n1er paiement le 24/11/2026 124,00 €\nTaxes foncières 2026 (rôle supplémentaire)\nPaiements reçus\nMajoration de 10 % (art. 1730 du CGI) appliquée le 24/11/2026\nTotal restant dû\nSomme à payer : 1 360,00 €\nÀ régler au plus tard le 11 janvier 2027\nPaiement sur impots.gouv.fr ou par virement, en indiquant la référence [NUMBER_2].\nMentions légales\n1. À défaut de paiement à la date indiquée, le comptable public pourra engager des poursuites, notamment une saisie administrative à tiers détenteur sur vos comptes ou votre salaire.\n2. Les frais de poursuite (3 % du montant, minimum 7,50 €) s'ajouteront à votre dette.\n3. Vous pouvez contester cette mise en demeure dans un délai de deux mois à compter de sa notification, par\n3. Vous pouvez contester cette mise en demeure dans un délai de deux mois à compter de sa notification, par écrit auprès du comptable public (art. L. 281 du LPF).\n4. Si vous rencontrez des difficultés, contactez votre service avant la date limite pour demander un plan de règlement.\nSIP Bordeaux Nord : 05 56 24 87 30 - accueil sur rendez-vous du lundi au vendredi, 8h45-12h\nmessagerie sécurisée sur impots.gouv.fr",
+   "alternates": [
+    "Majoration de 10 % (art. 1730 du CGI) appliquée le 24/11/2026 124,00 €",
+    "Total restant dû 1 360,00 €"
+   ]
+  },
+  {
+   "id": "fr03",
+   "split": "dev",
+   "pages": 1,
+   "readSec": 28.48719999998808,
+   "actionFirst": true,
+   "actionFinal": true,
+   "explainSec": 2.443700000047684,
+   "checkSec": 6.5358999999761584,
+   "consequenceFirst": true,
+   "consequenceFinal": true,
+   "finalDeadlineRight": true,
+   "deadlinePrinted": true,
+   "finalAmountRight": true,
+   "final": {
+    "title": "Request for missing residence permit documents",
+    "steps": [
+     "Gather your current employment contract signed by both parties, your last three payslips (September to November 2026), proof of address less than 6 months old (utility bill or rent receipt), and your work authorization issued by the ANEF platform.",
+     "Upload all four documents to your ANEF account (administration-etrangers-en-france.interieur.gouv.fr) under the section 'Compléter ma demande' using file number ANEF-26-93-0458271 by January 8, 2027. Do not send them by mail or bring them in person."
+    ],
+    "objection": "",
+    "deadline_iso": "2027-01-08",
+    "amount": "",
+    "if_ignored": "If you do not upload the documents by the deadline, your application will be closed without further action. After your extension certificate expires on February 19, 2027, you will no longer be able to prove your legal right to stay or work.",
+    "corrected": [
+     "read as \"délibérée\" / \"déliverée\", understood as \"délivrée\" (issued)",
+     "read as \"administration-etransgers-en-france.interieur.gouv.fr\", understood as \"administration-etrangers-en-france.interieur.gouv.fr\" (the ANEF website address)"
+    ]
+   },
+   "figuresRead": [
+    true
+   ],
+   "figuresKept": [
+    true
+   ],
+   "idsMissedByModel": [],
+   "idsSent": [],
+   "agencyKept": [
+    true,
+    true
+   ],
+   "deadlineRight": true,
+   "amountRight": true,
+   "explained": {
+    "title": "Request for additional documents for residence permit",
+    "steps": [
+     "Upload the current employment contract signed by both parties, the last three payslips from September to November 2026, proof of address less than 6 months old (bill or rent receipt), and the work authorization delivered by the ANEF platform into your ANEF account under the section \"Compléter ma demande\" by January 8, 2027."
+    ],
+    "deadline_iso": "2027-01-08",
+    "amount": "",
+    "if_ignored": "Your application will be closed without further action, and after your extension certificate expires you will no longer be able to prove the legality of your stay or your right to work.",
+    "corrected": [
+     "read as \"délibérée\", understood as \"délivrée\" (delivered)"
+    ]
+   },
+   "transcript": "PRÉFET DE LA SEINE-SAINT-DENIS\nDirection des migrations et de l'intégration\nBureau des titres de séjour : 1 esplanade Jean Moulin - 93007 Bobigny Cedex\nBobigny, le 2 décembre 2026\nRéf. : DMI/BTS/2026/118734\nDemande de pièces complémentaires\nDemande de renouvellement de titre de séjour : Carte « salarié »\nNom, prénom NGUYEN Thi Thu Ha N° étranger 9303 4271 58\nNom, prénom\nNGUYEN Thi Thu Ha\nNé(e) le\n17/02/1994 à Hanoi (Việt Nam)\nAdresse\n8 allée des Tilleuls, Bât. C, 93140 Bondy\nN° étranger\n9303 4271 58\nN° de dossier ANEF\nANEF-26-93-0458271\nMadame, l'instruction de votre demande déposée le 20 novembre 2026 ne peut se poursuivre en l'état. Vous voudrez bien produire les pièces suivantes :\nPièce demandée\nContrat de travail en cours\nTrois derniers bulletins de salaire\nJustificatif de domicile de moins de 6 mois\nAutorisation de travail\nPrécision\nsigné par les deux parties\nseptembre à novembre 2026\nfacture ou quittance de loyer\ndélibérée par la plateforme ANEF\nJustificatif de domicile de moins de 6 mois\nAutorisation de travail\nfacture ou quittance de loyer\ndélibérée par la plateforme ANEF\nDate limite de dépôt des pièces : 8 janvier 2027\nLes pièces sont à téléverser dans votre espace ANEF (administration-etransgers-en-france.interieur.gouv.fr), rubrique « Compléter ma demande »\nVotre attestation de prolongation d'instruction reste valable jusqu'au 19 février 2027.\nInformations\n1. À défaut de production des pièces dans le délai indiqué, votre demande sera classée sans suite (article R. 431-11 du code de l'entrée et du séjour des étrangers et du droit d'asile).\n2. Après l'expiration de votre attestation, vous ne pourrez plus justifier de la régularité de votre séjour ni de votre droit au travail.\n3. Aucune pièce ne sera acceptée au guichet ou par courrier postal.\n4. Si un rendez-vous est nécessaire, une convocation vous sera adressée dans votre espace ANEF.\nau travail.\n3. Aucune pièce ne sera acceptée au guichet ou par courrier postal.\n4. Si un rendez-vous est nécessaire, une convocation vous sera adressée dans votre espace ANEF.\nPréfecture\nSeine-\nSaint-Denis\nCentre de contact citoyen ANEF : 0 806 001 620 - Bureau des titres de séjour : 01 41 60 72 15 (lundi au vendredi, 9h-12h) - www.seine-saint-denis.gouv.fr",
+   "second": "PRÉFET DE LA SEINE-SAINT-DENIS\nDirection des migrations et de l'intégration\nBureau des titres de séjour - 1 esplanade Jean Moulin - 93007 Bobigny Cedex\nBobigny, le 2 décembre 2026\nRéf. : DMI/BTS/2026/118734\nDemande de pièces complémentaires\nDemande de renouvellement de titre de séjour : Carte « salarié »\nNom, prénom NGUYEN Thi Thu Ha N° étranger 9303 4271 58\nNé(e) le 17/02/1994 à Hanoï (Việt Nam) N° de dossier ANEF ANEF-26-93-0458271\nAdresse 8 allée des Tilleuls, Bât. C, 93140 Bondy\nMadame, l’instruction de votre demande déposée le 20 novembre 2026 ne peut se poursuivre en l’état. Vous voudrez bien produire les pièces suivantes :\nPièce demandée Précision\nContrat de travail en cours signé par les deux parties\nTrois derniers bulletins de salaire septembre à novembre 2026\nJustificatif de domicile de moins de 6 mois facture ou quittance de loyer\nAutorisation de travail déliverée par la plateforme ANEF\nDate limite de dépôt des pièces : 8 janvier 2027\nLes pièces sont à téléverser dans votre espace ANEF (administration-etrangers-en-france.interieur.gouv.fr), rubrique < Compléter ma demande >.\nVotre attestation de prolongation d'instruction reste valable jusqu'au 19 février 2027.\nInformations\n1. À défaut de production des pièces dans le délai indiqué, votre demande sera classée sans suite (article R. 431-11 du code de l’entrée et du séjour des étrangers et du droit d’asile).\n2. Après l’expiration de votre attestation, vous ne pourrez plus justifier de la régularité de votre séjour ni de votre droit au travail.\n3. Aucune pièce ne sera acceptée au guichet ou par courrier postal.\n4. Si un rendez-vous est nécessaire, une convocation vous sera adressée dans votre espace ANEF.\nPréfecture\nSeine-Saint-Denis\nCentre de contact citoyen ANEF : 0 806 001 620 - Bureau des titres de séjour : 01 41 60 72 15 (lundi au vendredi, 9h-12h) www.seine-saint-denis.gouv.fr",
+   "items": [
+    {
+     "kind": "NAME",
+     "value": "NGUYEN Thi Thu Ha"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "9303 4271 58"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "DMI/BTS/2026/118734"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "ANEF-26-93-0458271"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "8 allée des Tilleuls, Bât. C, 93140 Bondy"
+    },
+    {
+     "kind": "BIRTH_DATE",
+     "value": "17/02/1994"
+    },
+    {
+     "kind": "PHONE",
+     "value": "0 806 001 620"
+    },
+    {
+     "kind": "PHONE",
+     "value": "01 41 60 72 15"
+    },
+    {
+     "kind": "NAME",
+     "value": "NGUYEN Thi Thu Ha"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "9303 4271 58"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "DMI/BTS/2026/118734"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "ANEF-26-93-0458271"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "8 allée des Tilleuls, Bât. C, 93140 Bondy"
+    },
+    {
+     "kind": "BIRTH_DATE",
+     "value": "17/02/1994"
+    },
+    {
+     "kind": "PHONE",
+     "value": "0 806 001 620"
+    },
+    {
+     "kind": "PHONE",
+     "value": "01 41 60 72 15"
+    }
+   ],
+   "outgoing": "PRÉFET DE LA SEINE-SAINT-DENIS\nDirection des migrations et de l'intégration\nBureau des titres de séjour : 1 esplanade Jean Moulin - 93007 Bobigny Cedex\nBobigny, le 2 décembre 2026\nRéf. : [REFERENCE_NUMBER_1]\nDemande de pièces complémentaires\nDemande de renouvellement de titre de séjour : Carte « salarié »\nNom, prénom [NAME_1] étranger [ID_NUMBER_1]\nNom, prénom\n[NAME_2]\nNé(e) le\n[BIRTH_DATE_1] à Hanoi (Việt Nam)\nAdresse\n[ADDRESS_1]\nN° étranger\n[ID_NUMBER_1]\nN° de dossier ANEF\n[REFERENCE_NUMBER_2]\nMadame, l'instruction de votre demande déposée le 20 novembre 2026 ne peut se poursuivre en l'état. Vous voudrez bien produire les pièces suivantes :\nPièce demandée\nContrat de travail en cours\nTrois derniers bulletins de salaire\nJustificatif de domicile de moins de 6 mois\nAutorisation de travail\nPrécision\nsigné par les deux parties\nseptembre à novembre 2026\nfacture ou quittance de loyer\ndélibérée par la plateforme ANEF\nJustificatif de domicile de moins de 6 mois\nAutorisation de travail\nfacture ou quittance de loyer\ndélibérée par la plateforme ANEF\nDate limite de dépôt des pièces : 8 janvier 2027\nLes pièces sont à téléverser dans votre espace ANEF (administration-etransgers-en-france.interieur.gouv.fr), rubrique « Compléter ma demande »\nVotre attestation de prolongation d'instruction reste valable jusqu'au 19 février 2027.\nInformations\n1. À défaut de production des pièces dans le délai indiqué, votre demande sera classée sans suite (article R. 431-11 du code de l'entrée et du séjour des étrangers et du droit d'asile).\n2. Après l'expiration de votre attestation, vous ne pourrez plus justifier de la régularité de votre séjour ni de votre droit au travail.\n3. Aucune pièce ne sera acceptée au guichet ou par courrier postal.\n4. Si un rendez-vous est nécessaire, une convocation vous sera adressée dans votre espace ANEF.\nau travail.\n3. Aucune pièce ne sera acceptée au guichet ou par courrier postal.\n4. Si un rendez-vous est nécessaire, une convocation vous sera adressée dans votre espace ANEF.\nPréfecture\nSeine-\nSaint-Denis\nCentre de contact citoyen ANEF : 0 806 001 620 - Bureau des titres de séjour : 01 41 60 72 15 (lundi au vendredi, 9h-12h) - www.seine-saint-denis.gouv.fr",
+   "alternates": [
+    "Né(e) le [BIRTH_DATE_1] à Hanoï (Việt Nam) N° de dossier ANEF [REFERENCE_NUMBER_2]",
+    "Madame, l’instruction de votre demande déposée le 20 novembre 2026 ne peut se poursuivre en l’état. Vous voudrez bien produire les pièces suivantes :",
+    "Pièce demandée Précision",
+    "Contrat de travail en cours signé par les deux parties",
+    "Trois derniers bulletins de salaire septembre à novembre 2026",
+    "Justificatif de domicile de moins de 6 mois facture ou quittance de loyer",
+    "Autorisation de travail déliverée par la plateforme ANEF",
+    "Les pièces sont à téléverser dans votre espace ANEF (administration-etrangers-en-france.interieur.gouv.fr), rubrique < Compléter ma demande >.",
+    "1. À défaut de production des pièces dans le délai indiqué, votre demande sera classée sans suite (article R. 431-11 du code de l’entrée et du séjour des étrangers et du droit d’asile).",
+    "2. Après l’expiration de votre attestation, vous ne pourrez plus justifier de la régularité de votre séjour ni de votre droit au travail.",
+    "Seine-Saint-Denis"
+   ]
+  },
+  {
+   "id": "ja01",
+   "split": "dev",
+   "pages": 1,
+   "readSec": 33.939099999964235,
+   "actionFirst": true,
+   "actionFinal": true,
+   "explainSec": 2.756600000023842,
+   "checkSec": 9.198299999952317,
+   "consequenceFirst": true,
+   "consequenceFinal": true,
+   "finalDeadlineRight": true,
+   "deadlinePrinted": true,
+   "finalAmountRight": true,
+   "final": {
+    "title": "Municipal and prefectural resident tax bill",
+    "steps": [
+     "Pay 44,000円 for the 1st installment by December 28, 2026 using the enclosed 1st installment payment slip (payment number 22130-0072519-01) at a city hall counter, designated financial institution, convenience store, or via smartphone payment (Local Tax Unified QR Code).",
+     "Pay 43,000円 for the 2nd installment by February 1, 2027, and 43,000円 for the 3rd installment by March 1, 2027.",
+     "If you wish to use direct debit (bank transfer), you can apply at the Municipal Tax Division starting from the 2nd installment."
+    ],
+    "objection": "If you disagree with this assessment, you can file a request for review (審査請求) with the Mayor of Hamamatsu within 3 months from the day after you receive this notice.",
+    "deadline_iso": "2026-12-28",
+    "amount": "44,000円",
+    "if_ignored": "If you miss the deadline, late fees will be added under the Local Tax Act and a demand letter will be sent. If you still do not pay after the demand letter, your assets (such as salary and bank deposits) will be seized. Additionally, a tax certificate cannot be issued until the tax is paid in full, which may affect procedures such as renewing your residence status.",
+    "corrected": [
+     "read as \"市氏税\", understood as \"市民税\" (municipal resident tax)",
+     "read as \"間一時課税分\", understood as \"随時課税分\" (ad-hoc taxation)",
+     "read as \"同時期の\" / \"同時の\", understood as \"同封の\" (enclosed)",
+     "read as \"口座照合書\" / \"口座預金\", understood as \"口座振替\" (direct debit)",
+     "read as \"税理師票\", understood as \"税務証明書\" (tax certificate)",
+     "read as \"税民課\", understood as \"市民税課\" (Municipal Tax Division)"
+    ]
+   },
+   "figuresRead": [
+    true,
+    true
+   ],
+   "figuresKept": [
+    true,
+    true
+   ],
+   "idsMissedByModel": [],
+   "idsSent": [],
+   "agencyKept": [
+    false,
+    true
+   ],
+   "deadlineRight": true,
+   "amountRight": true,
+   "explained": {
+    "title": "Hamamatsu City Resident and Prefectural Tax Notice",
+    "steps": [
+     "Pay 44,000円 by December 28, 2026 using the first-term payment slip via the City Hall counter, a designated financial institution, convenience store, or smartphone payment using the local tax unified QR code, using payment number 22130-0072519-01."
+    ],
+    "deadline_iso": "2026-12-28",
+    "amount": "44,000円",
+    "if_ignored": "A late fee will be added according to local tax law and a demand letter will be sent. If payment is still not made after the demand, your assets such as salary and savings may be seized.",
+    "corrected": [
+     "read as \"間一時課税分\", understood as \"随時課税分\" (occasional taxation portion)",
+     "read as \"年齢割\", understood as \"年税額\" (annual tax amount)",
+     "read as \"契約期限\", understood as \"納期限\" (payment deadline)",
+     "read as \"税理師票は\", understood as \"税務証明書は\" (tax certificate)"
+    ]
+   },
+   "transcript": "浜松市役所\n財政部 市民税課・静岡県浜松市中央区元城町103番地の2\n通知番号 R08-3104-0072519\n発行日 令和8年11月30日\n令和8年度 市民税・県民税 納税通知書\n(普通徴収・間一時課税分)\n〒432-8021 静岡県浜松市中央区高丘東五丁目18番3号 グリーンハイツ 203\nペイレラ ダルバルジョアン 様 (PEREIRA DA SILVA JOAO)\n宛名番号 0088-415-273 生年月日 1988年7月19日\n課税標準(所得金額) 2,316,000円 所得控除合計 1,068,000円\n市氏税 所得割 74,800円 県民税 所得割 49,800円\n均等割(市・県森林環境税) 5,400円 年税額 130,000円\n各期の納付額と納期\n期別 納期限 市民税 県民税 納付額\n第1期 令和8年12月28日(月) 26,800円 17,200円 44,000円\n第2期 令和9年2月1日(月) 26,000円 17,000円 43,000円\n第3期 令和9年3月1日(月) 26,000円 17,000円 43,000円\n第2期 令和2年1月1日(月)\n第3期 令和3年3月1日(月)\n合計(年税額)\n今回納付していただく額(第1期):44,000円\n納期限:令和8年12月28日\n同時期の第1期納付書より、市役所窓口、指定金融機関、コンビニエンスストア又はスマートフォン決済(地方税統一QRコード)で納めてください。\n納付番号:22130-0072519-01\n注意事項\n1. 本年度途中に住民の申告があったため、随時に課税しました。既に過ぎた期分の第1期にまとめています。\n2. 納期を過ぎると、地方税法の規定により延滞金が加算され、督促状を発送します。督促後も納付がない場合は、財産(給与、預貯金等)の差押えを行います。\n3. 税務証明書は完税後になければ発行できません。在留資格の更新等が必要な場合にはご覧ください。\n4. 口座照合書を希望される方は、第2期から利用できますので、市民課へお申し出ください。\n5. この処分に不服がある場合は、通知を受けた日の翌日から起算して3か月以内に浜松市長に対し審査請求をすることができます。\nお問合わせ:浜松市 市民課 053-457-2141 外国語相談(ポルトガル語、英語) 053-457-2147 平日 8:30~17:15",
+   "second": "浜松市役所\n財務部 市民課 ・ 静岡県浜松市中央区城山町103番地の2\n通知書番号 R08-3104-0072519\n発行日 令和8年11月30日\n令和8年度 市民税・県民税 納税通知書\n(普通徴収・随時課税分)\n〒432-8021 静岡県浜松市中央区高丘東五丁目18番ろ号 グリーンハイツ203\nペイレラ ダ シルバージョアン 様 (PEREIRA DA SILVA JOAO)\n宛名番号 0088-415-273 生年月日 1988年7月19日\n課税標準(所得金額) 2,316,000円 所得控除合計 1,068,000円\n市民税 所得割 74,800円 県民税 所得割 49,800円\n均等割(市・県森林環境税) 5,400円 年軽割 130,000円\n各期の納付額と納期限\n期別 契約期限 市民税 県民税 納付額\n第1期 令和8年12月28日(月) 26,800円 17,200円 44,000円\n第2期 令和9年2月1日(月) 26,000円 17,000円 43,000円\n第3期 令和9年3月1日(月) 26,000円 17,000円 43,000円\n合計(年税額) 130,000円\n今回納付していただく額(第1期):44,000円\n納期限:令和8年12月28日\n同時の第1期納付書により、市役所窓口、指定金融機関、コンビニエンスストア又はスマートフォン決済(地方税統一QRコード)で納めてください。\n納付番号:22130-0072519-01\n注意事項\n注記事項\n1. 本年度途中に住民の申告があったため、随時に課税しました。既に過ぎた納期の分は第1期にまとめています。\n2. 納期を過ぎると、地方税法の規定より延滞金が加算され、督促状を発送します。督促後も納付がない場合は、財産(給与、預貯金等)の差押えを行います。\n3. 税理師票は納税者様には発行できません。在留資格の変更等に必要な場合はご注意ください。\n4. 口座預金をされる方は、第2期分から利用できますので、市民課へお申し出ください。\n5. この分に不服がある場合は、通知を受けた日の翌日から起算して3か月以内に浜松市長に対して審査請求をすることができます。\nお問合わせ:浜松市 税民課 053-457-2141 外国語相談(ポルトガル語・英語) 053-457-2147 平日\n8:30~17:15",
+   "items": [
+    {
+     "kind": "ADDRESS",
+     "value": "静岡県浜松市中央区元城町103番地の2"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "R08-3104-0072519"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "静岡県浜松市中央区高丘東五丁目18番3号 グリーンハイツ 203"
+    },
+    {
+     "kind": "NAME",
+     "value": "ペイレラ ダルバルジョアン 様 (PEREIRA DA SILVA JOAO)"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "0088-415-273"
+    },
+    {
+     "kind": "BIRTH_DATE",
+     "value": "1988年7月19日"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "浜松市 市民課 053-457-2141"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "053-457-2147"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "静岡県浜松市中央区城山町103番地の2"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "R08-3104-0072519"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "〒432-8021 静岡県浜松市中央区高丘東五丁目18番ろ号 グリーンハイツ203"
+    },
+    {
+     "kind": "NAME",
+     "value": "ペイレラ ダ シルバージョアン 様 (PEREIRA DA SILVA JOAO)"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "0088-415-273"
+    },
+    {
+     "kind": "BIRTH_DATE",
+     "value": "1988年7月19日"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "22130-0072519-01"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "053-457-2141"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "053-457-2147"
+    }
+   ],
+   "outgoing": "浜松市役所\n財政部 市民税課・[ADDRESS_5]\n通知番号 [REFERENCE_NUMBER_1]\n発行日 令和8年11月30日\n令和8年度 市民税・県民税 納税通知書\n(普通徴収・間一時課税分)\n[ADDRESS_1]\n[NAME_3]\n宛名番号 [REFERENCE_NUMBER_3] 生年月日 [BIRTH_DATE_1]\n課税標準(所得金額) 2,316,000円 所得控除合計 1,068,000円\n市氏税 所得割 74,800円 県民税 所得割 49,800円\n均等割(市・県森林環境税) 5,400円 年税額 130,000円\n各期の納付額と納期\n期別 納期限 市民税 県民税 納付額\n第1期 令和8年12月28日(月) 26,800円 17,200円 44,000円\n第2期 令和9年2月1日(月) 26,000円 17,000円 43,000円\n第3期 令和9年3月1日(月) 26,000円 17,000円 43,000円\n第2期 令和2年1月1日(月)\n第3期 令和3年3月1日(月)\n合計(年税額)\n今回納付していただく額(第1期):44,000円\n納期限:令和8年12月28日\n同時期の第1期納付書より、市役所窓口、指定金融機関、コンビニエンスストア又はスマートフォン決済(地方税統一QRコード)で納めてください。\n納付番号:[REFERENCE_NUMBER_2]\n注意事項\n1. 本年度途中に住民の申告があったため、随時に課税しました。既に過ぎた期分の第1期にまとめています。\n2. 納期を過ぎると、地方税法の規定により延滞金が加算され、督促状を発送します。督促後も納付がない場合は、財産(給与、預貯金等)の差押えを行います。\n3. 税務証明書は完税後になければ発行できません。在留資格の更新等が必要な場合にはご覧ください。\n4. 口座照合書を希望される方は、第2期から利用できますので、市民課へお申し出ください。\n5. この処分に不服がある場合は、通知を受けた日の翌日から起算して3か月以内に浜松市長に対し審査請求をすることができます。\nお問合わせ:[ADDRESS_4] 外国語相談(ポルトガル語、英語) 053-457-2147 平日 8:30~17:15",
+   "alternates": [
+    "(普通徴収・随時課税分)",
+    "市民税 所得割 74,800円 県民税 所得割 49,800円",
+    "均等割(市・県森林環境税) 5,400円 年軽割 130,000円",
+    "各期の納付額と納期限",
+    "期別 契約期限 市民税 県民税 納付額",
+    "合計(年税額) 130,000円",
+    "同時の第1期納付書により、市役所窓口、指定金融機関、コンビニエンスストア又はスマートフォン決済(地方税統一QRコード)で納めてください。",
+    "1. 本年度途中に住民の申告があったため、随時に課税しました。既に過ぎた納期の分は第1期にまとめています。",
+    "2. 納期を過ぎると、地方税法の規定より延滞金が加算され、督促状を発送します。督促後も納付がない場合は、財産(給与、預貯金等)の差押えを行います。",
+    "3. 税理師票は納税者様には発行できません。在留資格の変更等に必要な場合はご注意ください。",
+    "4. 口座預金をされる方は、第2期分から利用できますので、市民課へお申し出ください。",
+    "5. この分に不服がある場合は、通知を受けた日の翌日から起算して3か月以内に浜松市長に対して審査請求をすることができます。",
+    "お問合わせ:浜松市 税民課 053-457-2141 外国語相談(ポルトガル語・英語) 053-457-2147 平日"
+   ]
+  },
+  {
+   "id": "ja02",
+   "split": "dev",
+   "pages": 1,
+   "readSec": 32.448,
+   "actionFirst": true,
+   "actionFinal": true,
+   "explainSec": 2.6588999999761582,
+   "checkSec": 8.62169999998808,
+   "consequenceFirst": true,
+   "consequenceFinal": true,
+   "finalDeadlineRight": true,
+   "deadlinePrinted": true,
+   "finalAmountRight": true,
+   "final": {
+    "title": "Overdue National Health Insurance premium notice",
+    "steps": [
+     "Pay 37,100 yen by December 7, 2026 using the enclosed payment slip at a financial institution, convenience store, or the ward office counter, or via a smartphone payment app.",
+     "If you cannot pay due to unemployment, illness, or other reasons, contact the ward office at 06-6715-9956 (or the Multilingual Call Center at 06-6715-9001) before December 7, 2026 to ask about reductions, exemptions, or installment payments."
+    ],
+    "objection": "If payment is difficult due to unemployment or illness, you can consult the office before the deadline about reduction, exemption, or installment payment systems.",
+    "deadline_iso": "2026-12-07",
+    "amount": "37,100円",
+    "if_ignored": "If you do not pay by the deadline, your assets such as bank deposits and life insurance may be seized, late fees may be added, and your insurance benefits may be suspended in whole or in part. For foreign nationals, your payment status may also be checked during residence status change or renewal procedures.",
+    "corrected": [
+     "read as \"保健年金課\", understood as \"保険年金課\" (Insurance and Pension Division)",
+     "read as \"領収状\", understood as \"督促状\" (demand notice)",
+     "read as \"気候\", understood as \"病気等\" (illness, etc.)",
+     "read as \"制限\", understood as \"制度\" (system)",
+     "read as \"著書\", understood as \"審査\" (examination/review)"
+    ]
+   },
+   "figuresRead": [
+    true,
+    true
+   ],
+   "figuresKept": [
+    true,
+    true
+   ],
+   "idsMissedByModel": [],
+   "idsSent": [],
+   "agencyKept": [
+    true,
+    true
+   ],
+   "deadlineRight": true,
+   "amountRight": true,
+   "explained": {
+    "title": "National Health Insurance payment reminder",
+    "steps": [
+     "Pay the amount of 37,100円 by December 7, 2026 using the enclosed payment slip at a financial institution, convenience store, or ward office counter, or use a smartphone payment app."
+    ],
+    "deadline_iso": "2026-12-07",
+    "amount": "37,100円",
+    "if_ignored": "Assets such as bank deposits and life insurance may be seized, late fees may be added, insurance benefits may be withheld, and payment status may be checked during residence status procedures.",
+    "corrected": [
+     "read as \"約期限\", understood as \"納期限\" (payment deadline)",
+     "read as \"失業等気候\", understood as \"失業、病気等\" (unemployment, illness, etc.)",
+     "read as \"減免・分割納付の制限があります\", understood as \"減免・分割納付の制度があります\" (there is a system for reduction and installment payments)"
+    ]
+   },
+   "transcript": "大阪市生野区役所\n保険年金課(保険)・大阪市生野区勝山南3丁目1番19号\n文書番号 生保年第447号\n発行日 令和8年11月27日\n国民健康保険料 督促状\n(地方自治法第23条の3第1項による督促)\n〒544-0021 大阪市生野区 勝山南2丁目7番14号 コーポ裕谷305号\nグエンティラン( NGUYEN THI LAN )\n通知番号\n被保険者記号番号\n通知番号\n被保険者記号番号\n26-1408-553917\n生野 14-0082361\n世帯主\n加入者数\nグエンティラン\n1名\nあなたの令和8年度国民健康保険料は、下記のとおり納期限までに納付されていません。指定期限までに必ず納付してください。\n未納の保険料\n年度・別期\n医療分\n支援分\n子ども・子育て支援分\n未納額\n令和8年度 第4期(9月分)\n13,620円\n4,410円\n520円\n18,550円\n令和8年度 第5期(10月分)\n13,620円\n4,410円\n520円\n18,550円\n督促金額合計\n37,100円\n令和8年度 第5期(10月分) 13,620円 4,410円 520円 18,550円\n督促金額合計 37,100円\n指定期限:令和8年12月7日(月)\n納付すべき金額:37,100円\n同封の納付書で、金融機関、コンビニエンスストア、区役所窓口でお支払いください。スマートフォン決済アプリも利用できます。\n次回第6期(11月分) 18,550円の納期限は令和8年11月30日です(本督促額には含みません)。\nご注意\n1. 指定期限までに納付しない場合は、国民健康保険法第79条の2及び地方自治法第23条の3の規定により、預貯金等と生命保険等の財産を差し押さえることがあります。\n2. 納期期限の翌日から納付の日までの日数に応じて延滞金が加算されることがあります。\n3. 特別な事情で納付が遅れる場合には、保険契約の全部又は一部を差し止めることがあります。\n4. 外国国籍の方の保険料の納付状況は、在留資格の変更等の著書で確認されることがあります。\n5. 失業等気候で納付が遅い場合は、指定期限前にご相談ください。減免・分割納付の制限があります。\n6. この領収状と引き続いて滞納済みの場合は、ご容赦ください。\n生野\n区長\n乙印\nお問い合わせ:生野区役所 保健年金課 保険グループ 06-6715-9956 多言語コールセンター 06-6715-9001:平日 9:00~17:30(金曜は19:00まで)",
+   "second": "大阪市生野区役所\n保険年金課(保険)大阪市生野区豊山南3丁目1番19号\n文書番号 生保年第4471号\n発行日 令和8年11月27日\n国民健康保険料 督促状\n(地方自治法第231条の第3項による督促)\n〒544-0021 大阪市生野区豊山南2丁目7番14号 コーポ裕谷305号\nグエン ティラン (NGUYEN THI LAN)\n通知番号\n26-1408-553917\n世帯主\nグエン ティラン\n被保険者記号番号\n生肝 14-0082361\n加入者数\n1名\nあなたの令和8年度国民健康保険料は、下記のとおり約期限までに納付されていません。指定期限までに必ず納付してください。\n被保険者記番号 生存 14-0082361 加入者数 1名\nあなたの令和8年度国民健康保険料は、下記のとおり締期限までに納付されていません。指定期限までに必ず納付してください。\n未納の保険料\n年度・別 期\n令和8年度 第4期(9月分) 13,620円 4,410円 520円 18,550円\n令和8年度 第5期(10月分) 13,620円 4,410円 520円 18,550円\n督促金額合計 37,100円\n指定期限:令和8年12月7日(月)\n納付すべき金額:37,100円\n同封の納付書で、金融機関、コンビニエンスストア、区役所窓口でお支払いください。スマートフォン決済アプリも利用できます。\n次回第6期(11月分)18,550円の期限は令和8年11月30日です(本督促額には含みません)。\nご注意\n1.指定期限までに納付がない場合は、国民健康保険法第79条の2及び地方自治法第23条の3の規定により、納付金等に分担\n1. 指定期限までに納付がない場合、国民健康保険法第79条の2及び地方自治法第231条の3の規定により、預貯金等を差し押さえることがあります。\n2. 納期限の翌日からの納付の日までの日数に応じて滞納金が加算されることがあります。\n3. 特別な事情なく滞納が続く場合は、保険給付の全額又は一部を差し止めることがあります。\n4. 外国国内の保険料の納付状況は、在籍者証明等の書面で確認されることがあります。\n5. 失業、病気等で納付が難しい場合は、指定期限前にご相談ください。減免・分割納付の制度があります。\n6. この督促状と行き続いて納付済みの場合は、ご容赦ください。\n生野 区長\n印\nお問い合わせ:生野区役所 保険年金課 保険グループ 06-6715-9956・多言コールセンター 06-6715-9001・平日 9:00~17:30(金曜は19:00まで)",
+   "items": [
+    {
+     "kind": "ADDRESS",
+     "value": "大阪市生野区勝山南3丁目1番19号"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "〒544-0021 大阪市生野区 勝山南2丁目7番14号 コーポ裕谷305号"
+    },
+    {
+     "kind": "NAME",
+     "value": "グエンティラン( NGUYEN THI LAN )"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "26-1408-553917"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "生野 14-0082361"
+    },
+    {
+     "kind": "NAME",
+     "value": "グエンティラン"
+    },
+    {
+     "kind": "PHONE",
+     "value": "06-6715-9956"
+    },
+    {
+     "kind": "PHONE",
+     "value": "06-6715-9001"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "大阪市生野区豊山南3丁目1番19号"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "〒544-0021 大阪市生野区豊山南2丁目7番14号 コーポ裕谷305号"
+    },
+    {
+     "kind": "NAME",
+     "value": "グエン ティラン (NGUYEN THI LAN)"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "通知番号 26-1408-553917"
+    },
+    {
+     "kind": "NAME",
+     "value": "グエン ティラン"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "生肝 14-0082361"
+    },
+    {
+     "kind": "PHONE",
+     "value": "06-6715-9956"
+    },
+    {
+     "kind": "PHONE",
+     "value": "06-6715-9001"
+    }
+   ],
+   "outgoing": "大阪市生野区役所\n保険年金課(保険)・[ADDRESS_3]\n文書番号 生保年第447号\n発行日 令和8年11月27日\n国民健康保険料 督促状\n(地方自治法第23条の3第1項による督促)\n[ADDRESS_1]\n[NAME_2] [NAME_1] )\n通知番号\n被保険者記号番号\n通知番号\n被保険者記号番号\n[ID_NUMBER_1]\n[ADDRESS_4]\n世帯主\n加入者数\n[NAME_3]\n1名\nあなたの令和8年度国民健康保険料は、下記のとおり納期限までに納付されていません。指定期限までに必ず納付してください。\n未納の保険料\n年度・別期\n医療分\n支援分\n子ども・子育て支援分\n未納額\n令和8年度 第4期(9月分)\n13,620円\n4,410円\n520円\n18,550円\n令和8年度 第5期(10月分)\n13,620円\n4,410円\n520円\n18,550円\n督促金額合計\n37,100円\n令和8年度 第5期(10月分) 13,620円 4,410円 520円 18,550円\n督促金額合計 37,100円\n指定期限:令和8年12月7日(月)\n納付すべき金額:37,100円\n同封の納付書で、金融機関、コンビニエンスストア、区役所窓口でお支払いください。スマートフォン決済アプリも利用できます。\n次回第6期(11月分) 18,550円の納期限は令和8年11月30日です(本督促額には含みません)。\nご注意\n1. 指定期限までに納付しない場合は、国民健康保険法第79条の2及び地方自治法第23条の3の規定により、預貯金等と生命保険等の財産を差し押さえることがあります。\n2. 納期期限の翌日から納付の日までの日数に応じて延滞金が加算されることがあります。\n3. 特別な事情で納付が遅れる場合には、保険契約の全部又は一部を差し止めることがあります。\n4. 外国国籍の方の保険料の納付状況は、在留資格の変更等の著書で確認されることがあります。\n5. 失業等気候で納付が遅い場合は、指定期限前にご相談ください。減免・分割納付の制限があります。\n6. この領収状と引き続いて滞納済みの場合は、ご容赦ください。\n生野\n区長\n乙印\nお問い合わせ:生野区役所 保健年金課 保険グループ 06-6715-9956 多言語コールセンター 06-6715-9001:平日 9:00~17:30(金曜は19:00まで)",
+   "alternates": [
+    "文書番号 生保年第4471号",
+    "(地方自治法第231条の第3項による督促)",
+    "あなたの令和8年度国民健康保険料は、下記のとおり約期限までに納付されていません。指定期限までに必ず納付してください。",
+    "被保険者記番号 生存 [ADDRESS_9] 1名",
+    "あなたの令和8年度国民健康保険料は、下記のとおり締期限までに納付されていません。指定期限までに必ず納付してください。",
+    "令和8年度 第4期(9月分) 13,620円 4,410円 520円 18,550円",
+    "次回第6期(11月分)18,550円の期限は令和8年11月30日です(本督促額には含みません)。",
+    "1.指定期限までに納付がない場合は、国民健康保険法第79条の2及び地方自治法第23条の3の規定により、納付金等に分担",
+    "1. 指定期限までに納付がない場合、国民健康保険法第79条の2及び地方自治法第231条の3の規定により、預貯金等を差し押さえることがあります。",
+    "2. 納期限の翌日からの納付の日までの日数に応じて滞納金が加算されることがあります。",
+    "3. 特別な事情なく滞納が続く場合は、保険給付の全額又は一部を差し止めることがあります。",
+    "4. 外国国内の保険料の納付状況は、在籍者証明等の書面で確認されることがあります。",
+    "5. 失業、病気等で納付が難しい場合は、指定期限前にご相談ください。減免・分割納付の制度があります。",
+    "6. この督促状と行き続いて納付済みの場合は、ご容赦ください。",
+    "生野 区長",
+    "印",
+    "お問い合わせ:生野区役所 保険年金課 保険グループ 06-6715-9956・多言コールセンター 06-6715-9001・平日 9:00~17:30(金曜は19:00まで)"
+   ]
+  },
+  {
+   "id": "ja03",
+   "split": "dev",
+   "pages": 1,
+   "readSec": 30.232,
+   "actionFirst": true,
+   "actionFinal": true,
+   "explainSec": 2.4369000000357626,
+   "checkSec": 7.4805,
+   "consequenceFirst": true,
+   "consequenceFinal": true,
+   "finalDeadlineRight": true,
+   "deadlinePrinted": true,
+   "finalAmountRight": true,
+   "final": {
+    "title": "Unpaid National Pension insurance premiums notice",
+    "steps": [
+     "Pay 71,680円 by December 15, 2026 using the enclosed payment slip at a financial institution, post office, or convenience store, or use electronic payment number 0391-2286-4471-503.",
+     "If you have difficulty paying due to low income, apply for the premium exemption or payment deferral system (or the student special payment system if you are a student).",
+     "Contact the pension office if you have already paid or if you have left Japan and submitted a moving-out notice."
+    ],
+    "objection": "",
+    "deadline_iso": "2026-12-15",
+    "amount": "71,680円",
+    "if_ignored": "If left unpaid, you may not be able to receive future Old-age Basic Pension or Disability Basic Pension. If you do not pay by the deadline, a reminder notice will be sent, and if you still do not pay, your property may be seized under Article 96 of the National Pension Act.",
+    "corrected": [
+     "read as \"納付猶予\", understood as \"納付義務\" (payment obligation)",
+     "read as \"同時の納付書\", understood as \"同封の納付書\" (enclosed payment slip)",
+     "read as \"未婚のままでは\", understood as \"未納のままでは\" (if left unpaid)"
+    ]
+   },
+   "figuresRead": [
+    true,
+    true
+   ],
+   "figuresKept": [
+    true,
+    true
+   ],
+   "idsMissedByModel": [
+    "0391-2286-4471-503"
+   ],
+   "idsSent": [],
+   "agencyKept": [
+    false,
+    false
+   ],
+   "deadlineRight": true,
+   "amountRight": true,
+   "explained": {
+    "title": "Unpaid National Pension Insurance Premiums Notice",
+    "steps": [
+     "Pay the total amount of 71,680円 by December 15, 2026 using the enclosed payment slip at a financial institution, post office, or convenience store, referencing electronic payment number 0391-2286-4471-503."
+    ],
+    "deadline_iso": "2026-12-15",
+    "amount": "71,680円",
+    "if_ignored": "If you do not pay by the deadline, a demand letter will be sent. If you still do not pay after that, your property may be seized based on Article 96 of the National Pension Act, and you may not be able to receive future old-age or disability basic pensions.",
+    "corrected": [
+     "read as \"未婚のままでは\", understood as \"未納のままでは\" (if left unpaid).",
+     "read as \"納付義務\", understood as \"納付猶予\" (payment postponement)."
+    ]
+   },
+   "transcript": "日本年金機構\n新宿年金事務所 国民年金課 東京都新宿区大久保2-12-1\n管理番号 NK-2611-0390482\n令和8年11月20日\n国民年金保険料 未納のお知らせ\n(納付猶予・重要なお知らせです)\n〒169-0073 東京都新宿区百人町一丁目22番8号 ハイレム百人町402\nチェン ウェイ(CHEN WEI)\n基礎年金番号 4120-583716\n被保険者種別 第1号被保険者\n生年月日 1999年2月3日\n国籍 中国\n日本年金機構の記録では、次の国民年金保険料の納付が確認できておりません。下記の納付期限までにて納めてください。\n未納月と保険料額\n対象月 月額保険料 納付状況\n令和8年6月分 17,920円 未納\n令和8年7月分 17,920円 未納\n令和8年8月分 17,920円 未納\n令和8年7月分\n令和8年8月分\n令和8年9月分\n未納保険料の合計(4か月分)\nお支払いいただく額:71,680円\n納付期限:令和8年12月15日(火)\n同時の納付書で、金融機関、郵便局、コンビニエンスストアで納付できます。\n電子納付番号:0391-2286-4471-503\nなお、令和8年10月分(17,920円)の納付期限は令和8年11月30日です。\nご案内\n1. 国民年金保険料の納付は、国民年金法により義務付けられています。未納のままでは、将来の老齢基礎年金や、障害基礎年金を受け取れないことがあります。\n2. 納付期限までに納付がない場合は、督促状を送付し、その後も納付がないとときは、国民年金法第96条に基づき財産を差し押さえることがあります。\n3. 所得が少ない等の理由で納付が困難な場合、保険料の免除・納付猶予制度があります。学生の方は学生納付特例ご利用ください。\n4. 日本を出国して転居を提出された方、既に納付済みの方は、年金事務所へご連絡ください。\nお問合わせ:ねんきん加入者ダイヤル 0570-003-004・新宮年金事務所 03-5285-8611・平日 8:30〜17:15",
+   "second": "日本年金機構\n新宿年金事務所 国民年金課 東京都新宿区久保2-12-1\n管理番号 NK-2611-0390482\n令和8年11月20日\n国民年金保険料 未納のお知らせ\n(納付義務・重要なお知らせです)\n〒169-0073 東京都新宿区百人町一丁目22番8号 ハトムギビル402\nチェン ウェイ(CHEN WEI)\n基礎年金番号 4120-583716 生年月日 1999年2月3日\n被保険者種別 第1号被保険者 国籍 中国\n日本年金機構の記録では、次の期の国民年金保険料の納付が確認できておりません。下記の納付期限までにて納めてください。\n未納月と保険料額\n対象月 月額保険料 納付状況\n令和8年6月分 17,920円 未納\n令和8年7月分 17,920円 未納\n令和8年8月分 17,920円 未納\n令和8年9月分 17,920円 未納\n未納保険料の合計(4ヶ月分) 71,680円\nお支払いいただく額:71,680円\n納付期限:令和8年12月15日(火)\n同封の納付書で、金融機関、郵便局、コンビニエンスストアで納付できます。\n電子納付番号:0391-2286-4471-503\nなお、令和8年10月分(17,920円)の納付期限は令和8年11月30日です。\nご案内\n1.国民年金保険料の納付は、国民年金法により義務付けられています。未婚のままでは、将来の老齢基礎年金や、障害基礎年金を受け取れないことがあります。\n2.納付期限までに納付がない場合は、督促状を送付し、その後も納付がないとときは、国民年金法第96条に基づき財産を差し押さえることがあります。\n3.所得がない等の理由で納付が困難な場合は、保険料の免除・納付猶予制度があります。学生の方は学生納付特例をご利用ください。\n4.日本を出国して転居を提出された方、既に納付済みの方は、年金事務所へご連絡ください。\nお問い合わせ:ねんきん加入者ダイヤル 0570-003-004・新富年金事務所 03-5285-8611・平日 8:30~17:15",
+   "items": [
+    {
+     "kind": "ADDRESS",
+     "value": "日本年金機構新宿年金事務所 国民年金課 東京都新宿区大久保2-12-1"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "NK-2611-0390482"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "〒169-0073 東京都新宿区百人町一丁目22番8号 ハイレム百人町402"
+    },
+    {
+     "kind": "NAME",
+     "value": "チェン ウェイ(CHEN WEI)"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "4120-583716"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "第1号被保険者"
+    },
+    {
+     "kind": "BIRTH_DATE",
+     "value": "1999年2月3日"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "お問合わせ:ねんきん加入者ダイヤル 0570-003-004・新宮年金事務所 03-5285-8611・平日 8:30〜17:15"
+    },
+    {
+     "kind": "NAME",
+     "value": "チェン ウェイ(CHEN WEI)"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "4120-583716"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "NK-2611-0390482"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "〒169-0073 東京都新宿区百人町一丁目22番8号 ハトムギビル402"
+    },
+    {
+     "kind": "BIRTH_DATE",
+     "value": "1999年2月3日"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "新宿年金事務所 国民年金課 東京都新宿区久保2-12-1"
+    },
+    {
+     "kind": "PHONE",
+     "value": "0570-003-004"
+    },
+    {
+     "kind": "PHONE",
+     "value": "03-5285-8611"
+    }
+   ],
+   "outgoing": "日本年金機構\n[ADDRESS_3]\n管理番号 [REFERENCE_NUMBER_1]\n令和8年11月20日\n国民年金保険料 未納のお知らせ\n(納付猶予・重要なお知らせです)\n[ADDRESS_2]\n[NAME_2]\n基礎年金番号 [REFERENCE_NUMBER_2]\n被保険者種別 [REFERENCE_NUMBER_3]\n生年月日 [BIRTH_DATE_1]\n国籍 中国\n日本年金機構の記録では、次の国民年金保険料の納付が確認できておりません。下記の納付期限までにて納めてください。\n未納月と保険料額\n対象月 月額保険料 納付状況\n令和8年6月分 17,920円 未納\n令和8年7月分 17,920円 未納\n令和8年8月分 17,920円 未納\n令和8年7月分\n令和8年8月分\n令和8年9月分\n未納保険料の合計(4か月分)\nお支払いいただく額:71,680円\n納付期限:令和8年12月15日(火)\n同時の納付書で、金融機関、郵便局、コンビニエンスストアで納付できます。\n電子納付番号:[NUMBER_1]\nなお、令和8年10月分(17,920円)の納付期限は令和8年11月30日です。\nご案内\n1. 国民年金保険料の納付は、国民年金法により義務付けられています。未納のままでは、将来の老齢基礎年金や、障害基礎年金を受け取れないことがあります。\n2. 納付期限までに納付がない場合は、督促状を送付し、その後も納付がないとときは、国民年金法第96条に基づき財産を差し押さえることがあります。\n3. 所得が少ない等の理由で納付が困難な場合、保険料の免除・納付猶予制度があります。学生の方は学生納付特例ご利用ください。\n4. 日本を出国して転居を提出された方、既に納付済みの方は、年金事務所へご連絡ください。\n[ADDRESS_1]",
+   "alternates": [
+    "(納付義務・重要なお知らせです)",
+    "日本年金機構の記録では、次の期の国民年金保険料の納付が確認できておりません。下記の納付期限までにて納めてください。",
+    "令和8年9月分 17,920円 未納",
+    "未納保険料の合計(4ヶ月分) 71,680円",
+    "同封の納付書で、金融機関、郵便局、コンビニエンスストアで納付できます。",
+    "1.国民年金保険料の納付は、国民年金法により義務付けられています。未婚のままでは、将来の老齢基礎年金や、障害基礎年金を受け取れないことがあります。",
+    "3.所得がない等の理由で納付が困難な場合は、保険料の免除・納付猶予制度があります。学生の方は学生納付特例をご利用ください。"
+   ]
+  },
+  {
+   "id": "ko01",
+   "split": "dev",
+   "pages": 1,
+   "readSec": 24.83540000003576,
+   "actionFirst": true,
+   "actionFinal": false,
+   "explainSec": 2.703199999988079,
+   "checkSec": 45.003,
+   "consequenceFirst": true,
+   "consequenceFinal": false,
+   "finalDeadlineRight": false,
+   "deadlinePrinted": true,
+   "finalAmountRight": false,
+   "final": {
+    "error": "Timeout has expired."
+   },
+   "figuresRead": [
+    true,
+    true
+   ],
+   "figuresKept": [
+    true,
+    true
+   ],
+   "idsMissedByModel": [
+    "2026-11-0048213"
+   ],
+   "idsSent": [],
+   "agencyKept": [
+    true,
+    true
+   ],
+   "deadlineRight": true,
+   "amountRight": true,
+   "explained": {
+    "title": "Unpaid health insurance and long-term care premium notice",
+    "steps": [
+     "Pay 286,370원 by November 25, 2026 using virtual account 562-01-998877",
+     "If you cannot pay the full amount at once, you can apply to pay in installments",
+     "If you have already paid, ignore this notice"
+    ],
+    "deadline_iso": "2026-11-25",
+    "amount": "286,370원",
+    "if_ignored": "Your property such as bank deposits may be seized under Article 15 of the National Health Insurance Act, and the extension of your period of stay in the country may be restricted.",
+    "corrected": [
+     "read as \"남부할\", understood as \"납부할\" (to pay)",
+     "read as \"남부기한\", understood as \"납부기한\" (payment deadline)",
+     "read as \"남부\", understood as \"납부\" (payment)",
+     "read as \"귀속\", understood as \"귀속\" (attribution month)"
+    ]
+   },
+   "transcript": "국민건강보험공단\n구로구시구로구 광원로 54\n고지번호 2026-11-0048213\n발행일 2026년 11월 10일\n건강보험료 납부 특칙 고지서\n(지역기지값 2026년 11월 발행분)\n성명 마리아 잠레스 (Maria Gonzalez) 외국인등록번호 920314-6234567\n주소 서울특별시 구로구 디지털로 123, 402호\n남부자번호 5 1120 4478 902\n체납 내역\n귀속 월 건강보험료 장기요양보험료 연세금 합계\n2026년 9월 124,900원 16,170원 2,820원 143,890원\n2026년 10월 124,900원 16,170원 1,410원 142,480원\n남부할 금액 286,370원\n남부기한: 2026년 11월 25일\n남부기한 후 남부 금액: 290,600원 (2026년 12월 10일까지)\n가상계좌: 562-01-998877 (예금주: 국민건강보험공단)\n안내\n1. 납부기한까지 납부하지 않으면 국민건강보험법 제15조에 따라 재산(예금, 금이 동류)이 압류될 수 있습니다.\n2. 보험료를 체납한 외국인은 출국금리법에 따라 재류기간 연장 하기가 제한될 수 있습니다.\n3. 이미 납부하신 경우 이 고지서는 무시하셔도 됩니다. 이중 납부액은 환급됩니다.\n4. 일시 납부가 어려운 경우 납부 분할 납부를 신청할 수 있습니다.\n5. 이 처분에 이의가 있고면 고지를 받은 날부터 90일 이내에 의견서를 제출할 수 있습니다.\n국민건강보험공단\n이사장\n문어: 1577-1000 (외국어 상담 033-811-2000) 행일 09:00-18:00 · www.nhis.or.kr",
+   "second": "건강보험 남부 특록 고지서\n(지역기지구자 : 2026년 11월 발행분)\n성명 마리아 군زال레스 (Maria Gonzalez) 외국인등록번호 920314-6234567\n주소 서울특별시 구로구 디지털로 123, 402호 세대주 본인\n남부자번호 5 1120 4478 902 대체주\n체 납 내역\n구적 월 건강보험료 장기요양보험료 연체금 한계\n2026년 9월 124,900원 16,170원 2,820원 143,890원\n2026년 10월 124,900원 16,170원 1,410원 142,480원\n납부할 금액 286,370원\n납부기한: 2026년 11월 25일\n납부기한 후 납부 금액: 290,600원 (2026년 12월 10일까지)\n가상계좌: 562-01-998877 (예금주: 국민건강보험공단)\n안내\n1. 납부기한까지 납부하지 않으면 국민건강보험법 제15조에 따라 제재요금, 금이 등이 발생할 수 있습니다.\n2. 보험료를 세월급으로 출금권리에 따라 처리할 기간을 제외할 수 있습니다.\n3. 이미 납부하신 경우 이 고지서는 무시하셔도 됩니다. 이름 납부액은 환급됩니다.\n4. 실수 차납부터 여유 납부한 전액 서서 분납 납부 신청할 수 있습니다.\n5. 이 처분에 이의가 있으면 고지를 받은 날부터 90일 이내에 이의신청할 수 있습니다.\n4. 실사 남자가 어려운 남부지간 전에 재산 분할계약을 신청할 수 있습니다.\n5. 이 처분에 의거가 있으면 고지를 받은 날부터 90일 이내에 이의신청을 할 수 있습니다.",
+   "items": [
+    {
+     "kind": "NAME",
+     "value": "마리아 잠레스 (Maria Gonzalez)"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "920314-6234567"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "서울특별시 구로구 디지털로 123, 402호"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "남부자번호 5 1120 4478 902"
+    },
+    {
+     "kind": "ACCOUNT",
+     "value": "562-01-998877"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "1577-1000 (외국어 상담 033-811-2000)"
+    },
+    {
+     "kind": "NAME",
+     "value": "마리아 군زال레스 (Maria Gonzalez)"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "920314-6234567"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "서울특별시 구로구 디지털로 123, 402호 세대주 본인"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "5 1120 4478 902 대체주"
+    },
+    {
+     "kind": "ACCOUNT",
+     "value": "562-01-998877"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "Tel"
+    }
+   ],
+   "outgoing": "국민건강보험공단\n구로구시구로구 광원로 54\n고지번호 [NUMBER_1]\n발행일 2026년 11월 10일\n건강보험료 납부 특칙 고지서\n(지역기지값 2026년 11월 발행분)\n[NAME_2] 외국인등록번호 [ID_NUMBER_1]\n[ADDRESS_1]\n[REFERENCE_NUMBER_1]\n체납 내역\n귀속 월 건강보험료 장기요양보험료 연세금 합계\n2026년 9월 124,900원 16,170원 2,820원 143,890원\n2026년 10월 124,900원 16,170원 1,410원 142,480원\n남부할 금액 286,370원\n남부기한: 2026년 11월 25일\n남부기한 후 남부 금액: 290,600원 (2026년 12월 10일까지)\n가상계좌: [ACCOUNT_1] (예금주: 국민건강보험공단)\n안내\n1. 납부기한까지 납부하지 않으면 국민건강보험법 제15조에 따라 재산(예금, 금이 동류)이 압류될 수 있습니다.\n2. 보험료를 체납한 외국인은 출국금리법에 따라 재류기간 연장 하기가 제한될 수 있습니다.\n3. 이미 납부하신 경우 이 고지서는 무시하셔도 됩니다. 이중 납부액은 환급됩니다.\n4. 일시 납부가 어려운 경우 납부 분할 납부를 신청할 수 있습니다.\n5. 이 처분에 이의가 있고면 고지를 받은 날부터 90일 이내에 의견서를 제출할 수 있습니다.\n국민건강보험공단\n이사장\n문어: 1577-1000 (외국어 상담 033-811-2000) 행일 09:00-18:00 · www.nhis.or.kr",
+   "alternates": [
+    "건강보험 남부 특록 고지서",
+    "(지역기지구자 : 2026년 11월 발행분)",
+    "구적 월 건강보험료 장기요양보험료 연체금 한계",
+    "납부할 금액 286,370원",
+    "납부기한: 2026년 11월 25일",
+    "납부기한 후 납부 금액: 290,600원 (2026년 12월 10일까지)",
+    "1. 납부기한까지 납부하지 않으면 국민건강보험법 제15조에 따라 제재요금, 금이 등이 발생할 수 있습니다.",
+    "2. 보험료를 세월급으로 출금권리에 따라 처리할 기간을 제외할 수 있습니다.",
+    "3. 이미 납부하신 경우 이 고지서는 무시하셔도 됩니다. 이름 납부액은 환급됩니다.",
+    "4. 실수 차납부터 여유 납부한 전액 서서 분납 납부 신청할 수 있습니다.",
+    "5. 이 처분에 이의가 있으면 고지를 받은 날부터 90일 이내에 이의신청할 수 있습니다.",
+    "4. 실사 남자가 어려운 남부지간 전에 재산 분할계약을 신청할 수 있습니다.",
+    "5. 이 처분에 의거가 있으면 고지를 받은 날부터 90일 이내에 이의신청을 할 수 있습니다."
+   ]
+  },
+  {
+   "id": "ko02",
+   "split": "dev",
+   "pages": 1,
+   "readSec": 28.684600000023842,
+   "actionFirst": true,
+   "actionFinal": true,
+   "explainSec": 2.932,
+   "checkSec": 10.533399999976158,
+   "consequenceFirst": true,
+   "consequenceFinal": true,
+   "finalDeadlineRight": true,
+   "deadlinePrinted": true,
+   "finalAmountRight": true,
+   "final": {
+    "title": "Local income tax payment notice",
+    "steps": [
+     "Pay 422,610원 by December 31, 2026.",
+     "Use the virtual account 801-26-4418-90372 (account holder: 영등포구청), Wetax (위택스), or the automated phone payment system ARS 1588-2112.",
+     "If you have already paid, keep your receipt for 5 years."
+    ],
+    "objection": "If you disagree with this notice, you can file an objection (이의신청) or an appeal (심판청구) within 90 days of receiving the notice.",
+    "deadline_iso": "2026-12-31",
+    "amount": "422,610원",
+    "if_ignored": "If you do not pay by the deadline, a 3% late payment penalty is added (making the total 435,280원 until January 31, 2027), plus 0.75% per month thereafter. If delinquency continues, your assets such as bank deposits, wages, or real estate may be seized, and it may negatively affect your visa extension review as a foreign national.",
+    "corrected": [
+     "read as \"남부고지서\", understood as \"납부고지서\" (payment notice)",
+     "read as \"남세자\", understood as \"납세자\" (taxpayer)",
+     "read as \"남부할 세액\", understood as \"납부할 세액\" (tax amount to pay)",
+     "read as \"남기 내 금액\", understood as \"납기 내 금액\" (amount due within deadline)",
+     "read as \"남부기한\", understood as \"납부기한\" (payment deadline)",
+     "read as \"재납이 계속되면\", understood as \"체납이 계속되면\" (if delinquency continues)",
+     "read as \"금곡\", understood as \"급여\" (wages/salary)",
+     "read as \"채무가 심사\", understood as \"체류기간 연장 심사\" (stay extension review)",
+     "read as \"심정청구\", understood as \"심판청구\" (appeal/adjudication request)"
+    ]
+   },
+   "figuresRead": [
+    true,
+    true
+   ],
+   "figuresKept": [
+    true,
+    true
+   ],
+   "idsMissedByModel": [
+    "NGUYEN VAN TUAN"
+   ],
+   "idsSent": [],
+   "agencyKept": [
+    false,
+    false
+   ],
+   "deadlineRight": true,
+   "amountRight": true,
+   "explained": {
+    "title": "Local Income Tax Bill",
+    "steps": [
+     "Pay 422,610원 by December 31, 2026 using virtual account 801-26-4418-90372, Wetax, or ARS 1588-2112 referencing electronic payment number 11560-2-26-12-0730418."
+    ],
+    "deadline_iso": "2026-12-31",
+    "amount": "422,610원",
+    "if_ignored": "If you do not pay by the deadline, late payment penalties will be added, additional monthly charges of 0.75% will apply, your assets such as bank accounts and property may be seized, and you may face disadvantages in screening or reviews for foreigners with tax arrears.",
+    "corrected": [
+     "read as \"남부기한\", understood as \"납기기한\" (payment deadline)",
+     "read as \"남기 내 금액\", understood as \"납기 내 금액\" (amount due by deadline)",
+     "read as \"남기 후 금액\", understood as \"납기 후 금액\" (amount due after deadline)",
+     "read as \"금곡\", understood as \"금전\" or similar financial assets (property/assets for seizure)"
+    ]
+   },
+   "transcript": "서울특별시 영등포구청\n세무과・서울특별시 영등포구 당산로 123\n전자납부번호 11560-2-26-12-0730418\n발행일 2026년 11월 30일\n지방소득세 남부고지서\n(종합소득세・기한후 신고 결정분)\n남세자 유우엔 반 투안 (NGUYEN VAN TUAN)\n주의 서울특별시 영등포구 도림로 38길 15, 301호\n외국인등록번호 880517-5412789\n주소 서울특별시 영등포구 도림로 38길 15, 301호 과세번호 2026-0418-5520731 과세연도 2025년 귀속\n세액 산출 내역\n구분 과세표준 세율 금액\n개인지방소득세 (본세) 31,480,000원 0.6~1.5% 356,700원\n무신고 가산세 - 20% 71,340원\n남부지연 가산세 (~2026. 11. 30.) - 1일 0.022% 43,170원\n기납부세액 (특별징수분) - - -48,600원\n남부할 세액 422,610원\n남기 내 금액: 422,610원 (남부기한 2026년 12월 31일)\n남기 후 금액: 435,280원 (2027년 1월 31일까지, 남부지연가산세 3% 포함)\n가상계좌: 801-26-4418-90372 (예금주: 영동포구청) · 위택스 · ARS 1588-2112\n유의사항\n1. 남부기한까지 없으면 지방세법기본법 제55조에 따라 남부지연가산세가 추가되고, 이후 매월 0.75%씩 더해집니다.\n2. 재납이 계속되면 지방세법 수정법 §33조에 따라 예금, 금곡, 부동산 등 재산이 압류될 수 있습니다.\n3. 지방세를 체납한 외국인의 채무가 심사에서 불이익을 받을 수 있습니다.\n4. 고지 내용에 이의가 있으면 고지서를 받은 날로부터 90일 이내에 이의신청 또는 심정청구를 할 수 있습니다.\n5. 이미 납부한 정부는 영영충 5년 간 보관하기 바랍니다.\n영동포구청\n인\n문의: 영동포구청 세무과 02-2670-3215 외국인 상담 02-2670-3248 평일 09:00~18:00",
+   "second": "서울특별시 영동구청\n세무과 • 서울특별시 영동구 당산로 123\n지방소득세 납부고지서\n(중합소득 - 기한 후 신고 결정분)\n남세자 웅우엔 반 투안 (NGUYEN VAN TUAN) 외국인등록번호 880517-5412789\n주소 서울특별시 영동구 드림로 38 길 15, 301호 과세번호 2026-0418-5520731 과세연도 2025년 귀속\n세액 산출 내역\n구분 과세표준 세율 금액\n개인지방소세(본세) 31,480,000원 0.6 ~ 1.5% 356,700원\n무신고 가산세 - 20% 71,340원\n지방지연 가산세(~2026. 11. 30.) - 1일 0.022% 43,170원\n기납부세액(특별징수분) - - -48,600원\n남부할 세액 422,610원\n남기 내 금액: 422,610원 (남부기한 2026년 12월 31일)\n납기 후 금액: 435,280원 (2027년 1월 31일까지, 남부지연가산세 3% 포함)\n가상계좌: 801-26-4418-90372 (예금주: 영동농구청・위택스・ARS 1588-2112\n유의사항\n1. 납부기한까지 미납 않으면 지방세법 제55조에 따라 지방지연가산세가 추가되고, 이후 매월 0.75% 더 내야됩니다.\n2. 계정 습득 시 지방세법 수정 제33조에 따라 금대, 부용, 부동산 등 재산이 압류될 수 있습니다.\n3. 지방세를 체납한 외무손은 체납 기간 향상 감사에서 불이익을 받을 수 있습니다.\n4. 고지 내역에 이의가 있으면 고지서를 받은 날부터 90일 이내에 이의신청 또는 심판청구를 할 수 있습니다.\n5. 이미 납부액 영수증을 젖힌 보관하기 바랍니다.\n5. 이미 납부한 경우에는 영수증을 5년간 보관하시기 바랍니다.",
+   "items": [
+    {
+     "kind": "NAME",
+     "value": "남세자 유우엔 반 투안"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "서울특별시 영등포구 도림로 38길 15, 301호"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "880517-5412789"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "서울특별시 영등포구 도림로 38길 15, 301호"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "11560-2-26-12-0730418"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "2026-0418-5520731"
+    },
+    {
+     "kind": "ACCOUNT",
+     "value": "801-26-4418-90372"
+    },
+    {
+     "kind": "PHONE",
+     "value": "1588-2112"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "서울특별시 영등포구 당산로 123"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "02-2670-3215"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "02-2670-3248"
+    },
+    {
+     "kind": "NAME",
+     "value": "남세자 웅우엔 반 투안 (NGUYEN VAN TUAN)"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "880517-5412789"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "서울특별시 영동구 드림로 38 길 15, 301호"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "2026-0418-5520731"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "2025년 귀속"
+    },
+    {
+     "kind": "ACCOUNT",
+     "value": "801-26-4418-90372"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "ARS 1588-2112"
+    }
+   ],
+   "outgoing": "서울특별시 영등포구청\n세무과・[ADDRESS_7]\n전자납부번호 [REFERENCE_NUMBER_1]\n발행일 2026년 11월 30일\n지방소득세 남부고지서\n(종합소득세・기한후 신고 결정분)\n남세자 유우엔 [NAME_1] [NAME_2])\n[ADDRESS_1]\n외국인등록번호 [ID_NUMBER_1]\n[ADDRESS_2] 과세번호 [REFERENCE_NUMBER_2] 과세연도 [REFERENCE_NUMBER_5]\n세액 산출 내역\n구분 과세표준 세율 금액\n개인지방소득세 (본세) 31,480,000원 0.6~1.5% 356,700원\n무신고 가산세 - 20% 71,340원\n남부지연 가산세 (~2026. 11. 30.) - 1일 0.022% 43,170원\n기납부세액 (특별징수분) - - -48,600원\n남부할 세액 422,610원\n남기 내 금액: 422,610원 (남부기한 2026년 12월 31일)\n남기 후 금액: 435,280원 (2027년 1월 31일까지, 남부지연가산세 3% 포함)\n가상계좌: [ACCOUNT_1] (예금주: 영동포구청) · 위택스 · ARS 1588-2112\n유의사항\n1. 남부기한까지 없으면 지방세법기본법 제55조에 따라 남부지연가산세가 추가되고, 이후 매월 0.75%씩 더해집니다.\n2. 재납이 계속되면 지방세법 수정법 §33조에 따라 예금, 금곡, 부동산 등 재산이 압류될 수 있습니다.\n3. 지방세를 체납한 외국인의 채무가 심사에서 불이익을 받을 수 있습니다.\n4. 고지 내용에 이의가 있으면 고지서를 받은 날로부터 90일 이내에 이의신청 또는 심정청구를 할 수 있습니다.\n5. 이미 납부한 정부는 영영충 5년 간 보관하기 바랍니다.\n영동포구청\n인\n문의: 영동포구청 세무과 [REFERENCE_NUMBER_3] 외국인 상담 [REFERENCE_NUMBER_4] 평일 09:00~18:00",
+   "alternates": [
+    "서울특별시 영동구청",
+    "지방소득세 납부고지서",
+    "(중합소득 - 기한 후 신고 결정분)",
+    "개인지방소세(본세) 31,480,000원 0.6 ~ 1.5% 356,700원",
+    "지방지연 가산세(~2026. 11. 30.) - 1일 0.022% 43,170원",
+    "납기 후 금액: 435,280원 (2027년 1월 31일까지, 남부지연가산세 3% 포함)",
+    "1. 납부기한까지 미납 않으면 지방세법 제55조에 따라 지방지연가산세가 추가되고, 이후 매월 0.75% 더 내야됩니다.",
+    "2. 계정 습득 시 지방세법 수정 제33조에 따라 금대, 부용, 부동산 등 재산이 압류될 수 있습니다.",
+    "3. 지방세를 체납한 외무손은 체납 기간 향상 감사에서 불이익을 받을 수 있습니다.",
+    "4. 고지 내역에 이의가 있으면 고지서를 받은 날부터 90일 이내에 이의신청 또는 심판청구를 할 수 있습니다.",
+    "5. 이미 납부액 영수증을 젖힌 보관하기 바랍니다.",
+    "5. 이미 납부한 경우에는 영수증을 5년간 보관하시기 바랍니다."
+   ]
+  },
+  {
+   "id": "ko03",
+   "split": "dev",
+   "pages": 1,
+   "readSec": 34.15830000001192,
+   "actionFirst": true,
+   "actionFinal": true,
+   "explainSec": 3.0118000000119207,
+   "checkSec": 7.928199999988079,
+   "consequenceFirst": true,
+   "consequenceFinal": true,
+   "finalDeadlineRight": true,
+   "deadlinePrinted": true,
+   "finalAmountRight": true,
+   "final": {
+    "title": "Overdue national pension premium demand notice",
+    "steps": [
+     "Pay 712,200원 by January 11, 2027, using virtual account 270-88-0193-4426 (account holder: 국민연금공단) or giro number 0011034.",
+     "If you have no income and cannot pay, bring your ID and visit the nearest National Pension Service branch to apply for a payment exemption.",
+     "If you already paid after November 28, 2026, your payment may not be reflected in this notice."
+    ],
+    "objection": "If you disagree with this disposition, you can file a request for review (심사청구) with the National Pension Service within 90 days from the date you became aware of it.",
+    "deadline_iso": "2027-01-11",
+    "amount": "712,200원",
+    "if_ignored": "Late fees will increase up to a maximum of 5%. Under Article 95 of the National Pension Act, your assets such as bank deposits, wages, and vehicles may be seized. Additionally, the unpaid period will not count toward your pension enrollment period, which may reduce future benefits such as old-age pension or lump-sum refunds.",
+    "corrected": [
+     "read as \"채납 특촉 고지서\", understood as \"체납 독촉 고지서\" (overdue payment demand notice)",
+     "read as \"독특 납부기한\" / \"독촉 남부기한\", understood as \"독촉 납부기한\" (overdue payment deadline)",
+     "read as \"납부액의 통신\" / \"남부액을 신청\", understood as \"납부예외를 신청\" (apply for payment exemption)",
+     "read as \"지분이 있을 안 납부터\" / \"소액이 있음은 안 날부터\", understood as \"처분이 있음을 안 날부터\" (from the date you became aware of the disposition)",
+     "read as \"심정구\", understood as \"심사청구\" (request for review)"
+    ]
+   },
+   "figuresRead": [
+    true,
+    true
+   ],
+   "figuresKept": [
+    true,
+    true
+   ],
+   "idsMissedByModel": [
+    "RAHMAT HASAN"
+   ],
+   "idsSent": [],
+   "agencyKept": [
+    true,
+    true
+   ],
+   "deadlineRight": true,
+   "amountRight": true,
+   "explained": {
+    "title": "Overdue National Pension payment notice",
+    "steps": [
+     "Pay the amount of 712,200원 to the virtual account 270-88-0193-4426 (National Pension Service) with giro number 0011034 by January 11, 2027.",
+     "If you have no income and cannot pay the insurance premiums, visit a nearby branch with an application form to request adjustment.",
+     "If you have questions, call the National Pension Customer Center at 1355, the Ansan Branch at 031-412-6420, or foreign language consultation at 1355 (extension 7)."
+    ],
+    "deadline_iso": "2027-01-11",
+    "amount": "712,200원",
+    "if_ignored": "Your assets such as bank deposits and vehicles may be seized according to the National Pension Act, and your non-payment period will not count toward your pension subscription period, which may reduce your pension benefits.",
+    "corrected": [
+     "read as \"연금보령료\", understood as \"연금보험료\" (pension insurance premium)",
+     "read as \"채납\", understood as \"체납\" (overdue or unpaid)",
+     "read as \"독특\", understood as \"독촉\" (reminder or urge to pay)"
+    ]
+   },
+   "transcript": "국민연금공단\n안산지사 · 경기도 안산시 단원구 고자로 92\n문서번호 안산지사-접-2026-07714\n발송일 2026년 12월 3일\n연금보험료 채납 특촉 고지서\n(지역가입자 · 2026년 12월 특촉분)\n가입자 라흐만 하산 (RAHMAT HASAN) 외국인등록번호 910822-5739016\n주소 경기도 안산시 단원구 원곡로 211, 2층 204호\n관리번호 91082257390-16 연락처 010-4821-6630\n제남 보험료 내역\n납부 월 기준소득액 연금보령료 연체금 소계\n2026년 8월 2,450,000원 232,750원 6,980원 239,730원\n2026년 9월 2,450,000원 232,750원 4,650원 237,400원\n2026년 10월 2,450,000원 232,750원 2,320원 235,070원\n납부하실 금액 712,200원\n독특 납부기한: 2027년 1월 11일\n납부하실 금액 712,200원 · 기한 경과 시 연체금의 최저 5%가 율이 적용됩니다\n가상계좌: 270-88-0193-4426 (예금주: 국민연금공단) · 지도번호 0011034\n알려드립니다\n1. 독특 납부 기한까지 없으면 국민연금법 제95조에 따라 재산 침해의 예에 의하여 예금, 자율 자 등 재산을 압류합니다.\n2. 보험료를 내지 않은 기간은 연금 가입 기간에 들아가 없어 연금, 반환일시금 등 급여가 줄어들 수 있습니다.\n3. 소득이 없으며 보험료를 내기 어려우면 납부액의 통신할 수 있습니다(신청용 지참, 가까운 지사 방문).\n4. 이 처분에 의거 있으면 지분이 있을 안 납부터 90일 내에 공단에 심사청구를 할 수 있습니다.\n5. 2026년 11월 28일 이후 납부한 금액은 이 고지서에 반영되지 않았을 수 있습니다.\n국민연금공단 이사장\n문의: 국민연금 교육센터 1355 · 안산지사 031-412-6420 · 외국어 상담 1355 (내선 7번) ·\nwww.nps.or.kr",
+   "second": "국민연금공단\n안산지사 · 경기도 안산시 단원구 교좌로 92\n문서번호 안산지사-접-2026-07714\n발송일 2026년 12월 3일\n연금보험 체납 독촉 고지서\n(지역가입자 · 2026년 12월 독촉분)\n가입자 라호 맛 하산 (RAHMAT HASAN) 외국인등록번호 910822-5739016\n주소 경기도 안산시 단원구 원곡로 211, 2층 204호\n관리번호 91082257390-16 연락처 010-4821-6630\n체납 보험료 내역\n납부 월 기중소득액 연금보험료 연체금 소계\n남부 원\n기준소득액\n연금보험료\n연체금\n소계\n2026년 8월\n2,450,000원\n232,750원\n6,980원\n239,730원\n2026년 9월\n2,450,000원\n232,750원\n4,650원\n237,400원\n2026년 10월\n2,450,000원\n232,750원\n2,320원\n235,070원\n남부하실 금액\n712,200원\n독촉 남부기한: 2027년 1월 11일\n남부하실 금액 712,200원 · 기한 경과 시 연체금이 최대 5%까지 늘어납니다\n가상계좌: 270-88-0193-4426 (예금주: 국민연금공단) · 지로번호 0011034\n알려드립니다\n1. 독촉 남부기한까지 없으면 국민연금법 제95조에 따라 국제 재산청의 예하여 예금, 귀금, 자동차 자동 재산을 압류합니다.\n2. 보험료를 내지 않은 기한은 연금 가입 기간에 들어가지 않아 노령연금, 반연월일금 등 급여가 줄어들 수 있습니다.\n3. 소득이 없어져 보험료를 내기 어려우면 남부액을 신청할 수 있습니다(신용 저장, 가액순 자사 방문).\n4. 이 처분에 의거한 소액이 있음은 안 날부터 90일 이내에 공단에 심정구를 할 수 있습니다.\n5. 2026년 11월 28일 이후 남부금액은 이 교지서 반입되지 않았습니다.\n국민연금\n공단\n이사상\n문의: 국민연금 고객센터 1355 · 안산지사 031-412-6420 · 외국어 상담 1355 (내선 7번) ·\nwww.nps.or.kr",
+   "items": [
+    {
+     "kind": "NAME",
+     "value": "라흐만 하산"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "910822-5739016"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "경기도 안산시 단원구 원곡로 211, 2층 204호"
+    },
+    {
+     "kind": "PHONE",
+     "value": "010-4821-6630"
+    },
+    {
+     "kind": "ACCOUNT",
+     "value": "270-88-0193-4426"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "안산지사-접-2026-07714"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "91082257390-16"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "국민연금 교육센터 1355"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "안산지사 031-412-6420"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "외국어 상담 1355 (내선 7번)"
+    },
+    {
+     "kind": "NAME",
+     "value": "라호 맛 하산 (RAHMAT HASAN)"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "910822-5739016"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "경기도 안산시 단원구 원곡로 211, 2층 204호"
+    },
+    {
+     "kind": "PHONE",
+     "value": "010-4821-6630"
+    },
+    {
+     "kind": "ACCOUNT",
+     "value": "270-88-0193-4426"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "안산지사-접-2026-07714"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "국민연금 고객센터 1355"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "안산지사 031-412-6420"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "외국어 상담 1355 (내선 7번)"
+    }
+   ],
+   "outgoing": "국민연금공단\n안산지사 · 경기도 안산시 단원구 고자로 92\n문서번호 [REFERENCE_NUMBER_1]\n발송일 2026년 12월 3일\n연금보험료 채납 특촉 고지서\n(지역가입자 · 2026년 12월 특촉분)\n가입자 [NAME_3] 외국인등록번호 [ID_NUMBER_1]\n[ADDRESS_1]\n관리번호 [REFERENCE_NUMBER_2] 연락처 [PHONE_1]\n제남 보험료 내역\n납부 월 기준소득액 연금보령료 연체금 소계\n2026년 8월 2,450,000원 232,750원 6,980원 239,730원\n2026년 9월 2,450,000원 232,750원 4,650원 237,400원\n2026년 10월 2,450,000원 232,750원 2,320원 235,070원\n납부하실 금액 712,200원\n독특 납부기한: 2027년 1월 11일\n납부하실 금액 712,200원 · 기한 경과 시 연체금의 최저 5%가 율이 적용됩니다\n가상계좌: [ACCOUNT_1] (예금주: 국민연금공단) · 지도번호 [NUMBER_1]\n알려드립니다\n1. 독특 납부 기한까지 없으면 국민연금법 제95조에 따라 재산 침해의 예에 의하여 예금, 자율 자 등 재산을 압류합니다.\n2. 보험료를 내지 않은 기간은 연금 가입 기간에 들아가 없어 연금, 반환일시금 등 급여가 줄어들 수 있습니다.\n3. 소득이 없으며 보험료를 내기 어려우면 납부액의 통신할 수 있습니다(신청용 지참, 가까운 지사 방문).\n4. 이 처분에 의거 있으면 지분이 있을 안 납부터 90일 내에 공단에 심사청구를 할 수 있습니다.\n5. 2026년 11월 28일 이후 납부한 금액은 이 고지서에 반영되지 않았을 수 있습니다.\n국민연금공단 이사장\n문의: 국민연금 교육센터 1355 · 안산지사 031-412-6420 · 외국어 상담 1355 (내선 7번) ·\nwww.nps.or.kr",
+   "alternates": [
+    "안산지사 · 경기도 안산시 단원구 교좌로 92",
+    "연금보험 체납 독촉 고지서",
+    "(지역가입자 · 2026년 12월 독촉분)",
+    "체납 보험료 내역",
+    "납부 월 기중소득액 연금보험료 연체금 소계",
+    "남부 원",
+    "기준소득액",
+    "연금보험료",
+    "연체금",
+    "소계",
+    "2026년 8월",
+    "2,450,000원",
+    "232,750원",
+    "6,980원",
+    "239,730원",
+    "2026년 9월",
+    "2,450,000원",
+    "232,750원",
+    "4,650원",
+    "237,400원",
+    "2026년 10월",
+    "2,450,000원",
+    "232,750원",
+    "2,320원",
+    "235,070원",
+    "남부하실 금액",
+    "712,200원",
+    "독촉 남부기한: 2027년 1월 11일",
+    "남부하실 금액 712,200원 · 기한 경과 시 연체금이 최대 5%까지 늘어납니다",
+    "가상계좌: [ACCOUNT_1] (예금주: 국민연금공단) · 지로번호 [NUMBER_1]",
+    "1. 독촉 남부기한까지 없으면 국민연금법 제95조에 따라 국제 재산청의 예하여 예금, 귀금, 자동차 자동 재산을 압류합니다.",
+    "2. 보험료를 내지 않은 기한은 연금 가입 기간에 들어가지 않아 노령연금, 반연월일금 등 급여가 줄어들 수 있습니다.",
+    "3. 소득이 없어져 보험료를 내기 어려우면 남부액을 신청할 수 있습니다(신용 저장, 가액순 자사 방문).",
+    "4. 이 처분에 의거한 소액이 있음은 안 날부터 90일 이내에 공단에 심정구를 할 수 있습니다.",
+    "5. 2026년 11월 28일 이후 남부금액은 이 교지서 반입되지 않았습니다.",
+    "국민연금",
+    "공단",
+    "이사상",
+    "문의: 국민연금 고객센터 1355 · 안산지사 031-412-6420 · 외국어 상담 1355 (내선 7번) ·"
+   ]
+  }
+ ]
+}

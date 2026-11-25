@@ -1,4 +1,4 @@
-import { deviceStatus, downloadDeviceModel, warmUp, readLetter, explain, startFollowUp } from './pipeline.js';
+import { deviceStatus, downloadDeviceModel, warmUp, readLetter, readSlice, explain, startFollowUp } from './pipeline.js';
 import { redact } from './redact.js';
 import { filesToPages } from './pages.js';
 import { saveLetter, removeLetter, listLetters } from './box.js';
@@ -170,25 +170,34 @@ function ics(ex) {
   return URL.createObjectURL(new Blob([body], { type: 'text/calendar' }));
 }
 
-// Finds where on the pages a value was read: the strip whose text holds it, and how far down
-// that strip's text it comes. The position is approximate, so the band is a few lines tall.
-function locate(letter, candidates) {
-  const flat = (t) => String(t ?? '').normalize('NFKC').replace(/\s/g, '');
-  for (const candidate of candidates.map(flat).filter((c) => c.length >= 4)) {
-    // The whole value first, then shorter pieces of it, longest first.
-    // A piece shorter than most of the value would match other rows of a table, so it is not tried.
-    for (let size = Math.min(candidate.length, 14); size >= Math.max(5, Math.ceil(Math.min(candidate.length, 14) * 0.7)); size -= 1) {
-      for (let start = 0; start + size <= candidate.length; start += 1) {
-        const piece = candidate.slice(start, start + size);
-        if (!/\d/.test(piece)) continue;
-        for (const r of letter.regions || []) {
-          const text = flat(r.lines.join('')); const at = text.indexOf(piece);
-          if (at !== -1) return { page: r.page, y: r.y0 + ((at + piece.length / 2) / text.length) * (r.y1 - r.y0), h: 0.06 };
-        }
-      }
+// Finds where on a page a value is printed. The first reading says which strip holds it; the
+// on-device model then reads thin slices of that strip, and the band is the slice whose text
+// contains the value. Everything here runs on the device.
+const digitsOf = (t) => String(t ?? '').normalize('NFKC').replace(/\D/g, '');
+const sliceTexts = new Map();
+async function locate(letter, pageUrls, digits) {
+  if (digits.length < 3) return null;
+  const region = (letter.regions || []).find((r) => digitsOf(r.lines.join(' ')).includes(digits));
+  if (!region || !pageUrls[region.page]) return null;
+  const url = pageUrls[region.page];
+  const bmp = await createImageBitmap(await (await fetch(url)).blob());
+  // Readings are kept, so the amount and the deadline share the slices they have in common.
+  const read = async (y0, y1) => {
+    const key = `${url.length}:${url.slice(-40)}:${y0.toFixed(4)}:${y1.toFixed(4)}`;
+    if (!sliceTexts.has(key)) {
+      const c = document.createElement('canvas'); c.width = bmp.width; c.height = Math.round((y1 - y0) * bmp.height);
+      c.getContext('2d').drawImage(bmp, 0, -y0 * bmp.height);
+      sliceTexts.set(key, await readSlice(c.toDataURL('image/jpeg', 0.9).split(',')[1]).catch(() => ''));
     }
+    return digitsOf(sliceTexts.get(key)).includes(digits);
+  };
+  // Halve the strip twice, with a little overlap so a line on the cut is whole in one half.
+  let [y0, y1] = [region.y0, region.y1];
+  for (let step = 0; step < 2; step += 1) {
+    const h = y1 - y0, upper = [y0, y0 + h * 0.56], lower = [y0 + h * 0.44, y1];
+    if (await read(...upper)) [y0, y1] = upper; else if (await read(...lower)) [y0, y1] = lower; else break;
   }
-  return null;
+  return { page: region.page, y0, y1 };
 }
 
 function answer(letter, ex, record) {
@@ -196,16 +205,18 @@ function answer(letter, ex, record) {
   record ??= { id: String(Date.now()), savedAt: Date.now(), done: false };
   // Kept in this browser so the person can come back to it, also offline.
   const keep = (explanation) => saveLetter({ ...record, language: state.language, pages: letter.pages || record.pages, letter: { outgoing: letter.outgoing, alternates: letter.alternates, vault: letter.vault, regions: letter.regions }, explanation });
-  const point = (explanation) => {
-    app.querySelectorAll('.pg .band').forEach((b) => b.remove());
-    const found = [['Amount', [explanation.amount]], ['Deadline', [(String(explanation.deadline_printed_as || '').match(/\d{1,4}[^\d\n]{0,12}\d{1,2}[^\d\n]{0,12}\d{1,4}\S?/) || [''])[0], explanation.deadline_printed_as]]]
-      .map(([label, candidates]) => ({ label, at: locate(letter, candidates) })).filter((f) => f.at);
-    // When both are printed on the same line, one band carries both labels.
-    if (found.length === 2 && found[0].at.page === found[1].at.page && Math.abs(found[0].at.y - found[1].at.y) < 0.035) found.splice(0, 2, { label: 'Amount and deadline', at: found[0].at });
-    found.forEach(({ label, at }) => {
-      const page = app.querySelector(`.pg[data-page="${at.page}"]`);
-      if (page) page.insertAdjacentHTML('beforeend', `<div class="band${label === 'Deadline' ? ' left' : ''}" style="top:${((at.y - at.h / 2) * 100).toFixed(1)}%;height:${(at.h * 100).toFixed(1)}%"><span>${label}</span></div>`);
-    });
+  let pointed = 0;
+  const point = async (explanation) => {
+    const run = ++pointed; const pages = letter.pages || record.pages || [];
+    app.querySelectorAll('.pg .band').forEach((el) => el.remove());
+    if (state.status !== 'available') return;
+    const date = (String(explanation.deadline_printed_as || '').match(/\d{1,4}[^\d\n]{0,12}\d{1,2}[^\d\n]{0,12}\d{1,4}/) || [''])[0];
+    for (const [label, digits] of [['Amount', digitsOf(explanation.amount)], ['Deadline', digitsOf(date).length >= 5 ? digitsOf(date) : '']]) {
+      const at = await locate(letter, pages, digits).catch(() => null);
+      if (run !== pointed) return;   // a newer answer replaced this one
+      const page = at && app.querySelector(`.pg[data-page="${at.page}"]`);
+      if (page) page.insertAdjacentHTML('beforeend', `<div class="band${label === 'Deadline' ? ' left' : ''}" style="top:${(at.y0 * 100).toFixed(1)}%;height:${((at.y1 - at.y0) * 100).toFixed(1)}%"><span>${label}</span></div>`);
+    }
   };
   // Marks the values this browser put back in place of placeholders.
   const back = (text, typed = []) => {
@@ -241,12 +252,14 @@ function answer(letter, ex, record) {
     <div id="qa"></div>`}
   </article>`;
   const wire = () => { $('#home').onclick = () => home(); };
-  wire(); point(ex); keep(ex);
+  wire(); keep(ex);
+  // The band is drawn for the final answer only: offline, reopened, or after the double-check.
+  if (ex.source === 'on_device' || ex.checked) point(ex);
   if (ex.source === 'on_device') return;
   if (!ex.checked) {
     explain(letter, state.language, { check: true })
       .then((checked) => { $('#top').innerHTML = top(checked); wire(); point(checked); keep(checked); })
-      .catch(() => { $('#top').innerHTML = top(ex); wire(); });
+      .catch(() => { $('#top').innerHTML = top(ex); wire(); point(ex); });
   }
   const ask = startFollowUp(letter, state.language, ex);
   $('#ask').onsubmit = async (e) => {

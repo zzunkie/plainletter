@@ -1,0 +1,1999 @@
+{
+ "failedToRead": [],
+ "summary": {
+  "real": {
+   "letters": 11,
+   "pages": 15,
+   "figuresReadByNano": "15 of 19",
+   "figuresKeptVisible": "19 of 19",
+   "identifiersMaskedByNanoAlone": "42 of 47",
+   "identifiersSentAfterRules": "3 of 47",
+   "agencyNumbersKeptVisible": "2 of 5",
+   "deadline": "6 first, 6 after double-check, of 8 with a printed deadline",
+   "amount": "6 first, 6 after double-check, of 11",
+   "action": "10 first, 9 after double-check, of 11",
+   "consequence": "11 first, 11 after double-check, of 11",
+   "misreadWordsCorrected": "19 on 8 letters",
+   "readSeconds": "median 44 (27 to 164)",
+   "explainSeconds": "median 2 (2 to 3)",
+   "doubleCheckSeconds": "median 9 (5 to 11)"
+  }
+ },
+ "rows": [
+  {
+   "id": "rde01",
+   "split": "real",
+   "pages": 2,
+   "readSec": 71.30269999998808,
+   "actionFirst": true,
+   "actionFinal": true,
+   "explainSec": 3.376699999988079,
+   "checkSec": 8.781900000035764,
+   "consequenceFirst": true,
+   "consequenceFinal": true,
+   "finalDeadlineRight": true,
+   "deadlinePrinted": false,
+   "finalAmountRight": true,
+   "final": {
+    "title": "2014 Income Tax Assessment Notice",
+    "steps": [
+     "Pay 9.340,40 € by bank transfer by TT.MM.2015 to the tax office account: IBAN DE01 2345 6789 1011 1213 14 (BIC AGSTB2014XX) at Sparkasse Musterhausen, or IBAN DE01 2345 6789 1011 1213 15 (BIC AGSTB2014XY)."
+    ],
+    "objection": "",
+    "deadline_iso": "",
+    "amount": "9.340,40 €",
+    "if_ignored": "The provided pages of the letter do not state what happens if you do not pay.",
+    "corrected": [
+     "read as \"Empfangsvollmächtigter\", understood as \"Empfangsbevollmächtigter\" (authorized recipient)",
+     "read as \"dennnach\", understood as \"demnach\" (accordingly)",
+     "read as \"Szeiten\", understood as \"Seiten\" (pages)"
+    ]
+   },
+   "figuresRead": [
+    true
+   ],
+   "figuresKept": [
+    true
+   ],
+   "idsMissedByModel": [],
+   "idsSent": [],
+   "agencyKept": [
+    false
+   ],
+   "deadlineRight": true,
+   "amountRight": true,
+   "explained": {
+    "title": "Tax assessment notice for income, solidarity, and church tax",
+    "steps": [
+     "Transfer the amount of 9.340,40 € by TT.MM.2015 to the bank account with IBAN DE01 2345 6789 1011 1213 14 or DE01 2345 6789 1011 1213 15."
+    ],
+    "deadline_iso": "",
+    "amount": "9.340,40 €",
+    "if_ignored": "The letter does not state what happens if you do nothing.",
+    "corrected": [
+     "read as \"Telefon\", understood as \"Telefon\" (phone)",
+     "read as \"Telefax\", understood as \"Telefax\" (fax)"
+    ]
+   },
+   "transcript": "Finanzamt Musterstadt\nWeg zum Glück 88\n12345 Musterhausen\nFinanzamt Postfach 123456 12345 Musterhausen\nFischer GmbH\nSteuerberatungsgesellschaft\nAlter Münzweg 99\n12345 Musterhausen\nDatum: TT.MM.2015\nSteuernummer: 5123/4567/8910\nIdNr. Ehemann: 01 234 567 890\nIdNr. Ehefrau: 10 987 654 321\nVeranlagungsbezirk 88\nTelefon: 0123 4567 89 - 10\nTelefax: 0123 4567 89 - 20\nAlter Münzweg 99\n12345 Musterhausen\nVeranlagungsbezirk 88\nTelefon: 0123 4567 89 - 10\nTelefax: 0123 4567 89 - 20\nE-Mail: Poststelle-123@fv.nrw.de\nals Empfangsvollmächtigter für\nHerrn Max Mustermann und Frau Frieda Mustermann Erfolgsstraße 123 12345 Musterhausen\nBescheid für 2014 über\nEinkommensteuer, Solidaritätszuschlag und Kirchensteuer\nsowie Feststellung XXXX nach § XXX EStG\nA: Allgemeiner Hinweis\nEtwaige Erläuterungen zur Steuerfestsetzung, zu Abweichungen von Ihrer Steuererklärung und Hinweise auf noch einzureichende Unterlagen finden Sie in Abschnitt F [G → dynamische Beistellung, je nach Konstellation].\nB: Festsetzung, Abrechnung [und Feststellungen]\nDer Bescheid ist nach § 165 Abs. 1 Satz 1 und Satz 2 AO teilweise vorläufig.\nDie Begründung der Vorläufigkeiten finden Sie in Abschnitt G [H → dynamische Beisteilung, je nach Konstellation].\nDer Bescheid ergeht nach § 164 Abs. 1 AO unter dem Vorbehalt der Nachprüfung.\nFestsetzung\nEinkommensteuer € evangelische Kirchensteuer € röm.-katholische Kirchensteuer €\nFestgesetzt werden\nAbzug vom Lohn\n- des Ehemannes\n- der Ehefrau\nverbleibende Beträge\n52.112,00\n-2.549,00\n-31.138,00\n18.425,00\n2.146,32\n0,00\n0,00\n2.146,32\n0,00\n0,00\n1.917,27\nAbrechnung in €\nnach dem Stand vom TT MM 2015\nverbleibende Beträge\nAbrechnung in €\nnach dem Stand vom TT.MM.2015\nabzurechnen sind\nbereits gezahlt\nerstattet\ndemnach zu wenig gezahlt\nKonten der Finanzkasse:\nKreditinstitut:\nSparkasse Musterhausen\nDeutsche Bank\nIBAN:\nDE01 2345 6789 1011 1213 14\nDE01 2345 6789 1011 1213 15\nBIC:\nAGSTB2014XX\nAGSTB2014XY\nweitere Informationen finden Sie im Internet unter www.finanzamt.nrw.de\nSteuernummer: 5123/4567/8910\nIdNr.Ehemann: 01 234 567 890\nIdNr.Ehefrau: 10 987 654 321\nFestgesetzt werden\nAbzug vom Lohn\n- des Ehemannes\n- der Ehefrau\nverbleibende Beträge\nAbrechnung in €\nnach dem Stand vom TT.MM.2015\nabzurechnen sind\nbereits gezahlt\nerstattet\nSolidaritäts-\nzuschlag €\n2.623,28\n-139,92\n-1.631,55\n851,81\n23.340,40\n851,81\n23.340,40\n200,00\n14.000,00\n0,00\n0,00,00\nnach dem Stand vom TT.MM.2015\nabzurechnen sind\nbereits gezahlt\nerstattet\ndemnach zu wenig gezahlt\n651,81\n9.340,40\nBitte zahlen Sie 9.340,40 € bis zum TT.MM.2015 durch Überweisung auf das unten angegebene Konto der Finanzkasse.\n[alternativ: Über eine etwaige Verrechnung des Restguthabens mit Gegenansprüchen erhalten Sie eine besondere Mitteilung. Der darüber hinausgehende Betrag wird erstattet auf das Konto mit der IBAN DE12 3456 7891 0123 4567 89 bei Deutsche Bank (BIC DEUTDEBESS), sofern er mindestens 1,- € beträgt.]\nC: Steuerbelastung [länderspezifisch auch andere Inhalte möglich]\nIhre Einkommensteuerbelastung (49.946,00 €) bezogen auf das zu versteuernde Einkommen (158.155 €) beträgt 31,58 %.\nDabei wurde bereits vorher für die Berechnung Ihres zu versteuernden Einkommens der Gesamtbetrag der Einkünfte (260.320 €) um abziehbare Aufwendungen (z. B. Vorsorgeaufwendungen u. a.) in Höhe von insgesamt 102.165 € gemindert.\nD: Berechnung des zu versteuernden Einkommens\nDie detaillierte Darstellung der Berechnung des zu versteuernden Einkommens finden Sie in Anlage 1.\nEhemann € Ehefrau € Insgesamt €\nEinkünfte aus selbstständiger Arbeit 52.120 81.860\nEinkünfte aus nichtselbstständiger Arbeit 29.650 99.813\nEinkünfte aus Kapitalvermögen 2.222 1.800\nEinkünfte aus Vermietung und Verpachtung 10.000 -37.145\nSonstige Einkünfte 15.000 5.000\nSumme der Einkünfte 108.992 151.328 260.320\nGesamtbetrag der Einkünfte 108.992 151.328 260.320\nSonderausgaben\nSumme der beschränkt als Sonderausgaben abziehbaren Vorsorgeaufwendungen -25.520\nSeiten 2 von 9",
+   "second": "Finanzamt Musterstadt\nWeg zum Glück 88\n12345 Musterhausen\nDatum: TT.MM.2015\nFinanzamt Postfach 123456 12345 Musterhausen\nSteuernummer: 5123/4567/8910\nIdNr. Ehemann: 01 234 567 890\nIdNr. Ehefrau: 10 987 654 321\nFischer GmbH\nSteuerberatungsgesellschaft\nAlter Münzweg 99\n12345 Musterhausen\nVeranlagungsbezirk 88\nTelefon: 0123 4567 89 - 10\nTelefax: 0123 4567 89 - 20\nE-Mail: Poststelle-123@fv.nrw.de\nals Empfangsbevollmächtigter für\nHerrn Max Mustermann und Frau Frieda Mustermann Erfolgsstraße 123 12345 Musterhausen\nBescheid für 2014 über\nEinkommensteuer, Solidaritätszuschlag und Kirchensteuer\nsowie Feststellung XXXX nach § XXX EStG\nA: Allgemeiner Hinweis\nEtwaige Erläuterungen zur Steuerfestsetzung, zu Abweichungen von Ihrer Steuererklärung und Hinweise auf noch einzureichende Unterlagen finden Sie in Abschnitt F (G → dynamische Beistellung, je nach Konstellation).\nB: Festsetzung, Abrechnung [und Feststellungen]\nArt der Festsetzung\nDer Bescheid ist nach § 165 Abs. 1 Satz 1 und Satz 2 AO teilweise vorläufig.\nDie Begründung der Vorläufigkeiten finden Sie in Abschnitt G [H → dynamische Beistellung, je nach Konstellation].\nDer Bescheid ergeht nach § 164 Abs. 1 AO unter dem Vorbehalt der Nachprüfung.\nFestsetzung\nFestgesetzt werden Einkommensteuer € evangelische Kirchensteuer € röm-katholische Kirchensteuer €\nAbzug vom Lohn -2.549,00 0,00 -229,05\ndes Ehemannes\n52.112,00 2.146,32 2.146,32\nAbzug vom Lohn\n- des Ehemannes\n- der Ehefrau\nverbleibende Beträge\nAbrechnung in €\nnach dem Stand vom TT.MM.2015\nabzurechnen sind\nbereits gezahlt\nerstattet\ndemnach zu wenig gezahlt\nKonten der Finanzkasse: Kreditinstitut: IBAN: BIC:\nSparkasse Musterhausen DE01 2345 6789 1011 1213 14 AGSTB2014XX\nDeutsche Bank DE01 2345 6789 1011 1213 15 AGSTB2014XY\nweitere Informationen finden Sie im Internet unter www.finanzamt.nrw.de\nEINKOMMENSTEUER € Kirchensteuer Ehefrau € Kirchensteuer Ehemann €\n52.112,00 2.146,32 2.146,32\nSteuernummer: 5123/4567/8910\nIdNr.Ehemann: 01 234 567 890\nIdNr.Ehefrau: 10 987 654 321\nSolidaritäts- \nzuschlag € Insgesamt €\nFestgesetzt werden 2.623,28\nAbzug vom Lohn\n- des Ehemannes -139,92\n- der Ehefrau -1.631,55\nverbleibende Beträge 851,81 23.340,40\nAbrechnung in €\nnach dem Stand vom TT.MM.2015\nabzurechnen sind 851,81 23.340,40\nbereits gezahlt 200,00 14.000,00\nerstattet 0,00 0,000,00\ndennnach zu wenig gezahlt 651,81 9.340,40\nBitte zahlen Sie 9.340,40 € bis zum TT.MM.2015 durch Überweisung auf das unten angegebene Konto der Finanzkasse.\n[alternativ: Über eine etwaige Verrechnung des Restguthabens mit Gegenansprüchen erhalten Sie eine be-\n[alternativ: Über eine etwaige Verrechnung des Restguthabens mit Gegenansprüchen erhalten Sie eine besondere Mitteilung. Der darüber hinausgehende Betrag wird erstattet auf das Konto mit der IBAN DE12 3456 7891 0123 4567 89 bei Deutsche Bank (BIC DEUTDEBESS), sofern er mindestens 1,- € beträgt.]\nC: Steuerbelastung [länderspezifisch auch andere Inhalte möglich]\nIhre Einkommensteuerbelastung (49.946,00 €) bezogen auf das zu versteuernde Einkommen (158.155 €) beträgt 31,58 %.\nDabei wurde bereits vorher für die Berechnung Ihres zu versteuernden Einkommens der Gesamtbetrag der Einkünfte (260.320 €) um abziehbare Aufwendungen (z. B. Vorsorgeaufwendungen u. a.) in Höhe von insgesamt 102.165 € gemindert.\nD: Berechnung des zu versteuernden Einkommens\nDie detaillierte Darstellung der Berechnung des zu versteuernden Einkommens finden Sie in Anlage 1.\nEhemann € Ehefrau € Insgesamt €\nEinkünfte aus selbstständiger Arbeit 52.120 81.860\nEinkünfte aus nichtselbstständiger Arbeit 29.650 99.813\n€\nEinkünfte aus selbstständiger Arbeit\nEinkünfte aus nichtselbstständiger Arbeit\nEinkünfte aus Kapitalvermögen\nEinkünfte aus Vermietung und Verpachtung\nSonstige Einkünfte\nSumme der Einkünfte\nGesamtbetrag der Einkünfte\nSonderausgaben\nSumme der beschränkt als Sonderausgaben abziehbaren Vorsorgeaufwendungen\n108.992\n29.650\n2.222\n10.000\n15.000\n108.992\n108.992\n-25.520\nSzeiten 2 von 9",
+   "items": [
+    {
+     "kind": "NAME",
+     "value": "Max Mustermann"
+    },
+    {
+     "kind": "NAME",
+     "value": "Frieda Mustermann"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "01 234 567 890"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "10 987 654 321"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "5123/4567/8910"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Alter Münzweg 99"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "12345 Musterhausen"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "88"
+    },
+    {
+     "kind": "PHONE",
+     "value": "0123 4567 89 - 10"
+    },
+    {
+     "kind": "PHONE",
+     "value": "0123 4567 89 - 20"
+    },
+    {
+     "kind": "PHONE",
+     "value": "Poststelle-123@fv.nrw.de"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Erfolgsstraße 123 12345 Musterhausen"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Weg zum Glück 88 12345 Musterhausen"
+    },
+    {
+     "kind": "ACCOUNT",
+     "value": "DE01 2345 6789 1011 1213 14"
+    },
+    {
+     "kind": "ACCOUNT",
+     "value": "DE01 2345 6789 1011 1213 15"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "www.finanzamt.nrw.de"
+    },
+    {
+     "kind": "NAME",
+     "value": "Ehemann"
+    },
+    {
+     "kind": "NAME",
+     "value": "Ehefrau"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "01 234 567 890"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "10 987 654 321"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "5123/4567/8910"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "DE12 3456 7891 0123 4567 89"
+    },
+    {
+     "kind": "PHONE",
+     "value": "Tel"
+    },
+    {
+     "kind": "PHONE",
+     "value": "電話"
+    },
+    {
+     "kind": "NAME",
+     "value": "Max Mustermann"
+    },
+    {
+     "kind": "NAME",
+     "value": "Frieda Mustermann"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "01 234 567 890"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "10 987 654 321"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Alter Münzweg 99"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Erfolgsstraße 123 12345 Musterhausen"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "5123/4567/8910"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "Veranlagungsbezirk 88"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "XXXX"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "XXXX"
+    },
+    {
+     "kind": "PHONE",
+     "value": "0123 4567 89 - 10"
+    },
+    {
+     "kind": "PHONE",
+     "value": "0123 4567 89 - 20"
+    },
+    {
+     "kind": "ACCOUNT",
+     "value": "DE01 2345 6789 1011 1213 14"
+    },
+    {
+     "kind": "ACCOUNT",
+     "value": "DE01 2345 6789 1011 1213 15"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "Tel"
+    },
+    {
+     "kind": "NAME",
+     "value": "Ehemann"
+    },
+    {
+     "kind": "NAME",
+     "value": "Ehefrau"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "01 234 567 890"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "10 987 654 321"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "5123/4567/8910"
+    },
+    {
+     "kind": "ACCOUNT",
+     "value": "DE12 3456 7891 0123 4567 89"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Deutsche Bank"
+    },
+    {
+     "kind": "PHONE",
+     "value": "Tel"
+    },
+    {
+     "kind": "PHONE",
+     "value": " 문의"
+    },
+    {
+     "kind": "PHONE",
+     "value": "電話"
+    }
+   ],
+   "outgoing": "Finanzamt Musterstadt\nWeg zum Glück [REFERENCE_NUMBER_4]\n[ADDRESS_8]\nFinanzamt Postfach 123456 [ADDRESS_8]\nFischer GmbH\nSteuerberatungsgesellschaft\n[ADDRESS_9]\n[ADDRESS_8]\nDatum: TT.MM.2015\nSteuernummer: [REFERENCE_NUMBER_2]\nIdNr. [NAME_11]: [ID_NUMBER_1]\nIdNr. [NAME_12]: [ID_NUMBER_2]\n[REFERENCE_NUMBER_1]\n[PHONE_4]efon: [PHONE_2]\n[PHONE_4]efax: [PHONE_3]\n[ADDRESS_9]\n[ADDRESS_8]\n[REFERENCE_NUMBER_1]\n[PHONE_4]efon: [PHONE_2]\n[PHONE_4]efax: [PHONE_3]\nE-Mail: [PHONE_1]\nals Empfangsvollmächtigter für\n[NAME_1] und Frau [NAME_4] [ADDRESS_1]\nBescheid für 2014 über\nEinkommensteuer, Solidaritätszuschlag und Kirchensteuer\nsowie Feststellung [REFERENCE_NUMBER_3] nach § XXX EStG\nA: Allgemeiner Hinweis\nEtwaige Erläuterungen zur Steuerfestsetzung, zu Abweichungen von Ihrer Steuererklärung und Hinweise auf noch einzureichende Unterlagen finden Sie in Abschnitt F [G → dynamische Beistellung, je nach Konstellation].\nB: Festsetzung, Abrechnung [und Feststellungen]\nDer Bescheid ist nach § 165 Abs. 1 Satz 1 und Satz 2 AO teilweise vorläufig.\nDie Begründung der Vorläufigkeiten finden Sie in Abschnitt G [H → dynamische Beisteilung, je nach Konstellation].\nDer Bescheid ergeht nach § 164 Abs. 1 AO unter dem Vorbehalt der Nachprüfung.\nFestsetzung\nEinkommensteuer € evangelische Kirchensteuer € röm.-katholische Kirchensteuer €\nFestgesetzt werden\nAbzug vom Lohn\n- des [NAME_7]\n- der [NAME_12]\nverbleibende Beträge\n52.112,00\n-2.549,00\n-31.138,00\n18.425,00\n2.146,32\n0,00\n0,00\n2.146,32\n0,00\n0,00\n1.917,27\nAbrechnung in €\nnach dem Stand vom TT MM 2015\nverbleibende Beträge\nAbrechnung in €\nnach dem Stand vom TT.MM.2015\nabzurechnen sind\nbereits gezahlt\nerstattet\ndemnach zu wenig gezahlt\nKonten der Finanzkasse:\nKreditinstitut:\nSparkasse Musterhausen\n[ADDRESS_10]\nIBAN:\n[ACCOUNT_1]\n[ACCOUNT_2]\nBIC:\nAGSTB2014XX\nAGSTB2014XY\nweitere Informationen finden Sie im Internet unter [ADDRESS_7]\nSteuernummer: [REFERENCE_NUMBER_2]\nIdNr.[NAME_11]: [ID_NUMBER_1]\nIdNr.[NAME_12]: [ID_NUMBER_2]\nFestgesetzt werden\nAbzug vom Lohn\n- des [NAME_7]\n- der [NAME_12]\nverbleibende Beträge\nAbrechnung in €\nnach dem Stand vom TT.MM.2015\nabzurechnen sind\nbereits gezahlt\nerstattet\nSolidaritäts-\nzuschlag €\n2.623,28\n-139,92\n-1.631,55\n851,81\n23.340,40\n851,81\n23.340,40\n200,00\n14.000,00\n0,00\n0,00,00\nnach dem Stand vom TT.MM.2015\nabzurechnen sind\nbereits gezahlt\nerstattet\ndemnach zu wenig gezahlt\n651,81\n9.340,40\nBitte zahlen Sie 9.340,40 € bis zum TT.MM.2015 durch Überweisung auf das unten angegebene Konto der Finanzkasse.\n[alternativ: Über eine etwaige Verrechnung des Restguthabens mit Gegenansprüchen erhalten Sie eine besondere Mitteilung. Der darüber hinausgehende Betrag wird erstattet auf das Konto mit der [ADDRESS_3] 89 bei [ADDRESS_10] (BIC DEUTDEBESS), sofern er mindestens 1,- € beträgt.]\nC: Steuerbelastung [länderspezifisch auch andere Inhalte möglich]\nIhre Einkommensteuerbelastung (49.946,00 €) bezogen auf das zu versteuernde Einkommen (158.155 €) beträgt 31,58 %.\nDabei wurde bereits vorher für die Berechnung Ihres zu versteuernden Einkommens der Gesamtbetrag der Einkünfte (260.320 €) um abziehbare Aufwendungen (z. B. Vorsorgeaufwendungen u. a.) in Höhe von insgesamt 102.165 € gemindert.\nD: Berechnung des zu versteuernden Einkommens\nDie detaillierte Darstellung der Berechnung des zu versteuernden Einkommens finden Sie in Anlage 1.\n[NAME_8] [NAME_10] Insgesamt €\nEinkünfte aus selbstständiger Arbeit 52.120 81.860\nEinkünfte aus nichtselbstständiger Arbeit 29.650 99.813\nEinkünfte aus Kapitalvermögen 2.222 1.800\nEinkünfte aus Vermietung und Verpachtung 10.000 -37.145\nSonstige Einkünfte 15.000 5.000\nSumme der Einkünfte 108.992 151.328 260.320\nGesamtbetrag der Einkünfte 108.992 151.328 260.320\nSonderausgaben\nSumme der beschränkt als Sonderausgaben abziehbaren Vorsorgeaufwendungen -25.520\nSeiten 2 von 9",
+   "alternates": [
+    "als Empfangsbevollmächtigter für",
+    "Etwaige Erläuterungen zur Steuerfestsetzung, zu Abweichungen von Ihrer Steuererklärung und Hinweise auf noch einzureichende Unterlagen finden Sie in Abschnitt F (G → dynamische Beistellung, je nach Konstellation).",
+    "Art der Festsetzung",
+    "Die Begründung der Vorläufigkeiten finden Sie in Abschnitt G [H → dynamische Beistellung, je nach Konstellation].",
+    "Festgesetzt werden Einkommensteuer € evangelische Kirchensteuer € röm-katholische Kirchensteuer €",
+    "Abzug vom Lohn -2.549,00 0,00 -229,05",
+    "52.112,00 2.146,32 2.146,32",
+    "Konten der Finanzkasse: Kreditinstitut: IBAN: BIC:",
+    "Sparkasse Musterhausen [ACCOUNT_1] AGSTB2014XX",
+    "Deutsche [ADDRESS_12] 15 AGSTB2014XY",
+    "52.112,00 2.146,32 2.146,32",
+    "zuschlag € Insgesamt €",
+    "Festgesetzt werden 2.623,28",
+    "verbleibende Beträge 851,81 23.340,40",
+    "abzurechnen sind 851,81 23.340,40",
+    "bereits gezahlt 200,00 14.000,00",
+    "erstattet 0,00 0,000,00",
+    "dennnach zu wenig gezahlt 651,81 9.340,40",
+    "€",
+    "Einkünfte aus selbstständiger Arbeit",
+    "Einkünfte aus nichtselbstständiger Arbeit",
+    "Einkünfte aus Kapitalvermögen",
+    "Einkünfte aus Vermietung und Verpachtung",
+    "Sonstige Einkünfte",
+    "Summe der Einkünfte",
+    "Gesamtbetrag der Einkünfte",
+    "Summe der beschränkt als Sonderausgaben abziehbaren Vorsorgeaufwendungen",
+    "108.992",
+    "29.650",
+    "2.222",
+    "10.000",
+    "15.000",
+    "108.992",
+    "108.992",
+    "-25.520",
+    "Szeiten 2 von 9"
+   ]
+  },
+  {
+   "id": "rde02",
+   "split": "real",
+   "pages": 1,
+   "readSec": 49.9135,
+   "actionFirst": true,
+   "actionFinal": true,
+   "explainSec": 3.025800000011921,
+   "checkSec": 9.141599999964237,
+   "consequenceFirst": true,
+   "consequenceFinal": true,
+   "finalDeadlineRight": true,
+   "deadlinePrinted": true,
+   "finalAmountRight": false,
+   "final": {
+    "title": "Property tax and municipal fees assessment",
+    "steps": [
+     "Pay the four quarterly installments: 604,12 EUR by February 15, 2025; 604,12 EUR by May 15, 2025; 604,12 EUR by August 15, 2025; and 604,07 EUR by November 15, 2025 (total 2.416,43 EUR).",
+     "If you do not have a SEPA direct debit mandate set up, transfer the payments to the City Treasury account IBAN DE63 3705 0198 0093 2229 74 (BIC: COLDESDE3XXX) and include 145.509.350.016 as the payment reference.",
+     "If you already have a direct debit mandate with the City of Cologne, the amounts will be automatically debited on the due dates (or the next business day if the date falls on a weekend or public holiday)."
+    ],
+    "objection": "",
+    "deadline_iso": "2025-02-15",
+    "amount": "2.416,43 EUR",
+    "if_ignored": "The letter does not state what happens if you do not pay.",
+    "corrected": [
+     "read as \"Dessrat\", understood as \"Messbetrag\" (tax assessment base amount)",
+     "read as \"Teleweise\", understood as \"Teilservice\" (partial waste collection service)",
+     "read as \"Lastschriftenzuempächtigung\", understood as \"Lastschriftverfahrengenehmigung\" (direct debit authorization)"
+    ]
+   },
+   "figuresRead": [
+    false,
+    true
+   ],
+   "figuresKept": [
+    true,
+    true
+   ],
+   "idsMissedByModel": [
+    "Musterstr. 1"
+   ],
+   "idsSent": [
+    "Musterstr. 1"
+   ],
+   "agencyKept": [
+    false
+   ],
+   "deadlineRight": true,
+   "amountRight": false,
+   "explained": {
+    "title": "Property and waste tax notice for 2025",
+    "steps": [
+     "Pay the installment of 604.12 EUR by February 15, 2025, quoting Kassenzeichen 145.509.350.016.",
+     "Pay the installment of 604.12 EUR by May 15, 2025, quoting Kassenzeichen 145.509.350.016.",
+     "Pay the installment of 604.12 EUR by August 15, 2025, quoting Kassenzeichen 145.509.350.016.",
+     "Pay the installment of 604.07 EUR by November 15, 2025, quoting Kassenzeichen 145.509.350.016."
+    ],
+    "deadline_iso": "2025-02-15",
+    "amount": "2.416,43 EUR",
+    "if_ignored": "",
+    "corrected": [
+     "read as \"Dessrat\", understood as \"Messbetrag\" (assessment amount)",
+     "read as \"Messtab\", understood as \"Messbetrag\" (assessment amount)",
+     "read as \"Lastschriftenzuempächtigung\", understood as \"Lastschriftverfahren\" (direct debit procedure)"
+    ]
+   },
+   "transcript": "Musterbescheid\nStadt Köln\nDie Oberbürgermeisterin\nSteueramt\nAthener Ring 4, 50765 Köln\nSprechzeiten: Mo. bis Fr.\nMo. bis Do. sowie nach Vereinbarung\nInternet: www.stadt-koeln.de\nKVB/S-Bahn: 15 und S11, Haltestelle\nAuskunft zur Festsetzung der Abgaben erfolgt\nTeléfono (0221) 221-26600, (Telefax) (0221) 221-2\nStadt Köln, 212, 50630 Köln\nInternet: www.stadt-koeln.de\nKVB/S-Bahn: 15 und S11, Haltestelle\nAuskunft zur Festsetzung der Abgaben e\nTelefon (0221) 221-3600, Telefax (0221) 221-\nFrau\nPetra Mustermann\nMusterstr. 1\n51069 Köln\nBitte bei Zahlungen als Verwendungszweck angeben.\nBei Rückfragen und Zahlungen bitte angeben!\nKassenzeichen: 145.509.350.016\nKöln, 20.01.2025\nBescheid über Grundbesitzabgaben für das Kalenderjahr\nAktenzeichen des Finanzamtes: 218/310-3-1111-1\nGrundstück: Musterstr. 1\nAbgabenschuldner/in: Frau Petra Mustermann\nFestsetzung der städtischen Abgaben\nAbgabenart | Berechnungsgrundlagen/-einheiten | Anteil | Hebesatz / Gebühren-schlag | Betrag in EUR\nGrundsteuer A AZ. 218/310-3-1111-1 Dessrat 114.00 EUR | 1 x 120 1 Biomüll, Teilservice, gebührenfrei, 1 x wöchentlich | 475,00 EUR | 541,50 | 541,50\nAbfallgebühr | 1 x 120 1 Biomüll, Teilservice, gebührenfrei, 1 x wöchentlich | 0,00 | 0,00 | 0,00\n| 1 x 240 1 Restmüll, Teilservice, gebührenfrei, 1 x wöchentlich | 0,00 | 0,00 | 0,00\n| 1 x 240 1 Restmüll, Teilservice, gebührenfrei, 1 x wöchentlich | 553,17 | 553,17 | 924,06\n| 1 x 240 1 Restmüll, Teilservice, gebührenfrei, 1 x wöchentlich | 924,00 | 924,00 | 924,00\nDer Hebesatz wurde von der Stadt Köln festgelegt (Ratsbeschluss vom 12.12.2024).\nGrundsteuer B AZ. 218/310-1111-1 Messbetrag 114,00 EUR\nAbfallgebühr 1 x 120 l Biomüll, Teilservice, gebührenfrei, 1 x wöchentlich \n1 x 240 l Biomüll, Teilservice, gebührenfrei, 1 x wöchentlich \n1 x 120 l Restmüll, Teilservice, 1 x wöchentlich \n1 x 240 l Restmüll, Teilservice, 1 x wöchentlich \nStraßenreinigung Gebühr RK 71 1 x wöchentliche Reinigung \n1 x wöchentliche Reinigung\nsatz in EUR 475,00 v.H. 541,50\n0,00 0,00 0,00\n0,00 0,00 0,00\n553,17 553,17\n924,06 924,06\n3,40 34,00\n82,60 82,60\nDer Grundsteuermessbetrag wurde vom Finanzamt ermittelt und den GrundstückseigentümerInnen als Grundsteuermessbescheid übermittelt.\nergeht ein Grundsteuerbescheid (Köln, AÖR) auf die Abwasser- und Straßenreinigungsteuer des STEB Köln, AÖR\nDer Grundsteuermessbetrag multipliziert mit dem Hebesatz ergibt die von Ihnen zu zahlende Grundsteuer.\nFestsetzung von der von den STEB Köln erhobenen Gebühren (Abwassergebührenbescheid)\nAbwassergebühr bebaute/befestigte Fläche, 87,00 m2 abgeleitetes Schmutzwasser, 102,00 m3 1,32 1,63 114,84 166,26\nGesamtbetrag aus beiden Bescheiden 2.416,43 EUR\nDie Grundbesitzabgaben sind in folgenden Teilbeträgen zu entrichten:\nTermin 15.02.2025 15.05.2025 15.08.2025 15.11.2025\nBetrag 604,12 604,12 604,12 604,07 EUR\nSoweit der Stadt Köln für die Grundbesitzabgaben eine Lastschriftverfahrengenehmigung vorliegt, werden die Beträge zu den genannten Fälligkeitsterminen abgebucht. Falls diese ein Samstag, Sonntag oder Feiertag sind, am folgenden Werktag. \nAuf der Internetseite der Stadt Köln kann das Formular zur Lastschriftverfahrengenehmigung (SEPA-Mandat) unter dem Link www.stadt-koeln.de/service/onlinedienst/sepa-lastschriftverfahren aufgerufen werden.\nAufteilung des Gesamtbetrages der\nKontoverbindung der Stadtkasse: IBAN: DE63 3705 0198 0093 2229 74 SWIFT-BIC-COLDESDE3XXX Gläubiger-ID: DE6802100000076733",
+   "second": "Musterbescheid\nStadt Köln\nDie Oberbürgermeisterin\nStadt Köln, 212, 50630 Köln\nFrau\nPetra Mustermann\nMusterstr. 1\n51069 Köln\nSteueramt\nAthener Ring 4, 50765 Köln\nSprechzeiten: Mo. bis Fr. 09.00 Uhr - 12.00 Uhr\nMo. bis Do. 14.00 Uhr - 15.00 Uhr\nsowie nach Vereinbarung\nInternet: www.stadt-koeln.de\nKVB/S-Bahn: 15 und S11, Haltesteile\nAuskunft zur Festsetzung der Abgaben er\nTelefon (0221) 221- 36600, Telefax (0221) 221-\nBitte bei Zahlungen als Verwendungszweck angeben.\nBei Rückfragen und Zahlungen bitte angeben!\nKassenzeichen: 145.509.350.016\nKöln, 20.01.2025\nPetra Mustermann\nMusterstr. 1\n51069 Köln\nBei Rückfragen und Zahlungen bitte angeben!\nKassenzeichen: 145.509.350.016\nKöln, 20.01.2025\nBescheid über Grundbesitzabgaben für das Kalenderjahr 2024\nDer Hebesatz wurde von der Stadt Köln festgelegt (Ratsbeschluss vom 12.12.2024).\nAktenzeichen des Finanzamts: 218/310-3/1111-1\nGrundstück: Musterstr. 1\nAbgabenschuldnerin: Frau Petra Mustermann\nFestsetzung der städtischen Abgaben\nAbgabentart | Berechnungsgrundlagen/-einheiten | Anteil | Hebesatz/Gebühren- Vorschlag | Betrag in EUR\n---|---|---|---|---\nGrundsteuer B | AZ. 218/310-3/1111-1 Messtab 114.00 EUR | 475,00 v.H | 541,50\n1 x 120 l Biomüll, Teleweise, jährlich | 0,00 | 0,00\n1 x 240 l Biomüll, Teleweise, jährlich | 0,00 | 0,00\n1 x 120 l Restmüll, Teleweise, jährlich | 553,17 | 553,17\n1 x 240 l Restmüll, Teleweise, jährlich | 924,06 | 924,06\nStraßenreinigung Gebühr \"RK 71\" | 1 x wöchentliche Reinigung | 3,40 | 34,00\n | 1 x wöchentliche Reinigung | 82,60 | 82,60\nDer Grundsteuermessbetrag wurde vom Finanzamt ermittelt und den Grundstückseigentümer*innen als Grundsteuerbescheid übermittelt.\nDer Grundsteuermessbetrag wird durch multipliziert mit dem Hebesatz ergibt die von Ihnen zu zahlende Grundsteuer.\nFestsetzung der von den SteB Köln erhobenen Gebühren (Abwassergebührensbescheid)\nAbwassergebühr | bebaute/befestigte Fläche, 87,00 m2 | 1,32 | 114,84\nabgeleitetes Schmutzwasser, 102,00 m3 | 1,63 | 166,26\nDie Grundbesitzabgaben sind in folgender Teilbeträgen zu entrichten:\nTermin | Betrag | Gesamtsumme | Gesamtsumme bei beiden Bescheiden\n---|---|---|---\n15.02.2025 | 604,12 EUR | 604,12 EUR | 2.416,43 EUR\n15.05.2025 | 604,12 EUR | 604,12 EUR | \n15.08.2025 | 604,07 EUR | 604,07 EUR | \n15.11.2025 | 604,07 EUR | 604,07 EUR |\nAbwassergebühr bebaute/befestigte Fläche, 87,00 m2 1,32 114,84 1,63 166,26\nabgeleitetes Schmutzwasser, 102,00 m2\nGesamtbetrag aus beiden Bescheiden 2.416,43 EUR\nDie Grundbesitzabgaben sind in folgenden Teilbeträgen zu entrichten:\nTermin 15.02.2025 15.05.2025 15.08.2025 15.11.2025\nBetrag 604,12 EUR 604,12 EUR 604,12 EUR 604,07 EUR\nSoweit der Stadt Köln für die Grundbesitzabgaben eine Lastschriftenzuempächtigung vorliegt, werden die Beträge zu den genannten Fälligkeitsterminen abgebucht. Falls diese ein Samstag, Sonntag oder Feiertag sind, am folgenden Werktag.\nAuf der Internetseite der Stadt Köln kann das Formular zur Lastschriftenzuempächtigung (SEPA-Mandat) unter dem Link www.stadt-koeln.de/service/onlinedienst/se-lschr-lastschrverfahren aufgerufen werden.\nAufteilung des Gesamtbetrages der Grundbesitzabgaben (Grundsteuer und Gebühren) auf vier Fälligkeiten.",
+   "items": [
+    {
+     "kind": "NAME",
+     "value": "Petra Mustermann"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Musterstr. 1, 51069 Köln"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "145.509.350.016"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "218/310-3-1111-1"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "218/310-1111-1"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Athener Ring 4, 50765 Köln"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Köln, 20.01.2025"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "218/310-3-1111-1"
+    },
+    {
+     "kind": "ACCOUNT",
+     "value": "DE63 3705 0198 0093 2229 74"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "Teléfono (0221) 221-26600"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "Telefon (0221) 221-3600"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Stadt Köln, 212, 50630 Köln"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "218/310-3-1111-1"
+    },
+    {
+     "kind": "NAME",
+     "value": "Petra Mustermann"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Musterstr. 1, 51069 Köln"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Athener Ring 4, 50765 Köln"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "145.509.350.016"
+    },
+    {
+     "kind": "PHONE",
+     "value": "(0221) 221- 36600"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "218/310-3/1111-1"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Musterstr. 1, 51069 Köln"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Musterstr. 1, 51069 Köln"
+    }
+   ],
+   "outgoing": "Musterbescheid\nStadt Köln\nDie Oberbürgermeisterin\nSteueramt\n[ADDRESS_2]\nSprechzeiten: Mo. bis Fr.\nMo. bis Do. sowie nach Vereinbarung\nInternet: www.stadt-koeln.de\nKVB/S-Bahn: 15 und S11, Haltestelle\nAuskunft zur Festsetzung der Abgaben erfolgt\nTeléfono (0221) 221-26600, (Telefax) (0221) 221-2\n[ADDRESS_1]\nInternet: www.stadt-koeln.de\nKVB/S-Bahn: 15 und S11, Haltestelle\nAuskunft zur Festsetzung der Abgaben e\nTelefon (0221) 221-3600, Telefax (0221) 221-\nFrau\n[NAME_1]\nMusterstr. 1\n51069 Köln\nBitte bei Zahlungen als Verwendungszweck angeben.\nBei Rückfragen und Zahlungen bitte angeben!\nKassenzeichen: [REFERENCE_NUMBER_2]\n[ADDRESS_3]\nBescheid über Grundbesitzabgaben für das Kalenderjahr\nAktenzeichen des Finanzamtes: [REFERENCE_NUMBER_1]\nGrundstück: Musterstr. 1\nAbgabenschuldner/in: Frau [NAME_1]\nFestsetzung der städtischen Abgaben\nAbgabenart | Berechnungsgrundlagen/-einheiten | Anteil | Hebesatz / Gebühren-schlag | Betrag in EUR\nGrundsteuer A AZ. [REFERENCE_NUMBER_1] Dessrat 114.00 EUR | 1 x 120 1 Biomüll, Teilservice, gebührenfrei, 1 x wöchentlich | 475,00 EUR | 541,50 | 541,50\nAbfallgebühr | 1 x 120 1 Biomüll, Teilservice, gebührenfrei, 1 x wöchentlich | 0,00 | 0,00 | 0,00\n| 1 x 240 1 Restmüll, Teilservice, gebührenfrei, 1 x wöchentlich | 0,00 | 0,00 | 0,00\n| 1 x 240 1 Restmüll, Teilservice, gebührenfrei, 1 x wöchentlich | 553,17 | 553,17 | 924,06\n| 1 x 240 1 Restmüll, Teilservice, gebührenfrei, 1 x wöchentlich | 924,00 | 924,00 | 924,00\nDer Hebesatz wurde von der Stadt Köln festgelegt (Ratsbeschluss vom 12.12.2024).\nGrundsteuer B AZ. [REFERENCE_NUMBER_3] Messbetrag 114,00 EUR\nAbfallgebühr 1 x 120 l Biomüll, Teilservice, gebührenfrei, 1 x wöchentlich \n1 x 240 l Biomüll, Teilservice, gebührenfrei, 1 x wöchentlich \n1 x 120 l Restmüll, Teilservice, 1 x wöchentlich \n1 x 240 l Restmüll, Teilservice, 1 x wöchentlich \nStraßenreinigung Gebühr RK 71 1 x wöchentliche Reinigung \n1 x wöchentliche Reinigung\nsatz in EUR 475,00 v.H. 541,50\n0,00 0,00 0,00\n0,00 0,00 0,00\n553,17 553,17\n924,06 924,06\n3,40 34,00\n82,60 82,60\nDer Grundsteuermessbetrag wurde vom Finanzamt ermittelt und den GrundstückseigentümerInnen als Grundsteuermessbescheid übermittelt.\nergeht ein Grundsteuerbescheid (Köln, AÖR) auf die Abwasser- und Straßenreinigungsteuer des STEB Köln, AÖR\nDer Grundsteuermessbetrag multipliziert mit dem Hebesatz ergibt die von Ihnen zu zahlende Grundsteuer.\nFestsetzung von der von den STEB Köln erhobenen Gebühren (Abwassergebührenbescheid)\nAbwassergebühr bebaute/befestigte Fläche, 87,00 m2 abgeleitetes Schmutzwasser, 102,00 m3 1,32 1,63 114,84 166,26\nGesamtbetrag aus beiden Bescheiden 2.416,43 EUR\nDie Grundbesitzabgaben sind in folgenden Teilbeträgen zu entrichten:\nTermin 15.02.2025 15.05.2025 15.08.2025 15.11.2025\nBetrag 604,12 604,12 604,12 604,07 EUR\nSoweit der Stadt Köln für die Grundbesitzabgaben eine Lastschriftverfahrengenehmigung vorliegt, werden die Beträge zu den genannten Fälligkeitsterminen abgebucht. Falls diese ein Samstag, Sonntag oder Feiertag sind, am folgenden Werktag. \nAuf der Internetseite der Stadt Köln kann das Formular zur Lastschriftverfahrengenehmigung (SEPA-Mandat) unter dem Link www.stadt-koeln.de/service/onlinedienst/sepa-lastschriftverfahren aufgerufen werden.\nAufteilung des Gesamtbetrages der\nKontoverbindung der Stadtkasse: IBAN: [ACCOUNT_1] SWIFT-BIC-COLDESDE3XXX Gläubiger-ID: [ACCOUNT_2]",
+   "alternates": [
+    "Sprechzeiten: Mo. bis Fr. 09.00 Uhr - 12.00 Uhr",
+    "sowie nach Vereinbarung",
+    "KVB/S-Bahn: 15 und S11, Haltesteile",
+    "Auskunft zur Festsetzung der Abgaben er",
+    "Telefon [PHONE_1], Telefax (0221) 221-",
+    "Aktenzeichen des Finanzamts: [REFERENCE_NUMBER_4]",
+    "Abgabenschuldnerin: Frau [NAME_1]",
+    "Abgabentart | Berechnungsgrundlagen/-einheiten | Anteil | Hebesatz/Gebühren- Vorschlag | Betrag in EUR",
+    "---|---|---|---|---",
+    "Grundsteuer B | AZ. [REFERENCE_NUMBER_4] Messtab 114.00 EUR | 475,00 v.H | 541,50",
+    "1 x 240 l Biomüll, Teleweise, jährlich | 0,00 | 0,00",
+    "1 x 120 l Restmüll, Teleweise, jährlich | 553,17 | 553,17",
+    "1 x 240 l Restmüll, Teleweise, jährlich | 924,06 | 924,06",
+    "Straßenreinigung Gebühr \"RK 71\" | 1 x wöchentliche Reinigung | 3,40 | 34,00",
+    " | 1 x wöchentliche Reinigung | 82,60 | 82,60",
+    "Der Grundsteuermessbetrag wurde vom Finanzamt ermittelt und den Grundstückseigentümer*innen als Grundsteuerbescheid übermittelt.",
+    "Der Grundsteuermessbetrag wird durch multipliziert mit dem Hebesatz ergibt die von Ihnen zu zahlende Grundsteuer.",
+    "Festsetzung der von den SteB Köln erhobenen Gebühren (Abwassergebührensbescheid)",
+    "Abwassergebühr | bebaute/befestigte Fläche, 87,00 m2 | 1,32 | 114,84",
+    "abgeleitetes Schmutzwasser, 102,00 m3 | 1,63 | 166,26",
+    "Die Grundbesitzabgaben sind in folgender Teilbeträgen zu entrichten:",
+    "Termin | Betrag | Gesamtsumme | Gesamtsumme bei beiden Bescheiden",
+    "---|---|---|---",
+    "15.02.2025 | 604,12 EUR | 604,12 EUR | 2.416,43 EUR",
+    "15.05.2025 | 604,12 EUR | 604,12 EUR | ",
+    "15.08.2025 | 604,07 EUR | 604,07 EUR | ",
+    "15.11.2025 | 604,07 EUR | 604,07 EUR |",
+    "Abwassergebühr bebaute/befestigte Fläche, 87,00 m2 1,32 114,84 1,63 166,26",
+    "abgeleitetes Schmutzwasser, 102,00 m2",
+    "Betrag 604,12 EUR 604,12 EUR 604,12 EUR 604,07 EUR",
+    "Soweit der Stadt Köln für die Grundbesitzabgaben eine Lastschriftenzuempächtigung vorliegt, werden die Beträge zu den genannten Fälligkeitsterminen abgebucht. Falls diese ein Samstag, Sonntag oder Feiertag sind, am folgenden Werktag.",
+    "Auf der Internetseite der Stadt Köln kann das Formular zur Lastschriftenzuempächtigung (SEPA-Mandat) unter dem Link www.stadt-koeln.de/service/onlinedienst/se-lschr-lastschrverfahren aufgerufen werden."
+   ]
+  },
+  {
+   "id": "ren01",
+   "split": "real",
+   "pages": 2,
+   "readSec": 44.14209999996424,
+   "actionFirst": true,
+   "actionFinal": true,
+   "explainSec": 2.266,
+   "checkSec": 10.75369999998808,
+   "consequenceFirst": true,
+   "consequenceFinal": true,
+   "finalDeadlineRight": true,
+   "deadlinePrinted": true,
+   "finalAmountRight": true,
+   "final": {
+    "title": "IRS notice of unpaid taxes and penalties",
+    "steps": [
+     "If you agree with the amount due and are not working with an IRS representative, pay $1,075.21 by February 20, 2018.",
+     "Pay online at www.irs.gov/payments, or mail a check or money order payable to the United States Treasury with the attached payment stub.",
+     "If paying by mail, write your social security number (nnn-nn-nnnn), the tax year (2017), and the form number (1040) on your payment.",
+     "If you cannot pay the full amount, pay as much as you can now and make a payment plan at www.irs.gov/paymentplan or by calling 1-800 xxx xxxx."
+    ],
+    "objection": "If you disagree with the amount due, call 1-800-xxx-xxxx to review your account with a representative. Have your account information available when you call.",
+    "deadline_iso": "2018-02-20",
+    "amount": "$1,075.21",
+    "if_ignored": "If you do not pay by February 20, 2018, you may face penalty and interest charges. If they do not hear from you, the IRS will assume you agree with the information in this notice.",
+    "corrected": [
+     "read as \"dispose\", understood as \"discuss\" (to talk about your payment options)"
+    ]
+   },
+   "figuresRead": [
+    true,
+    true
+   ],
+   "figuresKept": [
+    true,
+    true
+   ],
+   "idsMissedByModel": [
+    "John and Mary Smith"
+   ],
+   "idsSent": [],
+   "agencyKept": [],
+   "deadlineRight": true,
+   "amountRight": true,
+   "explained": {
+    "title": "IRS balance due notice",
+    "steps": [
+     "Pay the amount due of $1,075.21 by February 20, 2018, online at www.irs.gov/payments or by mailing a check or money order with the attached payment stub.",
+     "Make your check or money order payable to the United States Treasury and write your social security number (nnn-nn-nnnn), tax year (2017), and form number (1040) on your payment.",
+     "If you disagree with the amount due, call 1-800-xxx-xxxx to review your account with a representative."
+    ],
+    "deadline_iso": "2018-02-20",
+    "amount": "$1,075.21",
+    "if_ignored": "The IRS will assume you agree with the information in this notice and continue to charge penalties and interest.",
+    "corrected": []
+   },
+   "transcript": "Department of the Treasury\nInternal Revenue Service\nP.O. Box 9019\nHoltsville, NY 11742-9019\nNotice CP14\nTax year 2017\nNotice date January 30, 2018\nSocial security number nnn-nn-nnnn\nTo contact us Phone 1-800-xxx-xxxx\nYour caller ID nnnn\nPage 1 of 6\nJOHN AND MARY SMITH\n123 N HARRIS ST\nHARVARD, TX 12345\nYou have a balance due for 2017\nAmount due: $1,075.21\nOur records show you have unpaid taxes and/or penalties and interest on your 2017 Form 1040.\nIf you already paid your balance in full within the last 21 days or made payment arrangements, please disregard this notice.\nIf you already have an installment or payment agreement in place for this tax year, then continue with that agreement.\nBilling Summary\nTax you owed $3,183.00\nPayments and credits -3,328.00\nFailure-to-file penalty 318.30\nFailure-to-pay penalty 633.30\nInterest charges 145.00\nFailure-to-pay estimated tax penalty 123.61\nAmount due by February 20, 2018 $1,075.21\nIf you are a debtor in a bankruptcy case, this notice is for your information only and is not intended to seek payment outside of the bankruptcy process of taxes due before you filed your petition. You will not receive\nWhat you need to do immediately\nIf you agree with the amount due and you’re not working with an IRS representative\n* Pay the amount due of $1,075.21 by February 20, 2018, to avoid penalty and interest charges.\n* Pay online or mail a check or money order with the attached payment stub. You can pay online now at www.irs.gov/payments.\nContinue on back...\nJohn and Mary Smith\n123 N Harris Street\nHarvard, TX 12345\nNotice CP14\nNotice date January 30, 2018\nSocial security number nnn-nn-nnnn\nIRS\n• Make your check or money order payable to the United States Treasury.\n• Write your social security number (nnn-nn-nnnn), the tax year (2017), and the form number (1040) on your payment.\nAmount due by\nFebruary 20, 2018\n$1,075.21\nINTERNAL REVENUE SERVICE\nCINCINNATI, OH 45999-0149\n0000 00000000000000 0000\nNotice CP14\nTax year 2017\nNotice date January 30, 2018\nSocial security number nnn-nn-nnnn\nPage 2 of 6\nWhat you need to do immediately – continued\nIf you agree with the amount due and you’re not working with an IRS representative – continued\nIf you disagree with the amount due\nCall us at 1-800-xxx-xxxx to review your account with a representative.\nBe sure to have your account information available when you call.\nWe’ll assume you agree with the information in this notice if we don’t hear from you.\nPayment options\nPay now electronically\nWe offer free payment options to securely pay your tax bill directly from your checking or savings account. When you pay online or with your mobile device, you can:\n• Receive instant confirmation of your payment\n• Schedule payments in advance\n• Reschedule or cancel a payment before the due date\nYou can also pay by debit or credit card for a small fee. To see all of our payment options, visit www.irs.gov/payments.\nPayment plans\nIf you can't pay the full amount you owe, pay as much as you can now and make arrangements to pay your remaining balance. Visit www.irs.gov/paymentplan for more information on installment agreements and online payment agreements. You can also call us at 1-800 xxx xxxx to dispose your options.\nOffer in Compromise\nAn offer in compromise allows you to settle your tax debt for less than the full amount you owe. If we accept your offer, you can pay with either a lump sum cash payment plan or periodic payment plan. To see if you qualify, use the Offer in Compromise Pre-Qualifier tool on our website. For more information, visit www.irs.gov/offers.\n[Back of payment stub]",
+   "second": "Department of the Treasury\nInternal Revenue Service\nP.O. Box 9019\nHoltsville, NY 11742-9019\nIRS\nNotice\nCP14\nTax year 2017\nNotice date January 30, 2018\nSocial security number nnn-nn-nnnn\nTo contact us Phone 1-800-xxx-xxxx\nYour caller ID nnnn\nPage 1 of 6\nJOHN AND MARY SMITH\n123 N HARRIS ST\nHARVARD, TX 12345\nYou have a balance due for 2017\nAmount due: $1,075.21\nOur records show you have unpaid taxes and/or penalties and interest on your 2017 Form 1040.\nBilling Summary\nTax you owed $3,183.00\nPayments and credits -3,328.00\nIf you already paid your balance in full within the last 21 days or made payment arrangements, please disregard this notice.\nIf you already have an installment or payment agreement in place for this tax year, then continue with that agreement.\nBilling Summary\nTax you owed $3,183.00\nPayments and credits -$3,28.00\nFailure-to-file penalty 318.30\nFailure-to-pay penalty 633.30\nInterest charges 145.00\nFailure-to-pay estimated tax penalty 123.61\nAmount due by February 20, 2018 $1,075.21\nIf you are a debtor in a bankruptcy case, this notice is for your information only and is not intended to seek payment outside of the bankruptcy process of taxes due before you filed your petition. You will not receive another notice of the balance due while the automatic stay remains in effect.\nWhat you need to do immediately\nIf you agree with the amount due and you're not working with an IRS representative\n• Pay the amount due of $1,075.21 by February 20, 2018, to avoid penalty and interest charges.\n• Pay online or mail a check or money order with the attached payment stub. You can pay online now at www.irs.gov/payments.\nContinued on back...\nJohn and Mary Smith\nNotice\nCP14\nJanuary 29, 2018\nNotice date January 30, 2018\nSocial security number nnn-nn-nnnn\nMake your check or money order payable to the United States Treasury.\nWrite your social security number (nnn-nn-nnnn), the tax year (2017), and the form number (1040) on your payment.\nAmount due by February 20, 2018\n$1,075.21\nPayment\nINTERNAL REVENUE SERVICE\nCINCINNATI, OH 45999-0149\nNotice CP14\nTax year 2017\nNotice date January 30, 2018\nSocial security number nnn-nn-nnnn\nPage 2 of 6\nWhat you need to do immediately – continued\nIf you agree with the amount due and you're not working with an IRS representative – continued\nIf you disagree with the amount due\nCall us at 1-800-xxx-xxxx to review your account with a representative.\nBe sure to have your account information available when you call.\nWe'll assume you agree with the information in this notice if we don't hear from you.\nPayment options\nPay now electronically\nWe offer free payment options to securely pay your tax bill directly from your checking or savings account. When you pay online or with your mobile device, you can:\n• Receive instant confirmation of your payment\n• Schedule payments in advance\nYou can also pay by debit or credit card for a small fee. To see all of our payment options, visit www.irs.gov/payments.\nPayment plans\nIf you can’t pay the full amount you owe, pay as much as you can now and make arrangements to pay your remaining balance. Visit www.irs.gov/paymentplan for more information on installment agreements and online payment agreements. You can also call us at 1-800-xxx-xxxx to discuss your options.\nOffer in Compromise\nAn offer in compromise allows you to settle your tax debt for less than the full amount you owe. If we accept your offer, you can pay with either a lump sum cash payment plan or periodic payment plan. To see if you qualify, use the Offer in Compromise Pre-Qualifier tool on our website. For more information, visit www.irs.gov/offers.\n[Back of payment stub]",
+   "items": [
+    {
+     "kind": "NAME",
+     "value": "JOHN AND MARY SMITH"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "123 N HARRIS ST"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "HARVARD, TX 12345"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "nnn-nn-nnnn"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "CP14"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "2017"
+    },
+    {
+     "kind": "PHONE",
+     "value": "1-800-xxx-xxxx"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "nnnn"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "123 N Harris Street"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "nnn-nn-nnnn"
+    },
+    {
+     "kind": "PHONE",
+     "value": "1-800-xxx-xxxx"
+    },
+    {
+     "kind": "PHONE",
+     "value": "1-800 xxx xxxx"
+    },
+    {
+     "kind": "NAME",
+     "value": "JOHN AND MARY SMITH"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "123 N HARRIS ST"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "HARVARD, TX 12345"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "nnn-nn-nnnn"
+    },
+    {
+     "kind": "PHONE",
+     "value": "1-800-xxx-xxxx"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "nnnn"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "CP14"
+    },
+    {
+     "kind": "ACCOUNT",
+     "value": "2017"
+    },
+    {
+     "kind": "NAME",
+     "value": "nnn-nn-nnnn"
+    },
+    {
+     "kind": "PHONE",
+     "value": "1-800-xxx-xxxx"
+    },
+    {
+     "kind": "PHONE",
+     "value": "1-800-xxx-xxxx"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "1-800-xxx-xxxx"
+    }
+   ],
+   "outgoing": "Department of the Treasury\nInternal Revenue Service\nP.O. Box 9019\nHoltsville, NY [NUMBER_1]\nNotice [REFERENCE_NUMBER_1]\nTax year [REFERENCE_NUMBER_2]\nNotice date January 30, 2018\nSocial security number [ID_NUMBER_1]\nTo contact us Phone [PHONE_1]\nYour caller ID [ID_NUMBER_2]\nPage 1 of 6\n[NAME_1]\n[ADDRESS_3]\n[ADDRESS_2]\nYou have a balance due for [REFERENCE_NUMBER_2]\nAmount due: $1,075.21\nOur records show you have unpaid taxes and/or penalties and interest on your [REFERENCE_NUMBER_2] Form 1040.\nIf you already paid your balance in full within the last 21 days or made payment arrangements, please disregard this notice.\nIf you already have an installment or payment agreement in place for this tax year, then continue with that agreement.\nBilling Summary\nTax you owed $3,183.00\nPayments and credits -3,328.00\nFailure-to-file penalty 318.30\nFailure-to-pay penalty 633.30\nInterest charges 145.00\nFailure-to-pay estimated tax penalty 123.61\nAmount due by February 20, 2018 $1,075.21\nIf you are a debtor in a bankruptcy case, this notice is for your information only and is not intended to seek payment outside of the bankruptcy process of taxes due before you filed your petition. You will not receive\nWhat you need to do immediately\nIf you agree with the amount due and you’re not working with an IRS representative\n* Pay the amount due of $1,075.21 by February 20, 2018, to avoid penalty and interest charges.\n* Pay online or mail a check or money order with the attached payment stub. You can pay online now at www.irs.gov/payments.\nContinue on back...\n[NAME_1]\n[ADDRESS_1]\nHarvard, TX 12345\nNotice [REFERENCE_NUMBER_1]\nNotice date January 30, 2018\nSocial security number [ID_NUMBER_1]\nIRS\n• Make your check or money order payable to the United States Treasury.\n• Write your social security number ([ID_NUMBER_1]), the tax year ([REFERENCE_NUMBER_2]), and the form number (1040) on your payment.\nAmount due by\nFebruary 20, 2018\n$1,075.21\nINTERNAL REVENUE SERVICE\nCINCINNATI, OH [NUMBER_2]\n[NUMBER_3]\nNotice [REFERENCE_NUMBER_1]\nTax year [REFERENCE_NUMBER_2]\nNotice date January 30, 2018\nSocial security number [ID_NUMBER_1]\nPage 2 of 6\nWhat you need to do immediately – continued\nIf you agree with the amount due and you’re not working with an IRS representative – continued\nIf you disagree with the amount due\nCall us at [PHONE_1] to review your account with a representative.\nBe sure to have your account information available when you call.\nWe’ll assume you agree with the information in this notice if we don’t hear from you.\nPayment options\nPay now electronically\nWe offer free payment options to securely pay your tax bill directly from your checking or savings account. When you pay online or with your mobile device, you can:\n• Receive instant confirmation of your payment\n• Schedule payments in advance\n• Reschedule or cancel a payment before the due date\nYou can also pay by debit or credit card for a small fee. To see all of our payment options, visit www.irs.gov/payments.\nPayment plans\nIf you can't pay the full amount you owe, pay as much as you can now and make arrangements to pay your remaining balance. Visit www.irs.gov/paymentplan for more information on installment agreements and online payment agreements. You can also call us at [PHONE_2] to dispose your options.\nOffer in Compromise\nAn offer in compromise allows you to settle your tax debt for less than the full amount you owe. If we accept your offer, you can pay with either a lump sum cash payment plan or periodic payment plan. To see if you qualify, use the Offer in Compromise Pre-Qualifier tool on our website. For more information, visit www.irs.gov/offers.\n[Back of payment stub]",
+   "alternates": [
+    "Payments and credits -$3,28.00",
+    "If you are a debtor in a bankruptcy case, this notice is for your information only and is not intended to seek payment outside of the bankruptcy process of taxes due before you filed your petition. You will not receive another notice of the balance due while the automatic stay remains in effect.",
+    "If you agree with the amount due and you're not working with an IRS representative",
+    "• Pay the amount due of $1,075.21 by February 20, 2018, to avoid penalty and interest charges.",
+    "• Pay online or mail a check or money order with the attached payment stub. You can pay online now at www.irs.gov/payments.",
+    "Continued on back...",
+    "January 29, 2018",
+    "Make your check or money order payable to the United States Treasury.",
+    "Amount due by February 20, 2018",
+    "Payment",
+    "If you agree with the amount due and you're not working with an IRS representative – continued",
+    "We'll assume you agree with the information in this notice if we don't hear from you."
+   ]
+  },
+  {
+   "id": "ren02",
+   "split": "real",
+   "pages": 2,
+   "readSec": 65.8785,
+   "actionFirst": true,
+   "actionFinal": true,
+   "explainSec": 2.029900000035763,
+   "checkSec": 6.591299999952316,
+   "consequenceFirst": true,
+   "consequenceFinal": true,
+   "finalDeadlineRight": true,
+   "deadlinePrinted": true,
+   "finalAmountRight": true,
+   "final": {
+    "title": "Second reminder for unpaid 2016 taxes",
+    "steps": [
+     "If you agree with the amount due, pay $9,533.53 by January 29, 2018.",
+     "Pay online at www.irs.gov/payments, or mail a check or money order payable to the United States Treasury with the payment stub to INTERNAL REVENUE SERVICE, CINCINNATI, OH 4599-0149.",
+     "If you cannot pay the full amount, pay what you can now and visit www.irs.gov/paymentplan or call 1-800-xxx-xxxx to set up a payment plan.",
+     "If you already have a payment agreement, or if the IRS suspended collection due to financial hardship and your situation has not changed, you do not need to do anything."
+    ],
+    "objection": "If you disagree with the amount due, call 1-800-xxxx-xxxx with your account information to review your account with a representative.",
+    "deadline_iso": "2018-01-29",
+    "amount": "$9,533.53",
+    "if_ignored": "Interest will increase and additional penalties may apply. The IRS will also assume you agree with the information in this notice.",
+    "corrected": []
+   },
+   "figuresRead": [
+    true,
+    true
+   ],
+   "figuresKept": [
+    true,
+    true
+   ],
+   "idsMissedByModel": [
+    "James Q. Hinds"
+   ],
+   "idsSent": [],
+   "agencyKept": [],
+   "deadlineRight": true,
+   "amountRight": true,
+   "explained": {
+    "title": "Unpaid taxes notice CP503",
+    "steps": [
+     "Pay the amount due of $9,533.53 by January 29, 2018.",
+     "Pay online at www.irs.gov/payments or mail a check or money order payable to the United States Treasury with the attached payment stub.",
+     "If you disagree with the amount due, call us at 1-800-xxxx-xxxx to review your account."
+    ],
+    "deadline_iso": "2018-01-29",
+    "amount": "$9,533.53",
+    "if_ignored": "The amount of interest will increase, additional penalties may apply, and the IRS will assume you agree with the information in the notice.",
+    "corrected": []
+   },
+   "transcript": "Notice CP503\nTax year 2016\nNotice date January 8, 2018\nSocial security number NNNN-NN-NNNN\nTo contact us 1-800-xxx-xxxx\nYour caller ID NNNN\nPage 1 of 5\nJAMES & KAREN Q. HINDS\n22 BOULDER STREET\nHANSON, CT 00000-7253\nSecond reminder: You have unpaid taxes for 2016\nAmount due: $9,533.53\nAs we notified you before, our records show you have unpaid taxes for the tax year ended December 31, 2016 (Form 1040A). If you don’t pay $9,533.53 by January 29, 2018, the amount of interest will increase and additional penalties may apply.\nIf you already have an installment or payment agreement in place for this tax year, then continue with that agreement.\nBilling Summary\nAmount you owed $9,444.07\nFailure-to-pay penalty 34.98\nInterest charges 54.48\nAmount due by January 29, 2018 $9,533.53\nWhat you need to do immediately If you agree with the amount due and you’re not working with an IRS representative\n• Pay the amount due of $9,533.53 by January 29, 2018, to avoid additional interest and applicable penalty charges.\n• Pay online or mail a check or money order with the attached payment stub. You can pay online now at www.irs.gov/payments.\nContinued on back...\nJames Q. Hinds\nHanson, CT 00000-7253\nSocial security number NNN-NN-NNNN\nPayment\n• Make your check or money order payable to the United States Treasury.\nINTERNAL REVENUE SERVICE\nCINCINNATI, OH 4599-0149\n• Amount due by\nJanuary 29, 2018\n$9,533.53\nNotice CP503\nTax year 2016\nNotice date January 8, 2018\nSocial security number NNN-NN-NNNN\nPage 2 of 5\nWhat you need to do immediately – continued If you agree with the amount due and you’re not working with an IRS representative\nIf we notified you that we suspended enforced collection on your account because it would create a financial hardship (meaning you would be unable to pay basic reasonable living expenses if we levied) and your financial condition has not changed, you don’t need to do anything.\nIf you disagree with the amount due\nCall us at 1-800-xxxx-xxxx to review your account with a representative.\nBe sure to have your account information available when you call.\nWe'll assume you agree with the information in this notice if we don't\nhear from you.\nPayment options\nPay now electronically\nWe offer free payment options to securely pay your tax bill directly from\nyour checking or savings account. When you pay online or from your\nmobile device, you can:\n· Receive instant confirmation of your payment\nSchedule payments in advance\nModify or cancel a payment before the due date\nYou can also pay by debit or credit card for a small fee. To see all of our\npayment options, visit www.irs.gov/payments.\nPayment plans\nIf you can't pay the full amount you owe, pay as much as you can now and make arrangements to pay your remaining balance. Visit www.irs.gov/paymentplan for more information on installment agreements and online payment agreements. You can also call us at 1-800-xxx-xxxx to discuss your options.\nOffer in Compromise\nAn offer in compromise allows you to settle your tax debt for less than the full amount you owe. If we accept your offer, you can pay with either a lump sum cash payment plan or periodic payment plan. To see if you qualify, use the Offer in Compromise Pre-Qualifier tool on our website. For more information, visit www.irs.gov/offers.\nBack of payment stub",
+   "second": "Notice CP503\nTax year 2016\nNotice date January 8, 2018\nSocial security number NNN-NN-NNNN\nTo contact us 1-800-xxx-xxxx\nYour caller ID NNNN\nPage 1 of 5\nJAMES & KAREN Q. HINDS\n22 BOULDER STREET\nHANSON, CT 00000-7253\nSecond reminder: You have unpaid taxes for 2016\nAmount due: $9,533.53\nAs we notified you before, our records\nAs we notified you before, our records show you have unpaid taxes for the tax year ended December 31, 2016 (Form 1040A). If you don't pay $9,533.53 by January 29, 2018, the amount of interest will increase and additional penalties may apply.\nIf you already have an installment or payment agreement in place for this tax year, then continue with that agreement.\nWhat you need to do immediately\nBilling Summary\nAmount you owed $9,444.07\nFailure-to-pay penalty 34.98\nInterest charges 54.48\nAmount due by January 29, 2018 $9,533.53\nIf you agree with the amount due and you're not working with an IRS representative\n• Pay the amount due of $9,533.53 by January 29, 2018, to avoid additional interest and applicable penalty charges.\n• Pay online or mail a check or money order with the attached payment stub. You can pay online now at www.irs.gov/payments.\nContinued on back...\nJames Q. Hinds Notice CP503\nNotice date January 8, 2018\nSocial security number NNN-NN-NNNN\nJAMES Q. LINDS\n22 Boulder Street\nHanson, CT 00000-7253\nIRS\nPayment\nINTERNAL REVENUE SERVICE\nCINCINNATI, OH 4599-0149\nMake your check or money order payable to the United States Treasury.\nWrite your social security number (NNN-NN-NNNN), the tax year (2016), and form number (1040A) on your payment.\nAmount due by\nJanuary 29, 2018\n$9,533.53\nNotice CP503\nTax year 2016\nNotice date January 8, 2018\nSocial security number NNN-NN-NNNN\nPage 2 of 5\nWhat you need to do immediately – continued If you agree with the amount due and you're not working with an IRS representative\nIf we notified you that we suspended enforced collection on your account because it would create a financial hardship (meaning you would be unable to pay basic reasonable living expenses if we levied) and your financial condition has not changed, you don't need to do anything.\nIf you disagree with the amount due\nCall us at 1-800-xxx-xxxx to review your account with a representative.\nBe sure to have your account information available when you call.\nWe'll assume you agree with the information in this notice if we don't hear from you.\nPayment options\nPay now electronically\n• Schedule payments in advance\n• Modify or cancel a payment before the due date\nYou can also pay by debit or credit card for a small fee. To see all of our payment options, visit www.irs.gov/payments.\nPayment plans\nIf you can't pay the full amount you owe, pay as much as you can now and make arrangements to pay your remaining balance. Visit www.irs.gov/paymentplan for more information on installment agreements and online payment agreements. You can also call us at 1-800-xxx-xxxx to discuss your options.\nOffer in Compromise\nAn offer in compromise allows you to settle your tax debt for less than the full amount you owe. If we accept your offer, you can pay with either a lump sum cash payment plan or periodic payment plan. To see if you qualify, use the Offer in Compromise Pre-Qualifier tool on our website. For more information, visit www.irs.gov/offers.\nBack of payment stub",
+   "items": [
+    {
+     "kind": "NAME",
+     "value": "JAMES & KAREN Q. HINDS"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "22 BOULDER STREET"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "HANSON, CT 00000-7253"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "NNNN-NN-NNNN"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "NNNN"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "NNN-NN-NNNN"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "NNN-NN-NNNN"
+    },
+    {
+     "kind": "PHONE",
+     "value": "1-800-xxxx-xxxx"
+    },
+    {
+     "kind": "PHONE",
+     "value": "1-800-xxx-xxxx"
+    },
+    {
+     "kind": "NAME",
+     "value": "JAMES Q. HINDS"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "22 BOULDER STREET"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "HANSON, CT 00000-7253"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "NNN-NN-NNNN"
+    },
+    {
+     "kind": "PHONE",
+     "value": "1-800-xxx-xxxx"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "NNNN"
+    },
+    {
+     "kind": "NAME",
+     "value": "JAMES Q. LINDS"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "22 Boulder Street"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Hanson, CT 00000-7253"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "NNN-NN-NNNN"
+    },
+    {
+     "kind": "PHONE",
+     "value": "1-800-xxx-xxxx"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "1-800-xxx-xxxx"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "1-800-xxx-xxxx"
+    }
+   ],
+   "outgoing": "Notice CP503\nTax year 2016\nNotice date January 8, 2018\nSocial security number [ID_NUMBER_1]\nTo contact us [PHONE_2]\nYour caller ID [REFERENCE_NUMBER_1]\nPage 1 of 5\n[NAME_1]\n[ADDRESS_3]\n[ADDRESS_1]\nSecond reminder: You have unpaid taxes for 2016\nAmount due: $9,533.53\nAs we notified you before, our records show you have unpaid taxes for the tax year ended December 31, 2016 (Form 1040A). If you don’t pay $9,533.53 by January 29, 2018, the amount of interest will increase and additional penalties may apply.\nIf you already have an installment or payment agreement in place for this tax year, then continue with that agreement.\nBilling Summary\nAmount you owed $9,444.07\nFailure-to-pay penalty 34.98\nInterest charges 54.48\nAmount due by January 29, 2018 $9,533.53\nWhat you need to do immediately If you agree with the amount due and you’re not working with an IRS representative\n• Pay the amount due of $9,533.53 by January 29, 2018, to avoid additional interest and applicable penalty charges.\n• Pay online or mail a check or money order with the attached payment stub. You can pay online now at www.irs.gov/payments.\nContinued on back...\n[NAME_1]\n[ADDRESS_2]\nSocial security number [ID_NUMBER_2]\nPayment\n• Make your check or money order payable to the United States Treasury.\nINTERNAL REVENUE SERVICE\nCINCINNATI, OH [NUMBER_1]\n• Amount due by\nJanuary 29, 2018\n$9,533.53\nNotice CP503\nTax year 2016\nNotice date January 8, 2018\nSocial security number [ID_NUMBER_2]\nPage 2 of 5\nWhat you need to do immediately – continued If you agree with the amount due and you’re not working with an IRS representative\nIf we notified you that we suspended enforced collection on your account because it would create a financial hardship (meaning you would be unable to pay basic reasonable living expenses if we levied) and your financial condition has not changed, you don’t need to do anything.\nIf you disagree with the amount due\nCall us at [PHONE_1] to review your account with a representative.\nBe sure to have your account information available when you call.\nWe'll assume you agree with the information in this notice if we don't\nhear from you.\nPayment options\nPay now electronically\nWe offer free payment options to securely pay your tax bill directly from\nyour checking or savings account. When you pay online or from your\nmobile device, you can:\n· Receive instant confirmation of your payment\nSchedule payments in advance\nModify or cancel a payment before the due date\nYou can also pay by debit or credit card for a small fee. To see all of our\npayment options, visit www.irs.gov/payments.\nPayment plans\nIf you can't pay the full amount you owe, pay as much as you can now and make arrangements to pay your remaining balance. Visit www.irs.gov/paymentplan for more information on installment agreements and online payment agreements. You can also call us at [PHONE_2] to discuss your options.\nOffer in Compromise\nAn offer in compromise allows you to settle your tax debt for less than the full amount you owe. If we accept your offer, you can pay with either a lump sum cash payment plan or periodic payment plan. To see if you qualify, use the Offer in Compromise Pre-Qualifier tool on our website. For more information, visit www.irs.gov/offers.\nBack of payment stub",
+   "alternates": [
+    "As we notified you before, our records",
+    "As we notified you before, our records show you have unpaid taxes for the tax year ended December 31, 2016 (Form 1040A). If you don't pay $9,533.53 by January 29, 2018, the amount of interest will increase and additional penalties may apply.",
+    "What you need to do immediately",
+    "If you agree with the amount due and you're not working with an IRS representative",
+    "[NAME_1] Notice CP503",
+    "IRS",
+    "Make your check or money order payable to the United States Treasury.",
+    "Amount due by",
+    "What you need to do immediately – continued If you agree with the amount due and you're not working with an IRS representative",
+    "If we notified you that we suspended enforced collection on your account because it would create a financial hardship (meaning you would be unable to pay basic reasonable living expenses if we levied) and your financial condition has not changed, you don't need to do anything.",
+    "We'll assume you agree with the information in this notice if we don't hear from you.",
+    "• Schedule payments in advance",
+    "• Modify or cancel a payment before the due date",
+    "You can also pay by debit or credit card for a small fee. To see all of our payment options, visit www.irs.gov/payments."
+   ]
+  },
+  {
+   "id": "ren03",
+   "split": "real",
+   "pages": 1,
+   "readSec": 33.91210000002384,
+   "actionFirst": true,
+   "actionFinal": false,
+   "explainSec": 2.095600000023842,
+   "checkSec": 6.976800000011921,
+   "consequenceFirst": true,
+   "consequenceFinal": true,
+   "finalDeadlineRight": false,
+   "deadlinePrinted": true,
+   "finalAmountRight": false,
+   "final": {
+    "title": "Sample Council Tax bill explanation",
+    "steps": [],
+    "objection": "",
+    "deadline_iso": "",
+    "amount": "£ 162.01",
+    "if_ignored": "Nothing, because this is a sample bill made up for explanatory purposes.",
+    "corrected": [
+     "read as \"Menstruation Note\", understood as \"Information Note\" (explanatory note)",
+     "read as \"Town Parish & Bait\", understood as \"Town, Parish & Bath\" (local council charge)",
+     "read as \"Total Council Tax for hand\", understood as \"Total Council Tax for Band\" (total charge for the property's tax band)"
+    ]
+   },
+   "figuresRead": [
+    false,
+    true
+   ],
+   "figuresKept": [
+    true,
+    true
+   ],
+   "idsMissedByModel": [],
+   "idsSent": [],
+   "agencyKept": [],
+   "deadlineRight": false,
+   "amountRight": false,
+   "explained": {
+    "title": "Annual Council Tax bill",
+    "steps": [
+     "Pay the instalments of £ 16.00 by Direct Debit on the specified instalment dates quoting account Council Tax Account Number: 1234567 and online key XXXXXXXXXXX."
+    ],
+    "deadline_iso": "",
+    "amount": "162.01",
+    "if_ignored": "",
+    "corrected": []
+   },
+   "transcript": "Your Council Tax bill explained\nThis is the number you need to quote when making a payment or contacting us about your Council Tax account\nName of liable person(s)\nContact address\nAddress this bill relates to\nCharge for the year\nDetails of any exemptions or discounts you are receiving\nDates of instalments\nNotes to inform you of any credits or debit from previous financial years\nPlease Note: This is a fictitious Council Tax bill made up for explanatory purposes\nBath & North East Somerset Council\nImproving People's Lives\nCouncil Tax Account Number: 1234567\nAccess your account 24/7 www.bathnes.gov.uk/taxaccount\nOnline Key: XXXXXXXXXXX\nFor further information see overleaf\nCouncil Tax Band: B\nDate: 09-MAR-2021\nBillboard Address: 1 ANY STREET, ANY DISTRICT, ANY TOWN, ANY BAI XXX\nYour Bill\nCharge For Period\n25% Reduction For Single Occupancy Council Tax Support - UC Scheme\nReason for bill: Annual\n01-APR-2021 to 31-MAR-2022 BAND B - 1440.20\n01-APR-2021 to 31-MAR-2022 - 360.05\n01-APR-2021 to 31-MAR-2022 - 918.14\nAccess code to set up your online Council Tax account\nThe Council Tax Band for your property which is set by the Valuation Office Agency\nDate your Council Tax bill was issued\nAddress of property if different from billing address\nThe adjustments made as a result of any exemptions or discounts\nDATES OF INSTALMENTS\nNotes to inform you of any credits or debit from previous financial years\nThe general charge by the council - this is the amount which the council needs to raise from the council tax in order to provide its main services\nCharge set by the council to assist in meeting expenditure on adult social care\nCharge set by a parish or town council - if you live in a parish or town area, your parish or town council may issue an amount to finance its expenditure\nCharge set by Avon & Somerset Police\nCharge set by Avon Fire Authority\n25% Reduction for Single Occupancy Council Tax Support - UC Scheme\n01-APR-2020 to 31-MAR-2022 - £0.00\n01-APR-2021 to 31-MAR-2022 - £181.54\nTOTAL AMOUNT DUE £ 162.01\nYour Payments\nInstallments due £\n01-APR-2021 16.00\n01-JUL-2021 16.00\n01-OCT-2021 16.00\n01-JAN-2022 16.00\nMenstruation Note\nAs at 01/02/2021 Council Tax accrues to a base of £1.00.\nThis recd from 2020/21 was adjusted to be a base of £1.01.\nThe credit from 2020/21 has been restored to your 2021/22 instalments\nInstallments to be paid by Direct Debit payments Monthly\n01-AUG-2021 16.00\n01-SEP-2021 16.00\n01-OCT-2021 16.00\n01-JAN-2022 16.00\nHow we calculate your bill\nBath & North East Somerset Council\nSocial Care Charge 134.55 2.0\nTown Parish & Bait 3.0 0.0\nAvon & Somerset Police 137.60 -1.0\nAvon Fire Authority 59.45 2.0\nTotal Council Tax for hand 144.20 4.0\n*The Council Tax attributable to Bath & North East Somerset includes a precept to fund adult social care. For more information please visit www.bathnes.gov.uk/council-tax\nThe adjustments made as a result of any exemptions or discounts\nTotal amount payable\nMethod of payment\nDates of instalments and amounts due\nFor adult social care authorities, council tax bills show two percentage changes: one for the part of the overall charge attributable to the adult social care precept, and one for the part attributable to general expenditure.\nTotal due for the year before any reductions for discounts or exemptions",
+   "second": "Your Council Tax bill explained\nPlease Note: This is a fictitious Council Tax bill made up for explanatory purposes\nThis is the number you need to quote when making a payment or contacting us about your Council Tax account\nName of liable person(s)\nContact address\nAddress this bill relates to\nCharge for the year\nDetails of any exemptions or discounts you are receiving\nDates of instalments\nNotes to inform you of any credits or debits from previous fiscal years\nThe general charge by the council needs to inform you what the council is able to provide to main services in order to provide its main services\nCharge set by the council to assist it in meeting expenditure on adult social care\nCharge set by a parish or town council - if you live in a parish or town area, your parish or town council may have an amount to finance its expenditure\nCharge set by Avon & Somerset Police\nCharge set by Avon Fire Authority\nBath & North East Somerset Council\nImproving Lives Perth\nCouncil Tax Account Number: 1234567\nBA1 0AJ\nBA1 1PQ\nBA1 2BB\nBA1 3DJ\nFor further information see overleaf\nYou access your account 24/7 www.bathnes.gov.uk/counciltax\nOnline Key: XXXXXXXXXXX\nCouncil Tax Band B\nDate: 09-MAR-2021\nAccess code to set up your online Council Tax account\nThe Council Tax Band for your property which is set by the Valuation Office Agency\nDate your Council Tax bill was issued\nAddress of property if different from billing address\nThe adjustments made as a result of any exemptions or discounts\nTotal amount payable\nMethod of payment\nDates of instalments and amounts due\nFor adult social care authorities, council tax bills show two percentage changes: one for the part of the overall charge attributable to adult social care precept, and one for the part attributable to general expenditure.\nTotal due for the year before any reductions for discounts or exemptions\nYour Bill\nCouncil Tax for Period\nCensus 2020 For Single Occupancy\nCouncil Tax Support - UC Scheme\nReason for bill: Annual\n01-APR-2021 to 31-MAR-2022 - BAND B\n01-APR-2021 to 31-MAR-2022 - BAND B\n01-APR-2021 to 31-MAR-2022 - BAND B\n144.00\n360.00\n918.14\nTOTAL DUE DUE £\n162.01\nYour Payments\nInstalments to be paid by direct debit £\n11-APR-2021 16.00\n11-AUG-2021 16.00\n11-OCT-2021 16.00\n21-JAN-2022 16.00\n01-APR-2021 16.00\n01-SEP-2021 16.00\n01-DEC-2021 16.00\n01-MAR-2022 16.00\n21-JAN-2022 16.00\n01-AUG-2022 16.00\n11-OCT-2022 16.00\n01-APR-2023 16.00\n£\n£\n£\n£\n£\n£\n£\n£\n£\n£\n£\n£\nHow to pay your bill\nBath & North East Somerset Council\nCouncil Tax Base\nAvon & Somerset Police\nAvon Fire & Rescue\nTotal Council Tax to be paid\nAmount % Change\n133.00 2.0\n7.0 3.0\n187.00 5.0\n134.00 2.0\n10.0 0.0\n40.00 4.0\nThe Council Tax for Bath & North East Somerset includes a precept of £40.00 each year.",
+   "items": [
+    {
+     "kind": "ACCOUNT",
+     "value": "1234567"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "1 ANY STREET, ANY DISTRICT, ANY TOWN, ANY BAI XXX"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "XXXXXXXXXX"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Contact address"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Address this bill relates to"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Billboard Address"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "BA1 0AJ"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "BA1 1PQ"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "BA1 2BB"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "BA1 3DJ"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "1234567"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Bath & North East Somerset Council"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Improving Lives Perth"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Date: 09-MAR-2021"
+    },
+    {
+     "kind": "ACCOUNT",
+     "value": "Council Tax Account Number: 1234567"
+    },
+    {
+     "kind": "PHONE",
+     "value": "01-APR-2021 to 31-MAR-2022 - BAND B"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "01-APR-2021 to 31-MAR-2022 - BAND B"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "01-APR-2021 to 31-MAR-2022 - BAND B"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "XXXXXXXXXX"
+    }
+   ],
+   "outgoing": "Your Council Tax bill explained\nThis is the number you need to quote when making a payment or contacting us about your Council Tax account\nName of liable person(s)\n[ADDRESS_17]\n[ADDRESS_12]\nCharge for the year\nDetails of any exemptions or discounts you are receiving\nDates of instalments\nNotes to inform you of any credits or debit from previous financial years\nPlease Note: This is a fictitious Council Tax bill made up for explanatory purposes\n[ADDRESS_9]\n[ADDRESS_13]\n[ACCOUNT_1]\nAccess your account 24/7 www.bathnes.gov.uk/taxaccount\nOnline Key: [REFERENCE_NUMBER_1]X\nFor further information see overleaf\nCouncil Tax Band: B\n[ADDRESS_16]\n[ADDRESS_15]: [ADDRESS_1]\nYour Bill\nCharge For Period\n25% Reduction For Single Occupancy Council Tax Support - UC Scheme\nReason for bill: Annual\n[ADDRESS_6] 1440.20\n[ADDRESS_7]\n[ADDRESS_8]\nAccess code to set up your online Council Tax account\nThe Council Tax Band for your property which is set by the Valuation Office Agency\nDate your Council Tax bill was issued\nAddress of property if different from billing address\nThe adjustments made as a result of any exemptions or discounts\nDATES OF INSTALMENTS\nNotes to inform you of any credits or debit from previous financial years\nThe general charge by the council - this is the amount which the council needs to raise from the council tax in order to provide its main services\nCharge set by the council to assist in meeting expenditure on adult social care\nCharge set by a parish or town council - if you live in a parish or town area, your parish or town council may issue an amount to finance its expenditure\nCharge set by Avon & Somerset Police\nCharge set by Avon Fire Authority\n25% Reduction for Single Occupancy Council Tax Support - UC Scheme\n[ADDRESS_10]\n[ADDRESS_4]\nTOTAL AMOUNT DUE £ 162.01\nYour Payments\nInstallments due £\n01-APR-2021 16.00\n01-JUL-2021 16.00\n01-OCT-2021 16.00\n01-JAN-2022 16.00\nMenstruation Note\nAs at 01/02/2021 Council Tax accrues to a base of £1.00.\nThis recd from 2020/21 was adjusted to be a base of £1.01.\nThe credit from 2020/21 has been restored to your 2021/22 instalments\nInstallments to be paid by Direct Debit payments Monthly\n01-AUG-2021 16.00\n01-SEP-2021 16.00\n01-OCT-2021 16.00\n01-JAN-2022 16.00\nHow we calculate your bill\n[ADDRESS_9]\nSocial Care Charge 134.55 2.0\nTown Parish & Bait 3.0 0.0\nAvon & Somerset Police 137.60 -1.0\nAvon Fire Authority 59.45 2.0\nTotal Council Tax for hand 144.20 4.0\n*The Council Tax attributable to [ADDRESS_3] precept to fund adult social care. For more information please visit www.bathnes.gov.uk/council-tax\nThe adjustments made as a result of any exemptions or discounts\nTotal amount payable\nMethod of payment\nDates of instalments and amounts due\nFor adult social care authorities, council tax bills show two percentage changes: one for the part of the overall charge attributable to the adult social care precept, and one for the part attributable to general expenditure.\nTotal due for the year before any reductions for discounts or exemptions",
+   "alternates": [
+    "Notes to inform you of any credits or debits from previous fiscal years",
+    "The general charge by the council needs to inform you what the council is able to provide to main services in order to provide its main services",
+    "Charge set by the council to assist it in meeting expenditure on adult social care",
+    "Charge set by a parish or town council - if you live in a parish or town area, your parish or town council may have an amount to finance its expenditure",
+    "You access your account 24/7 www.bathnes.gov.uk/counciltax",
+    "For adult social care authorities, council tax bills show two percentage changes: one for the part of the overall charge attributable to adult social care precept, and one for the part attributable to general expenditure.",
+    "Council Tax for Period",
+    "Census 2020 For Single Occupancy",
+    "Council Tax Support - UC Scheme",
+    "144.00",
+    "360.00",
+    "TOTAL DUE DUE £",
+    "162.01",
+    "Instalments to be paid by direct debit £",
+    "11-APR-2021 16.00",
+    "11-AUG-2021 16.00",
+    "11-OCT-2021 16.00",
+    "21-JAN-2022 16.00",
+    "01-DEC-2021 16.00",
+    "01-MAR-2022 16.00",
+    "21-JAN-2022 16.00",
+    "01-AUG-2022 16.00",
+    "11-OCT-2022 16.00",
+    "01-APR-2023 16.00",
+    "£",
+    "£",
+    "£",
+    "£",
+    "£",
+    "£",
+    "£",
+    "£",
+    "£",
+    "£",
+    "£",
+    "£",
+    "How to pay your bill",
+    "Council Tax Base",
+    "Avon & Somerset Police",
+    "Avon Fire & Rescue",
+    "Total Council Tax to be paid",
+    "Amount % Change",
+    "133.00 2.0",
+    "7.0 3.0",
+    "187.00 5.0",
+    "134.00 2.0",
+    "10.0 0.0",
+    "40.00 4.0"
+   ]
+  },
+  {
+   "id": "ren04",
+   "split": "real",
+   "pages": 1,
+   "readSec": 30.083,
+   "actionFirst": true,
+   "actionFinal": true,
+   "explainSec": 2.072,
+   "checkSec": 6.311,
+   "consequenceFirst": true,
+   "consequenceFinal": true,
+   "finalDeadlineRight": true,
+   "deadlinePrinted": true,
+   "finalAmountRight": false,
+   "final": {
+    "title": "Council Tax bill for 2024 to 2025",
+    "steps": [
+     "No manual payment is needed; make sure you have enough money in your bank account for the first Direct Debit collection of £135.51 on or shortly after 10/04/2024, followed by £140.00 on or shortly after the 10th of each month."
+    ],
+    "objection": "",
+    "deadline_iso": "2024-04-10",
+    "amount": "£1675.51",
+    "if_ignored": "The letter does not state what happens if you do nothing, as your payments are set up to be collected automatically by Direct Debit.",
+    "corrected": []
+   },
+   "figuresRead": [
+    true,
+    true
+   ],
+   "figuresKept": [
+    true,
+    true
+   ],
+   "idsMissedByModel": [],
+   "idsSent": [],
+   "agencyKept": [],
+   "deadlineRight": true,
+   "amountRight": false,
+   "explained": {
+    "title": "Council Tax Bill",
+    "steps": [
+     "No action is needed as your payments will be collected automatically by Direct Debit using account reference 1012345678."
+    ],
+    "deadline_iso": "2024-04-10",
+    "amount": "£1675.51",
+    "if_ignored": "If payments fail, the council may take recovery action which can include court summons and additional costs.",
+    "corrected": []
+   },
+   "transcript": "London Borough of Tower Hamlets\nCOUNCIL TAX BILL 2024/25 1\nMr J R Hartley 2\n12 Fly Fishing Road\nLondon\nE3 2NN\n3\nDate issued: 03/03/2024\nAccount Reference: 1012345678\nReason for bill: New Year Billing 5\nProperty Address: 12 Fly Fishing Road\nLondon\nE3 2NN\n6\nTHIS BILL WAS PREPARED USING THE FOLLOWING INFORMATION:\nThis property is valued as Band D\nAnnual Charge and comparison to last year:\nLondon Borough of Tower Hamlets 1675.51\nGreater London Authority 1020.81\nAdult Social Care* 471.40\n183.30\n£ +94.49 +34.29 +37.26 +22.94\n+6.0% +3.0% +8.6% +2.0%\n*The council tax attributable to London Borough of Tower Hamlets includes a precept to fund adult social care\n*The amount for Adult Social Care (ASC) is an accumulative figure based on the total LB Tower Hamlets Council Tax precepts. The % increase is calculated on the total of the LB Tower Hamlets Council Tax & ASC precepts.\nThe percentage of change are shown to 1 decimal place. The actual change is calculated at 2 decimal places. The increase set for general expenditure for 2024-2025 is 2.99%.\nThe percentage of change are shown to 1 decimal place. The actual change is calculated at 2 decimal places. The increase set for general expenditure for 2024-2025 is 2.9%.\n£\n1675.51\n£\n1675.51\nCouncil Tax for period 01/04/2024 to 31/03/2025\nNet Council Tax for period 01/04/2024 to 31/03/2025\nBILL TOTAL\n£1675.51\nThank you for paying by Direct Debit\nThe amounts below will be collected on or shortly after the dates shown\n10/04/2024 £135.51 10/08/2024 £140.00 10/12/2024 £140.00\n10/05/2024 £140.00 10/09/2024 £140.00 10/01/2025 £140.00\n10/08/2024 £140.00 10/10/2024 £140.00 10/03/2025 £140.00\n10/06/2024 £140.00 10/10/2024 £140.00 10/02/2025 £140.00\n10/07/2024 £140.00 10/11/2024 £140.00 10/03/2025 £140.00",
+   "second": "London Borough of Tower Hamlets\nCOUNCIL TAX BILL 2024/25 1\nMr J R Hartley 2\n12 Fly Fishing Road \nLondon \nE3 2NN\n3\nDate issued: 03/03/2024\nAccount Reference: 1012345678\nReason for bill: New Year Billing 5\n6\nProperty Address: 12 Fly Fishing Road\nLondon \nE3 2NN\nTHIS BILL WAS PREPARED USING THE FOLLOWING INFORMATION: 7\nThis property is valued as Band D\nTHIS BILL WAS PREPARED USING THE FOLLOWING INFORMATION:\nThis property is valued as Band D\nAnnual Charge and comparison to last year:\nLondon Borough of Tower Hamlets 1675.51 + 94.49 + 6.0%\nGreater London Authority 1020.81 + 34.29 + 3.0%\nAdult Social Care* 471.40 + 37.26 + 8.6%\n183.30 + 22.94\n*The amount tax attributable to London Borough of Tower Hamlets includes a precept to fund adult social care\n*The amount for Adult Social Care (ASC) is an cumulative figure based on the total LB Tower Hamlets Council Tax precepts. The % increase is calculated on the total of the LB Tower Hamlets Council Tax & ASC precepts.\nThe percentage of change are shown to 1 decimal place. The actual change is calculated at 2 decimal places. The increase set for general expenditure for 2024-2025 is 2.9%.\nCouncil Tax for period 01/04/2024 to 31/03/2025 1675.51 £ 1675.51 £ \nNet Council Tax for period 01/04/2024 to 31/03/2025\nBILL TOTAL 1675.51 12\nThank you for paying by Direct Debit 13\nThe amounts below will be collected on or shortly after the dates shown 14\n10/04/2024 £135.51 10/08/2024 £140.00 10/12/2024 £140.00\n10/05/2024 £140.00 10/09/2024 £140.00 10/01/2025 £140.00\n10/06/2024 £140.00 10/10/2024 £140.00 10/02/2025 £140.00\n10/07/2024 £140.00 10/11/2024 £140.00 10/03/2025 £140.00\nYour Council Tax is paid by Direct Debit.\nYou Must inform the Council if you move or cease to be liable for the Council tax by visiting www.towerhamlets.gov.uk/counciltax",
+   "items": [
+    {
+     "kind": "NAME",
+     "value": "Mr J R Hartley"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "12 Fly Fishing Road"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "London"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "E3 2NN"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "1012345678"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "12 Fly Fishing Road"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "London"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "E3 2NN"
+    },
+    {
+     "kind": "NAME",
+     "value": "J R Hartley"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "12 Fly Fishing Road"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "London"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "E3 2NN"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "1012345678"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "12 Fly Fishing Road"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "London"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "E3 2NN"
+    },
+    {
+     "kind": "PHONE",
+     "value": ""
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "www.towerhamlets.gov.uk/counciltax"
+    }
+   ],
+   "outgoing": "[ADDRESS_4] Borough of Tower Hamlets\nCOUNCIL TAX BILL [NUMBER_1]\n[NAME_1]\n[ADDRESS_1]\n[ADDRESS_4]\n[ADDRESS_5]\n3\nDate issued: 03/03/2024\nAccount Reference: [REFERENCE_NUMBER_1]\nReason for bill: New Year Billing 5\nProperty Address: [ADDRESS_1]\n[ADDRESS_4]\n[ADDRESS_5]\n6\nTHIS BILL WAS PREPARED USING THE FOLLOWING INFORMATION:\nThis property is valued as Band D\nAnnual Charge and comparison to last year:\n[ADDRESS_4] Borough of Tower Hamlets 1675.51\nGreater [ADDRESS_4] Authority 1020.81\nAdult Social Care* 471.40\n183.30\n£ +94.49 +34.29 +37.26 +22.94\n+6.0% +3.0% +8.6% +2.0%\n*The council tax attributable [ADDRESS_3] Borough of Tower Hamlets includes a precept to fund adult social care\n*The amount for Adult Social Care (ASC) is an accumulative figure based on the total LB Tower Hamlets Council Tax precepts. The % increase is calculated on the total of the LB Tower Hamlets Council Tax & ASC precepts.\nThe percentage of change are shown to 1 decimal place. The actual change is calculated at 2 decimal places. The increase set for general expenditure for [NUMBER_2] is 2.99%.\nThe percentage of change are shown to 1 decimal place. The actual change is calculated at 2 decimal places. The increase set for general expenditure for [NUMBER_2] is 2.9%.\n£\n1675.51\n£\n1675.51\nCouncil Tax for period 01/04/2024 to 31/03/2025\nNet Council Tax for period 01/04/2024 to 31/03/2025\nBILL TOTAL\n£1675.51\nThank you for paying by Direct Debit\nThe amounts below will be collected on or shortly after the dates shown\n10/04/2024 £135.51 10/08/2024 £140.00 10/12/2024 £140.00\n10/05/2024 £140.00 10/09/2024 £140.00 10/01/2025 £140.00\n10/08/2024 £140.00 10/10/2024 £140.00 10/03/2025 £140.00\n10/06/2024 £140.00 10/10/2024 £140.00 10/02/2025 £140.00\n10/07/2024 £140.00 10/11/2024 £140.00 10/03/2025 £140.00",
+   "alternates": [
+    "THIS BILL WAS PREPARED USING THE FOLLOWING INFORMATION: 7",
+    "Adult Social Care* 471.40 + 37.26 + 8.6%",
+    "183.30 + 22.94",
+    "*The amount for Adult Social Care (ASC) is an cumulative figure based on the total LB Tower Hamlets Council Tax precepts. The % increase is calculated on the total of the LB Tower Hamlets Council Tax & ASC precepts.",
+    "Council Tax for period 01/04/2024 to 31/03/2025 1675.51 £ 1675.51 £ ",
+    "BILL TOTAL 1675.51 12",
+    "Thank you for paying by Direct Debit 13",
+    "The amounts below will be collected on or shortly after the dates shown 14",
+    "Your Council Tax is paid by Direct Debit."
+   ]
+  },
+  {
+   "id": "ren05",
+   "split": "real",
+   "pages": 1,
+   "readSec": 27.320399999976157,
+   "actionFirst": true,
+   "actionFinal": true,
+   "explainSec": 1.992,
+   "checkSec": 5.175,
+   "consequenceFirst": true,
+   "consequenceFinal": true,
+   "finalDeadlineRight": true,
+   "deadlinePrinted": true,
+   "finalAmountRight": true,
+   "final": {
+    "title": "Water and wastewater bill",
+    "steps": [
+     "Pay $113.68 by September 7, 2021.",
+     "If paying by mail, detach the bottom portion of the bill, make a check or money order payable to NYC Water Board, and mail it in the enclosed envelope to NYC Water Board, PO Box 11863, Newark, NJ 07101-8163 (Account: 0000000000000)."
+    ],
+    "objection": "",
+    "deadline_iso": "2021-09-07",
+    "amount": "$113.68",
+    "if_ignored": "An annual interest charge of 3.00% will apply to unpaid charges past the due date.",
+    "corrected": []
+   },
+   "figuresRead": [
+    true,
+    true
+   ],
+   "figuresKept": [
+    true,
+    true
+   ],
+   "idsMissedByModel": [],
+   "idsSent": [],
+   "agencyKept": [
+    true
+   ],
+   "deadlineRight": true,
+   "amountRight": true,
+   "explained": {
+    "title": "Water and wastewater bill",
+    "steps": [
+     "Pay the amount of $113.68 by 9/7/2021 using account token 000000000000 or 0000000000000.",
+     "Make your check or money order payable to NYC Water Board and send it to the address provided with reference number 1-00000-0000."
+    ],
+    "deadline_iso": "2021-09-07",
+    "amount": "$113.68",
+    "if_ignored": "An annual interest charge of 3.00% will apply to unpaid charges past the due date.",
+    "corrected": []
+   },
+   "transcript": "NYC\nEnvironmental Protection\nPage 1 of 2\nProperty Owner: JOHN SMITH\nService Address: 100 MAIN STREET\nNEW YORK, NY 10001\nYour Water & Wastewater Bill – Dated on 8/3/2021\nHow much do I owe? Billing information:\nYour previous charges – Reflects payments before 8/3/2021 Account: 000000000000\nPrior Balance $115.49 Amount due: $113.68\nPayments -$115.49 Due date: 9/7/2021\nYour new charges & credits BBL: 1-00000-0000\nPrior Balance $115.49\nPayments -$115.49\nYour new charges & credits\nWater & Wastewater $113.68\nTotal Due $113.68\nDue Date 9/7/2021\nAnnual interest charge of 3.00% will apply to unpaid charge past the due date.\nPlease see the next page for detailed information.\nSame great water. Simpler bill.\nA summary of your charges are on the front. The details are now on the back.\nHave questions? Visit: nyc.gov/dep/newbill\nAmount due: $113.68\nDue date: 9/7/2021\nBBL: 1-00000-0000\nHow much water do I use?\nMessages from DEP:\nThe NYC Department of Environmental Protection collects bill payments on behalf of the NYC Water Board.\nPlease detach and return this portion with your mailed payment.\nNYC\nBureau of Customer Services\n59-17 Junction Blvd.\nFlushing, NY 11373-5108\nContact Us:\nBy Web: nyc.gov/dep (click \"Contact Us\")\nBy Phone: (718) 595-7000\nBy E-mail: customerservice@dep.nyc.gov\nBilling Information:\nAccount: 0000000000000\nAmount due: $113.68\nAmount Enclosed:\nNYC\nEnvironmental\nProtection\n59-17 Junction Blvd.\nFlushing, NY 11373-5108\nBO 00000000000000 )\nJOHN SMITH\n100 MAIN STREET\nNEW YORK, NY 10001\n0000000000000000000011365\nAmount due: $113.68\nAmount Enclosed: \n$\nPlease make check or money order payable to NYC Water Board. Send your payment in the enclosed envelope to:\nNYC Water Board,\nPO Box 11863\nNewark, NJ 07101-8163",
+   "second": "Your Water & Wastewater Bill - Dated on 8/3/2021\nHow much do I owe?\nYour previous charges - Reflects payments before 8/3/2021\nPrior Balance $115.49\nPayments -$115.49\nYour new charges & credits\nWater & Wastewater $113.68\nTotal Due $113.68\nDue Date 9/7/2021\nAnnual interest charge of 3.00% will apply to unpaid charge past the due date.\nPlease see the next page for detailed information.\nProperty Owner: JOHN SMITH\nService Address: 100 MAIN STREET\nNEW YORK, NY 10001\nBilling information:\nAccount: 0000000000000\nAmount due: $113.68\nDue date: 9/7/2021\nBBL: 1-00000-0000\nHow much water do I use?\nTotal Due $113.68\nDue Date 9/7/2021\nAnnual interest charge of 3.00% will apply to unpaid charge past the due date.\nPlease see the next page for detailed information.\nSame great water. Simpler bill.\nA summary of your charges are on the front. The details are now on the back.\nHave questions? Visit: nyc.gov/dep/newbill\nHow much water do I use?\nHCF\n15\nJun '20 Sep '20 Dec '20 Mar '21 Jun '21\nMessages from DEP\nContact Us:\nBy Web: nyc.gov/dep (click \"Contact Us\")\nBy Phone: (718) 595-7000\nBy E-mail: customerservice@dep.nyc.gov\nThe NYC Department of Environmental Protection bills payments on behalf of the NYC Water Board.\nPlease detach and return this portion with your mailed payment.\nBilling Information:\nB0 00000000000000 )\nJOHN SMITH\n100 MAIN STREET\nNEW YORK, NY 10001\nNYC Water Board,\nPO Box 11863\nNewark, NJ 07101-8163\nBilling Information:\nAccount: 00000000000000\nAmount due: $113.68\nAmount Enclosed:\n$\nPlease make check or money order payable to NYC Water Board. Send your payment in the enclosed envelope to:",
+   "items": [
+    {
+     "kind": "NAME",
+     "value": "JOHN SMITH"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "100 MAIN STREET"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "NEW YORK, NY 10001"
+    },
+    {
+     "kind": "ACCOUNT",
+     "value": "000000000000"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "1-00000-0000"
+    },
+    {
+     "kind": "ACCOUNT",
+     "value": "0000000000000"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "59-17 Junction Blvd."
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Flushing, NY 11373-5108"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "(718) 595-7000"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "PO Box 11863"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Newark, NJ 07101-8163"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "0000000000000000000011365"
+    },
+    {
+     "kind": "NAME",
+     "value": "JOHN SMITH"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "100 MAIN STREET"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "NEW YORK, NY 10001"
+    },
+    {
+     "kind": "ACCOUNT",
+     "value": "0000000000000"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "1-00000-0000"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "(718) 595-7000"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "customerservice@dep.nyc.gov"
+    }
+   ],
+   "outgoing": "NYC\nEnvironmental Protection\nPage 1 of 2\nProperty Owner: [NAME_1]\nService Address: [ADDRESS_5]\n[ADDRESS_4]\nYour Water & Wastewater Bill – Dated on 8/3/2021\nHow much do I owe? Billing information:\nYour previous charges – Reflects payments before 8/3/2021 Account: [ACCOUNT_2]\nPrior Balance $115.49 Amount due: $113.68\nPayments -$115.49 Due date: 9/7/2021\nYour new charges & credits BBL: [REFERENCE_NUMBER_1]\nPrior Balance $115.49\nPayments -$115.49\nYour new charges & credits\nWater & Wastewater $113.68\nTotal Due $113.68\nDue Date 9/7/2021\nAnnual interest charge of 3.00% will apply to unpaid charge past the due date.\nPlease see the next page for detailed information.\nSame great water. Simpler bill.\nA summary of your charges are on the front. The details are now on the back.\nHave questions? Visit: nyc.gov/dep/newbill\nAmount due: $113.68\nDue date: 9/7/2021\nBBL: [REFERENCE_NUMBER_1]\nHow much water do I use?\nMessages from DEP:\nThe NYC Department of Environmental Protection collects bill payments on behalf of the NYC Water Board.\nPlease detach and return this portion with your mailed payment.\nNYC\nBureau of Customer Services\n[ADDRESS_3]\n[ADDRESS_1]\nContact Us:\nBy Web: nyc.gov/dep (click \"Contact Us\")\nBy Phone: (718) 595-7000\nBy E-mail: customerservice@dep.nyc.gov\nBilling Information:\nAccount: [ACCOUNT_1]\nAmount due: $113.68\nAmount Enclosed:\nNYC\nEnvironmental\nProtection\n[ADDRESS_3]\n[ADDRESS_1]\nBO [ACCOUNT_1]0 )\n[NAME_1]\n[ADDRESS_5]\n[ADDRESS_4]\n[ID_NUMBER_1]\nAmount due: $113.68\nAmount Enclosed: \n$\nPlease make check or money order payable to NYC Water Board. Send your payment in the enclosed envelope to:\nNYC Water Board,\n[ADDRESS_6]\n[ADDRESS_2]",
+   "alternates": [
+    "Your Water & Wastewater Bill - Dated on 8/3/2021",
+    "How much do I owe?",
+    "Billing information:",
+    "HCF",
+    "15",
+    "The NYC Department of Environmental Protection bills payments on behalf of the NYC Water Board."
+   ]
+  },
+  {
+   "id": "res01",
+   "split": "real",
+   "pages": 2,
+   "readSec": 51.27630000001192,
+   "actionFirst": true,
+   "actionFinal": true,
+   "explainSec": 3.2500999999642373,
+   "checkSec": 7.117199999988079,
+   "consequenceFirst": true,
+   "consequenceFinal": true,
+   "finalDeadlineRight": true,
+   "deadlinePrinted": true,
+   "finalAmountRight": true,
+   "final": {
+    "title": "Overdue federal income tax bill",
+    "steps": [
+     "Pay $537.40 by March 23, 2009 to avoid additional penalties and interest.",
+     "Make your check or money order payable to \"United States Treasury\".",
+     "Write your Social Security Number (XXX-XX-XXXX), the tax year (2007), and the form number (1040) on your payment.",
+     "Mail your payment to INTERNAL REVENUE SERVICE, CINCINNATI, OH 45999-0150.",
+     "If you cannot pay the full amount now, pay as much as you can and set up a payment plan at www.irs.gov (search \"opciones de pago de impuestos\") or call 1-XXX-XXX-XXXX to discuss your options."
+    ],
+    "objection": "If you think this is a mistake, call 1-XXX-XXX-XXXX to review your account, or mail the Contact Information section with any supporting documents (writing XXX-XX-XXXX, 2007, and Form 1040 on all attachments).",
+    "deadline_iso": "2009-03-23",
+    "amount": "$537.40",
+    "if_ignored": "If you do not pay $537.40 by March 23, 2009, interest will increase and additional penalties may be applied until you pay the full amount.",
+    "corrected": [
+     "read as \"Número de Seguro заканчивается XXX-XX-XXXX Social\", understood as \"Número de Seguro Social XXX-XX-XXXX\" (Social Security Number XXX-XX-XXXX)"
+    ]
+   },
+   "figuresRead": [
+    true,
+    true
+   ],
+   "figuresKept": [
+    true,
+    true
+   ],
+   "idsMissedByModel": [],
+   "idsSent": [],
+   "agencyKept": [],
+   "deadlineRight": true,
+   "amountRight": true,
+   "explained": {
+    "title": "Unpaid tax balance notice (CP14)",
+    "steps": [
+     "Send the amount of $537.40 by March 23, 2009.",
+     "Make your check or money order payable to \"United States Treasury\".",
+     "Write your social security number (XXX-XX-XXXX), the tax year (2004), and the form number on your payment.",
+     "Alternatively, visit www.irs.gov to set up a payment plan, direct debit, or credit card payment, or call 1-XXX-XXX-XXXX to discuss your options."
+    ],
+    "deadline_iso": "2009-03-23",
+    "amount": "$537.40",
+    "if_ignored": "If you do not pay, interest will increase and additional penalties could be applied.",
+    "corrected": []
+   },
+   "transcript": "Aviso CP14\nAño Tributario 2007\nFecha del Aviso 2 de marzo de 2009\nNúmero de Seguro Social XXX-XX-XXXX\nPara comunicarse con nosotros Teléfono 1-XXX-XXX-XXXX\nID del que llama 1234\nPágina 1 de 4\ns018999546711s\nJAMES & KAREN Q. HINDS\n22 BOULDER STREET\nHANSON, CT 00000-7253\nUsted tiene impuestos sin pagar para el 2007\nCantidad adeudada: $537.40\nNuestros archivos muestran que usted tiene impuestos sin pagar para el año tributario que termina el 31 de diciembre de 2007 (Formulario 1040).\nResumen de Facturación\nImpuesto adeudado previamente $3,183.00\nPagos y créditos - $3,328.00\nMulta por incumplimiento en la presentación 286.47\nMulta por incumplimiento en el pago 127.32\nMulta por incumplimiento en el pago de la cantidad apropiada de impuesto estimado 145.00\n(Formulario 1040).\nMulta por incumplimiento en la presentación\nMulta por incumplimiento en el pago\nMulta por incumplimiento en el pago de la cantidad apropiada de impuesto estimado\nIntereses cargados\nCantidad adeudada para el 23 de marzo de 2009 $537.40\nQué usted necesita hacer inmediatamente\nPague inmediatamente\n• Envíenos la cantidad adeudada de $537.40 para el 23 de marzo de 2009, para que evite cargos adicionales por multas e intereses.\nContinúa al dorso...\nJames & Karen Q. Hinds\n22 Boulder Street\nHanson, CT 00000-7253\nAviso CP14\nFecha del Aviso 2 de marzo de 2009\nNúmero de Seguro XXX-XX-XXXX\n• Haga su cheque o giro pagadero a \"United States Treasury\".\n• Escriba su número de seguro social (XXX-XX-XXXX), el año tributario (2004) y el\nCantidad adeudada para el 23 de marzo de 2009\n$537.40\nINTERNAL REVENUE SERVICE\nCINCINNATI, OH 45999-0150\ns01899954671s\nAviso CP14\nAño Tributario 2007\nFecha del Aviso 2 de marzo de 2009\nNúmero de Seguro Social XXX-XX-XXXX\nPágina 2 de 4\nQué usted necesita hacer inmediatamente—continuación\nPague inmediatamente—continuación\n• Si no puede pagar la cantidad adeudada, pague lo más que pueda ahora y haga arreglos de pago que le permita pagar el resto a plazos. Visite www.irs.gov y busque las palabras clave \"opciones de pago de impuestos\" para obtener más información sobre:\n- Planes de pagos a plazos—Descargue los formularios requeridos o ahorre tiempo y dinero haciendo la solicitud en línea, si reúne los requisitos.\n- Deducciones automáticas de su cuenta bancaria\n- Pagos con tarjeta de crédito\nO llámenos al 1-XXX-XXX-XXXX para hablar sobre cuáles son sus opciones.\nSi usted piensa que esto ha sido un error\n• Llame al 1-XXX-XXX-XXXX para repasar su cuenta. Usted también puede comunicarse con nosotros a través del correo. Complete la sección de Información de Contacto, sepárela y envíenosla con cualquier información o documentación.\nSi no recibimos respuesta de parte suya\nSi no paga la cantidad adeudada de $537.40 para el 23 de marzo de 2009, los intereses aumentarán y se le podrían aplicar multas adicionales.\nMultas\nHasta que usted pague la cantidad completa que adeuda, la ley nos\ny los gastos adicionales.\nMultas\nHasta que usted pague la cantidad completa que adeuda, la ley nos requiere que le cobremos toda multa que corresponda.\nIncumplimiento en la presentación\nFecha de presentación\n27/1/08\nMeses tarde\n2\nCantidad sin pagar\n$3,183.00\nTasa de multa\n5.0%\nCantidad\n$286.47\nJames & Karen Q. Hinds\n22 Boulder Street\nHanson, CT 00000-7253\nAviso\nCP14\nFecha del Aviso\n2 de marzo de 2009\nNúmero de Seguro\nXXX-XX-XXXX\nJames & Karen Q. Hinds\n22 Boulder Street\nHanson, CT 00000-7253\nAviso CP14\nFecha del Aviso 2 de marzo de 2009\nNúmero de Seguro Social XXX-XX-XXXX\nInformación de Contacto\nSi su dirección ha cambiado, sirvase llamar al 1-XXX-XXX-XXXX o visite el sitio web www.irs.gov.\nMarque este recuadro si ha incluido algún tipo de correspondencia. Escriba su número de Seguro Social (XXX-XX-XXXX), el año tributario (2007) y el número del formulario (1040) en todos los documentos que adjunte.\nTeléfono primario Mejor hora para llamar Teléfono secundario Mejor hora para llamar",
+   "second": "Aviso CP14\nAño Tributario 2007\nFecha del Aviso 2 de marzo de 2009\nNúmero de Seguro Social XXX-XX-XXXX\nPara comunicarse con nosotros Teléfono 1-XXX-XXX-XXXX\nID del que llama 1234\nPágina 1 de 4\ns018999546711s\nJAMES & KAREN Q. HINDS\n22 BOULDER STREET\nHANSON, CT 00000-7253\nUsted tiene impuestos sin pagar para el 2007\nCantidad adeudada: $537.40\nNuestros archivos muestran que usted tiene impuestos sin pagar para el año tributario que termina el 31 de diciembre de 2007 (Formulario 1040).\nResumen de Facturación\nImpuesto adeudado previamente $3,183.00\nPagos y créditos - 3,328.00\nMulta por incumplimiento en la presentación 286.47\nMulta por incumplimiento en el pago 127.32\nMulta por incumplimiento en el pago de la cantidad apropiada de impuesto estimado 145.00\nIntereses cargados 123.61\nCantidad adeudada para el 23 de marzo de 2009 $537.40\nQué usted necesita hacer inmediatamente\nPague inmediatamente\n• Envío la cantidad adeudada de $537.40 para el 23 de marzo de 2009, para que evite cargos adicionales por multas e intereses.\nContinúa al dorso...\nJames & Karen Q. Hinds\n22 Boulder Street\nAviso CP14\nFecha del Aviso 2 de marzo de 2009\nNúmero de Seguro Social XXX-XX-XXXX\n• Haga su cheque o giro pagadero a \"United States Treasury\".\n• Escriba su número de seguro social (XXX-XX-XXXX), el año tributario (2004) y el número del formulario (1040) en su pago y en todos los documentos que adjunte.\nCantidad adeudada para el 23 de marzo de 2009 $537.40\nINTERNAL REVENUE SERVICE\nCINCINNATI, OH 45999-0150\ns018999546711s\n0000 00000000000000 0000\nAviso CP14\nAño Tributario 2007\nFecha del Aviso 2 de marzo de 2009\nNúmero de Seguro Social XXX-XX-XXXX\nPágina 2 de 4\nQué usted necesita hacer inmediatamente—continuación\n- Pagos con tarjeta de crédito\nO llámenos al 1-XXX-XXX-XXXX para hablar sobre cuáles son sus opciones.\nSi usted piensa que esto ha sido un error\n• Llame al 1-XXX-XXX-XXXX para repasar su cuenta. Usted también puede comunicarse con nosotros a través del correo. Complete la sección de Información de Contacto, sépárala y envíenosla con cualquier información o documentación.\nSi no recibimos respuesta de parte suya\nSi no paga la cantidad adeudada de $537.40 para el 23 de marzo de 2009, los intereses aumentarán y se le podrían aplicar multas adicionales.\nMultas\nHasta que usted pague la cantidad completa que adeuda, la ley nos requiere que le cobremos toda multa que corresponda.\nIncumplimiento en la presentación\nFecha de presentación\nMeses tarde\nCantidad sin pagar\nTasa de multa\nCantidad\n27/1/08\n2\n$3,183.00\n5.0%\n$286.47\nJames & Karen Q. Hinds\n22 Boulder Street\nHanson, CT 00000-7253\nAviso CP14\nFecha del Aviso 2 de marzo de 2009\nNúmero de Seguro заканчивается XXX-XX-XXXX Social\nInformación de Contacto\nSi su dirección ha cambiado, sírvase llamar al 1-XXX-XXX-XXXX o visite el sitio web www.irs.gov.\nMarque este recuadro si ha incluido algún tipo de correspondencia. Escriba su número de Seguro Social (XXX-XX-XXXX), el año tributario (2007) y el número del formulario (1040) en todos los documentos que adjunte.\na.m. p.m. a.m. p.m.\nTeléfono primario Mejor hora para llamar Teléfono secundario Mejor hora para llamar",
+   "items": [
+    {
+     "kind": "NAME",
+     "value": "JAMES & KAREN Q. HINDS"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "22 BOULDER STREET"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "HANSON, CT 00000-7253"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "XXX-XX-XXXX"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "1234"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "XXX-XX-XXXX"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "s018999546711s"
+    },
+    {
+     "kind": "NAME",
+     "value": "James & Karen Q. Hinds"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "22 Boulder Street"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Hanson, CT 00000-7253"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "XXX-XX-XXXX"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "XXX-XX-XXXX"
+    },
+    {
+     "kind": "PHONE",
+     "value": "1-XXX-XXX-XXXX"
+    },
+    {
+     "kind": "PHONE",
+     "value": "1-XXX-XXX-XXXX"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "1-XXX-XXX-XXXX"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "1-XXX-XXX-XXXX"
+    },
+    {
+     "kind": "PHONE",
+     "value": "1-XXX-XXX-XXXX"
+    },
+    {
+     "kind": "NAME",
+     "value": "JAMES & KAREN Q. HINDS"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "22 BOULDER STREET"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "HANSON, CT 00000-7253"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "XXX-XX-XXXX"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "1234"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "s018999546711s"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "22 Boulder Street"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "s018999546711s"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "2007"
+    },
+    {
+     "kind": "NAME",
+     "value": "James & Karen Q. Hinds"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "22 Boulder Street"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Hanson, CT 00000-7253"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "XXX-XX-XXXX"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "XXX-XX-XXXX"
+    },
+    {
+     "kind": "PHONE",
+     "value": "1-XXX-XXX-XXXX"
+    },
+    {
+     "kind": "PHONE",
+     "value": "1-XXX-XXX-XXXX"
+    },
+    {
+     "kind": "PHONE",
+     "value": "1-XXX-XXX-XXXX"
+    }
+   ],
+   "outgoing": "Aviso CP14\nAño Tributario [REFERENCE_NUMBER_3]\nFecha del Aviso 2 de marzo de 2009\nNúmero de Seguro Social [ID_NUMBER_1]\nPara comunicarse con nosotros Teléfono [PHONE_1]\nID del que llama [REFERENCE_NUMBER_2]\nPágina 1 de 4\n[REFERENCE_NUMBER_1]\n[NAME_1]\n[ADDRESS_3]\n[ADDRESS_1]\nUsted tiene impuestos sin pagar para el [REFERENCE_NUMBER_3]\nCantidad adeudada: $537.40\nNuestros archivos muestran que usted tiene impuestos sin pagar para el año tributario que termina el 31 de diciembre de [REFERENCE_NUMBER_3] (Formulario 1040).\nResumen de Facturación\nImpuesto adeudado previamente $3,183.00\nPagos y créditos - $3,328.00\nMulta por incumplimiento en la presentación 286.47\nMulta por incumplimiento en el pago 127.32\nMulta por incumplimiento en el pago de la cantidad apropiada de impuesto estimado 145.00\n(Formulario 1040).\nMulta por incumplimiento en la presentación\nMulta por incumplimiento en el pago\nMulta por incumplimiento en el pago de la cantidad apropiada de impuesto estimado\nIntereses cargados\nCantidad adeudada para el 23 de marzo de 2009 $537.40\nQué usted necesita hacer inmediatamente\nPague inmediatamente\n• Envíenos la cantidad adeudada de $537.40 para el 23 de marzo de 2009, para que evite cargos adicionales por multas e intereses.\nContinúa al dorso...\n[NAME_2]\n[ADDRESS_4]\n[ADDRESS_2]\nAviso CP14\nFecha del Aviso 2 de marzo de 2009\nNúmero de Seguro [ID_NUMBER_1]\n• Haga su cheque o giro pagadero a \"United States Treasury\".\n• Escriba su número de seguro social ([ID_NUMBER_1]), el año tributario (2004) y el\nCantidad adeudada para el 23 de marzo de 2009\n$537.40\nINTERNAL REVENUE SERVICE\nCINCINNATI, OH [NUMBER_1]\ns[NUMBER_2]s\nAviso CP14\nAño Tributario [REFERENCE_NUMBER_3]\nFecha del Aviso 2 de marzo de 2009\nNúmero de Seguro Social [ID_NUMBER_1]\nPágina 2 de 4\nQué usted necesita hacer inmediatamente—continuación\nPague inmediatamente—continuación\n• Si no puede pagar la cantidad adeudada, pague lo más que pueda ahora y haga arreglos de pago que le permita pagar el resto a plazos. Visite www.irs.gov y busque las palabras clave \"opciones de pago de impuestos\" para obtener más información sobre:\n- Planes de pagos a plazos—Descargue los formularios requeridos o ahorre tiempo y dinero haciendo la solicitud en línea, si reúne los requisitos.\n- Deducciones automáticas de su cuenta bancaria\n- Pagos con tarjeta de crédito\nO llámenos al [PHONE_1] para hablar sobre cuáles son sus opciones.\nSi usted piensa que esto ha sido un error\n• Llame al [PHONE_1] para repasar su cuenta. Usted también puede comunicarse con nosotros a través del correo. Complete la sección de Información de Contacto, sepárela y envíenosla con cualquier información o documentación.\nSi no recibimos respuesta de parte suya\nSi no paga la cantidad adeudada de $537.40 para el 23 de marzo de 2009, los intereses aumentarán y se le podrían aplicar multas adicionales.\nMultas\nHasta que usted pague la cantidad completa que adeuda, la ley nos\ny los gastos adicionales.\nMultas\nHasta que usted pague la cantidad completa que adeuda, la ley nos requiere que le cobremos toda multa que corresponda.\nIncumplimiento en la presentación\nFecha de presentación\n27/1/08\nMeses tarde\n2\nCantidad sin pagar\n$3,183.00\nTasa de multa\n5.0%\nCantidad\n$286.47\n[NAME_2]\n[ADDRESS_4]\n[ADDRESS_2]\nAviso\nCP14\nFecha del Aviso\n2 de marzo de 2009\nNúmero de Seguro\n[ID_NUMBER_1]\n[NAME_2]\n[ADDRESS_4]\n[ADDRESS_2]\nAviso CP14\nFecha del Aviso 2 de marzo de 2009\nNúmero de Seguro Social [ID_NUMBER_1]\nInformación de Contacto\nSi su dirección ha cambiado, sirvase llamar al [PHONE_1] o visite el sitio web www.irs.gov.\nMarque este recuadro si ha incluido algún tipo de correspondencia. Escriba su número de Seguro Social ([ID_NUMBER_1]), el año tributario ([REFERENCE_NUMBER_3]) y el número del formulario (1040) en todos los documentos que adjunte.\nTeléfono primario Mejor hora para llamar Teléfono secundario Mejor hora para llamar",
+   "alternates": [
+    "Pagos y créditos - 3,328.00",
+    "Intereses cargados 123.61",
+    "• Envío la cantidad adeudada de $537.40 para el 23 de marzo de 2009, para que evite cargos adicionales por multas e intereses.",
+    "Número de Seguro заканчивается [ID_NUMBER_1] Social"
+   ]
+  },
+  {
+   "id": "rfr01",
+   "split": "real",
+   "pages": 1,
+   "readSec": 164.38619999998807,
+   "actionFirst": true,
+   "actionFinal": true,
+   "explainSec": 3.365800000011921,
+   "checkSec": 9.691300000011921,
+   "consequenceFirst": true,
+   "consequenceFinal": true,
+   "finalDeadlineRight": true,
+   "deadlinePrinted": false,
+   "finalAmountRight": false,
+   "final": {
+    "title": "Speeding ticket notice",
+    "steps": [
+     "Pay the fine of 68 € (or 45 € if paid within 15 days of 07/02/2017) using one of the payment methods described in the 'Notice de paiement' document, referencing notice number 3562670000.",
+     "Alternatively, if you wish to contest the fine, submit your claim online at www.antal.fr or send the completed form by registered mail with acknowledgment of receipt within 45 days of 07/02/2017 to L'OFFICIER DU MINISTERE PUBLIQUE, CONTESTATION VITESSE, CS 41101, 35911 RENNES CEDEX 9."
+    ],
+    "objection": "You can contest the fine within 45 days from 07/02/2017 online at www.antal.fr or by sending the attached form by registered letter with acknowledgment of receipt to: L'OFFICIER DU MINISTERE PUBLIQUE, CONTESTATION VITESSE, CS 41101, 35911 RENNES CEDEX 9. If the vehicle was sold, stolen, destroyed, or another driver was driving, do not pay or make a deposit; for any other reason, you must pay a deposit equal to the fixed fine.",
+    "deadline_iso": "",
+    "amount": "68 €",
+    "if_ignored": "If you do not pay or contest within 45 days from 07/02/2017, the fine increases to 180 €. Paying the fine also results in 1 point being deducted from your driving licence.",
+    "corrected": [
+     "read as \"www.antal.fr\", understood as \"www.antai.fr\" (official French traffic fine website)",
+     "read as \"livre de retenue\", understood as \"vitesse retenue\" (recorded speed)",
+     "read as \"litesse retenue\", understood as \"vitesse retenue\" (recorded speed)"
+    ]
+   },
+   "figuresRead": [
+    true
+   ],
+   "figuresKept": [
+    true
+   ],
+   "idsMissedByModel": [
+    "BATIMENT 1"
+   ],
+   "idsSent": [
+    "BATIMENT 1"
+   ],
+   "agencyKept": [
+    true
+   ],
+   "deadlineRight": true,
+   "amountRight": false,
+   "explained": {
+    "title": "Speeding ticket (Avis de contravention)",
+    "steps": [
+     "Pay the reduced fine of 45 € within 15 days from 07/02/2017 using the payment notice document or online at www.antal.fr, referencing notice number 3562670000.",
+     "Alternatively, pay the standard fine of 68 € if the 15-day period has passed.",
+     "If you wish to contest the ticket because the vehicle was sold, stolen, or driven by someone else, follow the instructions on www.antal.fr or mail the attached form by registered letter with acknowledgment of receipt to L'OFFICIER DU MINISTERE PUBLIQUE, CONTESTATION VITESSE, CS 41101, 35911 RENNES CEDEX 9."
+    ],
+    "deadline_iso": "2017-02-22",
+    "amount": "68 €",
+    "if_ignored": "If you do not pay or contest within 45 days from 07/02/2017, the fine will be increased to 180 €.",
+    "corrected": []
+   },
+   "transcript": "Numéro de l'avis de contravention\n3562670000\nLe site www.antal.fr vous permet de réaliser vos démarches en ligne et de suivre l'avancement de votre dossier.\nAVIS DE CONTRAVENTION\nLiberté Égalité Fraternité\nRÉPUBLIQUE FRANÇAISE\nDate de l'avis de contravention\n07/02/2017\nMadame, Monsieur,\nLe véhicule dont le certificat d'immatriculation est établi à votre nom a fait l'objet d'un contrôle en mouvement ayant permis de constater l'infraction figurant ci-dessous.\nDZ3\n1319\n1/\n1\n129\n31\n22\nDURANT PAUL\nBATIMENT 1\n1 RUE DES ACCACIAS\n75010 PARIS\n75012 PARIS\nDESCRIPTION DE L'INFRACTION\nEXCES DE VITESSE\nEXCES DE VITESSE INFÉRIEUR À 20 KM/H PAR CONDUITEUR DE VÉHICULE À MOTEUR - VITESSE MAXIMALE AUTORISÉE SUPÉRIEURE À 50 KM/H\n- Prévue par Art. R. 413-14 § 1 al. 2 du C. de la route.\n- Reprimée par Art. R. 413-14 § 1 al. 2 du C. de la route.\nVotre véhicule a été contrôlé par un radar en mouvement à la vitesse de 114 km/h, pour une vitesse limitée autorisée de 90 km/h.\nDate / heure : le 16/12/2016 à 17h32\nD209\nCoordonnées géographiques : N48 36.7568 E006.06.17\nDirection : Sud\nST JUST EN D É737\nCette infraction a été constatée par un agent ou un officier de police judiciaire, automatisé par un contrevenant.\nIdentification du véhicule\nImmatriculation : AA-123-AA\nPays : FRANCE\nMarque : RENAULT\nAppareil de contrôle homologué\nType : MILLIA-GATSO - 20150100301\nDate de dernière vérification : 28/04/2016\nAgent verbalisateur\nAgent : M N° 4325\nService centre autorité de constatation des infractions (France)\nCoordonnées géographiques : N48 36.7689 E006 06.17\n. Direction : SUD\nST JUST EN DUT\n0000\nCette infraction a été constatée par un agent ou un officier\nde police judiciaire. Cet automatisme de constatation\ninfractions routières (livre de retenue 3 km/h).\nEffet(s) sur le permis de conduire\n. Cette infraction entraîne un retrait de 1 point(s) du permis de\nconduire. Une fois votre amende payée, vous recevrez un courrier du\nservice du Fichier national des permis de conduire vous informant de ce\nretrait de point.\nVOUS RECONNAISSEZ L'INFRACTION\nVous devez payer l'amende en utilisant l'un des modes de paiement\ndécris dans le document « Notice de paiement ».\nLe paiement de l'amende entraîne la reconnaissance de l'infraction, le\nretrait éventuel de point(s) correspondant (article 529 du Code de\nprocédure pénale et L223-1 du Code de la route).\nVOUS CONTESTEZ\nAVOIR COMMIS L'INFRACTION\n1. Votre véhicule a été vendu / cédé / volé / détruit\nou vos plaques d'immatriculation usurpées\n2. Un autre conducteur utilisait votre véhicule au\nmoment de l'infraction\nPour plus de renseignements sur cet avis, vos\ndémarches ou le suivi de votre dossier, consultez le\nsite internet www.antal.fr ou appelez le\n0811 10 20 30 (0,05 €/min + prix d'un appel\nnormal).\nLe paiement de l'amende entraîne la reconnaissance de l'infraction, le retrait éventuel de point(s) correspondant (article 529 du Code de procédure pénale et L223-1 du Code de la route).\nMontant de l'amende :\nLe montant de l'amende forfaitaire prévue pour cette infraction s'élève à : 68 €\nSi vous payez dans les 15 jours à compter du 07/02/2017, le montant de votre amende est ramené à : 45 €\nSi vous ne payez pas ou ne contestez pas dans les 45 jours à compter du 07/02/2017, le montant de votre amende est majoré à : 180 €\nDans ce cas, vous mentionnerez sur votre procès-verbal \"Amende forfaitaire majorée\" - art. 302b du Code de procédure pénale.\n1. Vous voulez que le véhicule à l'entière propriété de l'infracteur ou vos plaques d'immatriculation usurpées\n→ n'effectuez ni paiement ni consignation\n2. Un autre conducteur utilise votre véhicule au moment de l'infraction\n→ n'effectuez ni paiement ni consignation\n3. Pour tout autre motif, vous devez verser une consignation du montant de l'amende forfaitaire.\nDans tous les cas, faites vos démarches en ligne sur le site www.antal.fr ou complétez le formulaire joint et adresse votre requête par lettre recommandée avec demande d'avis de réception à :\nL'OFFICIER DU MINISTERE PUBLIQUE\nCONTESTATION VITESSE\nCS 41101\n35911 RENNES CEDEX 9",
+   "second": "Numéro de l'avis de contravention\n3562670000\nLe véhicule dont le certificat d'immatriculation est établi à votre nom a fait l'objet d'un contrôle en mouvement ayant permis de constater l'infraction figurant ci-dessous.\nMADAME, MONSIEUR,\nLe site www.antal.fr vous permet de réaliser vos démarches en ligne et de suivre l'avancement de votre dossier.\n07/02/2017\nDESCCRIPTION DE L'INFRACTION\nEXCES DE VITESSE\nIdentifiant du véhicule\n- Immatriculation : AA-123-AA\nPays : FRANCE\nDURENT PAUL\nBATIMENT 1\n1 RUE DES ACCACIAS\n75012 PARIS\nDESCRIPTION DE L'INFRACTION\nEXCÈS DE VITESSE\nEXCÈS DE VITESSE INFÉRIEUR À 20 KM/H PAR CONDUCTEUR DE VÉHICULE À MOTEUR - VITESSE MAXIMALE AUTORISÉE SUPERIEURE À 50 KM/H\n- Prévue par Art. R. 413-14 §1 du C. de la route.\n- Réprimée par Art. R. 413-14 §1 al. 2 du C. de la route.\nVotre véhicule a été contrôlé par un radar en mouvement à la vitesse de 114 km/h, avec une vitesse limite autorisée de 90 km/h.\nDate / heure : le 16/12/2016 à 17h32\nD209\nCoordonnées géographiques : N48 36.7589 E002 06.17\nDirection : Sud\nST JUST EN D 7371\nCette infraction a été constiquée par un agent ou un officier de police judiciaire (Cet automatisme de constatation des infractions routières (litesse retenue 1 km/h)).\nEffet(s) sur le permis de conduire\nCette infraction entraîne un retrait de 1 point(s) du permis de conduire. Une fois votre amende payée, vous recevrez un courrier du service du Fichier national des permis de conduire vous informant de ce retrait de point.\nVous reconnaissez l'infraction\nVOUS DEVEZ PAYER L'AMENDE EN UTILISANT UN DES MODES DE PAIEMENT\nIdentification du véhicule\nImmatriculation : AA-123-AA\nPays : FRANCE\nMarque : RENAULT\nAppareil de contrôle homologué\nType : MILLIA - GATSO - 20150100301\nDate de dernière vérification : 28/04/2016\nAgent verbalisateur\nAgent verbalisateur N 4325\n- Situé en centre autoritaire de constatation des infractions (F-FRANCE).\nPour plus de renseignements sur cet avis, vos démarches ou le suivi de votre dossier, consultez le site Internet www.antal.fr ou appelez au 0811 10 20 30 (0,05 €/min + prix d'un appel normal).\nVOUS CONTESTEZ\nAVOIR COMMIS L'INFRACTION\nVous reconnaissez l'infraction\nVous devez payer l'amende en utilisant l'un des modes de paiement décrits dans le document « Notice de paiement ».\nLe paiement de l'amende entraîne la reconnaissance de l'infraction, le retrait éventuel de point(s) correspondant (article 529 du Code de procédure pénale et L223-1 du Code de la route).\nMontant de l'amende :\nLe montant de l'amende forfaitaire prévue pour cette infraction s'élève à :\nSi vous payez dans les 15 jours à compter du 07/02/2017, le montant de votre amende est ramené à :\nSi vous cas de paiement par prélèvement, l’amende dématérialisée pourra être bancarisée par l’organisme par vous vous aurez dûs créances des frais bancaires pour prélèvement.\nSi vous ne payez pas ou ne contestez pas les 45 jours à compter du 07/02/2017, le montant de votre amende est majoré à\n68 €\n45 €\n160 €\nVous contestez avoir commis l'infraction\n1. Votre véhicule a été vendu / cédé / volé / détruit ou vos plaques d'immatriculation usurpées\n→ n'effectuez ni paiement ni consignation\n2. Un autre conducteur utilisait votre véhicule au moment de l'infraction\n→ n'effectuez ni paiement ni consignation\n3. Pour tout autre motif, vous devez verser une consignation du montant de l'amende forfaitaire,\nDans tous les cas, faites vos démarches en ligne sur le site www.antal.fr ou complétez le formulaire avec le modèle recommandé par lettre recommandée avec demande d'accusé de réception à :\nOFFICIER DU MINISTÈRE PUBLIC\nCONTESTATION VITESSE\nCS 41101\n35911 RENNES CEDEX 9\nTSV15/01",
+   "items": [
+    {
+     "kind": "NAME",
+     "value": "DURANT PAUL"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "1 RUE DES ACCACIAS\n75010 PARIS"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "75012 PARIS"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "3562670000"
+    },
+    {
+     "kind": "PHONE",
+     "value": "0811 10 20 30"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "0811 10 20 30"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "M N° 4325"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "D209"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "AA-123-AA"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "129"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "31"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "22"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "E006.06.17"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "N48 36.7689 E006 06.17"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "CS 41101 35911 RENNES CEDEX 9"
+    },
+    {
+     "kind": "NAME",
+     "value": "DURENT PAUL"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "BATIMENT 1\n1 RUE DES ACCACIAS\n75012 PARIS"
+    },
+    {
+     "kind": "VEHICLE_PLATE",
+     "value": "AA-123-AA"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "OFFICIER DU MINISTÈRE PUBLIC\nCONTESTATION VITESSE\nCS 41101\n35911 RENNES CEDEX 9"
+    },
+    {
+     "kind": "PHONE",
+     "value": "0811 10 20 30"
+    }
+   ],
+   "outgoing": "Numéro de l'avis de contravention\n[REFERENCE_NUMBER_2]\nLe site www.antal.fr vous permet de réaliser vos démarches en ligne et de suivre l'avancement de votre dossier.\nAVIS DE CONTRAVENTION\nLiberté Égalité Fraternité\nRÉPUBLIQUE FRANÇAISE\nDate de l'avis de contravention\n07/02/2017\nMadame, Monsieur,\nLe véhicule dont le certificat d'immatriculation est établi à votre nom a fait l'objet d'un contrôle en mouvement ayant permis de constater l'infraction figurant ci-dessous.\nDZ3\n1[REFERENCE_NUMBER_8]9\n1/\n1\n[REFERENCE_NUMBER_7]\n[REFERENCE_NUMBER_8]\n[REFERENCE_NUMBER_9]\n[NAME_1]\nBATIMENT 1\n[ADDRESS_1]\n[ADDRESS_2]\nDESCRIPTION DE L'INFRACTION\nEXCES DE VITESSE\nEXCES DE VITESSE INFÉRIEUR À 20 KM/H PAR CONDUITEUR DE VÉHICULE À MOTEUR - VITESSE MAXIMALE AUTORISÉE SUPÉRIEURE À 50 KM/H\n- Prévue par Art. R. 413-14 § 1 al. 2 du C. de la route.\n- Reprimée par Art. R. 413-14 § 1 al. 2 du C. de la route.\nVotre véhicule a été contrôlé par un radar en mouvement à la vitesse de 114 km/h, pour une vitesse limitée autorisée de 90 km/h.\nDate / heure : le 16/12/2016 à 17h32\n[REFERENCE_NUMBER_6]\nCoordonnées géographiques : N48 36.7568 [REFERENCE_NUMBER_3]\nDirection : Sud\nST JUST EN D É737\nCette infraction a été constatée par un agent ou un officier de police judiciaire, automatisé par un contrevenant.\nIdentification du véhicule\nImmatriculation : [REFERENCE_NUMBER_5]\nPays : FRANCE\nMarque : RENAULT\nAppareil de contrôle homologué\nType : MILLIA-GATSO - [NUMBER_1]\nDate de dernière vérification : 28/04/2016\nAgent verbalisateur\nAgent : [REFERENCE_NUMBER_4]\nService centre autorité de constatation des infractions (France)\nCoordonnées géographiques : [REFERENCE_NUMBER_1]\n. Direction : SUD\nST JUST EN DUT\n0000\nCette infraction a été constatée par un agent ou un officier\nde police judiciaire. Cet automatisme de constatation\ninfractions routières (livre de retenue 3 km/h).\nEffet(s) sur le permis de conduire\n. Cette infraction entraîne un retrait de 1 point(s) du permis de\nconduire. Une fois votre amende payée, vous recevrez un courrier du\nservice du Fichier national des permis de conduire vous informant de ce\nretrait de point.\nVOUS RECONNAISSEZ L'INFRACTION\nVous devez payer l'amende en utilisant l'un des modes de paiement\ndécris dans le document « Notice de paiement ».\nLe paiement de l'amende entraîne la reconnaissance de l'infraction, le\nretrait éventuel de point(s) correspondant (article 529 du Code de\nprocédure pénale et L[REFERENCE_NUMBER_9]3-1 du Code de la route).\nVOUS CONTESTEZ\nAVOIR COMMIS L'INFRACTION\n1. Votre véhicule a été vendu / cédé / volé / détruit\nou vos plaques d'immatriculation usurpées\n2. Un autre conducteur utilisait votre véhicule au\nmoment de l'infraction\nPour plus de renseignements sur cet avis, vos\ndémarches ou le suivi de votre dossier, consultez le\nsite internet www.antal.fr ou appelez le\n0811 10 20 30 (0,05 €/min + prix d'un appel\nnormal).\nLe paiement de l'amende entraîne la reconnaissance de l'infraction, le retrait éventuel de point(s) correspondant (article 529 du Code de procédure pénale et L[REFERENCE_NUMBER_9]3-1 du Code de la route).\nMontant de l'amende :\nLe montant de l'amende forfaitaire prévue pour cette infraction s'élève à : 68 €\nSi vous payez dans les 15 jours à compter du 07/02/2017, le montant de votre amende est ramené à : 45 €\nSi vous ne payez pas ou ne contestez pas dans les 45 jours à compter du 07/02/2017, le montant de votre amende est majoré à : 180 €\nDans ce cas, vous mentionnerez sur votre procès-verbal \"Amende forfaitaire majorée\" - art. 302b du Code de procédure pénale.\n1. Vous voulez que le véhicule à l'entière propriété de l'infracteur ou vos plaques d'immatriculation usurpées\n→ n'effectuez ni paiement ni consignation\n2. Un autre conducteur utilise votre véhicule au moment de l'infraction\n→ n'effectuez ni paiement ni consignation\n3. Pour tout autre motif, vous devez verser une consignation du montant de l'amende forfaitaire.\nDans tous les cas, faites vos démarches en ligne sur le site www.antal.fr ou complétez le formulaire joint et adresse votre requête par lettre recommandée avec demande d'avis de réception à :\nL'OFFICIER DU MINISTERE PUBLIQUE\nCONTESTATION VITESSE\nCS 41101\n35911 RENNES CEDEX 9",
+   "alternates": [
+    "MADAME, MONSIEUR,",
+    "DESCCRIPTION DE L'INFRACTION",
+    "Identifiant du véhicule",
+    "EXCÈS DE VITESSE",
+    "EXCÈS DE VITESSE INFÉRIEUR À 20 KM/H PAR CONDUCTEUR DE VÉHICULE À MOTEUR - VITESSE MAXIMALE AUTORISÉE SUPERIEURE À 50 KM/H",
+    "- Prévue par Art. R. 413-14 §1 du C. de la route.",
+    "- Réprimée par Art. R. 413-14 §1 al. 2 du C. de la route.",
+    "Votre véhicule a été contrôlé par un radar en mouvement à la vitesse de 114 km/h, avec une vitesse limite autorisée de 90 km/h.",
+    "Coordonnées géographiques : N48 36.7589 E002 06.17",
+    "ST JUST EN D 7371",
+    "Cette infraction a été constiquée par un agent ou un officier de police judiciaire (Cet automatisme de constatation des infractions routières (litesse retenue 1 km/h)).",
+    "Cette infraction entraîne un retrait de 1 point(s) du permis de conduire. Une fois votre amende payée, vous recevrez un courrier du service du Fichier national des permis de conduire vous informant de ce retrait de point.",
+    "VOUS DEVEZ PAYER L'AMENDE EN UTILISANT UN DES MODES DE PAIEMENT",
+    "Agent verbalisateur N 4325",
+    "- Situé en centre autoritaire de constatation des infractions (F-FRANCE).",
+    "Pour plus de renseignements sur cet avis, vos démarches ou le suivi de votre dossier, consultez le site Internet www.antal.fr ou appelez au 0811 10 20 30 (0,05 €/min + prix d'un appel normal).",
+    "Vous devez payer l'amende en utilisant l'un des modes de paiement décrits dans le document « Notice de paiement ».",
+    "Le montant de l'amende forfaitaire prévue pour cette infraction s'élève à :",
+    "Si vous payez dans les 15 jours à compter du 07/02/2017, le montant de votre amende est ramené à :",
+    "Si vous cas de paiement par prélèvement, l’amende dématérialisée pourra être bancarisée par l’organisme par vous vous aurez dûs créances des frais bancaires pour prélèvement.",
+    "Si vous ne payez pas ou ne contestez pas les 45 jours à compter du 07/02/2017, le montant de votre amende est majoré à",
+    "68 €",
+    "45 €",
+    "160 €",
+    "Vous contestez avoir commis l'infraction",
+    "1. Votre véhicule a été vendu / cédé / volé / détruit ou vos plaques d'immatriculation usurpées",
+    "2. Un autre conducteur utilisait votre véhicule au moment de l'infraction",
+    "Dans tous les cas, faites vos démarches en ligne sur le site www.antal.fr ou complétez le formulaire avec le modèle recommandé par lettre recommandée avec demande d'accusé de réception à :",
+    "TSV15/01"
+   ]
+  },
+  {
+   "id": "rfr02",
+   "split": "real",
+   "pages": 1,
+   "readSec": 40.11409999996424,
+   "actionFirst": true,
+   "actionFinal": true,
+   "explainSec": 2.2965,
+   "checkSec": 10.739,
+   "consequenceFirst": true,
+   "consequenceFinal": true,
+   "finalDeadlineRight": true,
+   "deadlinePrinted": false,
+   "finalAmountRight": true,
+   "final": {
+    "title": "Increased speeding fine notice",
+    "steps": [
+     "Pay 144,00 € within 30 days from February 10, 2017 (by March 12, 2017), or within 45 days if paying by bank card, using reference 011171000000 and the payment methods in the enclosed notice.",
+     "If you wish to contest the fine instead of paying, submit a claim within 3 months to the Officier du ministère public près le Contrôle Automatisé at CS 41101\n35911 RENNES CEDEX 9."
+    ],
+    "objection": "You can contest the fine within 3 months. Claims regarding the merits of the fine must be sent exclusively to the Officier du ministère public près le Contrôle Automatisé at CS 41101\n35911 RENNES CEDEX 9.",
+    "deadline_iso": "2017-03-12",
+    "amount": "144,00 €",
+    "if_ignored": "If you do not pay within the deadlines or contest within 3 months, legal proceedings that may result in high fees will be started against you.",
+    "corrected": [
+     "read as \"www.antal.fr\", understood as \"www.antai.fr\" (official French automated traffic fine website)",
+     "read as \"ÉCOMPTE DE LA SOMME À PAYER\", understood as \"DÉCOMPTE DE LA SOMME À PAYER\" (breakdown of the amount to pay)",
+     "read as \"CONTROLE AUTOMATIS\", understood as \"CONTRÔLE AUTOMATISÉ\" (Automated Control)"
+    ]
+   },
+   "figuresRead": [
+    false
+   ],
+   "figuresKept": [
+    true
+   ],
+   "idsMissedByModel": [
+    "AA-123-AA"
+   ],
+   "idsSent": [
+    "AA-123-AA"
+   ],
+   "agencyKept": [
+    false
+   ],
+   "deadlineRight": true,
+   "amountRight": true,
+   "explained": {
+    "title": "Increased fixed fine for speeding",
+    "steps": [
+     "Pay the amount of 144,00 € within 30 days of the notice date (or 45 days if paying by credit card) using the reference number 011171000000 or 919961 56187 9365 1/3 1 0."
+    ],
+    "deadline_iso": "2017-03-12",
+    "amount": "144,00 €",
+    "if_ignored": "If you do not pay or contest within the deadlines, enforcement proceedings that can cause high costs will be initiated against you.",
+    "corrected": []
+   },
+   "transcript": "MINISTERE PUBLIC\nRéclamations sur le bien-fondé de l'amende exclusivement\nOfficier du ministère public près le\nContrôle Automatisé\nCS 41101\n35911 RENNES CEDEX 9\nTél. : 08 11 10 20 30\nPour toute information sur la constatation des infractions,\nappelez le 08 11 10 20 30 (coût appel local)\nou consultez le site internet www.antai.fr\nDIRECTION GENERALE DES FINANCES PUBLIQUES\nRenseignements sur le paiement de l'amende exclusivement\nTRES. CONTROLE AUTOMATISE\nCS 81239\n35012 RENNES CEDEX\nTél. : 08 11 10 20 30 (coût appel local)\nMél. : 1035050@dfip.finances.gouv.fr\nAccueil : TU SF SAM PAR TEL 8h30 17h00\n919961 56187 9365 1/3 1 0\nAVT 01117166880 000554\nDURANT PAUL\nBATIMENT 1\n1 RUE DES ACCACIAS\n75012 PARIS\nAMENDE FORFAITAIRE MAJORÉE\nDate d'envoi de l'avis : 10.02.2017\nRéférence de l'avis : 011171000000\nVous êtes redevable d'une amende forfaitaire majorée en raison des faits suivants :\nNATURE DE L'INFRACTION\nEXCES DE VITESSE < 20 KM/H\nVITESSE MAX AUTORISEE > 50 KM/H\nART R 413-14 DU CODE DE LA ROUTE\nrelévée par contrôle automatisé le 09.05.2016 à 18h12 à\nVILLENEUVE D'ASCQ\nVéhicule MERCEDES B Numéro AA-123-AA\nRetrait de points du permis de condui\nVoir information verso\nA la suite de cette infraction, un avis de contravention vous a été envoyé.\nFaute de paiement ou de réclamation dans les délais, cette amende a été majorée le 25.01.2017 par une décision de l'officier du ministère public près le CONTRÔLE AUTOMATIS\nd'en être statué au greffe : 01 204 3697737071\nd'en être stipulée au greffe : 0 204 3697737071\nLa somme à payer, suite à diminution de 20%, figure à la dernière ligne du tableau ci-dessus. Les différents modes de règlement sont décrits dans la notice intitulée « Comment payer cette amende forfaitaire majorée ».\nJe vous informe que le paiement de l'amende entraîne l'extinction de l'action publique.\nÀ défaut de paiement dans les délais indiqués ci-dessus, ou de contestation dans les 3 mois, des poursuites pouvant occasionner des frais élevés seront engagées à votre encontre.\nLe Comptable public, par délégation\nDavid TERRADE - Responsable de l'établissement de services informatiques de Meyzieu\n74/33/02\nMINISTÈRE DE L'ÉCONOMIE\nET DES FINANCES",
+   "second": "MINISTERE PUBLIC\nRéclamations sur le bon-fonds de l'amende exclusivement\nOfficier du ministère public près le\nContrôle Automatisé\nCS 41101\n35911 RENNES CEDEX 9\nTél. : 08 11 10 20 30\nPour toute information sur la constatation des infractions,\nappelez le 08 11 10 20 30 (coût appel local)\nou consultez le site internet www.antal.fr\nLiberté • Égalité • Fraternité\nRÉPUBLIQUE FRANÇAISE\nDIRECTION GÉNÉRALE DES FINANCES PUBLIQUES\nRenseignements sur le paiement de l'amende exclusivement\nTRES. CONTROLE AUTOMATISE\nCS 81299\n35012 RENNES CEDEX\nTél. : 08 11 10 20 30 (coût appel local)\nMél. : 1035050@gdf.finances.gouv.fr\nAccueil : TLU SF SAM par TEL BH30 17h00\n919961 56187 9365 1/3 1 0\nAVT : 01117166680 000554\nDURANT PAUL\nBATIMENT 1\n1 RUE DES ACCACIAS\n75012 PARIS\nAMENDE FORFAITAIRE MAJORÉE\nDate d'envoi de l'avis : 10.02.2017\nRéférence de l'avis : 011171000000\nVous êtes redevable d'une amende forfaitaire majorée en raison des faits suivants :\n NATURE DE L'INFRACTION\n EXCÈS DE VITESSE < 20 KM/H\n VITESSE MAX AUTORISÉE > 50 KM/H\n ART R 413-14 DU CODE DE LA ROUTE\nrelévée par contrôle automatisé le 09.05.2016 à 18h12 à\n VILLENEUVE D'ASCQ\nVéhicule MERCEDES B Numéro AA-123-AA\nRetrait de points du permis de conduire\nVoir information verso\nÀ la suite de cette infraction, un avis de\ncontravention vous a été envoyé.\nFaute de paiement ou de réclamation dans les\ndélais, cette amende a été majorée le 25.01.2017\npar une décision de l'officier du ministère public\nprès le CONTROLE AUTOMATIS\nd'en être au greffe : 0 1204 3697737071\nSPECIMEN\nÉCOMPTE DE LA SOMME À PAYER\narrêté au 04.02.2017\nAmende forfaitaire majorée\n(compte-tenu des règlements précédents)\n180,00 €\nSomme à payer diminuée de 20% si vous payez\ndans les 30 jours\n144,00 €\nLa diminution de 20% (article R49-6 du code de procédure pénale) n'est applicable que si vous payez dans les 30 jours à compter du 10.02.2017. Ce délai est porté à 45 jours pour tout paiement par carte bancaire (par\nJe vous informe que le paiement de l'amende entraîne l'extinction de l'action publique.\nÀ défaut de paiement dans les délais indiqués ci-dessus, ou de contestation dans les 3 mois, des poursuites pouvant occasionner des frais élevés seront engagées à votre encontre.\nLe Comptable public, par délégation\nDavid TERRADE - Responsable de l'établissement de services informatiques de Meyzieu",
+   "items": [
+    {
+     "kind": "NAME",
+     "value": "DURANT PAUL"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "BATIMENT 1\n1 RUE DES ACCACIAS\n75012 PARIS"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "011171000000"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "CS 41101\n35911 RENNES CEDEX 9"
+    },
+    {
+     "kind": "PHONE",
+     "value": "08 11 10 20 30"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "01117166880"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "000554"
+    },
+    {
+     "kind": "PHONE",
+     "value": "000554"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "CS 81239\n35012 RENNES CEDEX"
+    },
+    {
+     "kind": "PHONE",
+     "value": "08 11 10 20 30"
+    },
+    {
+     "kind": "PHONE",
+     "value": "1035050@dfip.finances.gouv.fr"
+    },
+    {
+     "kind": "PHONE",
+     "value": "TU SF SAM PAR TEL 8h30 17h00"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "919961 56187 9365 1/3 1 0"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "CS 81239\n35012 RENNES CEDEX"
+    },
+    {
+     "kind": "PHONE",
+     "value": "01 204 3697737071"
+    },
+    {
+     "kind": "PHONE",
+     "value": "0 204 3697737071"
+    },
+    {
+     "kind": "NAME",
+     "value": "DURANT PAUL"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "BATIMENT 1\n1 RUE DES ACCACIAS\n75012 PARIS"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "011171000000"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "01117166680"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "000554"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "01204 3697737071"
+    }
+   ],
+   "outgoing": "MINISTERE PUBLIC\nRéclamations sur le bien-fondé de l'amende exclusivement\nOfficier du ministère public près le\nContrôle Automatisé\n[ADDRESS_2]\nTél. : [PHONE_5]\nPour toute information sur la constatation des infractions,\nappelez le [PHONE_5] (coût appel local)\nou consultez le site internet www.antai.fr\nDIRECTION GENERALE DES FINANCES PUBLIQUES\nRenseignements sur le paiement de l'amende exclusivement\nTRES. CONTROLE AUTOMATISE\n[ADDRESS_3]\nTél. : [PHONE_5] (coût appel local)\nMél. : [PHONE_1]\nAccueil : [PHONE_2]\n[REFERENCE_NUMBER_1]\nAVT [REFERENCE_NUMBER_3] [REFERENCE_NUMBER_4]\n[NAME_1]\n[ADDRESS_1]\nAMENDE FORFAITAIRE MAJORÉE\nDate d'envoi de l'avis : 10.02.2017\nRéférence de l'avis : [REFERENCE_NUMBER_2]\nVous êtes redevable d'une amende forfaitaire majorée en raison des faits suivants :\nNATURE DE L'INFRACTION\nEXCES DE VITESSE < 20 KM/H\nVITESSE MAX AUTORISEE > 50 KM/H\nART R 413-14 DU CODE DE LA ROUTE\nrelévée par contrôle automatisé le 09.05.2016 à 18h12 à\nVILLENEUVE D'ASCQ\nVéhicule MERCEDES B Numéro AA-123-AA\nRetrait de points du permis de condui\nVoir information verso\nA la suite de cette infraction, un avis de contravention vous a été envoyé.\nFaute de paiement ou de réclamation dans les délais, cette amende a été majorée le 25.01.2017 par une décision de l'officier du ministère public près le CONTRÔLE AUTOMATIS\nd'en être statué au greffe : [PHONE_3]\nd'en être stipulée au greffe : [PHONE_4]\nLa somme à payer, suite à diminution de 20%, figure à la dernière ligne du tableau ci-dessus. Les différents modes de règlement sont décrits dans la notice intitulée « Comment payer cette amende forfaitaire majorée ».\nJe vous informe que le paiement de l'amende entraîne l'extinction de l'action publique.\nÀ défaut de paiement dans les délais indiqués ci-dessus, ou de contestation dans les 3 mois, des poursuites pouvant occasionner des frais élevés seront engagées à votre encontre.\nLe Comptable public, par délégation\nDavid TERRADE - Responsable de l'établissement de services informatiques de Meyzieu\n74/33/02\nMINISTÈRE DE L'ÉCONOMIE\nET DES FINANCES",
+   "alternates": [
+    "Réclamations sur le bon-fonds de l'amende exclusivement",
+    "ou consultez le site internet www.antal.fr",
+    "Liberté • Égalité • Fraternité",
+    "RÉPUBLIQUE FRANÇAISE",
+    "DIRECTION GÉNÉRALE DES FINANCES PUBLIQUES",
+    "CS 81299",
+    "35012 RENNES CEDEX",
+    " EXCÈS DE VITESSE < 20 KM/H",
+    " VITESSE MAX AUTORISÉE > 50 KM/H",
+    "Retrait de points du permis de conduire",
+    "À la suite de cette infraction, un avis de",
+    "contravention vous a été envoyé.",
+    "Faute de paiement ou de réclamation dans les",
+    "délais, cette amende a été majorée le 25.01.2017",
+    "par une décision de l'officier du ministère public",
+    "près le CONTROLE AUTOMATIS",
+    "SPECIMEN",
+    "ÉCOMPTE DE LA SOMME À PAYER",
+    "arrêté au 04.02.2017",
+    "Amende forfaitaire majorée",
+    "(compte-tenu des règlements précédents)",
+    "180,00 €",
+    "Somme à payer diminuée de 20% si vous payez",
+    "dans les 30 jours",
+    "144,00 €",
+    "La diminution de 20% (article R49-6 du code de procédure pénale) n'est applicable que si vous payez dans les 30 jours à compter du 10.02.2017. Ce délai est porté à 45 jours pour tout paiement par carte bancaire (par"
+   ]
+  },
+  {
+   "id": "rja01",
+   "split": "real",
+   "pages": 1,
+   "readSec": 32.58759999996424,
+   "actionFirst": false,
+   "actionFinal": false,
+   "explainSec": 1.8615,
+   "checkSec": 9.614800000011922,
+   "consequenceFirst": true,
+   "consequenceFinal": true,
+   "finalDeadlineRight": false,
+   "deadlinePrinted": true,
+   "finalAmountRight": false,
+   "final": {
+    "title": "Guide to reading your resident tax notice",
+    "steps": [],
+    "objection": "",
+    "deadline_iso": "",
+    "amount": "",
+    "if_ignored": "Not stated. This is an informational guide explaining how your tax notice is calculated and collected, not a demand for immediate payment.",
+    "corrected": [
+     "read as \"住居税\", understood as \"住民税\" (resident tax)",
+     "read as \"塩酸減税\", understood as \"定額減税\" (fixed-amount tax reduction)"
+    ]
+   },
+   "figuresRead": [
+    true,
+    false
+   ],
+   "figuresKept": [
+    true,
+    true
+   ],
+   "idsMissedByModel": [],
+   "idsSent": [],
+   "agencyKept": [],
+   "deadlineRight": false,
+   "amountRight": false,
+   "explained": {
+    "title": "Resident tax and pension special collection notice",
+    "steps": [],
+    "deadline_iso": "",
+    "amount": "",
+    "if_ignored": "",
+    "corrected": []
+   },
+   "transcript": "納税通知書の見方(給与・年金から特別徴収されている方)\n令和6年6月\n江川西署税務課長\n年額 incomeに関していただいていただく税額です。\n納税額を毎年一定に立てる分だけ今と今後の特別徴収で発生したお支払い額から、買い取りの2年分があります。\n特別徴収がある場合、それらを差し引いた残りの分を普通副で税額を徴収処理してまいります。\n本年より年金から特別徴収始まる方(65歳以上)年金からの税額の2/目(年額 income从いがあり、年金の受取額でいただいております。週り1/2、年金、年により10月・12月に第1回徴収されます。)\n年度の表示について\n課税月ごとに表示されます。\n第1期 第2期 第3期\n年額 22,300 19,000 18,000\n年金 1,500 1,000 ****\n納付額 22,300 19,000 18,000\n※調整額は普通徴収から差し引かれます。\n公的年金からの特別徴収(収入状況は3月02年07月02日時点)\n前年度中に年金を受給している方、年金から年金から年金が受給している方を対象に令和8年10月以降に支払われる年金等から年金から、年金額が特別徴収されます。\n132-3-001\n(〇〇年○月○日)\nお名前、住所、連絡先、納税者番号\nお名前、住所、連絡先、納税者番号\n課税月ごとの課税額は、お添付お手続きを教えてください。\n22,222,000円(例)\n6月1日以降に発送する通知書には記載事案があります。\n年額の計算のしかた\n住居税(給与・年金等 incomeの収入ある場合そちらを計算します。)\n※上限入世と世帯の税額の差額分が税額となるため、別に計算します。\nA 合計所得金額 2,229,657円\nB 所得税額(人均・税額の計算を全て行う。) = B\nC 配当金等 2,229,657円\nD 格差控除 1,365,478円\n課税所得額 (B-C) 864,000円\n(Dの計算様式は1円未満切捨て)\n864,000円(D×34%≒34,560円)\n-4,000円(塩酸減税)=29,900円\n所得税 1,000円\n合計 30,900円(Eの1円未満切捨て)\n所得税 864,000円(D×34%≒51,840円)\n-6,000円(塩酸減税)=44,900円\n合計 47,900円(Fの1円未満切捨て)\n公的年金からの年別収況(地方税法第321条の7の2)\n毎月一定額から年金を受給する年、令和4年8月1日現在(国境に65歳になろうとしている年次)、令和4年8月以降に支払われる年金受給年金等から、年間の相続税額が変動する。\n16歳未満の未成年者扶養のありませんが、扶養親族と生計の続柄が限定して使用するもので入のでお読みください。\n所得金額の計算について\n毎年度の金額の収況の一式をまとめて、所得税を納付し、所得税額を割当ること。\n事業等の収益がある場合には必要経費を差し引いたもの。\n所得税と相続税の清算のないについて\n所得税と相続税は各自有する税額の割ので下記のように整理する。\n所得税 所轄 住民税\n一般税額 38万円 33万円\n特別税額 63万円 45万円\n老人税額 48万円 38万円\nひとり親税額 35万円 30万円\n住民税額の計算については、所轄税務署に直接ご相談ください。\n令和5年 修正後 相当額 令和4年修正前相当額\n所得税所得税額 1,590万円 1,450万円\n住民税 1,590万円 1,450万円\n(令和5年付の収入の主なもの)\n年金 2,121万円 2,121万円\n配当等 44万円 44万円\n区分ごとき 3万円 3万円\nその他 2万円 2万円\n(詳細な内訳は添付資料をご参照ください。)\n令和4年付の税額取得事項\n所得税所得税額 1,590万円 1,450万円\n住民税 1,590万円 1,450万円\n相続税額 3,200万円 2,900万円\n概算税額 1,000万円 900万円",
+   "second": "納税通知書の見方(給与・年金から特別徴収されている方)\n全額徴収にてお支払いいただく場合です。\n毎月お支払いいただく場合です。\n特別徴収がある場合は、それらと並行して毎月お支払いいただく場合です。\n年金等から特別徴収収入がある方(65歳以上)\n年金等の種類(2社以上から収入があり、年収が65歳以上である方)または、年金等の種類(1社から収入があり、年収が65歳以下、または年収が1社から収入があり、65歳以上の場合)です。\n年限の表について\n年収 20,000 18,000 18,000 18,000\n年金 1,500 1,500 1,500 1,500\n賦課金 22,300 19,000 18,000 18,000\n公的年金等の特別徴収(ガス発生3月からの7回で\n毎月お支払いいただく場合、早い時期に集金し、\n65歳以上の方で年額収入が100万円を超える場合は、\n毎月集金し、毎月徴収します。\n1年間の所得税で申告した量よりも、実際の税額は税法上の所得税額を消費税相当額で計算しております。\n所得税額の計算は、通常、所得税の計算式に準拠して行われます。\n所得税の支払う相手が複雑な場合、納税、所得税の支払額は、所得、税率、各種控除などの数値を基に計算されます。\n事務所への収入等に関するご相談をいただくため、所轄の税務署お問い合わせ窓口までご連絡ください。\n納税通知書は、各自治体の税務署から、毎月ご郵送いたします。\n(一部、電話による確認が必要となる場合がございます。)\n年収と年末調整の計算の考え方\n住民税(給与・年金等の収入分から考えられる金額を計算します)\n上表はあくまで計算のご参考となるもので、共に計算します。\nA 会社所得金額 2,229,657円\nB 所得税(基礎控除額を勘案した額) 2,229,657円\nC 消費税 1,365,478円\nD 税抜合計 3,604,135円\n(税抜合計額は納税額(A+B+C)と同一です)\n6月以降に受取る退職給付は6月目以来支払事宜となります。\n所得税 864,000円×34%=29,456円\n(4%) (年額収入は一括徴収で約29,456円)\n源泉徴収分 30,000円\n(年額収入は一括徴収で約30,000円)\n合計 864,000円×(6%+51,840円\n(6%) = 51,840円\n(納税額は、上記源泉徴収分と併せて計算します)\n累計 47,900円(10万円均等で)\n納税額(所得税額) 1,000円(G)\n(各所得税額の個数と各金額を乗算して計算できます)\n1年間に受け取っていく金額\n30,000円+47,900円+1,000円(G)=78,900円(H)\n納税額について\n納税通知書は各自治体の税務署から毎月ご郵送いたします。\nなお、令和3年度から、給与所得の源泉徴収票の6月以降、各月の徴収額が毎月ご郵送されます。\nまた、令和3年度以降は、毎月ご郵送の税額通知書はございません。\n納税額について\n住民税額について詳しくは下記税務署までお問い合わせください。\n住民税額の計算方法や、各自治体ごとの税法などについては、ご各自治体の税務署までお問い合わせください。\n住民税額を一定額からと、継続的に減額することになる場合もございます。",
+   "items": [
+    {
+     "kind": "NAME",
+     "value": "江川西署税務課長"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "132-3-001"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "〇〇年○月○日"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "ご添付お手続きを教えてください。"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "令和6年6月"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "令和8年10月以降"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "0120-10-01"
+    }
+   ],
+   "outgoing": "納税通知書の見方(給与・年金から特別徴収されている方)\n令和6年6月\n[NAME_1]\n年額 incomeに関していただいていただく税額です。\n納税額を毎年一定に立てる分だけ今と今後の特別徴収で発生したお支払い額から、買い取りの2年分があります。\n特別徴収がある場合、それらを差し引いた残りの分を普通副で税額を徴収処理してまいります。\n本年より年金から特別徴収始まる方(65歳以上)年金からの税額の2/目(年額 income从いがあり、年金の受取額でいただいております。週り1/2、年金、年により10月・12月に第1回徴収されます。)\n年度の表示について\n課税月ごとに表示されます。\n第1期 第2期 第3期\n年額 22,300 19,000 18,000\n年金 1,500 1,000 ****\n納付額 22,300 19,000 18,000\n※調整額は普通徴収から差し引かれます。\n公的年金からの特別徴収(収入状況は3月02年07月02日時点)\n前年度中に年金を受給している方、年金から年金から年金が受給している方を対象に[REFERENCE_NUMBER_1]に支払われる年金等から年金から、年金額が特別徴収されます。\n[ADDRESS_1]\n([REFERENCE_NUMBER_2])\nお名前、住所、連絡先、納税者番号\nお名前、住所、連絡先、納税者番号\n課税月ごとの課税額は、お添付お手続きを教えてください。\n22,222,000円(例)\n6月1日以降に発送する通知書には記載事案があります。\n年額の計算のしかた\n住居税(給与・年金等 incomeの収入ある場合そちらを計算します。)\n※上限入世と世帯の税額の差額分が税額となるため、別に計算します。\nA 合計所得金額 2,229,657円\nB 所得税額(人均・税額の計算を全て行う。) = B\nC 配当金等 2,229,657円\nD 格差控除 1,365,478円\n課税所得額 (B-C) 864,000円\n(Dの計算様式は1円未満切捨て)\n864,000円(D×34%≒34,560円)\n-4,000円(塩酸減税)=29,900円\n所得税 1,000円\n合計 30,900円(Eの1円未満切捨て)\n所得税 864,000円(D×34%≒51,840円)\n-6,000円(塩酸減税)=44,900円\n合計 47,900円(Fの1円未満切捨て)\n公的年金からの年別収況(地方税法第321条の7の2)\n毎月一定額から年金を受給する年、令和4年8月1日現在(国境に65歳になろうとしている年次)、令和4年8月以降に支払われる年金受給年金等から、年間の相続税額が変動する。\n16歳未満の未成年者扶養のありませんが、扶養親族と生計の続柄が限定して使用するもので入のでお読みください。\n所得金額の計算について\n毎年度の金額の収況の一式をまとめて、所得税を納付し、所得税額を割当ること。\n事業等の収益がある場合には必要経費を差し引いたもの。\n所得税と相続税の清算のないについて\n所得税と相続税は各自有する税額の割ので下記のように整理する。\n所得税 所轄 住民税\n一般税額 38万円 33万円\n特別税額 63万円 45万円\n老人税額 48万円 38万円\nひとり親税額 35万円 30万円\n住民税額の計算については、所轄税務署に直接ご相談ください。\n令和5年 修正後 相当額 令和4年修正前相当額\n所得税所得税額 1,590万円 1,450万円\n住民税 1,590万円 1,450万円\n(令和5年付の収入の主なもの)\n年金 2,121万円 2,121万円\n配当等 44万円 44万円\n区分ごとき 3万円 3万円\nその他 2万円 2万円\n(詳細な内訳は添付資料をご参照ください。)\n令和4年付の税額取得事項\n所得税所得税額 1,590万円 1,450万円\n住民税 1,590万円 1,450万円\n相続税額 3,200万円 2,900万円\n概算税額 1,000万円 900万円",
+   "alternates": [
+    "全額徴収にてお支払いいただく場合です。",
+    "毎月お支払いいただく場合です。",
+    "特別徴収がある場合は、それらと並行して毎月お支払いいただく場合です。",
+    "年金等から特別徴収収入がある方(65歳以上)",
+    "年金等の種類(2社以上から収入があり、年収が65歳以上である方)または、年金等の種類(1社から収入があり、年収が65歳以下、または年収が1社から収入があり、65歳以上の場合)です。",
+    "年限の表について",
+    "年収 20,000 18,000 18,000 18,000",
+    "年金 1,500 1,500 1,500 1,500",
+    "賦課金 22,300 19,000 18,000 18,000",
+    "公的年金等の特別徴収(ガス発生3月からの7回で",
+    "毎月お支払いいただく場合、早い時期に集金し、",
+    "65歳以上の方で年額収入が100万円を超える場合は、",
+    "毎月集金し、毎月徴収します。",
+    "1年間の所得税で申告した量よりも、実際の税額は税法上の所得税額を消費税相当額で計算しております。",
+    "所得税額の計算は、通常、所得税の計算式に準拠して行われます。",
+    "所得税の支払う相手が複雑な場合、納税、所得税の支払額は、所得、税率、各種控除などの数値を基に計算されます。",
+    "事務所への収入等に関するご相談をいただくため、所轄の税務署お問い合わせ窓口までご連絡ください。",
+    "納税通知書は、各自治体の税務署から、毎月ご郵送いたします。",
+    "(一部、電話による確認が必要となる場合がございます。)",
+    "年収と年末調整の計算の考え方",
+    "住民税(給与・年金等の収入分から考えられる金額を計算します)",
+    "上表はあくまで計算のご参考となるもので、共に計算します。",
+    "A 会社所得金額 2,229,657円",
+    "B 所得税(基礎控除額を勘案した額) 2,229,657円",
+    "C 消費税 1,365,478円",
+    "D 税抜合計 3,604,135円",
+    "(税抜合計額は納税額(A+B+C)と同一です)",
+    "6月以降に受取る退職給付は6月目以来支払事宜となります。",
+    "所得税 864,000円×34%=29,456円",
+    "(4%) (年額収入は一括徴収で約29,456円)",
+    "源泉徴収分 30,000円",
+    "(年額収入は一括徴収で約30,000円)",
+    "合計 864,000円×(6%+51,840円",
+    "(6%) = 51,840円",
+    "(納税額は、上記源泉徴収分と併せて計算します)",
+    "累計 47,900円(10万円均等で)",
+    "納税額(所得税額) 1,000円(G)",
+    "(各所得税額の個数と各金額を乗算して計算できます)",
+    "30,000円+47,900円+1,000円(G)=78,900円(H)",
+    "納税額について",
+    "納税通知書は各自治体の税務署から毎月ご郵送いたします。",
+    "なお、令和3年度から、給与所得の源泉徴収票の6月以降、各月の徴収額が毎月ご郵送されます。",
+    "また、令和3年度以降は、毎月ご郵送の税額通知書はございません。",
+    "納税額について",
+    "住民税額について詳しくは下記税務署までお問い合わせください。",
+    "住民税額の計算方法や、各自治体ごとの税法などについては、ご各自治体の税務署までお問い合わせください。",
+    "住民税額を一定額からと、継続的に減額することになる場合もございます。"
+   ]
+  }
+ ]
+}

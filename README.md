@@ -12,7 +12,7 @@ Built for #BuildHybridAI 2026.
 2. Gemini Nano transcribes every page twice, in horizontal strips, and lists the details that identify you.
 3. The app replaces them with placeholders such as `[NAME_1]` and shows what stays on the device next to what goes to the cloud.
 4. Gemini in the cloud explains the masked text in your language: the sender, required steps, the amount and deadline, what happens if you ignore it, how to object, and which other figures on the letter are easy to confuse. A larger model then rewrites the explanation from the masked text and any differing lines in the second reading, updates the answer in place, and lists any words Gemini Nano misread.
-5. The browser puts the real values back into the answer and marks them, and a band on the page image highlights the section where the amount and deadline appear. Follow-up questions are masked the same way and answered using Google Search, with source links under each reply.
+5. The browser puts the real values back into the answer and marks them, and after the answer Gemini Nano re-reads thin slices of the page so a band can mark where the amount and the deadline are printed. Follow-up questions are masked the same way and answered using Google Search, with source links under each reply.
 6. Each letter is saved to "Your letters" in IndexedDB with its deadline and the days left, and reopens without a connection. You can also install Plainletter from Chrome as a web app.
 7. When offline, the explanation call automatically falls back to Gemini Nano on the device.
 
@@ -48,9 +48,11 @@ To evaluate without overfitting, we split the 66 letters into three groups: 18 t
 
 Both deadline misses on the 18 new letters had the same root cause: Gemini Nano flagged deadlines with spelled-out month names ("7. Januar 2027" and "8 janvier 2027"), and our date pattern did not yet recognize German, French, or Spanish months to keep them unmasked. Adding those month names resolved both cases. The single unmasked identifier on the new set was a 12-character reference number on a Colombian vehicle tax notice. Re-running the earlier splits with the current rules leaves 4 of 183 identifiers on the 30 held-out letters and 0 of 101 on the 18 tuning letters. Across all 66 letters, the cloud double-check listed and corrected 156 misread words.
 
+We also ran 11 sample notices that agencies publish themselves, which we did not write: IRS notices CP14 and CP503, the CP14 in Spanish, two UK council tax bills, a New York City water bill, a North Rhine-Westphalia income tax assessment, a Cologne property charges notice, two French traffic fine notices from ANTAI, and a Tokyo ward's resident tax notice. `eval/real/sources.json` lists where each one comes from. On the first run the explanation gave the amount to pay on 6 of 11. Four of the five misses were bills paid in instalments or at a reduced early rate, where the app reported the yearly total or the standard fine. After we told the model to report the next instalment, a rerun gave the amount on 10 of 11, the required action on 10 of 11, the consequence on 11 of 11, and the deadline on 6 of the 8 notices that print one. Gemini Nano read 15 of 19 amounts and deadlines on these pages, several of which are low-resolution images, and across three runs between 0 and 3 of 47 identifiers remained in the sent text.
+
 `eval/eval.html` runs the app's production pipeline, including the double-check, over the rendered page images. `eval/docs/` stores every letter and answer key, and `eval/out/runs/` logs the per-letter transcripts, outgoing masked text, and explanations for each run.
 
-On an Apple M5 Max test machine, the on-device pass took a median of 32 seconds per letter, the initial cloud explanation took 2 to 3 seconds, and the double-check took a median of 9 seconds.
+On an Apple M5 Max test machine, the on-device pass took a median of 32 seconds per letter on our set and 44 seconds on the agency samples, the initial cloud explanation took 2 to 3 seconds, and the double-check took a median of 9 seconds.
 
 To reproduce, start `npm run dev`, start Chrome with `--remote-debugging-port=9333`, and run:
 
@@ -58,6 +60,7 @@ To reproduce, start `npm run dev`, start Chrome with `--remote-debugging-port=93
 node eval/build.mjs            # render eval/docs to page photos in eval/out
 node eval/run.mjs fresh run-1  # or dev, held-out, or a list of ids such as ko01,de08
 node eval/replay.mjs run-1     # re-apply the current masking rules to a saved run, without model calls
+node eval/run.mjs real real-1   # the agency samples; download them first from the addresses in eval/real/sources.json
 ```
 
 `eval/docs/AUTHORING.md` describes the letter format and the answer key.

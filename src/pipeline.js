@@ -64,6 +64,9 @@ export function differingLines(firstMasked, secondMasked) {
   });
 }
 
+// Reads one slice of a page on the device. Used after the answer to find where a value is printed.
+export const readSlice = async (base64) => normalize((await within(onDevice({ image: true }).generateContent([TRANSCRIBE, { inlineData: { mimeType: 'image/jpeg', data: base64 } }]), 60)).response.text());
+
 // Strips of one page overlap, so the same line can come back twice. A line at the top of a strip
 // is dropped when the strip above already ended with it: same digits, nearly the same letters.
 const digitsOf = (l) => l.replace(/\D/g, '');
@@ -135,9 +138,9 @@ const EXPLAIN_SCHEMA = {
     sender: { type: 'string', description: 'Who sent the letter, translated, with the original name in parentheses' },
     what_it_is: { type: 'string', description: 'One or two plain sentences: what this letter is and why the person received it' },
     steps: { type: 'array', items: { type: 'string' }, description: 'What the person has to do, in order. Each step names the exact amount, date, account token or phone number it involves. Include only what the letter itself asks for; do not add a payment method the letter does not state' },
-    amount: { type: 'string', description: 'Amount to pay exactly as printed, or empty string' },
+    amount: { type: 'string', description: 'Amount to pay exactly as printed, or empty string. When the letter sets out instalments, or a lower amount for paying early, give the next amount the person has to pay; the yearly total or the later, higher amount belongs in other_figures' },
     amount_printed_as: { type: 'string', description: 'The line of the letter containing the amount, in the original language with misread characters corrected, or empty string' },
-    deadline: { type: 'string', description: 'Deadline written out the way the reader writes dates, for example "December 14, 2026" for English, or empty string' },
+    deadline: { type: 'string', description: 'Deadline written out the way the reader writes dates, for example "December 14, 2026" for English, or empty string. With instalments, the date of the next one' },
     deadline_printed_as: { type: 'string', description: 'The line of the letter containing the deadline, in the original language with misread characters corrected, or empty string' },
     deadline_iso: { type: 'string', description: 'Deadline as YYYY-MM-DD, or empty string' },
     if_ignored: { type: 'string', description: 'What happens if the person does nothing, as stated in the letter' },
@@ -199,7 +202,7 @@ export function startFollowUp(letter, language, explanation) {
     const seen = new Set();
     // Government and agency sites are listed first.
     const official = (t) => (/(\.go\.[a-z]{2}|\.gov(\.[a-z]{2})?|\.or\.kr|\.gouv\.fr|\.bund\.de|\.admin\.ch|\.gv\.at|europa\.eu)$/.test(t || '') ? 0 : 1);
-    const sources = (grounding?.groundingChunks || []).map((c) => c.web).filter((w) => w?.uri && !seen.has(w.title) && seen.add(w.title)).map((w) => ({ title: w.title || w.uri, uri: w.uri })).sort((a, b) => official(a.title) - official(b.title));
+    const sources = (grounding?.groundingChunks || []).map((c) => c.web).filter((w) => w?.uri && !seen.has(w.title) && seen.add(w.title)).map((w) => ({ title: w.title || w.uri, uri: w.uri })).sort((a, b) => official(a.title) - official(b.title)).slice(0, 4);
     return { sent, typed, answer: restore(masked, vault), sources, searchWidget: grounding?.searchEntryPoint?.renderedContent || '' };
   };
   return async (question, onText = () => {}) => {

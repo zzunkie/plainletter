@@ -4,7 +4,11 @@
 import { readLetter, explain } from '../src/pipeline.js';
 const flat = (s) => String(s ?? '').normalize('NFKC').replace(/\s+/g, '');
 const digits = (s) => String(s ?? '').replace(/\D/g, '');
-const notices = await (await fetch('./notices.json')).json();
+// ?set=real runs the sample notices that public agencies publish (eval/real), which we did not write.
+const real = new URLSearchParams(location.search).get('set') === 'real';
+const notices = real
+  ? (await (await fetch('./real/real.json')).json()).filter((n) => n.usable).map((n) => ({ ...n, split: 'real', consequence: n.consequence || [], action: n.action || [] }))
+  : await (await fetch('./notices.json')).json();
 const only = new URLSearchParams(location.search).get('only');
 const split = new URLSearchParams(location.search).get('split');
 const rows = [], failed = [];
@@ -13,9 +17,10 @@ for (const [i, n] of notices.entries()) {
   if (split && n.split !== split) continue;
   // The page photos were written to out/ by build.mjs.
   const pages = await Promise.all(n.pages.map(async (p) => {
-    const blob = await (await fetch(`./out/${p.replace('.html', '.jpg')}`)).blob();
+    const blob = await (await fetch(real ? `./real/pages/${p}` : `./out/${p.replace('.html', '.jpg')}`)).blob();
     const url = await new Promise((res) => { const f = new FileReader(); f.onload = () => res(f.result); f.readAsDataURL(blob); });
     const bmp = await createImageBitmap(blob);
+    if (real) { const c = document.createElement('canvas'); c.width = bmp.width; c.height = bmp.height; const x = c.getContext('2d'); x.fillStyle = '#fff'; x.fillRect(0, 0, c.width, c.height); x.drawImage(bmp, 0, 0); const jpeg = c.toDataURL('image/jpeg', 0.9); return { url: jpeg, base64: jpeg.split(',')[1], width: bmp.width, height: bmp.height }; }
     return { url, base64: url.split(',')[1], width: bmp.width, height: bmp.height };
   }));
   const t0 = performance.now();
@@ -41,7 +46,7 @@ for (const [i, n] of notices.entries()) {
     id: n.id, split: n.split, pages: n.pages.length, readSec,
     actionFirst: does(ex), actionFinal: does(fin), explainSec, checkSec: (performance.now() - t2) / 1000,
     consequenceFirst: says(ex.if_ignored), consequenceFinal: says(fin.if_ignored),
-    finalDeadlineRight: fin.deadline_iso === n.deadline_iso,
+    finalDeadlineRight: !n.deadline_iso || fin.deadline_iso === n.deadline_iso, deadlinePrinted: !!n.deadline_iso,
     finalAmountRight: amountOk(fin),
     final: { title: fin.title, steps: fin.steps, objection: fin.objection, deadline_iso: fin.deadline_iso, amount: fin.amount, if_ignored: fin.if_ignored, corrected: fin.corrected, error: fin.error },
     figuresRead: n.critical.map((v) => flat(letter.transcript).includes(flat(v))),
@@ -49,7 +54,7 @@ for (const [i, n] of notices.entries()) {
     idsMissedByModel: n.pii.filter((v) => flat(modelOnly).includes(flat(v))),
     idsSent: n.pii.filter((v) => sent.includes(flat(v))),
     agencyKept: n.agency_contacts.map((v) => flat(letter.outgoing).includes(flat(v))),
-    deadlineRight: ex.deadline_iso === n.deadline_iso,
+    deadlineRight: !n.deadline_iso || ex.deadline_iso === n.deadline_iso,
     amountRight: amountOk(ex),
     explained: { title: ex.title, steps: ex.steps, deadline_iso: ex.deadline_iso, amount: ex.amount, if_ignored: ex.if_ignored, corrected: ex.corrected, error: ex.error },
     transcript: letter.transcript, second: letter.second, items: letter.items, outgoing: letter.outgoing, alternates: letter.alternates,
@@ -68,7 +73,7 @@ const summarize = (rows) => {
     identifiersMaskedByNanoAlone: `${sum((r) => truth(r).pii.length - r.idsMissedByModel.length)} of ${sum((r) => truth(r).pii.length)}`,
     identifiersSentAfterRules: `${sum((r) => r.idsSent.length)} of ${sum((r) => truth(r).pii.length)}`,
     agencyNumbersKeptVisible: `${sum((r) => r.agencyKept.filter(Boolean).length)} of ${sum((r) => r.agencyKept.length)}`,
-    deadline: `${sum((r) => +r.deadlineRight)} first, ${sum((r) => +r.finalDeadlineRight)} after double-check, of ${rows.length}`,
+    deadline: `${sum((r) => +(r.deadlinePrinted && r.deadlineRight))} first, ${sum((r) => +(r.deadlinePrinted && r.finalDeadlineRight))} after double-check, of ${sum((r) => +r.deadlinePrinted)} with a printed deadline`,
     amount: `${sum((r) => +r.amountRight)} first, ${sum((r) => +r.finalAmountRight)} after double-check, of ${rows.length}`,
     action: `${sum((r) => +r.actionFirst)} first, ${sum((r) => +r.actionFinal)} after double-check, of ${rows.length}`,
     consequence: `${sum((r) => +r.consequenceFirst)} first, ${sum((r) => +r.consequenceFinal)} after double-check, of ${rows.length}`,
@@ -77,6 +82,6 @@ const summarize = (rows) => {
   };
 };
 const part = (name) => rows.filter((r) => r.split === name);
-window.__eval = { failedToRead: failed, summary: { ...(part('dev').length ? { dev: summarize(part('dev')) } : {}), ...(part('held-out').length ? { heldOut: summarize(part('held-out')) } : {}), ...(part('fresh').length ? { fresh: summarize(part('fresh')) } : {}) }, rows };
+window.__eval = { failedToRead: failed, summary: { ...(part('dev').length ? { dev: summarize(part('dev')) } : {}), ...(part('held-out').length ? { heldOut: summarize(part('held-out')) } : {}), ...(part('fresh').length ? { fresh: summarize(part('fresh')) } : {}), ...(part('real').length ? { real: summarize(part('real')) } : {}) }, rows };
 document.getElementById('o').textContent = JSON.stringify(window.__eval.summary, null, 1);
 </script>
