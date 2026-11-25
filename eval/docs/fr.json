@@ -1,0 +1,98 @@
+[
+  {
+    "id": "fr01", "lang": "French", "country": "France",
+    "type": "income tax assessment with balance due",
+    "pages": ["fr01.html"],
+    "pii": ["ADEBAYO Oluwaseun", "30 12 456 789 012", "14 rue des Lilas, Appartement 23, 69007 Lyon", "26 69 A418 273 51", "08/05/1991", "2669 4182 7351 0026"],
+    "critical": ["1 284 €", "15 décembre 2026"],
+    "amount_due": "1 284 €",
+    "deadline_iso": "2026-12-15",
+    "agency_contacts": ["0 809 401 401", "04 72 40 85 16"],
+    "action": ["pay"],
+    "consequence": ["(10 ?%|surcharge|penalt|increase|majoration|128)"]
+  },
+  {
+    "id": "fr02", "lang": "French", "country": "France",
+    "type": "property tax formal notice to pay with 10% surcharge",
+    "pages": ["fr02.html"],
+    "pii": ["FERNÁNDEZ ORTEGA Lucía", "37 cours Balguerie-Stuttenberg", "21 33 905 614 287", "26 33 B907 512 04", "MDP 2026 033 08 41927", "2633 9075 1204 0841"],
+    "critical": ["1 360,00 €", "11 janvier 2027"],
+    "amount_due": "1 360,00 €",
+    "deadline_iso": "2027-01-11",
+    "agency_contacts": ["05 56 24 87 30"],
+    "action": ["pay"],
+    "consequence": ["(seiz|garnish|attach|levy|enforce|prosecut|collection)", "(fee|cost|charge|3 ?%)"]
+  },
+  {
+    "id": "fr03", "lang": "French", "country": "France",
+    "type": "prefecture request for additional documents for residence permit renewal",
+    "pages": ["fr03.html"],
+    "pii": ["NGUYEN Thi Thu Ha", "9303 4271 58", "17/02/1994", "ANEF-26-93-0458271", "8 allée des Tilleuls, Bât. C, 93140 Bondy", "DMI/BTS/2026/118734"],
+    "critical": ["8 janvier 2027"],
+    "amount_due": "",
+    "deadline_iso": "2027-01-08",
+    "agency_contacts": ["0 806 001 620", "01 41 60 72 15"],
+    "action": ["(send|submit|upload|provide|file|produce|hand in)", "(document|paper|evidence|proof|contract|payslip|pay slip|certificate)"],
+    "consequence": ["(clos|reject|refus|denied|dismiss|discontinu|filed away|no further|without further)", "(stay|residence|right to work|legal|status|irregular|permit)"]
+  },
+  {
+    "id": "fr04", "lang": "French", "country": "France",
+    "type": "speeding fine notice (reduced, standard and increased amounts)",
+    "pages": ["fr04.html"],
+    "pii": ["YILMAZ Mehmet", "52 avenue Jean Jaurès", "8 4126 3359 0471 8", "4126 3359 0471 8 06", "GH-482-KT"],
+    "critical": ["45 €", "10 décembre 2026"],
+    "amount_due": "45 €",
+    "deadline_iso": "2026-12-10",
+    "agency_contacts": ["0 811 10 10 10", "0 811 10 20 30"],
+    "action": ["(pay|contest|designate|challenge)"],
+    "consequence": ["(68|180|increase|surcharge|higher|major|rise)"]
+  },
+  {
+    "id": "fr05", "lang": "French", "country": "France",
+    "type": "court order for payment (injonction de payer) with one-month opposition period",
+    "pages": ["fr05.html"],
+    "pii": ["DIALLO Amadou Bakary", "11/09/1987", "71 rue de Lannoy, 59100 Roubaix", "26/04817", "IP 26/04817-DIA"],
+    "critical": ["2 512,61 €", "30 décembre 2026"],
+    "amount_due": "2 512,61 €",
+    "deadline_iso": "2026-12-30",
+    "agency_contacts": ["03 20 78 34 10", "03 20 26 51 88"],
+    "action": ["(pay|oppos|object|contest|challenge|dispute)"],
+    "consequence": ["(enforce|seiz|garnish|attach|levy|executor|final)"]
+  },
+  {
+    "id": "fr06", "lang": "French", "country": "France",
+    "type": "family benefits overpayment notice (CAF indu)",
+    "pages": ["fr06.html"],
+    "pii": ["BENNANI Fatima Zahra", "4827103", "19 boulevard de la Libération, 3e étage", "IND-2026-13-552908"],
+    "critical": ["1 014,25 €", "31 décembre 2026"],
+    "amount_due": "1 014,25 €",
+    "deadline_iso": "2026-12-31",
+    "agency_contacts": ["3230"],
+    "action": ["(pay|repay|reimburse|refund|return)"],
+    "consequence": ["(deduct|withh|offset|retain|recover|taken from|subtract)", "(forc|enforce|collection|contrainte|legal)"]
+  },
+  {
+    "id": "fr07", "lang": "French", "country": "Canada (Quebec)",
+    "type": "hospital bill for uninsured patient with itemised services",
+    "pages": ["fr07-p1.html", "fr07-p2.html"],
+    "pii": ["Ana Beatriz SOUZA LIMA", "SOUZA LIMA, Ana Beatriz", "4520, avenue Papineau, app. 6", "CH 7 418 205", "1996-03-22", "40-2261-8873", "438 555-0172", "NA-2026-0083145", "7400 2261 8873 0315"],
+    "critical": ["4 868,25 $", "2027-01-14"],
+    "amount_due": "4 868,25 $",
+    "deadline_iso": "2027-01-14",
+    "agency_contacts": ["514 890-8000"],
+    "action": ["(pay|settle)"],
+    "consequence": ["(interest|1[.,]5 ?%)", "(collection|agency|recover)"]
+  },
+  {
+    "id": "fr08", "lang": "French", "country": "Belgium",
+    "type": "water supply formal notice before flow limitation and disconnection",
+    "pages": ["fr08-p1.html", "fr08-p2.html"],
+    "pii": ["Ioana POPESCU", "POPESCU Ioana", "Rue Adolphe Sax 18, boîte 3", "2207 4815", "PF 541 0098 7726", "16M 0447 921", "+++091/2345/67853+++"],
+    "critical": ["321,41 €", "22 décembre 2026"],
+    "amount_due": "321,41 €",
+    "deadline_iso": "2026-12-22",
+    "agency_contacts": ["082 21 47 60", "082 21 47 99"],
+    "action": ["(pay|settle|payment plan)"],
+    "consequence": ["(limit|restrict|flow|reduc)", "(cut|disconnect|shut|suspen|stop)"]
+  }
+]

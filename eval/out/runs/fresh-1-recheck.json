@@ -1,0 +1,477 @@
+{
+ "failedToRead": [],
+ "summary": {
+  "fresh": {
+   "letters": 2,
+   "pages": 3,
+   "figuresReadByNano": "3 of 3",
+   "figuresKeptVisible": "3 of 3",
+   "identifiersMaskedByNanoAlone": "10 of 11",
+   "identifiersSentAfterRules": "0 of 11",
+   "agencyNumbersKeptVisible": "0 of 4",
+   "deadline": "2 first, 2 after double-check, of 2",
+   "amount": "2 first, 2 after double-check, of 2",
+   "action": "2 first, 2 after double-check, of 2",
+   "consequence": "2 first, 2 after double-check, of 2",
+   "misreadWordsCorrected": "124 on 2 letters",
+   "readSeconds": "median 56 (31 to 56)",
+   "explainSeconds": "median 3 (3 to 3)",
+   "doubleCheckSeconds": "median 19 (9 to 19)"
+  }
+ },
+ "rows": [
+  {
+   "id": "de10",
+   "split": "fresh",
+   "pages": 1,
+   "readSec": 30.67830000001192,
+   "actionFirst": true,
+   "actionFinal": true,
+   "explainSec": 2.673400000035763,
+   "checkSec": 18.7305,
+   "consequenceFirst": true,
+   "consequenceFinal": true,
+   "finalDeadlineRight": true,
+   "finalAmountRight": true,
+   "final": {
+    "title": "Reminder to file 2025 tax return",
+    "steps": [
+     "Complete and sign your 2025 tax return using the paper form or online via ZHPrivateTax.",
+     "Include your 2025 salary certificates from all employers and your list of securities and assets (including foreign accounts as of the end of the tax period).",
+     "Submit the complete 2025 tax return and all required documents by January 7, 2027 (the postmark date counts; no further extension will be granted)."
+    ],
+    "objection": "An estimated tax assessment can only be appealed on the grounds of obvious inaccuracy.",
+    "deadline_iso": "2027-01-07",
+    "amount": "",
+    "if_ignored": "If you do not submit your tax return, the tax office will estimate your taxes at its own discretion, and you will be fined up to CHF 1,000 (or up to CHF 10,000 in serious cases).",
+    "corrected": [
+     "read as \"ZHPrivatTax\", understood as \"ZHPrivateTax\" (electronic tax filing portal)",
+     "read as \"Ordnungbusse\", understood as \"Ordnungsbusse\" (administrative fine)",
+     "read as \"Elektroniche\", understood as \"Elektronische\" (electronic)",
+     "read as \"Erwessen\", understood as \"Ermessen\" (discretion)",
+     "read as \"Steuergerechnet\", understood as \"Steuer angerechnet\" (credited against the tax)",
+     "read as \"steuerramt\", understood as \"steueramt\" (tax office in the website URL)",
+     "read as \"Elektronsche\", understood as \"Elektronische\" (electronic)",
+     "read as \"pflichtmässigem\", understood as \"pflichtgemässem\" (due/proper discretion)",
+     "read as \"Einreichende Unterlagen\", understood as \"Einzureichende Unterlagen\" (documents to be submitted)",
+     "read as \"Massgebend\", understood as \"Massgebend\" (decisive/authoritative)",
+     "read as \"ZhPrivateTax\", understood as \"ZHPrivateTax\" (electronic tax filing portal)",
+     "read as \"pflichtgemäss\", understood as \"pflichtgemässem\" (due/proper discretion)",
+     "read as \"1'000,00\", understood as \"1'000\" (one thousand Swiss francs)",
+     "read as \"10'000,00\", understood as \"10'000\" (ten thousand Swiss francs)",
+     "read as \"139 Abs. 2 StG\", understood as \"§ 139 Abs. 2 StG\" (section 139 paragraph 2 of the Tax Act)",
+     "read as \"130 Abs. 2 DBG\", understood as \"Art. 130 Abs. 2 DBG\" (article 130 paragraph 2 of the Federal Direct Tax Act)",
+     "read as \"234 StG\", understood as \"§ 234 StG\" (section 234 of the Tax Act)",
+     "read as \"174 DBG\", understood as \"Art. 174 DBG\" (article 174 of the Federal Direct Tax Act)",
+     "read as \"Lindqvist, Ihre Steuererklärung\", understood as \"Lindqvist, Ihre, Ihre Steuererklärung\" (your tax return)",
+     "read as \"Unterlage Steuererklärung\", understood as \"Unterlage: Steuererklärung\" (document: tax return)",
+     "read as \"Bemerkung Formular\", understood as \"Bemerkung: Formular\" (note: form)",
+     "read as \"aller Arbeitgeber\", understood as \"von allen Arbeitgebern\" (from all employers)",
+     "read as \"inkl. Konten\", understood as \"inkl. Konten\" (including accounts)",
+     "read as \"Stand Ende Steuerperiode\", understood as \"Stand Ende Steuerperiode\" (balance at the end of the tax period)",
+     "read as \"Einreichung über\", understood as \"Einreichung über\" (submission via)",
+     "read as \"Quellensteuerpflichtige\", understood as \"quellensteuerpflichtige\" (subject to withholding tax)",
+     "read as \"Fristerstreckung\", understood as \"Fristerstreckung\" (deadline extension)",
+     "read as \"Nachfrist\", understood as \"Nachfrist\" (grace period / final deadline)",
+     "read as \"Poststempel\", understood as \"Poststempel\" (postmark)",
+     "read as \"Rechtliche Hinweise\", understood as \"Rechtliche Hinweise\" (legal notices)",
+     "read as \"offensichtlicher Unrichtigkeit\", understood as \"offensichtlicher Unrichtigkeit\" (obvious inaccuracy)",
+     "read as \"ordentlich veranlagte Steuer\", understood as \"ordentlich veranlagte Steuer\" (ordinarily assessed tax)",
+     "read as \"abgezogene Quellensteuer\", understood as \"abgezogene Quellensteuer\" (deducted withholding tax)",
+     "read as \"Nachträgliche ordentliche Veranlagung\", understood as \"Nachträgliche ordentliche Veranlagung\" (subsequent ordinary assessment)",
+     "read as \"Abteilung Natürliche Personen\", understood as \"Abteilung Natürliche Personen\" (Individuals Department)",
+     "read as \"Staats- und Gemeindesteuern\", understood as \"Staats- und Gemeindesteuern\" (cantonal and municipal taxes)",
+     "read as \"direkte Bundessteuer\", understood as \"direkte Bundessteuer\" (direct federal tax)",
+     "read as \"Wertschriften- und Guthabenverzeichnis\", understood as \"Wertschriften- und Guthabenverzeichnis\" (list of securities and assets)",
+     "read as \"Lohnausweis\", understood as \"Lohnausweis\" (salary certificate)",
+     "read as \"Register-Nr.\", understood as \"Register-Nr.\" (register number)",
+     "read as \"AHV-Nr.\", understood as \"AHV-Nr.\" (social security number)",
+     "read as \"Mahnung\", understood as \"Mahnung\" (reminder)",
+     "read as \"Bruttoeinkommen\", understood as \"Bruttoeinkommen\" (gross income)",
+     "read as \"Steuerperiode\", understood as \"Steuerperiode\" (tax period)",
+     "read as \"unterzeichnet\", understood as \"unterzeichnet\" (signed)",
+     "read as \"vollständige\", understood as \"vollständige\" (complete)",
+     "read as \"Fristverlängerung\", understood as \"Fristverlängerung\" (deadline extension)",
+     "read as \"Einschätzung\", understood as \"Einschätzung\" (assessment)",
+     "read as \"Schätzung\", understood as \"Einschätzung\" (assessment)",
+     "read as \"angefochten\", understood as \"angefochten\" (appealed)",
+     "read as \"bestraft\", understood as \"bestraft\" (fined/punished)",
+     "read as \"angerechnet\", understood as \"angerechnet\" (credited)",
+     "read as \"Mo-Fr\", understood as \"Mo-Fr\" (Monday to Friday)",
+     "read as \"Uhr\", understood as \"Uhr\" (o'clock)",
+     "read as \"Telefon\", understood as \"Telefon\" (telephone)",
+     "read as \"Team Quellensteuer\", understood as \"Team Quellensteuer\" (Withholding Tax Team)",
+     "read as \"Datum dieser Mahnung\", understood as \"Datum dieser Mahnung\" (date of this reminder)",
+     "read as \"Fristerstreckung gewährt bis\", understood as \"Fristerstreckung gewährt bis\" (extension granted until)",
+     "read as \"bis spätestens\", understood as \"bis spätestens\" (by at the latest)",
+     "read as \"nicht eingegangen\", understood as \"nicht eingegangen\" (not received)",
+     "read as \"verpflichtet\", understood as \"verpflichtet\" (obligated)",
+     "read as \"gewährt\", understood as \"gewährt\" (granted)",
+     "read as \"schweren Fällen\", understood as \"schweren Fällen\" (serious cases)",
+     "read as \"bereits\", understood as \"bereits\" (already)",
+     "read as \"trotz\", understood as \"trotz\" (despite)",
+     "read as \"wegen\", understood as \"wegen\" (because of)",
+     "read as \"nur\", understood as \"nur\" (only)",
+     "read as \"bis\", understood as \"bis\" (up to / until)",
+     "read as \"über\", understood as \"über\" (over / via)",
+     "read as \"mit\", understood as \"mit\" (with)",
+     "read as \"bei uns\", understood as \"bei uns\" (by us)",
+     "read as \"für\", understood as \"für\" (for)",
+     "read as \"als\", understood as \"als\" (as)",
+     "read as \"und\", understood as \"und\" (and)",
+     "read as \"oder\", understood as \"oder\" (or)",
+     "read as \"in\", understood as \"in\" (in)",
+     "read as \"an\", understood as \"an\" (to / against)",
+     "read as \"die\", understood as \"die\" (the)",
+     "read as \"der\", understood as \"der\" (the)",
+     "read as \"das\", understood as \"das\" (the)",
+     "read as \"den\", understood as \"den\" (the)",
+     "read as \"dem\", understood as \"dem\" (the)",
+     "read as \"des\", understood as \"des\" (of the)",
+     "read as \"eine\", understood as \"eine\" (a)",
+     "read as \"einer\", understood as \"einer\" (a)",
+     "read as \"einem\", understood as \"einem\" (a)",
+     "read as \"wird\", understood as \"wird\" (is / will be)",
+     "read as \"sind\", understood as \"sind\" (are)",
+     "read as \"ist\", understood as \"ist\" (is)",
+     "read as \"Sie\", understood as \"Sie\" (you)",
+     "read as \"zur\", understood as \"zur\" (to the)",
+     "read as \"nach\", understood as \"nach\" (according to)",
+     "read as \"kann\", understood as \"kann\" (can)",
+     "read as \"nicht\", understood as \"nicht\" (not)",
+     "read as \"diese\", understood as \"diese\" (this)",
+     "read as \"dieser\", understood as \"dieser\" (this)",
+     "read as \"keine\", understood as \"keine\" (no)",
+     "read as \"weitere\", understood as \"weitere\" (further)",
+     "read as \"vorgenommen\", understood as \"vorgenommen\" (carried out)",
+     "read as \"eingereicht\", understood as \"eingereicht\" (submitted)",
+     "read as \"Reichen Sie\", understood as \"Reichen Sie\" (Submit)",
+     "read as \"Wer\", understood as \"Wer\" (Whoever)",
+     "read as \"Wird\", understood as \"Wird\" (If ... is)",
+     "read as \"Sehr geehrte Frau\", understood as \"Sehr geehrte Frau\" (Dear Ms.)",
+     "read as \"Frau\", understood as \"Frau\" (Ms.)",
+     "read as \"Stadt Zürich\", understood as \"Stadt Zürich\" (City of Zurich)",
+     "read as \"Zürich\", understood as \"Zürich\" (Zurich)",
+     "read as \"8. Dezember 2026\", understood as \"8. Dezember 2026\" (December 8, 2026)",
+     "read as \"30. November 2026\", understood as \"30. November 2026\" (November 30, 2026)",
+     "read as \"7. Januar 2027\", understood as \"7. Januar 2027\" (January 7, 2027)",
+     "read as \"2025\", understood as \"2025\" (2025)",
+     "read as \"CHF 120'000\", understood as \"CHF 120'000\" (CHF 120,000)",
+     "read as \"CHF 1'000\", understood as \"CHF 1'000\" (CHF 1,000)",
+     "read as \"CHF 10'000\", understood as \"CHF 10'000\" (CHF 10,000)",
+     "read as \"8.00-11.30\", understood as \"8.00-11.30\" (8:00–11:30)",
+     "read as \"13.30-16.30\", understood as \"13.30-16.30\" (13:30–16:30)",
+     "read as \"www.stadt-zuerich.ch/steueramt\", understood as \"www.stadt-zuerich.ch/steueramt\" (website)",
+     "read as \"1.\", understood as \"1.\" (1.)",
+     "read as \"2.\", understood as \"2.\" (2.)",
+     "read as \"3.\", understood as \"3.\" (3.)",
+     "read as \"4.\", understood as \"4.\" (4.)"
+    ]
+   },
+   "figuresRead": [
+    true
+   ],
+   "figuresKept": [
+    true
+   ],
+   "idsMissedByModel": [],
+   "idsSent": [],
+   "agencyKept": [
+    false,
+    false
+   ],
+   "deadlineRight": true,
+   "amountRight": true,
+   "explained": {
+    "title": "Overdue 2025 tax return reminder",
+    "steps": [
+     "Submit the signed 2025 tax return using the form or ZhPrivateTax referencing Register-Nr. 261.844.903 by January 7, 2027.",
+     "Provide the 2025 wage statement (Lohnausweis) from all employers.",
+     "Provide the securities and assets inventory including foreign accounts as of the end of the tax period."
+    ],
+    "deadline_iso": "2027-01-07",
+    "amount": "",
+    "if_ignored": "If you do not submit the tax return, your taxes will be estimated at the tax office's discretion, and you will be fined up to CHF 1'000 (or up to CHF 10'000 in severe cases).",
+    "corrected": []
+   },
+   "transcript": "Stadt Zürich\nSteueramt · Abteilung Natürliche Personen\nWerdstrasse 75 · Postfach · 8010 Zürich\nRegister-Nr. 261.844.903\nAHV-Nr. 756.4821.6390.17\nZürich, 8. Dezember 2026\nFrau\nSofia Lindqvist\nHohlstrasse 287\n8004 Zürich\nMahnung\nEinreichung der Steuererklärung 2025 · Nachträgliche ordentliche Veranlagung (Quellensteuer)\nSehr geehrte Frau Lindqvist, Ihre Steuererklärung für die Steuerperiode 2025 ist bei uns trotz gewährter Fristerstreckung nicht eingegangen. Als quellensteuerpflichtige Person mit einem Bruttoeinkommen über CHF 120'000 sind Sie zur Einreichung verpflichtet.\nSteuerperiode 2025 (Staats- und Gemeindesteuern, direkte Bundessteuer)\nFristerstreckung gewährt bis 30. November 2026\nDatum dieser Mahnung 8. Dezember 2026\nNachfrist 7. Januar 2027\nEinreichende Unterlagen\nUnterlage Steuererklärung 2025, unterzeichnet\nLohnausweis 2025\nWertschriften- und Guthabenverzeichnis\nBemerkung Formular oder ZHPrivatTax\naller Arbeitgeber\ninkl. Konten im Ausland, Stand Ende Steuerperiode\nReichen Sie die vollständige Steuererklärung 2025 bis spätestens 7. Januar 2027 ein.\nEine weitere Fristverlängerung wird nicht gewährt. Massgebend ist der Poststempel.\nRechtliche Hinweise\n1. Wird die Steuererklärung trotz dieser Mahnung nicht eingereicht, wird die Schätzung nach pflichtmässigem\n1. Wird die Steuererklärung trotz dieser Mahnung nicht eingereicht, wird die Einschätzung nach pflichtgemäßem Ermessen vorgenommen (§ 139 Abs. 2 StG, Art. 130 Abs. 2 DBG).\n2. Eine Einschätzung nach Ermessen kann nur wegen offensichtlicher Unrichtigkeit angefochten werden.\n3. Wer die Steuererklärung trotz Mahnung nicht einreicht, wird mit einer Ordnungbusse bis CHF 1'000, in schweren Fällen bis CHF 10'000, bestraft (§ 234 StG, Art. 174 DBG).\n4. Die bereits abgezogene Quellensteuer wird an die ordentlich veranlagte Steuer angerechnet.\nTelefon 044 412 31 31 · Team Quellensteuer 044 412 37 40 · Mo-Fr 8.00-11.30 und 13.30-16.30 Uhr\nwww.stadt-zuerich.ch/steueramt · Elektroniche Einreichung über ZhPrivateTax",
+   "second": "Stadt Zürich\nSteueramt - Abteilung Natürliche Personen\nWerdstrasse 75 · Postfach · 8010 Zürich\nRegister-Nr. 261.844.903\nAHV-Nr. 756.4821.6390.17\nZürich, 8. Dezember 2026\nFrau\nSofia Lindqvist\nHohlstrasse 287\n8004 Zürich\nMahnung\nEinreichung der Steuererklärung 2025 · Nachträgliche ordentliche Veranlagung (Quellensteuer)\nSehr geehrte Frau Lindqvist, Ihre Steuererklärung für die Steuerperiode 2025 ist bei uns trotz gewährter Fristerstreckung nicht eingegangen. Als quellensteuerpflichtige Person mit einem\nSehr geehrte Frau Lindqvist, Ihre Steuererklärung für die Steuerperiode 2025 ist bei uns trotz gewährter Fristerstreckung nicht eingegangen. Als quellensteuerpflichtige Person mit einem Bruttoeinkommen über CHF 120'000 sind Sie zur Einreichung verpflichtet.\nSteuerperiode 2025 (Staats- und Gemeindesteuern, direkte Bundessteuer)\nFristerstreckung gewährt bis 30. November 2026\nDatum dieser Mahnung 8. Dezember 2026\nNachfrist 7. Januar 2027\nEinreichende Unterlagen\nUnterlage Bemerkung\nSteuererklärung 2025, unterzeichnet Formular oder ZhPrivateTax\nLohnausweis 2025 aller Arbeitgeber\nWertschriften- und Guthabenverzeichnis inkl. Konten im Ausland, Stand Ende Steuerperiode\nReichen Sie die vollständige Steuererklärung 2025 bis spätestens 7. Januar 2027 ein.\nEine weitere Fristerstreckung wird nicht gewährt. Massgebend ist der Poststempel.\nRechtliche Hinweise\n1. Wird die Steuererklärung trotz dieser Mahnung nicht eingereicht, wird die Einschätzung nach pflichtgemäss\nErwessen vorgenommen (§ 139 Abs. 2 StG, Art. 130 Abs. 2 DBG).\n2. Eine Einschätzung nach Erwessen kann nur wegen offensichtlicher Unrichtigkeit angefochten werden.\n3. Wer die Steuererklärung trotz Mahnung nicht einreicht, wird mit einer Ordnungbusse bis CHF 1'000,00 in schweren\nFällen bis CHF 10'000,00 bestraft (§ 234 StG, Art. 174 DBG).\n4. Die bereits abgezogene Quellensteuer wird an die ordentlich veranlagte Steuergerechnet.\nTelefon 044 412 31 31 · Team Quellensteuer 044 412 37 40 · Mo-Fr 8.00-11.30 und 13.30-16.30 Uhr\nwww.stadt-zuerich.ch/steuerramt · Elektronsche Einreichung über ZhPrivateTax",
+   "items": [
+    {
+     "kind": "NAME",
+     "value": "Sofia Lindqvist"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Hohlstrasse 287"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "8004 Zürich"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "261.844.903"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "756.4821.6390.17"
+    },
+    {
+     "kind": "PHONE",
+     "value": "044 412 31 31"
+    },
+    {
+     "kind": "PHONE",
+     "value": "044 412 37 40"
+    },
+    {
+     "kind": "NAME",
+     "value": "Sofia Lindqvist"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Hohlstrasse 287"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "8004 Zürich"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "261.844.903"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "756.4821.6390.17"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Werdstrasse 75 · Postfach · 8010 Zürich"
+    },
+    {
+     "kind": "PHONE",
+     "value": "044 412 31 31"
+    },
+    {
+     "kind": "PHONE",
+     "value": "044 412 37 40"
+    }
+   ],
+   "outgoing": "Stadt Zürich\nSteueramt · Abteilung Natürliche Personen\n[ADDRESS_1]\nRegister-Nr. [REFERENCE_NUMBER_1]\nAHV-Nr. [ID_NUMBER_1]\nZürich, 8. Dezember 2026\nFrau\n[NAME_1]\n[ADDRESS_2]\n[ADDRESS_4]\nMahnung\nEinreichung der Steuererklärung 2025 · Nachträgliche ordentliche Veranlagung (Quellensteuer)\nSehr geehrte Frau [NAME_2] Steuererklärung für die Steuerperiode 2025 ist bei uns trotz gewährter Fristerstreckung nicht eingegangen. Als quellensteuerpflichtige Person mit einem Bruttoeinkommen über CHF 120'000 sind Sie zur Einreichung verpflichtet.\nSteuerperiode 2025 (Staats- und Gemeindesteuern, direkte Bundessteuer)\nFristerstreckung gewährt bis 30. November 2026\nDatum dieser Mahnung 8. Dezember 2026\nNachfrist 7. Januar 2027\nEinreichende Unterlagen\nUnterlage Steuererklärung 2025, unterzeichnet\nLohnausweis 2025\nWertschriften- und Guthabenverzeichnis\nBemerkung Formular oder ZHPrivatTax\naller Arbeitgeber\ninkl. Konten im Ausland, Stand Ende Steuerperiode\nReichen Sie die vollständige Steuererklärung 2025 bis spätestens 7. Januar 2027 ein.\nEine weitere Fristverlängerung wird nicht gewährt. Massgebend ist der Poststempel.\nRechtliche Hinweise\n1. Wird die Steuererklärung trotz dieser Mahnung nicht eingereicht, wird die Schätzung nach pflichtmässigem\n1. Wird die Steuererklärung trotz dieser Mahnung nicht eingereicht, wird die Einschätzung nach pflichtgemäßem Ermessen vorgenommen (§ 139 Abs. 2 StG, Art. 130 Abs. 2 DBG).\n2. Eine Einschätzung nach Ermessen kann nur wegen offensichtlicher Unrichtigkeit angefochten werden.\n3. Wer die Steuererklärung trotz Mahnung nicht einreicht, wird mit einer Ordnungbusse bis CHF 1'000, in schweren Fällen bis CHF 10'000, bestraft (§ 234 StG, Art. 174 DBG).\n4. Die bereits abgezogene Quellensteuer wird an die ordentlich veranlagte Steuer angerechnet.\nTelefon [PHONE_1] · Team Quellensteuer [PHONE_2] · Mo-Fr 8.00-11.30 und 13.30-16.30 Uhr\nwww.stadt-zuerich.ch/steueramt · Elektroniche Einreichung über ZhPrivateTax",
+   "alternates": [
+    "Unterlage Bemerkung",
+    "Steuererklärung 2025, unterzeichnet Formular oder ZhPrivateTax",
+    "Lohnausweis 2025 aller Arbeitgeber",
+    "Wertschriften- und Guthabenverzeichnis inkl. Konten im Ausland, Stand Ende Steuerperiode",
+    "Eine weitere Fristerstreckung wird nicht gewährt. Massgebend ist der Poststempel.",
+    "1. Wird die Steuererklärung trotz dieser Mahnung nicht eingereicht, wird die Einschätzung nach pflichtgemäss",
+    "Erwessen vorgenommen (§ 139 Abs. 2 StG, Art. 130 Abs. 2 DBG).",
+    "2. Eine Einschätzung nach Erwessen kann nur wegen offensichtlicher Unrichtigkeit angefochten werden.",
+    "3. Wer die Steuererklärung trotz Mahnung nicht einreicht, wird mit einer Ordnungbusse bis CHF 1'000,00 in schweren",
+    "Fällen bis CHF 10'000,00 bestraft (§ 234 StG, Art. 174 DBG).",
+    "4. Die bereits abgezogene Quellensteuer wird an die ordentlich veranlagte Steuergerechnet.",
+    "www.stadt-zuerich.ch/steuerramt · Elektronsche Einreichung über ZhPrivateTax"
+   ]
+  },
+  {
+   "id": "fr11",
+   "split": "fresh",
+   "pages": 2,
+   "readSec": 55.947800000011924,
+   "actionFirst": true,
+   "actionFinal": true,
+   "explainSec": 2.617800000011921,
+   "checkSec": 8.683099999964238,
+   "consequenceFirst": true,
+   "consequenceFinal": true,
+   "finalDeadlineRight": true,
+   "finalAmountRight": true,
+   "final": {
+    "title": "Overpayment notice for unemployment benefits",
+    "steps": [
+     "Pay 2 860,32 € by January 8, 2027, either by bank transfer to IBAN FR76 3000 1007 9412 3456 7890 185 (account holder compte : France Travail Occitanie, recouvrement des France Travail Occitanie, recouvrement des indus) with the mandatory reference TP-2026-31-0072581, or by check payable to France Travail Occitanie, recouvrement des indus with TP-2026-31-0072581 written on the back, sent to France Travail Occitanie, Service recouvrement, TSA 40112, 31046 Toulouse Cedex 9.",
+     "Or, if you want a payment plan (6 monthly payments of 476,72 € or 12 monthly payments of 238,36 €, starting January 8, 2027), request it before December 31, 2026 by writing to your advisor from your personal account (francetravail.fr) and include proof of your income."
+    ],
+    "objection": "You can contest this decision within two months of notification by filing a prior appeal with the branch director (if no reply within two months, it is deemed rejected), and then appeal to the Toulouse judicial court within two months of the reply. You can also ask the regional joint committee (instance paritaire régionale) for a full or partial debt waiver if your financial situation justifies it, or contact the regional mediator via your personal account.",
+    "deadline_iso": "2027-01-08",
+    "amount": "2 860,32 €",
+    "if_ignored": "If you do not pay or agree on a payment plan by the deadline, France Travail Occitanie, recouvrement des indus can issue an enforcement order (contrainte) with the effect of a court judgment, and then seize your wages or bank account. If you receive new benefits, the debt may also be deducted from future payments up to the seizable limit. Intentional failure to declare can lead to an administrative penalty and removal from the jobseekers' list.",
+    "corrected": [
+     "read as \"quota saisissable\", understood as \"quotité saisissable\" (seizable portion)",
+     "read as \"instance bipartite régionale\", understood as \"instance paritaire régionale\" (regional joint committee)",
+     "read as \"de nouveaux allocations\", understood as \"de nouveau des allocations\" (benefits again)"
+    ]
+   },
+   "figuresRead": [
+    true,
+    true
+   ],
+   "figuresKept": [
+    true,
+    true
+   ],
+   "idsMissedByModel": [
+    "4817203Y"
+   ],
+   "idsSent": [],
+   "agencyKept": [
+    false,
+    false
+   ],
+   "deadlineRight": true,
+   "amountRight": true,
+   "explained": {
+    "title": "Overpayment refund notice for unemployment benefits",
+    "steps": [
+     "Pay the amount of 2 860,32 € by bank transfer using IBAN FR76 3000 1007 9412 3456 7890 185, making sure to include the mandatory reference TP-2026-31-0072581 in the transfer description.",
+     "Alternatively, pay by check made out to France Travail Occitanie, recouvrement des indus with the overpayment reference on the back, sent to the address: France Travail Occitanie, Service recouvrement, TSA 40112, 31046 Toulouse Cedex 9.",
+     "To request a payment plan or debt waiver, write to your advisor through your personal space before December 31, 2026."
+    ],
+    "deadline_iso": "2027-01-08",
+    "amount": "2 860,32 €",
+    "if_ignored": "If you do not pay or reach an agreement by the deadline, France Travail may issue a formal constraint with the effect of a judgment, and start seizing your salary or bank account. Intentional omission of declarations can also lead to an administrative penalty and removal from the job seeker list.",
+    "corrected": [
+     "read as \"de nouveaux allocations\", understood as \"de nouvelles allocations\" (new allowances)",
+     "read as \"quota saisissable\", understood as \"quotita saisissable\" (seizable quota)"
+    ]
+   },
+   "transcript": "Toulouse, le 7 décembre 2026\nIdentifiant : 4817203Y\nPage 1 sur 2\nFrance Travail\nAgence de Toulouse Rangueil - 12 avenue de Rangueil - 31400 Toulouse\nNotification de trop-perçu\nAllocation d'aide au retour à l'emploi (ARE) - Demande de remboursement\nDemandeur d'emploi\nQUISPE MAMANI\nMarisol\nN° de sécurité sociale 2 84 03 99 135\n044 27\nAdresse\n27 rue des Fontaines, Bâtiment C, 31300 Toulouse\nRéférence du trop-perçu\nTP-2026-31-0072581\nNé(e) le\n19/03/1984\nN° de sécurité sociale\n2 84 03 99 135\n044 27\nMadame Marisol Quispe Mamani,\nLors de l'examen de votre dossier, nous avons constaté que vous avez repris une activité salariée à compter du 1er septembre 2026 sans la déclarer lors de votre actualisation mensuelle. Les allocations versées pour cette période ne vous étaient donc pas dues.\nDétail des sommes versées à tort\nPériode | Jours indemnisés | Allocation journalière | Montant versé\n---|---|---|---\nSeptembre 2026 | 30 | 41,82 € | 1 254,60 €\nSeptembre 2026\nOctobre 2026\nNovembre 2026 (1er au 15)\nRetenue déjà effectuée sur l'allocation du 3 décembre 2026\nReste à rembourser\nJours indemnisés\n30\n31\n15\n-\n-318,00 €\n2 860,32 €\nAllocation journalière\n41,82 €\n41,82 €\n41,82 €\n-\n-\nMontant versé\n1 254,60 €\n1 296,42 €\n627,30 €\n-\n-\nSomme à rembourser : 2 860,32 €\nDate limite de remboursement : 8 janvier 2027\nLes modalités de paiement et vos voies de recours figurent en page 2.\nSi vous percevez de nouveaux allocations, le reste dû pourra être retenu sur vos paiements futurs dans la limite de votre quota saisissable. Vous pouvez demander un échéancier ou une remise de dette en écrivant à votre conseiller depuis votre espace personnel.\nContact : 3949 (service gratuit + prix d'un appel) - Agence de Toulouse Rangueil : 05 61 14 27 80 - du lundi au vendredi de 8h30 à 16h30 - francetravail.fr\nToulouse, le 7 décembre 2026\nPage 2 sur 2\nFrance Travail\nNotification de trop-perçu - Référence TP-2026-31-0072581\nComment rembourser\nPar virement bancaire\nTitulaire du compte : France Travail Occitanie, recouvrement des indus\nIBAN : FR76 3000 1007 9412 3456 7890 185\nLibellé obligatoire du virement : TP-2026-31-0072581\nPar chèque à l'ordre de France Travail, en indiquant au dos la référence du trop-perçu, à l'adresse : France Travail Occitanie, Service recouvrement, TSA 40112, 31046 Toulouse Cedex 9.\nÉchéancier possible\nOption Montant mensuel Première échéance\nRemboursement en 6 mois 476,72 € 8 janvier 2027\nRemboursement en 12 mois 238,36 € 8 janvier 2027\nTout échéancier doit être demandé avant le 31 décembre 2026 et accompagné de vos justificatifs de ressources.\nVos droits et voies de recours\n1. Vous pouvez contester cette décision dans un délai de deux mois à compter de sa notification par un recours préalable auprès du directeur de l'agence. En l'absence de réponse dans les deux mois, le recours est réputé rejeté.\n2. Vous pouvez aussi saisir l'instance bipartite régionale pour demander une remise totale ou partielle de la dette si votre situation financière le justifie.\n3. En cas de recours devant le tribunal judiciaire de Toulouse, celui-ci doit être formé dans les deux mois suivant la réponse à votre recours préalable.\n4. À défaut de remboursement ou d'accord à la date limite, France Travail pourra délivrer une contrainte (article L. 5426-8-2 du code du travail) ayant les effets d'un jugement, puis engager une saisie sur salaire ou sur compte bancaire.\n5. Toute omission volontaire de déclaration peut entraîner une pénalité administrative et la radiation de la liste des demandeurs d'emploi.\n6. Le médiateur régional de France Travail peut être saisi depuis votre espace personnel si un désaccord persiste.\nContact : 3949 (service gratuit + prix d'un appel) · Agence de Toulouse Rangueil : 05 61 14 27 80 · du lundi au vendredi de 8h30 à 16h30 · francetravail.fr",
+   "second": "France Travail\nAgence de Toulouse Rangueil - 12 avenue de Rangueil - 31400 Toulouse\nToulouse, le 7 décembre 2026\nIdentifiant : 4817203Y\nPage 1 sur 2\nNotification de trop-perçu\nAllocation d'aide au retour à l'emploi (ARE) - Demande de remboursement\nDemandeur d'emploi QUISPE MAMANI\nMarisol\nAdresse 27 rue des Fontaines, Bâtiment C, 31300 Toulouse\nRéférence du trop-perçu TP-2026-31-0072581\nNée le 19/03/1984\nN° de sécurité sociale 2 84 03 99 135\n044 27\nAdresse\nRéférence du trop-perçu TP-2026-31-0072581\nNée le 19/03/1984\nMadame Marisol Quispe Mamani,\nLors de l'examen de votre dossier, nous avons constaté que vous avez repris une activité salariée à compter du 1er septembre 2026 sans la déclarer lors de votre actualisation mensuelle. Les allocations versées pour cette période ne vous étaient donc pas dues.\nDétail des sommes versées à tort\nPériode | Jours indemnisés | Allocation journalière | Montant versé\n------- | -------- | -------- | --------\nSeptembre 2026 | 30 | 41,82 € | 1 254,60 €\nOctobre 2026 | 31 | 41,82 € | 1 296,42 €\nNovembre 2026 (1er au 15) | 15 | 41,82 € | 627,30 €\nRetenue déjà effectuée sur l'allocation du 3 décembre 2026 | | | - 318,00 €\n| | |\nReste à rembourser | | | 2 860,32 €\nSomme à rembourser : 2 860,32 €\nDate limite de remboursement : 8 janvier 2027\nLes modalités de paiement et vos voies de recours figurent en page 2.\nSi vous percevez de nouveaux des allocations, le reste dû pourra être retenu sur vos paiements futurs dans la limite de la quotité saisissable. Vous pouvez demander un échéancier ou une remise de dette en écrivant à votre conseiller depuis votre espace personnel.\nFrance\nTravail\nContact : 3949 (service gratuit + prix d'un appel) · Agence de Toulouse Rangueil : 05 61 14 27 80 · du lundi au vendredi de 8h30 à 16h30 · francetravail.fr\nToulouse, le 7 décembre 2026\nPage 2 sur 2\nFrance Travail\nNotification de trop-perçu - Référence TP-2026-31-0072581\nComment rembourser\nPar virement bancaire\nTitulaire du compte : France Travail Occitanie, recouvrement des indus\nIBAN : FR76 3000 1007 9412 3456 7890 185\nLibellé obligatoire du virement : TP-2026-31-0072581\nPar chèque à l'ordre de France Travail, en indiquant au dos la référence du trop-perçu, à l'adresse : France Travail Occitanie, Service recouvrement, TSA 40112, 31046 Toulouse Cedex 9.\nÉchéancier possible\nOption Montant mensuel Première échéance\nRemboursement en 6 mois 476,72 € 8 janvier 2027\nRemboursement en 12 mois 238,36 € 8 janvier 2027\nTout échéancier doit être demandé avant le 31 décembre 2026 et accompagné de vos justificatifs de ressources.\nVos droits et voies de recours\n1. Vous pouvez contester cette décision dans un délai de deux mois à compter de sa notification par un recours préalable auprès du directeur de l'agence. En l'absence de réponse dans les deux mois, le recours est réputé rejeté.\n2. Vous pouvez aussi saisir l'instance paritaire régionale pour demander une remise totale ou partielle de la dette si votre situation financière le justifie.\n3. Cas de recours devant le tribunal judiciaire de Toulouse, celui-ci doit être formé dans les deux mois suivant la réponse à votre recours préalable.\n4. À défaut de remboursement ou d'accord à la date limite, France Travail pourra délivrer une contrainte (article L. 5426-8-2 du code du travail) ayant les effets d'un jugement, puis engager une saisie sur salaire ou sur compte bancaire.\n5. Toute omission volontaire de déclaration peut entraîner une pénalité administrative et la radiation de la liste des demandeurs d'emploi.\n6. Le médiateur régional de France Travail peut être saisi depuis votre espace personnel si un désaccord persiste.\n4. À défaut de remboursement ou d’accord à la date limite, France Travail peut faire saisir le salaire ou le compte bancaire.\n5426-8-2 du code du travail) ayant les effets d’un jugement, puis engager une saisie sur salaire ou sur compte bancaire.\n5. Toute omission volontaire de déclaration peut entraîner une pénalité administrative et la radiation de la liste des demandeurs d’emploi.\n6. Le médiateur régional de France Travail peut être saisi depuis votre espace personnel si un désaccord persiste.\nContact : 3949 (service gratuit + prix d’un appel) . Agence de Toulouse Rangueil : 05 61 14 27 80 du lundi au vendredi de 8h30 à 16h30 · francetravail.fr",
+   "items": [
+    {
+     "kind": "NAME",
+     "value": "QUISPE MAMANI"
+    },
+    {
+     "kind": "NAME",
+     "value": "Marisol"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "2 84 03 99 135"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "TP-2026-31-0072581"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "27 rue des Fontaines, Bâtiment C, 31300 Toulouse"
+    },
+    {
+     "kind": "BIRTH_DATE",
+     "value": "19/03/1984"
+    },
+    {
+     "kind": "PHONE",
+     "value": "044 27"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "3949 (service gratuit + prix d'un appel)"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "05 61 14 27 80"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "TP-2026-31-0072581"
+    },
+    {
+     "kind": "ACCOUNT",
+     "value": "FR76 3000 1007 9412 3456 7890 185"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "TSA 40112, 31046 Toulouse Cedex 9"
+    },
+    {
+     "kind": "PHONE",
+     "value": "3949"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "05 61 14 27 80"
+    },
+    {
+     "kind": "NAME",
+     "value": "QUISPE MAMANI"
+    },
+    {
+     "kind": "NAME",
+     "value": "Marisol"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "27 rue des Fontaines, Bâtiment C, 31300 Toulouse"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "TP-2026-31-0072581"
+    },
+    {
+     "kind": "BIRTH_DATE",
+     "value": "19/03/1984"
+    },
+    {
+     "kind": "ID_NUMBER",
+     "value": "2 84 03 99 135"
+    },
+    {
+     "kind": "PHONE",
+     "value": "044 27"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "3949 (service gratuit + prix d'un appel)"
+    },
+    {
+     "kind": "AGENCY_CONTACT",
+     "value": "05 61 14 27 80"
+    },
+    {
+     "kind": "NAME",
+     "value": "France Travail Occitanie, recouvrement des indus"
+    },
+    {
+     "kind": "REFERENCE_NUMBER",
+     "value": "TP-2026-31-0072581"
+    },
+    {
+     "kind": "ACCOUNT",
+     "value": "FR76 3000 1007 9412 3456 7890 185"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "TSA 40112, 31046 Toulouse Cedex 9"
+    },
+    {
+     "kind": "PHONE",
+     "value": "3949 (service gratuit + prix d’un appel)"
+    },
+    {
+     "kind": "ADDRESS",
+     "value": "Agence de Toulouse Rangueil : 05 61 14 27 80 du lundi au vendredi de 8h30 à 16h30"
+    }
+   ],
+   "outgoing": "Toulouse, le 7 décembre 2026\nIdentifiant : [NUMBER_1]Y\nPage 1 sur 2\n[NAME_6]\nAgence de Toulouse Rangueil - 12 avenue de Rangueil - 31400 Toulouse\nNotification de trop-perçu\nAllocation d'aide au retour à l'emploi (ARE) - Demande de remboursement\nDemandeur d'emploi\n[NAME_12]\n[NAME_13]\nN° de sécurité sociale [ID_NUMBER_1]\n[PHONE_1]\nAdresse\n[ADDRESS_21]\nRéférence du trop-perçu\n[REFERENCE_NUMBER_1]\nNé(e) le\n[BIRTH_DATE_1]\nN° de sécurité sociale\n[ID_NUMBER_1]\n[PHONE_1]\nMadame [NAME_13] [NAME_12],\nLors de l'examen de votre dossier, nous avons constaté que vous avez repris une activité salariée à compter du 1er septembre 2026 sans la déclarer lors de votre actualisation mensuelle. Les allocations versées pour cette période ne vous étaient donc pas dues.\nDétail des sommes versées à tort\nPériode | Jours indemnisés | Allocation journalière | Montant versé\n---|---|---|---\nSeptembre 2026 | 30 | 41,82 € | 1 254,60 €\nSeptembre 2026\nOctobre 2026\nNovembre 2026 (1er au 15)\nRetenue déjà effectuée sur l'allocation du 3 décembre 2026\nReste à rembourser\nJours indemnisés\n30\n31\n15\n-\n-318,00 €\n2 860,32 €\nAllocation journalière\n41,82 €\n41,82 €\n41,82 €\n-\n-\nMontant versé\n1 254,60 €\n1 296,42 €\n627,30 €\n-\n-\nSomme à rembourser : 2 860,32 €\nDate limite de remboursement : 8 janvier 2027\nLes modalités de paiement et vos voies de recours figurent en page 2.\nSi vous percevez de nouveaux allocations, le reste dû pourra être retenu sur vos paiements futurs dans la limite de votre quota saisissable. Vous pouvez demander un échéancier ou une remise de dette en écrivant à votre conseiller depuis votre espace personnel.\nContact : [PHONE_2] (service [ADDRESS_1] au vendredi de 8h30 à 16h30 - francetravail.fr\nToulouse, le 7 décembre 2026\nPage 2 sur 2\n[NAME_6]\nNotification de trop-perçu - Référence [REFERENCE_NUMBER_1]\nComment rembourser\nPar virement bancaire\nTitulaire du [NAME_1] [NAME_6]\nIBAN : [ACCOUNT_1]\nLibellé obligatoire du virement : [REFERENCE_NUMBER_1]\nPar chèque à l'ordre de [NAME_6], en indiquant au dos la référence du trop-perçu, à l'adresse : [NAME_2] [ADDRESS_24].\nÉchéancier possible\nOption Montant mensuel Première échéance\nRemboursement en 6 mois 476,72 € 8 janvier 2027\nRemboursement en 12 mois 238,36 € 8 janvier 2027\nTout échéancier doit être demandé avant le 31 décembre 2026 et accompagné de vos justificatifs de ressources.\nVos droits et voies de recours\n1. Vous pouvez contester cette décision dans un délai de deux mois à compter de sa notification par un recours préalable auprès du directeur de l'agence. En l'absence de réponse dans les deux mois, le recours est réputé rejeté.\n2. Vous pouvez aussi saisir l'instance bipartite régionale pour demander une remise totale ou partielle de la dette si votre situation financière le justifie.\n3. En cas de recours devant le tribunal judiciaire de Toulouse, celui-ci doit être formé dans les deux mois suivant la réponse à votre recours préalable.\n4. À défaut de remboursement ou d'accord à la date limite, [NAME_6] pourra délivrer une contrainte (article L. 5426-8-2 du code du [NAME_6]) ayant les effets d'un jugement, puis engager une saisie sur salaire ou sur compte bancaire.\n5. Toute omission volontaire de déclaration peut entraîner une pénalité administrative et la radiation de la liste des demandeurs d'emploi.\n6. Le médiateur régional de [NAME_6] peut être saisi depuis votre espace personnel si un désaccord persiste.\nContact : [PHONE_2] (service [ADDRESS_4] au vendredi de 8h30 à 16h30 · francetravail.fr",
+   "alternates": [
+    "Demandeur d'emploi [NAME_12]",
+    "Adresse [ADDRESS_21]",
+    "Référence du trop-perçu [REFERENCE_NUMBER_1]",
+    "Référence du trop-perçu [REFERENCE_NUMBER_1]",
+    "Octobre 2026 | 31 | 41,82 € | 1 296,42 €",
+    "Novembre 2026 (1er au 15) | 15 | 41,82 € | 627,30 €",
+    "Retenue déjà effectuée sur l'allocation du 3 décembre 2026 | | | - 318,00 €",
+    "Reste à rembourser | | | 2 860,32 €",
+    "Si vous percevez de nouveaux des allocations, le reste dû pourra être retenu sur vos paiements futurs dans la limite de la quotité saisissable. Vous pouvez demander un échéancier ou une remise de dette en écrivant à votre conseiller depuis votre espace personnel.",
+    "2. Vous pouvez aussi saisir l'instance paritaire régionale pour demander une remise totale ou partielle de la dette si votre situation financière le justifie.",
+    "3. Cas de recours devant le tribunal judiciaire de Toulouse, celui-ci doit être formé dans les deux mois suivant la réponse à votre recours préalable.",
+    "5. Toute omission volontaire de déclaration peut entraîner une pénalité administrative et la radiation de la liste des demandeurs d’emploi.",
+    "Contact : [PHONE_2] (service gratuit + [ADDRESS_25] de 8h30 à 16h30 · francetravail.fr"
+   ]
+  }
+ ]
+}

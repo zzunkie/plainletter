@@ -4,6 +4,7 @@
 import { getGenerativeModel, InferenceMode } from 'firebase/ai';
 import { ai } from './firebase.js';
 import { redact, restore, maskWithVault, normalize, aliasUnused, typedNames } from './redact.js';
+import { strips, stripCount } from './pages.js';
 
 // The larger model double-checks the fast explanation and answers follow-up questions.
 export const CHECK_MODEL = 'gemini-4-hydrogen';
@@ -11,8 +12,8 @@ export const CHAT_MODEL = CHECK_MODEL;
 export const CLOUD_MODEL = new URLSearchParams(location.search).get('model') || 'gemini-3.5-flash-lite';
 
 const TRANSCRIBE = 'Transcribe every line of text in this photo of a letter exactly as written, in the original language. Do not translate, summarize, or correct anything. Output only the transcription, one line per line.';
-const FIND_IDS = 'Below is the text of an official letter. List every piece of information that identifies the private person it is addressed to: personal names (every spelling), ID or registration numbers, reference/case/account numbers, bank account numbers, street addresses, dates of birth, personal phone numbers. Also list, with kind AGENCY_CONTACT, the phone numbers of the office that sent the letter: helplines, inquiry lines, and numbers printed after labels such as Contact, Tel, Telefon, 문의, 전화, お問い合わせ, or 電話. Copy each value character for character from the text. Do not list amounts of money, payment deadlines, or the name of the sending agency.\n\nTEXT:\n';
-const IDS_SCHEMA = { type: 'object', properties: { items: { type: 'array', items: { type: 'object', properties: { kind: { type: 'string', enum: ['NAME', 'ID_NUMBER', 'REFERENCE_NUMBER', 'ACCOUNT', 'ADDRESS', 'BIRTH_DATE', 'PHONE', 'AGENCY_CONTACT'] }, value: { type: 'string' } }, required: ['kind', 'value'] } } }, required: ['items'] };
+const FIND_IDS = 'Below is the text of an official letter. List every piece of information that identifies the private person it is addressed to: personal names (every spelling), ID or registration numbers, reference/case/account numbers, bank account numbers, street addresses, dates of birth, personal phone numbers, vehicle registration plates. Also list, with kind AGENCY_CONTACT, the phone numbers of the office that sent the letter: helplines, inquiry lines, and numbers printed after labels such as Contact, Tel, Telefon, 문의, 전화, お問い合わせ, or 電話. Copy each value character for character from the text. Do not list amounts of money, payment deadlines, or the name of the sending agency.\n\nTEXT:\n';
+const IDS_SCHEMA = { type: 'object', properties: { items: { type: 'array', items: { type: 'object', properties: { kind: { type: 'string', enum: ['NAME', 'ID_NUMBER', 'REFERENCE_NUMBER', 'ACCOUNT', 'ADDRESS', 'BIRTH_DATE', 'PHONE', 'VEHICLE_PLATE', 'AGENCY_CONTACT'] }, value: { type: 'string' } }, required: ['kind', 'value'] } } }, required: ['items'] };
 
 export async function deviceStatus() {
   if (!('LanguageModel' in self)) return 'unavailable';
@@ -33,8 +34,15 @@ export const warmUp = () => { warm ??= self.LanguageModel?.create(IMAGE_INPUT).c
 
 export const downloadDeviceModel = (onProgress) => onDevice({ image: true }).initializeDeviceModel(onProgress);
 
+// A call to the on-device model that has not answered in time is abandoned.
+const within = (promise, seconds) => Promise.race([promise, new Promise((_, reject) => setTimeout(() => reject(new Error('The on-device model did not answer in time')), seconds * 1000))]);
+
+// Asked twice if the first answer is late or is not valid JSON. A letter whose details
+// cannot be listed is not sent anywhere: the error stops the reading.
 async function findIds(readText, text) {
-  try { return JSON.parse(await readText(FIND_IDS + text, IDS_SCHEMA)).items || []; } catch { return []; }
+  for (let attempt = 0; ; attempt += 1) {
+    try { return JSON.parse(await within(readText(FIND_IDS + text, IDS_SCHEMA), 90)).items || []; } catch (e) { if (attempt) throw e; }
+  }
 }
 
 const TOKEN = /\[[A-Z_]+_\d+\]/;
@@ -56,33 +64,67 @@ export function differingLines(firstMasked, secondMasked) {
   });
 }
 
-// Reads the photo twice and masks both readings with one shared vault.
-// where: 'device' keeps the photo on this machine; 'cloud' is the fallback the user agreed to.
-export async function readLetter(imageBase64, where, onStep = () => {}) {
-  const image = { inlineData: { mimeType: 'image/jpeg', data: imageBase64 } };
+// Strips of one page overlap, so the same line can come back twice. A line at the top of a strip
+// is dropped when the strip above already ended with it: same digits, nearly the same letters.
+const digitsOf = (l) => l.replace(/\D/g, '');
+const sameLine = (x, y) => digitsOf(x) === digitsOf(y) && overlap(x, y) >= 0.6;
+function joinStrips(texts) {
+  const lines = [], perStrip = [];
+  for (const text of texts) {
+    const own = normalize(text).split('\n').filter((l) => l.trim());
+    const tail = lines.slice(-6);
+    let start = 0;
+    while (start < own.length && start < 6 && tail.some((l) => sameLine(l, own[start]))) start += 1;
+    perStrip.push(own); lines.push(...own.slice(start));
+  }
+  return { text: lines.join('\n'), perStrip };
+}
+
+// Reads every page twice and masks both readings with one shared vault.
+// pages: [{ base64, url, width, height }]. where: 'device' keeps the pages on this machine;
+// 'cloud' is the fallback the user agreed to.
+export async function readLetter(pages, where, onStep = () => {}) {
+  const inline = (data) => ({ inlineData: { mimeType: 'image/jpeg', data } });
   const cloud = getGenerativeModel(ai, { model: CLOUD_MODEL });
-  const readImage = async () => (where === 'device'
-    ? (await onDevice({ image: true }).generateContent([TRANSCRIBE, image])).response.text()
-    : (await cloud.generateContent([TRANSCRIBE, image])).response.text());
+  const readImage = async (data) => (where === 'device'
+    ? (await onDevice({ image: true }).generateContent([TRANSCRIBE, inline(data)])).response.text()
+    : (await cloud.generateContent([TRANSCRIBE, inline(data)])).response.text());
   const readText = async (prompt, schema) => (where === 'device'
     ? (await onDevice({ promptOptions: { responseConstraint: schema } }).generateContent(prompt)).response.text()
-    : (await getGenerativeModel(ai, { model: CLOUD_MODEL, generationConfig: { responseMimeType: 'application/json' } }).generateContent(prompt + '\n\nReply as JSON: {"items":[{"kind":"NAME|ID_NUMBER|REFERENCE_NUMBER|ACCOUNT|ADDRESS|BIRTH_DATE|PHONE|AGENCY_CONTACT","value":"..."}]}')).response.text());
+    : (await getGenerativeModel(ai, { model: CLOUD_MODEL, generationConfig: { responseMimeType: 'application/json' } }).generateContent(prompt + '\n\nReply as JSON: {"items":[{"kind":"NAME|ID_NUMBER|REFERENCE_NUMBER|ACCOUNT|ADDRESS|BIRTH_DATE|PHONE|VEHICLE_PLATE|AGENCY_CONTACT","value":"..."}]}')).response.text());
+  const of = (i) => (pages.length > 1 ? ` (page ${i + 1} of ${pages.length})` : '');
+
+  // The second reading cuts each page at different heights, so a line that fell on a cut
+  // the first time is read whole the second time.
+  const readPages = async (step, fewer) => {
+    const texts = [], regions = [];
+    for (const [i, page] of pages.entries()) {
+      onStep(step, of(i));
+      const parts = where === 'device' ? await strips(page, Math.max(1, stripCount(page) - fewer)) : [{ base64: page.base64, y0: 0, y1: 1 }];
+      const read = [];
+      for (const part of parts) read.push(await within(readImage(part.base64), 90).catch(() => within(readImage(part.base64), 90)));
+      const joined = joinStrips(read);
+      texts.push(joined.text);
+      parts.forEach((part, k) => regions.push({ page: i, y0: part.y0, y1: part.y1, lines: joined.perStrip[k] }));
+    }
+    return { texts, regions };
+  };
 
   const t = [performance.now()]; const lap = () => t.push(performance.now());
-  onStep('Reading the letter');
-  const first = normalize(await readImage()); lap();
-  onStep('Reading it a second time to catch misread characters');
-  const second = normalize(await readImage()); lap();
-  onStep('Finding and masking personal details');
-  const [itemsFirst, itemsSecond] = [await findIds(readText, first), await findIds(readText, second)]; lap();
-  const items = [...itemsFirst, ...itemsSecond];
+  const first = await readPages('Reading the letter', 0); lap();
+  const second = await readPages('Re-reading to catch misread characters', 1); lap();
+  onStep('Finding and masking personal details', '');
+  const items = [];
+  for (const text of [...first.texts, ...second.texts]) items.push(...await findIds(readText, text));
+  lap();
   const vault = [];
-  const a = redact(first, items, vault);
-  const b = redact(second, items, vault);
+  const a = redact(first.texts.join('\n'), items, vault);
+  const b = redact(second.texts.join('\n'), items, vault);
   console.info('readLetter seconds', t.slice(1).map((x, i) => ((x - t[i]) / 1000).toFixed(1)).join(' / '));
   const alternates = differingLines(a.outgoing, b.outgoing);
   aliasUnused(vault, `${a.outgoing}\n${alternates.join('\n')}`);
-  return { transcript: first, second, items, outgoing: a.outgoing, alternates, vault };
+  // regions: where on each page a line was read. They hold unmasked text and stay on the device.
+  return { transcript: normalize(first.texts.join('\n')), second: normalize(second.texts.join('\n')), items, outgoing: a.outgoing, alternates, vault, regions: first.regions };
 }
 
 // One schema for both models: the cloud takes it as responseSchema, the on-device model as responseConstraint.
@@ -94,16 +136,18 @@ const EXPLAIN_SCHEMA = {
     what_it_is: { type: 'string', description: 'One or two plain sentences: what this letter is and why the person received it' },
     steps: { type: 'array', items: { type: 'string' }, description: 'What the person has to do, in order. Each step names the exact amount, date, account token or phone number it involves. Include only what the letter itself asks for; do not add a payment method the letter does not state' },
     amount: { type: 'string', description: 'Amount to pay exactly as printed, or empty string' },
-    amount_printed_as: { type: 'string', description: 'The line of the letter containing the amount, in the original language, or empty string' },
+    amount_printed_as: { type: 'string', description: 'The line of the letter containing the amount, in the original language with misread characters corrected, or empty string' },
     deadline: { type: 'string', description: 'Deadline written out the way the reader writes dates, for example "December 14, 2026" for English, or empty string' },
-    deadline_printed_as: { type: 'string', description: 'The line of the letter containing the deadline, in the original language, or empty string' },
+    deadline_printed_as: { type: 'string', description: 'The line of the letter containing the deadline, in the original language with misread characters corrected, or empty string' },
     deadline_iso: { type: 'string', description: 'Deadline as YYYY-MM-DD, or empty string' },
     if_ignored: { type: 'string', description: 'What happens if the person does nothing, as stated in the letter' },
+    objection: { type: 'string', description: 'How the person can object, appeal or ask for a review, and by when, as stated in the letter, or empty string' },
+    other_figures: { type: 'array', items: { type: 'string' }, description: 'Other amounts and dates in the letter the person should not confuse with the amount to pay and the deadline, for example a higher amount after the deadline or the date the letter was issued. One short sentence each, at most four. Empty if none' },
     contact: { type: 'string', description: 'Every phone number or office the letter gives for questions, as printed, with what each is for, or empty string' },
     corrected: { type: 'array', items: { type: 'string' }, description: 'Words in the readings that were misread and that you corrected from context. List every word where your explanation relies on a different reading than the transcription, including words that are wrong in both readings. One entry each, in the reader language, in the form: read as "<what the reading says>", understood as "<what the letter says>" (<meaning>). Empty if none' },
     unclear: { type: 'array', items: { type: 'string' }, description: 'Only if the two readings disagree about an amount, a date or what the person must do: one short sentence each. Never mention tokens, names, addresses or spacing. Empty if none' },
   },
-  required: ['title', 'sender', 'what_it_is', 'steps', 'amount', 'amount_printed_as', 'deadline', 'deadline_printed_as', 'deadline_iso', 'if_ignored', 'contact', 'corrected', 'unclear'],
+  required: ['title', 'sender', 'what_it_is', 'steps', 'amount', 'amount_printed_as', 'deadline', 'deadline_printed_as', 'deadline_iso', 'if_ignored', 'objection', 'other_figures', 'contact', 'corrected', 'unclear'],
 };
 
 const explainPrompt = (letter, language) => `You explain official letters to people who cannot read the language they are written in.
@@ -125,7 +169,7 @@ export async function explain(letter, language, { check = false } = {}) {
     mode: check ? InferenceMode.ONLY_IN_CLOUD : InferenceMode.PREFER_IN_CLOUD,
     inCloudParams: { model: check ? CHECK_MODEL : CLOUD_MODEL, generationConfig: { responseMimeType: 'application/json', responseSchema: EXPLAIN_SCHEMA, ...(check ? { thinkingConfig: { thinkingLevel: 'low' } } : {}) } },
     onDeviceParams: { promptOptions: { responseConstraint: EXPLAIN_SCHEMA } },
-  }, check ? { timeout: 45000 } : undefined);
+  }, { timeout: check ? 45000 : 30000 });
   const result = await model.generateContent(explainPrompt(letter, language));
   const raw = result.response.text();
   const json = JSON.parse(raw.slice(raw.indexOf('{'), raw.lastIndexOf('}') + 1));

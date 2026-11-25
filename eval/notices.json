@@ -1,334 +1,2297 @@
 [
  {
-  "id": "ko1",
-  "font": "sans-serif",
-  "title": "국민건강보험공단  보험료 납부 독촉 고지서",
-  "lines": [
-   "성명: 마리아 곤잘레스 (Maria Gonzalez)",
-   "외국인등록번호: 920314-6234567",
-   "주소: 서울특별시 구로구 디지털로 123, 402호",
-   "납부할 금액: 287,450원 (2026년 9월~10월분)",
-   "납부기한: 2026년 11월 25일",
-   "가상계좌: 562-01-998877 (예금주: 국민건강보험공단)",
-   "기한 내 미납 시 연체금이 가산되며,",
-   "체류기간 연장 허가가 제한될 수 있습니다.",
-   "문의: 1577-1000 (외국어 상담 033-811-2000)"
+  "id": "de01",
+  "lang": "German",
+  "country": "Germany",
+  "type": "income tax assessment with additional payment",
+  "pages": [
+   "de01.html"
+  ],
+  "pii": [
+   "Priya Raghunathan",
+   "Venloer Straße 412",
+   "214/5087/3361",
+   "47 381 902 655"
+  ],
+  "critical": [
+   "1.284,56 €",
+   "28.12.2026"
+  ],
+  "amount_due": "1.284,56 €",
+  "deadline_iso": "2026-12-28",
+  "agency_contacts": [
+   "0221 9466-0",
+   "0221 9466-2174"
+  ],
+  "action": [
+   "pay|transfer|remit"
+  ],
+  "consequence": [
+   "(late|surcharge|penalt|interest|fee)",
+   "(enforce|collect|seiz|execution)"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "de02",
+  "lang": "German",
+  "country": "Germany",
+  "type": "broadcasting fee assessment with late surcharge",
+  "pages": [
+   "de02.html"
+  ],
+  "pii": [
+   "Oluwaseun Adeyemi",
+   "Sonnenallee 187",
+   "487 612 093"
+  ],
+  "critical": [
+   "118,16 €",
+   "31.03.2027"
+  ],
+  "amount_due": "118,16 €",
+  "deadline_iso": "2027-03-31",
+  "agency_contacts": [
+   "0221 5061-4400"
+  ],
+  "action": [
+   "pay|transfer|remit"
+  ],
+  "consequence": [
+   "(enforce|collect|seiz|execution|bailiff|cost)"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "de03",
+  "lang": "German",
+  "country": "Austria",
+  "type": "immigration office request for missing documents (residence permit renewal)",
+  "pages": [
+   "de03.html"
+  ],
+  "pii": [
+   "Camila Rojas Herrera",
+   "Thaliastraße 64/2/17",
+   "MA35-9/2615448-2026",
+   "14.08.1991",
+   "AU482915"
+  ],
+  "critical": [
+   "11. Jänner 2027"
+  ],
+  "amount_due": "",
+  "deadline_iso": "2027-01-11",
+  "agency_contacts": [
+   "+43 1 4000-35570",
+   "+43 1 4000-35590"
+  ],
+  "action": [
+   "(submit|send|provide|hand in|deliver|present|bring)"
+  ],
+  "consequence": [
+   "(reject|dismiss|refus|den(y|ied)|declin)",
+   "(stay|residence|reside|visa|permit|status).*(unlawful|illegal|(not|no longer).*(legal|lawful|valid))|(unlawful|illegal|lose).*(stay|residence|status)"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "de04",
+  "lang": "German",
+  "country": "Germany",
+  "type": "speeding fine notice",
+  "pages": [
+   "de04.html"
+  ],
+  "pii": [
+   "Dmitri Volkov",
+   "Kumpfmühler Straße 38",
+   "742.18.903417.6",
+   "R-DV 4821",
+   "03.05.1987"
+  ],
+  "critical": [
+   "147,00 €",
+   "06.01.2027"
+  ],
+  "amount_due": "147,00 €",
+  "deadline_iso": "2027-01-06",
+  "agency_contacts": [
+   "09942 9405-318"
+  ],
+  "action": [
+   "pay|transfer|remit"
+  ],
+  "consequence": [
+   "(enforce|collect|seiz|detention|jail|prison|arrest|coerc)"
+  ],
+  "split": "held-out"
+ },
+ {
+  "id": "de05",
+  "lang": "German",
+  "country": "Germany",
+  "type": "court payment order (Mahnbescheid)",
+  "pages": [
+   "de05.html"
+  ],
+  "pii": [
+   "Kwame Mensah",
+   "Fürther Straße 221",
+   "26-4815093-0-7",
+   "KD-55821904"
+  ],
+  "critical": [
+   "1.281,00 €",
+   "17.12.2026"
+  ],
+  "amount_due": "1.281,00 €",
+  "deadline_iso": "2026-12-17",
+  "agency_contacts": [
+   "09561 878-2610"
+  ],
+  "action": [
+   "(pay|settle|object|contest|dispute|oppos|challeng)"
+  ],
+  "consequence": [
+   "(enforce|seiz|attach|garnish|execution|writ|collect)"
+  ],
+  "split": "held-out"
+ },
+ {
+  "id": "de06",
+  "lang": "German",
+  "country": "Germany",
+  "type": "health insurance contribution arrears",
+  "pages": [
+   "de06.html"
+  ],
+  "pii": [
+   "Oksana Kovalenko",
+   "Lister Meile 59",
+   "M482615937",
+   "7720 4418 03"
+  ],
+  "critical": [
+   "1.201,38 €",
+   "01.02.2027"
+  ],
+  "amount_due": "1.201,38 €",
+  "deadline_iso": "2027-02-01",
+  "agency_contacts": [
+   "0511 8701-4450",
+   "0800 1124 760"
+  ],
+  "action": [
+   "pay|transfer|remit"
+  ],
+  "consequence": [
+   "(enforce|collect|seiz|execution)",
+   "(benefit|coverage|cover|treatment|care|insurance|entitlement).*(suspend|restrict|limit|emergenc|only|paus)|(suspend|restrict|limit|paus).*(benefit|coverage|treatment|care|entitlement)"
+  ],
+  "split": "held-out"
+ },
+ {
+  "id": "de07",
+  "lang": "German",
+  "country": "Switzerland",
+  "type": "municipal wastewater and waste fee bill (annual settlement)",
+  "pages": [
+   "de07-p1.html",
+   "de07-p2.html"
+  ],
+  "pii": [
+   "Leila Haddad",
+   "Rosenbergstrasse 27",
+   "2027-118-40276",
+   "50 3318 742",
+   "11 84027 60503 31874 20000 00019"
+  ],
+  "critical": [
+   "CHF 169.25",
+   "28.02.2027"
+  ],
+  "amount_due": "CHF 169.25",
+  "deadline_iso": "2027-02-28",
+  "agency_contacts": [
+   "052 267 48 15"
+  ],
+  "action": [
+   "pay|transfer|remit"
+  ],
+  "consequence": [
+   "(reminder|dunning|fee|debt collection|enforce|collect|interest)"
+  ],
+  "split": "held-out"
+ },
+ {
+  "id": "de08",
+  "lang": "German",
+  "country": "Germany",
+  "type": "child benefit repayment demand",
+  "pages": [
+   "de08-p1.html",
+   "de08-p2.html"
+  ],
+  "pii": [
+   "Nguyễn Thị Thu Hà",
+   "Eisenbahnstraße 96",
+   "318FK604127",
+   "Trần Minh Khoa",
+   "22.09.2006",
+   "58 204 773 916",
+   "Nguyễn Bảo Ngọc",
+   "RF-2027-0219354"
+  ],
+  "critical": [
+   "777,00 €",
+   "17.03.2027"
+  ],
+  "amount_due": "777,00 €",
+  "deadline_iso": "2027-03-17",
+  "agency_contacts": [
+   "0371 9118-6300",
+   "02361 4002-1580"
+  ],
+  "action": [
+   "(pay|repay|refund|return|transfer|reimburs)"
+  ],
+  "consequence": [
+   "(late|surcharge|penalt|interest|fee)",
+   "(enforce|collect|seiz|execution)"
+  ],
+  "split": "held-out"
+ },
+ {
+  "id": "de09",
+  "lang": "German",
+  "country": "Germany",
+  "type": "annual vehicle tax assessment (Kfz-Steuerbescheid)",
+  "pages": [
+   "de09.html"
+  ],
+  "pii": [
+   "Tariq Rahimi",
+   "Rahimi, Tariq",
+   "Podbielskistraße 318",
+   "8210/4471/0936",
+   "4.8210.447109.3",
+   "H-TR 4827"
+  ],
+  "critical": [
+   "113,00 €",
+   "11.01.2027"
+  ],
+  "amount_due": "113,00 €",
+  "deadline_iso": "2027-01-11",
+  "agency_contacts": [
+   "0511 7697-0",
+   "0351 44834-550"
+  ],
+  "action": [
+   "pay|transfer|remit|direct debit"
+  ],
+  "consequence": [
+   "(late|surcharge|penalt|interest|fee)",
+   "(deregist|de-regist|cancel|withdraw|enforce|collect|seiz|execution)"
+  ],
+  "split": "fresh"
+ },
+ {
+  "id": "de10",
+  "lang": "German",
+  "country": "Switzerland",
+  "type": "tax office reminder to file a missing tax return",
+  "pages": [
+   "de10.html"
+  ],
+  "pii": [
+   "Sofia Lindqvist",
+   "Hohlstrasse 287",
+   "261.844.903",
+   "756.4821.6390.17"
+  ],
+  "critical": [
+   "7. Januar 2027"
+  ],
+  "amount_due": "",
+  "deadline_iso": "2027-01-07",
+  "agency_contacts": [
+   "044 412 31 31",
+   "044 412 37 40"
+  ],
+  "action": [
+   "(file|submit|send|return|complete|lodge).*(tax|return|declaration)|(tax|return|declaration).*(file|submit|send|lodge)"
+  ],
+  "consequence": [
+   "(estimat|discretion|assess)",
+   "(fine|penalt)"
+  ],
+  "split": "fresh"
+ },
+ {
+  "id": "de11",
+  "lang": "German",
+  "country": "Germany",
+  "type": "BAföG student loan repayment notice",
+  "pages": [
+   "de11-p1.html",
+   "de11-p2.html"
+  ],
+  "pii": [
+   "Elif Demirtaş",
+   "Demirtaş, Elif",
+   "Karl-Liebknecht-Straße 141",
+   "14.06.1999",
+   "7341 8820 5516"
+  ],
+  "critical": [
+   "390,00 €",
+   "31.03.2027"
+  ],
+  "amount_due": "390,00 €",
+  "deadline_iso": "2027-03-31",
+  "agency_contacts": [
+   "022899 358-4500"
+  ],
+  "action": [
+   "pay|repay|transfer|instal|installment|direct debit"
+  ],
+  "consequence": [
+   "(interest|fee|charge|cost)",
+   "(enforce|collect|seiz|execution)"
+  ],
+  "split": "fresh"
+ },
+ {
+  "id": "en01",
+  "lang": "English",
+  "country": "United States",
+  "type": "federal tax balance due notice (IRS CP503)",
+  "pages": [
+   "en01.html"
+  ],
+  "pii": [
+   "PRIYA RAGHUNATHAN",
+   "4471 LARKSPUR AVE APT 3B",
+   "912-78-4521"
+  ],
+  "critical": [
+   "$2,475.57",
+   "December 21, 2026"
+  ],
+  "amount_due": "$2,475.57",
+  "deadline_iso": "2026-12-21",
+  "agency_contacts": [
+   "800-829-1040",
+   "800-829-4059"
+  ],
+  "action": [
+   "pay|payment plan"
+  ],
+  "consequence": [
+   "(penalt|interest)",
+   "(lien|levy|seiz|garnish)"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "en02",
+  "lang": "English",
+  "country": "United Kingdom",
+  "type": "council tax reminder notice",
+  "pages": [
+   "en02.html"
+  ],
+  "pii": [
+   "Tomasz Wiśniewski",
+   "Flat 6, 41 Calder Grove Road",
+   "40112398765"
+  ],
+  "critical": [
+   "£184.23",
+   "8 December 2026"
+  ],
+  "amount_due": "£184.23",
+  "deadline_iso": "2026-12-08",
+  "agency_contacts": [
+   "0121 303 1113"
+  ],
+  "action": [
+   "pay"
+  ],
+  "consequence": [
+   "(instal|full balance|whole|entire|736)",
+   "(court|liability order|summons|enforcement|costs)"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "en03",
+  "lang": "English",
+  "country": "United States",
+  "type": "immigration request for evidence (USCIS I-797E)",
+  "pages": [
+   "en03.html"
+  ],
+  "pii": [
+   "NGUYEN, THI LAN",
+   "A219456873",
+   "IOE0923456781",
+   "07/22/1991",
+   "2180 W GRAND AVE APT 214, CHICAGO IL 60612"
+  ],
+  "critical": [
+   "February 22, 2027"
+  ],
+  "amount_due": "",
+  "deadline_iso": "2027-02-22",
+  "agency_contacts": [
+   "800-375-5283",
+   "800-767-1833"
+  ],
+  "action": [
+   "(submit|send|provide|respond|mail|return)",
+   "(evidence|document|medical|I-693|transcript|translation|photo)"
+  ],
+  "consequence": [
+   "(den|abandon|reject|refus)"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "en04",
+  "lang": "English",
+  "country": "United Kingdom",
+  "type": "penalty charge notice (bus lane camera)",
+  "pages": [
+   "en04.html"
+  ],
+  "pii": [
+   "Rafael Oliveira Santos",
+   "14 Kingsbury Lane",
+   "CU81234567",
+   "LK19 XWD"
+  ],
+  "critical": [
+   "£80.00",
+   "15/12/2026"
+  ],
+  "amount_due": "£80.00",
+  "deadline_iso": "2026-12-15",
+  "agency_contacts": [
+   "020 7974 4646"
+  ],
+  "action": [
+   "pay|challenge|represent|appeal"
+  ],
+  "consequence": [
+   "(increas|160|240|higher|rise|double|discount|charge certificate)"
+  ],
+  "split": "held-out"
+ },
+ {
+  "id": "en05",
+  "lang": "English",
+  "country": "United Kingdom",
+  "type": "county court money claim form (N1)",
+  "pages": [
+   "en05.html"
+  ],
+  "pii": [
+   "Amara Okonkwo",
+   "Flat 2, 77 Tennyson Road, Leicester LE2 1HX",
+   "K9QZ47R2"
+  ],
+  "critical": [
+   "£2,303.40",
+   "18 December 2026"
+  ],
+  "amount_due": "£2,303.40",
+  "deadline_iso": "2026-12-18",
+  "agency_contacts": [
+   "0300 123 1372"
+  ],
+  "action": [
+   "(respond|reply|defen|admit|pay|acknowledg)"
+  ],
+  "consequence": [
+   "(judg|CCJ|default)"
+  ],
+  "split": "held-out"
+ },
+ {
+  "id": "en06",
+  "lang": "English",
+  "country": "United States",
+  "type": "hospital patient statement after insurance",
+  "pages": [
+   "en06.html"
+  ],
+  "pii": [
+   "Mateo Hernández Ruiz",
+   "70045812",
+   "00918274",
+   "03/09/1987",
+   "318 S Alder St, Tacoma, WA 98405",
+   "(253) 555-0148",
+   "W8812746501"
+  ],
+  "critical": [
+   "$858.00",
+   "01/04/2027"
+  ],
+  "amount_due": "$858.00",
+  "deadline_iso": "2027-01-04",
+  "agency_contacts": [
+   "(253) 555-0190",
+   "1-888-555-0123"
+  ],
+  "action": [
+   "pay|payment plan"
+  ],
+  "consequence": [
+   "collect"
+  ],
+  "split": "held-out"
+ },
+ {
+  "id": "en07",
+  "lang": "English",
+  "country": "Canada",
+  "type": "water service disconnection final notice",
+  "pages": [
+   "en07-p1.html",
+   "en07-p2.html"
+  ],
+  "pii": [
+   "AHMAD AL-KHATIB",
+   "Ahmad Al-Khatib",
+   "612 BURROWS AVENUE",
+   "612 Burrows Avenue, Winnipeg MB R2W 1Z9",
+   "4102-88731-06",
+   "41028873106-7"
+  ],
+  "critical": [
+   "$316.39",
+   "January 26, 2027"
+  ],
+  "amount_due": "$316.39",
+  "deadline_iso": "2027-01-26",
+  "agency_contacts": [
+   "311",
+   "204-986-2455"
+  ],
+  "action": [
+   "pay"
+  ],
+  "consequence": [
+   "(disconnect|shut ?off|cut off|terminat|stop)"
+  ],
+  "split": "held-out"
+ },
+ {
+  "id": "en08",
+  "lang": "English",
+  "country": "Australia",
+  "type": "benefit overpayment debt decision (Centrelink)",
+  "pages": [
+   "en08-p1.html",
+   "en08-p2.html"
+  ],
+  "pii": [
+   "Maricel Dela Cruz Santos",
+   "Unit 4, 18 Bellevue Street",
+   "312 645 879X",
+   "3126458790 4417"
+  ],
+  "critical": [
+   "$1,486.20",
+   "23/02/2027"
+  ],
+  "amount_due": "$1,486.20",
+  "deadline_iso": "2027-02-23",
+  "agency_contacts": [
+   "1800 076 072",
+   "131 202"
+  ],
+  "action": [
+   "(repay|pay|arrangement|instal)"
+  ],
+  "consequence": [
+   "(deduct|withh|garnish|tax refund|recover)",
+   "interest"
+  ],
+  "split": "held-out"
+ },
+ {
+  "id": "en09",
+  "lang": "English",
+  "country": "United States",
+  "type": "jury summons",
+  "pages": [
+   "en09.html"
+  ],
+  "pii": [
+   "DANIELA ORTIZ VELÁZQUEZ",
+   "ORTIZ VELÁZQUEZ, DANIELA",
+   "Daniela Ortiz Velázquez",
+   "2918 FRUITVALE AVE APT 7",
+   "1048 2277 31",
+   "03/22/1990",
+   "58274"
+  ],
+  "critical": [
+   "December 18, 2026"
+  ],
+  "amount_due": "",
+  "deadline_iso": "2026-12-18",
+  "agency_contacts": [
+   "(510) 891-6050",
+   "(510) 891-6025"
+  ],
+  "action": [
+   "(reply|respond|questionnaire|complete|confirm)",
+   "(jury|juror|appear|report|serve|attend)"
+  ],
+  "consequence": [
+   "(fine|penalt|show cause|contempt)"
+  ],
+  "split": "fresh"
+ },
+ {
+  "id": "en10",
+  "lang": "English",
+  "country": "New Zealand",
+  "type": "overdue student loan repayment (overseas-based borrower)",
+  "pages": [
+   "en10.html"
+  ],
+  "pii": [
+   "Arjun Pillai",
+   "Unit 12, 48 Parramatta Road",
+   "118-402-675",
+   "SL-2026-4470913"
+  ],
+  "critical": [
+   "$1,489.68",
+   "10 February 2027"
+  ],
+  "amount_due": "$1,489.68",
+  "deadline_iso": "2027-02-10",
+  "agency_contacts": [
+   "+64 4 978 0779",
+   "1800 410 076"
+  ],
+  "action": [
+   "pay|repay"
+  ],
+  "consequence": [
+   "(interest|penalt|charge)",
+   "(debt collect|collection|arrest|border)"
+  ],
+  "split": "fresh"
+ },
+ {
+  "id": "en11",
+  "lang": "English",
+  "country": "United Kingdom",
+  "type": "council rent arrears with notice seeking possession",
+  "pages": [
+   "en11-p1.html",
+   "en11-p2.html"
+  ],
+  "pii": [
+   "Grace Wanjiru Kamau",
+   "KAMAU, Grace Wanjiru",
+   "Flat 9, Kestrel Court",
+   "22 Ashbourne Road",
+   "TEN/0418/77352",
+   "6001 4473 9821"
+  ],
+  "critical": [
+   "£1,486.22",
+   "18 January 2027"
+  ],
+  "amount_due": "£1,486.22",
+  "deadline_iso": "2027-01-18",
+  "agency_contacts": [
+   "0121 216 6600",
+   "0121 303 7410",
+   "0121 303 1111"
+  ],
+  "action": [
+   "pay|repayment plan|arrangement|agree"
+  ],
+  "consequence": [
+   "(court|possession|evict|lose .*home)"
+  ],
+  "split": "fresh"
+ },
+ {
+  "id": "es01",
+  "lang": "Spanish",
+  "country": "Spain",
+  "type": "tax enforcement order (providencia de apremio)",
+  "pages": [
+   "es01.html"
+  ],
+  "pii": [
+   "EL AMRANI, YOUSSEF",
+   "X4829317F",
+   "Calle de la Oca 47, 3º B, 28025 Madrid",
+   "282640026117395",
+   "0021 2026 6017 4288",
+   "A2860026506001742"
+  ],
+  "critical": [
+   "1.386,00 €",
+   "21 de diciembre de 2026"
+  ],
+  "amount_due": "1.386,00 €",
+  "deadline_iso": "2026-12-21",
+  "agency_contacts": [
+   "91 554 87 70",
+   "901 33 55 33"
+  ],
+  "action": [
+   "pay"
+  ],
+  "consequence": [
+   "(seiz|attach|garnish|embarg|enforc|confiscat)",
+   "(20|surcharge|interest|penalt|recargo)"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "es02",
+  "lang": "Spanish",
+  "country": "Spain",
+  "type": "municipal property tax (IBI) voluntary-period bill",
+  "pages": [
+   "es02.html"
+  ],
+  "pii": [
+   "HOLLOWAY, MARGARET ELLEN",
+   "Y2741586T",
+   "Calle de Cuba 38, Esc. 2, Pta. 11, 46006 Valencia",
+   "5821304YJ2752A0011PK",
+   "2026/IBI/0738215",
+   "0738215064"
+  ],
+  "critical": [
+   "771,36 €",
+   "1 de febrero de 2027"
+  ],
+  "amount_due": "771,36 €",
+  "deadline_iso": "2027-02-01",
+  "agency_contacts": [
+   "010",
+   "96 352 54 78"
+  ],
+  "action": [
+   "pay"
+  ],
+  "consequence": [
+   "(surcharge|penalt|interest|enforc|collection|recargo|apremio|extra|5|10|20)"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "es03",
+  "lang": "Spanish",
+  "country": "Spain",
+  "type": "immigration office request for documents (residence permit renewal)",
+  "pages": [
+   "es03.html"
+  ],
+  "pii": [
+   "KOVALENKO, OKSANA",
+   "Y7364158D",
+   "14/03/1991",
+   "Carrer de Sant Antoni Maria Claret 214, 4º 2ª, 08041 Barcelona",
+   "642 318 905",
+   "080020260048731",
+   "REGAGE26e00041528837"
+  ],
+  "critical": [
+   "28 de diciembre de 2026"
+  ],
+  "amount_due": "",
+  "deadline_iso": "2026-12-28",
+  "agency_contacts": [
+   "060",
+   "93 520 14 10"
+  ],
+  "action": [
+   "(submit|provide|send|present|deliver|file|bring|upload|hand in).*(document|passport|contract|payslip|pay slip|paper|proof|certificate)|(document|passport|contract|payslip|paper).*(submit|provide|send|present|deliver|file|bring|upload)"
+  ],
+  "consequence": [
+   "(withdr|desist|abandon|archiv|clos|dismiss|reject|den|terminat|cancel|discontinu)"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "es04",
+  "lang": "Spanish",
+  "country": "Spain",
+  "type": "traffic fine notice (DGT speeding, 50% reduction)",
+  "pages": [
+   "es04.html"
+  ],
+  "pii": [
+   "POPESCU, ANDREI MIHAI",
+   "X9152836D",
+   "Calle Trinidad Grund 12, 5º C, 29001 Málaga",
+   "4817 LKD",
+   "2904 5 26 0817 33"
+  ],
+  "critical": [
+   "150,00 €",
+   "21 de diciembre de 2026"
+  ],
+  "amount_due": "150,00 €",
+  "deadline_iso": "2026-12-21",
+  "agency_contacts": [
+   "060",
+   "987 22 41 50"
+  ],
+  "action": [
+   "pay"
+  ],
+  "consequence": [
+   "(full|300|whole|entire|lose|discount|reduc|surcharge|enforc|final|apremio)"
+  ],
+  "split": "held-out"
+ },
+ {
+  "id": "es05",
+  "lang": "Spanish",
+  "country": "Spain",
+  "type": "court payment order (proceso monitorio)",
+  "pages": [
+   "es05.html"
+  ],
+  "pii": [
+   "D. WANG LEI (Wang Lei)",
+   "WANG LEI",
+   "Wang Lei",
+   "X3378024Z",
+   "Calle de Embajadores 132, 2º A, 28045 Madrid",
+   "Monitorio 1873/2026",
+   "28079 42 1 2026 0218734"
+  ],
+  "critical": [
+   "3.946,50 €",
+   "13 de enero de 2027"
+  ],
+  "amount_due": "3.946,50 €",
+  "deadline_iso": "2027-01-13",
+  "agency_contacts": [
+   "91 493 27 18"
+  ],
+  "action": [
+   "(pay|oppos|object|contest|challeng|disput|defen|respond|reply)"
+  ],
+  "consequence": [
+   "(enforc|execut|seiz|attach|garnish|embarg)"
+  ],
+  "split": "held-out"
+ },
+ {
+  "id": "es06",
+  "lang": "Spanish",
+  "country": "Spain",
+  "type": "social security self-employed contribution debt claim (TGSS)",
+  "pages": [
+   "es06.html"
+  ],
+  "pii": [
+   "DIALLO NDIAYE, MAMADOU",
+   "Y5093471C",
+   "41 10483277 15",
+   "Calle Feria 87, 1º D, 41003 Sevilla",
+   "41 26 012345678",
+   "41 26 0 112839452 7"
+  ],
+  "critical": [
+   "705,60 €",
+   "31 de diciembre de 2026"
+  ],
+  "amount_due": "705,60 €",
+  "deadline_iso": "2026-12-31",
+  "agency_contacts": [
+   "901 50 20 50",
+   "91 541 02 91",
+   "954 59 80 00"
+  ],
+  "action": [
+   "pay"
+  ],
+  "consequence": [
+   "(apremio|enforc|seiz|embarg|attach|garnish|surcharge|20)",
+   "(benefit|prestaci|sick|allowance|entitle)"
+  ],
+  "split": "held-out"
+ },
+ {
+  "id": "es07",
+  "lang": "Spanish",
+  "country": "Mexico",
+  "type": "hospital invoice (CFDI) with itemised charges",
+  "pages": [
+   "es07-p1.html",
+   "es07-p2.html"
+  ],
+  "pii": [
+   "WHITAKER, DANIEL JAMES",
+   "Daniel James Whitaker",
+   "584219736",
+   "Calle 47 No. 389-A x 54 y 56, Col. Centro, C.P. 97000, Mérida, Yuc.",
+   "07/05/1983",
+   "999 284 1736",
+   "EXP-2026-031874",
+   "CH-48127",
+   "H58214-CH48127"
+  ],
+  "critical": [
+   "$72,656.00 MXN",
+   "10 de diciembre de 2026"
+  ],
+  "amount_due": "$72,656.00 MXN",
+  "deadline_iso": "2026-12-10",
+  "agency_contacts": [
+   "999 930 2800",
+   "999 930 2815"
+  ],
+  "action": [
+   "pay"
+  ],
+  "consequence": [
+   "(interest|late|moratori|2 ?%|collect|legal|court|judicial)"
+  ],
+  "split": "held-out"
+ },
+ {
+  "id": "es08",
+  "lang": "Spanish",
+  "country": "Argentina",
+  "type": "electricity disconnection notice for unpaid bills",
+  "pages": [
+   "es08-p1.html",
+   "es08-p2.html"
+  ],
+  "pii": [
+   "RONDÓN BRICEÑO, GÉNESIS CAROLINA",
+   "Génesis Carolina Rondón Briceño",
+   "95.748.312",
+   "Belgrano 274, X5113 Salsipuedes, Córdoba",
+   "351 612-4598",
+   "0048-21739",
+   "18742",
+   "21409873",
+   "0048217390012"
+  ],
+  "critical": [
+   "$ 155.233,25",
+   "22 de diciembre de 2026"
+  ],
+  "amount_due": "$ 155.233,25",
+  "deadline_iso": "2026-12-22",
+  "agency_contacts": [
+   "(03543) 49-2210",
+   "0800-555-2667"
+  ],
+  "action": [
+   "pay"
+  ],
+  "consequence": [
+   "(cut|disconnect|suspen|shut|interrupt|stop)",
+   "(reconnect|re-connect|fee|charge|18[.,]500)"
+  ],
+  "split": "held-out"
+ },
+ {
+  "id": "es09",
+  "lang": "Spanish",
+  "country": "Argentina",
+  "type": "tax office demand to file missing tax returns (no payment)",
+  "pages": [
+   "es09.html"
+  ],
+  "pii": [
+   "TANAKA, HIROSHI",
+   "Hiroshi Tanaka",
+   "20-94387215-6",
+   "94.387.215",
+   "Martínez de Rozas 1162, piso 2, dpto. B, M5500 Mendoza",
+   "2026-INT-1048-07731"
+  ],
+  "critical": [
+   "29 de diciembre de 2026"
+  ],
+  "amount_due": "",
+  "deadline_iso": "2026-12-29",
+  "agency_contacts": [
+   "0810-999-2272",
+   "(0261) 449-5800"
+  ],
+  "action": [
+   "(file|submit|present|lodge)"
+  ],
+  "consequence": [
+   "(fine|penalt|sanction|multa)",
+   "(estimat|assess|presum|determin)"
+  ],
+  "split": "fresh"
+ },
+ {
+  "id": "es10",
+  "lang": "Spanish",
+  "country": "Colombia",
+  "type": "vehicle tax payment reminder before enforced collection",
+  "pages": [
+   "es10.html"
+  ],
+  "pii": [
+   "BARRIOS MENDOZA LUIS ENRIQUE",
+   "Luis Enrique Barrios Mendoza",
+   "CE 7284519",
+   "Calle 63 Nº 15-48, apartamento 302, Bogotá D.C.",
+   "JKS742",
+   "310 482 7719",
+   "2026EE418273",
+   "26091048273516"
+  ],
+  "critical": [
+   "$ 784.400",
+   "19 de diciembre de 2026"
+  ],
+  "amount_due": "$ 784.400",
+  "deadline_iso": "2026-12-19",
+  "agency_contacts": [
+   "(601) 338 5000",
+   "195"
+  ],
+  "action": [
+   "pay"
+  ],
+  "consequence": [
+   "(enforce|coerc|coactiv|collect|assess)",
+   "(seiz|embargo|attach|impound|freez)"
+  ],
+  "split": "fresh"
+ },
+ {
+  "id": "es11",
+  "lang": "Spanish",
+  "country": "Spain",
+  "type": "unemployment benefit overpayment resolution (SEPE percepción indebida)",
+  "pages": [
+   "es11-p1.html",
+   "es11-p2.html"
+  ],
+  "pii": [
+   "IVANOVA PETROVA, SVETLANA",
+   "Svetlana Ivanova Petrova",
+   "Y6185294K",
+   "C/ Sueca 47, puerta 9, 46006 Valencia",
+   "46 1073829465",
+   "02/11/1990",
+   "46/2026/PI/0184527",
+   "0692614618452703"
+  ],
+  "critical": [
+   "1.736,50 €",
+   "11 de enero de 2027"
+  ],
+  "amount_due": "1.736,50 €",
+  "deadline_iso": "2027-01-11",
+  "agency_contacts": [
+   "960 41 21 50",
+   "060"
+  ],
+  "action": [
+   "(pay|repay|reimburs|refund|return)"
+  ],
+  "consequence": [
+   "(20 ?%|surcharge|recargo|interest|enforce|apremio)",
+   "(seiz|garnish|attach|embargo)"
+  ],
+  "split": "fresh"
+ },
+ {
+  "id": "fr01",
+  "lang": "French",
+  "country": "France",
+  "type": "income tax assessment with balance due",
+  "pages": [
+   "fr01.html"
+  ],
+  "pii": [
+   "ADEBAYO Oluwaseun",
+   "30 12 456 789 012",
+   "14 rue des Lilas, Appartement 23, 69007 Lyon",
+   "26 69 A418 273 51",
+   "08/05/1991",
+   "2669 4182 7351 0026"
+  ],
+  "critical": [
+   "1 284 €",
+   "15 décembre 2026"
+  ],
+  "amount_due": "1 284 €",
+  "deadline_iso": "2026-12-15",
+  "agency_contacts": [
+   "0 809 401 401",
+   "04 72 40 85 16"
+  ],
+  "action": [
+   "pay"
+  ],
+  "consequence": [
+   "(10 ?%|surcharge|penalt|increase|majoration|128)"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "fr02",
+  "lang": "French",
+  "country": "France",
+  "type": "property tax formal notice to pay with 10% surcharge",
+  "pages": [
+   "fr02.html"
+  ],
+  "pii": [
+   "FERNÁNDEZ ORTEGA Lucía",
+   "37 cours Balguerie-Stuttenberg",
+   "21 33 905 614 287",
+   "26 33 B907 512 04",
+   "MDP 2026 033 08 41927",
+   "2633 9075 1204 0841"
+  ],
+  "critical": [
+   "1 360,00 €",
+   "11 janvier 2027"
+  ],
+  "amount_due": "1 360,00 €",
+  "deadline_iso": "2027-01-11",
+  "agency_contacts": [
+   "05 56 24 87 30"
+  ],
+  "action": [
+   "pay"
+  ],
+  "consequence": [
+   "(seiz|garnish|attach|levy|enforce|prosecut|collection)",
+   "(fee|cost|charge|3 ?%)"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "fr03",
+  "lang": "French",
+  "country": "France",
+  "type": "prefecture request for additional documents for residence permit renewal",
+  "pages": [
+   "fr03.html"
+  ],
+  "pii": [
+   "NGUYEN Thi Thu Ha",
+   "9303 4271 58",
+   "17/02/1994",
+   "ANEF-26-93-0458271",
+   "8 allée des Tilleuls, Bât. C, 93140 Bondy",
+   "DMI/BTS/2026/118734"
+  ],
+  "critical": [
+   "8 janvier 2027"
+  ],
+  "amount_due": "",
+  "deadline_iso": "2027-01-08",
+  "agency_contacts": [
+   "0 806 001 620",
+   "01 41 60 72 15"
+  ],
+  "action": [
+   "(send|submit|upload|provide|file|produce|hand in)",
+   "(document|paper|evidence|proof|contract|payslip|pay slip|certificate)"
+  ],
+  "consequence": [
+   "(clos|reject|refus|denied|dismiss|discontinu|filed away|no further|without further)",
+   "(stay|residence|right to work|legal|status|irregular|permit)"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "fr04",
+  "lang": "French",
+  "country": "France",
+  "type": "speeding fine notice (reduced, standard and increased amounts)",
+  "pages": [
+   "fr04.html"
+  ],
+  "pii": [
+   "YILMAZ Mehmet",
+   "52 avenue Jean Jaurès",
+   "8 4126 3359 0471 8",
+   "4126 3359 0471 8 06",
+   "GH-482-KT"
+  ],
+  "critical": [
+   "45 €",
+   "10 décembre 2026"
+  ],
+  "amount_due": "45 €",
+  "deadline_iso": "2026-12-10",
+  "agency_contacts": [
+   "0 811 10 10 10",
+   "0 811 10 20 30"
+  ],
+  "action": [
+   "(pay|contest|designate|challenge)"
+  ],
+  "consequence": [
+   "(68|180|increase|surcharge|higher|major|rise)"
+  ],
+  "split": "held-out"
+ },
+ {
+  "id": "fr05",
+  "lang": "French",
+  "country": "France",
+  "type": "court order for payment (injonction de payer) with one-month opposition period",
+  "pages": [
+   "fr05.html"
+  ],
+  "pii": [
+   "DIALLO Amadou Bakary",
+   "11/09/1987",
+   "71 rue de Lannoy, 59100 Roubaix",
+   "26/04817",
+   "IP 26/04817-DIA"
+  ],
+  "critical": [
+   "2 512,61 €",
+   "30 décembre 2026"
+  ],
+  "amount_due": "2 512,61 €",
+  "deadline_iso": "2026-12-30",
+  "agency_contacts": [
+   "03 20 78 34 10",
+   "03 20 26 51 88"
+  ],
+  "action": [
+   "(pay|oppos|object|contest|challenge|dispute)"
+  ],
+  "consequence": [
+   "(enforce|seiz|garnish|attach|levy|executor|final)"
+  ],
+  "split": "held-out"
+ },
+ {
+  "id": "fr06",
+  "lang": "French",
+  "country": "France",
+  "type": "family benefits overpayment notice (CAF indu)",
+  "pages": [
+   "fr06.html"
+  ],
+  "pii": [
+   "BENNANI Fatima Zahra",
+   "4827103",
+   "19 boulevard de la Libération, 3e étage",
+   "IND-2026-13-552908"
+  ],
+  "critical": [
+   "1 014,25 €",
+   "31 décembre 2026"
+  ],
+  "amount_due": "1 014,25 €",
+  "deadline_iso": "2026-12-31",
+  "agency_contacts": [
+   "3230"
+  ],
+  "action": [
+   "(pay|repay|reimburse|refund|return)"
+  ],
+  "consequence": [
+   "(deduct|withh|offset|retain|recover|taken from|subtract)",
+   "(forc|enforce|collection|contrainte|legal)"
+  ],
+  "split": "held-out"
+ },
+ {
+  "id": "fr07",
+  "lang": "French",
+  "country": "Canada (Quebec)",
+  "type": "hospital bill for uninsured patient with itemised services",
+  "pages": [
+   "fr07-p1.html",
+   "fr07-p2.html"
+  ],
+  "pii": [
+   "Ana Beatriz SOUZA LIMA",
+   "SOUZA LIMA, Ana Beatriz",
+   "4520, avenue Papineau, app. 6",
+   "CH 7 418 205",
+   "1996-03-22",
+   "40-2261-8873",
+   "438 555-0172",
+   "NA-2026-0083145",
+   "7400 2261 8873 0315"
+  ],
+  "critical": [
+   "4 868,25 $",
+   "2027-01-14"
+  ],
+  "amount_due": "4 868,25 $",
+  "deadline_iso": "2027-01-14",
+  "agency_contacts": [
+   "514 890-8000"
+  ],
+  "action": [
+   "(pay|settle)"
+  ],
+  "consequence": [
+   "(interest|1[.,]5 ?%)",
+   "(collection|agency|recover)"
+  ],
+  "split": "held-out"
+ },
+ {
+  "id": "fr08",
+  "lang": "French",
+  "country": "Belgium",
+  "type": "water supply formal notice before flow limitation and disconnection",
+  "pages": [
+   "fr08-p1.html",
+   "fr08-p2.html"
+  ],
+  "pii": [
+   "Ioana POPESCU",
+   "POPESCU Ioana",
+   "Rue Adolphe Sax 18, boîte 3",
+   "2207 4815",
+   "PF 541 0098 7726",
+   "16M 0447 921",
+   "+++091/2345/67853+++"
+  ],
+  "critical": [
+   "321,41 €",
+   "22 décembre 2026"
+  ],
+  "amount_due": "321,41 €",
+  "deadline_iso": "2026-12-22",
+  "agency_contacts": [
+   "082 21 47 60",
+   "082 21 47 99"
+  ],
+  "action": [
+   "(pay|settle|payment plan)"
+  ],
+  "consequence": [
+   "(limit|restrict|flow|reduc)",
+   "(cut|disconnect|shut|suspen|stop)"
+  ],
+  "split": "held-out"
+ },
+ {
+  "id": "fr09",
+  "lang": "French",
+  "country": "Belgium",
+  "type": "customs duty and import VAT notice for a parcel held at customs",
+  "pages": [
+   "fr09.html"
+  ],
+  "pii": [
+   "KOWALCZYK Agnieszka",
+   "89.07.14-352.61",
+   "Rue Saint-Gilles 118, boîte 4, 4000 Liège",
+   "LX 482 917 305 CN",
+   "26BE00041872934A1",
+   "DA/LGG/2026/883417",
+   "+++883/4172/6041+++"
+  ],
+  "critical": [
+   "116,96 €",
+   "18 décembre 2026"
+  ],
+  "amount_due": "116,96 €",
+  "deadline_iso": "2026-12-18",
+  "agency_contacts": [
+   "0257 950 40",
+   "02 572 57 57"
+  ],
+  "action": [
+   "pay"
+  ],
+  "consequence": [
+   "(return|sent back|abandon|destroy|forfeit)"
+  ],
+  "split": "fresh"
+ },
+ {
+  "id": "fr10",
+  "lang": "French",
+  "country": "Canada (Quebec)",
+  "type": "witness summons to appear at a criminal hearing",
+  "pages": [
+   "fr10.html"
+  ],
+  "pii": [
+   "MOKOENA, Thabo",
+   "Thabo Mokoena",
+   "1988-04-22",
+   "4870, avenue Victoria, app. 6, Montréal (Québec) H3W 2N1",
+   "514 829-3061",
+   "500-01-284716-268",
+   "SPVM 26-218-04417"
+  ],
+  "critical": [
+   "9 février 2027"
+  ],
+  "amount_due": "",
+  "deadline_iso": "2027-02-09",
+  "agency_contacts": [
+   "514 393-2703",
+   "514 393-2721",
+   "1 866 532-2822"
+  ],
+  "action": [
+   "(appear|attend|present|go to|show up|testif|witness)"
+  ],
+  "consequence": [
+   "(arrest|warrant)",
+   "(contempt|fine|prison|jail|imprison)"
+  ],
+  "split": "fresh"
+ },
+ {
+  "id": "fr11",
+  "lang": "French",
+  "country": "France",
+  "type": "unemployment benefit overpayment notice (France Travail trop-perçu)",
+  "pages": [
+   "fr11-p1.html",
+   "fr11-p2.html"
+  ],
+  "pii": [
+   "QUISPE MAMANI Marisol",
+   "Marisol Quispe Mamani",
+   "4817203Y",
+   "2 84 03 99 135 044 27",
+   "27 rue des Fontaines, Bâtiment C, 31300 Toulouse",
+   "TP-2026-31-0072581",
+   "19/03/1984"
+  ],
+  "critical": [
+   "2 860,32 €",
+   "8 janvier 2027"
+  ],
+  "amount_due": "2 860,32 €",
+  "deadline_iso": "2027-01-08",
+  "agency_contacts": [
+   "3949",
+   "05 61 14 27 80"
+  ],
+  "action": [
+   "(pay|repay|reimburs|refund|return)"
+  ],
+  "consequence": [
+   "(contrainte|enforce|court|judg|recover|collect)",
+   "(seiz|garnish|attach|deduct|withh)"
+  ],
+  "split": "fresh"
+ },
+ {
+  "id": "ja01",
+  "lang": "Japanese",
+  "country": "Japan",
+  "type": "resident tax payment notice",
+  "pages": [
+   "ja01.html"
+  ],
+  "pii": [
+   "ペレイラ ダ シルバ ジョアン",
+   "PEREIRA DA SILVA JOAO",
+   "静岡県浜松市中央区高丘東五丁目18番3号 グリーンハイツ203",
+   "0088-415-273",
+   "1988年7月19日",
+   "R08-3104-0072519",
+   "22130-0072519-01"
+  ],
+  "critical": [
+   "44,000円",
+   "令和8年12月28日"
+  ],
+  "amount_due": "44,000円",
+  "deadline_iso": "2026-12-28",
+  "agency_contacts": [
+   "053-457-2141",
+   "053-457-2147"
+  ],
+  "action": [
+   "pay"
+  ],
+  "consequence": [
+   "seiz|attach|garnish|late (fee|charge|interest)|delinquen|penalt"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "ja02",
+  "lang": "Japanese",
+  "country": "Japan",
+  "type": "national health insurance arrears reminder",
+  "pages": [
+   "ja02.html"
+  ],
+  "pii": [
+   "グエン ティ ラン",
+   "NGUYEN THI LAN",
+   "大阪市生野区勝山南2丁目7番14号 コーポ桃谷305号",
+   "26-1408-553917",
+   "生野 14-0082361"
+  ],
+  "critical": [
+   "37,100円",
+   "令和8年12月7日"
+  ],
+  "amount_due": "37,100円",
+  "deadline_iso": "2026-12-07",
+  "agency_contacts": [
+   "06-6715-9956",
+   "06-6715-9001"
+  ],
+  "action": [
+   "pay"
+  ],
+  "consequence": [
+   "seiz|attach|garnish",
+   "(benefit|insurance|coverage).*(suspend|withh|stop|restrict)|(suspend|withh|stop|restrict).*(benefit|insurance|coverage)"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "ja03",
+  "lang": "Japanese",
+  "country": "Japan",
+  "type": "national pension contributions unpaid notice",
+  "pages": [
+   "ja03.html"
+  ],
+  "pii": [
+   "チェン ウェイ",
+   "CHEN WEI",
+   "東京都新宿区百人町一丁目22番8号 ハイム百人町402",
+   "4120-583716",
+   "1999年2月3日",
+   "NK-2611-0390482",
+   "0391-2286-4471-503"
+  ],
+  "critical": [
+   "71,680円",
+   "令和8年12月15日"
+  ],
+  "amount_due": "71,680円",
+  "deadline_iso": "2026-12-15",
+  "agency_contacts": [
+   "0570-003-004",
+   "03-5285-8611"
+  ],
+  "action": [
+   "pay|exempt|waiv|defer"
+  ],
+  "consequence": [
+   "seiz|attach|garnish",
+   "pension|benefit"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "ja04",
+  "lang": "Japanese",
+  "country": "Japan",
+  "type": "immigration request for additional documents (residence renewal)",
+  "pages": [
+   "ja04.html"
+  ],
+  "pii": [
+   "ラミチャネ ビカシュ",
+   "LAMICHHANE BIKASH",
+   "東京都江戸川区中葛西三丁目35番6号 葛西パレス506",
+   "1994年10月5日",
+   "UH48203917EN",
+   "2026-T-0584621",
+   "東審第2026-118734号"
+  ],
+  "critical": [
+   "2026年12月18日"
+  ],
+  "amount_due": "",
+  "deadline_iso": "2026-12-18",
+  "agency_contacts": [
+   "03-5796-7111",
+   "0570-013904"
+  ],
+  "action": [
+   "submit|send|provide|file|deliver|hand in"
+  ],
+  "consequence": [
+   "den|reject|refus|not (be )?(granted|approved)|disapprov|existing (documents|materials)|decid"
+  ],
+  "split": "held-out"
+ },
+ {
+  "id": "ja05",
+  "lang": "Japanese",
+  "country": "Japan",
+  "type": "parking violation penalty payment order",
+  "pages": [
+   "ja05.html"
+  ],
+  "pii": [
+   "ロドリゲス サンチェス カルロス アルベルト",
+   "RODRIGUEZ SANCHEZ CARLOS ALBERTO",
+   "名古屋市港区港楽二丁目4番17号 サンライズ港楽201",
+   "名古屋 330 な 47-12",
+   "愛放第R08-091537号",
+   "7704-118265",
+   "2307-91537-04"
+  ],
+  "critical": [
+   "15,000円",
+   "令和9年2月5日"
+  ],
+  "amount_due": "15,000円",
+  "deadline_iso": "2027-02-05",
+  "agency_contacts": [
+   "052-951-1611",
+   "052-953-8810"
+  ],
+  "action": [
+   "pay"
+  ],
+  "consequence": [
+   "seiz|attach|garnish",
+   "inspection|shaken|roadworth|registration|renew"
+  ],
+  "split": "held-out"
+ },
+ {
+  "id": "ja06",
+  "lang": "Japanese",
+  "country": "Japan",
+  "type": "summary court payment demand (shiharai tokusoku)",
+  "pages": [
+   "ja06.html"
+  ],
+  "pii": [
+   "アンダーソン エミリー ジェーン",
+   "ANDERSON EMILY JANE",
+   "東京都板橋区板橋三丁目41番2号 メゾン板橋108",
+   "1991年3月27日",
+   "令和8年（ロ）第38261号",
+   "SF-7720-415083"
+  ],
+  "critical": [
+   "398,084円",
+   "令和8年12月17日"
+  ],
+  "amount_due": "398,084円",
+  "deadline_iso": "2026-12-17",
+  "agency_contacts": [
+   "03-3581-5411"
+  ],
+  "action": [
+   "pay|object|objection|dispute|contest|challenge"
+  ],
+  "consequence": [
+   "seiz|attach|garnish|enforc|execution|provisional"
+  ],
+  "split": "held-out"
+ },
+ {
+  "id": "ja07",
+  "lang": "Japanese",
+  "country": "Japan",
+  "type": "hospital medical bill",
+  "pages": [
+   "ja07-p1.html",
+   "ja07-p2.html"
+  ],
+  "pii": [
+   "プトリ アユ レスタリ",
+   "PUTRI AYU LESTARI",
+   "千葉県船橋市湊町二丁目13番5号 ベイコート湊502",
+   "0074-3381",
+   "1997年6月14日",
+   "MK-20261204-0617"
+  ],
+  "critical": [
+   "94,580円",
+   "2026年12月25日"
+  ],
+  "amount_due": "94,580円",
+  "deadline_iso": "2026-12-25",
+  "agency_contacts": [
+   "047-431-2280",
+   "047-431-2295",
+   "047-431-2310"
+  ],
+  "action": [
+   "pay|transfer|settle"
+  ],
+  "consequence": [
+   "legal|court|collect|payment demand|lawsuit|sue"
+  ],
+  "split": "held-out"
+ },
+ {
+  "id": "ja08",
+  "lang": "Japanese",
+  "country": "Japan",
+  "type": "water bill arrears and supply suspension warning",
+  "pages": [
+   "ja08-p1.html",
+   "ja08-p2.html"
+  ],
+  "pii": [
+   "バトエルデネ ガンゾリグ",
+   "BAT-ERDENE GANZORIG",
+   "横浜市中区伊勢佐木町五丁目126番地 サクラコート伊勢佐木307",
+   "21-4038-77125",
+   "中 3307-0459",
+   "水料中第0108-2274号"
+  ],
+  "critical": [
+   "12,496円",
+   "令和9年1月19日"
+  ],
+  "amount_due": "12,496円",
+  "deadline_iso": "2027-01-19",
+  "agency_contacts": [
+   "045-847-6262",
+   "045-671-3051",
+   "045-671-3058",
+   "045-671-3099"
+  ],
+  "action": [
+   "pay"
+  ],
+  "consequence": [
+   "(water|supply|service).*(cut|shut|stop|suspend|disconnect)|(cut|shut|stop|suspend|disconnect).*(water|supply|service)",
+   "legal|court|collect"
+  ],
+  "split": "held-out"
+ },
+ {
+  "id": "ja09",
+  "lang": "Japanese",
+  "country": "Japan",
+  "type": "tax office request to file a missing income tax return",
+  "pages": [
+   "ja09.html"
+  ],
+  "pii": [
+   "シュミット ハンナ",
+   "SCHMIDT HANNA",
+   "東京都渋谷区西原三丁目21番8号 メゾン西原203",
+   "0418-2273",
+   "1989年9月3日",
+   "090-6614-2387"
+  ],
+  "critical": [
+   "2027年1月20日"
+  ],
+  "amount_due": "",
+  "deadline_iso": "2027-01-20",
+  "agency_contacts": [
+   "03-3463-9181",
+   "03-3463-9200"
+  ],
+  "action": [
+   "file|submit|lodge|declar|return"
+  ],
+  "consequence": [
+   "(tax office|they|authorit|determin|assess|decide|calculat|estimat)",
+   "penalt|surcharge|additional|interest|delinquen"
+  ],
+  "split": "fresh"
+ },
+ {
+  "id": "ja10",
+  "lang": "Japanese",
+  "country": "Japan",
+  "type": "speeding fine notice with licence points",
+  "pages": [
+   "ja10.html"
+  ],
+  "pii": [
+   "メノン アルジュン",
+   "MENON ARJUN",
+   "愛知県名古屋市千種区今池四丁目17番2号 コーポ今池305",
+   "1993年4月26日",
+   "532418097330",
+   "名古屋 330 ま 47-12",
+   "愛23-26-118472"
+  ],
+  "critical": [
+   "19,070円",
+   "2026年12月18日"
+  ],
+  "amount_due": "19,070円",
+  "deadline_iso": "2026-12-18",
+  "agency_contacts": [
+   "052-951-1611",
+   "052-791-0110"
+  ],
+  "action": [
+   "pay"
+  ],
+  "consequence": [
+   "criminal|prosecut|court|penal|charge"
+  ],
+  "split": "fresh"
+ },
+ {
+  "id": "ja11",
+  "lang": "Japanese",
+  "country": "Japan",
+  "type": "employment insurance benefit overpayment recovery",
+  "pages": [
+   "ja11-p1.html",
+   "ja11-p2.html"
+  ],
+  "pii": [
+   "ムワンギ ジョセフ キマニ",
+   "MWANGI JOSEPH KIMANI",
+   "大阪府大阪市淀川区西中島六丁目5番19号 リバーハイツ西中島708",
+   "1986年11月2日",
+   "2715-482306-9",
+   "2715-26-005183",
+   "淀安発第1215-0731号",
+   "27-0731-5583-2"
+  ],
+  "critical": [
+   "269,640円",
+   "2027年1月29日"
+  ],
+  "amount_due": "269,640円",
+  "deadline_iso": "2027-01-29",
+  "agency_contacts": [
+   "06-6302-4771",
+   "06-6302-4790",
+   "06-6949-6481"
+  ],
+  "action": [
+   "pay|repay|return|refund"
+  ],
+  "consequence": [
+   "(penalt|surcharge|additional|interest|late (fee|charge)|arrears charge|delinquen)",
+   "seiz|attach|garnish"
+  ],
+  "split": "fresh"
+ },
+ {
+  "id": "ko01",
+  "lang": "Korean",
+  "country": "South Korea",
+  "type": "health insurance arrears",
+  "pages": [
+   "ko01.html"
   ],
   "pii": [
    "마리아 곤잘레스",
    "Maria Gonzalez",
    "920314-6234567",
    "서울특별시 구로구 디지털로 123, 402호",
+   "5 1120 4478 902",
+   "2026-11-0048213",
    "562-01-998877"
   ],
   "critical": [
-   "287,450원",
+   "286,370원",
    "2026년 11월 25일"
   ],
+  "amount_due": "286,370원",
   "deadline_iso": "2026-11-25",
   "agency_contacts": [
    "1577-1000",
    "033-811-2000"
   ],
+  "action": [
+   "pay"
+  ],
   "consequence": [
-   "late|overdue|arrears|penalt|interest|surcharge",
-   "(stay|residence|visa|sojourn)(?!.*arrears period)"
-  ]
+   "seiz|attach|garnish",
+   "(stay|residence|visa|sojourn)"
+  ],
+  "split": "dev"
  },
  {
-  "id": "ko2",
-  "font": "serif",
-  "title": "서울출입국·외국인청  체류기간 만료 예정 안내",
-  "lines": [
-   "성명: NGUYEN VAN HUNG (응우옌 반 훙)",
-   "외국인등록번호: 880721-5183204",
-   "체류자격: E-9 (비전문취업)",
-   "주소: 경기도 안산시 단원구 원곡로 45, 201호",
-   "체류기간 만료일: 2026년 12월 18일",
-   "만료일 전까지 체류기간 연장허가를 신청하시기 바랍니다.",
-   "신청 수수료: 60,000원",
-   "기한을 넘기면 범칙금이 부과되거나 출국 조치될 수 있습니다.",
-   "방문 예약: 하이코리아 (www.hikorea.go.kr), 문의 1345"
+  "id": "ko02",
+  "lang": "Korean",
+  "country": "South Korea",
+  "type": "local income tax bill",
+  "pages": [
+   "ko02.html"
   ],
   "pii": [
-   "NGUYEN VAN HUNG",
-   "응우옌 반 훙",
-   "880721-5183204",
-   "경기도 안산시 단원구 원곡로 45, 201호"
+   "응우옌 반 투안",
+   "NGUYEN VAN TUAN",
+   "880517-5412789",
+   "서울특별시 영등포구 도림로 38길 15, 301호",
+   "2026-0418-5520731",
+   "11560-2-26-12-0730418",
+   "801-26-4418-90372"
   ],
   "critical": [
-   "60,000원",
-   "2026년 12월 18일"
+   "422,610원",
+   "2026년 12월 31일"
   ],
-  "deadline_iso": "2026-12-18",
-  "agency_contacts": [],
+  "amount_due": "422,610원",
+  "deadline_iso": "2026-12-31",
+  "agency_contacts": [
+   "02-2670-3215",
+   "02-2670-3248"
+  ],
+  "action": [
+   "pay"
+  ],
+  "consequence": [
+   "(penalt|surcharge|additional|interest|late (fee|charge))",
+   "seiz|attach|garnish"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "ko03",
+  "lang": "Korean",
+  "country": "South Korea",
+  "type": "national pension arrears",
+  "pages": [
+   "ko03.html"
+  ],
+  "pii": [
+   "라흐맛 하산",
+   "RAHMAT HASAN",
+   "910822-5739016",
+   "경기도 안산시 단원구 원곡로 211, 2층 204호",
+   "91082257390-16",
+   "010-4821-6630",
+   "안산지사-징수-2026-07714",
+   "270-88-0193-4426"
+  ],
+  "critical": [
+   "712,200원",
+   "2027년 1월 11일"
+  ],
+  "amount_due": "712,200원",
+  "deadline_iso": "2027-01-11",
+  "agency_contacts": [
+   "1355",
+   "031-412-6420"
+  ],
+  "action": [
+   "pay"
+  ],
+  "consequence": [
+   "seiz|attach|garnish",
+   "(benefit|pension|coverage|contribution period|insured period|reduc)"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "ko04",
+  "lang": "Korean",
+  "country": "South Korea",
+  "type": "immigration document supplement request",
+  "pages": [
+   "ko04.html"
+  ],
+  "pii": [
+   "아이게림 누르란",
+   "NURLAN AIGERIM",
+   "950409-6823041",
+   "N13804227",
+   "서울특별시 강서구 화곡로 302, 5층 503호",
+   "010-7732-0485",
+   "SEO-2026-1118-03952"
+  ],
+  "critical": [
+   "2026년 12월 11일"
+  ],
+  "amount_due": "",
+  "deadline_iso": "2026-12-11",
+  "agency_contacts": [
+   "1345",
+   "02-2650-6214"
+  ],
+  "action": [
+   "(submit|provide|send|upload|bring|hand in|supplement)"
+  ],
+  "consequence": [
+   "(den|reject|refus|not (be )?(approved|granted|extended))",
+   "(leave|depart|exit|deport)"
+  ],
+  "split": "held-out"
+ },
+ {
+  "id": "ko05",
+  "lang": "Korean",
+  "country": "South Korea",
+  "type": "parking fine pre-notice",
+  "pages": [
+   "ko05.html"
+  ],
+  "pii": [
+   "프리야 샤르마",
+   "PRIYA SHARMA",
+   "930118-6052874",
+   "경기도 수원시 영통구 매영로 269번길 47, 1102호",
+   "218허3906",
+   "41117-2026-0098214",
+   "612-907-33182-04"
+  ],
+  "critical": [
+   "96,000원",
+   "2026년 12월 22일"
+  ],
+  "amount_due": "96,000원",
+  "deadline_iso": "2026-12-22",
+  "agency_contacts": [
+   "031-228-8541",
+   "031-228-8547"
+  ],
+  "action": [
+   "(pay|object|appeal|contest|dispute|statement)"
+  ],
+  "consequence": [
+   "(120,000|full|higher|discount|reduc|surcharge|additional|penalt)",
+   "(seiz|attach|garnish|licen[cs]e plate|number plate|impound)"
+  ],
+  "split": "held-out"
+ },
+ {
+  "id": "ko06",
+  "lang": "Korean",
+  "country": "South Korea",
+  "type": "court payment order",
+  "pages": [
+   "ko06.html"
+  ],
+  "pii": [
+   "올레나 코발렌코",
+   "OLENA KOVALENKO",
+   "870603-6190458",
+   "인천광역시 연수구 함박뫼로 88, 2동 307호",
+   "2026차전48217"
+  ],
+  "critical": [
+   "4,800,000원",
+   "2026. 12. 14."
+  ],
+  "amount_due": "4,800,000원",
+  "deadline_iso": "2026-12-14",
+  "agency_contacts": [
+   "032-860-1532",
+   "1899-3155"
+  ],
+  "action": [
+   "(object|objection|contest|dispute|appeal|pay)"
+  ],
+  "consequence": [
+   "(final|binding|judgment|judgement|enforce)",
+   "(seiz|attach|garnish|wage|salary|deposit|compulsory execution)"
+  ],
+  "split": "held-out"
+ },
+ {
+  "id": "ko07",
+  "lang": "Korean",
+  "country": "South Korea",
+  "type": "hospital bill",
+  "pages": [
+   "ko07-p1.html",
+   "ko07-p2.html"
+  ],
+  "pii": [
+   "무함마드 알리 칸",
+   "MUHAMMAD ALI KHAN",
+   "01938274",
+   "890227-5361092",
+   "1989년 2월 27일",
+   "대전광역시 유성구 대학로 155번길 22, 202호",
+   "010-5904-2178",
+   "HB-2612-077431",
+   "471-0293-8274-11"
+  ],
+  "critical": [
+   "744,780원",
+   "2026년 12월 21일"
+  ],
+  "amount_due": "744,780원",
+  "deadline_iso": "2026-12-21",
+  "agency_contacts": [
+   "042-600-8114",
+   "042-600-8190"
+  ],
+  "action": [
+   "pay"
+  ],
+  "consequence": [
+   "(interest|late (fee|charge)|6 ?%)",
+   "(collect|debt|payment order|legal|court)"
+  ],
+  "split": "held-out"
+ },
+ {
+  "id": "ko08",
+  "lang": "Korean",
+  "country": "South Korea",
+  "type": "water bill arrears and disconnection warning",
+  "pages": [
+   "ko08-p1.html",
+   "ko08-p2.html"
+  ],
+  "pii": [
+   "천웨이",
+   "CHEN WEI",
+   "21-0738-4410-6",
+   "부산광역시 해운대구 재반로 112번길 9, 3층",
+   "WM-15-2209347",
+   "B-2026-12-0061583",
+   "309-1121-0738-44"
+  ],
+  "critical": [
+   "156,890원",
+   "2026년 12월 15일"
+  ],
+  "amount_due": "156,890원",
+  "deadline_iso": "2026-12-15",
+  "agency_contacts": [
+   "121",
+   "051-669-5732"
+  ],
+  "action": [
+   "pay"
+  ],
+  "consequence": [
+   "(water|supply|service).*(cut|shut|stop|suspend|disconnect)|(cut|shut|stop|suspend|disconnect).*(water|supply|service)",
+   "seiz|attach|garnish"
+  ],
+  "split": "held-out"
+ },
+ {
+  "id": "ko09",
+  "lang": "Korean",
+  "country": "South Korea",
+  "type": "annual automobile tax bill",
+  "pages": [
+   "ko09.html"
+  ],
+  "pii": [
+   "소피아 페트로바",
+   "SOFIA PETROVA",
+   "910822-6158203",
+   "인천광역시 연수구 컨벤시아대로 204, 1107동 1802호",
+   "2026-12-0087316",
+   "28185-1-26-12-0391764",
+   "157보4821",
+   "562-901-77184-305"
+  ],
+  "critical": [
+   "233,760원",
+   "2026년 12월 31일"
+  ],
+  "amount_due": "233,760원",
+  "deadline_iso": "2026-12-31",
+  "agency_contacts": [
+   "032-749-7362",
+   "032-749-7378"
+  ],
+  "action": [
+   "pay"
+  ],
+  "consequence": [
+   "(penalt|surcharge|additional|interest|late (fee|charge))",
+   "seiz|attach|garnish|impound|plate"
+  ],
+  "split": "fresh"
+ },
+ {
+  "id": "ko10",
+  "lang": "Korean",
+  "country": "South Korea",
+  "type": "court witness summons",
+  "pages": [
+   "ko10.html"
+  ],
+  "pii": [
+   "아마두 쿨리발리",
+   "AMADOU COULIBALY",
+   "서울특별시 용산구 이태원로 27가길 46, 203호",
+   "870309-5273410",
+   "010-4827-3159",
+   "증 2026-3381"
+  ],
+  "critical": [
+   "2027년 1월 14일"
+  ],
+  "amount_due": "",
+  "deadline_iso": "2027-01-14",
+  "agency_contacts": [
+   "02-530-1847",
+   "02-530-2280"
+  ],
+  "action": [
+   "appear|attend|testify|witness|go to (the )?court"
+  ],
   "consequence": [
    "fine|penalt",
-   "leave|depart|deport|removal|exit|expel"
-  ]
+   "compel|forc|arrest|warrant|detain|detention|custody|brought|confine"
+  ],
+  "split": "fresh"
  },
  {
-  "id": "ko3",
-  "font": "sans-serif",
-  "title": "마포구청  2026년 8월 주민세(개인분) 독촉장",
-  "lines": [
-   "납세자: 다나카 유이 (TANAKA YUI)",
-   "주소: 서울특별시 마포구 월드컵북로 88, 1203호",
-   "전자납부번호: 11440-1-26-08-9034512",
-   "당초 납부기한: 2026년 8월 31일",
-   "세액: 12,500원  가산금: 370원",
-   "독촉 납부기한: 2026년 11월 30일",
-   "납부할 총액: 12,870원",
-   "기한까지 내지 않으면 재산이 압류될 수 있습니다.",
-   "가상계좌: 1005-903-778215 (예금주: 마포구청)"
+  "id": "ko11",
+  "lang": "Korean",
+  "country": "South Korea",
+  "type": "customs duty and VAT notice for an imported parcel",
+  "pages": [
+   "ko11-p1.html",
+   "ko11-p2.html"
   ],
   "pii": [
-   "다나카 유이",
-   "TANAKA YUI",
-   "서울특별시 마포구 월드컵북로 88, 1203호",
-   "11440-1-26-08-9034512",
-   "1005-903-778215"
+   "루카스 페헤이라",
+   "LUCAS FERREIRA",
+   "P260418835127",
+   "경기도 성남시 분당구 정자일로 95, 2동 806호",
+   "010-7316-2048",
+   "40172-26-118304U",
+   "6203 9917 4452",
+   "020-26-12-0057193",
+   "917-0263-5518-40"
   ],
   "critical": [
-   "12,870원",
-   "2026년 11월 30일"
+   "224,610원",
+   "2026년 12월 22일"
   ],
-  "deadline_iso": "2026-11-30",
-  "agency_contacts": [],
-  "consequence": [
-   "seiz|attach|foreclos|confiscat"
-  ]
- },
- {
-  "id": "de1",
-  "font": "serif",
-  "title": "Finanzamt Neukölln  Einkommensteuerbescheid",
-  "lines": [
-   "Herrn Minjun Kim, Sonnenallee 214, 12059 Berlin",
-   "Steuernummer: 16/432/09871",
-   "Bescheid über Einkommensteuer 2025",
-   "Nachzahlung: 1.284,37 EUR",
-   "Zahlbar bis: 14.12.2026",
-   "IBAN: DE44 1005 0000 0190 0876 54",
-   "Bei verspäteter Zahlung wird ein Säumniszuschlag",
-   "von 1 % je angefangenem Monat erhoben.",
-   "Einspruch ist innerhalb eines Monats möglich."
-  ],
-  "pii": [
-   "Minjun Kim",
-   "Sonnenallee 214, 12059 Berlin",
-   "16/432/09871",
-   "DE44 1005 0000 0190 0876 54"
-  ],
-  "critical": [
-   "1.284,37 EUR",
-   "14.12.2026"
-  ],
-  "deadline_iso": "2026-12-14",
-  "agency_contacts": [],
-  "consequence": [
-   "surcharge|late|penalt|fee|interest",
-   "1\\s?%|1 percent|one percent"
-  ]
- },
- {
-  "id": "de2",
-  "font": "sans-serif",
-  "title": "Beitragsservice  Zahlungserinnerung",
-  "lines": [
-   "Frau Seoyeon Park, Lindenstraße 8, 50674 Köln",
-   "Beitragsnummer: 482 915 337",
-   "Rundfunkbeitrag 08.2026 bis 10.2026",
-   "Offener Betrag: 55,08 EUR",
-   "Bitte zahlen Sie bis zum 05.12.2026.",
-   "IBAN: DE07 3705 0198 1934 5521 06",
-   "Verwendungszweck: 482915337",
-   "Andernfalls wird ein Säumniszuschlag von 8,00 EUR fällig",
-   "und ein Festsetzungsbescheid erlassen."
-  ],
-  "pii": [
-   "Seoyeon Park",
-   "Lindenstraße 8, 50674 Köln",
-   "482 915 337",
-   "482915337",
-   "DE07 3705 0198 1934 5521 06"
-  ],
-  "critical": [
-   "55,08 EUR",
-   "05.12.2026"
-  ],
-  "deadline_iso": "2026-12-05",
-  "agency_contacts": [],
-  "consequence": [
-   "8[.,]00",
-   "assessment|notice|order|decision"
-  ]
- },
- {
-  "id": "ja1",
-  "font": "sans-serif",
-  "title": "横浜市  国民健康保険料 納付通知書",
-  "lines": [
-   "氏名: キム ジフン (KIM JIHOON) 様",
-   "住所: 神奈川県横浜市中区山下町 123-4 コーポ山下 305号",
-   "記号番号: 横中 04-718265",
-   "令和8年度 第6期分",
-   "納付金額: 18,400円",
-   "納期限: 令和8年11月30日",
-   "納期限を過ぎると延滞金が加算され、",
-   "財産の差押えを行う場合があります。",
-   "お問い合わせ: 045-671-2422"
-  ],
-  "pii": [
-   "キム ジフン",
-   "KIM JIHOON",
-   "神奈川県横浜市中区山下町 123-4 コーポ山下 305号",
-   "04-718265"
-  ],
-  "critical": [
-   "18,400円",
-   "令和8年11月30日"
-  ],
-  "deadline_iso": "2026-11-30",
+  "amount_due": "224,610원",
+  "deadline_iso": "2026-12-22",
   "agency_contacts": [
-   "045-671-2422"
+   "032-452-3617",
+   "032-452-3640"
+  ],
+  "action": [
+   "pay"
   ],
   "consequence": [
-   "late|delinquen|arrears|interest|overdue",
-   "seiz|attach|foreclos|confiscat"
-  ]
- },
- {
-  "id": "ja2",
-  "font": "serif",
-  "title": "大阪市  市民税・府民税 督促状",
-  "lines": [
-   "納税義務者: イ スア (LEE SUA) 様",
-   "住所: 大阪府大阪市浪速区日本橋 3-5-12 メゾン日本橋 702",
-   "通知書番号: 27-1045-880231",
-   "税額: 46,300円  延滞金: 1,200円",
-   "合計: 47,500円",
-   "指定期限: 令和8年12月10日",
-   "指定期限までに完納されない場合は、",
-   "給与・預貯金等の差押えを行います。",
-   "口座振替: 登録口座 普通 7741025"
+   "(penalt|surcharge|additional|interest|late (fee|charge))",
+   "seiz|attach|garnish|sold|auction|dispos|released|parcel|goods"
   ],
-  "pii": [
-   "イ スア",
-   "LEE SUA",
-   "大阪府大阪市浪速区日本橋 3-5-12 メゾン日本橋 702",
-   "27-1045-880231",
-   "7741025"
-  ],
-  "critical": [
-   "47,500円",
-   "令和8年12月10日"
-  ],
-  "deadline_iso": "2026-12-10",
-  "agency_contacts": [],
-  "consequence": [
-   "seiz|attach|garnish|confiscat",
-   "salar|wage|pay|deposit|saving|bank"
-  ]
- },
- {
-  "id": "ja3",
-  "font": "sans-serif",
-  "title": "日本年金機構  国民年金保険料 納付のご案内",
-  "lines": [
-   "被保険者: チェ ミンソ (CHOI MINSEO) 様",
-   "基礎年金番号: 4821-675309",
-   "住所: 東京都新宿区大久保 2-18-7 ハイツ大久保 201",
-   "未納期間: 令和8年7月～令和8年9月",
-   "未納額: 52,530円",
-   "納付期限: 令和8年12月25日",
-   "期限までに納付がない場合、督促状を送付し、",
-   "延滞金が課されることがあります。",
-   "電話: 0570-05-1165"
-  ],
-  "pii": [
-   "チェ ミンソ",
-   "CHOI MINSEO",
-   "4821-675309",
-   "東京都新宿区大久保 2-18-7 ハイツ大久保 201"
-  ],
-  "critical": [
-   "52,530円",
-   "令和8年12月25日"
-  ],
-  "deadline_iso": "2026-12-25",
-  "agency_contacts": [
-   "0570-05-1165"
-  ],
-  "consequence": [
-   "reminder|demand|dunning|collection",
-   "late|delinquen|arrears|interest|overdue"
-  ]
- },
- {
-  "id": "en1",
-  "font": "serif",
-  "title": "Leeds City Council  Council Tax Reminder Notice",
-  "lines": [
-   "Mr Dohyun Jung, Flat 12, 48 Burley Road, Leeds LS3 1JX",
-   "Account reference: 7104 6625 93",
-   "You have missed an instalment for 2026/27.",
-   "Amount overdue: £164.00",
-   "Pay within 7 days, by 27 November 2026.",
-   "If you do not pay, you will lose the right to pay",
-   "by instalments and the full £1,148.00 becomes due.",
-   "National Insurance number: QQ 12 34 56 C",
-   "Sort code 40-27-15, account 81940273"
-  ],
-  "pii": [
-   "Dohyun Jung",
-   "Flat 12, 48 Burley Road, Leeds LS3 1JX",
-   "7104 6625 93",
-   "QQ 12 34 56 C",
-   "81940273"
-  ],
-  "critical": [
-   "£164.00",
-   "27 November 2026"
-  ],
-  "deadline_iso": "2026-11-27",
-  "agency_contacts": [],
-  "consequence": [
-   "instal",
-   "1,148"
-  ]
- },
- {
-  "id": "en2",
-  "font": "sans-serif",
-  "title": "U.S. Citizenship and Immigration Services  Request for Evidence",
-  "lines": [
-   "Applicant: HAEUN YOON",
-   "A-Number: A218-407-563",
-   "Receipt Number: IOE0927341586",
-   "Mailing address: 2210 Cedar St Apt 4B, Berkeley, CA 94709",
-   "Date of birth: 03/14/1994",
-   "We need more information to process your Form I-765.",
-   "Your response must be received by January 6, 2027.",
-   "If we do not receive it, your case may be denied.",
-   "Biometrics fee already paid: $85.00"
-  ],
-  "pii": [
-   "HAEUN YOON",
-   "A218-407-563",
-   "IOE0927341586",
-   "2210 Cedar St Apt 4B, Berkeley, CA 94709",
-   "03/14/1994"
-  ],
-  "critical": [
-   "$85.00",
-   "January 6, 2027"
-  ],
-  "deadline_iso": "2027-01-06",
-  "agency_contacts": [],
-  "amount_due": "",
-  "consequence": [
-   "den(y|ied|ial)"
-  ]
+  "split": "fresh"
  }
 ]

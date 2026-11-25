@@ -25,3 +25,24 @@ window.renderPhoto = async (n, idx) => {
   const dataUrl = await new Promise(res => { const f = new FileReader(); f.onload = () => res(f.result); f.readAsDataURL(blob); });
   return { bmp, dataUrl, params: { deg: +(ang * 180 / Math.PI).toFixed(1), shear: +shear.toFixed(3), blur: +blur.toFixed(2) } };
 };
+// Same treatment for a document page that was rendered to an image (eval/docs/*.html).
+window.photoFrom = async (src, idx) => {
+  const page = await createImageBitmap(await (await fetch(src)).blob());
+  const r = rng(idx * 7919 + 13);
+  const W = page.width + 200, H = page.height + 200;
+  const out = document.createElement('canvas'); out.width = W; out.height = H;
+  const o = out.getContext('2d');
+  o.fillStyle = '#6b5a48'; o.fillRect(0, 0, W, H);
+  const ang = (r() * 5 - 2.5) * Math.PI / 180, shear = r() * 0.05 - 0.025, blur = 0.4 + r() * 0.7;
+  o.save(); o.translate(W / 2, H / 2); o.rotate(ang); o.transform(1, 0, shear, 1, 0, 0);
+  o.filter = `blur(${blur.toFixed(2)}px)`; o.drawImage(page, -page.width / 2, -page.height / 2); o.restore(); o.filter = 'none';
+  const g = o.createLinearGradient(r() * 400, 0, W - r() * 300, H);
+  g.addColorStop(0, 'rgba(0,0,0,0)'); g.addColorStop(1, `rgba(0,0,0,${(0.15 + r() * 0.22).toFixed(2)})`);
+  o.fillStyle = g; o.fillRect(0, 0, W, H);
+  const img = o.getImageData(0, 0, W, H), d = img.data;
+  for (let i = 0; i < d.length; i += 4) { const k = (r() - 0.5) * 20; d[i] += k; d[i + 1] += k; d[i + 2] += k; }
+  o.putImageData(img, 0, 0);
+  const blob = await new Promise((res) => out.toBlob(res, 'image/jpeg', 0.7));
+  const dataUrl = await new Promise((res) => { const f = new FileReader(); f.onload = () => res(f.result); f.readAsDataURL(blob); });
+  return { dataUrl, params: { deg: +(ang * 180 / Math.PI).toFixed(1), shear: +shear.toFixed(3), blur: +blur.toFixed(2) } };
+};

@@ -1,7 +1,10 @@
 // Decides what leaves the device. The on-device model proposes identifiers;
 // these rules have the final say on what is masked and what must stay readable.
 
-const MONTHS = 'January|February|March|April|May|June|July|August|September|October|November|December';
+const MONTHS = 'January|February|March|April|May|June|July|August|September|October|November|December'
+  + '|Januar|Jänner|Februar|März|Mai|Juni|Juli|Oktober|Dezember'
+  + '|janvier|février|mars|avril|mai|juin|juillet|août|septembre|octobre|novembre|décembre'
+  + '|enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre';
 const DATE_PATTERNS = [
   /\d{4}\s?년\s?\d{1,2}\s?월\s?\d{1,2}\s?일/g,
   /(?:令和|平成)\s?\d{1,2}\s?年\s?\d{1,2}\s?月\s?\d{1,2}\s?日/g,
@@ -9,7 +12,7 @@ const DATE_PATTERNS = [
   /\b\d{1,2}\.\d{1,2}\.\d{4}\b/g,
   /\b\d{4}-\d{2}-\d{2}\b/g,
   /\b\d{1,2}\/\d{1,2}\/\d{4}\b/g,
-  new RegExp(`\\b\\d{1,2} (?:${MONTHS}) \\d{4}\\b`, 'g'),
+  new RegExp(`\\b\\d{1,2}(?:\\.|er)? (?:de )?(?:${MONTHS}) (?:de )?\\d{4}\\b`, 'gi'),
   new RegExp(`\\b(?:${MONTHS}) \\d{1,2}, \\d{4}\\b`, 'g'),
 ];
 // Billing periods ("2026년 9월", "令和8年7月", "08.2026") are not identifiers either.
@@ -22,6 +25,11 @@ const isDateOrAmount = (value) => {
   [...DATE_PATTERNS, ...PERIOD_PATTERNS, ...AMOUNT_PATTERNS].forEach((p) => { rest = rest.replace(p, ''); });
   return rest.replace(/[\s~〜～\-–,.()]|bis|to|until|부터|까지|분|から|まで|分/g, '') === '';
 };
+
+// Words that mark a line as the office's contact line, in the languages the test set covers.
+const INQUIRY = /문의|상담|お問合|contact us|contact citoyen|TTY|問い?合わ?せ|照会|Auskunft|Rückfragen|Fragen|Servicetelefon|Hotline|Helpline|enquir|inquir|questions?\b|call us|contact us|customer service|renseignement|accueil|Atención|consultas|información/i;
+const grams = (t) => { const f = t.replace(/\s/g, ''); return new Set([...f].slice(0, -1).map((c, i) => c + f[i + 1])); };
+const shared = (want, have) => { let n = 0; want.forEach((g) => { if (have.has(g)) n += 1; }); return n / Math.max(1, want.size); };
 
 export const normalize = (text) => text.normalize('NFKC').replace(/[ \t]+/g, ' ').replace(/\n{2,}/g, '\n').trim();
 
@@ -45,18 +53,39 @@ export function redact(rawText, items, vault = []) {
   protect(DATE_PATTERNS); protect(AMOUNT_PATTERNS);
   const overlapsProtected = (s, e) => protectedSpans.some(([a, b]) => s < b && e > a);
 
-  const accepted = items
-    .map((it) => ({ kind: it.kind, value: normalize(it.value || '') }))
+  // A name listed as "native spelling (Latin spelling)" is two values.
+  const listed = items.flatMap((it) => {
+    const m = it.kind === 'NAME' && /^(.+?)\s*\(([^()]+)\)\s*$/.exec(normalize(it.value || ''));
+    return m ? [{ kind: 'NAME', value: m[1] }, { kind: 'NAME', value: m[2] }] : [it];
+    // Forms of address are not part of the name.
+  }).map((it) => (it.kind === 'NAME' ? { kind: 'NAME', value: normalize(it.value || '').replace(/\s*(様|殿|さん|님|귀하)$/, '') } : it));
+  // The model copies a name or an address from one reading; the other reading, or another strip
+  // of the same page, may spell it a little differently. Those near-copies are masked as well.
+  const near = listed.filter((it) => ['NAME', 'ADDRESS'].includes(it.kind)).flatMap((it) => {
+    const value = normalize(it.value || ''); const want = grams(value); const n = value.split(' ').length;
+    if (want.size < 3) return [];
+    return text.split('\n').flatMap((line) => {
+      const words = line.split(' ');
+      return words.flatMap((_, i) => [words.slice(i, i + n).join(' '), words.slice(i, i + n + 1).join(' ')]).filter((span) => span !== value && Math.abs(span.length - value.length) <= 3 && !/\d{4}/.test(span) === !/\d{4}/.test(value) && shared(want, grams(span)) * want.size / Math.max(want.size, grams(span).size) >= (it.kind === 'NAME' ? 0.5 : 0.6))
+        .map((span) => ({ kind: it.kind, value: span.replace(/^[(\[]+|[)\],.:;]+$/g, '') }));
+    });
+  });
+
+  const accepted = [...listed, ...near]
+    // A number is listed without the note printed after it, such as "(account holder: the agency)".
+    .map((it) => ({ kind: it.kind, value: normalize(it.value || '').replace(['NAME', 'ADDRESS', 'HIDDEN'].includes(it.kind) ? /$^/ : /\s*\([^()]*\)\s*$/, '') }))
     .filter((it) => it.kind !== 'AGENCY_CONTACT' && it.value.length > 1 && text.includes(it.value))
     .filter((it) => it.kind === 'BIRTH_DATE' || it.kind === 'HIDDEN' || !isDateOrAmount(it.value))
     .sort((a, b) => b.value.length - a.value.length);
 
   // The office's own phone numbers are how the reader gets help, so they stay readable.
-  // Only short, phone-shaped values qualify, whatever the model says.
-  const keep = items
-    .filter((it) => it.kind === 'AGENCY_CONTACT')
-    .map((it) => normalize(it.value || ''))
-    .filter((v) => /^[\d\-() +]+$/.test(v) && v.replace(/\D/g, '').length >= 7 && v.replace(/\D/g, '').length <= 12)
+  // They are the phone-shaped parts of what the model called an agency contact, plus numbers
+  // printed on a line that says it is for questions. Only short, phone-shaped values qualify.
+  const PHONE_SHAPED = /\+?\(?\d[\d\-() .]{5,16}\d/g;
+  const fromModel = items.filter((it) => it.kind === 'AGENCY_CONTACT').flatMap((it) => normalize(it.value || '').match(PHONE_SHAPED) || []);
+  const fromLabels = text.split('\n').filter((line) => INQUIRY.test(line)).flatMap((line) => line.match(PHONE_SHAPED) || []);
+  const keep = [...new Set([...fromModel, ...fromLabels].map((v) => v.trim()))]
+    .filter((v) => /^[\d\-() +.]+$/.test(v) && v.replace(/\D/g, '').length >= 7 && v.replace(/\D/g, '').length <= 13 && text.includes(v))
     .filter((v) => !accepted.some((a) => a.kind !== 'PHONE' && a.value.includes(v)));
   // A number the model called both a personal phone and the agency's line is treated as the agency's.
   for (let i = accepted.length - 1; i >= 0; i -= 1) if (accepted[i].kind === 'PHONE' && keep.includes(accepted[i].value)) accepted.splice(i, 1);
@@ -73,6 +102,34 @@ export function redact(rawText, items, vault = []) {
     vault.push({ token, value: inner.trim() });
     return token;
   })).join('\n');
+
+  // A letter prints the same name in several forms: "WHITAKER, DANIEL JAMES" in a table,
+  // "Dear Daniel James Whitaker" in the text. Each word of a listed name is masked wherever
+  // it stands as a whole word, in any letter case, and neighbouring pieces become one placeholder.
+  for (const it of listed.filter((x) => x.kind === 'NAME')) {
+    const value = normalize(it.value || '');
+    const words = value.split(/[\s,]+/).filter((w) => w.length >= 4 && /^[\p{Script=Latin}'\-]+$/u.test(w));
+    if (words.length < 2) continue;
+    const pattern = new RegExp(`(?<![\\p{L}\\]])(?:${words.map((w) => w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})(?![\\p{L}\\[])`, 'giu');
+    if (!pattern.test(out)) continue;
+    const token = tokenFor('NAME', value);
+    out = out.replace(pattern, token).replace(new RegExp(`${token.replace(/[\[\]]/g, '\\$&')}(?:,? (?:[\\p{L}'.\\-]{1,3} )?${token.replace(/[\[\]]/g, '\\$&')})+`, 'gu'), token);
+  }
+
+  // In a letter written in Korean or Japanese, capital Latin words in parentheses are the
+  // romanized name of the person, whether or not the model listed it.
+  out = out.split('\n').map((line) => (/[\p{Script=Hangul}\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Han}]/u.test(line)
+    ? line.replace(/\(\s*([A-Z][A-Z'\-]+(?: [A-Z][A-Z'\-]+){1,3})\s*\)/g, (m, name) => `(${tokenFor('NAME', name)})`) : line)).join('\n');
+
+  // A misread native spelling printed right before a masked Latin spelling, as in
+  // "성명 마리아 골렌스 ([NAME_1])", belongs to the same person. The field label stays.
+  out = out.replace(/((?:[\p{L}·]+ ){1,3})\((\[NAME_\d+\])\)/gu, (m, before, token) => {
+    const words = before.trim().split(' ');
+    const label = /^(성명|이름|수신인?|납세자|氏名|名前|Name|Nom|Nombre|Titular)$/i.test(words[0]) ? `${words.shift()} ` : '';
+    if (!words.length) return m;
+    vault.push({ token, value: words.join(' ') });
+    return `${label}${token}`;
+  });
 
   // Number-shaped identifiers the model missed. Dates and amounts are skipped.
   const spansNow = [];

@@ -1,5 +1,4 @@
 <!doctype html><meta charset="utf-8"><title>Plainletter eval</title><pre id="o">running</pre>
-<script src="./page.js"></script>
 <script type="module">
 // Runs the app's own pipeline over the test notices and scores each stage.
 import { readLetter, explain } from '../src/pipeline.js';
@@ -7,12 +6,22 @@ const flat = (s) => String(s ?? '').normalize('NFKC').replace(/\s+/g, '');
 const digits = (s) => String(s ?? '').replace(/\D/g, '');
 const notices = await (await fetch('./notices.json')).json();
 const only = new URLSearchParams(location.search).get('only');
-const rows = [];
+const split = new URLSearchParams(location.search).get('split');
+const rows = [], failed = [];
 for (const [i, n] of notices.entries()) {
   if (only && !only.split(',').includes(n.id)) continue;
-  const { dataUrl } = await renderPhoto(n, i);
+  if (split && n.split !== split) continue;
+  // The page photos were written to out/ by build.mjs.
+  const pages = await Promise.all(n.pages.map(async (p) => {
+    const blob = await (await fetch(`./out/${p.replace('.html', '.jpg')}`)).blob();
+    const url = await new Promise((res) => { const f = new FileReader(); f.onload = () => res(f.result); f.readAsDataURL(blob); });
+    const bmp = await createImageBitmap(blob);
+    return { url, base64: url.split(',')[1], width: bmp.width, height: bmp.height };
+  }));
   const t0 = performance.now();
-  const letter = await readLetter(dataUrl.split(',')[1], 'device');
+  let letter;
+  for (let attempt = 0; attempt < 2 && !letter; attempt += 1) { try { letter = await readLetter(pages, 'device'); } catch (e) { console.warn(n.id, e.message); } }
+  if (!letter) { failed.push(n.id); continue; }
   const readSec = (performance.now() - t0) / 1000;
   const sent = flat(letter.outgoing + '\n' + letter.alternates.join('\n'));
   // What the on-device model alone would have masked, before the code rules.
@@ -26,45 +35,48 @@ for (const [i, n] of notices.entries()) {
   try { fin = await explain(letter, 'English', { check: true }); } catch (e) { fin = { error: String(e.message).slice(0, 200) }; }
   // The consequence is right when the English text matches every pattern listed for the notice.
   const says = (text) => n.consequence.every((re) => new RegExp(re, 'i').test(String(text ?? '')));
+  const does = (x) => n.action.every((re) => new RegExp(re, 'i').test(`${(x.steps || []).join(' ')} ${x.objection || ''}`));
+  const amountOk = (x) => digits(x.amount) === digits(n.amount_due);
   rows.push({
-    id: n.id, readSec, explainSec, checkSec: (performance.now() - t2) / 1000,
+    id: n.id, split: n.split, pages: n.pages.length, readSec,
+    actionFirst: does(ex), actionFinal: does(fin), explainSec, checkSec: (performance.now() - t2) / 1000,
     consequenceFirst: says(ex.if_ignored), consequenceFinal: says(fin.if_ignored),
     finalDeadlineRight: fin.deadline_iso === n.deadline_iso,
-    finalAmountRight: digits(fin.amount) === digits(n.amount_due ?? n.critical[0]),
-    final: { title: fin.title, deadline_iso: fin.deadline_iso, amount: fin.amount, if_ignored: fin.if_ignored, corrected: fin.corrected, error: fin.error },
+    finalAmountRight: amountOk(fin),
+    final: { title: fin.title, steps: fin.steps, objection: fin.objection, deadline_iso: fin.deadline_iso, amount: fin.amount, if_ignored: fin.if_ignored, corrected: fin.corrected, error: fin.error },
     figuresRead: n.critical.map((v) => flat(letter.transcript).includes(flat(v))),
     figuresKept: n.critical.map((v) => !flat(letter.transcript).includes(flat(v)) || flat(letter.outgoing).includes(flat(v))),
     idsMissedByModel: n.pii.filter((v) => flat(modelOnly).includes(flat(v))),
     idsSent: n.pii.filter((v) => sent.includes(flat(v))),
     agencyKept: n.agency_contacts.map((v) => flat(letter.outgoing).includes(flat(v))),
     deadlineRight: ex.deadline_iso === n.deadline_iso,
-    amountRight: digits(ex.amount) === digits(n.amount_due ?? n.critical[0]),
-    explained: { title: ex.title, deadline_iso: ex.deadline_iso, amount: ex.amount, if_ignored: ex.if_ignored, corrected: ex.corrected, error: ex.error },
+    amountRight: amountOk(ex),
+    explained: { title: ex.title, steps: ex.steps, deadline_iso: ex.deadline_iso, amount: ex.amount, if_ignored: ex.if_ignored, corrected: ex.corrected, error: ex.error },
     transcript: letter.transcript, second: letter.second, items: letter.items, outgoing: letter.outgoing, alternates: letter.alternates,
   });
   document.getElementById('o').textContent = `${rows.length} done`;
 }
-const sum = (f) => rows.reduce((a, r) => a + f(r), 0);
-window.__eval = {
-  summary: {
-    notices: rows.length,
+const summarize = (rows) => {
+  const sum = (f) => rows.reduce((a, r) => a + f(r), 0);
+  const truth = (r) => notices.find((n) => n.id === r.id);
+  const med = (v) => [...v].sort((a, b) => a - b)[Math.floor(v.length / 2)];
+  const span = (v) => `median ${med(v).toFixed(0)} (${Math.min(...v).toFixed(0)} to ${Math.max(...v).toFixed(0)})`;
+  return {
+    letters: rows.length, pages: sum((r) => r.pages),
     figuresReadByNano: `${sum((r) => r.figuresRead.filter(Boolean).length)} of ${sum((r) => r.figuresRead.length)}`,
     figuresKeptVisible: `${sum((r) => r.figuresKept.filter(Boolean).length)} of ${sum((r) => r.figuresKept.length)}`,
-    identifiersMaskedByNanoAlone: `${sum((r) => notices.find((n) => n.id === r.id).pii.length - r.idsMissedByModel.length)} of ${sum((r) => notices.find((n) => n.id === r.id).pii.length)}`,
-    identifiersSentAfterRules: `${sum((r) => r.idsSent.length)} of ${sum((r) => notices.find((n) => n.id === r.id).pii.length)}`,
+    identifiersMaskedByNanoAlone: `${sum((r) => truth(r).pii.length - r.idsMissedByModel.length)} of ${sum((r) => truth(r).pii.length)}`,
+    identifiersSentAfterRules: `${sum((r) => r.idsSent.length)} of ${sum((r) => truth(r).pii.length)}`,
     agencyNumbersKeptVisible: `${sum((r) => r.agencyKept.filter(Boolean).length)} of ${sum((r) => r.agencyKept.length)}`,
-    deadlineInExplanation: `${sum((r) => +r.deadlineRight)} of ${rows.length}`,
-    amountInExplanation: `${sum((r) => +r.amountRight)} of ${rows.length}`,
-    consequenceInFirstAnswer: `${sum((r) => +r.consequenceFirst)} of ${rows.length}`,
-    consequenceAfterDoubleCheck: `${sum((r) => +r.consequenceFinal)} of ${rows.length}`,
-    misreadWordsCorrected: `${sum((r) => (r.final.corrected || []).length)} on ${sum((r) => +((r.final.corrected || []).length > 0))} notices`,
-    deadlineAfterDoubleCheck: `${sum((r) => +r.finalDeadlineRight)} of ${rows.length}`,
-    amountAfterDoubleCheck: `${sum((r) => +r.finalAmountRight)} of ${rows.length}`,
-    readSeconds: `${Math.min(...rows.map((r) => r.readSec)).toFixed(0)} to ${Math.max(...rows.map((r) => r.readSec)).toFixed(0)}`,
-    explainSeconds: `${Math.min(...rows.map((r) => r.explainSec)).toFixed(0)} to ${Math.max(...rows.map((r) => r.explainSec)).toFixed(0)}`,
-    doubleCheckSeconds: `${Math.min(...rows.map((r) => r.checkSec)).toFixed(0)} to ${Math.max(...rows.map((r) => r.checkSec)).toFixed(0)}`,
-  },
-  rows,
+    deadline: `${sum((r) => +r.deadlineRight)} first, ${sum((r) => +r.finalDeadlineRight)} after double-check, of ${rows.length}`,
+    amount: `${sum((r) => +r.amountRight)} first, ${sum((r) => +r.finalAmountRight)} after double-check, of ${rows.length}`,
+    action: `${sum((r) => +r.actionFirst)} first, ${sum((r) => +r.actionFinal)} after double-check, of ${rows.length}`,
+    consequence: `${sum((r) => +r.consequenceFirst)} first, ${sum((r) => +r.consequenceFinal)} after double-check, of ${rows.length}`,
+    misreadWordsCorrected: `${sum((r) => (r.final.corrected || []).length)} on ${sum((r) => +((r.final.corrected || []).length > 0))} letters`,
+    readSeconds: span(rows.map((r) => r.readSec)), explainSeconds: span(rows.map((r) => r.explainSec)), doubleCheckSeconds: span(rows.map((r) => r.checkSec)),
+  };
 };
+const part = (name) => rows.filter((r) => r.split === name);
+window.__eval = { failedToRead: failed, summary: { ...(part('dev').length ? { dev: summarize(part('dev')) } : {}), ...(part('held-out').length ? { heldOut: summarize(part('held-out')) } : {}), ...(part('fresh').length ? { fresh: summarize(part('fresh')) } : {}) }, rows };
 document.getElementById('o').textContent = JSON.stringify(window.__eval.summary, null, 1);
 </script>
